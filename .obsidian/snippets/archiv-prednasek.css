@@ -1,0 +1,20 @@
+/* Archiv přednášek: custom callouts */
+.callout[data-callout="definice"] { --callout-color: 36, 71, 179; --callout-icon: lucide-book-open; }
+.callout[data-callout="veta"] { --callout-color: 90, 100, 120; --callout-icon: lucide-sigma; }
+.callout[data-callout="lidsky"] { --callout-color: 36, 71, 179; --callout-icon: lucide-message-circle; border: 1.5px dashed rgba(var(--callout-color), 0.7); }
+.callout[data-callout="pozor"] { --callout-color: 179, 42, 52; --callout-icon: lucide-alert-triangle; }
+.callout[data-callout="kontrola"] { --callout-color: 179, 42, 52; --callout-icon: lucide-alert-triangle; }
+.callout[data-callout="zpoznamek"] { --callout-color: 89, 96, 112; --callout-icon: lucide-file-text; }
+.callout[data-callout="navic"] { --callout-color: 36, 71, 179; --callout-icon: lucide-lightbulb; }
+.callout[data-callout="obrazek"] { --callout-color: 27, 132, 86; --callout-icon: lucide-image; }
+.callout[data-callout="karta"] { --callout-color: 191, 84, 25; --callout-icon: lucide-layers; }
+.callout[data-callout="priklad"] { --callout-color: 27, 132, 86; --callout-icon: lucide-pencil; }
+.theme-dark .callout[data-callout="definice"],
+.theme-dark .callout[data-callout="lidsky"],
+.theme-dark .callout[data-callout="navic"] { --callout-color: 147, 170, 255; }
+.theme-dark .callout[data-callout="pozor"],
+.theme-dark .callout[data-callout="kontrola"] { --callout-color: 255, 129, 137; }
+.theme-dark .callout[data-callout="obrazek"] { --callout-color: 93, 210, 157; }
+.theme-dark .callout[data-callout="karta"] { --callout-color: 255, 152, 102; }
+.theme-dark .callout[data-callout="priklad"] { --callout-color: 93, 210, 157; }
+.callout[data-callout="obrazek"] img { border-radius: 6px; background: #fff; max-width: 460px; }

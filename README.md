@@ -1,0 +1,2 @@
+# Zapisky-Obsidian
+ 

@@ -1,0 +1,240 @@
+{
+  "main": {
+    "id": "45840496830d2ebe",
+    "type": "split",
+    "children": [
+      {
+        "id": "f06359aa17dd413b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7f3f99f24f6929f1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "MA1/Přednášky/MA1 04 – Nerovnosti ve směru a věta o sevření.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "MA1 04 – Nerovnosti ve směru a věta o sevření"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "20234fec50d52adc",
+    "type": "split",
+    "children": [
+      {
+        "id": "49270ae00f55e8ba",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a4301ff296c90ca6",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "d93b205e3cd8f61d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "řez",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "67d6ca4927ffafe1",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "ea252b1923268a4c",
+    "type": "split",
+    "children": [
+      {
+        "id": "b10e72d0b2b62724",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e9a77ba8d55aebcf",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Archiv přednášek.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "f1e9ac96d557ef17",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Archiv přednášek.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "920e18fc688bfbb3",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "a41d750ae0adfb1f",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "110255fa3daa4759",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Archiv přednášek.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "7f3f99f24f6929f1",
+  "lastOpenFiles": [
+    "LAG/Přednášky/LAG 01 – Úvod do lineární algebry.md",
+    "LAG/Přednášky/LAG 04 – Lineární závislost a nezávislost.md",
+    "MA1/MA1 – Matematická analýza 1.md",
+    "MA1/Přednášky/MA1 04 – Nerovnosti ve směru a věta o sevření.md",
+    "MA1/Přednášky/MA1 03 – Rozšířená reálná čísla a limita ve směru.md",
+    "LGR/Přednášky/LGR 03 – Disjunktivní a konjunktivní normální forma.md",
+    "MA1/Přednášky/MA1 02 – Celá, racionální a reálná čísla.md",
+    "LGR/Přednášky/LGR 02 – Tautologická ekvivalence a úplné systémy spojek.md",
+    "LGR/Pojmy/splnitelná formule.md",
+    "LAG/Přednášky/LAG 03 – Lineární podprostor a lineární obal.md",
+    "LAG/Pojmy/homogenní soustava.md",
+    "LGR/Přednášky/LGR 01 – Syntax a sémantika výrokové logiky.md",
+    "LGR/LGR – Logika a grafy.md",
+    "MA1/Přednášky/MA1 01 – Množiny, uspořádání a přirozená čísla.md",
+    "LAG/Přednášky/LAG 02 – Příklady lineárních prostorů.md",
+    "LAG/LAG – Lineární algebra.md",
+    "LAG/Pojmy/lineární kombinace.md",
+    "LAG/Pojmy/lineární prostor.md",
+    "MA1/Pojmy/supremum.md",
+    "LAG/Pojmy/lineární rovnice.md",
+    "LAG/Pojmy/triviální lineární kombinace.md",
+    "Archiv přednášek.md",
+    "LAG/Obrázky/lag04-uloha35.png",
+    "LAG/Obrázky/lag04-obaly.png",
+    "LAG/Pojmy/lineární nezávislost.md",
+    "LAG/Pojmy/lineární závislost.md",
+    "MA1/Obrázky/ma104-znamenko.png",
+    "MA1/Obrázky/ma104-sevreni.png",
+    "MA1/Obrázky/ma104-nerovnost.png",
+    "MA1/Obrázky/ma104-kraceni.png",
+    "MA1/Pojmy/jednostranná limita.md",
+    "MA1/Pojmy/věta o sevření.md",
+    "LGR/Obrázky/lgr03-tabulka.png",
+    "LGR/Obrázky/lgr02-nand.png",
+    "LAG/Obrázky/lag03-homogenni.png",
+    "MA1/Obrázky/ma102-archimedes.png",
+    "LGR/Přednášky",
+    "LGR/Pojmy",
+    "LGR/Obrázky",
+    "LGR",
+    "Anki/MA1.apkg",
+    "Anki/LAG.apkg",
+    "Anki/anki_export.py",
+    "Anki",
+    "MA1/Pojmy",
+    "MA1/Obrázky"
+  ]
+}
