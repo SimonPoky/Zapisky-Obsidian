@@ -51,6 +51,9 @@ Připomenutí, co v $\mathbb{R}^*$ je a co není definované ($r \in \mathbb{R}$
 | $(+\infty)(-\infty)$, $r \cdot (+\infty)$ pro $r < 0$ | $-\infty$ | $\frac{\pm\infty}{\pm\infty}$ (všechny čtyři kombinace) |
 | $\frac{r}{\pm\infty}$ | $0$ | $\frac{L}{0}$ pro jakékoli $L$, i $\frac{1}{0}$ a $\frac{0}{0}$ |
 
+> [!navic] Rychlý test, jestli je výraz definovaný
+> Říká-li ti intuice jednoznačně, co má vyjít ($+\infty + 3$ je pořád nekonečno, $2 \cdot (+\infty)$ taky), výraz definovaný je. Objeví-li se něco podivného, tedy nekonečno minus nekonečno, nekonečno krát nula, nekonečno lomeno nekonečnem nebo cokoli lomeno nulou, zpomal: věta o aritmetice tu nic neříká a výraz je potřeba upravit.
+
 > [!example] (1) $\lim_{x \to +\infty} (2x + 3)$
 > $\lim x = +\infty$, tedy $\lim 2x = 2 \cdot (+\infty) = +\infty$ a
 >
@@ -76,6 +79,32 @@ Připomenutí, co v $\mathbb{R}^*$ je a co není definované ($r \in \mathbb{R}$
 > [!obrazek] Typ ∞/∞ může dát cokoli
 > ![[ma105-nekonecno.png]]
 > *Čtyři podíly, u kterých čitatel i jmenovatel jdou k +∞. Modrá x/x je stále 1, zelená 3x/x stále 3, oranžová x²/x = x roste do nekonečna a červená čárkovaná x/x² = 1/x klesá k nule.*
+
+### Tabulka limit polynomů a racionálních funkcí · handout 2B, slajdy 23–25
+
+Z aritmetiky limit plyne „telefonní seznam“ limit, který se vyplatí znát zpaměti, protože se na cvičeních a v testech počítá pořád. Ať $f(x) = a_n x^n + \dots + a_1 x + a_0$ s $a_n \neq 0$, $n \ge 1$, a $g(x) = b_m x^m + \dots + b_0$ s $b_m \neq 0$.
+
+| limita | výsledek |
+|---|---|
+| polynom, $x \to p \in \mathbb{R}$ (i zleva, zprava) | $f(p)$, stačí dosadit |
+| polynom, $x \to +\infty$ | $+\infty$ pro $a_n > 0$, $-\infty$ pro $a_n < 0$ |
+| polynom, $x \to -\infty$ | jako u $+\infty$ pro sudé $n$, s opačným znaménkem pro liché $n$ |
+| $\frac{f}{g}$, $x \to p \in \mathbb{R}$, $g(p) \neq 0$ | $\frac{f(p)}{g(p)}$ |
+| $\frac{f}{g}$, $x \to \pm\infty$, $n = m$ | $\frac{a_n}{b_m}$ |
+| $\frac{f}{g}$, $x \to \pm\infty$, $n < m$ | $0$ |
+| $\frac{f}{g}$, $x \to +\infty$, $n > m$ | $\frac{a_n}{b_m} \cdot (+\infty)$ |
+| $\frac{f}{g}$, $x \to -\infty$, $n > m$ | $\frac{a_n}{b_m} \cdot (-1)^{n-m} \cdot (+\infty)$ |
+
+^tabulka-polynomy
+
+> [!lidsky] Lidsky
+> Daleko od nuly rozhoduje jen **nejvyšší mocnina**, ostatní členy jsou proti ní zanedbatelné. Proč: vytkneš ji, $f(x) = x^n\big(a_n + \frac{a_{n-1}}{x} + \dots + \frac{a_0}{x^n}\big)$, a závorka jde k $a_n$. U zlomku se pak porovnají nejvyšší mocniny čitatele a jmenovatele: vyhraje vyšší stupeň, při stejném stupni zbude podíl vedoucích koeficientů.
+
+> [!example] Dvě limity z tabulky
+> $\lim_{x \to +\infty} \frac{2x^2 - x}{5x^2 + 3} = \frac{2}{5}$ (stejné stupně). $\lim_{x \to -\infty} \frac{x^3}{x + 1} = 1 \cdot (-1)^{3-1} \cdot (+\infty) = +\infty$; kontrola: pro $x = -1000$ je $\frac{-10^9}{-999} \approx 10^6 > 0$.
+
+> [!pozor] Kořen jmenovatele tabulka neřeší
+> Je-li $g(p) = 0$, tabulka nic neříká. Pak je potřeba krátit (jako $\frac{x^2 - 9}{x - 3}$ v [[MA1 04 – Nerovnosti ve směru a věta o sevření#^veta-rovnost|přednášce 4]]) nebo počítat jednostranné limity zvlášť.
 
 ## §2 Linearita a podprostor funkcí s vlastní limitou
 
@@ -187,6 +216,9 @@ Chceme počítat limitu složené funkce $f \circ \varphi$, tedy $f(\varphi(x))$
 > [!pozor] Opačně to neplatí
 > Z $\lim_{n \to +\infty} f(n) = L$ **neplyne** $\lim_{x \to +\infty} f(x) = L$. Pro $f(x) = \sin(\pi x)$ je $f(n) = 0$ pro všechna $n$, takže limita posloupnosti je $0$, ale $\lim_{x \to +\infty} \sin(\pi x)$ neexistuje: funkce mezi celými čísly pořád kmitá mezi $-1$ a $1$.
 
+> [!pozor] Posloupnost se nederivuje
+> Častá chyba ze střední školy: použít l'Hospitalovo pravidlo (derivovat čitatele a jmenovatele) přímo na posloupnost, třeba $\frac{n^2 + 1}{n}$. Posloupnost je definovaná jen v přirozených číslech, derivaci nemá. Správně: přejdi k funkci $f(x) = \frac{x^2 + 1}{x}$, spočítej $\lim_{x \to +\infty} f(x)$ jakýmkoli nástrojem pro funkce a výsledek přenes na posloupnost podle důsledku 2.
+
 ## §5 Detekce limity pomocí substitucí
 
 Věta o substituci jde jedním směrem: z limity $f$ dostaneme limitu $f \circ \varphi$. Obráceně to jde, když substitucí vezmeme **dost** na to, aby dohromady pokryly celý kus směru.
@@ -273,6 +305,9 @@ Věta o substituci jde jedním směrem: z limity $f$ dostaneme limitu $f \circ \
 > ![[ma105-spojitost.png]]
 > *Vlevo spojitá: modrý bod f(p) leží přesně tam, kam graf míří; nad oranžovým okolím p leží zelená část grafu celá v modrém terči kolem f(p). Vpravo nespojitá: graf míří k L (prázdné kolečko), ale červená hodnota f(p) je jinde.*
 
+> [!navic] Proč nestačí „graf bez přerušení“
+> Školní představa je dobrý začátek, ale brzy přijdou „patologické“ funkce, u kterých obrázek nepomůže nebo klame, a rozhodne jen definice. Ta má schované dva předpoklady: $f(p)$ musí existovat (jinak není s čím limitu porovnat) a $f$ musí být definovaná kolem $p$ (jinak nemá smysl limita). A protože se porovnává s $f(p)$, smí v okolí ležet i bod $p$ sám, na rozdíl od prstencového okolí u limity.
+
 > [!navic] Spojitost a substituce
 > Funkce $f$ z protipříkladu v §3 je v bodě $1$ nespojitá ($\lim_{z \to 1} f = 3 \neq 200 = f(1)$), a právě proto substituce selhala. Když je vnější funkce v cílovém bodě spojitá, smí se dosadit vždy: $\lim \varphi = p$ a $f$ spojitá v $p$ ⇒ $\lim f(\varphi(x)) = f(p)$. Tomu se věnuje handout 3A. Spojité jsou například všechny polynomy: $\lim_{x \to p} f(x) = f(p)$ pro každé $p \in \mathbb{R}$ (handout 2B, slajd 23).
 
@@ -328,6 +363,15 @@ Věta o substituci jde jedním směrem: z limity $f$ dostaneme limitu $f \circ \
 > [!karta|16]- Kdy je funkce spojitá v bodě $p$?
 > Když je definovaná na okolí $p$ a **$\lim_{x \to p} f(x) = f(p)$**: limita existuje a rovná se hodnotě v bodě.
 
+> [!karta|25]- Jakou limitu má polynom $a_n x^n + \dots + a_0$ ($a_n \neq 0$, $n \ge 1$) pro $x \to +\infty$ a $x \to -\infty$?
+> $x \to +\infty$: **znaménko $a_n$ krát $\infty$**. $x \to -\infty$: totéž pro sudé $n$, opačné znaménko pro liché $n$. Rozhoduje nejvyšší mocnina.
+
+> [!karta|26]- Jak spočítáš $\lim_{x \to \pm\infty} \frac{f(x)}{g(x)}$ pro polynomy stupňů $n$ a $m$?
+> $n = m$: **podíl vedoucích koeficientů** $\frac{a_n}{b_m}$. $n < m$: **0**. $n > m$: **$\pm\infty$** podle znaménka $\frac{a_n}{b_m}$ (u $-\infty$ navíc krát $(-1)^{n-m}$).
+
+> [!karta|27]- Smíš na limitu posloupnosti použít l'Hospitalovo pravidlo přímo?
+> **Ne**, posloupnost derivaci nemá. Přejdi k funkci $f(x)$, spočítej $\lim_{x \to +\infty} f(x)$ a výsledek přenes na posloupnost (limita funkce ⇒ limita posloupnosti).
+
 ### Příklady na procvičení
 
 > [!priklad|17]- Spočítej $\lim_{x \to +\infty} (2x + 3)$.
@@ -353,6 +397,12 @@ Věta o substituci jde jedním směrem: z limity $f$ dostaneme limitu $f \circ \
 
 > [!priklad|24]- Spočítej $\lim_{n \to +\infty} \frac{2n + 1}{n + 3}$.
 > Pro $n \ge 1$ je zlomek roven $\frac{2 + \frac{1}{n}}{1 + \frac{3}{n}}$. Čitatel $\to 2 + 0$, jmenovatel $\to 1 + 0 \neq 0$, podle aritmetiky je limita **2**.
+
+> [!priklad|28]- Spočítej $\lim_{x \to +\infty} \frac{2x^2 - x}{5x^2 + 3}$.
+> Stejné stupně, podíl vedoucích koeficientů: **$\frac{2}{5}$**.
+
+> [!priklad|29]- Spočítej $\lim_{x \to -\infty} \frac{x^3}{x + 1}$.
+> $n - m = 2$, $\frac{a_n}{b_m} = 1$, tedy $1 \cdot (-1)^2 \cdot (+\infty) =$ **$+\infty$**.
 
 ---
 ← [[MA1 04 – Nerovnosti ve směru a věta o sevření|1. 10. 2026 Nerovnosti ve směru a věta o sevření]]

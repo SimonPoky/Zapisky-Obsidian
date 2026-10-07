@@ -81,6 +81,14 @@ $$
 
 Na začátku kapitoly je obrázek, který známe od přednášky 1: k bodu $(3; 2)$ v rovině dojdeš třemi kroky doprava a dvěma nahoru. Otázka „lze dojít ke každému bodu?“ je otázka existence, a tu řeší následující definice.
 
+> [!navic] Co chceme od „souřadnic“
+> Souřadný systém pro **body** potřebuje i počátek: posuneš-li počátek, změní se souřadnice všech bodů. My pracujeme s **vektory**, a tam je počátek daný, je to nulový vektor. Nežádáme ani to, co bývá ve škole, totiž aby základní vektory byly na sebe kolmé a měly délku 1. Stačí dva požadavky:
+>
+> 1. **existence:** ke každému vektoru se z vybraných vektorů dá dojít (generují, §2),
+> 2. **jednoznačnost:** dá se k němu dojít jediným způsobem (jsou LN, §3).
+>
+> Dvojice „existence a jednoznačnost“ se v matematice objevuje často a obvykle se řeší každá zvlášť. Splňuje-li posloupnost obojí, neříká se jí souřadný systém (to slovo zůstává pro body s počátkem), ale [[báze]].
+
 > [!definice] Definice ♥ · pozn. 4.1
 > Buď $L$ lineární prostor nad $\mathbb{F}$ a $\vec{x}_1, \dots, \vec{x}_n \in L$. Řekneme, že posloupnost $(\vec{x}_1, \dots, \vec{x}_n)$ *generuje* $L$, jestliže
 >
@@ -155,7 +163,10 @@ Generování zaručí, že vyjádření existuje. Kdy je jediné, říká nezáv
 
 ^def-kanonicka
 
-Zápis $[\vec{e}_i]_j$ znamená „$j$-tá složka vektoru $\vec{e}_i$“. Že je $\mathcal{E}$ opravdu báze, je vidět rovnou: $(x_1; \dots; x_n) = x_1\vec{e}_1 + \dots + x_n\vec{e}_n$ (generuje) a kombinace dá nulu, jen když jsou všechna $x_i = 0$ (LN).
+Zápis $[\vec{e}_i]_j$ znamená „$j$-tá složka vektoru $\vec{e}_i$“. Báze se značí psacími velkými písmeny ($\mathcal{E}$, $\mathcal{B}$), aby se nepletly s množinami a prostory; místo „kanonická“ se někdy říká *standardní* báze. Že je $\mathcal{E}$ opravdu báze, je vidět rovnou:
+
+- **LN:** každé $\vec{e}_i$ má jedničku na místě, kde mají všechny ostatní nulu, takže ho z ostatních (ani z předchozích) poskládat nejde.
+- **Generuje:** $(x_1; \dots; x_n) = x_1\vec{e}_1 + \dots + x_n\vec{e}_n$, koeficienty jsou přímo složky vektoru.
 
 > [!obrazek] Stejný vektor ve dvou bázích $\mathbb{R}^2$
 > ![[lag05-souradnice.png]]
@@ -189,6 +200,9 @@ Zápis $[\vec{e}_i]_j$ znamená „$j$-tá složka vektoru $\vec{e}_i$“. Že j
 > [!lidsky] Lidsky
 > Báze je přesně na hraně. Uber z ní cokoli a přestane generovat. Přidej k ní cokoli a přestane být nezávislá. Je to nejmenší sada, která ještě všechno poskládá, a zároveň největší sada, ve které ještě nic není navíc.
 
+> [!pozor] Minimální vzhledem k inkluzi ≠ nejkratší
+> „Minimální“ tu znamená, že z posloupnosti **nejde nic vyhodit** (inkluze = být podposloupností), ne že je nejkratší ze všech generujících. Kdyby se počítal jen počet prvků, nebylo by to zatím dokázané: a priori by mohl mít prostor dvě báze různé délky, obě minimální, protože kratší nemusí být podposloupností delší. Že to nenastane, říká až věta 4.7 v §6, a teprve pak má smysl definovat dimenzi.
+
 ## §6 Dimenze
 
 Aby šlo mluvit o „počtu směrů“ prostoru, musí mít všechny báze stejně prvků. To zaručí následující lemma.
@@ -198,7 +212,10 @@ Aby šlo mluvit o „počtu směrů“ prostoru, musí mít všechny báze stejn
 
 ^lemma-46
 
-Lemma se na přednášce nedokazovalo a ke zkouškové písemce není nutné (v poznámkách je označené \*). Plné znění navíc říká, že $l - k$ vhodných vektorů $\vec{y}_j$ spolu s $\vec{x}_1, \dots, \vec{x}_k$ pořád generuje $L$; odtud název „o výměně“.
+Lemma se zde nedokazuje a ke zkouškové písemce není nutné (v poznámkách je označené \*); důkaz je matematickou indukcí a dá se tam dohledat. Plné znění navíc říká, že $l - k$ vhodných vektorů $\vec{y}_j$ spolu s $\vec{x}_1, \dots, \vec{x}_k$ pořád generuje $L$: $k$ generátorů jde **vyměnit** za $k$ nezávislých vektorů a posloupnost generuje dál. Odtud název.
+
+> [!navic] V čem je důkaz těžký
+> Kdybys věděl, že všechny báze mají $n$ prvků, lemma by šlo odvodit snadno: LN posloupnost jde doplnit na bázi (má tedy nejvýš $n$ prvků) a z generující jde bázi vybrat (má tedy aspoň $n$ prvků). Jenže to je kruh, protože věta 4.7 o stejné velikosti bází se dokazuje právě z lemmatu. Důkaz lemmatu se tedy musí obejít bez ní.
 
 > [!lidsky] Lidsky
 > Nezávislých vektorů nemůže být víc než generátorů. Když v rovině umíš všechno poskládat ze dvou vektorů, tři nezávislé vektory tam nenajdeš.
@@ -233,7 +250,9 @@ Lemma se na přednášce nedokazovalo a ke zkouškové písemce není nutné (v 
 > Kdyby $\mathbb{F}[x]$ měl konečnou bázi s $m$ prvky, ta by generovala, a LN posloupnost $(1, x, \dots, x^m)$ má $m + 1$ prvků. Lemma 4.6 by dalo $m + 1 \le m$, spor. Stejně je nekonečná dimenze prostoru [[posloupnosti|posloupností]] $\mathbb{R}^{\mathbb{N}}$: posloupnosti $(1, 0, 0, \dots)$, $(0, 1, 0, \dots)$, … jsou LN pro libovolný počet.
 
 > [!navic] Nekonečné báze (pozn. 4.10 \*)
-> Nezávislost a bázi jde zavést i pro nekonečné množiny vektorů: LN znamená, že každá konečná část je LN. Takové bázi se říká Hamelova. Pozor, $((1, 0, 0, \dots), (0, 1, 0, \dots), \dots)$ **není** Hamelova báze $\mathbb{R}^{\mathbb{N}}$: lineární kombinace je vždy konečná, takže z nich poskládáš jen posloupnosti s konečně mnoha nenulovými členy, třeba $(1, 1, 1, \dots)$ ne. Ke zkoušce to není potřeba.
+> Nezávislost a bázi jde zavést i pro nekonečné množiny vektorů: LN znamená, že každá konečná část je LN. Takové bázi se říká Hamelova. Pro polynomy funguje dobře: $(1, x, x^2, \dots)$ je báze $\mathbb{F}[x]$, protože každý polynom má jen konečně mnoho členů.
+>
+> Pozor, $((1, 0, 0, \dots), (0, 1, 0, \dots), \dots)$ **není** Hamelova báze $\mathbb{R}^{\mathbb{N}}$: lineární kombinace je vždy konečná, takže z nich poskládáš jen posloupnosti, které jsou od jistého místa nulové, třeba $(1, 1, 1, \dots)$ ne. Hamelova báze $\mathbb{R}^{\mathbb{N}}$ sice existuje (abstraktním argumentem „vyhazuj z množiny všech posloupností, dokud nezbude nezávislá“), ale nikdo ji nikdy nevypsal, a k počítání je proto k ničemu. Užitečná báze nekonečně rozměrných prostorů potřebuje nekonečné kombinace, tedy řady. Ke zkoušce to není potřeba.
 
 ## §7 Výběr báze z generátorů
 
@@ -309,6 +328,8 @@ Opačný směr k výběru: začneš s nezávislými vektory a přidáváš.
 
 > [!lidsky] Lidsky
 > Když víš dimenzi a máš přesně tolik vektorů, stačí ověřit jen polovinu definice báze. V $\mathbb{R}^3$ jsou tři vektory bází, jakmile jsou nezávislé; generování už ověřovat nemusíš.
+>
+> Ověřuje se prakticky vždy LN, protože je to méně práce. LN znamená vyřešit **jednu** homogenní soustavu (pravá strana nulová). Generování znamená ukázat, že soustava má řešení pro **každou** pravou stranu $\vec{v}$. Na cvičení se tenhle důsledek používá velmi často.
 
 > [!pozor] Počet musí sedět přesně
 > Důsledek platí jen pro **přesně $n$** vektorů. Dva nezávislé vektory v $\mathbb{R}^3$ nejsou báze (negenerují) a čtyři generující vektory v $\mathbb{R}^3$ nejsou báze (jsou LZ).
@@ -356,6 +377,9 @@ Opačný směr k výběru: začneš s nezávislými vektory a přidáváš.
 > 2. **minimální** generující posloupnost (žádná vlastní podposloupnost negeneruje),
 > 3. **maximální** LN posloupnost (přidáním libovolného vektoru vznikne LZ).
 
+> [!karta|26]- Co znamená, že je báze „minimální vzhledem k inkluzi“, a proč to ještě neznamená „nejkratší“?
+> Nejde z ní nic **vyhodit** (žádná vlastní podposloupnost negeneruje). Bez věty 4.7 by mohly existovat dvě báze různé délky, protože kratší nemusí být **podposloupností** delší.
+
 > [!karta|08]- Jak dokážeš, že báze je maximální LN posloupnost (věta 4.5, (1) ⇒ (3))?
 > Báze je LN a pro každé $\vec{v} \in L$ je $\vec{v} \in \operatorname{span} = L$, takže $(\vec{x}_1, \dots, \vec{x}_n, \vec{v})$ je podle **věty 3.7** LZ.
 
@@ -382,6 +406,9 @@ Opačný směr k výběru: začneš s nezávislými vektory a přidáváš.
 
 > [!karta|16]- Co plyne pro posloupnost přesně $n = \dim L$ vektorů (důsledek)?
 > Je **báze $\iff$ je LN $\iff$ generuje $L$**. Stačí ověřit jednu polovinu definice báze.
+
+> [!karta|25]- Proč se u posloupnosti $n = \dim L$ vektorů ověřuje LN, a ne generování?
+> Podle důsledku stačí jedno. LN = vyřešit **jednu homogenní soustavu**, generování = soustavu pro **každou** pravou stranu.
 
 > [!karta|17]- Co říká věta o dimenzi podprostoru $V \le L$?
 > **$\dim V \le \dim L$** a pro $\dim L < \infty$ platí **$V = L \iff \dim V = \dim L$**.
