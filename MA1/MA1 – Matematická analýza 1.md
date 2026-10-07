@@ -10,7 +10,7 @@ tags: [predmet, MA1]
 
 [Handouty ke všem přednáškám (PDF) ↗](https://math.fel.cvut.cz/en/people/velebil/files/b0b01ma1/ma1_handout_all.pdf) · [Stránka předmětu ↗](https://math.fel.cvut.cz/en/people/velebil/teaching/b0b01ma1.html) · [Požadavky ↗](https://math.fel.cvut.cz/en/people/velebil/teaching/b0b01ma1_pozadavky.html) · [Ukázka zkoušky ↗](https://math.fel.cvut.cz/en/people/velebil/files/b0b01ma1/ma1_ukazka_2026.pdf) · [Ukázka testu 1 ↗](https://math.fel.cvut.cz/en/people/velebil/files/b0b01ma1/ma1_pisemka01_ukazka_2026.pdf) · [Ukázka testu 2 ↗](https://math.fel.cvut.cz/en/people/velebil/files/b0b01ma1/ma1_pisemka02_ukazka_2026.pdf)
 
-**Kartičky:** 81 povinných + 21 příkladů · [otevřít aplikaci ↗](https://claude.ai/artifact/3CKfKeuwtwrWiz3FSfSh5B) · [[Archiv přednášek#Kartičky|jak to funguje]]
+**Kartičky:** 101 povinných + 29 příkladů · [otevřít aplikaci ↗](https://claude.ai/artifact/3CKfKeuwtwrWiz3FSfSh5B) · [[Archiv přednášek#Kartičky|jak to funguje]]
 
 ## Přednášky
 
@@ -18,6 +18,7 @@ tags: [predmet, MA1]
 - **24. 9. 2026** [[MA1 02 – Celá, racionální a reálná čísla|Celá, racionální a reálná čísla]] · ℤ a ℚ z dvojic, √2 ∉ ℚ, Dedekindovy řezy, |x|, úplnost, Archimedes
 - **30. 9. 2026** [[MA1 03 – Rozšířená reálná čísla a limita ve směru|Rozšířená reálná čísla a limita ve směru]] · ℝ*, okolí, směr, definice limity, jednoznačnost, (−1)ⁿ, monotónní posloupnosti
 - **1. 10. 2026** [[MA1 04 – Nerovnosti ve směru a věta o sevření|Nerovnosti ve směru a věta o sevření]] · f ≤ g ve směru, krácení v limitě, znaménko limity, věta o sevření, x · sin(1/x), omezenost, jednostranné limity
+- **7. 10. 2026** [[MA1 05 – Aritmetika limit a substituce|Aritmetika limit a substituce]] · aritmetika limit, ∞/∞, podprostor W, věta o substituci, podposloupnosti, sudé a liché členy, spojitost
 
 ## Slovníček pojmů
 
@@ -42,6 +43,7 @@ tags: [predmet, MA1]
 - [[nevlastní limita]] · Limita rovná ±∞. Vlastní je reálné číslo; rozhoduje výsledek, ne směr.
 - [[okolí]] · Terč kolem cíle: (L − ε; L + ε), u +∞ interval (ε; +∞].
 - [[podmnožina]] · A ⊆ B: všechno z A je i v B. Prázdná množina je podmnožinou čehokoliv.
+- [[podposloupnost]] · Výběr nekonečně mnoha členů ve stejném pořadí; má stejnou limitu jako celá posloupnost.
 - [[posloupnost]] · Funkce na nekonečné podmnožině ℕ, píše se aₙ. Pro limitu rozhoduje jen „ocas“.
 - [[potenční množina]] · Katalog všech výběrů z U; pro 3 prvky 2³ = 8 podmnožin.
 - [[pozitivní kužel]] · Kladná čísla ℝ⁺, ze kterých se vyrobí nerovnost: r < s ⇔ s − r ∈ ℝ⁺.
@@ -55,9 +57,12 @@ tags: [predmet, MA1]
 - [[Russellův paradox]] · „Množina všech množin, které neobsahují samy sebe“ nemůže existovat.
 - [[shora omezená množina]] · Množina se stropem: existuje u ≥ všem prvkům. Zdola omezená má podlahu.
 - [[směr]] · Odkud se blížíme k cíli: vnořené neprázdné množiny s prázdným průnikem, cíl do nich nepatří.
+- [[spojitost v bodě]] · Limita v bodě p existuje a rovná se f(p): graf jde přes p bez zvednutí tužky.
 - [[supremum]] · Nejnižší strop, nejmenší horní odhad. Existuje i tam, kde chybí maximum.
 - [[uspořádaná množina]] · Množina s pravidlem „kdo je pod kým“: reflexivní, tranzitivní, antisymetrické.
+- [[věta o aritmetice limit]] · Limita součtu, součinu, podílu je součet, součin, podíl limit, pokud to v ℝ* dává smysl.
 - [[věta o sevření]] · Funkce sevřená mezi dvěma se stejnou limitou L má limitu L taky (dva policajti).
+- [[věta o substituci]] · Limita f(φ(x)) je lim f, když φ míří do cíle a na kusu směru do něj nedopadne.
 
 ## Jak se předmět hodnotí
 

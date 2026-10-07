@@ -1,0 +1,16 @@
+---
+aliases: ["vybraná podposloupnost", "podposloupnosti", "podposloupností", "podposloupnostmi", "aₙₖ"]
+tags: [pojem, MA1]
+predmet: MA1
+prednaska: 5
+zdroj: "handout 2B, slajd 20"
+---
+
+# podposloupnost
+
+> [!lidsky] Lidsky
+> Z posloupnosti vyškrtáš některé členy, nekonečně mnoho jich necháš a pořadí nezměníš. Má-li celá posloupnost limitu L, má ji i každá podposloupnost; dvě podposloupnosti s různými limitami proto dokazují, že limita neexistuje.
+
+**Formálně:** a_{n_k}, kde n_k ∈ ℕ je rostoucí; lim aₙ = L ⇒ lim_k a_{n_k} = L
+
+**Definice:** [[MA1 05 – Aritmetika limit a substituce#^dusledek-podposloupnost|přednáška 5, 7. 10. 2026]] · handout 2B, slajd 20

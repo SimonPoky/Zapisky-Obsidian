@@ -266,4 +266,4 @@ Ať $f \ge_{\mathcal{S}} 0$ (na $P_1$) a $L < 0$. Podle 2b je $f <_{\mathcal{S}}
 > **Ne.** Není ve směru $x \to 0^+$ omezená, takže podle tvrzení I vlastní limitu mít nemůže; $\lim_{x \to 0^+} \frac{1}{x} = +\infty$.
 
 ---
-← [[MA1 03 – Rozšířená reálná čísla a limita ve směru|30. 9. 2026 Rozšířená reálná čísla a limita ve směru]]
+← [[MA1 03 – Rozšířená reálná čísla a limita ve směru|30. 9. 2026 Rozšířená reálná čísla a limita ve směru]] · [[MA1 05 – Aritmetika limit a substituce|7. 10. 2026 Aritmetika limit a substituce]] →
