@@ -295,4 +295,4 @@ Otázka „je některý vektor kombinací ostatních?“ je přesně to, čemu s
 > **LZ** (obsahuje $\vec{0}$): $0 \cdot (1; 1) + 1 \cdot (0; 0) = (0; 0)$.
 
 ---
-← [[LAG 03 – Lineární podprostor a lineární obal|30. 9. 2026 Lineární podprostor a lineární obal]]
+← [[LAG 03 – Lineární podprostor a lineární obal|30. 9. 2026 Lineární podprostor a lineární obal]] · [[LAG 05 – Báze a dimenze|7. 10. 2026 Báze a dimenze]] →

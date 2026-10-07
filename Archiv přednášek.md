@@ -8,7 +8,7 @@ Studijní poznámky z přednášek (KyR, FEL ČVUT, ZS 2026/27), ověřené podl
 
 ## Předměty
 
-- [[LAG – Lineární algebra]] · 4 přednášky · 30 pojmů · 77 kartiček + 25 příkladů
+- [[LAG – Lineární algebra]] · 5 přednášek · 34 pojmů · 99 kartiček + 31 příkladů
 - [[LGR – Logika a grafy]] · 3 přednášky · 22 pojmů · 51 kartiček + 15 příkladů
 - [[MA1 – Matematická analýza 1]] · 4 přednášky · 35 pojmů · 81 kartiček + 21 příkladů
 
