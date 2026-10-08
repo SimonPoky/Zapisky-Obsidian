@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MA1/Přednášky/MA1 05 – Aritmetika limit a substituce.md",
-                "mode": "preview",
+                "file": "LAG/Přednášky/LAG 05 – Báze a dimenze.md",
+                "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "MA1 05 – Aritmetika limit a substituce"
+              "title": "LAG 05 – Báze a dimenze"
             }
           }
         ]
@@ -192,6 +192,12 @@
   },
   "active": "d70f69f7743dabdf",
   "lastOpenFiles": [
+    "Untitled.canvas",
+    "MA1/Přednášky/MA1 04 – Nerovnosti ve směru a věta o sevření.md",
+    "LAG/Přednášky/LAG 01 – Úvod do lineární algebry.md",
+    "LGR/Přednášky/LGR 04 – Sémantický důsledek a klauzální tvar.md",
+    "MA1/Přednášky/MA1 05 – Aritmetika limit a substituce.md",
+    "MA1/MA1 – Matematická analýza 1.md",
     "LGR/Obrázky/lgr04-rezoluce.png",
     "LGR/Obrázky/lgr04-mnoziny.png",
     "LGR/Obrázky/lgr04-dusledek.png",
@@ -199,9 +205,6 @@
     "LGR/Pojmy/klauzální tvar.md",
     "LGR/Pojmy/sémantický důsledek.md",
     "LGR/Pojmy/splnitelná množina formulí.md",
-    "LGR/Přednášky/LGR 04 – Sémantický důsledek a klauzální tvar.md",
-    "MA1/Přednášky/MA1 04 – Nerovnosti ve směru a věta o sevření.md",
-    "MA1/Přednášky/MA1 05 – Aritmetika limit a substituce.md",
     "LGR/Přednášky/LGR 03 – Disjunktivní a konjunktivní normální forma.md",
     "LGR/Přednášky/LGR 02 – Tautologická ekvivalence a úplné systémy spojek.md",
     "LAG/Přednášky/LAG 05 – Báze a dimenze.md",
@@ -217,7 +220,6 @@
     "MA1/Pojmy/spojitost v bodě.md",
     "MA1/Pojmy/podposloupnost.md",
     "LAG/Přednášky/LAG 04 – Lineární závislost a nezávislost.md",
-    "LAG/Obrázky/lag05-veta37.png",
     "LAG/Pojmy/kanonická báze.md",
     "LAG/Pojmy/generující posloupnost.md",
     "LAG/Pojmy/dimenze.md",
@@ -226,8 +228,6 @@
     "LAG/Pojmy/polynomiální funkce.md",
     "LAG/LAG – Lineární algebra.md",
     "Archiv přednášek.md",
-    "Zkouška Gitu.md",
-    "MA1/Přednášky/MA1 03 – Rozšířená reálná čísla a limita ve směru.md",
     "LGR/Přednášky",
     "LGR/Pojmy",
     "LGR/Obrázky",
