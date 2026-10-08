@@ -194,4 +194,4 @@ Postup (slajdy 17–18):
 > **$\neg a \vee b \vee \neg c$** (dosazením vyjde $0 \vee 0 \vee 0 = 0$).
 
 ---
-← [[LGR 02 – Tautologická ekvivalence a úplné systémy spojek|25. 9. 2026 Tautologická ekvivalence a úplné systémy spojek]]
+← [[LGR 02 – Tautologická ekvivalence a úplné systémy spojek|25. 9. 2026 Tautologická ekvivalence a úplné systémy spojek]] · [[LGR 04 – Sémantický důsledek a klauzální tvar|8. 10. 2026 Sémantický důsledek a klauzální tvar]] →

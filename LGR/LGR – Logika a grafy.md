@@ -10,13 +10,14 @@ tags: [predmet, LGR]
 
 [Přednášky: prezentace a videa ↗](https://math.fel.cvut.cz/en/people/gollova/lgr/lgr-prednaska.html) · [Prezentace 1 (PDF) ↗](https://math.fel.cvut.cz/en/people/gollova/lgr/lgr_1.pdf) · [Stránka předmětu ↗](https://math.fel.cvut.cz/en/people/gollova/lgr.html) · [Literatura ↗](https://math.fel.cvut.cz/en/people/gollova/lgr/lgr-literatura.html) · [Testy v Moodle ↗](https://moodle.fel.cvut.cz/course/view.php?id=10550) · [Videopřednášky (YouTube) ↗](https://www.youtube.com/playlist?list=PLQL6z4JeTTQkjV5JYF0gB599ekq4zFfPK)
 
-**Kartičky:** 51 povinných + 15 příkladů · [otevřít aplikaci ↗](https://claude.ai/artifact/3CKfKeuwtwrWiz3FSfSh5B) · [[Archiv přednášek#Kartičky|jak to funguje]]
+**Kartičky:** 71 povinných + 23 příkladů · [otevřít aplikaci ↗](https://claude.ai/artifact/3CKfKeuwtwrWiz3FSfSh5B) · [[Archiv přednášek#Kartičky|jak to funguje]]
 
 ## Přednášky
 
 - **24. 9. 2026** [[LGR 01 – Syntax a sémantika výrokové logiky|Syntax a sémantika výrokové logiky]] · formule, syntaktický strom, hloubka, ohodnocení, tautologie
 - **25. 9. 2026** [[LGR 02 – Tautologická ekvivalence a úplné systémy spojek|Tautologická ekvivalence a úplné systémy spojek]] · formalizace, booleovské funkce, |=|, NAND, NOR, XOR, úplné systémy spojek
 - **1. 10. 2026** [[LGR 03 – Disjunktivní a konjunktivní normální forma|Disjunktivní a konjunktivní normální forma]] · literál, minterm, maxterm, DNF, CNF, úplná DNF/CNF
+- **8. 10. 2026** [[LGR 04 – Sémantický důsledek a klauzální tvar|Sémantický důsledek a klauzální tvar]] · splnitelnost množiny, prázdná množina, S ⊨ φ, důkaz sporem, klauzální tvar, rezolventa
 
 ## Plán semestru
 
@@ -48,6 +49,7 @@ tags: [predmet, LGR]
 - [[formule]] · Výrok zapsaný z proměnných, spojek a závorek podle pravidel. α, β zastupují libovolnou formuli.
 - [[hloubka formule]] · Počet pater syntaktického stromu; proměnná 0, každá spojka +1.
 - [[implikace]] · Slib „jestliže α, pak β“. Nepravdivá jen pro 1 ⇒ 0.
+- [[klauzální tvar]] · Kl(S): formule rozsekané přes CNF na klauzule bez tautologií; splnitelný iff S splnitelná.
 - [[konjunktivní normální forma]] · CNF: konjunkce maxtermů. Má ji každá formule.
 - [[kontradikce]] · Formule nepravdivá v každém ohodnocení, např. a ∧ ¬a.
 - [[literál]] · Proměnná nebo její negace: a, ¬a.
@@ -56,8 +58,11 @@ tags: [predmet, LGR]
 - [[minterm]] · Konjunkce literálů (nebo literál, nebo tt), např. a ∧ ¬b.
 - [[Peirceova šipka]] · NOR, „ani jedno“. Sama tvoří úplný systém spojek.
 - [[pravdivostní ohodnocení]] · Přiřazení 0/1 všem formulím podle tabulky spojek. Určí ho hodnoty proměnných; pro n proměnných 2ⁿ možností.
+- [[rezolventa]] · Ze α ∨ x a β ∨ ¬x vznikne α ∨ β; plyne z obou. Prázdná rezolventa ff znamená nesplnitelnost.
+- [[sémantický důsledek]] · S ⊨ φ: kdykoli platí všechny předpoklady, platí i závěr; u(S) ≤ u(φ).
 - [[Shefferova čárka]] · NAND, „ne obojí zároveň“. Sama tvoří úplný systém spojek.
 - [[splnitelná formule]] · Pravdivá aspoň v jednom ohodnocení.
+- [[splnitelná množina formulí]] · Existuje ohodnocení, kde platí všechny formule naráz. Prázdná množina je splnitelná.
 - [[syntaktický strom]] · Stavba formule: listy proměnné, kořen poslední spojka, podstromy podformule.
 - [[tautologická ekvivalence]] · Dvě formule se stejnou hodnotou v každém ohodnocení (stejný sloupec tabulky).
 - [[tautologie]] · Formule pravdivá v každém ohodnocení, např. a ∨ ¬a.
