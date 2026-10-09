@@ -417,4 +417,4 @@ Opačný směr k výběru: začneš s nezávislými vektory a přidáváš.
 > $\dim\{\vec{0}\} = $ **0** (báze je $()$). $(2; 4) = 2(1; 2)$, takže obal je přímka s bází $((1; 2))$ a dimenze je **1**.
 
 ---
-← [[LAG 04 – Lineární závislost a nezávislost|2. 10. 2026 Lineární závislost a nezávislost]]
+← [[LAG 04 – Lineární závislost a nezávislost|2. 10. 2026 Lineární závislost a nezávislost]] · [[LAG 06 – Souřadnice, součet a průnik podprostorů|9. 10. 2026 Souřadnice, součet a průnik podprostorů]] →

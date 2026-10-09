@@ -10,7 +10,7 @@ tags: [predmet, LGR]
 
 [Přednášky: prezentace a videa ↗](https://math.fel.cvut.cz/en/people/gollova/lgr/lgr-prednaska.html) · [Prezentace 1 (PDF) ↗](https://math.fel.cvut.cz/en/people/gollova/lgr/lgr_1.pdf) · [Stránka předmětu ↗](https://math.fel.cvut.cz/en/people/gollova/lgr.html) · [Literatura ↗](https://math.fel.cvut.cz/en/people/gollova/lgr/lgr-literatura.html) · [Testy v Moodle ↗](https://moodle.fel.cvut.cz/course/view.php?id=10550) · [Videopřednášky (YouTube) ↗](https://www.youtube.com/playlist?list=PLQL6z4JeTTQkjV5JYF0gB599ekq4zFfPK)
 
-**Kartičky:** 71 povinných + 23 příkladů · [otevřít aplikaci ↗](https://claude.ai/artifact/3CKfKeuwtwrWiz3FSfSh5B) · [[Archiv přednášek#Kartičky|jak to funguje]]
+**Kartičky:** 97 povinných + 31 příkladů · [otevřít aplikaci ↗](https://claude.ai/artifact/3CKfKeuwtwrWiz3FSfSh5B) · [[Archiv přednášek#Kartičky|jak to funguje]]
 
 ## Přednášky
 
@@ -18,6 +18,7 @@ tags: [predmet, LGR]
 - **25. 9. 2026** [[LGR 02 – Tautologická ekvivalence a úplné systémy spojek|Tautologická ekvivalence a úplné systémy spojek]] · formalizace, booleovské funkce, |=|, NAND, NOR, XOR, úplné systémy spojek
 - **1. 10. 2026** [[LGR 03 – Disjunktivní a konjunktivní normální forma|Disjunktivní a konjunktivní normální forma]] · literál, minterm, maxterm, DNF, CNF, úplná DNF/CNF
 - **8. 10. 2026** [[LGR 04 – Sémantický důsledek a klauzální tvar|Sémantický důsledek a klauzální tvar]] · splnitelnost množiny, prázdná množina, S ⊨ φ, důkaz sporem, klauzální tvar, rezolventa
+- **9. 10. 2026** [[LGR 05 – Rezoluční princip|Rezoluční princip]] · R*(S), zamítací strom, rezoluční princip, 3ⁿ klauzulí, eliminace proměnné, rezoluční tabulka
 
 ## Plán semestru
 
@@ -47,10 +48,12 @@ tags: [predmet, LGR]
 - [[absorpce]] · α ∨ (β ∧ α) ⊨⊨ α a duálně; přidaný člen nic nezmění.
 - [[booleovská funkce]] · Sloupec pravdivostní tabulky: f : {0, 1}ⁿ → {0, 1}. Pro n proměnných jich je 2^(2ⁿ).
 - [[disjunktivní normální forma]] · DNF: disjunkce mintermů. Má ji každá formule.
+- [[ekvisplnitelné množiny]] · Obě splnitelné, nebo obě ne; svědky se lišit mohou.
 - [[formule]] · Výrok zapsaný z proměnných, spojek a závorek podle pravidel. α, β zastupují libovolnou formuli.
 - [[hloubka formule]] · Počet pater syntaktického stromu; proměnná 0, každá spojka +1.
 - [[implikace]] · Slib „jestliže α, pak β“. Nepravdivá jen pro 1 ⇒ 0.
 - [[klauzální tvar]] · Kl(S): formule rozsekané přes CNF na klauzule bez tautologií; splnitelný iff S splnitelná.
+- [[komplementární literály]] · x a ¬x: stejná proměnná jednou pozitivně, jednou negativně.
 - [[konjunktivní normální forma]] · CNF: konjunkce maxtermů. Má ji každá formule.
 - [[kontradikce]] · Formule nepravdivá v každém ohodnocení, např. a ∧ ¬a.
 - [[literál]] · Proměnná nebo její negace: a, ¬a.
@@ -58,9 +61,14 @@ tags: [predmet, LGR]
 - [[maxterm]] · Disjunkce literálů (nebo literál, nebo ff), též klauzule.
 - [[minterm]] · Konjunkce literálů (nebo literál, nebo tt), např. a ∧ ¬b.
 - [[modus ponens]] · Z a a a ⇒ b plyne b.
+- [[obměněná implikace]] · φ ⇒ ψ ⊨⊨ ¬ψ ⇒ ¬φ; základ důkazu obměnou.
 - [[Peirceova šipka]] · NOR, „ani jedno“. Sama tvoří úplný systém spojek.
+- [[populace rezolvent]] · R*(S): S a všechny rezolventy, rezolventy rezolvent atd.; pravdivá tam, kde S.
 - [[pravdivostní ohodnocení]] · Přiřazení 0/1 všem formulím podle tabulky spojek. Určí ho hodnoty proměnných; pro n proměnných 2ⁿ možností.
 - [[pravidlo slučování]] · (α ∨ x) ∧ (α ∨ ¬x) ⊨⊨ α a duálně; proměnná, na které nezáleží, zmizí.
+- [[prázdná klauzule]] · Disjunkce bez literálů, ff; nepravdivá vždy. Vzniká jako res(x, ¬x).
+- [[rezoluční princip]] · Konečná S je splnitelná, právě když ff ∉ R*(S).
+- [[rezoluční tabulka]] · Vyrezolvuje proměnné jednu po druhé; konec {ff} = nesplnitelná, ∅ = splnitelná.
 - [[rezolventa]] · Ze α ∨ x a β ∨ ¬x vznikne α ∨ β; plyne z obou. Prázdná rezolventa ff znamená nesplnitelnost.
 - [[sémantický důsledek]] · S ⊨ φ: kdykoli platí všechny předpoklady, platí i závěr; u(S) ≤ u(φ).
 - [[Shefferova čárka]] · NAND, „ne obojí zároveň“. Sama tvoří úplný systém spojek.
@@ -71,10 +79,13 @@ tags: [predmet, LGR]
 - [[tautologie]] · Formule pravdivá v každém ohodnocení, např. a ∨ ¬a.
 - [[úplná normální forma]] · DNF/CNF, kde každý term obsahuje všechny proměnné; vzniká z tabulky.
 - [[úplný systém logických spojek]] · Spojky, kterými jde zapsat každá booleovská funkce: {¬, ∧, ∨}, {¬, ⇒}, {|}, {↓}.
+- [[věta o eliminaci proměnné]] · S splnitelná iff S₀ ∪ Rₓ splnitelná; klauzule s x jde po rezoluci zahodit.
 - [[věta o normálních formách]] · Ke každé formuli existuje ekvivalentní DNF i CNF (ne jednoznačně).
 - [[věta o sémantickém důkazu sporem]] · S ⊨ φ právě když S ∪ {¬φ} je nesplnitelná.
 - [[vylučovací nebo]] · XOR, „buď, anebo“: pravdivé, když se hodnoty liší.
 - [[výrok]] · Oznamovací věta, u které se dá rozhodnout o pravdivosti.
+- [[základní tvar klauzulí]] · Každá proměnná je v klauzuli nejvýš jednou; bez tautologií.
+- [[zamítací strom]] · Strom rezolucí od klauzulí z S ke kořeni ff; důkaz nesplnitelnosti.
 
 ## Jak se předmět hodnotí
 

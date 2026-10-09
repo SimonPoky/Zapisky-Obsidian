@@ -316,4 +316,4 @@ Pokračování: $\neg q \vee t$ s $\neg t \vee r$ dá $\neg q \vee r$, to s $\ne
 > $\mathrm{Kl}(S \cup \{\neg p\}) = \{p \vee q, \neg q \vee s, \neg q \vee \neg r, \neg t \vee r, \neg s \vee t, \neg p\}$. Rezolventy: $q$; $\neg q \vee t$; $\neg q \vee r$; $\neg q$; $\mathrm{ff}$. Nesplnitelná, tedy **$S \models p$**.
 
 ---
-← [[LGR 03 – Disjunktivní a konjunktivní normální forma|1. 10. 2026 Disjunktivní a konjunktivní normální forma]]
+← [[LGR 03 – Disjunktivní a konjunktivní normální forma|1. 10. 2026 Disjunktivní a konjunktivní normální forma]] · [[LGR 05 – Rezoluční princip|9. 10. 2026 Rezoluční princip]] →
