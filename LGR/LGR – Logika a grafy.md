@@ -44,6 +44,7 @@ tags: [predmet, LGR]
 
 *Najetím myší na pojem uvidíš náhled, klepnutím otevřeš jeho poznámku.*
 
+- [[absorpce]] · α ∨ (β ∧ α) ⊨⊨ α a duálně; přidaný člen nic nezmění.
 - [[booleovská funkce]] · Sloupec pravdivostní tabulky: f : {0, 1}ⁿ → {0, 1}. Pro n proměnných jich je 2^(2ⁿ).
 - [[disjunktivní normální forma]] · DNF: disjunkce mintermů. Má ji každá formule.
 - [[formule]] · Výrok zapsaný z proměnných, spojek a závorek podle pravidel. α, β zastupují libovolnou formuli.
@@ -56,8 +57,10 @@ tags: [predmet, LGR]
 - [[logická proměnná]] · Písmenko za jednoduchý výrok; atomická formule, list stromu.
 - [[maxterm]] · Disjunkce literálů (nebo literál, nebo ff), též klauzule.
 - [[minterm]] · Konjunkce literálů (nebo literál, nebo tt), např. a ∧ ¬b.
+- [[modus ponens]] · Z a a a ⇒ b plyne b.
 - [[Peirceova šipka]] · NOR, „ani jedno“. Sama tvoří úplný systém spojek.
 - [[pravdivostní ohodnocení]] · Přiřazení 0/1 všem formulím podle tabulky spojek. Určí ho hodnoty proměnných; pro n proměnných 2ⁿ možností.
+- [[pravidlo slučování]] · (α ∨ x) ∧ (α ∨ ¬x) ⊨⊨ α a duálně; proměnná, na které nezáleží, zmizí.
 - [[rezolventa]] · Ze α ∨ x a β ∨ ¬x vznikne α ∨ β; plyne z obou. Prázdná rezolventa ff znamená nesplnitelnost.
 - [[sémantický důsledek]] · S ⊨ φ: kdykoli platí všechny předpoklady, platí i závěr; u(S) ≤ u(φ).
 - [[Shefferova čárka]] · NAND, „ne obojí zároveň“. Sama tvoří úplný systém spojek.
@@ -68,6 +71,8 @@ tags: [predmet, LGR]
 - [[tautologie]] · Formule pravdivá v každém ohodnocení, např. a ∨ ¬a.
 - [[úplná normální forma]] · DNF/CNF, kde každý term obsahuje všechny proměnné; vzniká z tabulky.
 - [[úplný systém logických spojek]] · Spojky, kterými jde zapsat každá booleovská funkce: {¬, ∧, ∨}, {¬, ⇒}, {|}, {↓}.
+- [[věta o normálních formách]] · Ke každé formuli existuje ekvivalentní DNF i CNF (ne jednoznačně).
+- [[věta o sémantickém důkazu sporem]] · S ⊨ φ právě když S ∪ {¬φ} je nesplnitelná.
 - [[vylučovací nebo]] · XOR, „buď, anebo“: pravdivé, když se hodnoty liší.
 - [[výrok]] · Oznamovací věta, u které se dá rozhodnout o pravdivosti.
 

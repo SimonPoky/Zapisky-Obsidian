@@ -34,6 +34,8 @@ Minule bylo vidět, že [[lineární prostor|lineárních prostorů]] je spousta
 >
 > je lineární prostor nad $\mathbb{F}$ vzhledem ke stejným operacím jako v $\mathbb{F}[x]$.
 
+^veta-poly-n
+
 Ověřit se dá všech 8 axiomů, hlavní je ale, že sčítání z množiny nevyvede ven, je [[dobře definovaná operace|dobře definované]]:
 
 $$
@@ -90,7 +92,7 @@ Stejně $\gamma \cdot (\alpha_0 + \dots + \alpha_n x^n) = \gamma\alpha_0 + \dots
 
 ## §4 Příklady podprostorů
 
-- $\{\vec{0}\} \le L$ pro libovolné $L$: nejmenší podprostor, tzv. *triviální* `pozn. 2.3`.
+- $\{\vec{0}\} \le L$ pro libovolné $L$: nejmenší podprostor, tzv. *triviální* `pozn. 2.3`. ^triv-podprostor
 - $L \le L$ pro libovolné $L$: největší podprostor.
 - $\emptyset \not\le L$: podle definice musí být podprostor neprázdný.
 - $\mathbb{R}^{\le n}[x] \le \mathbb{R}[x]$: polynomy stupně nejvýše $n$ (§1).
@@ -137,6 +139,8 @@ Soustavě, která má všechny pravé strany nulové, se říká *homogenní*. ^
 
 > [!example] Matice se stopou 0 · pozn. 2.7
 > *Stopa* čtvercové matice je součet prvků na diagonále: $\operatorname{tr}\mathbf{A} = a_{11} + a_{22} + \dots + a_{nn}$. Matice se stopou $0$ tvoří podprostor $\mathbb{F}^{n \times n}$, protože $\operatorname{tr}(\mathbf{A} + \mathbf{B}) = \operatorname{tr}\mathbf{A} + \operatorname{tr}\mathbf{B}$ a $\operatorname{tr}(\alpha\mathbf{A}) = \alpha \operatorname{tr}\mathbf{A}$. Např. $\begin{pmatrix} 1 & 2 \\ 3 & -1 \end{pmatrix}$ má stopu $1 + (-1) = 0$.
+
+^def-stopa
 
 ## §5 Jak podprostory vyrábět
 
@@ -248,9 +252,6 @@ Poznámky:
 
 > [!karta|14]- Čemu se rovná $\operatorname{span} V$ pro podprostor $V \le L$?
 > Samotnému $V$. Podprostor je uzavřený na lineární kombinace, takže nic nového nevznikne. Speciálně $\operatorname{span} L = L$.
-
-> [!karta|15]- Co říká věta 2.13 a cvičení 2.14 o $\operatorname{span} M$?
-> $\operatorname{span} M$ je vždy **podprostor** $L$, a to **nejmenší** podprostor obsahující $M$: $\operatorname{span} M = \bigcap \{V \mid M \subseteq V \le L\}$.
 
 > [!karta|16]- Jak geometricky vypadá $\operatorname{span}\{\vec{x}, \vec{y}\}$ v $\mathbb{R}^3$?
 > Pro $\vec{x}, \vec{y}$, které nejsou násobky jednoho vektoru: **rovina přes počátek**. Jsou-li to násobky téhož nenulového vektoru, jen přímka; pro $\vec{x} = \vec{y} = \vec{0}$ jen $\{\vec{0}\}$.

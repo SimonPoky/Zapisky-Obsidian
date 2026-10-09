@@ -35,6 +35,7 @@ tags: [predmet, MA1]
 - [[iracionální číslo]] · Reálné číslo, které nejde napsat zlomkem, např. √2. V ℚ je na jeho místě díra.
 - [[jednostranná limita]] · Limita jen zleva (x → p⁻) nebo zprava (x → p⁺); oboustranná existuje, když se shodují.
 - [[limita ve směru]] · Ke každému terči kolem L existuje kus směru, jehož celý obraz padne do terče. Jedna definice pro x → p, n → ∞ i x → −∞.
+- [[linearita limity]] · Limita lineární kombinace = kombinace (vlastních) limit.
 - [[maximum]] · Horní odhad, který sám leží v množině. Když existuje, je to i supremum.
 - [[minimum]] · Dolní odhad, který sám leží v množině. Každá neprázdná podmnožina ℕ ho má.
 - [[následník]] · Další číslo v řadě: succ(n) = n ∪ {n}, tedy n + 1.
@@ -42,6 +43,7 @@ tags: [predmet, MA1]
 - [[nerovnost ve směru]] · Nerovnost, která platí jen „nakonec“, na jednom kusu směru blízko cíle.
 - [[nevlastní limita]] · Limita rovná ±∞. Vlastní je reálné číslo; rozhoduje výsledek, ne směr.
 - [[okolí]] · Terč kolem cíle: (L − ε; L + ε), u +∞ interval (ε; +∞].
+- [[omezenost ve směru]] · |f| ≤ c na některém kusu směru.
 - [[podmnožina]] · A ⊆ B: všechno z A je i v B. Prázdná množina je podmnožinou čehokoliv.
 - [[podposloupnost]] · Výběr nekonečně mnoha členů ve stejném pořadí; má stejnou limitu jako celá posloupnost.
 - [[posloupnost]] · Funkce na nekonečné podmnožině ℕ, píše se aₙ. Pro limitu rozhoduje jen „ocas“.
@@ -61,8 +63,15 @@ tags: [predmet, MA1]
 - [[supremum]] · Nejnižší strop, nejmenší horní odhad. Existuje i tam, kde chybí maximum.
 - [[uspořádaná množina]] · Množina s pravidlem „kdo je pod kým“: reflexivní, tranzitivní, antisymetrické.
 - [[věta o aritmetice limit]] · Limita součtu, součinu, podílu je součet, součin, podíl limit, pokud to v ℝ* dává smysl.
+- [[věta o detekci limity]] · Limitu určí substituce se stejnou limitou, jejichž obrazy pokryjí kus směru.
+- [[věta o jednoznačnosti limity]] · Limita ve směru je nejvýš jedna.
+- [[věta o limitě monotónní posloupnosti]] · Monotónní posloupnost má limitu: supremum, resp. infimum členů.
+- [[věta o omezenosti funkce s vlastní limitou]] · Vlastní limita ⇒ funkce je ve směru omezená.
+- [[věta o rovnosti ve směru]] · Funkce, které se ve směru shodují, mají stejnou limitu.
 - [[věta o sevření]] · Funkce sevřená mezi dvěma se stejnou limitou L má limitu L taky (dva policajti).
+- [[věta o součinu nulové a omezené funkce]] · Nula krát omezená je nula.
 - [[věta o substituci]] · Limita f(φ(x)) je lim f, když φ míří do cíle a na kusu směru do něj nedopadne.
+- [[věta o znaménku limity]] · L > 0 ⇒ f > 0 blízko cíle; f ≥ 0 ⇒ L ≥ 0.
 
 ## Jak se předmět hodnotí
 

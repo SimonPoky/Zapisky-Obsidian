@@ -95,6 +95,8 @@ Zvol libovolnou formuli $\varphi$. Předpoklad $\varphi \in \emptyset$ je neprav
 > [!example] $\{a, a \Rightarrow b\} \models b$
 > Obojí je pravdivé jen v řádku $a = 1, b = 1$ a tam je $b = 1$. Tohle je *modus ponens*: když platí $a$ a „z $a$ plyne $b$“, platí $b$.
 
+^modus-ponens
+
 > [!obrazek] Je $a$ nebo $b$ důsledkem $\{a \Rightarrow b, a \vee b\}$?
 > ![[lgr04-dusledek.png]]
 > *Zeleně řádky, kde je celá množina $S$ pravdivá; jen ty se kontrolují. Oranžově vstupní proměnné, modře formule. Vpravo kontrola závěru: červeně řádek, který ho vyvrací.*
@@ -245,9 +247,6 @@ Pokračování: $\neg q \vee t$ s $\neg t \vee r$ dá $\neg q \vee r$, to s $\ne
 
 *Oranžové kartičky (pojmy a teorie) jsou v aplikaci [[Archiv přednášek#Kartičky|Kartičky]] povinné k dennímu opakování, pojmy z této přednášky taky. Zelené příklady jsou tam jen na procvičení. Nejdřív odpověz nahlas nebo na papír, pak rozklikni.*
 
-> [!karta|01]- Kdy je množina formulí $S$ pravdivá v ohodnocení $u$?
-> $u(S) = 1$, právě když $u(\varphi) = 1$ pro **všechny** $\varphi \in S$.
-
 > [!karta|02]- Jak u konečné množiny $\{\varphi_1, \dots, \varphi_n\}$ nahradíš $u(S)$ jednou formulí, a proč to u nekonečné nejde?
 > $u(S) = u(\varphi_1 \wedge \dots \wedge \varphi_n)$, tedy **konjunkce**. Množina formulí může být nekonečná a nekonečnou konjunkci zapsat nejde.
 
@@ -268,9 +267,6 @@ Pokračování: $\neg q \vee t$ s $\neg t \vee r$ dá $\neg q \vee r$, to s $\ne
 
 > [!karta|08]- Co znamená $\models \varphi$ (důsledek prázdné množiny)?
 > $\varphi$ je **tautologie**, protože $u(\emptyset) = 1$ v každém ohodnocení.
-
-> [!karta|09]- Co tvrdí věta o sémantickém důkazu sporem?
-> $S \models \varphi$, právě když **$S \cup \{\neg\varphi\}$ je nesplnitelná**.
 
 > [!karta|10]- Dokaž směr „⇒“ věty o sémantickém důkazu sporem.
 > Nechť $S \models \varphi$ a $u$ libovolné. Je-li $u(S) = 1$, pak $u(\varphi) = 1$, tedy $u(\neg\varphi) = 0$ a $u(S') = 0$. Je-li $u(S) = 0$, pak $u(S') = 0$, protože $S \subseteq S'$. Tedy $S'$ je **nesplnitelná**.

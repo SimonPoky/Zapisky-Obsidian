@@ -10,7 +10,7 @@ tags: [predmet, LAG]
 
 [Poznámky k přednáškám (PDF) ↗](https://math.fel.cvut.cz/cz/lide/gromadan/LA26/notes.pdf) · [Stránka přednášky ↗](https://math.fel.cvut.cz/cz/lide/gromadan/lag26p.html) · [Sbírka příkladů (Velebil) ↗](https://math.fel.cvut.cz/en/people/velebil/files/lag_2026_podzim/lag_sbirka_2026_01_21.pdf)
 
-**Kartičky:** 101 povinných + 31 příkladů · [otevřít aplikaci ↗](https://claude.ai/artifact/3CKfKeuwtwrWiz3FSfSh5B) · [[Archiv přednášek#Kartičky|jak to funguje]]
+**Kartičky:** 107 povinných + 31 příkladů · [otevřít aplikaci ↗](https://claude.ai/artifact/3CKfKeuwtwrWiz3FSfSh5B) · [[Archiv přednášek#Kartičky|jak to funguje]]
 
 ## Přednášky
 
@@ -24,8 +24,10 @@ tags: [predmet, LAG]
 
 *Najetím myší na pojem uvidíš náhled, klepnutím otevřeš jeho poznámku.*
 
+- [[alternativní definice lineární závislosti]] · LZ právě když je některý vektor kombinací ostatních (i jen předchozích).
 - [[axiomy lineárního prostoru]] · 8 pravidel počítání, která se nedokazují, ale požadují. Říkají, že se sčítáním a násobením vektorů zacházíš jako u čísel.
 - [[báze]] · Souřadnicový systém: vektory, ze kterých poskládáš každý vektor prostoru, a to jediným způsobem. LN a generuje.
+- [[charakterizace báze]] · Báze = minimální generující = maximální LN posloupnost.
 - [[číselné těleso]] · Sada čísel, ve které můžeš sčítat, odčítat, násobit i dělit (ne nulou) a nikdy z ní nevypadneš. ℚ, ℝ, ℂ ano; ℤ ne, protože 1 : 2 = 0,5 v ℤ není.
 - [[dimenze]] · Počet prvků báze, tedy počet nezávislých směrů: přímka 1, rovina 2, 𝔽ⁿ má n, všechny polynomy ∞.
 - [[dobře definovaná operace]] · Operace nevyvede z množiny ven: součet dvou polynomů stupně ≤ n je zase polynom stupně ≤ n.
@@ -42,6 +44,7 @@ tags: [predmet, LAG]
 - [[lineární rovnice]] · Úloha „kolikrát musím vzít a, abych dostal b“. Když a ≠ 0, je odpověď jediná: b/a.
 - [[lineární závislost]] · Nula jde z vektorů namíchat i netriviálně, takže aspoň jeden vektor jde poskládat z ostatních. Např. ((1; 2), (2; 4)).
 - [[matice]] · Tabulka čísel s m řádky a n sloupci. Pro sčítání je to jen sloupec m·n čísel poskládaný do obdélníku.
+- [[netriviální lineární kombinace]] · Kombinace s aspoň jedním nenulovým koeficientem.
 - [[nulový polynom]] · Polynom, který má všechny koeficienty nulové. Je to nulový vektor prostoru polynomů a jeho stupeň je dohodou −∞.
 - [[nulový vektor]] · Vektor, který nic nezmění, když ho přičteš. Obdoba nuly u čísel; v každém prostoru je právě jeden (věta 1.8).
 - [[opačný vektor]] · Vektor, který daný vektor „vynuluje“. U šipek je to stejná šipka opačným směrem.
@@ -50,14 +53,27 @@ tags: [predmet, LAG]
 - [[polynomiální funkce]] · Polynom je recept, polynomiální funkce hotové jídlo: co vyjde po dosazení. Nad číselnými tělesy si odpovídají jedna ku jedné.
 - [[posloupnosti]] · Nekonečně dlouhý sloupec čísel. Sčítá se člen po členu.
 - [[prostor funkcí]] · Funkce je vektor, jehož „pozice“ nejsou 1, …, n, ale prvky množiny A. Hodnota f(t) je složka na pozici t.
+- [[prostor polynomů stupně nejvýše n]] · Polynomy se stupněm nejvýše n; podprostor 𝔽[x] dimenze n + 1.
 - [[rozšířená matice soustavy]] · Soustava zapsaná jen čísly: koeficienty u neznámých v tabulce, pravé strany za svislou čarou. Neznámé se nepíšou, poznají se podle sloupce.
 - [[skalár]] · Obyčejné číslo z tělesa 𝔽, kterým vektory natahuješ, zkracuješ nebo otáčíš.
 - [[sloupcové vektory]] · Sloupce n čísel. Nejběžnější lineární prostor; skoro všechno se do něj nakonec převede.
 - [[souřadnice]] · Návod „kolik kroků kterým směrem“ vede k bodu. Změníš-li směry kroků, změní se čísla v návodu, bod zůstane stejný.
+- [[Steinitzova věta]] · LN posloupnost nemá víc prvků než generující posloupnost.
+- [[stopa matice]] · Součet prvků na diagonále čtvercové matice.
 - [[stupeň polynomu]] · Nejvyšší mocnina x, která v polynomu opravdu je, tedy s nenulovým číslem před sebou.
 - [[triviální lineární kombinace]] · Všechny koeficienty nulové, výsledek je vždy nulový vektor.
+- [[triviální podprostor]] · Podprostor {0}, nejmenší podprostor každého prostoru.
 - [[vedoucí člen]] · Člen s nejvyšší mocninou x, která v polynomu je. U 2 + 3x − x² je to −x².
 - [[vektor]] · Cokoliv, co jde sčítat s jinými takovými věcmi a násobit číslem podle 8 pravidel: šipka, sloupec čísel, polynom i funkce.
+- [[věta o dimenzi podprostoru]] · Podprostor má nejvýš takovou dimenzi jako prostor; při konečné dimenzi rovnost jen pro V = L.
+- [[věta o doplnění na bázi]] · LN posloupnost v prostoru konečné dimenze jde doplnit na bázi.
+- [[věta o jednoznačnosti vyjádření]] · LN právě když se každý vektor dá vyjádřit nejvýš jedním způsobem.
+- [[věta o lineárním obalu]] · span M je vždy podprostor, a to nejmenší podprostor obsahující M.
+- [[věta o odebírání a přidávání vektorů]] · Odebráním z LN posloupnosti zůstane LN, přidáním k LZ zůstane LZ.
+- [[věta o počtu prvků báze]] · Všechny báze prostoru mají stejný počet prvků.
+- [[věta o podprostoru]] · Podprostor je sám lineární prostor, stačí ověřit neprázdnost a dvě uzavřenosti.
+- [[věta o přidání vektoru k LN posloupnosti]] · K LN posloupnosti jde přidat v se zachováním LN, právě když v neleží v jejím obalu.
+- [[věta o výběru báze]] · Z konečné generující množiny jde vybrat bázi.
 
 ## Jak se předmět hodnotí
 

@@ -270,9 +270,6 @@ Důkaz sporem: ať $\lim (-1)^n = L \in \mathbb{R}^*$. Každý kus směru $\{n >
 > [!karta|11]- Myšlenka důkazu, že limita je nejvýš jedna?
 > Pro $L_1 \neq L_2$ vezmi disjunktní okolí $U_1, U_2$ a k nim $P_1, P_2$. Směr je vnořený, menší z nich (třeba $P_2$) se zobrazí do $U_1 \cap U_2 = \emptyset$, ale $P_2 \neq \emptyset$ ↯
 
-> [!karta|12]- Čemu se rovná limita neklesající posloupnosti?
-> $\sup\{a_n \mid n \ge n_0\}$ v $\mathbb{R}^*$ (může být $+\infty$). Pro nerostoucí infimum.
-
 > [!karta|14]- Přepiš $\lim_{x \to p} f(x) = L \in \mathbb{R}$ pomocí $\varepsilon$ a $\delta$.
 > Pro všechna $\varepsilon > 0$ existuje $\delta > 0$ tak, že z $0 < |x - p| < \delta$ plyne $|f(x) - L| < \varepsilon$.
 

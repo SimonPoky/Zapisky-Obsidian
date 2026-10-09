@@ -206,11 +206,8 @@ Ať $f \ge_{\mathcal{S}} 0$ (na $P_1$) a $L < 0$. Podle 2b je $f <_{\mathcal{S}}
 
 *Oranžové kartičky (pojmy a teorie) jsou v aplikaci [[Archiv přednášek#Kartičky|Kartičky]] povinné k dennímu opakování, pojmy z této přednášky taky. Zelené příklady jsou tam jen na procvičení. Nejdřív odpověz nahlas nebo na papír, pak rozklikni.*
 
-> [!karta|01]- Co znamená $f \le_{\mathcal{S}} g$?
-> **Existuje** $P \in \mathcal{S}$ tak, že $f(x) \le g(x)$ pro všechna $x \in P$. Nerovnost stačí „nakonec“, blízko cíle.
-
-> [!karta|02]- Co tvrdí věta o rovnosti ve směru a k čemu se hodí?
-> $f =_{\mathcal{S}} g$ a $\lim_{\mathcal{S}} f = L$ ⇒ **$\lim_{\mathcal{S}} g = L$**. Ospravedlňuje krácení v limitě, např. $\frac{x^2 - 9}{x - 3} =_{x \to 3} x + 3$.
+> [!karta|02]- K čemu se hodí věta o rovnosti ve směru? Příklad.
+> Ospravedlňuje **krácení v limitě**: $\frac{x^2 - 9}{x - 3} =_{x \to 3} x + 3$ (liší se jen v bodě $3$), takže $\lim_{x \to 3} \frac{x^2 - 9}{x - 3} = 6$.
 
 > [!karta|03]- Jak se dokáže $\lim_{\mathcal{S}} (-f) = -L$?
 > Zrcadlení $-U = \{r \mid -r \in U\}$ převede okolí $-L$ na okolí $L$. K $-U$ najdi $P$ s $f[P] \subseteq -U$, pak $(-f)[P] \subseteq U$.
@@ -224,23 +221,17 @@ Ať $f \ge_{\mathcal{S}} 0$ (na $P_1$) a $L < 0$. Podle 2b je $f <_{\mathcal{S}}
 > [!karta|06]- Plyne z $f >_{\mathcal{S}} 0$, že $\lim_{\mathcal{S}} f > 0$? Protipříklad.
 > **Ne**, jen $\ge 0$. $\frac{1}{x} > 0$, ale $\lim_{x \to +\infty} \frac{1}{x} = 0$.
 
-> [!karta|07]- Zformuluj větu o sevření.
-> $f \le_{\mathcal{S}} g \le_{\mathcal{S}} h$ a $\lim_{\mathcal{S}} f = \lim_{\mathcal{S}} h = L$ ⇒ **$\lim_{\mathcal{S}} g$ existuje** a rovná se $L$.
-
 > [!karta|08]- Myšlenka důkazu věty o sevření?
 > K okolí $U$ vezmi $P_f$, $P_h$ a kus, kde platí nerovnosti; nejmenší z nich $P$. Na něm $f(x), h(x) \in U$ a $g(x)$ leží mezi nimi; okolí je interval, tedy $g(x) \in U$.
 
-> [!karta|09]- Co tvrdí tvrzení I o omezenosti a jak se používá?
-> Vlastní limita $L \in \mathbb{R}$ ⇒ $f$ je ve směru **omezená**. Kontrapozice: neomezená ve směru ⇒ limita je $\pm\infty$ nebo neexistuje.
+> [!karta|09]- Jak se používá tvrzení I (vlastní limita ⇒ omezenost) obráceně?
+> Kontrapozicí: je-li $f$ ve směru **neomezená**, je její limita $\pm\infty$, nebo neexistuje. Vlastní být nemůže.
 
 > [!karta|10]- Plyne z omezenosti $f$ ve směru existence limity?
 > **Ne.** $\sin x$ je omezená, ale $\lim_{x \to +\infty} \sin x$ neexistuje.
 
 > [!karta|11]- Jak souvisí $\lim_{x \to p} f$ s jednostrannými limitami?
 > $\lim_{x \to p} f = L \iff \lim_{x \to p^-} f = L = \lim_{x \to p^+} f$. Různé jednostranné limity ⇒ oboustranná neexistuje.
-
-> [!karta|12]- Co tvrdí tvrzení III („nula krát omezená“)?
-> $\lim_{\mathcal{S}} f = 0$ a $\lvert g \rvert \le_{\mathcal{S}} c$ ⇒ **$\lim_{\mathcal{S}} (f g) = 0$**. Důkaz: $-c\lvert f \rvert \le fg \le c\lvert f \rvert$ a věta o sevření.
 
 > [!karta|13]- Proč je v tvrzení III nutná omezenost $g$? Protipříklad.
 > $f = x \to 0$, $g = \frac{1}{x^2}$ neomezená v $x \to 0$: $fg = \frac{1}{x}$ v nule limitu nemá.

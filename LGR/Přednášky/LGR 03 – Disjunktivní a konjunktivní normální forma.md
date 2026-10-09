@@ -146,20 +146,11 @@ Postup (slajdy 17–18):
 > [!karta|01]- Jaký je rozdíl mezi mintermem a maxtermem?
 > **Minterm** je konjunkce literálů (nebo literál, nebo $\mathrm{tt}$), **maxterm** disjunkce literálů (nebo literál, nebo $\mathrm{ff}$).
 
-> [!karta|02]- Co tvrdí věta o normálních formách?
-> Ke každé formuli $\varphi$ existují $\varphi_{DNF}$ a $\varphi_{CNF}$ s $\varphi \mathrel{\vert\!=\!\vert} \varphi_{DNF}$ a $\varphi \mathrel{\vert\!=\!\vert} \varphi_{CNF}$. **Nejsou jednoznačné.**
-
 > [!karta|03]- Jaké jsou kroky převodu na DNF/CNF ekvivalentními úpravami?
 > 1. spojky přepsat na $\neg, \wedge, \vee$
 > 2. negace k proměnným (De Morgan)
 > 3. pořadí $\wedge$, $\vee$ distributivitou
 > 4. zjednodušit (absorpce, slučování)
-
-> [!karta|04]- Napiš pravidlo absorpce (obě verze).
-> $\alpha \vee (\beta \wedge \alpha) \mathrel{\vert\!=\!\vert} \alpha$ a $\alpha \wedge (\beta \vee \alpha) \mathrel{\vert\!=\!\vert} \alpha$.
-
-> [!karta|05]- Napiš pravidlo slučování.
-> $(\alpha \vee x) \wedge (\alpha \vee \neg x) \mathrel{\vert\!=\!\vert} \alpha$ a duálně $(\alpha \wedge x) \vee (\alpha \wedge \neg x) \mathrel{\vert\!=\!\vert} \alpha$.
 
 > [!karta|06]- Jak z tabulky získáš DNF?
 > Pro každý řádek s **1** minterm: proměnná s hodnotou 1 jako $a$, s hodnotou 0 jako $\neg a$. Mintermy spojíš $\vee$.

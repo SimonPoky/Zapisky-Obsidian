@@ -315,9 +315,6 @@ Věta o substituci jde jedním směrem: z limity $f$ dostaneme limitu $f \circ \
 
 *Oranžové kartičky (pojmy a teorie) jsou v aplikaci [[Archiv přednášek#Kartičky|Kartičky]] povinné k dennímu opakování, pojmy z této přednášky taky. Zelené příklady jsou tam jen na procvičení. Nejdřív odpověz nahlas nebo na papír, pak rozklikni.*
 
-> [!karta|01]- Zformuluj větu o aritmetice limit.
-> $\lim_{\mathcal{S}} f = L$, $\lim_{\mathcal{S}} g = M$ ($L, M \in \mathbb{R}^*$), $\star \in \{+, -, \cdot, /\}$. **Je-li $L \star M$ definováno**, pak $\lim_{\mathcal{S}} (f \star g)$ existuje a rovná se $L \star M$.
-
 > [!karta|02]- Které výrazy v $\mathbb{R}^*$ nejsou definované?
 > $(+\infty) + (-\infty)$, $0 \cdot (\pm\infty)$, $\frac{\pm\infty}{\pm\infty}$ a $\frac{L}{0}$ pro jakékoli $L$ (i $\frac{1}{0}$).
 
@@ -327,26 +324,17 @@ Věta o substituci jde jedním směrem: z limity $f$ dostaneme limitu $f \circ \
 > [!karta|04]- Proč funkce s vlastní limitou ve směru $\mathcal{S}$ tvoří lineární podprostor $\mathrm{Func}(D; \mathbb{R})$?
 > Nulová funkce má limitu $0$; podle aritmetiky $\lim (f + g) = L + M \in \mathbb{R}$ a $\lim rf = rL \in \mathbb{R}$. Navíc $\lim_{\mathcal{S}}$ zachovává **lineární kombinace**: $\lim \sum r_i f_i = \sum r_i \lim f_i$.
 
-> [!karta|05]- Zformuluj větu o substituci v limitě.
-> Ať (1) $\lim_{\mathcal{T}} f = L$ a (2) pro každé $T \in \mathcal{T}$ existuje $P \in \mathcal{S}$ s $\varphi[P] \subseteq T$. Pak **$\lim_{\mathcal{S}} (f \circ \varphi) = L$**.
-
 > [!karta|06]- Dokaž větu o substituci.
 > K $U \in \mathcal{N}(L)$ najdi $T$ s $f[T] \subseteq U$ (z 1), k $T$ najdi $P$ s $\varphi[P] \subseteq T$ (z 2). Pak $(f \circ \varphi)[P] = f[\varphi[P]] \subseteq f[T] \subseteq U$.
 
 > [!karta|07]- Proč je ve větě o substituci nutná podmínka (2)? Protipříklad.
 > $f(z) = 200$ pro $z = 1$, jinak $3$; $\varphi \equiv 1$. $\lim_{z \to 1} f = 3$, $\lim_{x \to 5} \varphi = 1$, ale $f(\varphi(x)) = 200$. Kusy směru $z \to 1$ bod $1$ **neobsahují**, takže $\varphi[P] = \{1\}$ se do žádného nevejde.
 
-> [!karta|08]- Co je vybraná podposloupnost a jakou má limitu?
-> $a_{n_k}$, kde $n_k$ je **rostoucí** posloupnost přirozených čísel. Je-li $\lim a_n = L$, pak $\lim_{k} a_{n_k} = L$ (věta o substituci s $\varphi(k) = n_k$).
-
 > [!karta|09]- Jak souvisí $\lim_{x \to +\infty} f(x)$ a $\lim_{n \to +\infty} f(n)$?
 > Je-li $\lim_{x \to +\infty} f(x) = L$, pak **$\lim_{n \to +\infty} f(n) = L$** (substituce $\varphi(n) = n$). Limitu posloupnosti tak smíš počítat jako limitu funkce.
 
 > [!karta|10]- Plyne z $\lim_{n \to +\infty} f(n) = L$, že $\lim_{x \to +\infty} f(x) = L$? Protipříklad.
 > **Ne.** $f(x) = \sin(\pi x)$: $f(n) = 0 \to 0$, ale $\lim_{x \to +\infty} \sin(\pi x)$ neexistuje.
-
-> [!karta|11]- Co tvrdí věta o detekci limity substitucemi?
-> $\lim_{\mathcal{T}} f = L$ ⇔ existují substituce $\varphi_i$ se směry $\mathcal{S}_i$, že **$\lim_{\mathcal{S}_i} (f \circ \varphi_i) = L$ pro všechna $i$** a pro každou volbu $P_i \in \mathcal{S}_i$ existuje $P \in \mathcal{T}$ s $P \subseteq \bigcup_i \varphi_i[P_i]$ (obrazy **pokryjí** kus směru).
 
 > [!karta|12]- Dokaž směr ⇐ věty o detekci limity.
 > K $U$ vyber $P_i$ s $f[\varphi_i[P_i]] \subseteq U$ pro každé $i$. Podle pokrytí existuje $P \subseteq \bigcup \varphi_i[P_i]$; každé $x \in P$ leží v některém $\varphi_i[P_i]$, tedy $f[P] \subseteq U$.
@@ -359,9 +347,6 @@ Věta o substituci jde jedním směrem: z limity $f$ dostaneme limitu $f \circ \
 
 > [!karta|15]- Jak pomocí podposloupností dokázat, že limita posloupnosti neexistuje?
 > Najdi **dvě podposloupnosti s různými limitami** (nebo jednu bez limity). Kdyby $\lim a_n = L$ existovala, měly by obě limitu $L$.
-
-> [!karta|16]- Kdy je funkce spojitá v bodě $p$?
-> Když je definovaná na okolí $p$ a **$\lim_{x \to p} f(x) = f(p)$**: limita existuje a rovná se hodnotě v bodě.
 
 > [!karta|25]- Jakou limitu má polynom $a_n x^n + \dots + a_0$ ($a_n \neq 0$, $n \ge 1$) pro $x \to +\infty$ a $x \to -\infty$?
 > $x \to +\infty$: **znaménko $a_n$ krát $\infty$**. $x \to -\infty$: totéž pro sudé $n$, opačné znaménko pro liché $n$. Rozhoduje nejvyšší mocnina.

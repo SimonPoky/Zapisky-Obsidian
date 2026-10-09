@@ -226,9 +226,6 @@ Otázka „je některý vektor kombinací ostatních?“ je přesně to, čemu s
 > [!karta|03]- Jak geometricky vypadá $\operatorname{span}\{\vec{x}, \vec{y}, \vec{z}\}$ v $\mathbb{R}^3$?
 > **Celé $\mathbb{R}^3$**, když žádný z vektorů není kombinací ostatních. Jinak rovina, přímka nebo $\{\vec{0}\}$ přes počátek.
 
-> [!karta|04]- Co znamená, že je lineární kombinace netriviální?
-> **Aspoň jeden** koeficient je nenulový (ne nutně všechny).
-
 > [!karta|05]- Proč lineární závislost nezávisí na pořadí vektorů?
 > Sčítání vektorů je **komutativní**: když vektory přeházíš, přeházíš s nimi i koeficienty a kombinace dává totéž.
 
@@ -250,20 +247,11 @@ Otázka „je některý vektor kombinací ostatních?“ je přesně to, čemu s
 > [!karta|11]- Proč se lineární závislost definuje pro posloupnost, a ne pro množinu vektorů?
 > V množině **opakování splyne** ($\{\vec{x}, \vec{x}\} = \{\vec{x}\}$), ale $(\vec{x}, \vec{x})$ je LZ, zatímco $(\vec{x})$ pro $\vec{x} \neq \vec{0}$ je LN.
 
-> [!karta|12]- Co říká věta 3.3?
-> 1. **Odebráním** vektorů z LN posloupnosti vznikne LN posloupnost.
-> 2. **Přidáním** vektorů k LZ posloupnosti vznikne LZ posloupnost.
-
 > [!karta|13]- Jak dokážeš, že odebráním vektorů z LN posloupnosti zůstane LN (věta 3.3.1)?
 > Je-li $\beta_1\vec{x}_1 + \dots + \beta_k\vec{x}_k = \vec{0}$, doplň odebrané vektory s koeficientem **0**. Vznikne kombinace celé LN posloupnosti dávající $\vec{0}$, takže všechna $\beta_i = 0$.
 
 > [!karta|14]- Proč bod 2 věty 3.3 (přidání k LZ) plyne z bodu 1?
 > Je to **obměna**: kdyby přidáním vznikla LN posloupnost, byla by podle bodu 1 LN i původní (vznikne odebráním přidaných), spor.
-
-> [!karta|15]- Jaké tři ekvivalentní podmínky dává věta 3.6 (alternativní definice LZ)?
-> 1. posloupnost je **LZ**,
-> 2. některý $\vec{x}_i$ je kombinací **ostatních**,
-> 3. některý $\vec{x}_i$ je kombinací **předchozích** $\vec{x}_1, \dots, \vec{x}_{i-1}$.
 
 > [!karta|16]- Proč z „$\vec{x}_i$ je kombinací ostatních“ plyne lineární závislost (věta 3.6, (2) ⇒ (1))?
 > Převedeš $\vec{x}_i$ na druhou stranu: $\sum_{j \neq i} \alpha_j\vec{x}_j + (-1)\vec{x}_i = \vec{0}$. Koeficient **$-1 \neq 0$**, kombinace je netriviální.

@@ -354,28 +354,17 @@ Opačný směr k výběru: začneš s nezávislými vektory a přidáváš.
 
 *Oranžové kartičky (pojmy a teorie) jsou v aplikaci [[Archiv přednášek#Kartičky|Kartičky]] povinné k dennímu opakování, pojmy z této přednášky taky. Zelené příklady jsou tam jen na procvičení. Nejdřív odpověz nahlas nebo na papír, pak rozklikni.*
 
-> [!karta|01]- Co říká věta 3.7 o přidání vektoru k LN posloupnosti?
-> Je-li $(\vec{x}_1, \dots, \vec{x}_n)$ LN, pak $(\vec{x}_1, \dots, \vec{x}_n, \vec{v})$ je LN, **právě když $\vec{v} \notin \operatorname{span}\{\vec{x}_1, \dots, \vec{x}_n\}$**.
-
 > [!karta|02]- Jak jde popsat lineární nezávislost pomocí „předchozích“ vektorů?
 > $(\vec{x}_1, \dots, \vec{x}_n)$ je LN, právě když **pro každé $i$ je $\vec{x}_i \notin \operatorname{span}\{\vec{x}_1, \dots, \vec{x}_{i-1}\}$** (obrácení věty 3.6).
 
 > [!karta|03]- Kdy se obal nezmění, když z $\vec{x}_1, \dots, \vec{x}_n$ odebereš $\vec{x}_n$?
 > Právě když $\vec{x}_n \in \operatorname{span}\{\vec{x}_1, \dots, \vec{x}_{n-1}\}$, tedy když je odebraný vektor **kombinací ostatních**.
 
-> [!karta|04]- Co říká věta 4.2 o jednoznačnosti vyjádření?
-> $(\vec{x}_1, \dots, \vec{x}_n)$ je LN, právě když každý $\vec{v} \in L$ jde zapsat jako jejich lineární kombinaci **nejvýše jedním** způsobem.
-
 > [!karta|05]- Jak dokážeš, že u LN posloupnosti je vyjádření vektoru jednoznačné (věta 4.2, ⇒)?
 > Ze dvou vyjádření $\sum \alpha_i\vec{x}_i = \sum \beta_i\vec{x}_i$ odečtením $\sum(\alpha_i - \beta_i)\vec{x}_i = \vec{0}$. Z **LN** jsou všechna $\alpha_i - \beta_i = 0$, tedy $\alpha_i = \beta_i$.
 
 > [!karta|06]- Proč LN posloupnost sama nezaručí, že jde vektor vyjádřit?
 > LN dává jen **nejvýše jedno** vyjádření; existenci zaručí až **generování**. Např. $((1; 0))$ je LN, ale $(0; 1)$ z ní nesložíš.
-
-> [!karta|07]- Jaké tři ekvivalentní popisy báze dává věta 4.5?
-> 1. LN a generuje $L$,
-> 2. **minimální** generující posloupnost (žádná vlastní podposloupnost negeneruje),
-> 3. **maximální** LN posloupnost (přidáním libovolného vektoru vznikne LZ).
 
 > [!karta|26]- Co znamená, že je báze „minimální vzhledem k inkluzi“, a proč to ještě neznamená „nejkratší“?
 > Nejde z ní nic **vyhodit** (žádná vlastní podposloupnost negeneruje). Bez věty 4.7 by mohly existovat dvě báze různé délky, protože kratší nemusí být **podposloupností** delší.
@@ -386,20 +375,14 @@ Opačný směr k výběru: začneš s nezávislými vektory a přidáváš.
 > [!karta|09]- Jak dokážeš, že maximální LN posloupnost generuje $L$ (věta 4.5, (3) ⇒ (1))?
 > Pro libovolné $\vec{v} \in L$ je $(\vec{x}_1, \dots, \vec{x}_n, \vec{v})$ LZ, takže podle **věty 3.7** je $\vec{v} \in \operatorname{span}\{\vec{x}_1, \dots, \vec{x}_n\}$.
 
-> [!karta|10]- Co říká lemma 4.6 (Steinitzova věta) o počtech vektorů?
-> Je-li $(\vec{x}_1, \dots, \vec{x}_k)$ LN a $(\vec{y}_1, \dots, \vec{y}_l)$ generuje $L$, pak **$k \le l$**: nezávislých vektorů není víc než generátorů.
-
 > [!karta|11]- Proč mají všechny báze prostoru stejně prvků (věta 4.7)?
 > Pro báze s $k$ a $l$ prvky: první je LN a druhá generuje, takže $k \le l$ (**lemma 4.6**); po prohození rolí $l \le k$. Tedy $k = l$.
 
 > [!karta|12]- Proč $\dim\mathbb{F}[x] = \infty$?
 > $(1, x, \dots, x^m)$ je LN pro každé $m$. Kdyby existovala báze s $m$ prvky, lemma 4.6 by dalo **$m + 1 \le m$**, spor.
 
-> [!karta|13]- Co říká věta 4.11 a jak se dokazuje?
-> Z **konečné generující množiny** $G$ jde vybrat bázi. Dokud je v $G$ vektor, který je kombinací ostatních, vyhodíme ho (zbytek pořád generuje); $G$ je konečná, takže skončíme u LN generující množiny.
-
-> [!karta|14]- Co říká věta o doplnění LN posloupnosti na bázi?
-> Je-li $\dim L = n < \infty$ a $(\vec{x}_1, \dots, \vec{x}_k)$ LN, existují $\vec{x}_{k+1}, \dots, \vec{x}_n \in L$ takové, že $(\vec{x}_1, \dots, \vec{x}_n)$ je **báze** $L$.
+> [!karta|13]- Jak se dokazuje věta 4.11 (výběr báze z generátorů)?
+> Dokud je v $G$ vektor, který je kombinací ostatních, **vyhodíme ho** (zbytek pořád generuje). $G$ je konečná, takže skončíme u LN generující množiny, tedy báze.
 
 > [!karta|15]- Jak se LN posloupnost doplní na bázi a proč doplňování skončí?
 > Dokud negeneruje, přidej $\vec{v} \notin \operatorname{span}$; podle **věty 3.7** zůstane LN. LN posloupnost má nejvýš $n = \dim L$ prvků (**lemma 4.6**), takže to skončí u báze.
@@ -409,9 +392,6 @@ Opačný směr k výběru: začneš s nezávislými vektory a přidáváš.
 
 > [!karta|25]- Proč se u posloupnosti $n = \dim L$ vektorů ověřuje LN, a ne generování?
 > Podle důsledku stačí jedno. LN = vyřešit **jednu homogenní soustavu**, generování = soustavu pro **každou** pravou stranu.
-
-> [!karta|17]- Co říká věta o dimenzi podprostoru $V \le L$?
-> **$\dim V \le \dim L$** a pro $\dim L < \infty$ platí **$V = L \iff \dim V = \dim L$**.
 
 > [!karta|18]- Proč je ve větě $V = L \iff \dim V = \dim L$ potřeba předpoklad $\dim L < \infty$?
 > Protipříklad: $V = \operatorname{span}\{x, x^2, \dots\} \le \mathbb{F}[x]$ má **$\dim V = \infty = \dim\mathbb{F}[x]$**, ale $1 \notin V$, takže $V \neq \mathbb{F}[x]$.
