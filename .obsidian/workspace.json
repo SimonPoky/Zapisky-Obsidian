@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LGR/Přednášky/LGR 05 – Rezoluční princip.md",
-                "mode": "preview",
+                "file": "Zkouška Gitu.md",
+                "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "LGR 05 – Rezoluční princip"
+              "title": "Zkouška Gitu"
             }
           }
         ]
@@ -190,9 +190,11 @@
       "bases:Create new base": false
     }
   },
-  "active": "d70f69f7743dabdf",
+  "active": "a4301ff296c90ca6",
   "lastOpenFiles": [
+    "Untitled.canvas",
     "LAG/Přednášky/LAG 06 – Souřadnice, součet a průnik podprostorů.md",
+    "LGR/Přednášky/LGR 05 – Rezoluční princip.md",
     "LGR/Pojmy/rezoluční tabulka.md",
     "LGR/Pojmy/věta o eliminaci proměnné.md",
     "LGR/Pojmy/základní tvar klauzulí.md",
@@ -207,7 +209,6 @@
     "LGR/Obrázky/lgr05-rozklad.png",
     "LGR/Obrázky/lgr05-mnoziny.png",
     "LGR/Obrázky/lgr05-populace.png",
-    "LGR/Přednášky/LGR 05 – Rezoluční princip.md",
     "LAG/Pojmy/věta o dimenzi součtu a průniku.md",
     "LAG/Přednášky/LAG 05 – Báze a dimenze.md",
     "LAG/Pojmy/věta o součtu obalů.md",
@@ -224,8 +225,6 @@
     "LAG/Pojmy/triviální podprostor.md",
     "LAG/Pojmy/charakterizace báze.md",
     "LAG/Pojmy/věta o dimenzi podprostoru.md",
-    "LAG/Pojmy/prostor polynomů stupně nejvýše n.md",
-    "Untitled.canvas",
     "LGR/Obrázky/lgr04-rezoluce.png",
     "LGR/Obrázky/lgr04-mnoziny.png",
     "LGR/Obrázky/lgr04-dusledek.png",
