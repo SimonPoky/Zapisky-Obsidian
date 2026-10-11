@@ -287,7 +287,7 @@ Po přidání všech rezolvent přes $x$ smíš klauzule s $x$ „umrtvit“ (vy
 > [!karta|03]- Proč jsou $S$ a $R^*(S)$ pravdivé ve stejných ohodnoceních?
 > $S \subseteq R^*(S)$ a každá rezolventa je **sémantickým důsledkem** svých rodičů, takže platí všude, kde platí $S$.
 
-> [!karta|04]- Dokaž směr „⇒“ rezolučního principu.
+> [!karta|04]- Dokaž: je-li $S$ splnitelná, pak $\mathrm{ff} \notin R^*(S)$.
 > Obměnou: $\mathrm{ff} \in R^*(S)$ ⇒ $S \models \mathrm{ff}$. Kdyby $u(S) = 1$, bylo by $u(\mathrm{ff}) = 1$, nemožné. Tedy **$S$ nesplnitelná**. (Nebo: $u(S) \le u(\mathrm{ff}) = 0$ pro všechna $u$.)
 
 > [!karta|05]- Proč je nad $n$ proměnnými právě $3^n$ klauzulí (v základním tvaru)?
@@ -320,7 +320,7 @@ Po přidání všech rezolvent přes $x$ smíš klauzule s $x$ „umrtvit“ (vy
 > [!karta|14]- Proč smíš v rezoluční tabulce po spočítání $R_x$ vyhodit klauzule s $x$?
 > Podle věty o eliminaci jsou $S$ a $S_0 \cup R_x$ **ekvisplnitelné**; zapomenuté rezolventy k rozhodnutí nejsou potřeba.
 
-> [!karta|15]- Jak souvisí množina $T$ (z rezoluční tabulky) s $R^*(S)$ a jak tabulka dokončí důkaz „⇐“ rezolučního principu?
+> [!karta|15]- Jak souvisí množina $T$ (z rezoluční tabulky) s $R^*(S)$ a jak tabulka dokončí důkaz, že z $\mathrm{ff} \notin R^*(S)$ plyne splnitelnost $S$?
 > $T \subseteq R^*(S)$ a **$\mathrm{ff} \in T$ iff $\mathrm{ff} \in R^*(S)$**. Když $\mathrm{ff} \notin R^*(S)$, tabulka skončí s $\emptyset$ (splnitelná) a eliminace zpětně dá svědka pro $S$.
 
 > [!karta|16]- Jak z rezoluční tabulky získáš svědka splnitelnosti?

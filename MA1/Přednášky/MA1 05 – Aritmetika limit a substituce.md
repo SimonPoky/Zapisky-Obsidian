@@ -327,7 +327,7 @@ Věta o substituci jde jedním směrem: z limity $f$ dostaneme limitu $f \circ \
 > [!karta|06]- Dokaž větu o substituci.
 > K $U \in \mathcal{N}(L)$ najdi $T$ s $f[T] \subseteq U$ (z 1), k $T$ najdi $P$ s $\varphi[P] \subseteq T$ (z 2). Pak $(f \circ \varphi)[P] = f[\varphi[P]] \subseteq f[T] \subseteq U$.
 
-> [!karta|07]- Proč je ve větě o substituci nutná podmínka (2)? Protipříklad.
+> [!karta|07]- Proč ve větě o substituci nestačí, že $f$ i $\varphi$ mají limitu? Protipříklad.
 > $f(z) = 200$ pro $z = 1$, jinak $3$; $\varphi \equiv 1$. $\lim_{z \to 1} f = 3$, $\lim_{x \to 5} \varphi = 1$, ale $f(\varphi(x)) = 200$. Kusy směru $z \to 1$ bod $1$ **neobsahují**, takže $\varphi[P] = \{1\}$ se do žádného nevejde.
 
 > [!karta|09]- Jak souvisí $\lim_{x \to +\infty} f(x)$ a $\lim_{n \to +\infty} f(n)$?
@@ -336,7 +336,7 @@ Věta o substituci jde jedním směrem: z limity $f$ dostaneme limitu $f \circ \
 > [!karta|10]- Plyne z $\lim_{n \to +\infty} f(n) = L$, že $\lim_{x \to +\infty} f(x) = L$? Protipříklad.
 > **Ne.** $f(x) = \sin(\pi x)$: $f(n) = 0 \to 0$, ale $\lim_{x \to +\infty} \sin(\pi x)$ neexistuje.
 
-> [!karta|12]- Dokaž směr ⇐ věty o detekci limity.
+> [!karta|12]- Dokaž: když všechny $f \circ \varphi_i$ mají limitu $L$ a obrazy $\varphi_i[P_i]$ dohromady vždy pokryjí kus směru, je $L$ limitou $f$.
 > K $U$ vyber $P_i$ s $f[\varphi_i[P_i]] \subseteq U$ pro každé $i$. Podle pokrytí existuje $P \subseteq \bigcup \varphi_i[P_i]$; každé $x \in P$ leží v některém $\varphi_i[P_i]$, tedy $f[P] \subseteq U$.
 
 > [!karta|13]- Jak souvisí $\lim a_n$ s limitou posunuté posloupnosti $a_{k+N}$?
@@ -390,4 +390,4 @@ Věta o substituci jde jedním směrem: z limity $f$ dostaneme limitu $f \circ \
 > $n - m = 2$, $\frac{a_n}{b_m} = 1$, tedy $1 \cdot (-1)^2 \cdot (+\infty) =$ **$+\infty$**.
 
 ---
-← [[MA1 04 – Nerovnosti ve směru a věta o sevření|1. 10. 2026 Nerovnosti ve směru a věta o sevření]]
+← [[MA1 04 – Nerovnosti ve směru a věta o sevření|1. 10. 2026 Nerovnosti ve směru a věta o sevření]] · [[MA1 06 – Spojitost a spojité funkce na intervalu|8. 10. 2026 Spojitost a spojité funkce na intervalu]] →

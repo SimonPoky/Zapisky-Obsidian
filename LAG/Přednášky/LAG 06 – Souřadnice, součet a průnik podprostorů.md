@@ -341,7 +341,7 @@ Důkaz zatím nezazněl; myšlenka je doplnit bázi průniku jednou na bázi $V$
 *Oranžové kartičky (pojmy a teorie) jsou v aplikaci [[Archiv přednášek#Kartičky|Kartičky]] povinné k dennímu opakování, pojmy z této přednášky taky. Zelené příklady jsou tam jen na procvičení. Nejdřív odpověz nahlas nebo na papír, pak rozklikni.*
 
 > [!karta|01]- Proč se souřadnice definují jen vzhledem k bázi, a ne k libovolné posloupnosti?
-> Aby souřadnice **existovaly**, musí posloupnost generovat; aby byly **jednoznačné**, musí být LN (věta 4.2). Obojí dohromady je báze.
+> Aby souřadnice **existovaly**, musí posloupnost generovat; aby byly **jednoznačné**, musí být LN ([[věta o jednoznačnosti vyjádření]]). Obojí dohromady je báze.
 
 > [!karta|02]- Čemu se rovná souřadnicový vektor $\vec{v} \in \mathbb{F}^n$ v kanonické bázi a proč?
 > **$[\vec{v}]^{\mathcal{E}} = \vec{v}$**, protože $\vec{v} = v_1\vec{e}_1 + \dots + v_n\vec{e}_n$: koeficienty jsou přímo složky.

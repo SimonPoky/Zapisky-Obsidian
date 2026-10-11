@@ -281,7 +281,7 @@ Z Dedekindovy úplnosti plyne [[Archimedova vlastnost]]:
 > [!karta|13]- Jak se z úplnosti získá infimum a za jakých předpokladů?
 > Pro neprázdnou zdola omezenou $M$: $\inf M = -\sup(-M)$, kde $-M = \{-m \mid m \in M\}$.
 
-> [!karta|14]- Charakterizuj $s = \sup M$ pomocí $\varepsilon$ (slajd 13).
+> [!karta|14]- Charakterizuj $s = \sup M$ pomocí $\varepsilon$.
 > $x \le s$ pro všechna $x \in M$ **a** pro každé $\varepsilon > 0$ existuje $x \in M$ s $s - \varepsilon < x \le s$.
 
 > [!karta|16]- Dokaž Archimedovu vlastnost z úplnosti $\mathbb{R}$.

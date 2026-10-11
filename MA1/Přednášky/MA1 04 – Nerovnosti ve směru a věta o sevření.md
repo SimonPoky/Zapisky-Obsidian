@@ -224,7 +224,7 @@ Ať $f \ge_{\mathcal{S}} 0$ (na $P_1$) a $L < 0$. Podle 2b je $f <_{\mathcal{S}}
 > [!karta|08]- Myšlenka důkazu věty o sevření?
 > K okolí $U$ vezmi $P_f$, $P_h$ a kus, kde platí nerovnosti; nejmenší z nich $P$. Na něm $f(x), h(x) \in U$ a $g(x)$ leží mezi nimi; okolí je interval, tedy $g(x) \in U$.
 
-> [!karta|09]- Jak se používá tvrzení I (vlastní limita ⇒ omezenost) obráceně?
+> [!karta|09]- Jak se obráceně (kontrapozicí) použije věta, že funkce s vlastní limitou je ve směru omezená?
 > Kontrapozicí: je-li $f$ ve směru **neomezená**, je její limita $\pm\infty$, nebo neexistuje. Vlastní být nemůže.
 
 > [!karta|10]- Plyne z omezenosti $f$ ve směru existence limity?
@@ -233,7 +233,7 @@ Ať $f \ge_{\mathcal{S}} 0$ (na $P_1$) a $L < 0$. Podle 2b je $f <_{\mathcal{S}}
 > [!karta|11]- Jak souvisí $\lim_{x \to p} f$ s jednostrannými limitami?
 > $\lim_{x \to p} f = L \iff \lim_{x \to p^-} f = L = \lim_{x \to p^+} f$. Různé jednostranné limity ⇒ oboustranná neexistuje.
 
-> [!karta|13]- Proč je v tvrzení III nutná omezenost $g$? Protipříklad.
+> [!karta|13]- Proč je ve větě „$\lim_{\mathcal{S}} f = 0$ a $g$ omezená ⇒ $\lim_{\mathcal{S}} (f \cdot g) = 0$“ nutná omezenost $g$? Protipříklad.
 > $f = x \to 0$, $g = \frac{1}{x^2}$ neomezená v $x \to 0$: $fg = \frac{1}{x}$ v nule limitu nemá.
 
 ### Příklady na procvičení
@@ -248,13 +248,13 @@ Ať $f \ge_{\mathcal{S}} 0$ (na $P_1$) a $L < 0$. Podle 2b je $f <_{\mathcal{S}}
 > $-\lvert x \rvert \le x \sin\frac{1}{x} \le \lvert x \rvert$ a obě meze jdou k 0, sevření dá **0**. (Meze $\pm x$ jsou pro $x < 0$ špatně.)
 
 > [!priklad|17]- Spočítej $\lim_{n \to +\infty} \frac{n \sin(n!)}{n^2 + 1}$.
-> $\frac{n}{n^2 + 1} \to 0$ a $\lvert \sin(n!) \rvert \le 1$, podle tvrzení III je limita **0**.
+> $\frac{n}{n^2 + 1} \to 0$ a $\lvert \sin(n!) \rvert \le 1$, podle [[věta o součinu nulové a omezené funkce|věty o součinu nulové a omezené funkce]] je limita **0**.
 
 > [!priklad|18]- $f(x) = 0$ na $[0; 3)$, $f(3) = 2$. Kolik je $\lim_{x \to 3^-} f(x)$?
 > **0.** Kus směru $(3 - \delta; 3)$ bod 3 neobsahuje, hodnota $f(3)$ limitu neovlivní.
 
 > [!priklad|19]- Má $f(x) = \frac{1}{x}$ na $(0; +\infty)$ vlastní limitu pro $x \to 0^+$?
-> **Ne.** Není ve směru $x \to 0^+$ omezená, takže podle tvrzení I vlastní limitu mít nemůže; $\lim_{x \to 0^+} \frac{1}{x} = +\infty$.
+> **Ne.** Není ve směru $x \to 0^+$ omezená, takže podle [[věta o omezenosti funkce s vlastní limitou|věty o omezenosti funkce s vlastní limitou]] vlastní limitu mít nemůže; $\lim_{x \to 0^+} \frac{1}{x} = +\infty$.
 
 ---
 ← [[MA1 03 – Rozšířená reálná čísla a limita ve směru|30. 9. 2026 Rozšířená reálná čísla a limita ve směru]] · [[MA1 05 – Aritmetika limit a substituce|7. 10. 2026 Aritmetika limit a substituce]] →

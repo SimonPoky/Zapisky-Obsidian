@@ -236,10 +236,10 @@ Poznámky:
 > $\emptyset$ splňuje obě podmínky uzavřenosti prázdně, ale nemá nulový vektor. Z $V \neq \emptyset$ plyne existence $\vec{x} \in V$, a tedy $\vec{0} = 0 \cdot \vec{x} \in V$.
 
 > [!karta|02]- Proč každý podprostor $V \le L$ obsahuje $\vec{0}$ a s každým $\vec{x}$ i $-\vec{x}$?
-> $V$ je neprázdný, takže obsahuje nějaké $\vec{x}$. Z uzavřenosti na násobení: $\vec{0} = 0 \cdot \vec{x} \in V$ a $-\vec{x} = (-1) \cdot \vec{x} \in V$ (věta 1.8).
+> $V$ je neprázdný, takže obsahuje nějaké $\vec{x}$. Z uzavřenosti na násobení: $\vec{0} = 0 \cdot \vec{x} \in V$ a $-\vec{x} = (-1) \cdot \vec{x} \in V$.
 
-> [!karta|03]- Které axiomy je u podprostoru potřeba zvlášť zdůvodnit a proč ostatní ne (věta 2.2)?
-> Jen **axiomy 3 a 4** (existence nuly a opačného vektoru). Ostatní jsou tvaru „pro všechna“, platí v $L$, a tedy i ve $V \subseteq L$.
+> [!karta|03]- Které axiomy je u podprostoru potřeba zvlášť zdůvodnit a proč ostatní ne?
+> Jen **existence nulového a opačného vektoru**. Ostatní jsou tvaru „pro všechna“, platí v $L$, a tedy i ve $V \subseteq L$.
 
 > [!karta|07]- Kdy je množina řešení soustavy lineárních rovnic podprostor $\mathbb{F}^n$?
 > Když je soustava **homogenní** (pravé strany nulové). Nehomogenní soustava podprostor netvoří, protože nulový vektor ji nesplňuje.
@@ -276,7 +276,7 @@ Poznámky:
 > [!priklad|11]- Proč jsou spojité funkce $C(\mathbb{R})$ podprostor $\mathbb{R}^{\mathbb{R}}$?
 > Nulová funkce je spojitá, součet dvou spojitých funkcí je spojitý a násobek spojité funkce číslem je spojitý.
 
-> [!priklad|12]- Tvoří matice $2 \times 2$ se stopou $0$ podprostor $\mathbb{F}^{2 \times 2}$ (pozn. 2.7)?
+> [!priklad|12]- Tvoří matice $2 \times 2$ se stopou $0$ podprostor $\mathbb{F}^{2 \times 2}$?
 > **Ano**: $\operatorname{tr}(\mathbf{A} + \mathbf{B}) = \operatorname{tr}\mathbf{A} + \operatorname{tr}\mathbf{B} = 0$ a $\operatorname{tr}(\alpha\mathbf{A}) = \alpha \operatorname{tr}\mathbf{A} = 0$; nulová matice má stopu 0.
 
 ---

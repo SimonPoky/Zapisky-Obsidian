@@ -355,39 +355,39 @@ Opačný směr k výběru: začneš s nezávislými vektory a přidáváš.
 *Oranžové kartičky (pojmy a teorie) jsou v aplikaci [[Archiv přednášek#Kartičky|Kartičky]] povinné k dennímu opakování, pojmy z této přednášky taky. Zelené příklady jsou tam jen na procvičení. Nejdřív odpověz nahlas nebo na papír, pak rozklikni.*
 
 > [!karta|02]- Jak jde popsat lineární nezávislost pomocí „předchozích“ vektorů?
-> $(\vec{x}_1, \dots, \vec{x}_n)$ je LN, právě když **pro každé $i$ je $\vec{x}_i \notin \operatorname{span}\{\vec{x}_1, \dots, \vec{x}_{i-1}\}$** (obrácení věty 3.6).
+> $(\vec{x}_1, \dots, \vec{x}_n)$ je LN, právě když **pro každé $i$ je $\vec{x}_i \notin \operatorname{span}\{\vec{x}_1, \dots, \vec{x}_{i-1}\}$** (obrácení [[alternativní definice lineární závislosti]]).
 
 > [!karta|03]- Kdy se obal nezmění, když z $\vec{x}_1, \dots, \vec{x}_n$ odebereš $\vec{x}_n$?
 > Právě když $\vec{x}_n \in \operatorname{span}\{\vec{x}_1, \dots, \vec{x}_{n-1}\}$, tedy když je odebraný vektor **kombinací ostatních**.
 
-> [!karta|05]- Jak dokážeš, že u LN posloupnosti je vyjádření vektoru jednoznačné (věta 4.2, ⇒)?
+> [!karta|05]- Jak dokážeš, že u LN posloupnosti je vyjádření vektoru jednoznačné?
 > Ze dvou vyjádření $\sum \alpha_i\vec{x}_i = \sum \beta_i\vec{x}_i$ odečtením $\sum(\alpha_i - \beta_i)\vec{x}_i = \vec{0}$. Z **LN** jsou všechna $\alpha_i - \beta_i = 0$, tedy $\alpha_i = \beta_i$.
 
 > [!karta|06]- Proč LN posloupnost sama nezaručí, že jde vektor vyjádřit?
 > LN dává jen **nejvýše jedno** vyjádření; existenci zaručí až **generování**. Např. $((1; 0))$ je LN, ale $(0; 1)$ z ní nesložíš.
 
 > [!karta|26]- Co znamená, že je báze „minimální vzhledem k inkluzi“, a proč to ještě neznamená „nejkratší“?
-> Nejde z ní nic **vyhodit** (žádná vlastní podposloupnost negeneruje). Bez věty 4.7 by mohly existovat dvě báze různé délky, protože kratší nemusí být **podposloupností** delší.
+> Nejde z ní nic **vyhodit** (žádná vlastní podposloupnost negeneruje). Bez [[věta o počtu prvků báze|věty o počtu prvků báze]] by mohly existovat dvě báze různé délky, protože kratší nemusí být **podposloupností** delší.
 
-> [!karta|08]- Jak dokážeš, že báze je maximální LN posloupnost (věta 4.5, (1) ⇒ (3))?
-> Báze je LN a pro každé $\vec{v} \in L$ je $\vec{v} \in \operatorname{span} = L$, takže $(\vec{x}_1, \dots, \vec{x}_n, \vec{v})$ je podle **věty 3.7** LZ.
+> [!karta|08]- Jak dokážeš, že báze je maximální LN posloupnost?
+> Báze je LN a pro každé $\vec{v} \in L$ je $\vec{v} \in \operatorname{span} = L$, takže $(\vec{x}_1, \dots, \vec{x}_n, \vec{v})$ je podle [[věta o přidání vektoru k LN posloupnosti|věty o přidání vektoru k LN posloupnosti]] LZ.
 
-> [!karta|09]- Jak dokážeš, že maximální LN posloupnost generuje $L$ (věta 4.5, (3) ⇒ (1))?
-> Pro libovolné $\vec{v} \in L$ je $(\vec{x}_1, \dots, \vec{x}_n, \vec{v})$ LZ, takže podle **věty 3.7** je $\vec{v} \in \operatorname{span}\{\vec{x}_1, \dots, \vec{x}_n\}$.
+> [!karta|09]- Jak dokážeš, že maximální LN posloupnost generuje $L$?
+> Pro libovolné $\vec{v} \in L$ je $(\vec{x}_1, \dots, \vec{x}_n, \vec{v})$ LZ, takže podle [[věta o přidání vektoru k LN posloupnosti|věty o přidání vektoru k LN posloupnosti]] je $\vec{v} \in \operatorname{span}\{\vec{x}_1, \dots, \vec{x}_n\}$.
 
-> [!karta|11]- Proč mají všechny báze prostoru stejně prvků (věta 4.7)?
-> Pro báze s $k$ a $l$ prvky: první je LN a druhá generuje, takže $k \le l$ (**lemma 4.6**); po prohození rolí $l \le k$. Tedy $k = l$.
+> [!karta|11]- Proč mají všechny báze prostoru stejně prvků?
+> Pro báze s $k$ a $l$ prvky: první je LN a druhá generuje, takže $k \le l$ ([[Steinitzova věta]]); po prohození rolí $l \le k$. Tedy $k = l$.
 
 > [!karta|12]- Proč $\dim\mathbb{F}[x] = \infty$?
-> $(1, x, \dots, x^m)$ je LN pro každé $m$. Kdyby existovala báze s $m$ prvky, lemma 4.6 by dalo **$m + 1 \le m$**, spor.
+> $(1, x, \dots, x^m)$ je LN pro každé $m$. Kdyby existovala báze s $m$ prvky, [[Steinitzova věta]] by dala **$m + 1 \le m$**, spor.
 
-> [!karta|13]- Jak se dokazuje věta 4.11 (výběr báze z generátorů)?
+> [!karta|13]- Jak dokážeš, že z konečné množiny generátorů prostoru jde vybrat bázi?
 > Dokud je v $G$ vektor, který je kombinací ostatních, **vyhodíme ho** (zbytek pořád generuje). $G$ je konečná, takže skončíme u LN generující množiny, tedy báze.
 
 > [!karta|15]- Jak se LN posloupnost doplní na bázi a proč doplňování skončí?
-> Dokud negeneruje, přidej $\vec{v} \notin \operatorname{span}$; podle **věty 3.7** zůstane LN. LN posloupnost má nejvýš $n = \dim L$ prvků (**lemma 4.6**), takže to skončí u báze.
+> Dokud negeneruje, přidej $\vec{v} \notin \operatorname{span}$; podle [[věta o přidání vektoru k LN posloupnosti|věty o přidání vektoru k LN posloupnosti]] zůstane LN. LN posloupnost má nejvýš $n = \dim L$ prvků ([[Steinitzova věta]]), takže to skončí u báze.
 
-> [!karta|16]- Co plyne pro posloupnost přesně $n = \dim L$ vektorů (důsledek)?
+> [!karta|16]- Co plyne pro posloupnost přesně $n = \dim L$ vektorů?
 > Je **báze $\iff$ je LN $\iff$ generuje $L$**. Stačí ověřit jednu polovinu definice báze.
 
 > [!karta|25]- Proč se u posloupnosti $n = \dim L$ vektorů ověřuje LN, a ne generování?
@@ -405,7 +405,7 @@ Opačný směr k výběru: začneš s nezávislými vektory a přidáváš.
 > **Ano**: 2 vektory, LN (nejsou násobky), a $\dim\mathbb{R}^2 = 2$, takže podle důsledku je to báze. $(3; 2) = \alpha(1; 0) + \beta(1; 1)$ dává $\beta = 2$, $\alpha = 1$: **$(3; 2) = 1 \cdot (1; 0) + 2 \cdot (1; 1)$**.
 
 > [!priklad|21]- Je $((1; 0), (0; 1), (1; 1))$ báze $\mathbb{R}^2$?
-> **Ne.** Generuje, ale je LZ: $(1; 1) = (1; 0) + (0; 1)$. Tři vektory v prostoru dimenze 2 nemůžou být LN (lemma 4.6).
+> **Ne.** Generuje, ale je LZ: $(1; 1) = (1; 0) + (0; 1)$. Tři vektory v prostoru dimenze 2 nemůžou být LN ([[Steinitzova věta]]).
 
 > [!priklad|22]- Kolik je $\dim\mathbb{R}^{\le 3}[x]$? Uveď bázi.
 > **4**, báze $(1, x, x^2, x^3)$. Pozor na konstantu: stupeň $\le n$ dává $n + 1$.

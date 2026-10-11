@@ -10,7 +10,7 @@ tags: [predmet, MA1]
 
 [Handouty ke všem přednáškám (PDF) ↗](https://math.fel.cvut.cz/en/people/velebil/files/b0b01ma1/ma1_handout_all.pdf) · [Stránka předmětu ↗](https://math.fel.cvut.cz/en/people/velebil/teaching/b0b01ma1.html) · [Požadavky ↗](https://math.fel.cvut.cz/en/people/velebil/teaching/b0b01ma1_pozadavky.html) · [Ukázka zkoušky ↗](https://math.fel.cvut.cz/en/people/velebil/files/b0b01ma1/ma1_ukazka_2026.pdf) · [Ukázka testu 1 ↗](https://math.fel.cvut.cz/en/people/velebil/files/b0b01ma1/ma1_pisemka01_ukazka_2026.pdf) · [Ukázka testu 2 ↗](https://math.fel.cvut.cz/en/people/velebil/files/b0b01ma1/ma1_pisemka02_ukazka_2026.pdf)
 
-**Kartičky:** 104 povinných + 31 příkladů · [otevřít aplikaci ↗](https://claude.ai/artifact/3CKfKeuwtwrWiz3FSfSh5B) · [[Archiv přednášek#Kartičky|jak to funguje]]
+**Kartičky:** 131 povinných + 38 příkladů · [otevřít aplikaci ↗](https://claude.ai/artifact/3CKfKeuwtwrWiz3FSfSh5B) · [[Archiv přednášek#Kartičky|jak to funguje]]
 
 ## Přednášky
 
@@ -19,23 +19,29 @@ tags: [predmet, MA1]
 - **30. 9. 2026** [[MA1 03 – Rozšířená reálná čísla a limita ve směru|Rozšířená reálná čísla a limita ve směru]] · ℝ*, okolí, směr, definice limity, jednoznačnost, (−1)ⁿ, monotónní posloupnosti
 - **1. 10. 2026** [[MA1 04 – Nerovnosti ve směru a věta o sevření|Nerovnosti ve směru a věta o sevření]] · f ≤ g ve směru, krácení v limitě, znaménko limity, věta o sevření, x · sin(1/x), omezenost, jednostranné limity
 - **7. 10. 2026** [[MA1 05 – Aritmetika limit a substituce|Aritmetika limit a substituce]] · aritmetika limit, ∞/∞, podprostor W, věta o substituci, podposloupnosti, sudé a liché členy, spojitost
+- **8. 10. 2026** [[MA1 06 – Spojitost a spojité funkce na intervalu|Spojitost a spojité funkce na intervalu]] · ε-δ, jednostranná spojitost, složená funkce, Heine, sin(1/x), Creeping Theorem, IVT, BT, EVT, PIT, pevný bod
 
 ## Slovníček pojmů
 
 *Najetím myší na pojem uvidíš náhled, klepnutím otevřeš jeho poznámku.*
 
 - [[absolutní hodnota]] · Vzdálenost od nuly; |x − y| je vzdálenost dvou čísel. Platí trojúhelníková nerovnost.
+- [[aditivní systém intervalů]] · Dva překrývající se dobré úseky se dají slepit v dobrý úsek.
 - [[Archimedova vlastnost]] · Krokem libovolné kladné délky dojdeš za libovolné číslo, proto inf{1/n} = 0.
 - [[celá čísla]] · Postavená z dvojic přirozených čísel: (5, 8) „kóduje“ rozdíl 5 − 8 = −3.
+- [[Creeping Theorem]] · Lokální a aditivní systém obsahuje celý [a; b]; z toho plynou IVT a BT.
 - [[Dedekindovská úplnost]] · Každá neprázdná shora omezená M ⊆ ℝ má supremum v ℝ. V ℚ to neplatí.
 - [[Dedekindův řez]] · Střih racionální přímky na L a U; √2 = (L, U). Reálná čísla jsou všechny řezy.
 - [[Hasseův diagram]] · Obrázek uspořádání: menší prvky níž, čáry jen mezi přímými sousedy.
+- [[Heineova věta]] · Spojitost v p ⇔ f(xₙ) → f(p) pro každou xₙ → p; jedna špatná posloupnost dokáže nespojitost.
 - [[horní odhad]] · Strop, pod který se vejde celá množina; dolní odhad je podlaha. Nemusí ležet v množině ani existovat.
 - [[infimum]] · Nejvyšší podlaha, největší dolní odhad. V 𝒫(U) průnik, v ℕ minimum.
 - [[iracionální číslo]] · Reálné číslo, které nejde napsat zlomkem, např. √2. V ℚ je na jeho místě díra.
 - [[jednostranná limita]] · Limita jen zleva (x → p⁻) nebo zprava (x → p⁺); oboustranná existuje, když se shodují.
+- [[jednostranná spojitost]] · Spojitost jen zleva nebo jen zprava; oboustranná platí, když platí obě.
 - [[limita ve směru]] · Ke každému terči kolem L existuje kus směru, jehož celý obraz padne do terče. Jedna definice pro x → p, n → ∞ i x → −∞.
 - [[linearita limity]] · Limita lineární kombinace = kombinace (vlastních) limit.
+- [[lokální systém intervalů]] · Každý bod [a; b] má kolem sebe nějaký „dobrý“ úsek ze systému.
 - [[maximum]] · Horní odhad, který sám leží v množině. Když existuje, je to i supremum.
 - [[minimum]] · Dolní odhad, který sám leží v množině. Každá neprázdná podmnožina ℕ ho má.
 - [[následník]] · Další číslo v řadě: succ(n) = n ∪ {n}, tedy n + 1.
@@ -59,18 +65,26 @@ tags: [predmet, MA1]
 - [[Russellův paradox]] · „Množina všech množin, které neobsahují samy sebe“ nemůže existovat.
 - [[shora omezená množina]] · Množina se stropem: existuje u ≥ všem prvkům. Zdola omezená má podlahu.
 - [[směr]] · Odkud se blížíme k cíli: vnořené neprázdné množiny s prázdným průnikem, cíl do nich nepatří.
+- [[spojitost na intervalu]] · Spojitá uvnitř intervalu a v krajních bodech jednostranně.
 - [[spojitost v bodě]] · Limita v bodě p existuje a rovná se f(p): graf jde přes p bez zvednutí tužky.
 - [[supremum]] · Nejnižší strop, nejmenší horní odhad. Existuje i tam, kde chybí maximum.
 - [[uspořádaná množina]] · Množina s pravidlem „kdo je pod kým“: reflexivní, tranzitivní, antisymetrické.
 - [[věta o aritmetice limit]] · Limita součtu, součinu, podílu je součet, součin, podíl limit, pokud to v ℝ* dává smysl.
+- [[věta o aritmetice spojitých funkcí]] · Součet, součin, |f| i podíl (jmenovatel ≠ 0) spojitých funkcí jsou spojité.
 - [[věta o detekci limity]] · Limitu určí substituce se stejnou limitou, jejichž obrazy pokryjí kus směru.
+- [[věta o extrémech]] · EVT: spojitá funkce na [a; b] nabývá maxima i minima.
 - [[věta o jednoznačnosti limity]] · Limita ve směru je nejvýš jedna.
 - [[věta o limitě monotónní posloupnosti]] · Monotónní posloupnost má limitu: supremum, resp. infimum členů.
+- [[věta o mezihodnotě]] · IVT: spojitá funkce na [a; b] nabude každé hodnoty mezi f(a) a f(b).
 - [[věta o omezenosti funkce s vlastní limitou]] · Vlastní limita ⇒ funkce je ve směru omezená.
+- [[věta o omezenosti spojité funkce]] · BT: spojitá funkce na [a; b] je omezená.
+- [[věta o pevném bodě]] · Spojitá f: [a; b] → [a; b] má bod s f(t) = t.
 - [[věta o rovnosti ve směru]] · Funkce, které se ve směru shodují, mají stejnou limitu.
 - [[věta o sevření]] · Funkce sevřená mezi dvěma se stejnou limitou L má limitu L taky (dva policajti).
 - [[věta o součinu nulové a omezené funkce]] · Nula krát omezená je nula.
+- [[věta o spojitosti složené funkce]] · f spojitá v p a g spojitá v f(p) ⇒ g ∘ f spojitá v p. Jednostranně neplatí.
 - [[věta o substituci]] · Limita f(φ(x)) je lim f, když φ míří do cíle a na kusu směru do něj nedopadne.
+- [[věta o zachování intervalů]] · PIT: obraz [a; b] při spojité funkci je interval [min; max].
 - [[věta o znaménku limity]] · L > 0 ⇒ f > 0 blízko cíle; f ≥ 0 ⇒ L ≥ 0.
 
 ## Jak se předmět hodnotí

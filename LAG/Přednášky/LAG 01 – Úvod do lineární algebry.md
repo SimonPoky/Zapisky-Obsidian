@@ -75,10 +75,10 @@ Témata: `číselné těleso` · `soustavy 2 × 2` · `axiomy` · `lineární pr
 > Nejdřív tipni, pak rozklikni.
 
 > [!priklad|01]- Je ℕ = {1, 2, 3, …} číselné těleso?
-> **Není.** Chybí opačné prvky: 1 ∈ ℕ, ale −1 ∉ ℕ (podmínka 2).
+> **Není.** Chybí opačné prvky: 1 ∈ ℕ, ale −1 ∉ ℕ; těleso musí s každým číslem obsahovat i opačné.
 
 > [!priklad|02]- Je ℤ (celá čísla) číselné těleso?
-> **Není.** Chybí inverze: 2 ∈ ℤ, ale 1/2 ∉ ℤ (podmínka 4).
+> **Není.** Chybí inverze: 2 ∈ ℤ, ale 1/2 ∉ ℤ; těleso musí s každým nenulovým číslem obsahovat i převrácené.
 
 > [!question]- ℚ (racionální čísla)
 > **Je číselné těleso.** Je to dokonce nejmenší číselné těleso, každé jiné ho obsahuje.
@@ -261,29 +261,29 @@ Oba druhy se chovají stejně při operacích: dají se sčítat a násobit čí
 > [!karta|12]- Kam matice zobrazí $\mathbf{e}_1$ a $\mathbf{e}_2$ a jak to z ní přečteš?
 > Na své sloupce: první sloupec je obraz $\mathbf{e}_1 = (1; 0)$, druhý sloupec obraz $\mathbf{e}_2 = (0; 1)$.
 
-> [!karta|14]- Axiomy lineárního prostoru 1–4: co říkají o sčítání vektorů?
+> [!karta|14]- Které čtyři axiomy lineárního prostoru se týkají jen sčítání vektorů?
 > 1. komutativita: $\vec{x} \oplus \vec{y} = \vec{y} \oplus \vec{x}$
 > 2. asociativita: $(\vec{x} \oplus \vec{y}) \oplus \vec{z} = \vec{x} \oplus (\vec{y} \oplus \vec{z})$
 > 3. **existuje** nulový vektor $\vec{0}$: $\vec{x} \oplus \vec{0} = \vec{x}$
 > 4. ke každému $\vec{x}$ **existuje** opačný $-\vec{x}$: $\vec{x} \oplus (-\vec{x}) = \vec{0}$
 
-> [!karta|15]- Axiomy lineárního prostoru 5–8: co říkají o násobení skalárem?
+> [!karta|15]- Které čtyři axiomy lineárního prostoru se týkají násobení skalárem?
 > 5. $\alpha \odot (\beta \odot \vec{x}) = (\alpha \beta) \odot \vec{x}$
 > 6. $1 \odot \vec{x} = \vec{x}$
 > 7. $(\alpha + \beta) \odot \vec{x} = (\alpha \odot \vec{x}) \oplus (\beta \odot \vec{x})$
 > 8. $\alpha \odot (\vec{x} \oplus \vec{y}) = (\alpha \odot \vec{x}) \oplus (\alpha \odot \vec{y})$
 
 > [!karta|16]- Které axiomy lineárního prostoru jsou existenční a co z nich přímo neplyne?
-> Axiomy 3 a 4. Neplyne z nich, že nulový a opačný vektor jsou **jediné**; to se dokazuje ve větě 1.8.
+> Existence nulového vektoru a existence opačného vektoru. Neplyne z nich, že nulový a opačný vektor jsou **jediné**; to se musí dokázat.
 
 > [!karta|17]- Dokaž, že lineární prostor má jen jeden nulový vektor.
-> Nechť $\vec{o}_1$ i $\vec{o}_2$ splňují axiom 3. Pak $\vec{o}_1 = \vec{o}_1 \oplus \vec{o}_2 = \vec{o}_2 \oplus \vec{o}_1 = \vec{o}_2$. Použito: nulovost $\vec{o}_2$, komutativita, nulovost $\vec{o}_1$.
+> Nechť $\vec{o}_1$ i $\vec{o}_2$ splňují axiom o nulovém vektoru ($\vec{x} \oplus \vec{o} = \vec{x}$ pro všechna $\vec{x}$). Pak $\vec{o}_1 = \vec{o}_1 \oplus \vec{o}_2 = \vec{o}_2 \oplus \vec{o}_1 = \vec{o}_2$. Použito: nulovost $\vec{o}_2$, komutativita, nulovost $\vec{o}_1$.
 
 > [!karta|18]- Kdy platí $\alpha \odot \vec{x} = \vec{0}$?
-> Právě tehdy, když $\alpha = 0$ nebo $\vec{x} = \vec{0}$ (věta 1.8, bod 3).
+> Právě tehdy, když $\alpha = 0$ nebo $\vec{x} = \vec{0}$.
 
 > [!karta|19]- Jak vyjádříš opačný vektor $-\vec{x}$ pomocí násobení skalárem a proč to platí?
-> $-\vec{x} = (-1) \odot \vec{x}$. Splňuje axiom 4: $\vec{x} \oplus ((-1) \odot \vec{x}) = (1 + (-1)) \odot \vec{x} = 0 \odot \vec{x} = \vec{0}$ (axiomy 6, 7 a bod 3 věty 1.8).
+> $-\vec{x} = (-1) \odot \vec{x}$. Splňuje definici opačného vektoru: $\vec{x} \oplus ((-1) \odot \vec{x}) = (1 + (-1)) \odot \vec{x} = 0 \odot \vec{x} = \vec{0}$ (axiomy $1 \odot \vec{x} = \vec{x}$ a $(\alpha + \beta) \odot \vec{x} = \alpha \odot \vec{x} \oplus \beta \odot \vec{x}$, pak $0 \odot \vec{x} = \vec{0}$).
 
 > [!karta|20]- Umí lineární prostor násobit dva vektory mezi sebou?
 > Ne. Jediné násobení je $\odot$: skalár krát vektor.

@@ -247,7 +247,7 @@ Tohle je „mateřský“ příklad, ze kterého vzniknou všechny předchozí v
 > Polynomy stupně nejvýše $n$ mají $n + 1$ koeficientů, takže jsou „prakticky“ $\mathbb{F}^{n+1}$. Lineární prostor jsou, protože součet ani násobek nezvýší stupeň nad $n$ (operace jsou dobře definované).
 
 > [!karta|13]- Proč nad číselným tělesem odpovídají polynomy a polynomiální funkce jedna ku jedné? Kde to neplatí?
-> Koeficienty jsou jednoznačně určené hodnotami v racionálních bodech (věta 1.20). Neplatí to např. nad $\mathbb{Z}_2$: $x$ a $x^2$ mají v bodech 0 a 1 stejné hodnoty.
+> Koeficienty jsou jednoznačně určené hodnotami v racionálních bodech (nenulový polynom stupně $n$ má nejvýš $n$ kořenů). Neplatí to např. nad $\mathbb{Z}_2$: $x$ a $x^2$ mají v bodech 0 a 1 stejné hodnoty.
 
 ### Příklady na procvičení
 

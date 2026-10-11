@@ -268,7 +268,7 @@ Pokračování: $\neg q \vee t$ s $\neg t \vee r$ dá $\neg q \vee r$, to s $\ne
 > [!karta|08]- Co znamená $\models \varphi$ (důsledek prázdné množiny)?
 > $\varphi$ je **tautologie**, protože $u(\emptyset) = 1$ v každém ohodnocení.
 
-> [!karta|10]- Dokaž směr „⇒“ věty o sémantickém důkazu sporem.
+> [!karta|10]- Dokaž: když $S \models \varphi$, je $S' = S \cup \{\neg\varphi\}$ nesplnitelná.
 > Nechť $S \models \varphi$ a $u$ libovolné. Je-li $u(S) = 1$, pak $u(\varphi) = 1$, tedy $u(\neg\varphi) = 0$ a $u(S') = 0$. Je-li $u(S) = 0$, pak $u(S') = 0$, protože $S \subseteq S'$. Tedy $S'$ je **nesplnitelná**.
 
 > [!karta|11]- Jak převedeš otázky „je $\varphi$ tautologie?“ a „je $\varphi$ kontradikce?“ na (ne)splnitelnost?

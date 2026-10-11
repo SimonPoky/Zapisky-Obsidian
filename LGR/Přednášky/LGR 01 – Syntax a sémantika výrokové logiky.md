@@ -193,7 +193,7 @@ $$
 > [!karta|01]- Jaký je rozdíl mezi $a$ a $\alpha$ v zápisu výrokové logiky?
 > $a$ je konkrétní **logická proměnná** z $A$. $\alpha$ je **zástupné jméno pro libovolnou formuli** (třeba $\neg b \Rightarrow a$).
 
-> [!karta|03]- K čemu je v definici formule bod „každá formule vznikne konečným počtem kroků 1 a 2“?
+> [!karta|03]- K čemu je v definici formule podmínka, že každá formule vznikne z proměnných konečným počtem použití spojek?
 > Říká, že **nic jiného** formulí není (např. nekonečný řetězec $\neg\neg\neg\dots$). Bez něj by rekurzivní definice množinu neurčovala jednoznačně.
 
 > [!karta|05]- Jak je definována hloubka formule $\alpha \circ \beta$ s binární spojkou?
@@ -212,7 +212,7 @@ $$
 > $u(\alpha \wedge \beta) = \min$, $u(\alpha \vee \beta) = \max$, $u(\alpha \Rightarrow \beta) = 1 \iff u(\alpha) \le u(\beta)$.
 
 > [!karta|10]- Kolik různých pravdivostních ohodnocení existuje pro 3 proměnné a proč?
-> $2^3 = 8$. Ohodnocení je jednoznačně určeno hodnotami na proměnných (slajd 13) a každá má 2 možnosti.
+> $2^3 = 8$. Ohodnocení je jednoznačně určeno hodnotami na proměnných a každá má 2 možnosti.
 
 > [!karta|12]- Jak souvisí tautologie a kontradikce přes negaci?
 > $\varphi$ je tautologie právě tehdy, když $\neg\varphi$ je kontradikce.

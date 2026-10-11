@@ -217,11 +217,11 @@ Otázka „je některý vektor kombinací ostatních?“ je přesně to, čemu s
 
 *Oranžové kartičky (pojmy a teorie) jsou v aplikaci [[Archiv přednášek#Kartičky|Kartičky]] povinné k dennímu opakování, pojmy z této přednášky taky. Zelené příklady jsou tam jen na procvičení. Nejdřív odpověz nahlas nebo na papír, pak rozklikni.*
 
-> [!karta|01]- Jak dokážeš větu 2.13, že $\operatorname{span} M \le L$?
+> [!karta|01]- Jak dokážeš, že lineární obal $\operatorname{span} M$ je vždy podprostor $L$?
 > **Neprázdnost:** $\vec{0}$ je prázdná kombinace. **Součet:** $\sum \alpha_i\vec{x}_i + \sum \beta_j\vec{y}_j$ je kombinace prvků $M$ (spojené seznamy). **Násobek:** $\gamma\sum \alpha_i\vec{x}_i = \sum (\gamma\alpha_i)\vec{x}_i$.
 
 > [!karta|02]- Proč platí $\mathbb{R}^{\le n}[x] = \operatorname{span}\{1, x, \dots, x^n\}$ a co z toho plyne?
-> Polynom stupně $\le n$ je přesně kombinace $\alpha_0 \cdot 1 + \alpha_1 x + \dots + \alpha_n x^n$. Podle věty 2.13 je to tedy **podprostor** $\mathbb{R}[x]$ bez dalšího ověřování.
+> Polynom stupně $\le n$ je přesně kombinace $\alpha_0 \cdot 1 + \alpha_1 x + \dots + \alpha_n x^n$. Lineární obal je vždy podprostor, takže je to **podprostor** $\mathbb{R}[x]$ bez dalšího ověřování.
 
 > [!karta|03]- Jak geometricky vypadá $\operatorname{span}\{\vec{x}, \vec{y}, \vec{z}\}$ v $\mathbb{R}^3$?
 > **Celé $\mathbb{R}^3$**, když žádný z vektorů není kombinací ostatních. Jinak rovina, přímka nebo $\{\vec{0}\}$ přes počátek.
@@ -247,24 +247,24 @@ Otázka „je některý vektor kombinací ostatních?“ je přesně to, čemu s
 > [!karta|11]- Proč se lineární závislost definuje pro posloupnost, a ne pro množinu vektorů?
 > V množině **opakování splyne** ($\{\vec{x}, \vec{x}\} = \{\vec{x}\}$), ale $(\vec{x}, \vec{x})$ je LZ, zatímco $(\vec{x})$ pro $\vec{x} \neq \vec{0}$ je LN.
 
-> [!karta|13]- Jak dokážeš, že odebráním vektorů z LN posloupnosti zůstane LN (věta 3.3.1)?
+> [!karta|13]- Jak dokážeš, že odebráním vektorů z LN posloupnosti zůstane LN?
 > Je-li $\beta_1\vec{x}_1 + \dots + \beta_k\vec{x}_k = \vec{0}$, doplň odebrané vektory s koeficientem **0**. Vznikne kombinace celé LN posloupnosti dávající $\vec{0}$, takže všechna $\beta_i = 0$.
 
-> [!karta|14]- Proč bod 2 věty 3.3 (přidání k LZ) plyne z bodu 1?
-> Je to **obměna**: kdyby přidáním vznikla LN posloupnost, byla by podle bodu 1 LN i původní (vznikne odebráním přidaných), spor.
+> [!karta|14]- Proč z toho, že odebráním vektorů z LN posloupnosti zůstane LN, plyne, že přidáním vektorů k LZ posloupnosti zůstane LZ?
+> Je to **obměna**: kdyby přidáním vznikla LN posloupnost, byla by LN i původní, protože z LN posloupnosti smíš odebírat (vznikne odebráním přidaných), spor.
 
-> [!karta|16]- Proč z „$\vec{x}_i$ je kombinací ostatních“ plyne lineární závislost (věta 3.6, (2) ⇒ (1))?
+> [!karta|16]- Proč z „$\vec{x}_i$ je kombinací ostatních“ plyne lineární závislost?
 > Převedeš $\vec{x}_i$ na druhou stranu: $\sum_{j \neq i} \alpha_j\vec{x}_j + (-1)\vec{x}_i = \vec{0}$. Koeficient **$-1 \neq 0$**, kombinace je netriviální.
 
-> [!karta|17]- Jak z netriviální kombinace $\sum \alpha_j\vec{x}_j = \vec{0}$ najdeš vektor, který je kombinací předchozích (věta 3.6, (1) ⇒ (3))?
+> [!karta|17]- Jak z netriviální kombinace $\sum \alpha_j\vec{x}_j = \vec{0}$ najdeš vektor, který je kombinací předchozích?
 > Vezmi **největší $i$ s $\alpha_i \neq 0$** a vyděl: $\vec{x}_i = -\frac{\alpha_1}{\alpha_i}\vec{x}_1 - \dots - \frac{\alpha_{i-1}}{\alpha_i}\vec{x}_{i-1}$.
 
-> [!karta|18]- Co znamená podmínka „$\vec{x}_1$ je kombinací předchozích“ z věty 3.6?
+> [!karta|18]- Co znamená, že první vektor $\vec{x}_1$ posloupnosti je kombinací předchozích?
 > Předchozí nejsou, $\operatorname{span}\emptyset = \{\vec{0}\}$, takže to znamená **$\vec{x}_1 = \vec{0}$**.
 
 ### Příklady na procvičení
 
-> [!priklad|19]- Jsou $\vec{x}_1 = (1; 1; 0)$, $\vec{x}_2 = (0; 1; 1)$, $\vec{x}_3 = (1; 2; 1)$ lineárně nezávislé (úloha 3.5)?
+> [!priklad|19]- Jsou $\vec{x}_1 = (1; 1; 0)$, $\vec{x}_2 = (0; 1; 1)$, $\vec{x}_3 = (1; 2; 1)$ lineárně nezávislé?
 > Soustava $\alpha + \gamma = 0$, $\alpha + \beta + 2\gamma = 0$, $\beta + \gamma = 0$ má volné $\gamma$. Pro $\gamma = 1$: $-\vec{x}_1 - \vec{x}_2 + \vec{x}_3 = \vec{0}$, tedy **LZ**, $\vec{x}_3 = \vec{x}_1 + \vec{x}_2$.
 
 > [!priklad|20]- Je $((1; 2), (2; 4))$ v $\mathbb{R}^2$ LZ, nebo LN?
