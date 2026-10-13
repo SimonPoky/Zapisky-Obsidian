@@ -11,7 +11,7 @@ zdroj: "handout 3A, slajd 3"
 > [!lidsky] Lidsky
 > Funkce stojí v bodě p přesně tam, kam se její graf blíží: limita v p existuje a rovná se f(p). Graf jde přes p bez zvednutí tužky.
 
-**Formálně:** f je spojitá v p ∈ ℝ ⇔ lim_{x→p} f(x) = f(p)
+**Formálně:** f definovaná na okolí p ∈ ℝ; f je spojitá v p ⇔ lim_{x→p} f(x) = f(p)
 
 **Definice:** [[MA1 05 – Aritmetika limit a substituce#^def-spojitost|přednáška 5, 7. 10. 2026]] · handout 3A, slajd 3
 

@@ -108,7 +108,7 @@ Vektory $V$ mají tři složky, ale souřadnice jen **dvě**, protože $V$ je ro
 Přiřazení $\vec{v} \mapsto [\vec{v}]^{\mathcal{X}}$ je vzájemně jednoznačné (bijekce) mezi $L$ a $\mathbb{F}^n$: každý vektor má jediný souřadnicový vektor a každý sloupec $(\alpha_1; \dots; \alpha_n)$ patří vektoru $\alpha_1\vec{x}_1 + \dots + \alpha_n\vec{x}_n$. To samo o sobě ale moc neznamená.
 
 > [!navic] Samotná bijekce nestačí
-> Bijekce existuje i mezi $\mathbb{R}$ a $\mathbb{R}^2$: dvojici čísel jde zakódovat do jednoho čísla prokládáním číslic, např. $(157{,}24;\ 34{,}18)$ dá (po doplnění na stejný počet číslic $157{,}24$ a $034{,}18$) číslo $105374{,}2148$. Existuje dokonce spojité zobrazení úsečky **na** celý čtverec, Hilbertova křivka (spojité a zároveň prosté takové zobrazení ale neexistuje). Kdyby stačila bijekce, byly by všechny prostory „stejné“ a dimenze by nic neznamenala. Souřadnice jsou cenné tím, že se **zachovávají operace**: s čísly $[\vec{v}]^{\mathcal{X}}$ jde počítat místo s vektory. Prokládání číslic tohle nesplňuje, sčítání by se v něm rozbilo kvůli přenosům mezi řády.
+> Bijekce existuje i mezi $\mathbb{R}$ a $\mathbb{R}^2$: dvojici čísel jde zakódovat do jednoho čísla prokládáním číslic (až na technické detaily s rozvoji končícími samými devítkami), např. $(157{,}24;\ 34{,}18)$ dá (po doplnění na stejný počet číslic $157{,}24$ a $034{,}18$) číslo $105374{,}2148$. Existuje dokonce spojité zobrazení úsečky **na** celý čtverec, Hilbertova křivka (spojité a zároveň prosté takové zobrazení ale neexistuje). Kdyby stačila bijekce, byly by všechny prostory „stejné“ a dimenze by nic neznamenala. Souřadnice jsou cenné tím, že se **zachovávají operace**: s čísly $[\vec{v}]^{\mathcal{X}}$ jde počítat místo s vektory. Prokládání číslic tohle nesplňuje, sčítání by se v něm rozbilo kvůli přenosům mezi řády.
 
 > [!veta] Věta (linearita souřadnic)
 > ==Buď $L$ lineární prostor nad $\mathbb{F}$ a $\mathcal{X} = (\vec{x}_1, \dots, \vec{x}_n)$ báze $L$.== Potom
@@ -377,7 +377,7 @@ Důkaz zatím nezazněl; myšlenka je doplnit bázi průniku jednou na bázi $V$
 > Generátory mohou být úplně různé, a podprostory se přesto protínají: dvě roviny v $\mathbb{R}^3$ se čtyřmi různými generátory mají společnou přímku, ale $M \cap N = \emptyset$. Průnik se musí **spočítat soustavou**.
 
 > [!karta|13]- Proč sjednocení bází $V$ a $W$ nemusí být báze $V + W$?
-> **Generuje** (věta o součtu obalů), ale může být **LZ**: má-li $V \cap W$ nenulový vektor, jde ho zapsat z obou bází a vznikne netriviální kombinace nuly.
+> **Generuje** (věta o součtu obalů), ale je **LZ, právě když $V \cap W \neq \{\vec{0}\}$**: nenulový vektor průniku jde zapsat z obou bází a rozdíl zápisů je netriviální kombinace nuly.
 
 > [!karta|14]- Proč se dvě roviny přes počátek v $\mathbb{R}^3$ vždy protnou aspoň v přímce?
 > $\dim(V + W) \le 3$, takže **$\dim(V \cap W) = 2 + 2 - \dim(V + W) \ge 1$**.
@@ -396,8 +396,8 @@ Důkaz zatím nezazněl; myšlenka je doplnit bázi průniku jednou na bázi $V$
 > [!priklad|18]- Najdi $V \cap W$ pro $V = \operatorname{span}\{(1; 1; 0; 0), (0; 0; 1; 0)\}$, $W = \operatorname{span}\{(1; 0; 0; 1), (0; 1; 1; -1)\}$.
 > $(\alpha; \alpha; \beta; 0) = (\gamma; \delta; \delta; \gamma - \delta)$ dává $\gamma = \delta = \alpha = \beta = t$. **$V \cap W = \operatorname{span}\{(1; 1; 1; 0)\}$**, dimenze 1.
 
-> [!priklad|19]- Najdi bázi a dimenzi $V + W$ pro tytéž $V$, $W$.
-> $V + W = \operatorname{span}\{\vec{x}_1, \vec{x}_2, \vec{x}_3, \vec{x}_4\}$, kde $\vec{x}_4 = \vec{x}_1 + \vec{x}_2 - \vec{x}_3$. Báze **$(\vec{x}_1, \vec{x}_2, \vec{x}_3)$**, **$\dim(V + W) = 3$**; sedí $3 + 1 = 2 + 2$.
+> [!priklad|19]- Najdi bázi a dimenzi $V + W$ pro $V = \operatorname{span}\{(1; 1; 0; 0), (0; 0; 1; 0)\}$, $W = \operatorname{span}\{(1; 0; 0; 1), (0; 1; 1; -1)\}$.
+> $V + W$ generují $\vec{x}_1 = (1; 1; 0; 0)$, $\vec{x}_2 = (0; 0; 1; 0)$, $\vec{x}_3 = (1; 0; 0; 1)$, $\vec{x}_4 = (0; 1; 1; -1)$ a platí $\vec{x}_4 = \vec{x}_1 + \vec{x}_2 - \vec{x}_3$. Báze **$(\vec{x}_1, \vec{x}_2, \vec{x}_3)$**, **$\dim(V + W) = 3$**; sedí $3 + 1 = 2 + 2$.
 
 > [!priklad|20]- Jaké jsou dimenze součtu a průniku dvou různých přímek přes počátek v $\mathbb{R}^3$?
 > Průnik $\{\vec{0}\}$, **dimenze 0**; součet je rovina, **dimenze 2**. Kontrola: $2 + 0 = 1 + 1$.

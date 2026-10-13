@@ -1,5 +1,5 @@
 ---
-aliases: ["PIT", "Preservation of Intervals Theorem", "Darbouxova vlastnost", "obraz je interval"]
+aliases: ["PIT", "Preservation of Intervals Theorem", "obraz je interval"]
 tags: [pojem, MA1]
 predmet: MA1
 prednaska: 6

@@ -10,7 +10,7 @@ tags: [predmet, LAG]
 
 [Poznámky k přednáškám (PDF) ↗](https://math.fel.cvut.cz/cz/lide/gromadan/LA26/notes.pdf) · [Stránka přednášky ↗](https://math.fel.cvut.cz/cz/lide/gromadan/lag26p.html) · [Sbírka příkladů (Velebil) ↗](https://math.fel.cvut.cz/en/people/velebil/files/lag_2026_podzim/lag_sbirka_2026_01_21.pdf)
 
-**Kartičky:** 129 povinných + 38 příkladů · [otevřít aplikaci ↗](https://claude.ai/artifact/3CKfKeuwtwrWiz3FSfSh5B) · [[Archiv přednášek#Kartičky|jak to funguje]]
+**Kartičky:** 127 povinných + 40 příkladů · [otevřít aplikaci ↗](https://claude.ai/artifact/3CKfKeuwtwrWiz3FSfSh5B) · [[Archiv přednášek#Kartičky|jak to funguje]]
 
 ## Přednášky
 
@@ -82,6 +82,7 @@ tags: [predmet, LAG]
 - [[věta o průniku podprostorů]] · Průnik dvou podprostorů je podprostor.
 - [[věta o součtu obalů]] · span M + span N = span(M ∪ N): generátory součtu se sjednotí.
 - [[věta o součtu podprostorů]] · Součet dvou podprostorů je podprostor (sjednocení obecně ne).
+- [[věta o vlastnostech lineárního prostoru]] · Nulový i opačný vektor jsou jediné, α ⊙ x = 0 jen pro α = 0 nebo x = 0 a −x = (−1) ⊙ x.
 - [[věta o výběru báze]] · Z konečné generující množiny jde vybrat bázi.
 
 ## Jak se předmět hodnotí

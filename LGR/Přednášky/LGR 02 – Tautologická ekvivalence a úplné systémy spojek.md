@@ -2,7 +2,7 @@
 predmet: LGR
 prednaska: 2
 datum: 2026-09-25
-zdroj: "Prezentace 1 (Výroková logika), slajdy 15–22"
+zdroj: "Prezentace 1 (Výroková logika), slajdy 15–21; Prezentace 2 (Sémantika výrokové logiky), slajdy 3–4"
 tags: [prednaska, LGR]
 ---
 
@@ -80,6 +80,9 @@ $$
 
 ^def-tautekv
 
+> [!lidsky] Lidsky
+> Dvě formule říkají totéž, jen jinými slovy: v tabulce mají stejný sloupec. „Nepravda, že prší i fouká“ a „neprší, nebo nefouká“ jsou různé věty, ale pravdivé jsou přesně ve stejných situacích.
+
 > [!pozor] Ekvivalentní jsou formule, ne funkce
 > Tautologicky ekvivalentní jsou **dvě formule**, a to když **určují stejnou booleovskou funkci** (mají stejný sloupec v tabulce). Říkat, že ekvivalentní jsou dvě booleovské funkce, nedává smysl: dvě funkce se stejnými hodnotami jsou jedna a táž funkce.
 
@@ -139,17 +142,20 @@ Nejpoužívanější pravidla (úplný seznam je v prezentaci):
 > [!veta] Jak je vyjádřit základními spojkami · slajd 21
 > $\alpha \mid \beta \mathrel{\vert\!=\!\vert} \neg(\alpha \wedge \beta)$, $\quad \alpha \downarrow \beta \mathrel{\vert\!=\!\vert} \neg(\alpha \vee \beta)$, $\quad \alpha \oplus \beta \mathrel{\vert\!=\!\vert} (\alpha \wedge \neg\beta) \vee (\neg\alpha \wedge \beta) \mathrel{\vert\!=\!\vert} \neg(\alpha \Leftrightarrow \beta)$.
 >
-> Dále $\alpha \vee \neg\alpha \mathrel{\vert\!=\!\vert} \mathrm{tt}$ (vyloučení třetího) a $\alpha \wedge \neg\alpha \mathrel{\vert\!=\!\vert} \mathrm{ff}$ (sporu).
+> Dále $\alpha \vee \neg\alpha \mathrel{\vert\!=\!\vert} \mathrm{tt}$ (vyloučení třetího) a $\alpha \wedge \neg\alpha \mathrel{\vert\!=\!\vert} \mathrm{ff}$ (zákon sporu).
 
 > [!lidsky] Lidsky
 > XOR je „buď, anebo“: v menu „polévka nebo dezert“ dostaneš jedno, ne obojí. NAND je „ne obojí zároveň“ a NOR „ani jedno“. Počítačové čipy se staví hlavně z hradel NAND, protože z nich jde složit úplně všechno (§5).
 
 ## §5 Úplný systém logických spojek
 
-> [!definice] Úplný systém logických spojek
+> [!definice] Úplný systém logických spojek · prezentace 2, slajd 3
 > Systém logických spojek je *úplný*, jestliže se pomocí něj dá pro každou booleovskou funkci napsat formule, která ji určuje.
 
 ^def-uss
+
+> [!lidsky] Lidsky
+> Úplný systém je stavebnice, ze které složíš libovolný obvod. Pro každou tabulku (booleovskou funkci) najdeš formuli jen z dovolených spojek. Stačí přitom ukázat, že ze stavebnice jde vyrobit $\neg$ a $\wedge$ (nebo $\neg$ a $\vee$).
 
 Jak na to: přepisovat pravidly ze §3.
 
@@ -172,6 +178,10 @@ Jak na to: přepisovat pravidly ze §3.
 > [!obrazek] Všechno z jediné spojky NAND
 > ![[lgr02-nand.png]]
 > *Syntaktické stromy jen se spojkou | (modře). Vlevo negace: a | a je pravdivé, právě když a není. Vpravo konjunkce: (a | b) je ¬(a ∧ b) a další | ho znovu zneguje. Z ¬ a ∧ se pak dá složit cokoliv.*
+
+> [!obrazek] Všechno z jediné spojky NOR
+> ![[lgr02-nor.png]]
+> *Stejný trik se spojkou ↓ (modře). Vlevo negace: a ↓ a je pravdivé, právě když a není. Vpravo disjunkce: (a ↓ b) je ¬(a ∨ b) a další ↓ ho znovu zneguje. Z ¬ a ∨ se pak dá složit cokoliv.*
 
 > [!navic] Proč je {¬, ∧, ∨} vůbec úplný
 > Každou booleovskou funkci jde zapsat jako „OR řádků s jedničkou“: pro každý řádek, kde $f = 1$, napíšeš konjunkci proměnných (nebo jejich negací) popisující ten řádek a všechny je spojíš $\vee$. Pro XOR: $f = 1$ v řádcích $10$ a $01$, tedy $(a \wedge \neg b) \vee (\neg a \wedge b)$. Tomuto tvaru se říká *disjunktivní normální forma* a je na programu příští týden.
@@ -204,8 +214,8 @@ Jak na to: přepisovat pravidly ze §3.
 > [!karta|10]- Přepiš $\alpha \Rightarrow \beta$ pomocí $\neg$ a $\vee$ a napiš její obměnu.
 > $\alpha \Rightarrow \beta \mathrel{\vert\!=\!\vert} \neg\alpha \vee \beta \mathrel{\vert\!=\!\vert} \neg\beta \Rightarrow \neg\alpha$.
 
-> [!karta|13]- Kdy je $\alpha \oplus \beta$ pravdivá a jak ji zapíšeš pomocí $\Leftrightarrow$?
-> Když mají $\alpha, \beta$ **různé** hodnoty. $\alpha \oplus \beta \mathrel{\vert\!=\!\vert} \neg(\alpha \Leftrightarrow \beta)$.
+> [!karta|13]- Proč platí $\alpha \oplus \beta \mathrel{\vert\!=\!\vert} \neg(\alpha \Leftrightarrow \beta)$?
+> $\oplus$ je pravdivá, právě když mají $\alpha, \beta$ **různé** hodnoty, a $\Leftrightarrow$ právě když **stejné**. Sloupce jsou tedy přesně opačné, takže $\oplus$ je negace $\Leftrightarrow$.
 
 > [!karta|14]- Proč $\{\wedge, \vee, \Rightarrow, \Leftrightarrow\}$ není úplný systém spojek?
 > Všechny čtyři dají $1$ pro vstupy $1, 1$, takže každá formule z nich je pravdivá v ohodnocení „vše $= 1$“. Nejde zapsat $\neg a$ ani $\mathrm{ff}$.

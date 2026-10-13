@@ -10,7 +10,7 @@ tags: [predmet, MA1]
 
 [Handouty ke všem přednáškám (PDF) ↗](https://math.fel.cvut.cz/en/people/velebil/files/b0b01ma1/ma1_handout_all.pdf) · [Stránka předmětu ↗](https://math.fel.cvut.cz/en/people/velebil/teaching/b0b01ma1.html) · [Požadavky ↗](https://math.fel.cvut.cz/en/people/velebil/teaching/b0b01ma1_pozadavky.html) · [Ukázka zkoušky ↗](https://math.fel.cvut.cz/en/people/velebil/files/b0b01ma1/ma1_ukazka_2026.pdf) · [Ukázka testu 1 ↗](https://math.fel.cvut.cz/en/people/velebil/files/b0b01ma1/ma1_pisemka01_ukazka_2026.pdf) · [Ukázka testu 2 ↗](https://math.fel.cvut.cz/en/people/velebil/files/b0b01ma1/ma1_pisemka02_ukazka_2026.pdf)
 
-**Kartičky:** 131 povinných + 38 příkladů · [otevřít aplikaci ↗](https://claude.ai/artifact/3CKfKeuwtwrWiz3FSfSh5B) · [[Archiv přednášek#Kartičky|jak to funguje]]
+**Kartičky:** 131 povinných + 34 příkladů · [otevřít aplikaci ↗](https://claude.ai/artifact/3CKfKeuwtwrWiz3FSfSh5B) · [[Archiv přednášek#Kartičky|jak to funguje]]
 
 ## Přednášky
 

@@ -1,5 +1,5 @@
 ---
-aliases: ["Russellova paradoxu", "Russellův", "R = {X | X ∉ X}"]
+aliases: ["Russellova paradoxu", "Russellův", "Russellova množina"]
 tags: [pojem, MA1]
 predmet: MA1
 prednaska: 1

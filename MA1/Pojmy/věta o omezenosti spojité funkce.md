@@ -9,7 +9,7 @@ zdroj: "handout 3A, slajd 14"
 # věta o omezenosti spojité funkce
 
 > [!lidsky] Lidsky
-> Spojitá funkce na uzavřeném omezeném intervalu je omezená. Na otevřeném intervalu to neplatí: 1/x na (0; 1].
+> Spojitá funkce na uzavřeném omezeném intervalu je omezená. Na neuzavřeném intervalu to neplatí: 1/x na (0; 1].
 
 **Formálně:** f spojitá na [a; b] ⇒ ∃K: |f(x)| ≤ K pro všechna x ∈ [a; b]
 

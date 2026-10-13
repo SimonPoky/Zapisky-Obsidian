@@ -22,7 +22,7 @@ Témata: `číselné těleso` · `soustavy 2 × 2` · `axiomy` · `lineární pr
 | [[číselné těleso]] $\mathbb{F}$ | čísla, která jde sčítat, odčítat, násobit i dělit (ne nulou) bez vypadnutí ven; $\mathbb{Q} \subseteq \mathbb{F} \subseteq \mathbb{C}$ |
 | soustava $2 \times 2$ | tři pohledy: průsečík přímek, [[lineární kombinace]] sloupců, matice jako zobrazení |
 | [[lineární prostor]] | množina s $\oplus$ a $\odot$, která splňuje 8 [[axiomy lineárního prostoru|axiomů]] |
-| věta 1.8 | nulový i opačný vektor jsou jediné, $\alpha \odot \vec{x} = \vec{0} \iff \alpha = 0$ nebo $\vec{x} = \vec{0}$, $-\vec{x} = (-1) \odot \vec{x}$ |
+| [[věta o vlastnostech lineárního prostoru\|věta 1.8]] | nulový i opačný vektor jsou jediné, $\alpha \odot \vec{x} = \vec{0} \iff \alpha = 0$ nebo $\vec{x} = \vec{0}$, $-\vec{x} = (-1) \odot \vec{x}$ |
 
 ## §1 Lineární rovnice
 

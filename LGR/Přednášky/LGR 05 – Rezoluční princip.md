@@ -2,7 +2,7 @@
 predmet: LGR
 prednaska: 5
 datum: 2026-10-09
-zdroj: "Prezentace 3 (Sémantika, rezoluční metoda), slajdy 13–25"
+zdroj: "Prezentace 3 (Sémantika, rezoluční metoda), slajdy 13–26"
 tags: [prednaska, LGR]
 ---
 
@@ -22,7 +22,7 @@ Minule se na příkladu s výletem ukázalo, že z množiny klauzulí jde odvozo
 | [[prázdná klauzule]] | $\mathrm{res}_x(x, \neg x) = \mathrm{ff}$ | disjunkce bez členů, nepravdivá v každém ohodnocení |
 | [[populace rezolvent]] | $R^0(S) = S$, $R^{i+1}(S) = R(R^i(S))$, $R^*(S) = \bigcup_i R^i(S)$ | všechny klauzule, které jdou z $S$ vyrobit |
 | [[rezoluční princip]] | $S$ splnitelná iff $\mathrm{ff} \notin R^*(S)$ | věta, na které stojí rezoluční metoda |
-| počet klauzulí | $3^n$ nad $n$ proměnnými | proto se výroba rezolvent zastaví |
+| počet klauzulí | $3^n$ nad $n$ proměnnými (v základním tvaru) | proto se výroba rezolvent zastaví |
 | [[věta o eliminaci proměnné\|eliminace proměnné]] | $S$ splnitelná iff $S_0 \cup R_x$ splnitelná | proměnnou $x$ jde z množiny „vyrezolvovat“ |
 | [[rezoluční tabulka]] | postupně $x_1, \dots, x_n$ | na konci $\{\mathrm{ff}\}$ (nesplnitelná) nebo $\emptyset$ (splnitelná) |
 
@@ -82,6 +82,9 @@ Stejný výsledek dá i úvaha bez prázdné disjunkce: $\neg x \mathrel{\vert\!
 
 ^res-dusledek
 
+> [!lidsky] Lidsky
+> Rezolventa je „bezpečný závěr“: nic nového nevymýšlí, jen zapíše, co z obou klauzulí naráz plyne. Proto ji smíš do množiny přidat, aniž by se změnilo, kdy je množina pravdivá.
+
 ## §2 Populace všech rezolvent
 
 > [!definice] $R(S)$, $R^i(S)$, $R^*(S)$ · slajd 16
@@ -113,10 +116,20 @@ Každá rezolventa je [[sémantický důsledek|důsledkem]] svých rodičů (§1
 
 ^priklad-r1
 
-> [!definice] Zamítací strom
+> [!definice] Zamítací strom · slajd 18
 > Strom, jehož listy jsou klauzule z $S$, každý vnitřní vrchol je rezolventa svých dvou potomků a kořen je $\mathrm{ff}$, se nazývá *zamítací strom*. Když ho najdeš, máš důkaz, že $\mathrm{ff} \in R^*(S)$, tedy že $S$ je nesplnitelná.
 
 ^def-zamitaci-strom
+
+> [!lidsky] Lidsky
+> Zamítací strom je „rodokmen“ prázdné klauzule: dole předpoklady, každé patro výš je rezolventa dvou klauzulí pod ní a nahoře spor $\mathrm{ff}$. Kdo ukáže takový rodokmen, dokázal, že pravidla nejdou splnit naráz.
+
+> [!example] Zamítací strom ze slajdu 18
+> $M = \{z \Rightarrow (x \vee y),\ x \Leftrightarrow y,\ \neg x \wedge (y \vee z)\}$ má klauzální tvar $S = \{\neg z \vee x \vee y,\ \neg x \vee y,\ \neg y \vee x,\ \neg x,\ y \vee z\}$. Strom: $\mathrm{res}_x(\neg z \vee x \vee y, \neg x) = \neg z \vee y$, $\mathrm{res}_x(\neg y \vee x, \neg x) = \neg y$, $\mathrm{res}_z(\neg z \vee y, y \vee z) = y$ a $\mathrm{res}_y(\neg y, y) = \mathrm{ff}$. Množina $S$, a tedy i $M$, je **nesplnitelná**.
+
+> [!obrazek] Zamítací strom ze slajdu 18
+> ![[lgr05-zamitaci-strom.png]]
+> *Oranžově klauzule z $S$ (list $\neg x$ se smí použít dvakrát), modře rezolventy, červeně kořen $\mathrm{ff}$, šedě proměnná, přes kterou se rezolvuje.*
 
 > [!obrazek] Zamítací strom pro výlet a generace rezolvent
 > ![[lgr05-populace.png]]
@@ -171,7 +184,7 @@ Nechť $A = \{x_1, \dots, x_n\}$ je konečná množina proměnných. V klauzuli 
 Klauzule tedy odpovídají $n$-ticím z $\{1, -1, 0\}$ a těch je **$3^n$** (včetně $(0, \dots, 0)$, což je $\mathrm{ff}$). Třeba $x_1 \vee \neg x_2$ nad $\{x_1, x_2, x_3\}$ je $(1, -1, 0)$. Generace $R^0(S) \subseteq R^1(S) \subseteq \dots$ jsou podmnožiny této konečné množiny, takže od nějakého $m$ už nic nového nepřibude: $R^*(S) = R^m(S)$. ^pocet-klauzuli
 
 > [!navic] A co tautologické rezolventy?
-> Rezolventa může vyjít tautologie (§1, $y \vee \neg y \vee z$). Ty se z množiny klauzulí smějí vypustit (minule: $u(S \cup \{\mathrm{tt}\}) = u(S)$). Kdyby se nechávaly, je možností pro každou proměnnou čtyři (i obě literály naráz) a klauzulí $4^n$, pořád konečně mnoho, takže zastavení platí tak jako tak.
+> Rezolventa může vyjít tautologie (§1, $y \vee \neg y \vee z$). Ty se z množiny klauzulí smějí vypustit (minule: $u(S \cup \{\mathrm{tt}\}) = u(S)$). Kdyby se nechávaly, je možností pro každou proměnnou čtyři (i oba literály naráz) a klauzulí $4^n$, pořád konečně mnoho, takže zastavení platí tak jako tak.
 
 ## §4 Eliminace jedné proměnné
 
@@ -278,8 +291,8 @@ Po přidání všech rezolvent přes $x$ smíš klauzule s $x$ „umrtvit“ (vy
 
 *Oranžové kartičky (pojmy a teorie) jsou v aplikaci [[Archiv přednášek#Kartičky|Kartičky]] povinné k dennímu opakování, pojmy z této přednášky taky. Zelené příklady jsou tam jen na procvičení. Nejdřív odpověz nahlas nebo na papír, pak rozklikni.*
 
-> [!karta|01]- Proč $\mathrm{res}(x \vee y, \neg x \vee \neg y \vee z)$ není $z$?
-> Rezolvuje se přes **jednu** proměnnou: přes $x$ i přes $y$ vyjde tautologie. A $z$ neplyne: $u(x) = 1$, $u(y) = 0$ splní obě klauzule a $z$ může být $0$.
+> [!karta|01]- Proč se rezolvuje vždy jen přes jednu dvojici komplementárních literálů?
+> Škrtnutí dvou dvojic naráz **není důsledek**: z $x \vee y$ a $\neg x \vee \neg y \vee z$ by vyšlo $z$, ale $u(x) = 1$, $u(y) = 0$, $u(z) = 0$ splní obě klauzule a $z$ ne. Rezoluce přes jednu proměnnou tu dá jen tautologie.
 
 > [!karta|02]- Proč je $\mathrm{res}_x(x, \neg x) = \mathrm{ff}$?
 > Zbyde **prázdná disjunkce**, ta nemá pravdivý člen, je tedy nepravdivá všude. Jinak: $\neg x \mathrel{\vert\!=\!\vert} \neg x \vee \mathrm{ff}$ a $\mathrm{res}_x(x, \neg x \vee \mathrm{ff}) = \mathrm{ff}$.
@@ -320,7 +333,7 @@ Po přidání všech rezolvent přes $x$ smíš klauzule s $x$ „umrtvit“ (vy
 > [!karta|14]- Proč smíš v rezoluční tabulce po spočítání $R_x$ vyhodit klauzule s $x$?
 > Podle věty o eliminaci jsou $S$ a $S_0 \cup R_x$ **ekvisplnitelné**; zapomenuté rezolventy k rozhodnutí nejsou potřeba.
 
-> [!karta|15]- Jak souvisí množina $T$ (z rezoluční tabulky) s $R^*(S)$ a jak tabulka dokončí důkaz, že z $\mathrm{ff} \notin R^*(S)$ plyne splnitelnost $S$?
+> [!karta|15]- Jak rezoluční tabulka dokončí důkaz směru „⇐“ rezolučního principu ($\mathrm{ff} \notin R^*(S)$ ⇒ $S$ splnitelná)?
 > $T \subseteq R^*(S)$ a **$\mathrm{ff} \in T$ iff $\mathrm{ff} \in R^*(S)$**. Když $\mathrm{ff} \notin R^*(S)$, tabulka skončí s $\emptyset$ (splnitelná) a eliminace zpětně dá svědka pro $S$.
 
 > [!karta|16]- Jak z rezoluční tabulky získáš svědka splnitelnosti?
@@ -346,10 +359,10 @@ Po přidání všech rezolvent přes $x$ smíš klauzule s $x$ „umrtvit“ (vy
 > [!priklad|22]- Pro $S = \{x \vee y, x \vee z \vee t, \neg x, y \vee z\}$ urči $S_0$, $S_x$, $S_{\neg x}$ a $R_x$.
 > $S_0 = \{y \vee z\}$, $S_x = \{x \vee y, x \vee z \vee t\}$, $S_{\neg x} = \{\neg x\}$, **$R_x = \{y, z \vee t\}$**.
 
-> [!priklad|23]- Rozhodni tabulkou (pořadí $x, y, z$), zda je splnitelná $\{\neg z \vee x \vee y,\ \neg x \vee y,\ \neg y \vee x,\ \neg x,\ y \vee z\}$ (z $\{z \Rightarrow (x \vee y), x \Leftrightarrow y, \neg x \wedge (y \vee z)\}$).
+> [!priklad|23]- (slajd 18) Rozhodni tabulkou (pořadí $x, y, z$), zda je splnitelná $\{\neg z \vee x \vee y,\ \neg x \vee y,\ \neg y \vee x,\ \neg x,\ y \vee z\}$ (z $\{z \Rightarrow (x \vee y), x \Leftrightarrow y, \neg x \wedge (y \vee z)\}$).
 > Přes $x$: $R_x = \{\neg y, \neg z \vee y\}$, $S_0 = \{y \vee z\}$. Přes $y$: $R_y = \{\neg z, z\}$. Přes $z$: $\mathrm{ff}$. **Nesplnitelná.**
 
-> [!priklad|24]- Rozhodni tabulkou (pořadí $x, y, z, w$) a případně najdi svědka: $S = \{x \vee y \vee w,\ x \vee \neg y,\ y \vee z \vee \neg w,\ \neg x \vee y \vee \neg z,\ z \vee w\}$.
+> [!priklad|24]- (slajd 26) Rozhodni tabulkou (pořadí $x, y, z, w$) a případně najdi svědka: $S = \{x \vee y \vee w,\ x \vee \neg y,\ y \vee z \vee \neg w,\ \neg x \vee y \vee \neg z,\ z \vee w\}$.
 > Přes $x$: $R_x = \{w \vee y \vee \neg z\}$ (druhá rezolventa $\neg y \vee y \vee \neg z$ je tautologie), $S := \{y \vee z \vee \neg w, z \vee w, w \vee y \vee \neg z\}$. Přes $y$: $S_{\neg y} = \emptyset$, $S := \{z \vee w\}$. Přes $z$: $S := \emptyset$, **splnitelná**. Pozpátku: $w = 0$, pak $z = 1$, pak $y$: $w \vee y \vee \neg z$ vynutí $y = 1$, pak $x$: $x \vee \neg y$ vynutí $x = 1$. Svědek **$x = y = z = 1$, $w = 0$**.
 
 ---

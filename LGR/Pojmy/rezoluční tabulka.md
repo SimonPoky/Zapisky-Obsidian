@@ -11,6 +11,6 @@ zdroj: "slajdy 23–25"
 > [!lidsky] Lidsky
 > Úsporná rezoluce: proměnné se „vyrezolvují“ jedna po druhé a klauzule s už zpracovanou proměnnou se zahodí. Na konci zbyde {ff} (nesplnitelná), nebo ∅ (splnitelná); svědka dostaneš pozpátku.
 
-**Formálně:** pro i = 1, …, n: S := S₀ ∪ R_{xᵢ}; konec S = {ff} ⇒ nesplnitelná, S = ∅ ⇒ splnitelná
+**Formálně:** S konečná, v základním tvaru, proměnné x₁, …, xₙ; pro i = 1, …, n: S := S₀ ∪ R_{xᵢ}; konec S = {ff} ⇒ nesplnitelná, S = ∅ ⇒ splnitelná
 
 **Definice:** [[LGR 05 – Rezoluční princip#^def-rezolucni-tabulka|přednáška 5, 9. 10. 2026]] · slajdy 23–24

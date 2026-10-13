@@ -13,4 +13,4 @@ zdroj: "slajd 15"
 
 **Formálně:** φ |=| ψ ⇔ ∀u: u(φ) = u(ψ) ⇔ (φ ⇔ ψ) je tautologie
 
-**Definice:** [[LGR 02 – Tautologická ekvivalence a úplné systémy spojek#^def-tautekv|přednáška 2, 25. 9. 2026]] · slajd 15
+**Definice:** [[LGR 02 – Tautologická ekvivalence a úplné systémy spojek#^def-tautekv|přednáška 2, 25. 9. 2026]] · slajd 15 · tvrzení: [[LGR 02 – Tautologická ekvivalence a úplné systémy spojek#^veta-tautekv|slajd 16]]

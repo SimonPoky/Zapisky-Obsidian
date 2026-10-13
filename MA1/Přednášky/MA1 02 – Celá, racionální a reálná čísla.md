@@ -221,6 +221,9 @@ Po vynásobení $M \cdot (-1)$ získáme i infimum:
 >
 > Tuhle podobu použiješ skoro v každém důkazu s limitou.
 
+> [!lidsky] Lidsky
+> Infimum dostaneš ze suprema „přes zrcadlo“: otoč množinu kolem nuly, najdi strop a otoč zpátky. A supremum poznáš podle toho, že je to strop, pod který už nejde slézt ani o kousek: kdybys ho snížil o libovolně malé $\varepsilon$, nějaký prvek $M$ by ho přelezl.
+
 ^eps-sup
 
 > [!obrazek] Strop, který nejde snížit

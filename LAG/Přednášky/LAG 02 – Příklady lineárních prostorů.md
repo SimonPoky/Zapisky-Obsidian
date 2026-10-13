@@ -192,7 +192,7 @@ Tohle je „mateřský“ příklad, ze kterého vzniknou všechny předchozí v
 >
 > „Dobře definovaná“ operace nevyvede z množiny ven. Sečteš dva polynomy stupně nejvýše 2 a vyjde zase polynom stupně nejvýše 2, takže se nemusíš bát, že „vypadneš“ z prostoru.
 
-## §7 Další příklady z poznámek
+## §7 Další příklady lineárních prostorů
 
 - **Jednoprvková množina** $\{\vec{0}\}$ je lineární prostor nad jakýmkoliv tělesem (1.13).
 - **Těleso samo nad sebou:** $\mathbb{F}$ s obyčejným $+$ a $\cdot$ (1.14).
@@ -216,23 +216,14 @@ Tohle je „mateřský“ příklad, ze kterého vzniknou všechny předchozí v
 
 *Oranžové kartičky (pojmy a teorie) jsou v aplikaci [[Archiv přednášek#Kartičky|Kartičky]] povinné k dennímu opakování, pojmy z této přednášky taky. Zelené příklady jsou tam jen na procvičení. Nejdřív odpověz nahlas nebo na papír, pak rozklikni.*
 
-> [!karta|01]- Co je nulový vektor v $\mathbb{F}^{2 \times 2}$, v $\mathbb{F}[x]$ a v $\mathbb{F}^{\mathbb{N}}$?
-> Nulová matice $\begin{pmatrix} 0 & 0 \\ 0 & 0 \end{pmatrix}$, nulový polynom $o(x) = 0$, nulová posloupnost $(0, 0, 0, \dots)$.
-
 > [!karta|02]- Jak se dokazuje, že $\mathbb{F}^n$ je lineární prostor?
 > Ověří se všech 8 axiomů. Operace jsou po složkách, takže každý axiom plyne z odpovídající vlastnosti čísel v $\mathbb{F}$ (komutativita vektorů z komutativity sčítání čísel atd.).
-
-> [!karta|03]- Co znamená index $a_{23}$ u matice?
-> Prvek ve 2. řádku a 3. sloupci. Vždy nejdřív řádek, pak sloupec.
 
 > [!karta|04]- Jak souvisí $\mathbb{F}^{m \times n}$ s $\mathbb{F}^{mn}$ a $\mathbb{F}^n$ s maticemi?
 > $\mathbb{F}^{m \times n}$ je „prakticky“ $\mathbb{F}^{mn}$: stejná čísla, jen poskládaná do tabulky, sčítá se políčko po políčku. A $\mathbb{F}^n = \mathbb{F}^{n \times 1}$, matice s jedním sloupcem.
 
 > [!karta|05]- Jak z prostoru funkcí $\mathbb{F}^A$ dostaneš $\mathbb{F}^n$, posloupnosti a funkce $\mathbb{R} \to \mathbb{R}$?
 > Volbou $A = \{1, \dots, n\}$, $A = \mathbb{N}$ a $A = \mathbb{R}$ (s $\mathbb{F} = \mathbb{R}$). Matice dostaneš pro $A = \{1, \dots, m\} \times \{1, \dots, n\}$.
-
-> [!karta|06]- Co je $\mathbb{F}^{\emptyset}$ a je to lineární prostor?
-> Jednoprvková množina: existuje právě jedna (prázdná) funkce $\emptyset \to \mathbb{F}$. Je to lineární prostor, jen triviální $\{\vec{0}\}$ (příklad 1.13).
 
 > [!karta|08]- Proč je $\deg o(x) = -\infty$, a ne $0$?
 > Stupeň 0 už mají nenulové konstanty. S $-\infty$ platí $\deg(p \cdot q) = \deg p + \deg q$ i pro nulový polynom.
@@ -250,6 +241,12 @@ Tohle je „mateřský“ příklad, ze kterého vzniknou všechny předchozí v
 > Koeficienty jsou jednoznačně určené hodnotami v racionálních bodech (nenulový polynom stupně $n$ má nejvýš $n$ kořenů). Neplatí to např. nad $\mathbb{Z}_2$: $x$ a $x^2$ mají v bodech 0 a 1 stejné hodnoty.
 
 ### Příklady na procvičení
+
+> [!priklad|01]- Urči nulový vektor v $\mathbb{F}^{2 \times 2}$, v $\mathbb{F}[x]$ a v $\mathbb{F}^{\mathbb{N}}$?
+> Nulová matice $\begin{pmatrix} 0 & 0 \\ 0 & 0 \end{pmatrix}$, nulový polynom $o(x) = 0$, nulová posloupnost $(0, 0, 0, \dots)$.
+
+> [!priklad|06]- Co je $\mathbb{F}^{\emptyset}$ a je to lineární prostor?
+> **Jednoprvková množina**: existuje právě jedna (prázdná) funkce $\emptyset \to \mathbb{F}$. Je to lineární prostor, jen triviální $\{\vec{0}\}$ (příklad 1.13).
 
 > [!priklad|07]- Jaký je stupeň polynomů $2 + 3x - x^2$, $5$ a $0$?
 > $2$, $0$ a $-\infty$.

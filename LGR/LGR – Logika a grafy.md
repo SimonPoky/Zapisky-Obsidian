@@ -10,7 +10,7 @@ tags: [predmet, LGR]
 
 [Přednášky: prezentace a videa ↗](https://math.fel.cvut.cz/en/people/gollova/lgr/lgr-prednaska.html) · [Prezentace 1 (PDF) ↗](https://math.fel.cvut.cz/en/people/gollova/lgr/lgr_1.pdf) · [Stránka předmětu ↗](https://math.fel.cvut.cz/en/people/gollova/lgr.html) · [Literatura ↗](https://math.fel.cvut.cz/en/people/gollova/lgr/lgr-literatura.html) · [Testy v Moodle ↗](https://moodle.fel.cvut.cz/course/view.php?id=10550) · [Videopřednášky (YouTube) ↗](https://www.youtube.com/playlist?list=PLQL6z4JeTTQkjV5JYF0gB599ekq4zFfPK)
 
-**Kartičky:** 97 povinných + 31 příkladů · [otevřít aplikaci ↗](https://claude.ai/artifact/3CKfKeuwtwrWiz3FSfSh5B) · [[Archiv přednášek#Kartičky|jak to funguje]]
+**Kartičky:** 100 povinných + 31 příkladů · [otevřít aplikaci ↗](https://claude.ai/artifact/3CKfKeuwtwrWiz3FSfSh5B) · [[Archiv přednášek#Kartičky|jak to funguje]]
 
 ## Přednášky
 
@@ -79,6 +79,7 @@ tags: [predmet, LGR]
 - [[tautologie]] · Formule pravdivá v každém ohodnocení, např. a ∨ ¬a.
 - [[úplná normální forma]] · DNF/CNF, kde každý term obsahuje všechny proměnné; vzniká z tabulky.
 - [[úplný systém logických spojek]] · Spojky, kterými jde zapsat každá booleovská funkce: {¬, ∧, ∨}, {¬, ⇒}, {|}, {↓}.
+- [[věta o dedukci]] · Předpoklad jde přesunout do závěru: S ∪ {φ} ⊨ ψ iff S ⊨ φ ⇒ ψ.
 - [[věta o eliminaci proměnné]] · S splnitelná iff S₀ ∪ Rₓ splnitelná; klauzule s x jde po rezoluci zahodit.
 - [[věta o normálních formách]] · Ke každé formuli existuje ekvivalentní DNF i CNF (ne jednoznačně).
 - [[věta o sémantickém důkazu sporem]] · S ⊨ φ právě když S ∪ {¬φ} je nesplnitelná.

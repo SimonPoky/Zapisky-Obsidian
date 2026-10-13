@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Zkouška Gitu.md",
+                "file": "LAG/Přednášky/LAG 06 – Souřadnice, součet a průnik podprostorů.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Zkouška Gitu"
+              "title": "LAG 06 – Souřadnice, součet a průnik podprostorů"
             }
           }
         ]
@@ -190,8 +190,9 @@
       "bases:Create new base": false
     }
   },
-  "active": "a4301ff296c90ca6",
+  "active": "d70f69f7743dabdf",
   "lastOpenFiles": [
+    "Zkouška Gitu.md",
     "Untitled.canvas",
     "LAG/Přednášky/LAG 06 – Souřadnice, součet a průnik podprostorů.md",
     "LGR/Přednášky/LGR 05 – Rezoluční princip.md",

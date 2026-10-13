@@ -69,6 +69,9 @@ $$
 
 ^def-strom
 
+> [!lidsky] Lidsky
+> Strom ukazuje, jak se formule skládala: nahoře poslední spojka, pod ní ty, které se použily dřív, dole proměnné. Je to jako rozbor věty ve škole, kde se hledá, co je podmět a co přísudek, jen tady se hledá, která spojka „drží“ celou formuli.
+
 [[syntaktický strom|Strom]] se v podstatě píše **odspodu**: listy jsou proměnné, nad nimi spojky, kořen je poslední použitá spojka. Každý vrchol i se vším pod sebou je *podformule* `slajd 8`.
 
 > [!obrazek] Strom formule $(\neg b \Rightarrow a) \vee c$
@@ -167,6 +170,9 @@ $$
 
 ^def-tautologie
 
+> [!lidsky] Lidsky
+> Podívej se na sloupec formule v tabulce: aspoň jedna jednička znamená splnitelná, samé jedničky tautologie („pravda vždycky, ať je svět jakýkoli“), samé nuly kontradikce („nikdy to nemůže platit“).
+
 > [!example] $\varphi = (\neg b \Rightarrow a) \vee c$ celou tabulkou
 > | $a$ | $b$ | $c$ | $\neg b$ | $\neg b \Rightarrow a$ | $\varphi$ |
 > |---|---|---|---|---|---|
@@ -196,8 +202,8 @@ $$
 > [!karta|03]- K čemu je v definici formule podmínka, že každá formule vznikne z proměnných konečným počtem použití spojek?
 > Říká, že **nic jiného** formulí není (např. nekonečný řetězec $\neg\neg\neg\dots$). Bez něj by rekurzivní definice množinu neurčovala jednoznačně.
 
-> [!karta|05]- Jak je definována hloubka formule $\alpha \circ \beta$ s binární spojkou?
-> $\mathrm{hl}(\alpha \circ \beta) = 1 + \max\{\mathrm{hl}(\alpha), \mathrm{hl}(\beta)\}$. Proměnná má hloubku 0, $\mathrm{hl}(\neg\alpha) = 1 + \mathrm{hl}(\alpha)$.
+> [!karta|05]- Proč je v hloubce formule $\alpha \circ \beta$ maximum, a ne součet hloubek $\alpha$ a $\beta$?
+> Hloubka je **výška syntaktického stromu**: nejdelší cesta od kořene k listu. Pod kořenem $\circ$ visí oba podstromy vedle sebe, takže rozhoduje ten vyšší: $\mathrm{hl}(\alpha \circ \beta) = 1 + \max\{\mathrm{hl}(\alpha), \mathrm{hl}(\beta)\}$.
 
 > [!karta|06]- Jsou formule $a \vee b$ a $b \vee a$ rovny?
 > **Ne**, rovnost formulí je stejný řetězec / stejný strom. Jsou ale tautologicky ekvivalentní (stejný význam).
@@ -205,8 +211,8 @@ $$
 > [!karta|07]- Proč je formulí nekonečně mnoho i nad $A = \{a\}$?
 > $a, \neg a, \neg\neg a, \neg\neg\neg a, \dots$ jsou navzájem různé řetězce, tedy různé formule.
 
-> [!karta|08]- Kdy je implikace $\alpha \Rightarrow \beta$ nepravdivá?
-> Jen když $u(\alpha) = 1$ a $u(\beta) = 0$ (slib porušen). Jinak je pravdivá, i když předpoklad neplatí.
+> [!karta|08]- Proč je implikace $\alpha \Rightarrow \beta$ pravdivá, když $\alpha$ neplatí?
+> Implikace je **slib „když $\alpha$, pak $\beta$“**. Když $\alpha$ neplatí, slib se nedá porušit, takže je splněný. Porušit ho jde jen v řádku $u(\alpha) = 1$, $u(\beta) = 0$.
 
 > [!karta|09]- Vyjádři $u(\alpha \wedge \beta)$, $u(\alpha \vee \beta)$ a $u(\alpha \Rightarrow \beta)$ pomocí čísel 0 a 1.
 > $u(\alpha \wedge \beta) = \min$, $u(\alpha \vee \beta) = \max$, $u(\alpha \Rightarrow \beta) = 1 \iff u(\alpha) \le u(\beta)$.

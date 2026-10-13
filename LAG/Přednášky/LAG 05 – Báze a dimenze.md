@@ -26,7 +26,7 @@ Minule jsme poznali [[lineární nezávislost]]: v nezávislé posloupnosti nen�
 | věta 4.5 | báze = minimální generující = maximální LN posloupnost | |
 | věta 4.7 | všechny báze mají stejně prvků | |
 | [[dimenze]] (4.8 ♥) | $\dim L$ = počet prvků báze, případně $\infty$ | $\dim\mathbb{F}^n = n$, $\dim\mathbb{F}[x] = \infty$ |
-| věta 4.11 | z konečné generující množiny jde vybrat bázi | $\operatorname{span}\{\vec{x}_1, \vec{x}_2, \vec{x}_1 + \vec{x}_2\}$ má bázi $(\vec{x}_1, \vec{x}_2)$ |
+| věta 4.11 | z konečné generující množiny jde vybrat bázi | $\operatorname{span}\{\vec{x}_1, \vec{x}_2, \vec{x}_1 + \vec{x}_2\}$ má bázi $(\vec{x}_1, \vec{x}_2)$, je-li $(\vec{x}_1, \vec{x}_2)$ LN |
 | doplnění na bázi | LN posloupnost jde doplnit na bázi ($\dim L < \infty$) | |
 | důsledek | pro $n = \dim L$ vektorů: báze $\iff$ LN $\iff$ generuje | |
 | dimenze podprostoru | $V \le L \Rightarrow \dim V \le \dim L$; pro $\dim L < \infty$ je $V = L \iff \dim V = \dim L$ | |
@@ -209,6 +209,8 @@ Aby šlo mluvit o „počtu směrů“ prostoru, musí mít všechny báze stejn
 
 > [!veta] Lemma 4.6 (Steinitzova věta o výměně) \*
 > ==Buď $L$ lineární prostor nad $\mathbb{F}$, $(\vec{x}_1, \dots, \vec{x}_k)$ LN posloupnost a $(\vec{y}_1, \dots, \vec{y}_l)$ posloupnost, která generuje $L$.== Potom **$k \le l$**.
+>
+> V poznámkách je lemma formulované pro konečnou generující *množinu* $G$ s $l = |G|$; pro posloupnost je to totéž (opakované prvky jen zvětší $l$).
 
 ^lemma-46
 
@@ -227,6 +229,9 @@ Lemma se zde nedokazuje a ke zkouškové písemce není nutné (v poznámkách j
 > > Buďte $(\vec{x}_1, \dots, \vec{x}_k)$ a $(\vec{y}_1, \dots, \vec{y}_l)$ dvě báze. První je LN a druhá generuje, takže podle lemmatu $k \le l$. Role jde prohodit: druhá je LN a první generuje, tedy $l \le k$. Dohromady $k = l$.
 
 ^veta-47
+
+> [!lidsky] Lidsky
+> Báze jsou různé „sady základních směrů“, ale všechny stejně velké: v rovině vždy dva vektory, v prostoru tři. Důvod je lemma o výměně: nezávislých vektorů nemůže být víc než generátorů, a báze je obojí najednou, takže dvě báze se navzájem „uhlídají“ ($k \le l$ i $l \le k$).
 
 > [!definice] Definice ♥ · pozn. 4.8
 > Buď $L$ lineární prostor nad $\mathbb{F}$. Definujeme jeho *dimenzi* jako počet prvků jeho báze. Pokud pro žádné $n \in \mathbb{N}_0$ nemá $n$-prvkovou bázi, řekneme, že má dimenzi nekonečno. Dimenzi $L$ značíme $\dim L$.
@@ -252,7 +257,7 @@ Lemma se zde nedokazuje a ke zkouškové písemce není nutné (v poznámkách j
 > [!navic] Nekonečné báze (pozn. 4.10 \*)
 > Nezávislost a bázi jde zavést i pro nekonečné množiny vektorů: LN znamená, že každá konečná část je LN. Takové bázi se říká Hamelova. Pro polynomy funguje dobře: $(1, x, x^2, \dots)$ je báze $\mathbb{F}[x]$, protože každý polynom má jen konečně mnoho členů.
 >
-> Pozor, $((1, 0, 0, \dots), (0, 1, 0, \dots), \dots)$ **není** Hamelova báze $\mathbb{R}^{\mathbb{N}}$: lineární kombinace je vždy konečná, takže z nich poskládáš jen posloupnosti, které jsou od jistého místa nulové, třeba $(1, 1, 1, \dots)$ ne. Hamelova báze $\mathbb{R}^{\mathbb{N}}$ sice existuje (abstraktním argumentem „vyhazuj z množiny všech posloupností, dokud nezbude nezávislá“), ale nikdo ji nikdy nevypsal, a k počítání je proto k ničemu. Užitečná báze nekonečně rozměrných prostorů potřebuje nekonečné kombinace, tedy řady. Ke zkoušce to není potřeba.
+> Pozor, $((1, 0, 0, \dots), (0, 1, 0, \dots), \dots)$ **není** Hamelova báze $\mathbb{R}^{\mathbb{N}}$: lineární kombinace je vždy konečná, takže z nich poskládáš jen posloupnosti, které jsou od jistého místa nulové, třeba $(1, 1, 1, \dots)$ ne. Hamelova báze $\mathbb{R}^{\mathbb{N}}$ sice existuje (každý lineární prostor nějakou má, důkaz ale potřebuje axiom výběru, pozn. 4.10), ale nikdo ji nikdy nevypsal a spočetná být nemůže, a k počítání je proto k ničemu. Užitečná báze nekonečně rozměrných prostorů potřebuje nekonečné kombinace, tedy řady. Ke zkoušce to není potřeba.
 
 ## §7 Výběr báze z generátorů
 

@@ -1,5 +1,5 @@
 ---
-aliases: ["absolutní hodnoty", "|x|", "vzdálenost", "trojúhelníková nerovnost"]
+aliases: ["absolutní hodnoty", "absolutní hodnotu", "vzdálenost", "trojúhelníková nerovnost"]
 tags: [pojem, MA1]
 predmet: MA1
 prednaska: 2

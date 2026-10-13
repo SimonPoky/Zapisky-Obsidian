@@ -30,7 +30,7 @@ $$
 -\infty = (\emptyset, \mathbb{Q}), \qquad +\infty = (\mathbb{Q}, \emptyset).
 $$
 
-^def-nekonecna
+^rezy-nekonecna
 
 > [!lidsky] Lidsky
 > Střih úplně vlevo, před všemi čísly, je $-\infty$: nalevo nic, napravo všechno. Střih úplně vpravo je $+\infty$. Druhá podmínka řezu pro ně pořád platí ($\mathbb{Q}$ nemá v $\mathbb{Q}$ žádný dolní odhad, takže $L = \emptyset$ sedí), porušena je jen neprázdnost. Proto to nejsou reálná čísla, ale přidané krajní body.
@@ -48,6 +48,9 @@ $$
 
 > [!veta] Suprema v ℝ* existují vždy · handout 1B, slajd 16
 > Pro každou $M \subseteq \mathbb{R}$: $\sup M$ je obyčejné supremum, je-li $M \neq \emptyset$ shora omezená; $\sup M = +\infty$, je-li $M \neq \emptyset$ shora neomezená; $\sup \emptyset = -\infty$. Zrcadlově $\inf M = -\sup(-M)$ vždy existuje v $\mathbb{R}^*$. Je to stejný trik jako u $\mathbb{N}^*$ v [[MA1 01 – Množiny, uspořádání a přirozená čísla#^def-nstar|přednášce 1]].
+
+> [!lidsky] Lidsky
+> $\mathbb{R}^*$ je číselná osa s přidanými dvěma konci. Díky nim má supremum úplně každá množina: neomezená má strop $+\infty$ a prázdná $-\infty$ (každé číslo je jejím horním odhadem, takže nejnižší strop je úplně dole). S nekonečny se počítá „selským rozumem“, jen kde by výsledek mohl být cokoli ($\infty - \infty$, $0 \cdot \infty$), zůstává nedefinovaný.
 
 ## §2 Funkce a posloupnost
 
@@ -128,9 +131,12 @@ Příklady směrů (handout 2A, slajdy 11–16; pro všechna $\delta > 0$, resp.
 > [!veta] Nejmenší z konečně mnoha · handout 2A, slajd 10
 > Z konečně mnoha prvků $P_1, \dots, P_k$ směru jde vždy vybrat ten nejmenší, který je obsažen ve všech ostatních (plyne z vlastnosti 2). Na tomhle stojí důkaz jednoznačnosti v §7 i většina dalších vět o limitách.
 
+> [!lidsky] Lidsky
+> Kusy směru jsou do sebe vnořené jako matrjošky. Z konečně mnoha vždy vybereš ten nejmenší a ten leží ve všech ostatních, takže se v něm splní všechny podmínky naráz. U nekonečně mnoha to nejde: intervaly $(0; \frac{1}{n})$ nemají společný bod.
+
 ## §6 Definice limity
 
-> [!definice] Limita ve směru · handout 2A, slajd 17
+> [!definice] Limita ve směru · handout 2A, slajdy 17 a 19
 > Ať $f$ je *definována ve směru* $\mathcal{S}$, tj. existuje $P_0 \in \mathcal{S}$ takové, že $f$ je definována na $P_0$. Řekneme, že
 >
 > $$

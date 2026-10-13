@@ -8,9 +8,9 @@ Studijní poznámky z přednášek (KyR, FEL ČVUT, ZS 2026/27), ověřené podl
 
 ## Předměty
 
-- [[LAG – Lineární algebra]] · 5 přednášek · 50 pojmů · 107 kartiček + 31 příkladů
-- [[LGR – Logika a grafy]] · 5 přednášek · 41 pojmů · 97 kartiček + 31 příkladů
-- [[MA1 – Matematická analýza 1]] · 6 přednášek · 61 pojmů · 131 kartiček + 38 příkladů
+- [[LAG – Lineární algebra]] · 6 přednášek · 59 pojmů · 127 kartiček + 40 příkladů
+- [[LGR – Logika a grafy]] · 5 přednášek · 42 pojmů · 100 kartiček + 31 příkladů
+- [[MA1 – Matematická analýza 1]] · 6 přednášek · 61 pojmů · 131 kartiček + 34 příkladů
 
 ## Jak číst poznámky
 
@@ -40,25 +40,25 @@ Studijní poznámky z přednášek (KyR, FEL ČVUT, ZS 2026/27), ověřené podl
 > Obrázek s popiskem, co znamená která barva.
 
 > [!karta|01]- Kartička
-> Pojem nebo teorie (co to je, proč to platí). Nejdřív odpověz, pak rozklikni. V aplikaci Kartičky je povinná k dennímu opakování.
+> Pojem nebo teorie (co to je, proč to platí). Nejdřív odpověz, pak rozklikni. V aplikaci Studium KyR je povinná k dennímu opakování.
 
 > [!priklad|02]- Příklad
 > Konkrétní úloha (spočítej, rozhodni, je $\mathbb{Q}$ těleso?). V aplikaci je jen na procvičení, do denní povinnosti se nepočítá.
 
 > [!question]- Kvíz jen v Obsidianu
-> Rychlá kontrola při čtení, do aplikace Kartičky nejde.
+> Rychlá kontrola při čtení, do aplikace Studium KyR nejde.
 
 ## Kartičky
 
-Oranžové kartičky z přednášek, všechny pojmy a zelené příklady jsou i v aplikaci **[Kartičky ↗](https://claude.ai/artifact/3CKfKeuwtwrWiz3FSfSh5B)**. Pojmy a oranžové kartičky jsou **povinné**: aplikace ti je plánuje každý den a počítají se do série dní. Příklady jsou **na procvičení**: spustíš je zvlášť, kdy chceš, a do denní povinnosti se nepočítají. Otevři ji na mobilu nebo na počítači, přihlášený na claude.ai. Opakování plánuje algoritmus FSRS (stejný jako v Anki) a pokrok se ukládá k tvému účtu, takže můžeš střídat zařízení. Nové kartičky přidává Claude sám, když zpracuje přednášku; nic neimportuješ ani nesynchronizuješ.
+Oranžové kartičky z přednášek, všechny pojmy a zelené příklady jsou i v aplikaci **[Studium KyR ↗](https://claude.ai/artifact/3CKfKeuwtwrWiz3FSfSh5B)**. Pojmy a oranžové kartičky jsou **povinné**: aplikace ti je plánuje každý den a počítají se do série dní. Příklady jsou **na procvičení**: spustíš je zvlášť, kdy chceš, a do denní povinnosti se nepočítají. Otevři ji na mobilu nebo na počítači, přihlášený na claude.ai. Opakování plánuje algoritmus FSRS (stejný jako v Anki) a pokrok se ukládá k tvému účtu, takže můžeš střídat zařízení. Nové kartičky přidává Claude sám, když zpracuje přednášku; nic neimportuješ ani nesynchronizuješ.
 
 - Opravy dělej tady v Obsidianu a pak řekni Claudovi, ať kartičky aktualizuje.
 - Pojem s vlastností `karta: false` se do aplikace nedává (teď `lineární rovnice`, `skalár`, `eukleidovské vektory`, protože jsou triviální).
 - Nová kartička se píše takto, příklad stejně jen s `priklad` místo `karta`. Číslo za `|` je trvalé ID v rámci přednášky, společné pro kartičky i příklady: nepřečíslovávej, nové dej další volné číslo. Když kartičku přeznačíš z `karta` na `priklad` (nebo naopak) a číslo necháš, pokrok v aplikaci zůstane.
 
 ```
-> [!karta|21]- Co je to číselné těleso?
-> Odpověď, klidně se vzorci $x^2$.
+> [!karta|21]- Proč musí každé číselné těleso obsahovat $\mathbb{Q}$?
+> Odpověď, klidně se vzorci $x^2$. Holou definici pojmu se neptej, tu zkouší kartička pojmu.
 
 > [!priklad|22]- Je $\mathbb{Q}$ číselné těleso?
 > Ano, protože …

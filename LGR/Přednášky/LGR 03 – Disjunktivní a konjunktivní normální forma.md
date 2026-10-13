@@ -167,6 +167,9 @@ Postup (slajdy 17–18):
 > [!karta|10]- Může být formule zároveň v DNF i v CNF?
 > **Ano**, např. $a \vee c$ (jeden maxterm, nebo dva mintermy) nebo $a \wedge b$ nebo jediný literál.
 
+> [!karta|16]- Proč DNF získaná z tabulky (mintermy řádků s 1) opravdu určuje danou funkci?
+> Minterm řádku je pravdivý **právě v tom jednom řádku** (každý literál sedí jen na jeho hodnoty). Disjunkce mintermů je proto pravdivá přesně v řádcích s 1 a má stejný sloupec jako zadaná funkce.
+
 ### Příklady na procvičení
 
 > [!priklad|11]- Najdi DNF a CNF formule $a \Leftrightarrow b$ z tabulky.

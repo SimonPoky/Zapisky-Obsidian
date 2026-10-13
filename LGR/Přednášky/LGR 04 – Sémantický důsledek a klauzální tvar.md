@@ -10,7 +10,7 @@ tags: [prednaska, LGR]
 
 *Přednáška 4 · čtvrtek 8. 10. 2026* · [[LGR – Logika a grafy|LGR]] · [Prezentace 3 (PDF) ↗](https://math.fel.cvut.cz/en/people/gollova/lgr/lgr_3.pdf) · [Verze k tisku ↗](https://math.fel.cvut.cz/en/people/gollova/lgr/lgr_3a.pdf)
 
-Témata: `splnitelnost množiny formulí` · `prázdná množina` · `sémantický důsledek` · `důkaz sporem` · `převod na nesplnitelnost` · `klauzální tvar` · `rezolventa`
+Témata: `splnitelnost množiny formulí` · `prázdná množina` · `sémantický důsledek` · `důkaz sporem` · `věta o dedukci` · `převod na nesplnitelnost` · `klauzální tvar` · `rezolventa`
 
 Dosud se pravdivost řešila u jedné [[formule]]. Dnes se rozšíří na celé množiny formulí („všechny předpoklady platí naráz“) a z toho vznikne nejdůležitější pojem výrokové logiky: [[sémantický důsledek]], tedy kdy z předpokladů plyne závěr. Na konci se ukáže, proč se skoro každá otázka dá převést na otázku „je tahle množina [[konjunktivní normální forma|CNF]] klauzulí nesplnitelná?“, na kterou odpovídá rezoluční metoda.
 
@@ -23,6 +23,7 @@ Dosud se pravdivost řešila u jedné [[formule]]. Dnes se rozšíří na celé 
 | prázdná množina | $u(\emptyset) = 1$ pro každé $u$ | $\emptyset$ je splnitelná, $\emptyset \models \varphi$ iff $\varphi$ je tautologie |
 | [[sémantický důsledek]] | $S \models \varphi$ | $\forall u : u(S) \le u(\varphi)$ |
 | důkaz sporem | $S \models \varphi$ iff $S \cup \{\neg\varphi\}$ nesplnitelná | důsledek se převede na nesplnitelnost |
+| [[věta o dedukci]] | $S \cup \{\varphi\} \models \psi$ iff $S \models \varphi \Rightarrow \psi$ | předpoklad jde přesunout do závěru jako podmínka |
 | [[klauzální tvar]] | $\mathrm{Kl}(S)$ | všechny klauzule z CNF formulí v $S$; splnitelná iff $S$ splnitelná |
 | [[rezolventa]] | $\{\alpha \vee x, \beta \vee \neg x\} \models \alpha \vee \beta$ | když vznikne $\mathrm{ff}$, množina je nesplnitelná |
 
@@ -36,7 +37,7 @@ Dosud se pravdivost řešila u jedné [[formule]]. Dnes se rozšíří na celé 
 ^def-splnitelnost-mnoziny
 
 > [!lidsky] Lidsky
-> Množina formulí je seznam pravidel, která mají platit **současně**. Splnitelná znamená, že existuje aspoň jeden „svět“ (řádek tabulky), kde se žádné pravidlo neporuší. Tři kamarádi: „přijdu, jestli přijde Eva“, „Eva nepřijde“, „někdo z nás dvou přijde“. Každá věta zvlášť jde splnit, ale všechny tři naráz ne.
+> Množina formulí je seznam pravidel, která mají platit **současně**. Splnitelná znamená, že existuje aspoň jeden „svět“ (řádek tabulky), kde se žádné pravidlo neporuší. Tři pravidla pro mě a Evu: „Eva přijde, jestli přijdu já“, „Eva nepřijde“, „někdo z nás dvou přijde“. Každá věta zvlášť jde splnit, ale všechny tři naráz ne.
 
 Pro **konečnou** množinu $S = \{\varphi_1, \dots, \varphi_n\}$ je $u(S) = u(\varphi_1 \wedge \dots \wedge \varphi_n)$: „všechny jsou pravdivé“ je přesně konjunkce. Definice přes „všechny prvky“ je potřeba kvůli **nekonečným** množinám. Už z jedné proměnné $a$ vznikne nekonečně mnoho formulí ($a$, $\neg a$, $\neg\neg a$, $a \vee \neg a$, …), takže množina formulí může být nekonečná a nekonečnou konjunkci zapsat nejde.
 
@@ -123,11 +124,12 @@ $$
 
 Vztah mezi dvěma formulemi se tak převede na vlastnost jedné formule, stejně jako [[tautologická ekvivalence]]: $\alpha \mathrel{\vert\!=\!\vert} \beta$ iff $\alpha \Leftrightarrow \beta$ je tautologie. ^veta-implikace
 
-> [!navic] Dva krajní případy · slajd 6
+> [!navic] Krajní případy · slajd 6
+> - $S \models \mathrm{ff}$, **právě když $S$ je nesplnitelná**: $u(S) \le u(\mathrm{ff}) = 0$ znamená $u(S) = 0$ v každém ohodnocení.
 > - Je-li $S$ **nesplnitelná**, pak $S \models \varphi$ pro **každou** $\varphi$: žádný řádek s $u(S) = 1$ není, takže není co pokazit. („Z nepravdy plyne cokoli.“)
 > - $\emptyset \models \varphi$ (píše se zkráceně $\models \varphi$), právě když $\varphi$ je tautologie: $u(\emptyset) = 1$ ve všech řádcích, takže $\varphi$ musí být pravdivá všude.
 
-## §4 Věta o sémantickém důkazu sporem
+## §4 Důkaz sporem a věta o dedukci
 
 > [!veta] Věta o sémantickém důkazu sporem · slajd 7
 > ==Pro množinu formulí $S$ a formuli $\varphi$== platí: **$S \models \varphi$, právě když $S' = S \cup \{\neg\varphi\}$ je nesplnitelná.**
@@ -146,7 +148,20 @@ Vztah mezi dvěma formulemi se tak převede na vlastnost jedné formule, stejně
 > [!lidsky] Lidsky
 > Chceš ukázat, že z předpokladů plyne závěr? Přidej k předpokladům opak závěru a ukaž, že to nejde splnit naráz. Na obrázku výše: když zelená leží v modré, nemá zelená s červenou (opakem $\varphi$) nic společného. Důkaz sporem ze střední školy, jen pro množiny formulí.
 
-Díky větě se všechny dosavadní otázky převedou na jednu, o (ne)splnitelnosti (slajd 9):
+> [!veta] Sémantická věta o dedukci · slajd 7
+> ==Pro množinu formulí $S$ a formule $\varphi, \psi$== platí: **$S \cup \{\varphi\} \models \psi$, právě když $S \models (\varphi \Rightarrow \psi)$.**
+>
+> > [!note]- Důkaz
+> > **„⇒“:** Vezmi $u$ s $u(S) = 1$. Je-li $u(\varphi) = 0$, je $\varphi \Rightarrow \psi$ pravdivá automaticky. Je-li $u(\varphi) = 1$, je $u(S \cup \{\varphi\}) = 1$, tedy $u(\psi) = 1$ a implikace je pravdivá.
+> >
+> > **„⇐“:** Vezmi $u$ s $u(S \cup \{\varphi\}) = 1$. Pak $u(S) = 1$, tedy $u(\varphi \Rightarrow \psi) = 1$, a protože $u(\varphi) = 1$, musí být $u(\psi) = 1$.
+
+^veta-dedukce
+
+> [!lidsky] Lidsky
+> Předpoklad smíš „přestěhovat“ do závěru jako podmínku: „z pravidel $S$ a z toho, že prší, plyne mokrá silnice“ je totéž co „z pravidel $S$ plyne: když prší, je silnice mokrá“. Pro $S = \emptyset$ dostaneš známé $\varphi \models \psi$ iff $\varphi \Rightarrow \psi$ je tautologie.
+
+Díky větě o sporu se všechny dosavadní otázky převedou na jednu, o (ne)splnitelnosti (slajd 9):
 
 | otázka | převod |
 |---|---|
@@ -256,8 +271,8 @@ Pokračování: $\neg q \vee t$ s $\neg t \vee r$ dá $\neg q \vee r$, to s $\ne
 > [!karta|04]- Platí i „každá formule z $\emptyset$ je nepravdivá v $u$“? Plyne z toho $u(\emptyset) = 0$?
 > Platí (stejný důvod), ale $u(\emptyset) = 0$ **neplyne**: to by vyžadovalo $\exists \varphi\, (\varphi \in \emptyset \wedge u(\varphi) = 0)$ a takový svědek neexistuje.
 
-> [!karta|05]- Jak je definován sémantický důsledek $S \models \varphi$ a jak ho zapíšeš přes nerovnost?
-> $\varphi$ je pravdivá v každém ohodnocení, kde je pravdivé celé $S$. Ekvivalentně **$u(S) \le u(\varphi)$ pro všechna $u$**.
+> [!karta|05]- Proč je $S \models \varphi$ totéž co $u(S) \le u(\varphi)$ pro všechna ohodnocení $u$?
+> Nerovnost $u(S) \le u(\varphi)$ mezi hodnotami $0$ a $1$ selže **jen pro $u(S) = 1$, $u(\varphi) = 0$**, a přesně tuhle kombinaci definice důsledku zakazuje. Kde $u(S) = 0$, platí nerovnost vždy.
 
 > [!karta|06]- Jak souvisí $\alpha \models \varphi$ s implikací?
 > $\alpha \models \varphi$, právě když **$\alpha \Rightarrow \varphi$ je tautologie** (protože $u(\alpha \Rightarrow \varphi) = 1$ iff $u(\alpha) \le u(\varphi)$).
@@ -285,6 +300,9 @@ Pokračování: $\neg q \vee t$ s $\neg t \vee r$ dá $\neg q \vee r$, to s $\ne
 
 > [!karta|15]- Proč platí $\{\alpha \vee x, \beta \vee \neg x\} \models \alpha \vee \beta$?
 > Je-li $u(x) = 1$, je $\neg x$ nepravdivé, takže platí $\beta$. Je-li $u(x) = 0$, platí $\alpha$. V obou případech **$\alpha \vee \beta$**. Proměnná $x$ sama nezařídí pravdivost obou klauzulí.
+
+> [!karta|25]- Dokaž sémantickou větu o dedukci: $S \cup \{\varphi\} \models \psi$ iff $S \models \varphi \Rightarrow \psi$.
+> ⇒: v $u$ s $u(S) = 1$ je buď $u(\varphi) = 0$ (implikace platí), nebo $u(S \cup \{\varphi\}) = 1$, a pak $u(\psi) = 1$. ⇐: z $u(S \cup \{\varphi\}) = 1$ plyne $u(\varphi \Rightarrow \psi) = 1$ a $u(\varphi) = 1$, tedy **$u(\psi) = 1$**.
 
 > [!karta|16]- Co znamená, když při rezoluci vznikne $\mathrm{ff}$?
 > Každá rezolventa je důsledkem, takže by platila v každém $u$ s $u(M) = 1$; $\mathrm{ff}$ ale nikde neplatí. Tedy **$M$ je nesplnitelná**.

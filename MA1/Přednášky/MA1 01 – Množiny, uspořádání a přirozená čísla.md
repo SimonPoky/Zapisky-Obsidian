@@ -126,6 +126,9 @@ Nakreslení [[uspořádaná množina|uspořádání]] tak, že menší je níž 
 > \sup_{i \in I} A_i = \bigcup_{i \in I} A_i, \qquad \inf_{i \in I} A_i = \bigcap_{i \in I} A_i.
 > $$
 
+> [!lidsky] Lidsky
+> Infimum je „nejvyšší podlaha“: ze všech prvků, které leží pod celou $M$, ten největší. U množin s inkluzí je nejmenší společný „obal“ sjednocení a největší společná „část“ průnik.
+
 Supremum je tedy v $\mathcal{P}(U)$ přesně sjednocení a infimum průnik. V jiných uspořádáních ale supremum se sjednocením nesouvisí (v $\mathbb{N}$ je to maximum).
 
 > [!example] Příklady
@@ -140,6 +143,9 @@ Supremum je tedy v $\mathcal{P}(U)$ přesně sjednocení a infimum průnik. V ji
 
 > [!veta] Maximum vs. supremum · slajd 13
 > Existuje-li $\max M$, existuje i $\sup M$ a platí $\sup M = \max M$. Obráceně ne: supremum nemusí ležet v $M$ (viz $\{b\}, \{c\}$ výše).
+
+> [!lidsky] Lidsky
+> Maximum je nejvyšší prvek, který v množině **opravdu je**; supremum je nejnižší strop, který v ní být nemusí. Infimum a minimum jsou totéž zrcadlově: nejvyšší podlaha a nejnižší prvek. V $\mathcal{P}(U)$ se strop vždycky najde, je to sjednocení, a nejvyšší podlaha je průnik.
 
 > [!navic] Horní odhad nemusí existovat
 > V $\mathcal{P}(U)$ je horním odhadem čehokoliv celé $U$, takže supremum existuje vždy. V $\mathbb{N}$ nemá množina sudých čísel žádný horní odhad, a proto ani supremum. To je motivace pro $\mathbb{N}^*$ v §7.
@@ -232,6 +238,9 @@ Vlastnosti $(\mathbb{N}, \le)$:
 > - $0 \cdot (+\infty)$ a $(+\infty) \cdot 0$ **nejsou definovány**.
 
 ^def-nstar
+
+> [!lidsky] Lidsky
+> K přirozeným číslům se přidá jeden „strop nad všemi“, $+\infty$. Pak má supremum každá množina, i ta neomezená (třeba sudá čísla mají supremum $+\infty$). Počítá se s ním přirozeně, jen $0 \cdot (+\infty)$ nemá rozumnou hodnotu, a proto zůstává nedefinované.
 
 > [!pozor] ℕ* obsahuje nulu
 > Rozšiřuje se celé $\mathbb{N}$ včetně $0$, jen se přidá $+\infty$. V jiných kurzech se hvězdičkou někdy značí naopak $\mathbb{N}$ bez nuly, tak pozor na kontext.

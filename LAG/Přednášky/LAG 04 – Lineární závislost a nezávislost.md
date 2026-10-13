@@ -2,7 +2,7 @@
 predmet: LAG
 prednaska: 4
 datum: 2026-10-02
-zdroj: "V poznámkách věta 2.13 a kapitola 3 (3.1–3.6)"
+zdroj: "V poznámkách věta 2.13 a kapitola 3 (3.1–3.6, 3.7 jen zmínka)"
 tags: [prednaska, LAG]
 ---
 
@@ -49,7 +49,7 @@ Minule jsme zavedli [[lineární obal]] a bez důkazu řekli, že je to vždy [[
 > > \gamma\vec{x} = \gamma(\alpha_1\vec{x}_1 + \dots + \alpha_k\vec{x}_k) = (\gamma\alpha_1)\vec{x}_1 + \dots + (\gamma\alpha_k)\vec{x}_k \in \operatorname{span} M.
 > > $$
 
-^veta-213-dukaz
+^dukaz-213
 
 > [!lidsky] Lidsky
 > Smícháš-li dva recepty z ingrediencí $M$, dostaneš zase recept z ingrediencí $M$ (jen delší). Zdvojnásobíš-li recept, je to pořád recept z $M$. A „nic nevařit“ je taky recept, ten dá nulu. Víc podprostor potřebovat nemusí.
@@ -117,6 +117,10 @@ Otázka „je některý vektor kombinací ostatních?“ je přesně to, čemu s
 6. $(\vec{x}, \vec{y})$ je LZ $\iff$ jeden je násobkem druhého ($\vec{y} = \alpha\vec{x}$ nebo $\vec{x} = \alpha\vec{y}$).
 
 ^poz-32
+
+> [!obrazek] Dvojice vektorů v $\mathbb{R}^2$
+> ![[lag04-dvojice.png]]
+> *Vlevo modrý $\vec{x}$ a oranžový $\vec{y}$ leží na jedné modré čárkované přímce, $\vec{y}$ je násobek $\vec{x}$: LZ. Uprostřed míří různými směry: LN. Vpravo červený nulový vektor: dvojice je LZ, i když $\vec{y}$ není násobkem $\vec{x}$, protože $\vec{x} = 0 \cdot \vec{y}$.*
 
 > [!question]- Proč v bodě 6 nestačí „$\vec{y} = \alpha\vec{x}$“?
 > Pro $\vec{x} = \vec{0}$ a $\vec{y} \neq \vec{0}$ je $(\vec{0}, \vec{y})$ LZ (obsahuje nulu), ale $\vec{y}$ není násobkem nulového vektoru. Funguje opačně: $\vec{x} = 0 \cdot \vec{y}$. Proto „jeden je násobkem druhého“.
@@ -238,11 +242,11 @@ Otázka „je některý vektor kombinací ostatních?“ je přesně to, čemu s
 > [!karta|08]- Je prázdná posloupnost $()$ LZ, nebo LN? Proč?
 > **LN.** Jediná kombinace nula vektorů je prázdná, ta je triviální; netriviální kombinace neexistuje.
 
-> [!karta|09]- Kdy je jednoprvková posloupnost $(\vec{x})$ LN?
+> [!karta|09]- Proč je jednoprvková posloupnost $(\vec{x})$ LN, právě když $\vec{x} \neq \vec{0}$?
 > Právě když $\vec{x} \neq \vec{0}$. Z $\alpha\vec{x} = \vec{0}$ s $\alpha \neq 0$ plyne $\vec{x} = \alpha^{-1}\vec{0} = \vec{0}$.
 
-> [!karta|10]- Kdy je dvojice $(\vec{x}, \vec{y})$ lineárně závislá?
-> Právě když je **jeden násobkem druhého** ($\vec{y} = \alpha\vec{x}$ nebo $\vec{x} = \alpha\vec{y}$). Pro $\vec{x} = \vec{0}$ funguje jen druhá varianta.
+> [!karta|10]- Proč u dvojice $(\vec{x}, \vec{y})$ nestačí jako podmínka závislosti „$\vec{y} = \alpha\vec{x}$“?
+> Pro $\vec{x} = \vec{0} \neq \vec{y}$ je dvojice LZ ($1 \cdot \vec{0} + 0 \cdot \vec{y} = \vec{0}$), ale $\vec{y}$ násobkem nuly není. Správně: LZ iff **jeden je násobkem druhého** ($\vec{y} = \alpha\vec{x}$ nebo $\vec{x} = \alpha\vec{y}$).
 
 > [!karta|11]- Proč se lineární závislost definuje pro posloupnost, a ne pro množinu vektorů?
 > V množině **opakování splyne** ($\{\vec{x}, \vec{x}\} = \{\vec{x}\}$), ale $(\vec{x}, \vec{x})$ je LZ, zatímco $(\vec{x})$ pro $\vec{x} \neq \vec{0}$ je LN.

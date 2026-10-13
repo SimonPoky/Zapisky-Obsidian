@@ -2,7 +2,7 @@
 predmet: MA1
 prednaska: 5
 datum: 2026-10-07
-zdroj: "Handout 2B (Počítání limit), slajdy 14–22; handout 3A, slajd 3"
+zdroj: "Handout 2B (Počítání limit), slajdy 14–25; handout 3A, slajd 3"
 tags: [prednaska, MA1]
 ---
 
@@ -154,7 +154,7 @@ Chceme počítat limitu složené funkce $f \circ \varphi$, tedy $f(\varphi(x))$
 ^veta-substituce
 
 > [!lidsky] Lidsky
-> Podmínka (2) říká: **„$\varphi$ míří do cíle a nikdy do něj nedopadne.“** Ke každému kusu směru $\mathcal{T}$, ať je jakkoli malý, umí $\varphi$ dostat celý kus směru $\mathcal{S}$ dovnitř. Kusy směru cíl samotný neobsahují ([[prstencové okolí]]), takže $\varphi$ nesmí na celém kusu $P$ trefovat přímo cílový bod. Jinak by se do hry dostala hodnota $f$ *v* cíli, a ta s limitou nemá nic společného.
+> Podmínka (2) říká: **„$\varphi$ míří do cíle a nikdy do něj nedopadne.“** Ke každému kusu směru $\mathcal{T}$, ať je jakkoli malý, umí $\varphi$ dostat celý kus směru $\mathcal{S}$ dovnitř. Kusy směru cíl samotný neobsahují ([[prstencové okolí]]), takže se $\varphi$ cílovému bodu musí na nějakém kusu $P$ úplně vyhnout ($\varphi[P] \subseteq T$). Jinak by se do hry dostala hodnota $f$ *v* cíli, a ta s limitou nemá nic společného.
 
 > [!obrazek] Důkaz obrázkem: řetěz U → T → P
 > ![[ma105-substituce.png]]
@@ -182,7 +182,7 @@ Chceme počítat limitu složené funkce $f \circ \varphi$, tedy $f(\varphi(x))$
 > [!pozor] Častá chyba: „vnitřní limita jde k 1, tak dosadím limitu vnější funkce“
 > Z $\lim \varphi = 1$ a $\lim_{z \to 1} f = 3$ samo nic neplyne. Musíš ověřit podmínku (2), typicky tak, že $\varphi(x) \neq 1$ na nějakém kusu směru $\mathcal{S}$. Nebo musí být $f$ v bodě $1$ [[spojitost v bodě|spojitá]] (viz §6).
 
-> [!example] Př. (1): $\lim_{k \to +\infty} \big(2(k^2 + 6) + 1\big)$
+> [!example] Př. (1): $\lim_{k \to +\infty} \big(2(k^2 + 6) + 1\big)$ · handout 2B, slajd 18
 > Vnější funkce $f(n) = 2n + 1$, vnitřní $\varphi(k) = k^2 + 6 = n$. Víme $\lim_{n \to +\infty} (2n + 1) = +\infty$ a $\lim_{k \to +\infty} (k^2 + 6) = +\infty$. Podmínka (2): ke kusu $\{n \ge N\}$ stačí $P = \{k \ge N\}$, protože $k^2 + 6 > k$. Odtud
 >
 > $$
@@ -200,7 +200,7 @@ Chceme počítat limitu složené funkce $f \circ \varphi$, tedy $f(\varphi(x))$
 ^dusledek-podposloupnost
 
 > [!lidsky] Lidsky
-> [[podposloupnost|Vybraná podposloupnost]] vznikne tak, že z posloupnosti vyškrtáš některé členy, ale nekonečně mnoho jich necháš a pořadí nezměníš. Když celá posloupnost míří k $L$, míří tam i každý výběr. Např. $f(n) = 2n + 1$ a $\varphi(k) = k^2 + 6$: z čísel $13, 15, 17, \dots$ vybereme $a_6 = 13$, $a_7 = 15$, $a_{10} = 21$, $a_{15} = 31$, … a to je přesně Př. (1) výše.
+> [[podposloupnost|Vybraná podposloupnost]] vznikne tak, že z posloupnosti vyškrtáš některé členy, ale nekonečně mnoho jich necháš a pořadí nezměníš. Když celá posloupnost míří k $L$, míří tam i každý výběr. Např. $f(n) = 2n + 1$ a $\varphi(k) = k^2 + 6$: z čísel $a_n = 1, 3, 5, \dots$ vybereme $a_6 = 13$, $a_7 = 15$, $a_{10} = 21$, $a_{15} = 31$, … a to je přesně Př. (1) výše.
 
 > [!veta] Důsledek 2: limitu posloupnosti lze nahradit limitou funkce · handout 2B, slajd 20
 > ==Ať $f$ je definovaná ve směru $x \to +\infty$ a $\lim_{x \to +\infty} f(x) = L$.== Potom **$\lim_{n \to +\infty} f(n) = L$**.
@@ -215,6 +215,10 @@ Chceme počítat limitu složené funkce $f \circ \varphi$, tedy $f(\varphi(x))$
 
 > [!pozor] Opačně to neplatí
 > Z $\lim_{n \to +\infty} f(n) = L$ **neplyne** $\lim_{x \to +\infty} f(x) = L$. Pro $f(x) = \sin(\pi x)$ je $f(n) = 0$ pro všechna $n$, takže limita posloupnosti je $0$, ale $\lim_{x \to +\infty} \sin(\pi x)$ neexistuje: funkce mezi celými čísly pořád kmitá mezi $-1$ a $1$.
+
+> [!obrazek] Posloupnost má limitu, funkce ne
+> ![[ma105-sin-pi.png]]
+> *Modře graf $\sin(\pi x)$, který pořád kmitá mezi $-1$ a $1$. Červeně hodnoty v přirozených číslech: všechny jsou $0$, takže posloupnost $f(n)$ má limitu $0$, funkce limitu nemá.*
 
 > [!pozor] Posloupnost se nederivuje
 > Častá chyba ze střední školy: použít l'Hospitalovo pravidlo (derivovat čitatele a jmenovatele) přímo na posloupnost, třeba $\frac{n^2 + 1}{n}$. Posloupnost je definovaná jen v přirozených číslech, derivaci nemá. Správně: přejdi k funkci $f(x) = \frac{x^2 + 1}{x}$, spočítej $\lim_{x \to +\infty} f(x)$ jakýmkoli nástrojem pro funkce a výsledek přenes na posloupnost podle důsledku 2.
@@ -359,14 +363,8 @@ Věta o substituci jde jedním směrem: z limity $f$ dostaneme limitu $f \circ \
 
 ### Příklady na procvičení
 
-> [!priklad|17]- Spočítej $\lim_{x \to +\infty} (2x + 3)$.
-> $\lim 2x = 2 \cdot (+\infty) = +\infty$, tedy limita je $(+\infty) + 3 =$ **$+\infty$**.
-
-> [!priklad|18]- Spočítej $\lim_{x \to +\infty} \frac{x}{x}$. Proč nejde použít aritmetika limit?
-> Typ $\frac{+\infty}{+\infty}$ není definován. Ale $\frac{x}{x} =_{x \to +\infty} 1$, tedy podle rovnosti ve směru je limita **1**.
-
-> [!priklad|19]- Spočítej $\lim_{x \to +\infty} \frac{3x}{x}$.
-> $\frac{3x}{x} = 3$ pro $x \neq 0$, limita je **3**. (Stejný typ $\frac{\infty}{\infty}$ jako $\frac{x}{x}$, jiný výsledek.)
+> [!priklad|18]- Spočítej $\lim_{x \to +\infty} \frac{x}{x}$ a $\lim_{x \to +\infty} \frac{3x}{x}$. Proč nejde použít aritmetika limit?
+> Oboje je typ $\frac{+\infty}{+\infty}$, který není definován. Pro $x \neq 0$ je ale $\frac{x}{x} = 1$ a $\frac{3x}{x} = 3$, takže podle rovnosti ve směru vyjdou limity **1** a **3**: stejný typ, jiný výsledek.
 
 > [!priklad|20]- Spočítej $\lim_{k \to +\infty} \big(2(k^2 + 6) + 1\big)$ pomocí substituce.
 > $f(n) = 2n + 1 \to +\infty$, $\varphi(k) = k^2 + 6 \to +\infty$ a $k^2 + 6 > k$, takže ke kusu $\{n \ge N\}$ stačí $\{k \ge N\}$. Limita je **$+\infty$**.
@@ -377,14 +375,8 @@ Věta o substituci jde jedním směrem: z limity $f$ dostaneme limitu $f \circ \
 > [!priklad|22]- Dokaž, že $\lim_{n \to +\infty} (-1)^n$ neexistuje.
 > $(-1)^{2k} = 1 \to 1$ a $(-1)^{2k+1} = -1 \to -1$. Dvě podposloupnosti s různými limitami, tedy limita **neexistuje**.
 
-> [!priklad|23]- $f(z) = 200$ pro $z = 1$, $f(z) = 3$ jinak, $\varphi(x) = 1$. Kolik je $\lim_{x \to 5} f(\varphi(x))$?
-> $f(\varphi(x)) = f(1) = 200$ pro všechna $x$, limita je **200**, ne $\lim_{z \to 1} f = 3$.
-
 > [!priklad|24]- Spočítej $\lim_{n \to +\infty} \frac{2n + 1}{n + 3}$.
 > Pro $n \ge 1$ je zlomek roven $\frac{2 + \frac{1}{n}}{1 + \frac{3}{n}}$. Čitatel $\to 2 + 0$, jmenovatel $\to 1 + 0 \neq 0$, podle aritmetiky je limita **2**.
-
-> [!priklad|28]- Spočítej $\lim_{x \to +\infty} \frac{2x^2 - x}{5x^2 + 3}$.
-> Stejné stupně, podíl vedoucích koeficientů: **$\frac{2}{5}$**.
 
 > [!priklad|29]- Spočítej $\lim_{x \to -\infty} \frac{x^3}{x + 1}$.
 > $n - m = 2$, $\frac{a_n}{b_m} = 1$, tedy $1 \cdot (-1)^2 \cdot (+\infty) =$ **$+\infty$**.

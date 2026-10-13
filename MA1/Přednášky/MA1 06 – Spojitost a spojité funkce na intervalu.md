@@ -2,7 +2,7 @@
 predmet: MA1
 prednaska: 6
 datum: 2026-10-08
-zdroj: "Handout 3A (Spojitost funkce), slajdy 3–17 a 20"
+zdroj: "Handout 3A (Spojitost funkce), slajdy 3–17, 19 a 20"
 tags: [prednaska, MA1]
 ---
 
@@ -65,6 +65,10 @@ Minule přišla definice [[spojitost v bodě|spojitosti v bodě]]: limita v $p$ 
 
 > [!lidsky] Lidsky
 > [[jednostranná spojitost|Jednostranná spojitost]] je spojitost, při které se díváš jen z jedné strany. Plyne z toho, že oboustranná limita existuje, právě když se shodují obě [[jednostranná limita|jednostranné limity]]: tady se obě musí rovnat $f(p)$. Typické použití: v krajních bodech intervalu $[a; b]$, kde se dá přijít jen z jedné strany.
+
+> [!obrazek] Skok, který je spojitý zprava
+> ![[ma106-zprava.png]]
+> *Modře funkce $f(x) = 0$ pro $x < 1$ a $f(x) = 1$ pro $x \ge 1$. Zelený plný bod je hodnota $f(1) = 1$, prázdný kroužek hodnota, kterou funkce nenabude. Zelená šipka: zprava se hodnoty blíží k $1 = f(1)$, funkce je spojitá zprava. Červená šipka: zleva se blíží k $0 \neq f(1)$, spojitá zleva ani v bodě $1$ není.*
 
 ### Příklad: $\lvert x \rvert$ je spojitá v každém bodě
 
@@ -244,6 +248,10 @@ Velké věty o funkcích spojitých na $[a; b]$ mají společný vzor důkazu: v
 > ![[ma106-vety.png]]
 > *Vlevo nahoře: oranžová výška r leží mezi modrými f(a) a f(b) a graf ji protne v zeleném bodě. Vpravo nahoře: celý graf se vejde do oranžového pásu. Vlevo dole: zelený nejvyšší a červený nejnižší bod existují. Vpravo dole: oranžová úsečka na svislé ose je obraz, celý interval od minima po maximum.*
 
+> [!obrazek] Proč musí být interval uzavřený
+> ![[ma106-otevreny.png]]
+> *Vlevo modře $\frac{1}{x}$ na $(0; 1]$: je spojitá, ale u nuly (červená šipka) roste nade všechny meze, BT selže. Vpravo $x$ na $(0; 1)$: je omezená, ale oranžové hranice $0$ a $1$ (prázdné kroužky) nenabude, EVT selže.*
+
 ### Důkaz IVT
 
 > [!note]- Důkaz IVT · handout 3A, slajd 15
@@ -301,12 +309,12 @@ Velké věty o funkcích spojitých na $[a; b]$ mají společný vzor důkazu: v
 
 ## §7 Patologie: obraz je interval, a přesto nespojitá
 
-> [!example] Patologická funkce
+> [!example] Patologická funkce (z přednášky; souvisí s Darbouxovou vlastností, handout 3A, slajd 22)
 > $$
 > f(x) = \begin{cases} x, & x \in [0; 1] \cap \mathbb{Q}, \\ 1 - x, & x \in [0; 1] \setminus \mathbb{Q}. \end{cases}
 > $$
 >
-> - **Spojitá jen v $x = \frac{1}{2}$.** Pro $p \in [0; 1]$ vezmi racionální $x_n \to p$ a iracionální $y_n \to p$ (existují, protože racionální i iracionální čísla jsou všude hustá). Pak $f(x_n) = x_n \to p$ a $f(y_n) = 1 - y_n \to 1 - p$. Podle Heineovy věty spojitost vyžaduje $p = f(p) = 1 - p$, tedy $p = \frac{1}{2}$. V $\frac{1}{2}$ spojitá je: $\lvert f(x) - \frac{1}{2} \rvert = \lvert x - \frac{1}{2} \rvert$ v obou případech, takže stačí $\delta = \varepsilon$.
+> - **Spojitá jen v $x = \frac{1}{2}$.** Pro $p \in (0; 1)$ vezmi racionální $x_n \to p$ a iracionální $y_n \to p$ (existují, protože racionální i iracionální čísla jsou všude hustá). Pak $f(x_n) = x_n \to p$ a $f(y_n) = 1 - y_n \to 1 - p$. Podle Heineovy věty spojitost vyžaduje $p = f(p) = 1 - p$, tedy $p = \frac{1}{2}$. V krajních bodech $0$ a $1$ stejně, jen s jednostrannou verzí (posloupnosti zprava, resp. zleva). V $\frac{1}{2}$ spojitá je: $\lvert f(x) - \frac{1}{2} \rvert = \lvert x - \frac{1}{2} \rvert$ v obou případech, takže stačí $\delta = \varepsilon$.
 > - **Obraz je celý $[0; 1]$.** Racionální $q$ je obrazem sebe sama, iracionální $y$ je obrazem iracionálního $1 - y$.
 > - **Má pevné body**, dokonce nekonečně mnoho: každé racionální $q$ splňuje $f(q) = q$.
 
@@ -337,7 +345,7 @@ Velké věty o funkcích spojitých na $[a; b]$ mají společný vzor důkazu: v
 > *Šedý čtverec je [a; b] × [a; b]. Modrý graf f začíná nad oranžovou úhlopříčkou y = x a končí pod ní, takže ji v zeleném bodě protne: f(t) = t.*
 
 > [!navic] Brouwerova věta
-> Ve více rozměrech platí totéž (Brouwerova věta o pevném bodě): spojité zobrazení koule do sebe má pevný bod. Používá se třeba v teorii her k důkazu existence Nashovy rovnováhy.
+> Ve více rozměrech platí totéž (Brouwerova věta o pevném bodě): spojité zobrazení uzavřené koule do sebe má pevný bod. Používá se třeba v teorii her k důkazu existence Nashovy rovnováhy.
 
 ## Kartičky
 
@@ -379,7 +387,7 @@ Velké věty o funkcích spojitých na $[a; b]$ mají společný vzor důkazu: v
 > [!karta|12]- Dokaž větu o pevném bodě.
 > Když $f(a) = a$ nebo $f(b) = b$, hotovo. Jinak $f(a) > a$, $f(b) < b$, takže $g(x) = f(x) - x$ má $g(a) > 0 > g(b)$ a podle **IVT** existuje $t$ s $g(t) = 0$, tj. $f(t) = t$.
 
-> [!karta|13]- Proč ve větě o omezenosti a o extrémech nestačí otevřený interval?
+> [!karta|13]- Proč ve větě o omezenosti a o extrémech nestačí neuzavřený interval?
 > $\frac{1}{x}$ je spojitá na $(0; 1]$, ale **neomezená**. $x$ na $(0; 1)$ je omezená, ale **nenabude** maxima ani minima (supremum $1$ a infimum $0$ nejsou hodnoty).
 
 > [!karta|14]- Plyne z toho, že obraz $f$ na $[0; 1]$ je interval, že $f$ je spojitá?
@@ -394,7 +402,7 @@ Velké věty o funkcích spojitých na $[a; b]$ mají společný vzor důkazu: v
 > Pro $x \neq 0$ je $f(x) < 1$, tedy $g(f(x)) = 0$ a limita je **0**. $g(f(0)) = g(1) =$ **2**.
 
 > [!priklad|17]- Ve kterých bodech je spojitá $f(x) = x$ pro $x \in [0; 1] \cap \mathbb{Q}$, $f(x) = 1 - x$ jinak na $[0; 1]$?
-> Racionální posloupnost dá limitu $p$, iracionální $1 - p$; musí platit $p = 1 - p$. Spojitá jen v **$x = \frac{1}{2}$**.
+> Pro $p \in (0; 1)$: racionální posloupnost dá limitu $p$, iracionální $1 - p$, a Heineova věta vyžaduje $p = 1 - p$. V bodech $0$ a $1$ totéž jednostranně. Spojitá jen v **$x = \frac{1}{2}$**.
 
 > [!priklad|18]- Nabude funkce z předchozího příkladu na $[0; \frac{1}{4}]$ hodnoty $\frac{\sqrt{2}}{10}$?
 > **Ne.** Racionální $t$ dá racionální $f(t)$, iracionální $t$ dá $1 - t \ge \frac{3}{4}$. IVT tu selže, protože $f$ není spojitá.

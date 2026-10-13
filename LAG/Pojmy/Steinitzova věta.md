@@ -11,6 +11,6 @@ zdroj: "lemma 4.6 *"
 > [!lidsky] Lidsky
 > Nezávislých vektorů nemůže být víc než generátorů. V rovině, kde umíš všechno poskládat ze dvou vektorů, tři nezávislé nenajdeš. Důkaz ke zkoušce není potřeba.
 
-**Formálně:** (x₁, …, xₖ) LN v L, (y₁, …, yₗ) generuje L ⇒ k ≤ l
+**Formálně:** (x₁, …, xₖ) LN v L, (y₁, …, yₗ) generuje L (v poznámkách konečná množina G, l = |G|) ⇒ k ≤ l
 
 **Definice:** [[LAG 05 – Báze a dimenze#^lemma-46|přednáška 5, 7. 10. 2026]] · lemma 4.6
