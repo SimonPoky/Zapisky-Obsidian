@@ -405,5 +405,19 @@ Důkaz zatím nezazněl; myšlenka je doplnit bázi průniku jednou na bázi $V$
 > [!priklad|21]- Je sjednocení osy $x$ a osy $y$ v $\mathbb{R}^2$ podprostor? A jejich součet?
 > Sjednocení **ne**: $(1; 0) + (0; 1) = (1; 1)$ neleží na žádné ose. Součet **ano**, je to celé $\mathbb{R}^2$.
 
+### Typové příklady na zápočtový test
+
+*Stejný typ úloh jako v ukázce k 1. zápočtovému testu (cvičení J. Rondoš). Na testu je potřeba každé tvrzení zdůvodnit.*
+
+> [!priklad|22]- Urči souřadnice polynomu $3x^2 - x + 2$ vzhledem k bázi $\mathcal{C} = (1 + x,\ x + x^2,\ 1 + x^2)$ prostoru $\mathbb{R}^{\le 2}[x]$.
+> Hledáme $\alpha, \beta, \gamma$ s $\alpha(1 + x) + \beta(x + x^2) + \gamma(1 + x^2) = 2 - x + 3x^2$. Porovnání koeficientů: $\alpha + \gamma = 2$ (u $1$), $\alpha + \beta = -1$ (u $x$), $\beta + \gamma = 3$ (u $x^2$). Sečtením $\alpha + \beta + \gamma = 2$, odtud $\beta = 0$, $\gamma = 3$, $\alpha = -1$.
+>
+> $[3x^2 - x + 2]^{\mathcal{C}} = $ **$(-1; 0; 3)$**. Zkouška: $-(1 + x) + 3(1 + x^2) = 2 - x + 3x^2$.
+
+> [!priklad|23]- Urči souřadnice matice $\begin{pmatrix} 3 & 1 \\ 2 & 5 \end{pmatrix}$ vzhledem k bázi $\mathcal{Y} = \left(\begin{pmatrix} 1 & 0 \\ 0 & 0 \end{pmatrix}, \begin{pmatrix} 1 & 1 \\ 0 & 0 \end{pmatrix}, \begin{pmatrix} 0 & 0 \\ 1 & 0 \end{pmatrix}, \begin{pmatrix} 0 & 0 \\ 1 & 1 \end{pmatrix}\right)$ prostoru $\mathbb{R}^{2 \times 2}$.
+> $aY_1 + bY_2 + cY_3 + dY_4 = \begin{pmatrix} a + b & b \\ c + d & d \end{pmatrix} = \begin{pmatrix} 3 & 1 \\ 2 & 5 \end{pmatrix}$. Rovnice s jedinou neznámou napřed: $b = 1$, $d = 5$, pak $a = 3 - 1 = 2$, $c = 2 - 5 = -3$.
+>
+> Souřadnice: **$(2; 1; -3; 5)$**.
+
 ---
 ← [[LAG 05 – Báze a dimenze|7. 10. 2026 Báze a dimenze]]

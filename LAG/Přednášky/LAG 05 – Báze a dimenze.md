@@ -421,5 +421,20 @@ Opačný směr k výběru: začneš s nezávislými vektory a přidáváš.
 > [!priklad|24]- Jaké jsou $\dim\{\vec{0}\}$ a $\dim\operatorname{span}\{(2; 4), (1; 2)\}$?
 > $\dim\{\vec{0}\} = $ **0** (báze je $()$). $(2; 4) = 2(1; 2)$, takže obal je přímka s bází $((1; 2))$ a dimenze je **1**.
 
+### Typové příklady na zápočtový test
+
+*Stejný typ úloh jako v ukázce k 1. zápočtovému testu (cvičení J. Rondoš). Na testu je potřeba každé tvrzení zdůvodnit.*
+
+> [!priklad|27]- Dokaž, že $\mathcal{C} = (1 + x,\ x + x^2,\ 1 + x^2)$ je báze $\mathbb{R}^{\le 2}[x]$ (lze využít $\dim \mathbb{R}^{\le 2}[x] = 3$).
+> Protože $\dim \mathbb{R}^{\le 2}[x] = 3$ a vektory jsou **3**, stačí ověřit **LN**. Z $\alpha(1 + x) + \beta(x + x^2) + \gamma(1 + x^2) = 0$ porovnáním koeficientů:
+> - u $1$: $\alpha + \gamma = 0$
+> - u $x$: $\alpha + \beta = 0$
+> - u $x^2$: $\beta + \gamma = 0$
+>
+> Sečtením $2(\alpha + \beta + \gamma) = 0$, tedy $\alpha + \beta + \gamma = 0$, a odečtením jednotlivých rovnic $\beta = \gamma = \alpha = 0$. Posloupnost je LN, a proto **je to báze**.
+
+> [!priklad|28]- Je $\left(\begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}, \begin{pmatrix} 1 & 1 \\ 0 & 0 \end{pmatrix}, \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}, \begin{pmatrix} 0 & 0 \\ 1 & 1 \end{pmatrix}\right)$ báze $\mathbb{R}^{2 \times 2}$?
+> $aM_1 + bM_2 + cM_3 + dM_4 = \begin{pmatrix} a + b & b + c \\ c + d & a + d \end{pmatrix} = \mathbf{0}$ dává $a = -b$, $c = -b$, $d = -c = b$ a poslední rovnice $a + d = -b + b = 0$ platí vždy. Pro $b = 1$: $-M_1 + M_2 - M_3 + M_4 = \mathbf{0}$, netriviální kombinace. Posloupnost je **LZ**, takže **není báze** (4 vektory v prostoru dimenze 4 tvoří bázi, právě když jsou LN).
+
 ---
 ← [[LAG 04 – Lineární závislost a nezávislost|2. 10. 2026 Lineární závislost a nezávislost]] · [[LAG 06 – Souřadnice, součet a průnik podprostorů|9. 10. 2026 Souřadnice, součet a průnik podprostorů]] →

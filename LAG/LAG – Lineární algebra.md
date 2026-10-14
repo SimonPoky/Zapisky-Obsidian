@@ -10,7 +10,7 @@ tags: [predmet, LAG]
 
 [Poznámky k přednáškám (PDF) ↗](https://math.fel.cvut.cz/cz/lide/gromadan/LA26/notes.pdf) · [Stránka přednášky ↗](https://math.fel.cvut.cz/cz/lide/gromadan/lag26p.html) · [Sbírka příkladů (Velebil) ↗](https://math.fel.cvut.cz/en/people/velebil/files/lag_2026_podzim/lag_sbirka_2026_01_21.pdf)
 
-**Kartičky:** 127 povinných + 40 příkladů · [otevřít aplikaci ↗](https://claude.ai/artifact/3CKfKeuwtwrWiz3FSfSh5B) · [[Archiv přednášek#Kartičky|jak to funguje]]
+**Kartičky:** 128 povinných + 49 příkladů · [otevřít aplikaci ↗](https://claude.ai/artifact/3CKfKeuwtwrWiz3FSfSh5B) · [[Archiv přednášek#Kartičky|jak to funguje]]
 
 ## Přednášky
 
@@ -20,6 +20,58 @@ tags: [predmet, LAG]
 - **2. 10. 2026** [[LAG 04 – Lineární závislost a nezávislost|Lineární závislost a nezávislost]] · důkaz věty 2.13, LZ a LN, pozorování 3.2, věty 3.3 a 3.6
 - **7. 10. 2026** [[LAG 05 – Báze a dimenze|Báze a dimenze]] · věta 3.7, generující posloupnost, báze, kanonická báze, dimenze, výběr a doplnění báze
 - **9. 10. 2026** [[LAG 06 – Souřadnice, součet a průnik podprostorů|Souřadnice, součet a průnik podprostorů]] · dimenze podprostoru, souřadnice, souřadnicový vektor, linearita souřadnic, průnik a součet podprostorů, dimenze součtu a průniku
+
+## Zápočtové testy
+
+*Cvičení vede Jakub Rondoš · pondělí 12:45–14:15, KN:A-224 · [stránka cvičení ↗](https://math.fel.cvut.cz/en/people/rondojak/linearni-algebra-zs-26-27) · konzultace po domluvě: rondojak@fel.cvut.cz*
+
+- **Zápočet:** nejvýš 3 absence na cvičení a 2 úspěšné testy, z každého aspoň **10 z 20 b.** Body z testů se přičítají ke zkouškové písemce. Neúspěšný test jde opakovat na hromadném termínu na konci semestru.
+- **Každý test:** 1 početní příklad (**10 b.**) + 1 teoretický příklad (**5 b.**) + 1 definice (**5 b.**). Každé tvrzení je potřeba řádně zdůvodnit.
+- **1. test: pondělí 16. 11. 2026** (8. cvičení, termín se ještě může změnit) · [ukázka početních příkladů ↗](https://math.fel.cvut.cz/en/people/rondojak/linearni-algebra/LAG_Ukazka%20pocetnich%20prikladu%201.pdf) · [ukázka teoretických příkladů ↗](https://math.fel.cvut.cz/en/people/rondojak/linearni-algebra/LAG_Ukazka%20teoretickych%20prikladu%201.pdf) · [seznam definic ↗](https://math.fel.cvut.cz/en/people/rondojak/linearni-algebra/LAG_Definice%201.pdf)
+- **2. test:** nejspíš 12. cvičení (podle rozvrhu 14. 12. 2026), materiály zatím nevyšly.
+
+### Definice na 1. test
+
+Na testu se zadá jedna z nich a je potřeba ji napsat přesně, s tím, co je dané předem („Buď L lineární prostor nad 𝔽…“). Přesné znění je v kartičce každého pojmu, řádek **Formálně**.
+
+| # | definice ze seznamu | pojem | stav |
+|---|---|---|---|
+| 1 | Lineární obal | [[lineární obal]] | přednáška 3 |
+| 2 | Lineární podprostor | [[lineární podprostor]] | přednáška 3 |
+| 3 | Lineární nezávislost a závislost | [[lineární nezávislost]], [[lineární závislost]] | přednáška 4 |
+| 4 | Generování lineárního prostoru | [[generující posloupnost]] | přednáška 5 |
+| 5 | Báze | [[báze]] | přednáška 5 |
+| 6 | Dimenze | [[dimenze]] | přednáška 5 |
+| 7 | Lineární zobrazení | | přijde v kap. 6 |
+| 8 | Souřadnice vektoru vzhledem k bázi | [[souřadnice]], [[souřadnicový vektor]] | přednáška 6 |
+| 9 | Matice lineárního zobrazení vzhledem k bázím B a C | | přijde v kap. 6 |
+| 10 | Matice transformace souřadnic z báze B do báze C | | přijde v kap. 6.3 |
+| 11 | Jádro | | přijde v kap. 7 |
+| 12 | Obraz | | přijde v kap. 7 |
+| 13 | Monomorfismus, epimorfismus, izomorfismus | [[izomorfismus]] (zatím jen neformálně) | přijde v kap. 6–7 |
+| 14 | Hodnost | | přijde v kap. 7 |
+| 15 | Defekt | | přijde v kap. 7 |
+
+### Typy příkladů z ukázky
+
+| typ úlohy | část testu | kde procvičit |
+|---|---|---|
+| Je daná množina podprostor ($\mathbb{R}^2$, $\mathbb{R}^{\le 2}[x]$)? | teoretický | [[LAG 03 – Lineární podprostor a lineární obal#Typové příklady na zápočtový test\|LAG 03]], příklady 17–21 |
+| Je zobrazení lineární? Je to mono-, epi-, izomorfismus? Urči $\operatorname{Im}$. | teoretický | přijde s kap. 6–7 |
+| Dokaž, že posloupnost je báze (s využitím dimenze) | dílčí krok početního | [[LAG 05 – Báze a dimenze#Typové příklady na zápočtový test\|LAG 05]], příklady 27–28 |
+| Souřadnice polynomu nebo matice vzhledem k bázi | dílčí krok početního | [[LAG 06 – Souřadnice, součet a průnik podprostorů#Typové příklady na zápočtový test\|LAG 06]], příklady 22–23 |
+| Matice zobrazení vůči bázím, skládání = maticový součin, matice transformace souřadnic | jádro početního | přijde s kap. 6 |
+
+> [!note] Co z toho plyne v číslech
+> - Z 15 definic je zatím probraných **8 (53 %)**; zbylých 7 přijde s lineárními zobrazeními (kap. 6–7).
+> - Všech **6 z 6** ukázkových početních příkladů staví na matici lineárního zobrazení nebo matici transformace souřadnic. Těch **10 b. (50 % testu)** tedy stojí na látce, která se začíná přednášet 14. 10.
+> - Z 7 teoretických ukázek se **3 (43 %)** dají řešit už teď (podprostory), **4 (57 %)** jsou o lineárních zobrazeních.
+> - Do testu zbývá **9 přednášek** (28. 10. je svátek), kap. 6–7 by měly být probrané s rezervou.
+
+> [!navic] Značení na cvičení a na přednášce
+> - Souřadnice: na přednášce $[\vec{v}]^{\mathcal{X}}$, na cvičení $[\vec{v}]_{\mathcal{X}}$ nebo $\operatorname{coord}_{\mathcal{X}}(\vec{v})$. Je to totéž.
+> - „Uspořádaná báze“ na cvičení = báze jako posloupnost z přednášky (záleží na pořadí).
+> - $[A]_{X \to Y}$ = matice lineárního zobrazení $A$ vůči bázím $X$ (vstup) a $Y$ (výstup); $T_{X \to Y}$ = matice transformace souřadnic z báze $X$ do báze $Y$.
 
 ## Slovníček pojmů
 

@@ -256,6 +256,11 @@ Poznámky:
 > [!karta|16]- Jak geometricky vypadá $\operatorname{span}\{\vec{x}, \vec{y}\}$ v $\mathbb{R}^3$?
 > Pro $\vec{x}, \vec{y}$, které nejsou násobky jednoho vektoru: **rovina přes počátek**. Jsou-li to násobky téhož nenulového vektoru, jen přímka; pro $\vec{x} = \vec{y} = \vec{0}$ jen $\{\vec{0}\}$.
 
+> [!karta|22]- Jak nejrychleji ukázat, že množina **není** lineární podprostor?
+> 1. Zkontroluj **nulový vektor**: podmínka s nenulovou pravou stranou ($a + b = 1$) ho vylučuje, a tím je hotovo.
+> 2. Jinak najdi **konkrétní protipříklad**: dva prvky, jejichž součet z množiny vypadne, nebo prvek a číslo (často $-1$ nebo $2$), jehož násobek vypadne. Podezřelé jsou nelineární výrazy ($x^2$, $|x|$, $xy$).
+> 3. Na „ne“ stačí konkrétní čísla, na „ano“ je potřeba obecný důkaz obou uzavřeností.
+
 ### Příklady na procvičení
 
 > [!priklad|04]- Je přímka $y = x + 1$ lineární podprostor $\mathbb{R}^2$?
@@ -278,6 +283,30 @@ Poznámky:
 
 > [!priklad|12]- Tvoří matice $2 \times 2$ se stopou $0$ podprostor $\mathbb{F}^{2 \times 2}$?
 > **Ano**: $\operatorname{tr}(\mathbf{A} + \mathbf{B}) = \operatorname{tr}\mathbf{A} + \operatorname{tr}\mathbf{B} = 0$ a $\operatorname{tr}(\alpha\mathbf{A}) = \alpha \operatorname{tr}\mathbf{A} = 0$; nulová matice má stopu 0.
+
+### Typové příklady na zápočtový test
+
+*Stejný typ úloh jako v ukázce k 1. zápočtovému testu (cvičení J. Rondoš). Na testu je potřeba každé tvrzení zdůvodnit.*
+
+> [!priklad|17]- Je $M = \{(x; y) \in \mathbb{R}^2 \mid x^2 = 4y^2\}$ lineární podprostor $\mathbb{R}^2$?
+> **Ne.** $(2; 1) \in M$ i $(2; -1) \in M$ (v obou případech $4 = 4$), ale jejich součet $(4; 0)$ do $M$ nepatří: $16 \ne 0$. $M$ není uzavřená na sčítání. Geometricky jsou to dvě přímky $y = \pm x/2$ a sjednocení dvou přímek podprostor není.
+
+> [!priklad|18]- Je $\{ax^2 + bx + c \in \mathbb{R}^{\le 2}[x] \mid a - 2b + c = 0\}$ lineární podprostor $\mathbb{R}^{\le 2}[x]$?
+> **Ano.**
+> - Neprázdná: nulový polynom ($a = b = c = 0$) podmínku splňuje.
+> - Součet: z $a_1 - 2b_1 + c_1 = 0$ a $a_2 - 2b_2 + c_2 = 0$ plyne $(a_1 + a_2) - 2(b_1 + b_2) + (c_1 + c_2) = 0 + 0 = 0$.
+> - Násobek: $\alpha a - 2\alpha b + \alpha c = \alpha(a - 2b + c) = \alpha \cdot 0 = 0$.
+>
+> Obecně: množina popsaná **homogenními lineárními** rovnicemi v koeficientech je vždy podprostor.
+
+> [!priklad|19]- Je $\{ax^2 + bx + c \in \mathbb{R}^{\le 2}[x] \mid b^2 + c = 0\}$ lineární podprostor $\mathbb{R}^{\le 2}[x]$?
+> **Ne.** $p = x - 1$ ($b = 1$, $c = -1$: $1 - 1 = 0$) do množiny patří, ale $2p = 2x - 2$ ne: $b^2 + c = 4 - 2 = 2 \ne 0$. Kvůli $b^2$ není množina uzavřená na násobení číslem.
+
+> [!priklad|20]- Je $\{ax^2 + bx + c \in \mathbb{R}^{\le 2}[x] \mid a + b = 1\}$ lineární podprostor $\mathbb{R}^{\le 2}[x]$?
+> **Ne.** Nulový polynom má $a + b = 0 \ne 1$, takže v množině není, ale každý podprostor nulový vektor obsahuje. Nenulová pravá strana znamená rovnou „ne“.
+
+> [!priklad|21]- Je $\left\{\begin{pmatrix} a & b \\ c & d \end{pmatrix} \in \mathbb{R}^{2 \times 2} \mid ad = 0\right\}$ lineární podprostor $\mathbb{R}^{2 \times 2}$?
+> **Ne.** $\begin{pmatrix} 1 & 0 \\ 0 & 0 \end{pmatrix}$ i $\begin{pmatrix} 0 & 0 \\ 0 & 1 \end{pmatrix}$ mají $ad = 0$, ale jejich součet je jednotková matice s $ad = 1 \ne 0$. Množina není uzavřená na sčítání.
 
 ---
 ← [[LAG 02 – Příklady lineárních prostorů|25. 9. 2026 Příklady lineárních prostorů]] · [[LAG 04 – Lineární závislost a nezávislost|2. 10. 2026 Lineární závislost a nezávislost]] →
