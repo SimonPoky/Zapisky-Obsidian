@@ -265,44 +265,29 @@ Pravidlo $\Rightarrow$i taky **respektuje pravdivost**. Tady je schovaný induk�
 > Odvození je důkaz, který by zkontroloval i počítač: každý řádek má u sebe razítko, podle kterého pravidla a ze kterých řádků vznikl. Nic se „nevidí“ ani „zjevně neplyne“.
 
 > [!example] $a \wedge b \vdash b \wedge a$ · slajd 10
-> | # | formule | odůvodnění |
-> |---|---|---|
-> | 1. | $a \wedge b$ | P (globální předpoklad) |
-> | 2. | $a$ | $\wedge$e₁ 1 |
-> | 3. | $b$ | $\wedge$e₂ 1 |
-> | 4. | $b \wedge a$ | $\wedge$i 3, 2 |
+> $$
+> \begin{array}{rll}\text{1.} & a\wedge b & \text{P} \\ \text{2.} & a & {\wedge}\text{e}_1\ 1 \\ \text{3.} & b & {\wedge}\text{e}_2\ 1 \\ \text{4.} & b\wedge a & {\wedge}\text{i}\ 3, 2\end{array}
+> $$
+>
+> Řádky bez rámečku jsou na globální úrovni; řádek 1 je globální předpoklad (formule z $S$).
 
 ^priklad-komutativita
 
 > [!example] $\vdash a \Rightarrow (b \Rightarrow a)$ (bez dalších předpokladů) · slajd 10
-> | # | formule | odůvodnění |
-> |---|---|---|
-> | 1. | $\quad a$ | P (lokální, velký box) |
-> | 2. | $\qquad b$ | P (lokální, malý box) |
-> | 3. | $\qquad a$ | it 1 |
-> | 4. | $\quad b \Rightarrow a$ | $\Rightarrow$i 2–3 (malý box) |
-> | 5. | $a \Rightarrow (b \Rightarrow a)$ | $\Rightarrow$i 1–4 (velký box) |
+> $$
+> \begin{array}{rll} & \begin{array}{|rll|}\hline \text{1.} & a & \text{P} \\  & \begin{array}{|rll|}\hline \text{2.} & b & \text{P} \\ \text{3.} & a & \text{it}\ 1 \\ \hline\end{array} &  \\ \text{4.} & b\Rightarrow a & {\Rightarrow}\text{i}\ 2\text{–}3 \\ \hline\end{array} &  \\ \text{5.} & a\Rightarrow(b\Rightarrow a) & {\Rightarrow}\text{i}\ 1\text{–}4\end{array}
+> $$
 >
-> Řádek 3 je potřeba, protože malý box musí končit formulí $a$, aby z něj šlo udělat $b \Rightarrow a$. Tato posloupnost formulí je **odvození** (důkaz) formule $a \Rightarrow (b \Rightarrow a)$, tedy $\vdash a \Rightarrow (b \Rightarrow a)$.
+> Velký rámeček je box s předpokladem $a$ (řádky 1–4), malý s předpokladem $b$ (řádky 2–3). Řádek 3 je potřeba, protože malý box musí končit formulí $a$, aby z něj šlo udělat $b \Rightarrow a$. Tato posloupnost formulí je **odvození** (důkaz) formule $a \Rightarrow (b \Rightarrow a)$, tedy $\vdash a \Rightarrow (b \Rightarrow a)$.
 
 ^priklad-k
 
 > [!example] $\neg a \vee b \vdash a \Rightarrow b$ · slajd 10
 > Rozbor případů ($\vee$e): v obou případech se dokáže $a \Rightarrow b$.
 >
-> | # | formule | odůvodnění |
-> |---|---|---|
-> | 1. | $\neg a \vee b$ | P (globální) |
-> | 2. | $\quad \neg a$ | P (1. případ) |
-> | 3. | $\qquad a$ | P |
-> | 4. | $\qquad \bot$ | $\neg$e 3, 2 |
-> | 5. | $\qquad b$ | $\bot$e 4 |
-> | 6. | $\quad a \Rightarrow b$ | $\Rightarrow$i 3–5 |
-> | 7. | $\quad b$ | P (2. případ) |
-> | 8. | $\qquad a$ | P |
-> | 9. | $\qquad b$ | it 7 |
-> | 10. | $\quad a \Rightarrow b$ | $\Rightarrow$i 8–9 |
-> | 11. | $a \Rightarrow b$ | $\vee$e 1, boxy 2–6, 7–10 |
+> $$
+> \begin{array}{rll}\text{1.} & \neg a\vee b & \text{P} \\  & \begin{array}{|rll|}\hline \text{2.} & \neg a & \text{P} \\  & \begin{array}{|rll|}\hline \text{3.} & a & \text{P} \\ \text{4.} & \bot & {\neg}\text{e}\ 3, 2 \\ \text{5.} & b & {\bot}\text{e}\ 4 \\ \hline\end{array} &  \\ \text{6.} & a\Rightarrow b & {\Rightarrow}\text{i}\ 3\text{–}5 \\ \hline\end{array} &  \\  & \begin{array}{|rll|}\hline \text{7.} & b & \text{P} \\  & \begin{array}{|rll|}\hline \text{8.} & a & \text{P} \\ \text{9.} & b & \text{it}\ 7 \\ \hline\end{array} &  \\ \text{10.} & a\Rightarrow b & {\Rightarrow}\text{i}\ 8\text{–}9 \\ \hline\end{array} &  \\ \text{11.} & a\Rightarrow b & {\vee}\text{e}\ 1,\ 2\text{–}6,\ 7\text{–}10\end{array}
+> $$
 
 ^priklad-disjunkce
 
@@ -374,19 +359,31 @@ Pravidlo $\Rightarrow$i taky **respektuje pravdivost**. Tady je schovaný induk�
 > $u'_0$ pokazí $x \vee \neg y$ ($0 \vee 0$). $u'_1$ splní $x \vee y \vee w$ i $x \vee \neg y$ díky $x$ a $\neg x \vee y \vee \neg z$ díky $y$. **Svědkem je $u'_1$.**
 
 > [!priklad|18]- Odvoď v přirozené dedukci $a \wedge b \vdash b \wedge a$.
-> 1. $a \wedge b$ P; 2. $a$ $\wedge$e₁ 1; 3. $b$ $\wedge$e₂ 1; 4. **$b \wedge a$ $\wedge$i 3, 2**.
+> $$
+> \begin{array}{rll}\text{1.} & a\wedge b & \text{P} \\ \text{2.} & a & {\wedge}\text{e}_1\ 1 \\ \text{3.} & b & {\wedge}\text{e}_2\ 1 \\ \text{4.} & b\wedge a & {\wedge}\text{i}\ 3, 2\end{array}
+> $$
 
 > [!priklad|19]- Odvoď $\vdash a \Rightarrow (b \Rightarrow a)$.
-> 1. $a$ P (box); 2. $b$ P (vnořený box); 3. $a$ it 1; 4. $b \Rightarrow a$ $\Rightarrow$i 2–3; 5. **$a \Rightarrow (b \Rightarrow a)$ $\Rightarrow$i 1–4**.
+> $$
+> \begin{array}{rll} & \begin{array}{|rll|}\hline \text{1.} & a & \text{P} \\  & \begin{array}{|rll|}\hline \text{2.} & b & \text{P} \\ \text{3.} & a & \text{it}\ 1 \\ \hline\end{array} &  \\ \text{4.} & b\Rightarrow a & {\Rightarrow}\text{i}\ 2\text{–}3 \\ \hline\end{array} &  \\ \text{5.} & a\Rightarrow(b\Rightarrow a) & {\Rightarrow}\text{i}\ 1\text{–}4\end{array}
+> $$
 
 > [!priklad|20]- Odvoď $\neg a \vee b \vdash a \Rightarrow b$.
-> 1. $\neg a \vee b$ P. Box: 2. $\neg a$ P; box 3. $a$ P; 4. $\bot$ $\neg$e 3, 2; 5. $b$ $\bot$e 4; 6. $a \Rightarrow b$ $\Rightarrow$i 3–5. Box: 7. $b$ P; box 8. $a$ P; 9. $b$ it 7; 10. $a \Rightarrow b$ $\Rightarrow$i 8–9. 11. **$a \Rightarrow b$ $\vee$e 1, 2–6, 7–10**.
+> $$
+> \begin{array}{rll}\text{1.} & \neg a\vee b & \text{P} \\  & \begin{array}{|rll|}\hline \text{2.} & \neg a & \text{P} \\  & \begin{array}{|rll|}\hline \text{3.} & a & \text{P} \\ \text{4.} & \bot & {\neg}\text{e}\ 3, 2 \\ \text{5.} & b & {\bot}\text{e}\ 4 \\ \hline\end{array} &  \\ \text{6.} & a\Rightarrow b & {\Rightarrow}\text{i}\ 3\text{–}5 \\ \hline\end{array} &  \\  & \begin{array}{|rll|}\hline \text{7.} & b & \text{P} \\  & \begin{array}{|rll|}\hline \text{8.} & a & \text{P} \\ \text{9.} & b & \text{it}\ 7 \\ \hline\end{array} &  \\ \text{10.} & a\Rightarrow b & {\Rightarrow}\text{i}\ 8\text{–}9 \\ \hline\end{array} &  \\ \text{11.} & a\Rightarrow b & {\vee}\text{e}\ 1,\ 2\text{–}6,\ 7\text{–}10\end{array}
+> $$
+> Rozbor případů ($\vee$e): oba boxy končí $a \Rightarrow b$.
 
 > [!priklad|21]- Odvoď $\vdash a \Rightarrow a$.
-> 1. $a$ P (box); 2. **$a \Rightarrow a$ $\Rightarrow$i 1–1**. Box může mít jediný řádek: předpoklad je zároveň jeho poslední formule.
+> $$
+> \begin{array}{rll} & \begin{array}{|rll|}\hline \text{1.} & a & \text{P} \\ \hline\end{array} &  \\ \text{2.} & a\Rightarrow a & {\Rightarrow}\text{i}\ 1\text{–}1\end{array}
+> $$
+> Box může mít jediný řádek: předpoklad je zároveň jeho poslední formule.
 
 > [!priklad|22]- Odvoď $a \Rightarrow (b \Rightarrow c) \vdash (a \wedge b) \Rightarrow c$.
-> 1. $a \Rightarrow (b \Rightarrow c)$ P. Box: 2. $a \wedge b$ P; 3. $a$ $\wedge$e₁ 2; 4. $b$ $\wedge$e₂ 2; 5. $b \Rightarrow c$ $\Rightarrow$e 3, 1; 6. $c$ $\Rightarrow$e 4, 5. 7. **$(a \wedge b) \Rightarrow c$ $\Rightarrow$i 2–6**.
+> $$
+> \begin{array}{rll}\text{1.} & a\Rightarrow(b\Rightarrow c) & \text{P} \\  & \begin{array}{|rll|}\hline \text{2.} & a\wedge b & \text{P} \\ \text{3.} & a & {\wedge}\text{e}_1\ 2 \\ \text{4.} & b & {\wedge}\text{e}_2\ 2 \\ \text{5.} & b\Rightarrow c & {\Rightarrow}\text{e}\ 3, 1 \\ \text{6.} & c & {\Rightarrow}\text{e}\ 4, 5 \\ \hline\end{array} &  \\ \text{7.} & (a\wedge b)\Rightarrow c & {\Rightarrow}\text{i}\ 2\text{–}6\end{array}
+> $$
 
 ### Typové příklady na semestrální test
 
