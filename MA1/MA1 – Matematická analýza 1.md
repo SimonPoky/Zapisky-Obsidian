@@ -10,7 +10,7 @@ tags: [predmet, MA1]
 
 [Handouty ke všem přednáškám (PDF) ↗](https://math.fel.cvut.cz/en/people/velebil/files/b0b01ma1/ma1_handout_all.pdf) · [Stránka předmětu ↗](https://math.fel.cvut.cz/en/people/velebil/teaching/b0b01ma1.html) · [Požadavky ↗](https://math.fel.cvut.cz/en/people/velebil/teaching/b0b01ma1_pozadavky.html) · [Ukázka zkoušky ↗](https://math.fel.cvut.cz/en/people/velebil/files/b0b01ma1/ma1_ukazka_2026.pdf) · [Ukázka testu 1 ↗](https://math.fel.cvut.cz/en/people/velebil/files/b0b01ma1/ma1_pisemka01_ukazka_2026.pdf) · [Ukázka testu 2 ↗](https://math.fel.cvut.cz/en/people/velebil/files/b0b01ma1/ma1_pisemka02_ukazka_2026.pdf)
 
-**Kartičky:** 131 povinných + 34 příkladů · [otevřít aplikaci ↗](https://claude.ai/artifact/3CKfKeuwtwrWiz3FSfSh5B) · [[Archiv přednášek#Kartičky|jak to funguje]]
+**Kartičky:** 157 povinných + 42 příkladů · [otevřít aplikaci ↗](https://claude.ai/artifact/3CKfKeuwtwrWiz3FSfSh5B) · [[Archiv přednášek#Kartičky|jak to funguje]]
 
 ## Přednášky
 
@@ -20,6 +20,7 @@ tags: [predmet, MA1]
 - **1. 10. 2026** [[MA1 04 – Nerovnosti ve směru a věta o sevření|Nerovnosti ve směru a věta o sevření]] · f ≤ g ve směru, krácení v limitě, znaménko limity, věta o sevření, x · sin(1/x), omezenost, jednostranné limity
 - **7. 10. 2026** [[MA1 05 – Aritmetika limit a substituce|Aritmetika limit a substituce]] · aritmetika limit, ∞/∞, podprostor W, věta o substituci, podposloupnosti, sudé a liché členy, spojitost
 - **8. 10. 2026** [[MA1 06 – Spojitost a spojité funkce na intervalu|Spojitost a spojité funkce na intervalu]] · ε-δ, jednostranná spojitost, složená funkce, Heine, sin(1/x), Creeping Theorem, IVT, BT, EVT, PIT, pevný bod
+- **14. 10. 2026** [[MA1 07 – Derivace a Carathéodoryho trik|Derivace a Carathéodoryho trik]] · spojitost inverzní funkce, derivace v bodě, sečna a tečna, |x| v nule, Carathéodoryho trik, derivace ⇒ spojitost, xⁿ, aritmetika derivací, Chain Rule
 
 ## Slovníček pojmů
 
@@ -28,15 +29,19 @@ tags: [predmet, MA1]
 - [[absolutní hodnota]] · Vzdálenost od nuly; |x − y| je vzdálenost dvou čísel. Platí trojúhelníková nerovnost.
 - [[aditivní systém intervalů]] · Dva překrývající se dobré úseky se dají slepit v dobrý úsek.
 - [[Archimedova vlastnost]] · Krokem libovolné kladné délky dojdeš za libovolné číslo, proto inf{1/n} = 0.
+- [[Carathéodoryho trik]] · f′(p) existuje ⇔ f(x) − f(p) = f*(x)(x − p) se spojitou f*; pak f′(p) = f*(p).
 - [[celá čísla]] · Postavená z dvojic přirozených čísel: (5, 8) „kóduje“ rozdíl 5 − 8 = −3.
 - [[Creeping Theorem]] · Lokální a aditivní systém obsahuje celý [a; b]; z toho plynou IVT a BT.
 - [[Dedekindovská úplnost]] · Každá neprázdná shora omezená M ⊆ ℝ má supremum v ℝ. V ℚ to neplatí.
 - [[Dedekindův řez]] · Střih racionální přímky na L a U; √2 = (L, U). Reálná čísla jsou všechny řezy.
+- [[derivace v bodě]] · Okamžitá rychlost změny: limita (f(p+h) − f(p))/h, směrnice tečny; musí být reálné číslo.
 - [[Hasseův diagram]] · Obrázek uspořádání: menší prvky níž, čáry jen mezi přímými sousedy.
 - [[Heineova věta]] · Spojitost v p ⇔ f(xₙ) → f(p) pro každou xₙ → p; jedna špatná posloupnost dokáže nespojitost.
 - [[horní odhad]] · Strop, pod který se vejde celá množina; dolní odhad je podlaha. Nemusí ležet v množině ani existovat.
 - [[infimum]] · Nejvyšší podlaha, největší dolní odhad. V 𝒫(U) průnik, v ℕ minimum.
+- [[inverzní funkce]] · Funkce pozpátku: f⁻¹(y) je to jediné x s f(x) = y. Existuje jen u prosté funkce.
 - [[iracionální číslo]] · Reálné číslo, které nejde napsat zlomkem, např. √2. V ℚ je na jeho místě díra.
+- [[jednostranná derivace]] · Derivace jen zleva f′₋(p) nebo zprava f′₊(p); oboustranná existuje, když se shodují.
 - [[jednostranná limita]] · Limita jen zleva (x → p⁻) nebo zprava (x → p⁺); oboustranná existuje, když se shodují.
 - [[jednostranná spojitost]] · Spojitost jen zleva nebo jen zprava; oboustranná platí, když platí obě.
 - [[limita ve směru]] · Ke každému terči kolem L existuje kus směru, jehož celý obraz padne do terče. Jedna definice pro x → p, n → ∞ i x → −∞.
@@ -56,6 +61,7 @@ tags: [predmet, MA1]
 - [[potenční množina]] · Katalog všech výběrů z U; pro 3 prvky 2³ = 8 podmnožin.
 - [[pozitivní kužel]] · Kladná čísla ℝ⁺, ze kterých se vyrobí nerovnost: r < s ⇔ s − r ∈ ℝ⁺.
 - [[přirozená čísla]] · 0, 1, 2, … postavená z ∅: číslo n je množina všech menších čísel.
+- [[prostá funkce]] · Různé vstupy dají různé výstupy; žádnou hodnotu nenabude dvakrát.
 - [[prstencové okolí]] · Okolí bodu p bez bodu p; hodnota v p limitu neovlivní.
 - [[racionální čísla]] · Zlomky; jedno číslo je celá rodina zlomků 2/−3 = 4/−6 = 6/−9.
 - [[reálná čísla]] · Racionální přímka se zaplněnými dírami: úplné uspořádané těleso Dedekindových řezů.
@@ -63,14 +69,18 @@ tags: [predmet, MA1]
 - [[rozšířená přirozená čísla]] · ℕ s umělým stropem +∞, aby každá množina měla supremum. 0 · ∞ se nedefinuje.
 - [[rozšířená reálná čísla]] · ℝ ∪ {−∞, +∞}; −∞ = (∅, ℚ), +∞ = (ℚ, ∅). Každá množina tu má supremum.
 - [[Russellův paradox]] · „Množina všech množin, které neobsahují samy sebe“ nemůže existovat.
+- [[ryze monotónní funkce]] · Rostoucí (x₁ < x₂ ⇒ f(x₁) < f(x₂)) nebo klesající; rostoucí je výtah jen nahoru.
 - [[shora omezená množina]] · Množina se stropem: existuje u ≥ všem prvkům. Zdola omezená má podlahu.
 - [[směr]] · Odkud se blížíme k cíli: vnořené neprázdné množiny s prázdným průnikem, cíl do nich nepatří.
 - [[spojitost na intervalu]] · Spojitá uvnitř intervalu a v krajních bodech jednostranně.
 - [[spojitost v bodě]] · Limita v bodě p existuje a rovná se f(p): graf jde přes p bez zvednutí tužky.
 - [[supremum]] · Nejnižší strop, nejmenší horní odhad. Existuje i tam, kde chybí maximum.
+- [[tečna]] · Limitní poloha sečen v bodě [p; f(p)]: y = f(p) + f′(p)(x − p).
 - [[uspořádaná množina]] · Množina s pravidlem „kdo je pod kým“: reflexivní, tranzitivní, antisymetrické.
+- [[věta o aritmetice derivací]] · (rf + sg)′ = rf′ + sg′, (fg)′ = f′g + fg′, (f/g)′ = (f′g − fg′)/g².
 - [[věta o aritmetice limit]] · Limita součtu, součinu, podílu je součet, součin, podíl limit, pokud to v ℝ* dává smysl.
 - [[věta o aritmetice spojitých funkcí]] · Součet, součin, |f| i podíl (jmenovatel ≠ 0) spojitých funkcí jsou spojité.
+- [[věta o derivaci složené funkce]] · Chain Rule: (g ∘ f)′(p) = g′(f(p)) · f′(p), derivace vrstev se násobí.
 - [[věta o detekci limity]] · Limitu určí substituce se stejnou limitou, jejichž obrazy pokryjí kus směru.
 - [[věta o extrémech]] · EVT: spojitá funkce na [a; b] nabývá maxima i minima.
 - [[věta o jednoznačnosti limity]] · Limita ve směru je nejvýš jedna.
@@ -82,6 +92,8 @@ tags: [predmet, MA1]
 - [[věta o rovnosti ve směru]] · Funkce, které se ve směru shodují, mají stejnou limitu.
 - [[věta o sevření]] · Funkce sevřená mezi dvěma se stejnou limitou L má limitu L taky (dva policajti).
 - [[věta o součinu nulové a omezené funkce]] · Nula krát omezená je nula.
+- [[věta o spojitosti funkce s derivací]] · Derivace v p ⇒ spojitost v p; obráceně ne (|x| v nule).
+- [[věta o spojitosti inverzní funkce]] · Spojitá f na [a; b] má inverzi ⇔ je ryze monotónní; inverze je pak spojitá.
 - [[věta o spojitosti složené funkce]] · f spojitá v p a g spojitá v f(p) ⇒ g ∘ f spojitá v p. Jednostranně neplatí.
 - [[věta o substituci]] · Limita f(φ(x)) je lim f, když φ míří do cíle a na kusu směru do něj nedopadne.
 - [[věta o zachování intervalů]] · PIT: obraz [a; b] při spojité funkci je interval [min; max].

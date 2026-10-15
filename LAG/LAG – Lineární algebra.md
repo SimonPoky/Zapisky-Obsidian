@@ -10,7 +10,7 @@ tags: [predmet, LAG]
 
 [Poznámky k přednáškám (PDF) ↗](https://math.fel.cvut.cz/cz/lide/gromadan/LA26/notes.pdf) · [Stránka přednášky ↗](https://math.fel.cvut.cz/cz/lide/gromadan/lag26p.html) · [Sbírka příkladů (Velebil) ↗](https://math.fel.cvut.cz/en/people/velebil/files/lag_2026_podzim/lag_sbirka_2026_01_21.pdf)
 
-**Kartičky:** 128 povinných + 49 příkladů · [otevřít aplikaci ↗](https://claude.ai/artifact/3CKfKeuwtwrWiz3FSfSh5B) · [[Archiv přednášek#Kartičky|jak to funguje]]
+**Kartičky:** 156 povinných + 62 příkladů · [otevřít aplikaci ↗](https://claude.ai/artifact/3CKfKeuwtwrWiz3FSfSh5B) · [[Archiv přednášek#Kartičky|jak to funguje]]
 
 ## Přednášky
 
@@ -20,6 +20,7 @@ tags: [predmet, LAG]
 - **2. 10. 2026** [[LAG 04 – Lineární závislost a nezávislost|Lineární závislost a nezávislost]] · důkaz věty 2.13, LZ a LN, pozorování 3.2, věty 3.3 a 3.6
 - **7. 10. 2026** [[LAG 05 – Báze a dimenze|Báze a dimenze]] · věta 3.7, generující posloupnost, báze, kanonická báze, dimenze, výběr a doplnění báze
 - **9. 10. 2026** [[LAG 06 – Souřadnice, součet a průnik podprostorů|Souřadnice, součet a průnik podprostorů]] · dimenze podprostoru, souřadnice, souřadnicový vektor, linearita souřadnic, průnik a součet podprostorů, dimenze součtu a průniku
+- **14. 10. 2026** [[LAG 07 – Lineární zobrazení|Lineární zobrazení]] · lineární zobrazení, Lin(V, W), lineární operátor, skládání, A(0) = 0, kritérium linearity, příklady v rovině, součin matice a vektoru, matice zobrazení
 
 ## Zápočtové testy
 
@@ -42,9 +43,9 @@ Na testu se zadá jedna z nich a je potřeba ji napsat přesně, s tím, co je d
 | 4 | Generování lineárního prostoru | [[generující posloupnost]] | přednáška 5 |
 | 5 | Báze | [[báze]] | přednáška 5 |
 | 6 | Dimenze | [[dimenze]] | přednáška 5 |
-| 7 | Lineární zobrazení | | přijde v kap. 6 |
+| 7 | Lineární zobrazení | [[lineární zobrazení]] | přednáška 7 |
 | 8 | Souřadnice vektoru vzhledem k bázi | [[souřadnice]], [[souřadnicový vektor]] | přednáška 6 |
-| 9 | Matice lineárního zobrazení vzhledem k bázím B a C | | přijde v kap. 6 |
+| 9 | Matice lineárního zobrazení vzhledem k bázím B a C | [[matice zobrazení v kanonické bázi]] (zatím jen kanonické báze) | částečně, přednáška 7 |
 | 10 | Matice transformace souřadnic z báze B do báze C | | přijde v kap. 6.3 |
 | 11 | Jádro | | přijde v kap. 7 |
 | 12 | Obraz | | přijde v kap. 7 |
@@ -57,16 +58,16 @@ Na testu se zadá jedna z nich a je potřeba ji napsat přesně, s tím, co je d
 | typ úlohy | část testu | kde procvičit |
 |---|---|---|
 | Je daná množina podprostor ($\mathbb{R}^2$, $\mathbb{R}^{\le 2}[x]$)? | teoretický | [[LAG 03 – Lineární podprostor a lineární obal#Typové příklady na zápočtový test\|LAG 03]], příklady 17–21 |
-| Je zobrazení lineární? Je to mono-, epi-, izomorfismus? Urči $\operatorname{Im}$. | teoretický | přijde s kap. 6–7 |
+| Je zobrazení lineární? Je to mono-, epi-, izomorfismus? Urči $\operatorname{Im}$. | teoretický | linearita: [[LAG 07 – Lineární zobrazení#Typové příklady na zápočtový test\|LAG 07]], příklady 23–27; mono/epi/izo a $\operatorname{Im}$ přijdou s kap. 7 |
 | Dokaž, že posloupnost je báze (s využitím dimenze) | dílčí krok početního | [[LAG 05 – Báze a dimenze#Typové příklady na zápočtový test\|LAG 05]], příklady 27–28 |
 | Souřadnice polynomu nebo matice vzhledem k bázi | dílčí krok početního | [[LAG 06 – Souřadnice, součet a průnik podprostorů#Typové příklady na zápočtový test\|LAG 06]], příklady 22–23 |
 | Matice zobrazení vůči bázím, skládání = maticový součin, matice transformace souřadnic | jádro početního | přijde s kap. 6 |
 
 > [!note] Co z toho plyne v číslech
-> - Z 15 definic je zatím probraných **8 (53 %)**; zbylých 7 přijde s lineárními zobrazeními (kap. 6–7).
+> - Z 15 definic je zatím probraných **9 (60 %)**, matice zobrazení (č. 9) zatím jen pro kanonické báze; zbylých 6 přijde s kap. 6–7.
 > - Všech **6 z 6** ukázkových početních příkladů staví na matici lineárního zobrazení nebo matici transformace souřadnic. Těch **10 b. (50 % testu)** tedy stojí na látce, která se začíná přednášet 14. 10.
-> - Z 7 teoretických ukázek se **3 (43 %)** dají řešit už teď (podprostory), **4 (57 %)** jsou o lineárních zobrazeních.
-> - Do testu zbývá **9 přednášek** (28. 10. je svátek), kap. 6–7 by měly být probrané s rezervou.
+> - Z 7 teoretických ukázek se **3 (43 %)** dají řešit už teď (podprostory). Ze **4 (57 %)** o lineárních zobrazeních jde zatím jen část „je zobrazení lineární?“ (úlohy 3 a 5); mono-, epi-, izomorfismus a $\operatorname{Im}$ přijdou s kap. 7.
+> - Do testu zbývá **8 přednášek** (28. 10. je svátek), kap. 6–7 by měly být probrané s rezervou.
 
 > [!navic] Značení na cvičení a na přednášce
 > - Souřadnice: na přednášce $[\vec{v}]^{\mathcal{X}}$, na cvičení $[\vec{v}]_{\mathcal{X}}$ nebo $\operatorname{coord}_{\mathcal{X}}(\vec{v})$. Je to totéž.
@@ -78,6 +79,7 @@ Na testu se zadá jedna z nich a je potřeba ji napsat přesně, s tím, co je d
 *Najetím myší na pojem uvidíš náhled, klepnutím otevřeš jeho poznámku.*
 
 - [[alternativní definice lineární závislosti]] · LZ právě když je některý vektor kombinací ostatních (i jen předchozích).
+- [[asociativita skládání zobrazení]] · C(BA) = (CB)A: u tří zobrazení za sebou nezáleží na závorkách.
 - [[axiomy lineárního prostoru]] · 8 pravidel počítání, která se nedokazují, ale požadují. Říkají, že se sčítáním a násobením vektorů zacházíš jako u čísel.
 - [[báze]] · Souřadnicový systém: vektory, ze kterých poskládáš každý vektor prostoru, a to jediným způsobem. LN a generuje.
 - [[charakterizace báze]] · Báze = minimální generující = maximální LN posloupnost.
@@ -87,17 +89,24 @@ Na testu se zadá jedna z nich a je potřeba ji napsat přesně, s tím, co je d
 - [[eukleidovské vektory]] · Šipky vycházející z jednoho pevného bodu. Sčítají se rovnoběžníkem, násobí se natažením.
 - [[generující posloupnost]] · Vektory, ze kterých jde poskládat úplně všechno: L = span{x₁, …, xₙ}.
 - [[homogenní soustava]] · Soustava s nulovými pravými stranami. Její řešení tvoří podprostor, řešení nehomogenní soustavy ne.
+- [[identické zobrazení]] · Zobrazení „nedělej nic“, id(x) = x; lineární, při skládání hraje roli jedničky.
 - [[izomorfismus]] · Převodník mezi dvěma prostory, který zachová sčítání i násobení. Izomorfní prostory jsou stejné, jen jinak zapsané. Přesně se zavádí v kap. 7.
 - [[kanonická báze]] · Báze 𝔽ⁿ z vektorů s jedničkou na jednom místě a nulami jinde, např. ((1; 0), (0; 1)).
+- [[kritérium linearity]] · Lineární právě když A(αx + y) = αAx + Ay: místo dvou podmínek stačí jedna.
 - [[lineární kombinace]] · Recept „vezmi α₁ krát první vektor, α₂ krát druhý… a všechno sečti“. Čísla αᵢ jsou dávky jednotlivých ingrediencí.
 - [[lineární nezávislost]] · Nula jde z vektorů namíchat jen triviálně, žádný vektor není navíc. Např. ((1; 0), (0; 1)).
 - [[lineární obal]] · Všechno, co se dá z vektorů M namíchat: span{x} je přímka, span{x, y} rovina. Nejmenší podprostor obsahující M.
+- [[lineární operátor]] · Lineární zobrazení V → V, které zůstává v tomtéž prostoru; Lin(V) = Lin(V, V).
 - [[lineární podprostor]] · Neprázdný kousek prostoru uzavřený na sčítání a násobení číslem. V ℝ² jen {0}, přímky přes počátek a celá rovina.
 - [[lineární prostor]] · Sbírka věcí, které umíš mezi sebou sčítat a násobit číslem, výsledek zůstane ve sbírce a platí obvyklá pravidla počítání. Co ty věci jsou, je jedno.
 - [[lineární rovnice]] · Úloha „kolikrát musím vzít a, abych dostal b“. Když a ≠ 0, je odpověď jediná: b/a.
 - [[lineární závislost]] · Nula jde z vektorů namíchat i netriviálně, takže aspoň jeden vektor jde poskládat z ostatních. Např. ((1; 2), (2; 4)).
+- [[lineární zobrazení]] · Zobrazení, které se slučuje se sčítáním i násobením číslem: A(x + y) = Ax + Ay, A(αx) = αAx.
 - [[matice]] · Tabulka čísel s m řádky a n sloupci. Pro sčítání je to jen sloupec m·n čísel poskládaný do obdélníku.
+- [[matice zobrazení v kanonické bázi]] · Matice (Ae₁ ⋯ Aeₙ): sloupce jsou obrazy jednotkových vektorů, Ax je pak matice krát x.
+- [[množina lineárních zobrazení]] · Lin(V, W), katalog všech lineárních zobrazení z V do W.
 - [[netriviální lineární kombinace]] · Kombinace s aspoň jedním nenulovým koeficientem.
+- [[nulové zobrazení]] · Každý vektor pošle do nuly; lineární.
 - [[nulový polynom]] · Polynom, který má všechny koeficienty nulové. Je to nulový vektor prostoru polynomů a jeho stupeň je dohodou −∞.
 - [[nulový vektor]] · Vektor, který nic nezmění, když ho přičteš. Obdoba nuly u čísel; v každém prostoru je právě jeden (věta 1.8).
 - [[opačný vektor]] · Vektor, který daný vektor „vynuluje“. U šipek je to stejná šipka opačným směrem.
@@ -111,10 +120,13 @@ Na testu se zadá jedna z nich a je potřeba ji napsat přesně, s tím, co je d
 - [[rozšířená matice soustavy]] · Soustava zapsaná jen čísly: koeficienty u neznámých v tabulce, pravé strany za svislou čarou. Neznámé se nepíšou, poznají se podle sloupce.
 - [[skalár]] · Obyčejné číslo z tělesa 𝔽, kterým vektory natahuješ, zkracuješ nebo otáčíš.
 - [[sloupcové vektory]] · Sloupce n čísel. Nejběžnější lineární prostor; skoro všechno se do něj nakonec převede.
+- [[složené zobrazení]] · BA = B ∘ A: nejdřív A, potom B, čte se zprava doleva jako g(f(x)).
 - [[součet podprostorů]] · Všechny součty v + w; nejmenší podprostor obsahující V i W, obdoba sjednocení.
+- [[součin matice a vektoru]] · Lineární kombinace sloupců matice s koeficienty ze složek vektoru.
 - [[souřadnice]] · Čísla α₁, …, αₙ v jediném zápisu v = α₁x₁ + … + αₙxₙ pomocí báze: kolik kroků kterým směrem.
 - [[souřadnicový vektor]] · Souřadnice vektoru v bázi 𝒳 pod sebou ve sloupci: [v]^𝒳 ∈ 𝔽ⁿ.
 - [[Steinitzova věta]] · LN posloupnost nemá víc prvků než generující posloupnost.
+- [[stejnolehlost]] · Ax = kx, zoom se středem v počátku; k = −1 je středová souměrnost.
 - [[stopa matice]] · Součet prvků na diagonále čtvercové matice.
 - [[stupeň polynomu]] · Nejvyšší mocnina x, která v polynomu opravdu je, tedy s nenulovým číslem před sebou.
 - [[triviální lineární kombinace]] · Všechny koeficienty nulové, výsledek je vždy nulový vektor.
@@ -127,6 +139,7 @@ Na testu se zadá jedna z nich a je potřeba ji napsat přesně, s tím, co je d
 - [[věta o jednoznačnosti vyjádření]] · LN právě když se každý vektor dá vyjádřit nejvýš jedním způsobem.
 - [[věta o linearitě souřadnic]] · Souřadnice součtu jsou součet souřadnic, souřadnice násobku násobek souřadnic.
 - [[věta o lineárním obalu]] · span M je vždy podprostor, a to nejmenší podprostor obsahující M.
+- [[věta o obrazu nulového vektoru]] · Lineární zobrazení pošle nulu na nulu; když f(o) ≠ o, lineární není.
 - [[věta o odebírání a přidávání vektorů]] · Odebráním z LN posloupnosti zůstane LN, přidáním k LZ zůstane LZ.
 - [[věta o počtu prvků báze]] · Všechny báze prostoru mají stejný počet prvků.
 - [[věta o podprostoru]] · Podprostor je sám lineární prostor, stačí ověřit neprázdnost a dvě uzavřenosti.
@@ -136,6 +149,8 @@ Na testu se zadá jedna z nich a je potřeba ji napsat přesně, s tím, co je d
 - [[věta o součtu podprostorů]] · Součet dvou podprostorů je podprostor (sjednocení obecně ne).
 - [[věta o vlastnostech lineárního prostoru]] · Nulový i opačný vektor jsou jediné, α ⊙ x = 0 jen pro α = 0 nebo x = 0 a −x = (−1) ⊙ x.
 - [[věta o výběru báze]] · Z konečné generující množiny jde vybrat bázi.
+- [[věta o zachování lineárních kombinací]] · Obraz lineární kombinace je stejná kombinace obrazů.
+- [[věta o zobrazení zadaném sloupci]] · (x₁; …; xₙ) ↦ x₁a₁ + … + xₙaₙ je vždy lineární zobrazení 𝔽ⁿ → 𝔽ᵐ.
 
 ## Jak se předmět hodnotí
 

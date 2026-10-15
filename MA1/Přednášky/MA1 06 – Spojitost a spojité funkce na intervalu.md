@@ -417,4 +417,4 @@ Velké věty o funkcích spojitých na $[a; b]$ mají společný vzor důkazu: v
 > **$\delta = 0{,}01$**: z $\lvert x - 3 \rvert < 0{,}01$ plyne $\big\lvert \lvert x \rvert - 3 \big\rvert \le \lvert x - 3 \rvert < 0{,}01$.
 
 ---
-← [[MA1 05 – Aritmetika limit a substituce|7. 10. 2026 Aritmetika limit a substituce]]
+← [[MA1 05 – Aritmetika limit a substituce|7. 10. 2026 Aritmetika limit a substituce]] · [[MA1 07 – Derivace a Carathéodoryho trik|14. 10. 2026 Derivace a Carathéodoryho trik]] →

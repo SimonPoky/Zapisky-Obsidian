@@ -420,4 +420,4 @@ Důkaz zatím nezazněl; myšlenka je doplnit bázi průniku jednou na bázi $V$
 > Souřadnice: **$(2; 1; -3; 5)$**.
 
 ---
-← [[LAG 05 – Báze a dimenze|7. 10. 2026 Báze a dimenze]]
+← [[LAG 05 – Báze a dimenze|7. 10. 2026 Báze a dimenze]] · [[LAG 07 – Lineární zobrazení|14. 10. 2026 Lineární zobrazení]] →
