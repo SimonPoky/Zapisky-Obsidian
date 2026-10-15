@@ -366,4 +366,4 @@ Po přidání všech rezolvent přes $x$ smíš klauzule s $x$ „umrtvit“ (vy
 > Přes $x$: $R_x = \{w \vee y \vee \neg z\}$ (druhá rezolventa $\neg y \vee y \vee \neg z$ je tautologie), $S := \{y \vee z \vee \neg w, z \vee w, w \vee y \vee \neg z\}$. Přes $y$: $S_{\neg y} = \emptyset$, $S := \{z \vee w\}$. Přes $z$: $S := \emptyset$, **splnitelná**. Pozpátku: $w = 0$, pak $z = 1$, pak $y$: $w \vee y \vee \neg z$ vynutí $y = 1$, pak $x$: $x \vee \neg y$ vynutí $x = 1$. Svědek **$x = y = z = 1$, $w = 0$**.
 
 ---
-← [[LGR 04 – Sémantický důsledek a klauzální tvar|8. 10. 2026 Sémantický důsledek a klauzální tvar]]
+← [[LGR 04 – Sémantický důsledek a klauzální tvar|8. 10. 2026 Sémantický důsledek a klauzální tvar]] · [[LGR 06 – Rezoluční tabulka a přirozená dedukce|15. 10. 2026 Rezoluční tabulka a přirozená dedukce]] →

@@ -433,4 +433,4 @@ Všechny tři důkazy mají stejný vzor: napsat rozdíl $(\ldots)(x) - (\ldots)
 > Na $[-1; 1]$ **ne**: $f(-1) = f(1) = 1$, není prostá (ani monotónní). Na $[0; 1]$ **ano**: je rostoucí, $f^{-1}(y) = \sqrt{y}$ je spojitá na $[0; 1]$.
 
 ---
-← [[MA1 06 – Spojitost a spojité funkce na intervalu|8. 10. 2026 Spojitost a spojité funkce na intervalu]]
+← [[MA1 06 – Spojitost a spojité funkce na intervalu|8. 10. 2026 Spojitost a spojité funkce na intervalu]] · [[MA1 08 – Věty o střední hodnotě a l'Hospitalovo pravidlo|15. 10. 2026 Věty o střední hodnotě a l'Hospitalovo pravidlo]] →
