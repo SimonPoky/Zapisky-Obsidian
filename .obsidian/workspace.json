@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LGR/Přednášky/LGR 05 – Rezoluční princip.md",
-                "mode": "preview",
+                "file": "LGR/Přednášky/LGR 06 – Rezoluční tabulka a přirozená dedukce.md",
+                "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "LGR 05 – Rezoluční princip"
+              "title": "LGR 06 – Rezoluční tabulka a přirozená dedukce"
             }
           }
         ]
@@ -192,6 +192,9 @@
   },
   "active": "d70f69f7743dabdf",
   "lastOpenFiles": [
+    "LGR/Pojmy/zavedení konjunkce.md",
+    "LGR/Přednášky/LGR 06 – Rezoluční tabulka a přirozená dedukce.md",
+    "LGR/Přednášky/LGR 05 – Rezoluční princip.md",
     "MA1/Pojmy/věta o nulové derivaci.md",
     "MA1/Pojmy/neurčitý výraz.md",
     "MA1/Pojmy/lineární aproximace.md",
@@ -199,13 +202,11 @@
     "MA1/Pojmy/důsledek Rolleovy věty.md",
     "MA1/Pojmy/derivace na intervalu.md",
     "MA1/Pojmy/Rolleova věta.md",
-    "LGR/Přednášky/LGR 06 – Rezoluční tabulka a přirozená dedukce.md",
     "MA1/Pojmy/Lagrangeova věta.md",
     "MA1/Pojmy/Cauchyova věta.md",
     "MA1/Obrázky/ma108-rolle-lagrange.png",
     "LGR/Pojmy/úplný důkazový systém.md",
     "MA1/Obrázky/ma108-rolle-dukaz.png",
-    "LGR/Pojmy/zavedení konjunkce.md",
     "LGR/Pojmy/zavedení implikace.md",
     "MA1/Obrázky/ma108-linearni-aproximace.png",
     "LGR/Pojmy/svědek splnitelnosti.md",
@@ -222,7 +223,6 @@
     "LGR/Pojmy/iterace.md",
     "LGR/Pojmy/eliminace sporu.md",
     "LGR/Pojmy/eliminace negace.md",
-    "LGR/Pojmy/eliminace konjunkce.md",
     "LGR/Obrázky/lgr06-tabulka.png",
     "LGR/Obrázky/lgr06-systemy.png",
     "LGR/Obrázky/lgr06-svedek.png",

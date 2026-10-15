@@ -183,16 +183,16 @@ Zlomková čára znamená: z formulí nad čarou smíš odvodit formuli pod čar
 
 | pravidlo | tvar | lidsky |
 |---|---|---|
-| [[zavedení konjunkce\|$\wedge$i]] | $\dfrac{\varphi \quad \psi}{\varphi \wedge \psi}$ | máš obě části, máš i konjunkci |
-| [[eliminace konjunkce\|$\wedge$e₁, $\wedge$e₂]] | $\dfrac{\varphi \wedge \psi}{\varphi}$, $\ \dfrac{\varphi \wedge \psi}{\psi}$ | z konjunkce smíš vzít kterýkoli člen |
-| [[zavedení implikace\|$\Rightarrow$i]] | box s předpokladem $\varphi$ končící $\psi$, pak $\varphi \Rightarrow \psi$ | přímý důkaz implikace |
-| $\Rightarrow$e (MP) | $\dfrac{\varphi \quad \varphi \Rightarrow \psi}{\psi}$ | [[modus ponens]] |
-| $\vee$i₁, $\vee$i₂ | $\dfrac{\varphi}{\varphi \vee \psi}$, $\ \dfrac{\psi}{\varphi \vee \psi}$ | k pravdivé formuli smíš cokoli přidat „nebo“ |
-| [[eliminace disjunkce\|$\vee$e]] | $\varphi \vee \psi$, box $\varphi \dots \chi$, box $\psi \dots \chi$, pak $\chi$ | rozbor případů: $\chi$ plyne v obou |
-| $\neg$i | box s předpokladem $\varphi$ končící $\bot$, pak $\neg\varphi$ | předpoklad vedl ke sporu, neplatí |
-| [[eliminace negace\|$\neg$e]] | $\dfrac{\varphi \quad \neg\varphi}{\bot}$ | $\varphi$ a $\neg\varphi$ naráz je spor |
-| $\neg\neg$e, $\neg\neg$i | $\dfrac{\neg\neg\varphi}{\varphi}$, $\ \dfrac{\varphi}{\neg\neg\varphi}$ | dvojitá negace |
-| [[eliminace sporu\|$\bot$e]] | $\dfrac{\bot}{\varphi}$ | ze sporu plyne cokoli |
+| [[zavedení konjunkce\|∧i]] | $\dfrac{\varphi \quad \psi}{\varphi \wedge \psi}$ | máš obě části, máš i konjunkci |
+| [[eliminace konjunkce\|∧e₁, ∧e₂]] | $\dfrac{\varphi \wedge \psi}{\varphi}$, $\ \dfrac{\varphi \wedge \psi}{\psi}$ | z konjunkce smíš vzít kterýkoli člen |
+| [[zavedení implikace\|⇒i]] | box s předpokladem $\varphi$ končící $\psi$, pak $\varphi \Rightarrow \psi$ | přímý důkaz implikace |
+| ⇒e (MP) | $\dfrac{\varphi \quad \varphi \Rightarrow \psi}{\psi}$ | [[modus ponens]] |
+| ∨i₁, ∨i₂ | $\dfrac{\varphi}{\varphi \vee \psi}$, $\ \dfrac{\psi}{\varphi \vee \psi}$ | k pravdivé formuli smíš cokoli přidat „nebo“ |
+| [[eliminace disjunkce\|∨e]] | $\varphi \vee \psi$, box $\varphi \dots \chi$, box $\psi \dots \chi$, pak $\chi$ | rozbor případů: $\chi$ plyne v obou |
+| ¬i | box s předpokladem $\varphi$ končící $\bot$, pak $\neg\varphi$ | předpoklad vedl ke sporu, neplatí |
+| [[eliminace negace\|¬e]] | $\dfrac{\varphi \quad \neg\varphi}{\bot}$ | $\varphi$ a $\neg\varphi$ naráz je spor |
+| ¬¬e, ¬¬i | $\dfrac{\neg\neg\varphi}{\varphi}$, $\ \dfrac{\varphi}{\neg\neg\varphi}$ | dvojitá negace |
+| [[eliminace sporu\|⊥e]] | $\dfrac{\bot}{\varphi}$ | ze sporu plyne cokoli |
 | [[iterace\|it]] | $\dfrac{\varphi}{\varphi}$ | dříve odvozenou formuli smíš zopakovat (i do vnořeného boxu) |
 
 ^pravidla
