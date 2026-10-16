@@ -13,4 +13,4 @@ zdroj: "kap. 6.1"
 
 **Formálně:** Buď A: 𝔽ⁿ → 𝔽ᵐ lineární a (e₁, …, eₙ) kanonická báze 𝔽ⁿ. Matice zobrazení A je (Ae₁ ⋯ Aeₙ) ∈ 𝔽^{m×n}; pak Ax = (Ae₁ ⋯ Aeₙ)x pro všechna x ∈ 𝔽ⁿ
 
-**Definice:** [[LAG 07 – Lineární zobrazení#^def-matice-zobrazeni|přednáška 7, 14. 10. 2026]] · kap. 6.1 · obecně vzhledem k bázím B a C přijde v kap. 6
+**Definice:** [[LAG 07 – Lineární zobrazení#^def-matice-zobrazeni|přednáška 7, 14. 10. 2026]] · kap. 6.1 · určení kanonickou bází: [[LAG 08 – Matice lineárního zobrazení a součin matic#^veta-urceni-kanonickou|přednáška 8]] · obecně: [[matice lineárního zobrazení vzhledem k bázím]]

@@ -482,4 +482,4 @@ $$
 > Protipříklad na homogenitu s $\alpha = -1$, $\vec{v} = (1, 0)$: $f(-\vec{v}) = f(-1, 0) = (0, 1)$, ale $-f(\vec{v}) = -(0, 1) = (0, -1)$. **Není lineární**, i když $f(0, 0) = (0, 0)$.
 
 ---
-← [[LAG 06 – Souřadnice, součet a průnik podprostorů|9. 10. 2026 Souřadnice, součet a průnik podprostorů]]
+← [[LAG 06 – Souřadnice, součet a průnik podprostorů|9. 10. 2026 Souřadnice, součet a průnik podprostorů]] · [[LAG 08 – Matice lineárního zobrazení a součin matic|16. 10. 2026 Matice lineárního zobrazení a součin matic]] →
