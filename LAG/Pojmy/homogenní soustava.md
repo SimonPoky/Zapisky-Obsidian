@@ -13,4 +13,4 @@ zdroj: "pozn. 2.6"
 
 **Formálně:** A·x = 0; množina řešení {x ∈ 𝔽ⁿ | A·x = 0} ≤ 𝔽ⁿ
 
-**Definice:** [[LAG 03 – Lineární podprostor a lineární obal#^def-homogenni|přednáška 3, 30. 9. 2026]] · pozn. 2.6
+**Definice:** [[LAG 03 – Lineární podprostor a lineární obal#^def-homogenni|přednáška 3, 30. 9. 2026]] · pozn. 2.6 · řešení tvoří podprostor: [[LAG 03 – Lineární podprostor a lineární obal#^veta-reseni-homogenni|pozn. 2.6]]

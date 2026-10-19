@@ -13,4 +13,4 @@ zdroj: "handout 1B, slajd 15"
 
 **Formálně:** ℝ* = ℝ ∪ {−∞, +∞}, −∞ = (∅, ℚ), +∞ = (ℚ, ∅)
 
-**Definice:** [[MA1 03 – Rozšířená reálná čísla a limita ve směru#^def-rstar|přednáška 3, 30. 9. 2026]] · handout 1B, slajd 15
+**Definice:** [[MA1 03 – Rozšířená reálná čísla a limita ve směru#^def-rstar|přednáška 3, 30. 9. 2026]] · handout 1B, slajd 15 · suprema v ℝ* existují vždy: [[MA1 03 – Rozšířená reálná čísla a limita ve směru#^veta-sup-rstar|handout 1B, slajd 16]]

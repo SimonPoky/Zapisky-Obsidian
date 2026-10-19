@@ -3,7 +3,7 @@ aliases: ["korektní systém", "korektnost", "korektní", "nekorektní"]
 tags: [pojem, LGR]
 predmet: LGR
 prednaska: 6
-zdroj: "slajd 4 (prez. 4)"
+zdroj: "slajd 3 (prez. 4)"
 ---
 
 # korektní důkazový systém
@@ -13,4 +13,4 @@ zdroj: "slajd 4 (prez. 4)"
 
 **Formálně:** pro každé S a φ: S ⊢ φ ⇒ S ⊨ φ (odvoditelné ⊆ pravdivé)
 
-**Definice:** [[LGR 06 – Rezoluční tabulka a přirozená dedukce#^def-korektni-uplny|přednáška 6, 15. 10. 2026]] · slajd 4
+**Definice:** [[LGR 06 – Rezoluční tabulka a přirozená dedukce#^def-korektni-uplny|přednáška 6, 15. 10. 2026]] · slajd 3

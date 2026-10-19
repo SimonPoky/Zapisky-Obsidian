@@ -3,7 +3,7 @@ aliases: ["linearita souřadnic", "souřadnice součtu"]
 tags: [pojem, LAG]
 predmet: LAG
 prednaska: 6
-zdroj: "kap. 4.2"
+zdroj: "pozn. 4.18"
 ---
 
 # věta o linearitě souřadnic
@@ -13,4 +13,4 @@ zdroj: "kap. 4.2"
 
 **Formálně:** 𝒳 báze L ⇒ [x + y]^𝒳 = [x]^𝒳 + [y]^𝒳 a [γx]^𝒳 = γ[x]^𝒳 pro všechna x, y ∈ L, γ ∈ 𝔽
 
-**Definice:** [[LAG 06 – Souřadnice, součet a průnik podprostorů#^veta-linearita-souradnic|přednáška 6, 9. 10. 2026]] · kap. 4.2
+**Definice:** [[LAG 06 – Souřadnice, součet a průnik podprostorů#^veta-linearita-souradnic|přednáška 6, 9. 10. 2026]] · pozn. 4.18

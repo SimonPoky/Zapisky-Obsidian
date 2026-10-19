@@ -3,7 +3,7 @@ aliases: ["průnik", "V ∩ W", "průniku podprostorů"]
 tags: [pojem, LAG]
 predmet: LAG
 prednaska: 6
-zdroj: "kap. 5"
+zdroj: "pozn. 5.2"
 ---
 
 # průnik podprostorů
@@ -13,4 +13,4 @@ zdroj: "kap. 5"
 
 **Formálně:** V ∩ W = {x ∣ x ∈ V ∧ x ∈ W}
 
-**Definice:** [[LAG 06 – Souřadnice, součet a průnik podprostorů#^def-prunik|přednáška 6, 9. 10. 2026]] · kap. 5
+**Definice:** [[LAG 06 – Souřadnice, součet a průnik podprostorů#^def-prunik|přednáška 6, 9. 10. 2026]] · pozn. 5.2

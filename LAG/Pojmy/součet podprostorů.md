@@ -3,7 +3,7 @@ aliases: ["součet", "V + W", "součtu podprostorů", "součet podmnožin"]
 tags: [pojem, LAG]
 predmet: LAG
 prednaska: 6
-zdroj: "kap. 5"
+zdroj: "pozn. 5.3 ♥"
 ---
 
 # součet podprostorů
@@ -13,4 +13,4 @@ zdroj: "kap. 5"
 
 **Formálně:** A + B = {a + b ∣ a ∈ A, b ∈ B} pro A, B ⊆ L
 
-**Definice:** [[LAG 06 – Souřadnice, součet a průnik podprostorů#^def-soucet|přednáška 6, 9. 10. 2026]] · kap. 5
+**Definice:** [[LAG 06 – Souřadnice, součet a průnik podprostorů#^def-soucet|přednáška 6, 9. 10. 2026]] · pozn. 5.3 ♥

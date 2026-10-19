@@ -53,6 +53,11 @@ Témata: `𝔽ⁿ` · `matice` · `eukleidovské vektory` · `posloupnosti` · `
 > = \begin{pmatrix} y_1 \\ \vdots \\ y_n \end{pmatrix} \oplus \begin{pmatrix} x_1 \\ \vdots \\ x_n \end{pmatrix}
 > $$
 
+^veta-fn-prostor
+
+> [!lidsky] Lidsky
+> Sloupce čísel se sčítají a násobí „po patrech“, každé patro zvlášť. Každé pravidlo počítání s čísly (třeba $a + b = b + a$) proto platí v každém patře, a tím i pro celé sloupce. Ověřování 8 axiomů je jen tohle, napsané osmkrát.
+
 > [!navic] Princip všech těchto důkazů
 > Operace jsou definované po složkách, takže každý axiom se „přenese“ z čísel: komutativita vektorů plyne z komutativity čísel v $\mathbb{F}$, distributivita z distributivity čísel atd. Stejný trik funguje pro matice, posloupnosti i funkce.
 
@@ -72,6 +77,9 @@ Témata: `𝔽ⁿ` · `matice` · `eukleidovské vektory` · `posloupnosti` · `
 > $$
 
 ^def-matice
+
+> [!lidsky] Lidsky
+> Matice je tabulka čísel, třeba rozvrh $3 \times 5$ (3 řádky, 5 sloupců). Dvě tabulky stejného tvaru sečteš políčko po políčku, násobek vynásobí každé políčko. Pro tyhle dvě operace se tabulka chová úplně stejně jako dlouhý sloupec čísel, jen je jinak poskládaná.
 
 Příklad: $\begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix} \oplus \begin{pmatrix} 2 & 0 \\ 0 & 3 \end{pmatrix} = \begin{pmatrix} 3 & 2 \\ 3 & 7 \end{pmatrix}$ ✓
 

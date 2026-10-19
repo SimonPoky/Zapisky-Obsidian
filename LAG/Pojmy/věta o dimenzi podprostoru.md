@@ -3,7 +3,7 @@ aliases: ["dimenze podprostoru"]
 tags: [pojem, LAG]
 predmet: LAG
 prednaska: 5
-zdroj: "kap. 4"
+zdroj: "pozn. 4.16"
 ---
 
 # věta o dimenzi podprostoru
@@ -13,4 +13,4 @@ zdroj: "kap. 4"
 
 **Formálně:** V ≤ L ⇒ dim V ≤ dim L; dim L < ∞ ⇒ (V = L ⟺ dim V = dim L)
 
-**Definice:** [[LAG 05 – Báze a dimenze#^veta-dim-podprostoru|přednáška 5, 7. 10. 2026]] · kap. 4
+**Definice:** [[LAG 05 – Báze a dimenze#^veta-dim-podprostoru|přednáška 5, 7. 10. 2026]] · pozn. 4.16

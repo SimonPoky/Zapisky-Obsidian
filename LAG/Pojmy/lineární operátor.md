@@ -3,7 +3,7 @@ aliases: ["lineární operátory", "lineárního operátoru", "Lin(V)", "operát
 tags: [pojem, LAG]
 predmet: LAG
 prednaska: 7
-zdroj: "kap. 6.1"
+zdroj: "pozn. 6.1"
 ---
 
 # lineární operátor
@@ -13,4 +13,4 @@ zdroj: "kap. 6.1"
 
 **Formálně:** Buď V lineární prostor nad 𝔽. Lineární zobrazení A: V → V se nazývá lineární operátor na V; Lin(V) = Lin(V, V) je množina všech lineárních operátorů na V
 
-**Definice:** [[LAG 07 – Lineární zobrazení#^def-lin-operator|přednáška 7, 14. 10. 2026]] · kap. 6.1
+**Definice:** [[LAG 07 – Lineární zobrazení#^def-lin-operator|přednáška 7, 14. 10. 2026]] · pozn. 6.1

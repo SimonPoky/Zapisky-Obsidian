@@ -210,6 +210,9 @@ Chceme počítat limitu složené funkce $f \circ \varphi$, tedy $f(\varphi(x))$
 
 ^dusledek-funkce
 
+> [!lidsky] Lidsky
+> Posloupnost je funkce, ze které vidíš jen hodnoty v celých číslech. Když se celá funkce blíží k $L$, blíží se k $L$ i tyhle vybrané hodnoty. Limitu posloupnosti tak smíš spočítat jako limitu funkce a použít na ni všechny nástroje pro funkce.
+
 > [!example] $\lim_{n \to +\infty} (n^3 + 1)$
 > Podle aritmetiky $\lim_{x \to +\infty} (x^3 + 1) = (+\infty)(+\infty)(+\infty) + 1 = +\infty$, a proto i $\lim_{n \to +\infty} (n^3 + 1) = +\infty$. U posloupností tak smíš používat všechno, co umíš o funkcích (později třeba derivace).
 
@@ -271,6 +274,9 @@ Věta o substituci jde jedním směrem: z limity $f$ dostaneme limitu $f \circ \
 > ⇒ jsou dvě vybrané podposloupnosti, ⇐ je detekce se substitucemi $\varphi_1(k) = 2k$ a $\varphi_2(k) = 2k + 1$: obrazy kusů $\{k \ge K_1\}$ a $\{k \ge K_2\}$ pokryjí kus $\{n \ge 2\max(K_1, K_2)\}$.
 
 ^dusledek-suda-licha
+
+> [!lidsky] Lidsky
+> Sudé a liché indexy dohromady pokryjí všechny. Když se sudé členy i liché členy blíží ke stejnému $L$, nemá posloupnost kam utéct. Když každá skupina míří jinam (jako u $(-1)^n$), limita neexistuje.
 
 > [!example] $\lim_{n \to +\infty} (2n + 1)$ přes sudé a liché členy
 > $\lim_{k \to +\infty} \big(2(2k) + 1\big) = +\infty$ a $\lim_{k \to +\infty} \big(2(2k + 1) + 1\big) = +\infty$, tedy $\lim_{n \to +\infty} (2n + 1) = +\infty$.

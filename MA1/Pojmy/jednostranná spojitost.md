@@ -13,4 +13,4 @@ zdroj: "handout 3A, slajd 3"
 
 **Formálně:** f definovaná v p a ve směru x → p⁻: f spojitá zleva v p ⇔ lim_{x→p⁻} f(x) = f(p); zprava obdobně s x → p⁺
 
-**Definice:** [[MA1 06 – Spojitost a spojité funkce na intervalu#^def-jednostranna-spojitost|přednáška 6, 8. 10. 2026]] · handout 3A, slajd 3
+**Definice:** [[MA1 06 – Spojitost a spojité funkce na intervalu#^def-jednostranna-spojitost|přednáška 6, 8. 10. 2026]] · handout 3A, slajd 3 · spojitost ⇔ zleva i zprava: [[MA1 06 – Spojitost a spojité funkce na intervalu#^tvrzeni-jednostranna-spojitost|tvrzení, slajd 3]]

@@ -36,6 +36,9 @@ Minule bylo vidět, že [[lineární prostor|lineárních prostorů]] je spousta
 
 ^veta-poly-n
 
+> [!lidsky] Lidsky
+> Polynomy stupně nejvýš $n$ jsou „krabice s $n + 1$ přihrádkami“ na koeficienty $\alpha_0, \dots, \alpha_n$. Sečtením nebo násobkem žádná nová přihrádka nepřibude, takže stupeň nevyroste a z množiny nevypadneš.
+
 Ověřit se dá všech 8 axiomů, hlavní je ale, že sčítání z množiny nevyvede ven, je [[dobře definovaná operace|dobře definované]]:
 
 $$
@@ -127,6 +130,8 @@ Soustavě, která má všechny pravé strany nulové, se říká *homogenní*. ^
 > >
 > > **Násobek:** pro $r \in \mathbb{R}$ je $\alpha(r x_1) + \beta(r y_1) = r(\alpha x_1 + \beta y_1) = r \cdot 0 = 0$, stejně druhá rovnice.
 
+^veta-reseni-homogenni
+
 > [!pozor] Důkaz podprostoru má tři části
 > Častá chyba je ověřit jen součet. Úplný důkaz, že $S \le L$, potřebuje **neprázdnost** (nejjednodušeji $\vec{0} \in S$), **uzavřenost na součet** a **uzavřenost na násobek**. U zkoušky (část B2) se bez kterékoliv z nich důkaz nepočítá jako úplný.
 
@@ -151,6 +156,11 @@ Hledáme nejmenší podprostor, který obsahuje daný vektor $\vec{x} \neq \vec{
 >
 > > [!note]- Důkaz
 > > Množina je neprázdná, obsahuje $\vec{x} = 1 \cdot \vec{x}$. Součet dvou násobků je násobek: $\alpha\vec{x} + \beta\vec{x} = (\alpha + \beta)\vec{x}$ (axiom 7). Násobek násobku je násobek: $\gamma(\alpha\vec{x}) = (\gamma\alpha)\vec{x}$ (axiom 5).
+
+^veta-nasobky
+
+> [!lidsky] Lidsky
+> Všechny násobky jednoho vektoru jsou přímka přes počátek (nebo jen počátek, když je vektor nulový). Sečti dva body té přímky nebo bod natáhni, a pořád jsi na ní. Proto je to podprostor, a to nejmenší, který daný vektor obsahuje.
 
 > [!pozor] Skalár se píše zleva
 > V lineárním prostoru je jen násobení $\mathbb{F} \times L \to L$, tedy skalár zleva: $\gamma \cdot (\alpha\vec{x}) = (\gamma\alpha)\vec{x}$. Zápis $\vec{x} \cdot \gamma$ není definovaný, i když by „vyšel“ stejně.

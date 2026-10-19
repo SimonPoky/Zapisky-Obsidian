@@ -13,4 +13,4 @@ zdroj: "handout 1A, slajd 13"
 
 **Formálně:** s = sup M ⇔ (∀x ∈ M: x ⪯ s) ∧ (∀u: (∀x ∈ M: x ⪯ u) ⇒ s ⪯ u)
 
-**Definice:** [[MA1 01 – Množiny, uspořádání a přirozená čísla#^def-sup|přednáška 1, 23. 9. 2026]] · handout 1A, slajd 13
+**Definice:** [[MA1 01 – Množiny, uspořádání a přirozená čísla#^def-sup|přednáška 1, 23. 9. 2026]] · handout 1A, slajd 13 · v (𝒫(U), ⊆) je supremum sjednocení: [[MA1 01 – Množiny, uspořádání a přirozená čísla#^veta-sup-mnoziny|slajd 15]] · maximum vs. supremum: [[MA1 01 – Množiny, uspořádání a přirozená čísla#^veta-max-sup|slajd 13]]

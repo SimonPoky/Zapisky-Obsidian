@@ -106,6 +106,8 @@ $$
 > [!definice] Rovnost formulí · slajd 9
 > Dvě formule jsou si **rovny**, pokud tvoří stejný řetězec (v neodlehčeném tvaru), neboli mají stejný syntaktický strom.
 
+^def-rovnost-formuli
+
 Proto $\alpha \neq \neg\neg\alpha$ a $a \vee b \neq b \vee a$.
 
 > [!lidsky] Rovnost je zápisová, ne významová

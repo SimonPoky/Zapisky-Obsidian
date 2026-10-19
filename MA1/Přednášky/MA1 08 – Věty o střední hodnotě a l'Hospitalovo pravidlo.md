@@ -180,7 +180,7 @@ Lagrangeova i Cauchyova věta jsou speciální případy jednoho triku: Rolleovu
 > Lagrange pro $f$ a pro $g$ zvlášť dá $f(b) - f(a) = f'(t_1)(b - a)$ a $g(b) - g(a) = g'(t_2)(b - a)$, ale **obecně s různými body $t_1 \neq t_2$**. Podíl pak není $\frac{f'(t)}{g'(t)}$ v jednom bodě. Cauchyova věta zaručí jeden společný bod $t$, a přesně to je potřeba pro l'Hospitala.
 
 > [!navic] Nerovnosti o konečném přírůstku · handout 4A, slajd 8
-> Věty o střední hodnotě lze nahradit dvěma nerovnostmi, které platí i pro funkce více proměnných: mají-li $f$ a $g$ první derivaci na $[a; b]$ a $\lvert f' \rvert < g'$ na $[a; b]$, je $\lvert f(b) - f(a) \rvert < g(b) - g(a)$ (a totéž s $\le$). Na přednášce se jimi nepracuje: důkazy jsou zdlouhavé a Cauchyova věta dává přímý důkaz l'Hospitalova pravidla.
+> Věty o střední hodnotě lze nahradit dvěma nerovnostmi, které platí i pro funkce více proměnných: mají-li $f$ a $g$ první derivaci na $[a; b]$ a $\lvert f' \rvert < g'$ na $[a; b]$, je $\lvert f(b) - f(a) \rvert < g(b) - g(a)$ (a totéž s $\le$). Dál se s nimi nepracuje: důkazy jsou zdlouhavé a Cauchyova věta dává přímý důkaz l'Hospitalova pravidla.
 
 ## §6 l'Hospitalovo pravidlo
 
@@ -196,7 +196,7 @@ Lagrangeova i Cauchyova věta jsou speciální případy jednoho triku: Rolleovu
 > \lim_{\mathcal{S}} \frac{f}{g} = \lim_{\mathcal{S}} \frac{f'}{g'}.
 > $$
 >
-> Důkaz se na přednášce nedělal (není těžký, ale je technický); jeho jádrem je Cauchyova věta.
+> Důkaz se zde neuvádí (není těžký, ale je technický); jeho jádrem je Cauchyova věta.
 >
 > > [!note]- Idea důkazu pro typ $\frac{0}{0}$ a $x \to p^+$
 > > Dodefinuj $f(p) = g(p) = 0$; tím jsou $f$, $g$ spojité zprava v $p$. Pro $x > p$ blízko $p$ dá Cauchyova věta na $[p; x]$ bod $t_x \in (p; x)$ s
@@ -242,7 +242,7 @@ Lagrangeova i Cauchyova věta jsou speciální případy jednoho triku: Rolleovu
 
 ### Kdy l'Hospitala použít
 
-> [!definice] Neurčitý výraz („typ limity“) · handout 4A, slajd 11
+> [!navic] Neurčitý výraz („typ limity“) · termín z literatury; handout 4A (slajd 11) ho nepoužívá
 > V literatuře se mluví o **typech limit** neboli **neurčitých výrazech**: $\frac{0}{0}$, $\frac{\pm\infty}{\pm\infty}$, $0 \cdot (\pm\infty)$, $(+\infty) - (+\infty)$, $1^{\pm\infty}$, $0^0$, $(+\infty)^0$. Zápis popisuje, k čemu jdou jednotlivé části výrazu; výsledek se z toho určit nedá, protože [[věta o aritmetice limit|aritmetika limit]] tyto kombinace nedefinuje. Typ $\frac{?}{\lvert \pm\infty \rvert}$ znamená: jmenovatel jde v absolutní hodnotě do $+\infty$, o čitateli nevíme nic.
 
 ^def-neurcity-vyraz

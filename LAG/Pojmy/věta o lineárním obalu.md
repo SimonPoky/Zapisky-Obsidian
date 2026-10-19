@@ -13,4 +13,4 @@ zdroj: "věta 2.13, cvičení 2.14"
 
 **Formálně:** M ⊆ L ⇒ span M ≤ L; span M = ⋂ {V | M ⊆ V ≤ L}
 
-**Definice:** [[LAG 03 – Lineární podprostor a lineární obal#^veta-213|přednáška 3, 30. 9. 2026]] · věta 2.13, cvičení 2.14
+**Definice:** [[LAG 03 – Lineární podprostor a lineární obal#^veta-213|přednáška 3, 30. 9. 2026]] · věta 2.13, cvičení 2.14 · znovu s důkazem: [[LAG 04 – Lineární závislost a nezávislost#^dukaz-213|přednáška 4]]

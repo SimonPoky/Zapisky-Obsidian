@@ -13,4 +13,4 @@ zdroj: "handout 2A, slajd 9"
 
 **Formálně:** 𝒮 = {P}: P ≠ ∅; P ⊆ P′ nebo P′ ⊆ P; ⋂ P = ∅
 
-**Definice:** [[MA1 03 – Rozšířená reálná čísla a limita ve směru#^def-smer|přednáška 3, 30. 9. 2026]] · handout 2A, slajd 9
+**Definice:** [[MA1 03 – Rozšířená reálná čísla a limita ve směru#^def-smer|přednáška 3, 30. 9. 2026]] · handout 2A, slajd 9 · z konečně mnoha kusů jde vybrat nejmenší: [[MA1 03 – Rozšířená reálná čísla a limita ve směru#^veta-nejmensi-kus|handout 2A, slajd 10]]

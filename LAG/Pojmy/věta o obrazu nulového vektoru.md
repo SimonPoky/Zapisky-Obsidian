@@ -3,7 +3,7 @@ aliases: ["A(0) = 0", "obraz nulového vektoru"]
 tags: [pojem, LAG]
 predmet: LAG
 prednaska: 7
-zdroj: "kap. 6.1"
+zdroj: "pozn. 6.3"
 ---
 
 # věta o obrazu nulového vektoru
@@ -13,4 +13,4 @@ zdroj: "kap. 6.1"
 
 **Formálně:** A ∈ Lin(V, W) ⇒ A(o_V) = o_W
 
-**Definice:** [[LAG 07 – Lineární zobrazení#^veta-obraz-nuly|přednáška 7, 14. 10. 2026]] · kap. 6.1
+**Definice:** [[LAG 07 – Lineární zobrazení#^veta-obraz-nuly|přednáška 7, 14. 10. 2026]] · pozn. 6.3

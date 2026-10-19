@@ -217,7 +217,7 @@ Díky základnímu tvaru jsou tyto části **navzájem disjunktní** (žádná k
 > *Modře $S_x$, červeně $S_{\neg x}$, oranžově $S_0$. Vpravo zeleně nová množina $S_0 \cup R_x$: proměnná $x$ v ní už není.*
 
 > [!veta] Věta o eliminaci proměnné · slajdy 21–22
-> ==Nechť $S$ je množina klauzulí v základním tvaru a $x$ proměnná.== Pak **$S$ je splnitelná, právě když $S_0 \cup R_x$ je splnitelná**, tj. $S$ a $S_0 \cup R_x$ jsou ekvisplnitelné.
+> ==Nechť $A$ je konečná množina proměnných, $S$ (tedy konečná) množina klauzulí nad $A$ v základním tvaru a $x \in A$.== Pak **$S$ je splnitelná, právě když $S_0 \cup R_x$ je splnitelná**, tj. $S$ a $S_0 \cup R_x$ jsou ekvisplnitelné.
 >
 > > [!note]- Důkaz
 > > **„⇒“** (to už víme): je-li $u(S) = 1$, pak $u(S_0) = 1$, protože $S_0 \subseteq S$, a $u(R_x) = 1$, protože rezolventy jsou důsledky klauzulí z $S$ (§1). Svědek pro $S$ je svědkem i pro $S_0 \cup R_x$.
@@ -334,7 +334,7 @@ Po přidání všech rezolvent přes $x$ smíš klauzule s $x$ „umrtvit“ (vy
 > Podle věty o eliminaci jsou $S$ a $S_0 \cup R_x$ **ekvisplnitelné**; zapomenuté rezolventy k rozhodnutí nejsou potřeba.
 
 > [!karta|15]- Jak rezoluční tabulka dokončí důkaz směru „⇐“ rezolučního principu ($\mathrm{ff} \notin R^*(S)$ ⇒ $S$ splnitelná)?
-> $T \subseteq R^*(S)$ a **$\mathrm{ff} \in T$ iff $\mathrm{ff} \in R^*(S)$**. Když $\mathrm{ff} \notin R^*(S)$, tabulka skončí s $\emptyset$ (splnitelná) a eliminace zpětně dá svědka pro $S$.
+> Každá klauzule v tabulce je rezolventa klauzulí z $S$, tedy **$T \subseteq R^*(S)$**. Když $\mathrm{ff} \notin R^*(S)$, pak ani $\mathrm{ff} \notin T$, takže tabulka **skončí s $\emptyset$**. Prázdná množina je splnitelná a věta o eliminaci proměnné krok po kroku zpětně dá svědka pro $S$.
 
 > [!karta|16]- Jak z rezoluční tabulky získáš svědka splnitelnosti?
 > **Pozpátku** $x_n, \dots, x_1$: zkus $x_i = 0$; když to pokazí klauzuli z množiny před tímto krokem, dej $x_i = 1$ (podle důkazu eliminace jedna z voleb vyjde).
@@ -363,7 +363,7 @@ Po přidání všech rezolvent přes $x$ smíš klauzule s $x$ „umrtvit“ (vy
 > Přes $x$: $R_x = \{\neg y, \neg z \vee y\}$, $S_0 = \{y \vee z\}$. Přes $y$: $R_y = \{\neg z, z\}$. Přes $z$: $\mathrm{ff}$. **Nesplnitelná.**
 
 > [!priklad|24]- (slajd 26) Rozhodni tabulkou (pořadí $x, y, z, w$) a případně najdi svědka: $S = \{x \vee y \vee w,\ x \vee \neg y,\ y \vee z \vee \neg w,\ \neg x \vee y \vee \neg z,\ z \vee w\}$.
-> Přes $x$: $R_x = \{w \vee y \vee \neg z\}$ (druhá rezolventa $\neg y \vee y \vee \neg z$ je tautologie), $S := \{y \vee z \vee \neg w, z \vee w, w \vee y \vee \neg z\}$. Přes $y$: $S_{\neg y} = \emptyset$, $S := \{z \vee w\}$. Přes $z$: $S := \emptyset$, **splnitelná**. Pozpátku: $w = 0$, pak $z = 1$, pak $y$: $w \vee y \vee \neg z$ vynutí $y = 1$, pak $x$: $x \vee \neg y$ vynutí $x = 1$. Svědek **$x = y = z = 1$, $w = 0$**.
+> Přes $x$: $R_x = \{w \vee y \vee \neg z\}$ (druhá rezolventa $\neg y \vee y \vee \neg z$ je tautologie), $S := \{y \vee z \vee \neg w, z \vee w, w \vee y \vee \neg z\}$. Přes $y$: $S_{\neg y} = \emptyset$, $S := \{z \vee w\}$. Přes $z$: $S_{\neg z} = \emptyset$, $S := \emptyset$; přes $w$ už zbývá $\emptyset$, **splnitelná**. Pozpátku: $w$ nic neomezuje, zvolme třeba $w = 0$, pak $z = 1$, pak $y$: $w \vee y \vee \neg z$ vynutí $y = 1$, pak $x$: $x \vee \neg y$ vynutí $x = 1$. Svědek **$x = y = z = 1$, $w = 0$**.
 
 ---
 ← [[LGR 04 – Sémantický důsledek a klauzální tvar|8. 10. 2026 Sémantický důsledek a klauzální tvar]] · [[LGR 06 – Rezoluční tabulka a přirozená dedukce|15. 10. 2026 Rezoluční tabulka a přirozená dedukce]] →

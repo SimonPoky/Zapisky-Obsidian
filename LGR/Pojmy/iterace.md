@@ -3,7 +3,7 @@ aliases: ["it", "zopakování", "pravidlo it"]
 tags: [pojem, LGR]
 predmet: LGR
 prednaska: 6
-zdroj: "slajd 9 (prez. 4)"
+zdroj: "k slajdům 9–10 (prez. 4); Huth–Ryan 1.2: copy rule"
 ---
 
 # iterace
@@ -13,4 +13,4 @@ zdroj: "slajd 9 (prez. 4)"
 
 **Formálně:** φ / φ: formuli z dřívějšího řádku (z otevřeného boxu nebo globální úrovně) smíš zopakovat, odůvodnění „it k“
 
-**Definice:** [[LGR 06 – Rezoluční tabulka a přirozená dedukce#^def-iterace|přednáška 6, 15. 10. 2026]] · slajd 9 · použití: [[LGR 06 – Rezoluční tabulka a přirozená dedukce#^priklad-k|⊢ a ⇒ (b ⇒ a)]]
+**Definice:** [[LGR 06 – Rezoluční tabulka a přirozená dedukce#^def-iterace|přednáška 6, 15. 10. 2026]] · k slajdům 9–10 · použití: [[LGR 06 – Rezoluční tabulka a přirozená dedukce#^priklad-k|⊢ a ⇒ (b ⇒ a)]]

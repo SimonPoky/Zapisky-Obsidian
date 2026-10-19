@@ -3,7 +3,7 @@ aliases: ["složení", "skládání zobrazení", "složení zobrazení", "B∘A"
 tags: [pojem, LAG]
 predmet: LAG
 prednaska: 7
-zdroj: "kap. 6.2"
+zdroj: "pozn. 6.2"
 ---
 
 # složené zobrazení
@@ -13,4 +13,4 @@ zdroj: "kap. 6.2"
 
 **Formálně:** Pro A: U → V a B: V → W je BA = B ∘ A: U → W, (BA)x = B(Ax); jsou-li A, B lineární, je i BA lineární
 
-**Definice:** [[LAG 07 – Lineární zobrazení#^def-slozene-zobrazeni|přednáška 7, 14. 10. 2026]] · kap. 6.2 · matice: [[věta o matici složeného zobrazení]]
+**Definice:** [[LAG 07 – Lineární zobrazení#^def-slozene-zobrazeni|přednáška 7, 14. 10. 2026]] · pozn. 6.2 · matice: [[věta o matici složeného zobrazení]]

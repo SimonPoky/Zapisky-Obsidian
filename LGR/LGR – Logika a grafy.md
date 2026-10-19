@@ -10,7 +10,7 @@ tags: [predmet, LGR]
 
 [Přednášky: prezentace a videa ↗](https://math.fel.cvut.cz/en/people/gollova/lgr/lgr-prednaska.html) · [Prezentace 1 (PDF) ↗](https://math.fel.cvut.cz/en/people/gollova/lgr/lgr_1.pdf) · [Stránka předmětu ↗](https://math.fel.cvut.cz/en/people/gollova/lgr.html) · [Literatura ↗](https://math.fel.cvut.cz/en/people/gollova/lgr/lgr-literatura.html) · [Testy v Moodle ↗](https://moodle.fel.cvut.cz/course/view.php?id=10550) · [Videopřednášky (YouTube) ↗](https://www.youtube.com/playlist?list=PLQL6z4JeTTQkjV5JYF0gB599ekq4zFfPK)
 
-**Kartičky:** 131 povinných + 41 příkladů · [otevřít aplikaci ↗](https://claude.ai/artifact/3CKfKeuwtwrWiz3FSfSh5B) · [[Archiv přednášek#Kartičky|jak to funguje]]
+**Kartičky:** 132 povinných + 41 příkladů · [otevřít aplikaci ↗](https://claude.ai/artifact/3CKfKeuwtwrWiz3FSfSh5B) · [[Archiv přednášek#Kartičky|jak to funguje]]
 
 ## Přednášky
 
@@ -82,6 +82,7 @@ tags: [predmet, LGR]
 - [[rezoluční princip]] · Konečná S je splnitelná, právě když ff ∉ R*(S).
 - [[rezoluční tabulka]] · Vyrezolvuje proměnné jednu po druhé; konec {ff} = nesplnitelná, ∅ = splnitelná.
 - [[rezolventa]] · Ze α ∨ x a β ∨ ¬x vznikne α ∨ β; plyne z obou. Prázdná rezolventa ff znamená nesplnitelnost.
+- [[rovnost formulí]] · dvě formule jsou si rovny, jen když se píšou znak po znaku stejně
 - [[sémantický důsledek]] · S ⊨ φ: kdykoli platí všechny předpoklady, platí i závěr; u(S) ≤ u(φ).
 - [[Shefferova čárka]] · NAND, „ne obojí zároveň“. Sama tvoří úplný systém spojek.
 - [[splnitelná formule]] · Pravdivá aspoň v jednom ohodnocení.

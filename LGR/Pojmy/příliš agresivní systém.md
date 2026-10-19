@@ -3,7 +3,7 @@ aliases: ["agresivní systém", "příliš agresivní"]
 tags: [pojem, LGR]
 predmet: LGR
 prednaska: 6
-zdroj: "slajd 4 (prez. 4)"
+zdroj: "slajd 3 (prez. 4)"
 ---
 
 # příliš agresivní systém
@@ -13,4 +13,4 @@ zdroj: "slajd 4 (prez. 4)"
 
 **Formálně:** existují S, φ: S ⊢ φ, ale S ⊭ φ (systém není korektní)
 
-**Definice:** [[LGR 06 – Rezoluční tabulka a přirozená dedukce#^def-nechceme|přednáška 6, 15. 10. 2026]] · slajd 4
+**Definice:** [[LGR 06 – Rezoluční tabulka a přirozená dedukce#^def-nechceme|přednáška 6, 15. 10. 2026]] · slajd 3

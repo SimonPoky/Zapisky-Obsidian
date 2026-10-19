@@ -96,6 +96,9 @@ Minule jsme [[limita ve směru|limitu]] definovali, dnes začínáme s nástroji
 
 ^veta-znamenko
 
+> [!lidsky] Lidsky
+> Limita a znaménko funkce si „rozumí“: je-li limita kladná, je funkce blízko cíle taky kladná (třeba $L = 3$, pak hodnoty kolem $3$ jsou nad nulou). Obráceně z $f \ge 0$ plyne jen $L \ge 0$, ne $L > 0$: funkce $\frac{1}{x} > 0$ má pro $x \to +\infty$ limitu $0$.
+
 ### Důkaz (1)
 
 Pro $U \subseteq \mathbb{R}^*$ označme $-U = \{r \in \mathbb{R}^* \mid -r \in U\}$, zrcadlový obraz $U$ podle nuly. Zrcadlení převádí okolí $-L$ na okolí $L$: $-U_\varepsilon(-L) = U_\varepsilon(L)$, a u nekonečen se $(\varepsilon; +\infty]$ mění na $[-\infty; -\varepsilon)$ a naopak. Ať $U \in \mathcal{N}(-L)$. Pak $-U \in \mathcal{N}(L)$, takže existuje $P$ s $f[P] \subseteq -U$, a tedy $(-f)[P] \subseteq U$.

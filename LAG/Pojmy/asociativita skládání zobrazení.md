@@ -3,7 +3,7 @@ aliases: ["asociativita skládání", "C(BA) = (CB)A"]
 tags: [pojem, LAG]
 predmet: LAG
 prednaska: 7
-zdroj: "kap. 6.2"
+zdroj: "pozn. 6.20"
 ---
 
 # asociativita skládání zobrazení
@@ -13,4 +13,4 @@ zdroj: "kap. 6.2"
 
 **Formálně:** A: U → V, B: V → W, C: W → Z (libovolná zobrazení) ⇒ C(BA) = (CB)A
 
-**Definice:** [[LAG 07 – Lineární zobrazení#^veta-asociativita|přednáška 7, 14. 10. 2026]] · kap. 6.2
+**Definice:** [[LAG 07 – Lineární zobrazení#^veta-asociativita|přednáška 7, 14. 10. 2026]] · pozn. 6.20

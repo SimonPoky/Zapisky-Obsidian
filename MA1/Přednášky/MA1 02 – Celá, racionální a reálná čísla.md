@@ -181,6 +181,8 @@ Tři důležité vlastnosti $|\cdot|$:
 > - $0 < r < s$ $\Rightarrow$ $0 < \frac{1}{s} < \frac{1}{r}$.
 > - $|x| < s \Leftrightarrow -s < x < s$. Tohle se u limit použije pořád.
 
+^veta-nerovnosti
+
 ## §6 Úplnost ℝ a supremum
 
 $\mathbb{R}$ je [[Dedekindovská úplnost|úplné]] uspořádané těleso (ve smyslu Dedekinda).
@@ -221,10 +223,10 @@ Po vynásobení $M \cdot (-1)$ získáme i infimum:
 >
 > Tuhle podobu použiješ skoro v každém důkazu s limitou.
 
+^veta-eps-sup
+
 > [!lidsky] Lidsky
 > Infimum dostaneš ze suprema „přes zrcadlo“: otoč množinu kolem nuly, najdi strop a otoč zpátky. A supremum poznáš podle toho, že je to strop, pod který už nejde slézt ani o kousek: kdybys ho snížil o libovolně malé $\varepsilon$, nějaký prvek $M$ by ho přelezl.
-
-^eps-sup
 
 > [!obrazek] Strop, který nejde snížit
 > ![[ma102-supremum.png]]

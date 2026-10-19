@@ -3,7 +3,7 @@ aliases: ["doplnění na bázi", "doplnění LN posloupnosti na bázi"]
 tags: [pojem, LAG]
 predmet: LAG
 prednaska: 5
-zdroj: "kap. 4"
+zdroj: "pozn. 4.13"
 ---
 
 # věta o doplnění na bázi
@@ -13,4 +13,4 @@ zdroj: "kap. 4"
 
 **Formálně:** dim L = n < ∞, (x₁, …, xₖ) LN ⇒ ∃ xₖ₊₁, …, xₙ ∈ L: (x₁, …, xₙ) je báze L
 
-**Definice:** [[LAG 05 – Báze a dimenze#^veta-doplneni|přednáška 5, 7. 10. 2026]] · kap. 4
+**Definice:** [[LAG 05 – Báze a dimenze#^veta-doplneni|přednáška 5, 7. 10. 2026]] · pozn. 4.13

@@ -144,6 +144,8 @@ Nejpoužívanější pravidla (úplný seznam je v prezentaci):
 >
 > Dále $\alpha \vee \neg\alpha \mathrel{\vert\!=\!\vert} \mathrm{tt}$ (vyloučení třetího) a $\alpha \wedge \neg\alpha \mathrel{\vert\!=\!\vert} \mathrm{ff}$ (zákon sporu).
 
+^veta-vyjadreni-spojek
+
 > [!lidsky] Lidsky
 > XOR je „buď, anebo“: v menu „polévka nebo dezert“ dostaneš jedno, ne obojí. NAND je „ne obojí zároveň“ a NOR „ani jedno“. Počítačové čipy se staví hlavně z hradel NAND, protože z nich jde složit úplně všechno (§5).
 

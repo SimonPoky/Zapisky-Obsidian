@@ -23,7 +23,7 @@ Přednáška nejdřív dokončila spojité funkce na $[a; b]$: spojitá funkce m
 | jednostranné derivace | | $f'(p)$ existuje $\iff$ $f'_-(p) = f'_+(p)$ (obě vlastní) |
 | Carathéodoryho trik | $f$ na $(a; b)$, $p \in (a; b)$ | $f'(p)$ existuje $\iff$ $f(x) - f(p) = f^*(x)(x - p)$ s $f^*$ spojitou v $p$; pak $f'(p) = f^*(p)$ |
 | derivace ⇒ spojitost | $f'(p)$ existuje | $f$ je spojitá v $p$ (obráceně ne: $\lvert x \rvert$ v $0$) |
-| mocnina | $n \ge 0$ | $(x^n)' = n x^{n-1}$ |
+| mocnina | $n \ge 0$ | $(x^n)' = n x^{n-1}$ (pro $n = 0$ je $x^0 = 1$ a derivace $0$) |
 | aritmetika | $f'(p)$, $g'(p)$ existují | $(rf + sg)' = rf' + sg'$, $(fg)' = f'g + fg'$, $\left(\frac{f}{g}\right)' = \frac{f'g - fg'}{g^2}$ při $g(p) \neq 0$ |
 | složená funkce | $f'(p)$, $g'(f(p))$ existují | $(g \circ f)'(p) = g'(f(p)) \cdot f'(p)$ |
 
@@ -54,7 +54,7 @@ Navazuje na věty o funkcích spojitých na $[a; b]$ z minula.
 > >
 > > **Obraz je celý $[f(a); f(b)]$**: pro $r$ mezi $f(a)$ a $f(b)$ dá [[věta o mezihodnotě]] $s \in [a; b]$ s $f(s) = r$, a díky prostotě je $s$ jediné. Tedy $f^{-1}(r) = s$ je definovaná na celém $[f(a); f(b)]$.
 > >
-> > Směr ⇒ se na přednášce nedokazoval.
+> > Důkaz směru ⇒ se zde neuvádí.
 >
 > > [!note]- Důkaz (2), náznak
 > > Ať $f$ roste (klesající obdobně), $y \in [f(a); f(b)]$ a $x = f^{-1}(y)$. Ať $\varepsilon > 0$ (dost malé, aby $x \pm \varepsilon$ ležely v $[a; b]$; u krajního bodu bereme jen jednu stranu). Protože $f$ roste, je $f(x - \varepsilon) < y < f(x + \varepsilon)$. Pro $y'$ ostře mezi $f(x - \varepsilon)$ a $f(x + \varepsilon)$ leží $f^{-1}(y')$ ostře mezi $x - \varepsilon$ a $x + \varepsilon$ (inverze k rostoucí funkci je rostoucí). Takže okolí $\big(f(x - \varepsilon); f(x + \varepsilon)\big)$ bodu $y$ se zobrazí do $(x - \varepsilon; x + \varepsilon)$, a to je přesně [[spojitost v bodě|spojitost]] $f^{-1}$ v $y$.
@@ -147,7 +147,7 @@ Navazuje na věty o funkcích spojitých na $[a; b]$ z minula.
 > Je-li $f$ spojitá v $p$ a $f'_-(p) \neq f'_+(p)$ jsou dvě reálná čísla, má graf v $p$ zub. Spojitá funkce na $[a; b]$ s jednostrannými derivacemi všude jich může mít nekonečně mnoho, ale nejvýš spočetně. A existuje dokonce spojitá funkce, která nemá derivaci **nikde** (Weierstrassova funkce, 1872).
 
 > [!navic] Nevlastní derivace · handout 3B, slajd 7
-> Někdy se píše třeba $f'(0) = +\infty$ pro $f(x) = \sqrt[3]{x}$: znamená to jen, že $\lim_{h \to 0} \frac{\sqrt[3]{h}}{h} = \lim_{h \to 0} h^{-2/3} = +\infty$, tečna je svislá. Derivace v pravém smyslu (vlastní) tam neexistuje.
+> Handout varuje před zápisem typu $f'(3) = +\infty$. Třeba pro $f(x) = \sqrt[3]{x}$ se píše $f'(0) = +\infty$: znamená to jen, že $\lim_{h \to 0} \frac{\sqrt[3]{h}}{h} = \lim_{h \to 0} h^{-2/3} = +\infty$, tečna je svislá. Derivace v pravém smyslu (vlastní) tam neexistuje.
 
 ## §3 Carathéodoryho trik
 
@@ -300,7 +300,7 @@ Všechny tři důkazy mají stejný vzor: napsat rozdíl $(\ldots)(x) - (\ldots)
 ## §6 Derivace složené funkce (Chain Rule)
 
 > [!veta] Věta o derivaci složené funkce · handout 3B, slajd 13
-> ==Ať existují $f'(p)$ a $g'(f(p))$.== Potom $g \circ f: x \mapsto g(f(x))$ má derivaci v $p$ a
+> ==Ať existují $f'(p)$ a $g'(f(p))$== (tedy $f$ je definovaná v $p$ a ve směru $x \to p$ a $g$ v $f(p)$ a ve směru $z \to f(p)$). Potom $g \circ f: x \mapsto g(f(x))$ má derivaci v $p$ a
 >
 > $$
 > \mathbf{(g \circ f)'(p) = g'\big(f(p)\big) \cdot f'(p).}

@@ -126,6 +126,8 @@ Nakreslení [[uspořádaná množina|uspořádání]] tak, že menší je níž 
 > \sup_{i \in I} A_i = \bigcup_{i \in I} A_i, \qquad \inf_{i \in I} A_i = \bigcap_{i \in I} A_i.
 > $$
 
+^veta-sup-mnoziny
+
 > [!lidsky] Lidsky
 > Infimum je „nejvyšší podlaha“: ze všech prvků, které leží pod celou $M$, ten největší. U množin s inkluzí je nejmenší společný „obal“ sjednocení a největší společná „část“ průnik.
 
@@ -143,6 +145,8 @@ Supremum je tedy v $\mathcal{P}(U)$ přesně sjednocení a infimum průnik. V ji
 
 > [!veta] Maximum vs. supremum · slajd 13
 > Existuje-li $\max M$, existuje i $\sup M$ a platí $\sup M = \max M$. Obráceně ne: supremum nemusí ležet v $M$ (viz $\{b\}, \{c\}$ výše).
+
+^veta-max-sup
 
 > [!lidsky] Lidsky
 > Maximum je nejvyšší prvek, který v množině **opravdu je**; supremum je nejnižší strop, který v ní být nemusí. Infimum a minimum jsou totéž zrcadlově: nejvyšší podlaha a nejnižší prvek. V $\mathcal{P}(U)$ se strop vždycky najde, je to sjednocení, a nejvyšší podlaha je průnik.
@@ -178,6 +182,9 @@ $\mathbb{N} = \{0, 1, 2, 3, \dots\}$ je nekonečná množina a na vysoké škole
 > $$
 
 ^def-plus
+
+> [!lidsky] Lidsky
+> Sčítání je „přičítej po jedné“: $m + 3$ znamená třikrát udělat následníka. Kotva $m + 0 = m$ řekne, kde přestat, a druhé pravidlo převede $m + \operatorname{succ}(k)$ na menší úlohu $m + k$, dokud se nedojde ke kotvě.
 
 > [!example] $2 + 3$ krok za krokem
 > Dolů rozvíjíš podle definice, dokud nenarazíš na kotvu, pak se vracíš nahoru:
@@ -255,6 +262,8 @@ Vlastnosti $(\mathbb{N}, \le)$:
 > - $\inf M = \min M$ pro $M \neq \emptyset$, $\inf \emptyset = +\infty$.
 >
 > Hlavně: $\sup \mathbb{N} = +\infty$ v $\mathbb{N}^*$, kdežto v samotném $\mathbb{N}$ supremum neexistuje.
+
+^veta-sup-nstar
 
 > [!lidsky] Lidsky
 > $+\infty$ je „umělý strop“ přidaný nad všechna čísla, aby každá množina měla supremum. Není to číslo, se kterým se dá bez omezení počítat: $0 \cdot \infty$ nemá rozumnou hodnotu, protože „nic krát nekonečně mnoho“ může dopadnout jakkoliv. U limit se tomu bude říkat *neurčitý výraz*.

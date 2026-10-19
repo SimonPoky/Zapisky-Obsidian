@@ -36,6 +36,8 @@ Témata: `číselné těleso` · `soustavy 2 × 2` · `axiomy` · `lineární pr
 >
 > *==předpoklad== = co musí platit, aby věta fungovala · **tvrzení** = co věta slibuje*
 
+^priklad-vety
+
 > [!navic] Co když a = 0?
 > Pak předpoklad neplatí a věta nic neříká. Rovnice má tvar $0 \cdot x = b$: pro $b \neq 0$ nemá žádné řešení, pro $b = 0$ je řešením každé $x \in \mathbb{R}$. Stejné tři možnosti (žádné, právě jedno, nekonečně mnoho řešení) uvidíš u soustav rovnic, kde je popisuje Frobeniova věta (kap. 8).
 
@@ -70,6 +72,11 @@ Témata: `číselné těleso` · `soustavy 2 × 2` · `axiomy` · `lineární pr
 > - Každé obsahuje **celé $\mathbb{Q}$**: sčítáním jedniček dostanu kladná celá čísla, opačné prvky dají záporná a dělením zlomky. Platí tedy $\mathbb{Q} \subseteq \mathbb{F} \subseteq \mathbb{C}$ a $\mathbb{Q}$ je nejmenší číselné těleso.
 >
 > Pozn. 1.5: dál se píše jen „těleso“. Obecný pojem tělesa (nejen uvnitř $\mathbb{C}$) přijde později a všechno z přednášek bude platit i pro něj.
+
+^veta-teleso-obsahuje-q
+
+> [!lidsky] Lidsky
+> Těleso je „uzavřený klub“: s každým členem musí přijmout i jeho opačné číslo, a s každým nenulovým i převrácené. Stačí mít jedno nenulové $x$, a klub už musí obsahovat $0$, $1$, $2 = 1 + 1$, $-2$, $\frac{1}{2}$, a tak dál všechny zlomky. Proto je $\mathbb{Q}$ nejmenší možné těleso.
 
 > [!tip] Je to číselné těleso?
 > Nejdřív tipni, pak rozklikni.

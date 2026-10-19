@@ -3,7 +3,7 @@ aliases: ["Lin(V, W)", "Lin(V,W)"]
 tags: [pojem, LAG]
 predmet: LAG
 prednaska: 7
-zdroj: "kap. 6.1"
+zdroj: "pozn. 6.1"
 ---
 
 # množina lineárních zobrazení
@@ -13,4 +13,4 @@ zdroj: "kap. 6.1"
 
 **Formálně:** Buďte V, W lineární prostory nad 𝔽. Lin(V, W) = {A: V → W | A je lineární}
 
-**Definice:** [[LAG 07 – Lineární zobrazení#^def-lin-operator|přednáška 7, 14. 10. 2026]] · kap. 6.1
+**Definice:** [[LAG 07 – Lineární zobrazení#^def-lin-operator|přednáška 7, 14. 10. 2026]] · pozn. 6.1

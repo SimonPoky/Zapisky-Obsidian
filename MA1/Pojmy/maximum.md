@@ -13,4 +13,4 @@ zdroj: "handout 1A, slajd 13"
 
 **Formálně:** h = max M ⇔ h ∈ M ∧ ∀x ∈ M: x ⪯ h
 
-**Definice:** [[MA1 01 – Množiny, uspořádání a přirozená čísla#^def-max|přednáška 1, 23. 9. 2026]] · handout 1A, slajd 13
+**Definice:** [[MA1 01 – Množiny, uspořádání a přirozená čísla#^def-max|přednáška 1, 23. 9. 2026]] · handout 1A, slajd 13 · max M existuje ⇒ sup M = max M: [[MA1 01 – Množiny, uspořádání a přirozená čísla#^veta-max-sup|slajd 13]]

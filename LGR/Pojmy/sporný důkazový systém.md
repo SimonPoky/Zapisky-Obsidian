@@ -3,7 +3,7 @@ aliases: ["sporný systém", "sporný"]
 tags: [pojem, LGR]
 predmet: LGR
 prednaska: 6
-zdroj: "slajd 4 (prez. 4)"
+zdroj: "slajd 3 (prez. 4)"
 ---
 
 # sporný důkazový systém
@@ -13,4 +13,4 @@ zdroj: "slajd 4 (prez. 4)"
 
 **Formálně:** S ⊢ φ pro každou φ ∈ Fla(A); zejména S ⊢ φ, S ⊢ ¬φ i S ⊢ ff
 
-**Definice:** [[LGR 06 – Rezoluční tabulka a přirozená dedukce#^def-nechceme|přednáška 6, 15. 10. 2026]] · slajd 4
+**Definice:** [[LGR 06 – Rezoluční tabulka a přirozená dedukce#^def-nechceme|přednáška 6, 15. 10. 2026]] · slajd 3

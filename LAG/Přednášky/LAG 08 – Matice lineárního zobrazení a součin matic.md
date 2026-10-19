@@ -2,7 +2,7 @@
 predmet: LAG
 prednaska: 8
 datum: 2026-10-16
-zdroj: "V poznámkách kap. 6.1 (matice zobrazení) a 6.2 (skládání a maticové násobení)"
+zdroj: "V poznámkách kap. 6.1 (pozn. 6.6–6.8) a 6.2 (pozn. 6.9–6.20)"
 tags: [prednaska, LAG]
 ---
 
@@ -32,7 +32,7 @@ Minule jsme viděli, že lineární zobrazení $\mathbb{F}^m \to \mathbb{F}^n$ j
 
 Dvě tvrzení z minula, teď v označení, které se bude používat dál: matice $A \in \mathbb{F}^{n \times m}$ (tedy $n$ řádků a $m$ sloupců) dělá zobrazení $\mathbb{F}^m \to \mathbb{F}^n$.
 
-> [!veta] Tvrzení (násobení maticí je lineární) · kap. 6.1
+> [!veta] Tvrzení (násobení maticí je lineární) · pozn. 6.6 a 6.8
 > ==Buď $A = (\vec{a}_1 \cdots \vec{a}_m) \in \mathbb{F}^{n \times m}$.== Potom je zobrazení $\mathbb{F}^m \to \mathbb{F}^n$, $\vec{x} \mapsto A\vec{x}$ **lineární**. Přitom
 >
 > $$
@@ -44,7 +44,7 @@ Dvě tvrzení z minula, teď v označení, které se bude používat dál: matic
 > [!lidsky] Lidsky
 > [[lineární kombinace|Lineární kombinace]] je lineární „funkcí“ svých koeficientů: vektory $\vec{a}_1, \dots, \vec{a}_m$ jsou pevné konstanty a proměnné jsou jen čísla $x_1, \dots, x_m$. Důkaz je [[věta o zobrazení zadaném sloupci]] z minula.
 
-> [!veta] Tvrzení (určení kanonickou bází) · kap. 6.1
+> [!veta] Tvrzení (určení kanonickou bází) · pozn. 6.8
 > ==Buď $A \in \operatorname{Lin}(\mathbb{F}^m, \mathbb{F}^n)$ a $\vec{a}_i = A\vec{e}_i$.== Pak **$A\vec{x} = (\vec{a}_1 \cdots \vec{a}_m)\vec{x}$ pro každé $\vec{x} \in \mathbb{F}^m$**, tedy lineární zobrazení je jednoznačně určené tím, kam pošle [[kanonická báze|kanonickou bázi]]:
 >
 > $$
@@ -63,7 +63,7 @@ Dvě tvrzení z minula, teď v označení, které se bude používat dál: matic
 
 Matici jde násobit nejen vektorem, ale i jinou maticí. Definice je nastavená tak, aby součin odpovídal skládání zobrazení (§6).
 
-> [!definice] Definice · součin matic · kap. 6.2
+> [!definice] Definice ♥ · pozn. 6.9 · součin matic
 > Buďte $A \in \mathbb{F}^{n \times m}$ a $B \in \mathbb{F}^{m \times l}$. Jejich *součin* $AB \in \mathbb{F}^{n \times l}$ definujeme předpisem
 >
 > $$
@@ -111,14 +111,16 @@ $$
 
 U $\mathbb{F}^m \to \mathbb{F}^n$ jsme do sloupců psali přímo obrazy $A\vec{e}_i$. U polynomů nebo matic to nejde: obraz je polynom, ne sloupec čísel. Pomůže [[souřadnicový vektor]]: každý vektor převedeme na sloupec jeho souřadnic v nějaké bázi.
 
-> [!definice] Definice · matice lineárního zobrazení vzhledem k bázím · kap. 6.1
-> Buďte $V$, $W$ lineární prostory nad $\mathbb{F}$. Nechť $\mathcal{X} = (\vec{x}_1, \dots, \vec{x}_m)$ je báze $V$ a $\mathcal{Y} = (\vec{y}_1, \dots, \vec{y}_n)$ je báze $W$. Pro libovolné $A \in \operatorname{Lin}(V, W)$ definujeme jeho *matici v bázích $\mathcal{X}$ a $\mathcal{Y}$* jako
+> [!definice] Definice ♥ · pozn. 6.11 · matice lineárního zobrazení vzhledem k bázím
+> Buďte $V$, $W$ lineární prostory nad $\mathbb{F}$ konečné dimenze. Nechť $\mathcal{X} = (\vec{x}_1, \dots, \vec{x}_m)$ je báze $V$ a $\mathcal{Y} = (\vec{y}_1, \dots, \vec{y}_n)$ je báze $W$. Pro libovolné $A \in \operatorname{Lin}(V, W)$ definujeme jeho *matici v bázích $\mathcal{X}$ a $\mathcal{Y}$* jako
 >
 > $$
 > [A]^{\mathcal{X} \to \mathcal{Y}} = \big([A\vec{x}_1]^{\mathcal{Y}} \cdots [A\vec{x}_m]^{\mathcal{Y}}\big) \in \mathbb{F}^{n \times m}.
 > $$
 >
 > Je-li $V = W$ a $\mathcal{X} = \mathcal{Y}$, značíme $[A]^{\mathcal{X}} = [A]^{\mathcal{X} \to \mathcal{X}}$ (*matice operátoru $A$ v bázi $\mathcal{X}$*).
+>
+> *Pozor na písmena: tady má $V$ dimenzi $m$ a $W$ dimenzi $n$; v pozn. 6.11 i v [[LAG 07 – Lineární zobrazení|LAG 07]] je to naopak. Platí vždy: řádků je tolik, kolik je $\dim W$ (výstup), sloupců tolik, kolik je $\dim V$ (vstup).*
 
 ^def-matice-v-bazich
 
@@ -163,7 +165,7 @@ $$
 
 K čemu taková matice je, říká hlavní věta:
 
-> [!veta] Věta (souřadnice obrazu) · kap. 6.1
+> [!veta] Věta 6.13 (souřadnice obrazu)
 > ==Buďte $V$, $W$ lineární prostory konečné dimenze nad $\mathbb{F}$ a $\mathcal{X}$, $\mathcal{Y}$ jejich báze.== Potom pro libovolné $A \in \operatorname{Lin}(V, W)$ a $\vec{x} \in V$ platí
 >
 > $$
@@ -228,7 +230,7 @@ V $\mathbb{F}^n$ s [[kanonická báze|kanonickou bází]] $\mathcal{E}$ jsou sou
 
 Viděli jsme, že lineární zobrazení je určené obrazy vektorů báze. Platí ale víc: tyto obrazy si můžeme **vymyslet libovolně** a zobrazení vždycky existuje.
 
-> [!veta] Věta (zadání lineárního zobrazení na bázi) · kap. 6.1
+> [!veta] Věta 6.15 (zadání lineárního zobrazení na bázi)
 > ==Buďte $V$, $W$ lineární prostory nad $\mathbb{F}$. Nechť $\mathcal{X} = (\vec{x}_1, \dots, \vec{x}_m)$ je báze $V$ a $\vec{w}_1, \dots, \vec{w}_m \in W$ libovolné vektory.== Potom **existuje právě jedno $A \in \operatorname{Lin}(V, W)$ takové, že $A\vec{x}_i = \vec{w}_i$ pro všechna $i = 1, \dots, m$.**
 >
 > > [!note]- Důkaz
@@ -257,8 +259,8 @@ Viděli jsme, že lineární zobrazení je určené obrazy vektorů báze. Plat�
 > - Když $\mathcal{X}$ jen generuje, ale je LZ, předepsané hodnoty si můžou odporovat. Pro $\vec{x}_2 = 2\vec{x}_1$ musí platit $A\vec{x}_2 = 2A\vec{x}_1$, takže $\vec{w}_2 \ne 2\vec{w}_1$ nedovolí **žádné** lineární zobrazení. Padá existence.
 > - Když je $\mathcal{X}$ LN, ale negeneruje, na vektorech mimo $\operatorname{span}\mathcal{X}$ není nic předepsáno a zobrazení jde dodefinovat mnoha způsoby. Padá jednoznačnost.
 
-> [!veta] Důsledek (lineární zobrazení = matice) · kap. 6.1
-> ==Buďte $V$, $W$ lineární prostory nad $\mathbb{F}$, $\mathcal{X} = (\vec{x}_1, \dots, \vec{x}_m)$ báze $V$ a $\mathcal{Y} = (\vec{y}_1, \dots, \vec{y}_n)$ báze $W$.== Potom je zobrazení $A \mapsto [A]^{\mathcal{X} \to \mathcal{Y}}$ **bijekce**
+> [!veta] Důsledek 6.16 (lineární zobrazení = matice)
+> ==Buďte $V$, $W$ lineární prostory nad $\mathbb{F}$ konečné dimenze, $\mathcal{X} = (\vec{x}_1, \dots, \vec{x}_m)$ báze $V$ a $\mathcal{Y} = (\vec{y}_1, \dots, \vec{y}_n)$ báze $W$.== Potom je zobrazení $A \mapsto [A]^{\mathcal{X} \to \mathcal{Y}}$ **bijekce**
 >
 > $$
 > \operatorname{Lin}(V, W) \longleftrightarrow \mathbb{F}^{n \times m}.
@@ -278,7 +280,7 @@ Viděli jsme, že lineární zobrazení je určené obrazy vektorů báze. Plat�
 
 Proč je součin matic definovaný tak divně (řádek krát sloupec)? Protože přesně odpovídá [[složené zobrazení|skládání zobrazení]].
 
-> [!veta] Věta (matice složeného zobrazení) · kap. 6.2
+> [!veta] Věta 6.19 (matice složeného zobrazení)
 > ==Buďte $U$, $V$, $W$ lineární prostory konečné dimenze s bázemi $\mathcal{X}$, $\mathcal{Y}$, $\mathcal{Z}$ a $A \in \operatorname{Lin}(U, V)$, $B \in \operatorname{Lin}(V, W)$.== Potom
 >
 > $$
@@ -310,7 +312,7 @@ Proč je součin matic definovaný tak divně (řádek krát sloupec)? Protože 
 
 ## §7 Matice otočení
 
-> [!veta] Tvrzení (matice otočení) · kap. 6.1
+> [!veta] Příklad 6.17 (matice otočení)
 > ==Otočení $R_\alpha : \mathbb{R}^2 \to \mathbb{R}^2$ o úhel $\alpha$ proti směru hodinových ručiček kolem počátku== je lineární a
 >
 > $$

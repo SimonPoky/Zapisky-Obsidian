@@ -3,7 +3,7 @@ aliases: ["stejnolehlosti", "homotetie"]
 tags: [pojem, LAG]
 predmet: LAG
 prednaska: 7
-zdroj: "kap. 6.1"
+zdroj: "pozn. 6.4"
 ---
 
 # stejnolehlost
@@ -13,4 +13,4 @@ zdroj: "kap. 6.1"
 
 **Formálně:** Pro pevné k ∈ 𝔽 je A: V → V, Ax = kx, lineární operátor na V (stejnolehlost s koeficientem k)
 
-**Definice:** [[LAG 07 – Lineární zobrazení#^def-stejnolehlost|přednáška 7, 14. 10. 2026]] · kap. 6.1
+**Definice:** [[LAG 07 – Lineární zobrazení#^def-stejnolehlost|přednáška 7, 14. 10. 2026]] · pozn. 6.4

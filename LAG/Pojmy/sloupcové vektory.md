@@ -13,4 +13,4 @@ zdroj: "pozn. 1.10"
 
 **Formálně:** 𝔽ⁿ = {(x₁; …; xₙ) | xᵢ ∈ 𝔽}
 
-**Definice:** [[LAG 02 – Příklady lineárních prostorů#^def-fn|přednáška 2, 25. 9. 2026]] · pozn. 1.10
+**Definice:** [[LAG 02 – Příklady lineárních prostorů#^def-fn|přednáška 2, 25. 9. 2026]] · pozn. 1.10 · 𝔽ⁿ je lineární prostor: [[LAG 02 – Příklady lineárních prostorů#^veta-fn-prostor|tvrzení]]

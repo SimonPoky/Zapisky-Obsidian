@@ -13,4 +13,4 @@ zdroj: "handout 1B, slajd 9"
 
 **Formálně:** |r| = r pro r ≥ 0, |r| = −r pro r < 0
 
-**Definice:** [[MA1 02 – Celá, racionální a reálná čísla#^def-abs|přednáška 2, 24. 9. 2026]] · handout 1B, slajd 9
+**Definice:** [[MA1 02 – Celá, racionální a reálná čísla#^def-abs|přednáška 2, 24. 9. 2026]] · handout 1B, slajd 9 · |x| < s ⇔ −s < x < s: [[MA1 02 – Celá, racionální a reálná čísla#^veta-nerovnosti|slajd 9]]

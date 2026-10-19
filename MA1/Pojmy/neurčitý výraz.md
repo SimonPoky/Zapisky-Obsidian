@@ -3,7 +3,7 @@ aliases: ["neurčité výrazy", "typ limity", "typ 0/0", "typ ?/±∞", "neurči
 tags: [pojem, MA1]
 predmet: MA1
 prednaska: 8
-zdroj: "handout 4A, slajd 11"
+zdroj: "termín z literatury (handout 4A, slajd 11 ho zmiňuje, ale nepoužívá)"
 ---
 
 # neurčitý výraz
@@ -13,4 +13,4 @@ zdroj: "handout 4A, slajd 11"
 
 **Formálně:** 0/0, (±∞)/(±∞), 0·(±∞), (+∞) − (+∞), 1^(±∞), 0⁰, (+∞)⁰: aritmetika limit je v ℝ* nedefinuje; typ ?/|±∞| = |jmenovatel| → +∞, o čitateli nic
 
-**Definice:** [[MA1 08 – Věty o střední hodnotě a l'Hospitalovo pravidlo#^def-neurcity-vyraz|přednáška 8, 15. 10. 2026]] · handout 4A, slajd 11
+**Definice:** [[MA1 08 – Věty o střední hodnotě a l'Hospitalovo pravidlo#^def-neurcity-vyraz|přednáška 8, 15. 10. 2026]] · termín z literatury, handout 4A (slajd 11) ho nepoužívá

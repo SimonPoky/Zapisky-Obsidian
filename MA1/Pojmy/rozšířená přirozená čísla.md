@@ -13,4 +13,4 @@ zdroj: "handout 1A, slajd 20"
 
 **Formálně:** ℕ* = {0, 1, 2, …} ∪ {+∞}; n + ∞ = ∞; n · ∞ = ∞ pro n ≠ 0; +∞ = ℕ jako množina
 
-**Definice:** [[MA1 01 – Množiny, uspořádání a přirozená čísla#^def-nstar|přednáška 1, 23. 9. 2026]] · handout 1A, slajd 20
+**Definice:** [[MA1 01 – Množiny, uspořádání a přirozená čísla#^def-nstar|přednáška 1, 23. 9. 2026]] · handout 1A, slajd 20 · suprema v ℕ* existují vždy: [[MA1 01 – Množiny, uspořádání a přirozená čísla#^veta-sup-nstar|slajd 21]]

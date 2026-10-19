@@ -3,7 +3,7 @@ aliases: ["násobení matice vektorem", "matice krát vektor"]
 tags: [pojem, LAG]
 predmet: LAG
 prednaska: 7
-zdroj: "kap. 6.1"
+zdroj: "pozn. 6.8–6.9"
 ---
 
 # součin matice a vektoru
@@ -13,4 +13,4 @@ zdroj: "kap. 6.1"
 
 **Formálně:** (a₁ ⋯ aₙ) ∈ 𝔽^{m×n}, x = (x₁; …; xₙ) ∈ 𝔽ⁿ ⇒ (a₁ ⋯ aₙ)x = x₁a₁ + … + xₙaₙ ∈ 𝔽ᵐ
 
-**Definice:** [[LAG 07 – Lineární zobrazení#^def-soucin-matice-vektoru|přednáška 7, 14. 10. 2026]] · kap. 6.1
+**Definice:** [[LAG 07 – Lineární zobrazení#^def-soucin-matice-vektoru|přednáška 7, 14. 10. 2026]] · pozn. 6.8–6.9

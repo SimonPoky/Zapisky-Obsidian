@@ -2,7 +2,7 @@
 predmet: LAG
 prednaska: 5
 datum: 2026-10-07
-zdroj: "V poznámkách věta 3.7 a kapitola 4 (4.1–4.11)"
+zdroj: "V poznámkách věta 3.7 a kapitola 4 (4.1–4.16)"
 tags: [prednaska, LAG]
 ---
 
@@ -163,6 +163,9 @@ Generování zaručí, že vyjádření existuje. Kdy je jediné, říká nezáv
 
 ^def-kanonicka
 
+> [!lidsky] Lidsky
+> [[kanonická báze|Kanonická báze]] jsou „jednotkové kroky“ podél os: v $\mathbb{R}^3$ krok doprava $(1; 0; 0)$, dopředu $(0; 1; 0)$ a nahoru $(0; 0; 1)$. Vektor $(4; -2; 7)$ je pak prostě 4 kroky prvním směrem, $-2$ druhým a 7 třetím, takže souřadnice v kanonické bázi jsou přímo složky vektoru.
+
 Zápis $[\vec{e}_i]_j$ znamená „$j$-tá složka vektoru $\vec{e}_i$“. Báze se značí psacími velkými písmeny ($\mathcal{E}$, $\mathcal{B}$), aby se nepletly s množinami a prostory; místo „kanonická“ se někdy říká *standardní* báze. Že je $\mathcal{E}$ opravdu báze, je vidět rovnou:
 
 - **LN:** každé $\vec{e}_i$ má jedničku na místě, kde mají všechny ostatní nulu, takže ho z ostatních (ani z předchozích) poskládat nejde.
@@ -298,7 +301,7 @@ Lemma se zde nedokazuje a ke zkouškové písemce není nutné (v poznámkách j
 
 Opačný směr k výběru: začneš s nezávislými vektory a přidáváš.
 
-> [!veta] Věta (doplnění LN posloupnosti na bázi)
+> [!veta] Věta 4.13 (doplnění LN posloupnosti na bázi)
 > ==Buď $L$ lineární prostor nad $\mathbb{F}$, $\dim L = n < \infty$. Nechť $\vec{x}_1, \dots, \vec{x}_k \in L$ a nechť $(\vec{x}_1, \dots, \vec{x}_k)$ je LN.== Potom **existují $\vec{x}_{k+1}, \dots, \vec{x}_n \in L$ takové, že $(\vec{x}_1, \dots, \vec{x}_n)$ je báze $L$.**
 >
 > > [!note]- Důkaz
@@ -315,7 +318,7 @@ Opačný směr k výběru: začneš s nezávislými vektory a přidáváš.
 > ![[lag05-pocty.png]]
 > *Prostor dimenze 3. Modře: nezávislá posloupnost má nejvýš 3 vektory a doplňováním dojde k bázi. Oranžově: generující posloupnost má aspoň 3 vektory a výběrem (věta 4.11) dojde k bázi. Zelená čára: báze má přesně 3 vektory.*
 
-> [!veta] Důsledek
+> [!veta] Důsledek 4.15
 > ==Buď $L$ lineární prostor nad $\mathbb{F}$, $\dim L = n < \infty$, a $\vec{x}_1, \dots, \vec{x}_n \in L$ (přesně $n$ vektorů).== Potom jsou následující výroky **ekvivalentní**:
 >
 > 1. $(\vec{x}_1, \dots, \vec{x}_n)$ je báze $L$,
@@ -339,7 +342,7 @@ Opačný směr k výběru: začneš s nezávislými vektory a přidáváš.
 > [!pozor] Počet musí sedět přesně
 > Důsledek platí jen pro **přesně $n$** vektorů. Dva nezávislé vektory v $\mathbb{R}^3$ nejsou báze (negenerují) a čtyři generující vektory v $\mathbb{R}^3$ nejsou báze (jsou LZ).
 
-> [!veta] Věta (dimenze podprostoru)
+> [!veta] Věta 4.16 (dimenze podprostoru)
 > ==Nechť $L$ je lineární prostor a $V \le L$.== Potom **$\dim V \le \dim L$**. Navíc, je-li ==$\dim L < \infty$==, platí **$V = L \iff \dim V = \dim L$**.
 >
 > > [!note]- Důkaz

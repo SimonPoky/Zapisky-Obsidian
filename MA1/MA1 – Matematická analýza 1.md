@@ -10,7 +10,7 @@ tags: [predmet, MA1]
 
 [Handouty ke všem přednáškám (PDF) ↗](https://math.fel.cvut.cz/en/people/velebil/files/b0b01ma1/ma1_handout_all.pdf) · [Stránka předmětu ↗](https://math.fel.cvut.cz/en/people/velebil/teaching/b0b01ma1.html) · [Požadavky ↗](https://math.fel.cvut.cz/en/people/velebil/teaching/b0b01ma1_pozadavky.html) · [Ukázka zkoušky ↗](https://math.fel.cvut.cz/en/people/velebil/files/b0b01ma1/ma1_ukazka_2026.pdf) · [Ukázka testu 1 ↗](https://math.fel.cvut.cz/en/people/velebil/files/b0b01ma1/ma1_pisemka01_ukazka_2026.pdf) · [Ukázka testu 2 ↗](https://math.fel.cvut.cz/en/people/velebil/files/b0b01ma1/ma1_pisemka02_ukazka_2026.pdf)
 
-**Kartičky:** 182 povinných + 54 příkladů · [otevřít aplikaci ↗](https://claude.ai/artifact/3CKfKeuwtwrWiz3FSfSh5B) · [[Archiv přednášek#Kartičky|jak to funguje]]
+**Kartičky:** 186 povinných + 54 příkladů · [otevřít aplikaci ↗](https://claude.ai/artifact/3CKfKeuwtwrWiz3FSfSh5B) · [[Archiv přednášek#Kartičky|jak to funguje]]
 
 ## Přednášky
 
@@ -33,6 +33,7 @@ tags: [predmet, MA1]
 - [[Carathéodoryho trik]] · f′(p) existuje ⇔ f(x) − f(p) = f*(x)(x − p) se spojitou f*; pak f′(p) = f*(p).
 - [[Cauchyova věta]] · Lagrange pro dvě funkce se společným t: (f(b) − f(a))g′(t) = (g(b) − g(a))f′(t).
 - [[celá čísla]] · Postavená z dvojic přirozených čísel: (5, 8) „kóduje“ rozdíl 5 − 8 = −3.
+- [[charakterizace suprema]] · supremum je horní odhad, který nejde snížit o žádné ε > 0
 - [[Creeping Theorem]] · Lokální a aditivní systém obsahuje celý [a; b]; z toho plynou IVT a BT.
 - [[Dedekindovská úplnost]] · Každá neprázdná shora omezená M ⊆ ℝ má supremum v ℝ. V ℚ to neplatí.
 - [[Dedekindův řez]] · Střih racionální přímky na L a U; √2 = (L, U). Reálná čísla jsou všechny řezy.
@@ -50,6 +51,9 @@ tags: [predmet, MA1]
 - [[jednostranná spojitost]] · Spojitost jen zleva nebo jen zprava; oboustranná platí, když platí obě.
 - [[l'Hospitalovo pravidlo]] · U typu 0/0 a ?/|±∞| je lim f/g = lim f′/g′, pokud ta druhá existuje. Jen implikace.
 - [[Lagrangeova věta]] · Někde uvnitř je tečna rovnoběžná se sečnou: (f(b) − f(a))/(b − a) = f′(t).
+- [[limita posloupnosti z limity funkce]] · má-li f(x) limitu pro x → +∞, má stejnou limitu i posloupnost f(n)
+- [[limita posunuté posloupnosti]] · vynecháním prvních N členů se limita nezmění
+- [[limita sudých a lichých členů]] · posloupnost má limitu L, právě když ji mají sudé i liché členy
 - [[limita ve směru]] · Ke každému terči kolem L existuje kus směru, jehož celý obraz padne do terče. Jedna definice pro x → p, n → ∞ i x → −∞.
 - [[linearita limity]] · Limita lineární kombinace = kombinace (vlastních) limit.
 - [[lineární aproximace]] · Tečna jako náhrada funkce: f(x) ≈ f(p) + f′(p)(x − p), chyba je zanedbatelná vůči x − p.

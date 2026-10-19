@@ -3,7 +3,7 @@ aliases: ["souřadnicového vektoru", "souřadnicové vektory", "[v]^X", "[v]_B"
 tags: [pojem, LAG]
 predmet: LAG
 prednaska: 6
-zdroj: "kap. 4.2"
+zdroj: "pozn. 4.17 ♥"
 ---
 
 # souřadnicový vektor
@@ -13,4 +13,4 @@ zdroj: "kap. 4.2"
 
 **Formálně:** Buď 𝒳 = (x₁, …, xₙ) báze L nad 𝔽, v = α₁x₁ + … + αₙxₙ. Pak [v]^𝒳 = (α₁; …; αₙ) ∈ 𝔽ⁿ (na cvičení [v]_𝒳 nebo coord_𝒳(v)); [v]^𝒳ᵢ = αᵢ
 
-**Definice:** [[LAG 06 – Souřadnice, součet a průnik podprostorů#^def-souradnicovy-vektor|přednáška 6, 9. 10. 2026]] · kap. 4.2
+**Definice:** [[LAG 06 – Souřadnice, součet a průnik podprostorů#^def-souradnicovy-vektor|přednáška 6, 9. 10. 2026]] · pozn. 4.17 ♥

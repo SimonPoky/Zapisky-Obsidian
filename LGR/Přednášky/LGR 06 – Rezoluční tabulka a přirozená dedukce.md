@@ -137,7 +137,7 @@ Na otázku „plyne $\varphi$ z $S$?“ jsou dva pohledy (slajdy 3–4 prezentac
 > [!lidsky] Lidsky
 > $\models$ je „zkontroluj všechny světy“: projdi všechna ohodnocení. $\vdash$ je „napiš důkaz“: krok za krokem podle pevných pravidel, jako když ve škole dokazuješ větu a u každého řádku napíšeš, proč platí. Symbol $\vdash$ připomíná „turniket“: projde jen to, co má platný doklad.
 
-> [!definice] Korektní a úplný důkazový systém · slajd 4
+> [!definice] Korektní a úplný důkazový systém · slajd 3
 > Důkazový systém je
 > - *korektní*, jestliže každá odvoditelná formule je pravdivá: **$S \vdash \varphi \Rightarrow S \models \varphi$** (odvoditelné $\subseteq$ pravdivé);
 > - *úplný*, jestliže navíc jde odvodit každý sémantický důsledek: **$S \vdash \varphi \Leftrightarrow S \models \varphi$** (odvoditelné $=$ pravdivé).
@@ -147,8 +147,8 @@ Na otázku „plyne $\varphi$ z $S$?“ jsou dva pohledy (slajdy 3–4 prezentac
 > [!lidsky] Lidsky
 > Korektní systém nikdy nelže: co dokáže, to opravdu platí. Úplný systém navíc nic nevynechá: co platí, to taky umí dokázat. Korektnost je nutnost (lhář je k ničemu), úplnost je přání.
 
-> [!definice] Co nechceme · slajd 4
-> - *Příliš agresivní* ([[korektní důkazový systém|nekorektní]]) systém: odvodí i formule, které z $S$ sémanticky neplynou, tj. existuje $\varphi$ s $S \vdash \varphi$, ale $S \not\models \varphi$.
+> [!definice] Co nechceme · slajd 3
+> - *[[příliš agresivní systém|Příliš agresivní]]* (nekorektní) systém: odvodí i formule, které z $S$ sémanticky neplynou, tj. existuje $\varphi$ s $S \vdash \varphi$, ale $S \not\models \varphi$.
 > - *Sporný* systém: odvodí **všechno**, tj. $S \vdash \varphi$ pro každou $\varphi \in \mathrm{Fla}(A)$, tedy i $\varphi$ a $\neg\varphi$ naráz, i $\mathrm{ff}$.
 
 ^def-nechceme
@@ -236,7 +236,7 @@ Pravidlo **respektuje pravdivost**: $\{\varphi, \psi\} \models \varphi \wedge \p
 > [!lidsky] Lidsky
 > Box je „co kdyby“: na chvíli předpokládáš něco, co nemáš dokázané. Uvnitř s tím smíš počítat, ale ven smí jen výsledek ve tvaru „když …, pak …“. Kdyby smělo ven i to, co platí jen „za předpokladu“, dokázal bys cokoli.
 
-> [!definice] Iterace (it) · slajd 9
+> [!definice] Iterace (it) · k slajdům 9–10
 > Formuli, která je v odvození už dříve (výše a v boxu, který je pořád otevřený, nebo na globální úrovni), smíš napsat znovu, i dovnitř vnořeného boxu: $\dfrac{\varphi}{\varphi}$, odůvodnění „it $k$“, kde $k$ je číslo řádku.
 
 ^def-iterace
@@ -296,7 +296,7 @@ Pravidlo $\Rightarrow$i taky **respektuje pravdivost**. Tady je schovaný induk�
 > *Červeně globální předpoklad, oranžově rámečky boxů a jejich lokální předpoklady, modře odvozené řádky, zeleně výsledek. Vnořený box se uzavře dřív než vnější.*
 
 > [!navic] Proč to pravidla dělají „správně“
-> V prvním případě ($\neg a$) je předpoklad $a$ ve sporu s $\neg a$, a ze sporu plyne cokoli, tedy i $b$. Odpovídá to tabulce implikace: při $a = 0$ je $a \Rightarrow b$ pravdivá vždy. Ve druhém případě platí $b$, takže $a \Rightarrow b$ platí, ať je $a$ jakékoli. Opačný směr $a \Rightarrow b \vdash \neg a \vee b$ potřebuje pravidlo navíc (TND, $\varphi \vee \neg\varphi$; slajd 12).
+> V prvním případě ($\neg a$) je předpoklad $a$ ve sporu s $\neg a$, a ze sporu plyne cokoli, tedy i $b$. Odpovídá to tabulce implikace: při $a = 0$ je $a \Rightarrow b$ pravdivá vždy. Ve druhém případě platí $b$, takže $a \Rightarrow b$ platí, ať je $a$ jakékoli. Opačný směr $a \Rightarrow b \vdash \neg a \vee b$ potřebuje další pravidla ze slajdu 11: TND ($\varphi \vee \neg\varphi$) a RAA (slajd 12). Jde o odvozená pravidla, která se dají dokázat ze základních.
 
 > [!question]- Kolik řádků by potřebovala pravdivostní tabulka pro ověření $\models a \Rightarrow (b \Rightarrow a)$?
 > $2^2 = 4$. U formule se 30 proměnnými by to bylo přes miliardu řádků, odvození může být pořád krátké. Naopak dokázat, že $S \nvdash \varphi$, odvozením nejde: musel bys vyloučit všechna možná odvození (slajd 16).

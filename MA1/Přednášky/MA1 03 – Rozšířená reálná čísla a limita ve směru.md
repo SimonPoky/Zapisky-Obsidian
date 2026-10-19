@@ -49,6 +49,8 @@ $$
 > [!veta] Suprema v ℝ* existují vždy · handout 1B, slajd 16
 > Pro každou $M \subseteq \mathbb{R}$: $\sup M$ je obyčejné supremum, je-li $M \neq \emptyset$ shora omezená; $\sup M = +\infty$, je-li $M \neq \emptyset$ shora neomezená; $\sup \emptyset = -\infty$. Zrcadlově $\inf M = -\sup(-M)$ vždy existuje v $\mathbb{R}^*$. Je to stejný trik jako u $\mathbb{N}^*$ v [[MA1 01 – Množiny, uspořádání a přirozená čísla#^def-nstar|přednášce 1]].
 
+^veta-sup-rstar
+
 > [!lidsky] Lidsky
 > $\mathbb{R}^*$ je číselná osa s přidanými dvěma konci. Díky nim má supremum úplně každá množina: neomezená má strop $+\infty$ a prázdná $-\infty$ (každé číslo je jejím horním odhadem, takže nejnižší strop je úplně dole). S nekonečny se počítá „selským rozumem“, jen kde by výsledek mohl být cokoli ($\infty - \infty$, $0 \cdot \infty$), zůstává nedefinovaný.
 
@@ -130,6 +132,8 @@ Příklady směrů (handout 2A, slajdy 11–16; pro všechna $\delta > 0$, resp.
 
 > [!veta] Nejmenší z konečně mnoha · handout 2A, slajd 10
 > Z konečně mnoha prvků $P_1, \dots, P_k$ směru jde vždy vybrat ten nejmenší, který je obsažen ve všech ostatních (plyne z vlastnosti 2). Na tomhle stojí důkaz jednoznačnosti v §7 i většina dalších vět o limitách.
+
+^veta-nejmensi-kus
 
 > [!lidsky] Lidsky
 > Kusy směru jsou do sebe vnořené jako matrjošky. Z konečně mnoha vždy vybereš ten nejmenší a ten leží ve všech ostatních, takže se v něm splní všechny podmínky naráz. U nekonečně mnoha to nejde: intervaly $(0; \frac{1}{n})$ nemají společný bod.
@@ -239,7 +243,7 @@ Důkaz sporem: ať $\lim (-1)^n = L \in \mathbb{R}^*$. Každý kus směru $\{n >
 ^veta-monotonni
 
 > [!lidsky] Lidsky
-> [[neklesající posloupnost|Neklesající posloupnost]] leze nahoru ke svému stropu. Když je strop $s$ konečný, podle [[MA1 02 – Celá, racionální a reálná čísla#^eps-sup|ε-charakterizace suprema]] leží nějaký člen nad $s - \varepsilon$ a všechny další jsou ještě výš, ale pořád $\le s$. Tedy od toho členu dál jsou všechny v okolí $s$. Když strop neexistuje, $\sup = +\infty$ a limita je $+\infty$. Příklady: $1 - \frac{1}{n} \to 1$, $a_n = n \to +\infty$.
+> [[neklesající posloupnost|Neklesající posloupnost]] leze nahoru ke svému stropu. Když je strop $s$ konečný, podle [[MA1 02 – Celá, racionální a reálná čísla#^veta-eps-sup|ε-charakterizace suprema]] leží nějaký člen nad $s - \varepsilon$ a všechny další jsou ještě výš, ale pořád $\le s$. Tedy od toho členu dál jsou všechny v okolí $s$. Když strop neexistuje, $\sup = +\infty$ a limita je $+\infty$. Příklady: $1 - \frac{1}{n} \to 1$, $a_n = n \to +\infty$.
 
 > [!obrazek] Neklesající posloupnost se „přilepí“ ke svému supremu
 > ![[ma103-monotonni.png]]

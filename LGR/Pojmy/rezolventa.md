@@ -13,4 +13,4 @@ zdroj: "slajd 14"
 
 **Formálně:** res_x(α ∨ x, β ∨ ¬x) = α ∨ β; {α ∨ x, β ∨ ¬x} ⊨ α ∨ β; res_x(x, ¬x) = ff
 
-**Definice:** [[LGR 04 – Sémantický důsledek a klauzální tvar#^def-rezolventa|přednáška 4, 8. 10. 2026]] · slajd 14
+**Definice:** [[LGR 04 – Sémantický důsledek a klauzální tvar#^def-rezolventa|přednáška 4, 8. 10. 2026]] · slajd 14 · přidání rezolventy nemění pravdivost: [[LGR 05 – Rezoluční princip#^res-dusledek|přednáška 5, slajd 15]]

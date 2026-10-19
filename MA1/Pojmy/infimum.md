@@ -13,4 +13,4 @@ zdroj: "handout 1A, slajd 14"
 
 **Formálně:** i = inf M ⇔ (∀x ∈ M: i ⪯ x) ∧ (∀d: (∀x ∈ M: d ⪯ x) ⇒ d ⪯ i)
 
-**Definice:** [[MA1 01 – Množiny, uspořádání a přirozená čísla#^def-inf|přednáška 1, 23. 9. 2026]] · handout 1A, slajd 14
+**Definice:** [[MA1 01 – Množiny, uspořádání a přirozená čísla#^def-inf|přednáška 1, 23. 9. 2026]] · handout 1A, slajd 14 · v (𝒫(U), ⊆) je infimum průnik: [[MA1 01 – Množiny, uspořádání a přirozená čísla#^veta-sup-mnoziny|slajd 15]]

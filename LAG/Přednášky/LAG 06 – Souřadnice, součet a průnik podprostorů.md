@@ -2,7 +2,7 @@
 predmet: LAG
 prednaska: 6
 datum: 2026-10-09
-zdroj: "V poznámkách kap. 4.2 (souřadnice) a kap. 5 (součet a průnik)"
+zdroj: "V poznámkách pozn. 4.17–4.18 (souřadnice) a kap. 5, pozn. 5.2–5.8 (součet a průnik)"
 tags: [prednaska, LAG]
 ---
 
@@ -42,7 +42,7 @@ Přednáška začala dokončením [[LAG 05 – Báze a dimenze#^veta-dim-podpros
 
 Na první přednášce jsme vektoru $(3; 2)$ v rovině přiřadili návod „tři kroky doprava a dva nahoru“. Ty kroky jsou vektory [[kanonická báze|kanonické báze]] a čísla $3, 2$ jsou koeficienty lineární kombinace. Teď už víme, proč to jde s **libovolnou** bází: aby se dal zapsat každý vektor, posloupnost musí [[generující posloupnost|generovat]], a aby zápis byl jediný, musí být [[lineární nezávislost|LN]] ([[věta o jednoznačnosti vyjádření|věta 4.2]]). Obojí dohromady je přesně báze.
 
-> [!definice] Definice · souřadnice
+> [!definice] Definice ♥ · pozn. 4.17 · souřadnice
 > Buď $L$ lineární prostor nad tělesem $\mathbb{F}$, $n \in \mathbb{N}$, nechť $\mathcal{X} = (\vec{x}_1, \dots, \vec{x}_n)$ je báze $L$ a $\vec{v} \in L$. Potom (jednoznačně určené) koeficienty $\alpha_1, \dots, \alpha_n \in \mathbb{F}$ lineární kombinace
 >
 > $$
@@ -58,7 +58,7 @@ Na první přednášce jsme vektoru $(3; 2)$ v rovině přiřadili návod „tř
 
 Z definice je vidět i jedna drobnost: existuje-li báze s $n$ prvky, je $\dim L = n$ konečná. Souřadnice v tomhle smyslu má tedy jen prostor konečné dimenze.
 
-> [!definice] Definice · souřadnicový vektor
+> [!definice] Definice ♥ · pozn. 4.17 · souřadnicový vektor
 > Za předpokladů předchozí definice nazýváme sloupcový vektor
 >
 > $$
@@ -110,7 +110,7 @@ Přiřazení $\vec{v} \mapsto [\vec{v}]^{\mathcal{X}}$ je vzájemně jednoznačn
 > [!navic] Samotná bijekce nestačí
 > Bijekce existuje i mezi $\mathbb{R}$ a $\mathbb{R}^2$: dvojici čísel jde zakódovat do jednoho čísla prokládáním číslic (až na technické detaily s rozvoji končícími samými devítkami), např. $(157{,}24;\ 34{,}18)$ dá (po doplnění na stejný počet číslic $157{,}24$ a $034{,}18$) číslo $105374{,}2148$. Existuje dokonce spojité zobrazení úsečky **na** celý čtverec, Hilbertova křivka (spojité a zároveň prosté takové zobrazení ale neexistuje). Kdyby stačila bijekce, byly by všechny prostory „stejné“ a dimenze by nic neznamenala. Souřadnice jsou cenné tím, že se **zachovávají operace**: s čísly $[\vec{v}]^{\mathcal{X}}$ jde počítat místo s vektory. Prokládání číslic tohle nesplňuje, sčítání by se v něm rozbilo kvůli přenosům mezi řády.
 
-> [!veta] Věta (linearita souřadnic)
+> [!veta] Věta 4.18 (linearita souřadnic)
 > ==Buď $L$ lineární prostor nad $\mathbb{F}$ a $\mathcal{X} = (\vec{x}_1, \dots, \vec{x}_n)$ báze $L$.== Potom
 >
 > 1. **$(\forall \vec{x}, \vec{y} \in L)\ \ [\vec{x} + \vec{y}]^{\mathcal{X}} = [\vec{x}]^{\mathcal{X}} + [\vec{y}]^{\mathcal{X}}$,**
@@ -168,7 +168,7 @@ Pro množiny známe dvě základní operace, sjednocení a průnik, a pro koneč
 
 Pro konečné množiny platí $\vert A \cup B\vert = \vert A\vert + \vert B\vert - \vert A \cap B\vert$, protože prvky průniku se v $\vert A\vert + \vert B\vert$ započítají dvakrát. Například pro $\vert A\vert = \vert B\vert = 5$ a $\vert A \cap B\vert = 2$ je $\vert A \cup B\vert = 5 + 5 - 2 = 8$.
 
-> [!veta] Věta (průnik podprostorů)
+> [!veta] Věta 5.2 (průnik podprostorů)
 > ==Buď $L$ lineární prostor a $V, W \le L$.== Potom **$V \cap W \le L$**.
 >
 > > [!note]- Důkaz
@@ -198,7 +198,7 @@ Sjednocení podprostorů obecně podprostor **není**. Dvě přímky $V = \opera
 
 Místo sjednocení proto vezmeme nejmenší podprostor, který obsahuje $V$ i $W$. Ten musí obsahovat všechny součty $\vec{v} + \vec{w}$, a ukáže se, že nic víc není potřeba.
 
-> [!definice] Definice · součet podmnožin
+> [!definice] Definice ♥ · pozn. 5.3 · součet podmnožin
 > Buď $L$ lineární prostor a $A, B \subseteq L$. Definujeme
 >
 > $$
@@ -212,7 +212,7 @@ Místo sjednocení proto vezmeme nejmenší podprostor, který obsahuje $V$ i $W
 > [!lidsky] Lidsky
 > Sečti každý prvek $A$ s každým prvkem $B$ a posbírej výsledky. Pro dvě přímky přes počátek s různými směry je to celá rovina, kterou určují: každý bod roviny je součet kroku po první přímce a kroku po druhé.
 
-> [!veta] Věta (součet podprostorů)
+> [!veta] Věta 5.4 (součet podprostorů)
 > ==Buď $L$ lineární prostor a $V, W \le L$.== Potom **$V + W \le L$**.
 >
 > > [!note]- Důkaz
@@ -234,6 +234,9 @@ Místo sjednocení proto vezmeme nejmenší podprostor, který obsahuje $V$ i $W
 
 ^veta-soucet
 
+> [!lidsky] Lidsky
+> Sečti cokoli z $V$ s čímkoli z $W$ a z výsledku už nevypadneš: součty i násobky se dají rozdělit zpátky na „část z $V$“ a „část z $W$“. Dvě přímky přes počátek v $\mathbb{R}^3$ tak dají rovinu, ne jen kříž.
+
 > [!navic] $V + W$ je nejmenší podprostor obsahující $V$ i $W$
 > Obsahuje oba: $\vec{v} = \vec{v} + \vec{0}$ a $\vec{w} = \vec{0} + \vec{w}$. A každý podprostor $U \supseteq V \cup W$ je uzavřený na sčítání, takže obsahuje všechny součty $\vec{v} + \vec{w}$, tedy $U \supseteq V + W$. Součet je proto pro podprostory přesně to, čím je sjednocení pro množiny, podobně jako [[lineární obal]] je nejmenší podprostor obsahující danou množinu.
 
@@ -245,7 +248,7 @@ Místo sjednocení proto vezmeme nejmenší podprostor, který obsahuje $V$ i $W
 
 V praxi je podprostor skoro vždy zadaný generátory, třeba $V = \operatorname{span}\{\vec{x}_1, \vec{x}_2\}$. U součtu je to snadné.
 
-> [!veta] Věta (součet obalů)
+> [!veta] Tvrzení 5.6 (součet obalů)
 > ==Buď $L$ lineární prostor a $M, N \subseteq L$.== Potom
 >
 > $$
@@ -319,7 +322,7 @@ V příkladech se opakuje stejný vzorec jako u počtu prvků množin:
 | dvě různé roviny přes počátek v $\mathbb{R}^3$ | 2 | 2 | 1 | 3 |
 | příklad v $\mathbb{R}^4$ | 2 | 2 | 1 | 3 |
 
-> [!veta] Věta (dimenze součtu a průniku)
+> [!veta] Věta 5.8 (dimenze součtu a průniku)
 > ==Buď $L$ lineární prostor a $V, W \le L$ s $\dim V, \dim W < \infty$.== Potom
 >
 > $$
@@ -328,7 +331,7 @@ V příkladech se opakuje stejný vzorec jako u počtu prvků množin:
 
 ^veta-dimenze-souctu
 
-Důkaz zatím nezazněl; myšlenka je doplnit bázi průniku jednou na bázi $V$ a jednou na bázi $W$ a ukázat, že všechny tyto vektory dohromady tvoří bázi $V + W$.
+Důkaz (pozn. 5.8, označený \*, tedy ne k písemce) stojí na téhle myšlence: doplnit bázi průniku jednou na bázi $V$ a jednou na bázi $W$ a ukázat, že všechny tyto vektory dohromady tvoří bázi $V + W$.
 
 > [!lidsky] Lidsky
 > Obdoba $\vert A \cup B\vert = \vert A\vert + \vert B\vert - \vert A \cap B\vert$: směry společné oběma podprostorům se v $\dim V + \dim W$ započítají dvakrát, proto je jednou odečteš. Sjednocení odpovídá součet, prázdné množině triviální podprostor $\{\vec{0}\}$.
@@ -376,8 +379,8 @@ Důkaz zatím nezazněl; myšlenka je doplnit bázi průniku jednou na bázi $V$
 > [!karta|12]- Proč nestačí jako generátory průniku $\operatorname{span} M \cap \operatorname{span} N$ vzít $M \cap N$?
 > Generátory mohou být úplně různé, a podprostory se přesto protínají: dvě roviny v $\mathbb{R}^3$ se čtyřmi různými generátory mají společnou přímku, ale $M \cap N = \emptyset$. Průnik se musí **spočítat soustavou**.
 
-> [!karta|13]- Proč sjednocení bází $V$ a $W$ nemusí být báze $V + W$?
-> **Generuje** (věta o součtu obalů), ale je **LZ, právě když $V \cap W \neq \{\vec{0}\}$**: nenulový vektor průniku jde zapsat z obou bází a rozdíl zápisů je netriviální kombinace nuly.
+> [!karta|13]- Proč spojení bází $V$ a $W$ do jedné posloupnosti nemusí být báze $V + W$?
+> Posloupnost $(\vec{x}_1, \dots, \vec{x}_n, \vec{y}_1, \dots, \vec{y}_m)$ (báze $V$, za ní báze $W$) $V + W$ **generuje** (věta o součtu obalů), ale je **LZ, právě když $V \cap W \neq \{\vec{0}\}$**: nenulový vektor průniku jde zapsat z obou bází a rozdíl zápisů je netriviální kombinace nuly. Jde o posloupnost: jako množina by se společné vektory obou bází slily v jeden (srv. pozn. 5.7).
 
 > [!karta|14]- Proč se dvě roviny přes počátek v $\mathbb{R}^3$ vždy protnou aspoň v přímce?
 > $\dim(V + W) \le 3$, takže **$\dim(V \cap W) = 2 + 2 - \dim(V + W) \ge 1$**.

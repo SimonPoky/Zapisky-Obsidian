@@ -3,7 +3,7 @@ aliases: ["součinu matic", "násobení matic", "maticové násobení", "maticov
 tags: [pojem, LAG]
 predmet: LAG
 prednaska: 8
-zdroj: "kap. 6.2"
+zdroj: "pozn. 6.9 ♥"
 ---
 
 # součin matic
@@ -13,4 +13,4 @@ zdroj: "kap. 6.2"
 
 **Formálně:** Buďte A ∈ 𝔽^{n×m}, B ∈ 𝔽^{m×l}. Součin AB ∈ 𝔽^{n×l} je definován předpisem [AB]ᵢⱼ = Σₖ₌₁ᵐ aᵢₖbₖⱼ (i = 1, …, n; j = 1, …, l). Po sloupcích A(b₁ ⋯ bₗ) = (Ab₁ ⋯ Abₗ); obecně AB ≠ BA
 
-**Definice:** [[LAG 08 – Matice lineárního zobrazení a součin matic#^def-soucin-matic|přednáška 8, 16. 10. 2026]] · kap. 6.2 · po sloupcích: [[LAG 08 – Matice lineárního zobrazení a součin matic#^sloupce-soucinu|A(b₁ ⋯ bₗ) = (Ab₁ ⋯ Abₗ)]]
+**Definice:** [[LAG 08 – Matice lineárního zobrazení a součin matic#^def-soucin-matic|přednáška 8, 16. 10. 2026]] · pozn. 6.9 ♥ · po sloupcích: [[LAG 08 – Matice lineárního zobrazení a součin matic#^sloupce-soucinu|A(b₁ ⋯ bₗ) = (Ab₁ ⋯ Abₗ)]]

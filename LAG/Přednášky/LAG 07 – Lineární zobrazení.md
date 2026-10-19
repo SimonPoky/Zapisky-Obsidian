@@ -2,7 +2,7 @@
 predmet: LAG
 prednaska: 7
 datum: 2026-10-14
-zdroj: "V poznámkách kap. 6.1 (úvod) a 6.2 (skládání)"
+zdroj: "V poznámkách kap. 6.1 (pozn. 6.1–6.8) a 6.2 (pozn. 6.18–6.20)"
 tags: [prednaska, LAG]
 ---
 
@@ -35,7 +35,7 @@ Doteď jsme zkoumali prostory samotné: podprostory, báze, dimenzi a souřadnic
 
 Funkce ze školy přiřazuje číslu číslo. Teď budeme přiřazovat **vektoru vektor**: polynomu polynom, šipce šipku, sloupci sloupec. Zajímají nás jen zobrazení, která nerozbijí to, co z množiny dělá [[lineární prostor]], tedy sčítání a násobení číslem.
 
-> [!definice] Definice · lineární zobrazení · kap. 6.1
+> [!definice] Definice ♥ · pozn. 6.1 · lineární zobrazení
 > Buďte $V$, $W$ lineární prostory nad (stejným) tělesem $\mathbb{F}$. Zobrazení $A : V \to W$ se nazývá *lineární*, jestliže
 >
 > 1. $(\forall \vec{x}, \vec{y} \in V)\ \big(A(\vec{x} + \vec{y}) = A(\vec{x}) + A(\vec{y})\big)$,
@@ -49,7 +49,7 @@ Funkce ze školy přiřazuje číslu číslo. Teď budeme přiřazovat **vektoru
 > [!pozor] Dvě různá plus i dvě různá krát
 > V $A(\vec{x} + \vec{y}) = A(\vec{x}) + A(\vec{y})$ se vlevo sčítá ve $V$, vpravo ve $W$. Třeba u derivace polynomů je to obojí sčítání polynomů, ale u $A : \mathbb{R}^3 \to \mathbb{R}^2$ jde vlevo o trojice a vpravo o dvojice. Totéž platí pro násobení číslem. Proto musí být oba prostory nad **stejným** tělesem: číslo $\alpha$ násobí vlevo vektor z $V$ a vpravo vektor z $W$.
 
-> [!definice] Definice · $\operatorname{Lin}(V, W)$ a lineární operátor · kap. 6.1
+> [!definice] Definice · pozn. 6.1 · $\operatorname{Lin}(V, W)$ a lineární operátor
 > Množinu všech lineárních zobrazení z $V$ do $W$ značíme $\operatorname{Lin}(V, W)$.
 > Jestliže $V = W$, lineární zobrazení $A : V \to V$ se rovněž nazývá *lineární operátor na $V$*. Množinu všech lineárních operátorů na $V$ značíme $\operatorname{Lin}(V) = \operatorname{Lin}(V, V)$.
 
@@ -68,7 +68,7 @@ Funkce ze školy přiřazuje číslu číslo. Teď budeme přiřazovat **vektoru
 
 U [[lineární zobrazení|lineárních zobrazení]] se závorky kolem argumentu vynechávají: $A\vec{x} = A(\vec{x})$, podobně jako se u násobení píše $2x$ místo $2 \cdot x$. Důvod uvidíme v §6: $A\vec{x}$ bude doslova součin matice a vektoru.
 
-> [!definice] Definice · složené zobrazení · kap. 6.2
+> [!definice] Definice · pozn. 6.2 · složené zobrazení
 > Pro zobrazení $A : U \to V$ a $B : V \to W$ píšeme
 >
 > $$
@@ -113,7 +113,7 @@ U [[lineární zobrazení|lineárních zobrazení]] se závorky kolem argumentu 
 > BA(\vec{x} + \vec{y}) = B(A\vec{x} + A\vec{y}) = BA\vec{x} + BA\vec{y}, \qquad BA(\alpha\vec{x}) = B(\alpha A\vec{x}) = \alpha BA\vec{x}.
 > $$
 >
-> V obou rovnostech se nejdřív použila linearita $A$ a pak linearita $B$. O skládání a jeho vztahu k násobení matic je kap. 6.2.
+> V obou rovnostech se nejdřív použila linearita $A$ a pak linearita $B$. O skládání a jeho vztahu k násobení matic je kap. 6.2 (pozn. 6.18–6.19).
 
 ## §3 Základní vlastnosti
 
@@ -192,7 +192,7 @@ U [[lineární zobrazení|lineárních zobrazení]] se závorky kolem argumentu 
 
 ## §4 Příklady
 
-> [!definice] Definice · nulové a identické zobrazení · kap. 6.1
+> [!definice] Definice · pozn. 6.4 · nulové a identické zobrazení
 > - *Nulové zobrazení* $O : V \to W$, $O(\vec{x}) = \vec{o}$, je lineární: $O(\vec{x} + \vec{y}) = \vec{o} = \vec{o} + \vec{o} = O\vec{x} + O\vec{y}$ a $O(\alpha\vec{x}) = \vec{o} = \alpha\vec{o} = \alpha O\vec{x}$.
 > - *Identické zobrazení* $\operatorname{id} : V \to V$, $\operatorname{id}(\vec{x}) = \vec{x}$, je lineární: obě podmínky jsou rovnou $\vec{x} + \vec{y} = \vec{x} + \vec{y}$ a $\alpha\vec{x} = \alpha\vec{x}$.
 
@@ -225,7 +225,7 @@ U [[lineární zobrazení|lineárních zobrazení]] se závorky kolem argumentu 
 
 ### Stejnolehlost
 
-> [!definice] Definice · stejnolehlost · kap. 6.1
+> [!definice] Definice · pozn. 6.4 · stejnolehlost
 > Pro pevné $k \in \mathbb{F}$ je zobrazení $A : V \to V$, $A\vec{x} = k\vec{x}$, lineární. Nazývá se *stejnolehlost* (s koeficientem $k$).
 >
 > **Důkaz linearity:** $A(\vec{x} + \vec{y}) = k(\vec{x} + \vec{y}) = k\vec{x} + k\vec{y} = A\vec{x} + A\vec{y}$ a $A(\alpha\vec{x}) = k\alpha\vec{x} = \alpha k\vec{x} = \alpha A\vec{x}$. V druhém výpočtu se použilo $k\alpha = \alpha k$, tedy komutativita násobení v tělese.
@@ -280,7 +280,7 @@ $D$ je derivace, $S$ primitivní funkce s nulovou konstantou. Obě jsou lineárn
 
 Všechny příklady roviny výše vypadají stejně: každá složka obrazu je součet násobků $x$ a $y$. Obecně:
 
-> [!veta] Tvrzení (zobrazení zadané sloupci) · kap. 6.1
+> [!veta] Tvrzení 6.6 (zobrazení zadané sloupci)
 > ==Buďte $\vec{a}_1, \dots, \vec{a}_n \in \mathbb{F}^m$.== Potom je zobrazení $A : \mathbb{F}^n \to \mathbb{F}^m$ dané předpisem
 >
 > $$
@@ -304,7 +304,7 @@ Všechny příklady roviny výše vypadají stejně: každá složka obrazu je s
 > > A\left(\alpha\begin{pmatrix} x_1 \\ \vdots \\ x_n \end{pmatrix}\right) = A\begin{pmatrix} \alpha x_1 \\ \vdots \\ \alpha x_n \end{pmatrix} = \alpha x_1\vec{a}_1 + \dots + \alpha x_n\vec{a}_n = \alpha(x_1\vec{a}_1 + \dots + x_n\vec{a}_n) = \alpha A\begin{pmatrix} x_1 \\ \vdots \\ x_n \end{pmatrix}.
 > > $$
 > >
-> > Použili jsme jen axiomy v $\mathbb{F}^m$ (distributivitu, komutativitu a asociativitu sčítání).
+> > Použili jsme jen axiomy v $\mathbb{F}^m$: distributivitu vůči součtu skalárů i vůči součtu vektorů, asociativitu násobení skalárem ($(\alpha x_i)\vec{a}_i = \alpha(x_i\vec{a}_i)$) a komutativitu a asociativitu sčítání.
 
 ^veta-zobrazeni-sloupci
 
@@ -346,7 +346,7 @@ $$
 A\begin{pmatrix} x_1 \\ \vdots \\ x_n \end{pmatrix} = A(x_1\vec{e}_1 + \dots + x_n\vec{e}_n) = x_1 A\vec{e}_1 + \dots + x_n A\vec{e}_n = x_1\vec{a}_1 + \dots + x_n\vec{a}_n = (\vec{a}_1 \cdots \vec{a}_n)\begin{pmatrix} x_1 \\ \vdots \\ x_n \end{pmatrix}.
 $$
 
-> [!definice] Definice · matice zobrazení v kanonické bázi · kap. 6.1
+> [!definice] Definice · pozn. 6.6–6.8 · matice zobrazení v kanonické bázi
 > Buď $A : \mathbb{F}^n \to \mathbb{F}^m$ lineární a $\vec{e}_1, \dots, \vec{e}_n$ kanonická báze $\mathbb{F}^n$. Matice
 >
 > $$
@@ -425,7 +425,7 @@ $$
 > [!karta|13]- Proč má matice lineárního zobrazení $\mathbb{F}^n \to \mathbb{F}^m$ rozměr $m \times n$, a ne $n \times m$?
 > Sloupců je tolik, kolik je vektorů $\vec{e}_1, \dots, \vec{e}_n$, tedy **$n$ (dimenze vstupu)**. Každý sloupec $A\vec{e}_i$ leží v $\mathbb{F}^m$, takže má **$m$ složek (dimenze výstupu)**. Proto $m$ řádků a $n$ sloupců.
 
-> [!karta|14]- Proč v podmínce „$V \le L$ ⟺ $(\forall \alpha)(\forall \vec{x}, \vec{y} \in V)\ (\alpha\vec{x} + \vec{y} \in V)$“ chybí předpoklad a který?
+> [!karta|14]- Jaký předpoklad chybí v ekvivalenci „$V \le L$ ⟺ $(\forall \alpha)(\forall \vec{x}, \vec{y} \in V)\ (\alpha\vec{x} + \vec{y} \in V)$“ a proč je nutný?
 > **Neprázdnost** $V$. Prázdná množina splňuje uzavřenost naprázdno, ale podprostor to není (podprostor obsahuje $\vec{o}$). Ve verzi s $n \in \mathbb{N}_0$ to řeší případ $n = 0$: prázdná kombinace $\vec{o}$ musí ležet ve $V$.
 
 ### Příklady na procvičení

@@ -3,7 +3,7 @@ aliases: ["součet podprostorů je podprostor"]
 tags: [pojem, LAG]
 predmet: LAG
 prednaska: 6
-zdroj: "kap. 5"
+zdroj: "pozn. 5.4"
 ---
 
 # věta o součtu podprostorů
@@ -13,4 +13,4 @@ zdroj: "kap. 5"
 
 **Formálně:** V, W ≤ L ⇒ V + W ≤ L
 
-**Definice:** [[LAG 06 – Souřadnice, součet a průnik podprostorů#^veta-soucet|přednáška 6, 9. 10. 2026]] · kap. 5
+**Definice:** [[LAG 06 – Souřadnice, součet a průnik podprostorů#^veta-soucet|přednáška 6, 9. 10. 2026]] · pozn. 5.4
