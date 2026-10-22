@@ -10,7 +10,7 @@ tags: [predmet, MA1]
 
 [Handouty ke všem přednáškám (PDF) ↗](https://math.fel.cvut.cz/en/people/velebil/files/b0b01ma1/ma1_handout_all.pdf) · [Stránka předmětu ↗](https://math.fel.cvut.cz/en/people/velebil/teaching/b0b01ma1.html) · [Požadavky ↗](https://math.fel.cvut.cz/en/people/velebil/teaching/b0b01ma1_pozadavky.html) · [Ukázka zkoušky ↗](https://math.fel.cvut.cz/en/people/velebil/files/b0b01ma1/ma1_ukazka_2026.pdf) · [Ukázka testu 1 ↗](https://math.fel.cvut.cz/en/people/velebil/files/b0b01ma1/ma1_pisemka01_ukazka_2026.pdf) · [Ukázka testu 2 ↗](https://math.fel.cvut.cz/en/people/velebil/files/b0b01ma1/ma1_pisemka02_ukazka_2026.pdf)
 
-**Kartičky:** 215 povinných + 66 příkladů · [otevřít aplikaci ↗](https://claude.ai/artifact/3CKfKeuwtwrWiz3FSfSh5B) · [[Archiv přednášek#Kartičky|jak to funguje]]
+**Kartičky:** 238 povinných + 76 příkladů · [otevřít aplikaci ↗](https://claude.ai/artifact/3CKfKeuwtwrWiz3FSfSh5B) · [[Archiv přednášek#Kartičky|jak to funguje]]
 
 ## Přednášky
 
@@ -23,6 +23,7 @@ tags: [predmet, MA1]
 - **14. 10. 2026** [[MA1 07 – Derivace a Carathéodoryho trik|Derivace a Carathéodoryho trik]] · spojitost inverzní funkce, derivace v bodě, sečna a tečna, |x| v nule, Carathéodoryho trik, derivace ⇒ spojitost, xⁿ, aritmetika derivací, Chain Rule
 - **15. 10. 2026** [[MA1 08 – Věty o střední hodnotě a l'Hospitalovo pravidlo|Věty o střední hodnotě a l'Hospitalovo pravidlo]] · derivace na [a; b], Rolle, determinant D(x), Lagrange, f′ = 0 ⇒ konstanta, Cauchy, l'Hospital, implikace ne ekvivalence, 0 · ∞ a 1^∞, lineární aproximace
 - **21. 10. 2026** [[MA1 09 – Taylorův polynom, extrémy a monotonie|Taylorův polynom, extrémy a monotonie]] · f⁽ᵏ⁾, Taylorův polynom, základní věta (důkaz n = 2), eˣ, odhad chyby, lokální extrémy, stacionární bod, f′(p) = 0 v extrému, max a min na [a; b], monotonie a znaménko f′, x³
+- **22. 10. 2026** [[MA1 10 – Druhá derivace, konvexita a inflexe|Druhá derivace, konvexita a inflexe]] · f′ v praxi, x³ − 6x² + 10, extrém ze změny monotonie, test f″ (důkaz), f″(p) = 0, konvexní a konkávní funkce, konvexita přes f′ a f″, x⁴, inflexní bod, Weierstrass
 
 ## Slovníček pojmů
 
@@ -46,11 +47,16 @@ tags: [predmet, MA1]
 - [[Heineova věta]] · Spojitost v p ⇔ f(xₙ) → f(p) pro každou xₙ → p; jedna špatná posloupnost dokáže nespojitost.
 - [[horní odhad]] · Strop, pod který se vejde celá množina; dolní odhad je podlaha. Nemusí ležet v množině ani existovat.
 - [[infimum]] · Nejvyšší podlaha, největší dolní odhad. V 𝒫(U) průnik, v ℕ minimum.
+- [[inflexní bod]] · Bod, kde má f′ ostrý lokální extrém; graf se tam přehne z konkávního na konvexní nebo naopak.
 - [[inverzní funkce]] · Funkce pozpátku: f⁻¹(y) je to jediné x s f(x) = y. Existuje jen u prosté funkce.
 - [[iracionální číslo]] · Reálné číslo, které nejde napsat zlomkem, např. √2. V ℚ je na jeho místě díra.
 - [[jednostranná derivace]] · Derivace jen zleva f′₋(p) nebo zprava f′₊(p); oboustranná existuje, když se shodují.
 - [[jednostranná limita]] · Limita jen zleva (x → p⁻) nebo zprava (x → p⁺); oboustranná existuje, když se shodují.
 - [[jednostranná spojitost]] · Spojitost jen zleva nebo jen zprava; oboustranná platí, když platí obě.
+- [[konkávní funkce]] · Kopec: tětiva pod grafem; f konkávní ⇔ −f konvexní.
+- [[konvexita pomocí druhé derivace]] · f″ ≥ 0 ⇒ konvexní, f″ > 0 ⇒ ryze konvexní; naopak ne (x⁴).
+- [[konvexita pomocí první derivace]] · Konvexní ⇔ f′ neklesající, ryze konvexní ⇔ f′ rostoucí.
+- [[konvexní funkce]] · Miska: tětiva leží nad grafem, f(ax₁ + (1 − a)x₂) ≤ af(x₁) + (1 − a)f(x₂).
 - [[l'Hospitalovo pravidlo]] · U typu 0/0 a ?/|±∞| je lim f/g = lim f′/g′, pokud ta druhá existuje. Jen implikace.
 - [[Lagrangeova věta]] · Někde uvnitř je tečna rovnoběžná se sečnou: (f(b) − f(a))/(b − a) = f′(t).
 - [[limita posloupnosti z limity funkce]] · má-li f(x) limitu pro x → +∞, má stejnou limitu i posloupnost f(n)
@@ -60,6 +66,8 @@ tags: [predmet, MA1]
 - [[linearita limity]] · Limita lineární kombinace = kombinace (vlastních) limit.
 - [[lineární aproximace]] · Tečna jako náhrada funkce: f(x) ≈ f(p) + f′(p)(x − p), chyba je zanedbatelná vůči x − p.
 - [[lokální extrém]] · Lokální minimum nebo lokální maximum: v blízkém okolí bodu je funkce nejníž nebo nejvýš.
+- [[lokální extrém ze změny monotonie]] · Z klesání do růstu je dno, z růstu do klesání vrchol; bez změny znaménka f′ extrém není.
+- [[lokální extrémy pomocí druhé derivace]] · f′(p) = 0 a f″(p) > 0 ⇒ ostré minimum, f″(p) < 0 ⇒ ostré maximum, f″(p) = 0 nic neříká.
 - [[lokální maximum]] · Vrchol kopce: dost blízko p není žádná hodnota větší než f(p).
 - [[lokální minimum]] · Dno důlku: dost blízko p není žádná hodnota menší než f(p).
 - [[lokální systém intervalů]] · Každý bod [a; b] má kolem sebe nějaký „dobrý“ úsek ze systému.
@@ -71,6 +79,7 @@ tags: [predmet, MA1]
 - [[nerovnost ve směru]] · Nerovnost, která platí jen „nakonec“, na jednom kusu směru blízko cíle.
 - [[neurčitý výraz]] · 0/0, ∞/∞, 0 · ∞, 1^∞…: z limit částí nepoznáš výsledek, musí se počítat dál.
 - [[nevlastní limita]] · Limita rovná ±∞. Vlastní je reálné číslo; rozhoduje výsledek, ne směr.
+- [[nutná podmínka inflexe]] · Inflexe v p ⇒ f″(p) = 0; naopak ne (x⁴ v nule).
 - [[nutná podmínka lokálního extrému]] · Lokální extrém a existující f′(p) ⇒ f′(p) = 0. Obráceně neplatí (x³ v nule).
 - [[okolí]] · Terč kolem cíle: (L − ε; L + ε), u +∞ interval (ε; +∞].
 - [[omezenost ve směru]] · |f| ≤ c na některém kusu směru.
@@ -90,6 +99,8 @@ tags: [predmet, MA1]
 - [[rozšířená přirozená čísla]] · ℕ s umělým stropem +∞, aby každá množina měla supremum. 0 · ∞ se nedefinuje.
 - [[rozšířená reálná čísla]] · ℝ ∪ {−∞, +∞}; −∞ = (∅, ℚ), +∞ = (ℚ, ∅). Každá množina tu má supremum.
 - [[Russellův paradox]] · „Množina všech množin, které neobsahují samy sebe“ nemůže existovat.
+- [[ryze konkávní funkce]] · Kopec bez rovných kusů: tětiva přísně pod grafem.
+- [[ryze konvexní funkce]] · Miska bez rovných kusů: tětiva přísně nad grafem (x₁ ≠ x₂, a ∈ (0; 1)).
 - [[ryze monotónní funkce]] · Rostoucí (x₁ < x₂ ⇒ f(x₁) < f(x₂)) nebo klesající; rostoucí je výtah jen nahoru.
 - [[shora omezená množina]] · Množina se stropem: existuje u ≥ všem prvkům. Zdola omezená má podlahu.
 - [[směr]] · Odkud se blížíme k cíli: vnořené neprázdné množiny s prázdným průnikem, cíl do nich nepatří.

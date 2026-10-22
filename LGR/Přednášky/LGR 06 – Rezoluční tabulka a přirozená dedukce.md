@@ -399,4 +399,4 @@ Pravidlo $\Rightarrow$i taky **respektuje pravdivost**. Tady je schovaný induk�
 > Podle věty o sémantickém důkazu sporem stačí ukázat, že $\{\neg a \vee b,\ \neg b \vee c,\ \neg(a \Rightarrow c)\}$ je nesplnitelná; $\neg(a \Rightarrow c) \mathrel{\vert\!=\!\vert} a \wedge \neg c$ dá klauzule $a$, $\neg c$. Tabulka: $a$: $R_a = \{b\}$, $S' = \{b, \neg b \vee c, \neg c\}$; $b$: $S'' = \{c, \neg c\}$; $c$: $\{\mathrm{ff}\}$. Nesplnitelná, tedy **důsledek platí**.
 
 ---
-← [[LGR 05 – Rezoluční princip|9. 10. 2026 Rezoluční princip]]
+← [[LGR 05 – Rezoluční princip|9. 10. 2026 Rezoluční princip]] · [[LGR 07 – Odvozená pravidla, korektnost a úplnost|22. 10. 2026 Odvozená pravidla, korektnost a úplnost]] →

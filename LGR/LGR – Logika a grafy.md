@@ -10,7 +10,7 @@ tags: [predmet, LGR]
 
 [Přednášky: prezentace a videa ↗](https://math.fel.cvut.cz/en/people/gollova/lgr/lgr-prednaska.html) · [Prezentace 1 (PDF) ↗](https://math.fel.cvut.cz/en/people/gollova/lgr/lgr_1.pdf) · [Stránka předmětu ↗](https://math.fel.cvut.cz/en/people/gollova/lgr.html) · [Literatura ↗](https://math.fel.cvut.cz/en/people/gollova/lgr/lgr-literatura.html) · [Testy v Moodle ↗](https://moodle.fel.cvut.cz/course/view.php?id=10550) · [Videopřednášky (YouTube) ↗](https://www.youtube.com/playlist?list=PLQL6z4JeTTQkjV5JYF0gB599ekq4zFfPK)
 
-**Kartičky:** 132 povinných + 41 příkladů · [otevřít aplikaci ↗](https://claude.ai/artifact/3CKfKeuwtwrWiz3FSfSh5B) · [[Archiv přednášek#Kartičky|jak to funguje]]
+**Kartičky:** 171 povinných + 49 příkladů · [otevřít aplikaci ↗](https://claude.ai/artifact/3CKfKeuwtwrWiz3FSfSh5B) · [[Archiv přednášek#Kartičky|jak to funguje]]
 
 ## Přednášky
 
@@ -20,6 +20,7 @@ tags: [predmet, LGR]
 - **8. 10. 2026** [[LGR 04 – Sémantický důsledek a klauzální tvar|Sémantický důsledek a klauzální tvar]] · splnitelnost množiny, prázdná množina, S ⊨ φ, důkaz sporem, klauzální tvar, rezolventa
 - **9. 10. 2026** [[LGR 05 – Rezoluční princip|Rezoluční princip]] · R*(S), zamítací strom, rezoluční princip, 3ⁿ klauzulí, eliminace proměnné, rezoluční tabulka
 - **15. 10. 2026** [[LGR 06 – Rezoluční tabulka a přirozená dedukce|Rezoluční tabulka a přirozená dedukce]] · tabulka na příkladu, svědek pozpátku, S ⊢ φ, korektní a úplný systém, přirozená dedukce, ∧i, ⇒i, boxy, odvození
+- **22. 10. 2026** [[LGR 07 – Odvozená pravidla, korektnost a úplnost|Odvozená pravidla, korektnost a úplnost]] · ¬¬i, MT, RAA, TND, ⊣⊢, kompaktnost, věta o dedukci, indukce, korektnost, úplnost, literály řádku
 
 ## Plán semestru
 
@@ -51,6 +52,7 @@ tags: [predmet, LGR]
 - [[disjunktivní normální forma]] · DNF: disjunkce mintermů. Má ji každá formule.
 - [[ekvisplnitelné množiny]] · Obě splnitelné, nebo obě ne; svědky se lišit mohou.
 - [[eliminace disjunkce]] · ∨e, rozbor případů: platí-li φ ∨ ψ a z každého případu plyne χ, platí χ.
+- [[eliminace dvojité negace]] · ¬¬e: z ¬¬φ odvoď φ (jen klasická logika).
 - [[eliminace konjunkce]] · ∧e₁, ∧e₂: z φ ∧ ψ smíš vzít φ i ψ.
 - [[eliminace negace]] · ¬e: φ a ¬φ naráz dají spor ⊥.
 - [[eliminace sporu]] · ⊥e: ze sporu plyne cokoli.
@@ -63,13 +65,18 @@ tags: [predmet, LGR]
 - [[konjunktivní normální forma]] · CNF: konjunkce maxtermů. Má ji každá formule.
 - [[kontradikce]] · Formule nepravdivá v každém ohodnocení, např. a ∧ ¬a.
 - [[korektní důkazový systém]] · Co jde odvodit, to platí: S ⊢ φ ⇒ S ⊨ φ.
+- [[lemma o literálech řádku]] · u(φ) = 1 ⇒ L_u ⊢ φ, jinak L_u ⊢ ¬φ.
 - [[literál]] · Proměnná nebo její negace: a, ¬a.
+- [[literály řádku]] · L_u: x, nebo ¬x podle u(x); řádek tabulky jako množina literálů.
+- [[logická ekvivalence]] · φ ⊣⊢ ψ: každá jde odvodit z druhé; totéž co |=| díky úplnosti.
 - [[logická proměnná]] · Písmenko za jednoduchý výrok; atomická formule, list stromu.
 - [[logický důsledek]] · S ⊢ φ: φ jde z S odvodit podle pravidel (odvoditelnost, syntax).
 - [[maxterm]] · Disjunkce literálů (nebo literál, nebo ff), též klauzule.
 - [[minterm]] · Konjunkce literálů (nebo literál, nebo tt), např. a ∧ ¬b.
 - [[modus ponens]] · Z a a a ⇒ b plyne b.
+- [[modus tollens]] · MT: z φ ⇒ ψ a ¬ψ plyne ¬φ.
 - [[obměněná implikace]] · φ ⇒ ψ ⊨⊨ ¬ψ ⇒ ¬φ; základ důkazu obměnou.
+- [[odvozené pravidlo]] · Zkratka poskládaná ze základních pravidel; nic nového nedokáže.
 - [[odvození]] · Důkaz po řádcích, každý řádek s pravidlem a odkazem; na konci φ, boxy zavřené.
 - [[Peirceova šipka]] · NOR, „ani jedno“. Sama tvoří úplný systém spojek.
 - [[pomocný předpoklad]] · Lokální předpoklad otevírá box; jeho formule platí jen uvnitř boxu.
@@ -78,17 +85,25 @@ tags: [predmet, LGR]
 - [[pravidlo slučování]] · (α ∨ x) ∧ (α ∨ ¬x) ⊨⊨ α a duálně; proměnná, na které nezáleží, zmizí.
 - [[prázdná klauzule]] · Disjunkce bez literálů, ff; nepravdivá vždy. Vzniká jako res(x, ¬x).
 - [[příliš agresivní systém]] · Odvodí i to, co neplyne; nekorektní.
+- [[princip silné indukce]] · Krok smí použít všechna čísla n₀, …, n, ne jen n.
+- [[princip slabé indukce]] · Domino: základ n₀ a krok z n na n + 1.
 - [[přirozená dedukce]] · Důkazový systém bez axiomů: ke každé spojce pravidlo zavedení (i) a odstranění (e).
+- [[reductio ad absurdum]] · RAA, důkaz sporem: z ¬φ vyjde spor, tedy φ.
 - [[rezoluční princip]] · Konečná S je splnitelná, právě když ff ∉ R*(S).
 - [[rezoluční tabulka]] · Vyrezolvuje proměnné jednu po druhé; konec {ff} = nesplnitelná, ∅ = splnitelná.
 - [[rezolventa]] · Ze α ∨ x a β ∨ ¬x vznikne α ∨ β; plyne z obou. Prázdná rezolventa ff znamená nesplnitelnost.
 - [[rovnost formulí]] · dvě formule jsou si rovny, jen když se píšou znak po znaku stejně
+- [[sémantická věta o kompaktnosti]] · S ⊨ φ, právě když S′ ⊨ φ pro konečnou S′ ⊆ S; nejtěžší krok úplnosti.
 - [[sémantický důsledek]] · S ⊨ φ: kdykoli platí všechny předpoklady, platí i závěr; u(S) ≤ u(φ).
 - [[Shefferova čárka]] · NAND, „ne obojí zároveň“. Sama tvoří úplný systém spojek.
+- [[slabá věta o úplnosti]] · ⊢ φ ⟺ ⊨ φ: věty výrokové logiky jsou právě tautologie.
 - [[splnitelná formule]] · Pravdivá aspoň v jednom ohodnocení.
 - [[splnitelná množina formulí]] · Existuje ohodnocení, kde platí všechny formule naráz. Prázdná množina je splnitelná.
 - [[sporný důkazový systém]] · Odvodí úplně všechno, i φ a ¬φ; nic nerozliší.
+- [[strukturální indukce]] · Vlastnost pro proměnné a její zachování každou spojkou ⇒ platí pro všechny formule.
 - [[svědek splnitelnosti]] · Ohodnocení, kde platí celá množina; z rezoluční tabulky se hledá pozpátku.
+- [[syntaktická věta o dedukci]] · S ∪ {φ} ⊢ ψ, právě když S ⊢ φ ⇒ ψ.
+- [[syntaktická věta o kompaktnosti]] · S ⊢ φ, právě když S′ ⊢ φ pro nějakou konečnou S′ ⊆ S.
 - [[syntaktický strom]] · Stavba formule: listy proměnné, kořen poslední spojka, podstromy podformule.
 - [[tautologická ekvivalence]] · Dvě formule se stejnou hodnotou v každém ohodnocení (stejný sloupec tabulky).
 - [[tautologie]] · Formule pravdivá v každém ohodnocení, např. a ∨ ¬a.
@@ -97,14 +112,21 @@ tags: [predmet, LGR]
 - [[úplný systém logických spojek]] · Spojky, kterými jde zapsat každá booleovská funkce: {¬, ∧, ∨}, {¬, ⇒}, {|}, {↓}.
 - [[věta o dedukci]] · Předpoklad jde přesunout do závěru: S ∪ {φ} ⊨ ψ iff S ⊨ φ ⇒ ψ.
 - [[věta o eliminaci proměnné]] · S splnitelná iff S₀ ∪ Rₓ splnitelná; klauzule s x jde po rezoluci zahodit.
+- [[věta o korektnosti]] · S ⊢ φ ⇒ S ⊨ φ: přirozená dedukce nedokáže nepravdu.
 - [[věta o normálních formách]] · Ke každé formuli existuje ekvivalentní DNF i CNF (ne jednoznačně).
 - [[věta o sémantickém důkazu sporem]] · S ⊨ φ právě když S ∪ {¬φ} je nesplnitelná.
+- [[věta o úplnosti]] · S ⊢ φ ⟺ S ⊨ φ: odvoditelné = pravdivé.
+- [[věta výrokové logiky]] · Formule φ s ⊢ φ, dokazatelná bez předpokladů.
 - [[vylučovací nebo]] · XOR, „buď, anebo“: pravdivé, když se hodnoty liší.
 - [[výrok]] · Oznamovací věta, u které se dá rozhodnout o pravdivosti.
 - [[základní tvar klauzulí]] · Každá proměnná je v klauzuli nejvýš jednou; bez tautologií.
+- [[zákon vyloučeného třetího]] · TND: φ ∨ ¬φ platí vždy; základ rozboru případů.
 - [[zamítací strom]] · Strom rezolucí od klauzulí z S ke kořeni ff; důkaz nesplnitelnosti.
+- [[zavedení disjunkce]] · ∨i: z φ smíš odvodit φ ∨ ψ i ψ ∨ φ.
+- [[zavedení dvojité negace]] · ¬¬i: z φ odvoď ¬¬φ (odvozené pravidlo).
 - [[zavedení implikace]] · ⇒i, přímý důkaz: předpokládej φ v boxu, odvoď ψ, máš φ ⇒ ψ.
 - [[zavedení konjunkce]] · ∧i: z φ a ψ odvoď φ ∧ ψ.
+- [[zavedení negace]] · ¬i: když z předpokladu φ vyjde spor, platí ¬φ.
 
 ## Jak se předmět hodnotí
 

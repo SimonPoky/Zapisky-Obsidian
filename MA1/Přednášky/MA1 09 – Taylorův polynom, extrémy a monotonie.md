@@ -333,7 +333,7 @@ Cíl (handout 4A, slajd 15): najít polynom $T_n(f, p)$ stupně nejvýš $n$, kt
 > Věta mluví o (otevřeném) **intervalu**. Na sjednocení intervalů neplatí: $f(x) = -\frac{1}{x}$ má $f'(x) = \frac{1}{x^2} > 0$ na $(-\infty; 0) \cup (0; +\infty)$, ale $f(-1) = 1 > -1 = f(1)$, takže na tomto sjednocení rostoucí není. Rostoucí je zvlášť na $(-\infty; 0)$ a zvlášť na $(0; +\infty)$.
 
 > [!navic] Co bude dál · handout 4B, slajdy 11–18
-> Praktická verze věty: $f' > 0$ na $I$ ⇒ rostoucí, $f' < 0$ ⇒ klesající; ve stacionárním bodě, kde se neklesání mění v nerůst, je lokální maximum (a naopak minimum). Dál přijde druhá derivace: $f''(p) > 0$ ve stacionárním bodě znamená ostré lokální minimum, $f''(p) < 0$ ostré maximum, a pomocí $f''$ se popíše konvexita, konkávnost a inflexní body.
+> Praktická verze věty: $f' > 0$ na $I$ ⇒ rostoucí, $f' < 0$ ⇒ klesající; ve stacionárním bodě, kde se neklesání mění v nerůst, je lokální maximum (a naopak minimum). Dál přijde druhá derivace: $f''(p) > 0$ ve stacionárním bodě znamená ostré lokální minimum, $f''(p) < 0$ ostré maximum, a pomocí $f''$ se popíše konvexita, konkávnost a inflexní body. Pokračuje v [[MA1 10 – Druhá derivace, konvexita a inflexe|MA1 10]].
 
 ## Kartičky
 
@@ -427,4 +427,4 @@ Cíl (handout 4A, slajd 15): najít polynom $T_n(f, p)$ stupně nejvýš $n$, kt
 > $f(0) = 1$, $f'(x) = \frac{1}{2}(1 + x)^{-1/2}$, $f''(x) = -\frac{1}{4}(1 + x)^{-3/2}$, tedy $f'(0) = \frac{1}{2}$, $f''(0) = -\frac{1}{4}$ a $T_2(f, 0)(x) = 1 + \frac{x}{2} - \frac{x^2}{8}$. Čitatel je $\big(f(x) - T_2(f, 0)(x)\big) - \frac{x^2}{8}$, takže limita je $\lim \frac{f(x) - T_2(f, 0)(x)}{x^2} - \frac{1}{8} = 0 - \frac{1}{8}$ podle základní věty o Taylorově polynomu. **Výsledek $-\frac{1}{8}$.**
 
 ---
-← [[MA1 08 – Věty o střední hodnotě a l'Hospitalovo pravidlo|15. 10. 2026 Věty o střední hodnotě a l'Hospitalovo pravidlo]]
+← [[MA1 08 – Věty o střední hodnotě a l'Hospitalovo pravidlo|15. 10. 2026 Věty o střední hodnotě a l'Hospitalovo pravidlo]] · [[MA1 10 – Druhá derivace, konvexita a inflexe|22. 10. 2026 Druhá derivace, konvexita a inflexe]] →
