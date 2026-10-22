@@ -428,4 +428,4 @@ $$
 > Typ $(+\infty) \cdot 0$; přepiš jako $\frac{e^{1/x} - 1}{1/x}$, typ $\frac{0}{0}$. Podíl derivací: $\frac{e^{1/x} \cdot \left(-\frac{1}{x^2}\right)}{-\frac{1}{x^2}} = e^{1/x} \to e^0 = 1$ (spojitost $e^x$). Podle l'Hospitalova pravidla **je limita rovna $1$**.
 
 ---
-← [[MA1 07 – Derivace a Carathéodoryho trik|14. 10. 2026 Derivace a Carathéodoryho trik]]
+← [[MA1 07 – Derivace a Carathéodoryho trik|14. 10. 2026 Derivace a Carathéodoryho trik]] · [[MA1 09 – Taylorův polynom, extrémy a monotonie|21. 10. 2026 Taylorův polynom, extrémy a monotonie]] →

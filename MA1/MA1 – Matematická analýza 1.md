@@ -10,7 +10,7 @@ tags: [predmet, MA1]
 
 [Handouty ke všem přednáškám (PDF) ↗](https://math.fel.cvut.cz/en/people/velebil/files/b0b01ma1/ma1_handout_all.pdf) · [Stránka předmětu ↗](https://math.fel.cvut.cz/en/people/velebil/teaching/b0b01ma1.html) · [Požadavky ↗](https://math.fel.cvut.cz/en/people/velebil/teaching/b0b01ma1_pozadavky.html) · [Ukázka zkoušky ↗](https://math.fel.cvut.cz/en/people/velebil/files/b0b01ma1/ma1_ukazka_2026.pdf) · [Ukázka testu 1 ↗](https://math.fel.cvut.cz/en/people/velebil/files/b0b01ma1/ma1_pisemka01_ukazka_2026.pdf) · [Ukázka testu 2 ↗](https://math.fel.cvut.cz/en/people/velebil/files/b0b01ma1/ma1_pisemka02_ukazka_2026.pdf)
 
-**Kartičky:** 186 povinných + 54 příkladů · [otevřít aplikaci ↗](https://claude.ai/artifact/3CKfKeuwtwrWiz3FSfSh5B) · [[Archiv přednášek#Kartičky|jak to funguje]]
+**Kartičky:** 215 povinných + 66 příkladů · [otevřít aplikaci ↗](https://claude.ai/artifact/3CKfKeuwtwrWiz3FSfSh5B) · [[Archiv přednášek#Kartičky|jak to funguje]]
 
 ## Přednášky
 
@@ -22,6 +22,7 @@ tags: [predmet, MA1]
 - **8. 10. 2026** [[MA1 06 – Spojitost a spojité funkce na intervalu|Spojitost a spojité funkce na intervalu]] · ε-δ, jednostranná spojitost, složená funkce, Heine, sin(1/x), Creeping Theorem, IVT, BT, EVT, PIT, pevný bod
 - **14. 10. 2026** [[MA1 07 – Derivace a Carathéodoryho trik|Derivace a Carathéodoryho trik]] · spojitost inverzní funkce, derivace v bodě, sečna a tečna, |x| v nule, Carathéodoryho trik, derivace ⇒ spojitost, xⁿ, aritmetika derivací, Chain Rule
 - **15. 10. 2026** [[MA1 08 – Věty o střední hodnotě a l'Hospitalovo pravidlo|Věty o střední hodnotě a l'Hospitalovo pravidlo]] · derivace na [a; b], Rolle, determinant D(x), Lagrange, f′ = 0 ⇒ konstanta, Cauchy, l'Hospital, implikace ne ekvivalence, 0 · ∞ a 1^∞, lineární aproximace
+- **21. 10. 2026** [[MA1 09 – Taylorův polynom, extrémy a monotonie|Taylorův polynom, extrémy a monotonie]] · f⁽ᵏ⁾, Taylorův polynom, základní věta (důkaz n = 2), eˣ, odhad chyby, lokální extrémy, stacionární bod, f′(p) = 0 v extrému, max a min na [a; b], monotonie a znaménko f′, x³
 
 ## Slovníček pojmů
 
@@ -39,6 +40,7 @@ tags: [predmet, MA1]
 - [[Dedekindův řez]] · Střih racionální přímky na L a U; √2 = (L, U). Reálná čísla jsou všechny řezy.
 - [[derivace na intervalu]] · Derivace uvnitř [a; b] a jednostranné na krajích; taková funkce je na [a; b] spojitá.
 - [[derivace v bodě]] · Okamžitá rychlost změny: limita (f(p+h) − f(p))/h, směrnice tečny; musí být reálné číslo.
+- [[derivace vyššího řádu]] · Derivace derivace: f″ = (f′)′, obecně f⁽ᵏ⁾; „alespoň n derivací v p“ = existuje f⁽ⁿ⁾(p).
 - [[důsledek Rolleovy věty]] · Determinant D(x) se sloupci v a, x, b je na krajích nulový, takže D′(t) = 0; z něj plyne Lagrange i Cauchy.
 - [[Hasseův diagram]] · Obrázek uspořádání: menší prvky níž, čáry jen mezi přímými sousedy.
 - [[Heineova věta]] · Spojitost v p ⇔ f(xₙ) → f(p) pro každou xₙ → p; jedna špatná posloupnost dokáže nespojitost.
@@ -57,16 +59,22 @@ tags: [predmet, MA1]
 - [[limita ve směru]] · Ke každému terči kolem L existuje kus směru, jehož celý obraz padne do terče. Jedna definice pro x → p, n → ∞ i x → −∞.
 - [[linearita limity]] · Limita lineární kombinace = kombinace (vlastních) limit.
 - [[lineární aproximace]] · Tečna jako náhrada funkce: f(x) ≈ f(p) + f′(p)(x − p), chyba je zanedbatelná vůči x − p.
+- [[lokální extrém]] · Lokální minimum nebo lokální maximum: v blízkém okolí bodu je funkce nejníž nebo nejvýš.
+- [[lokální maximum]] · Vrchol kopce: dost blízko p není žádná hodnota větší než f(p).
+- [[lokální minimum]] · Dno důlku: dost blízko p není žádná hodnota menší než f(p).
 - [[lokální systém intervalů]] · Každý bod [a; b] má kolem sebe nějaký „dobrý“ úsek ze systému.
 - [[maximum]] · Horní odhad, který sám leží v množině. Když existuje, je to i supremum.
 - [[minimum]] · Dolní odhad, který sám leží v množině. Každá neprázdná podmnožina ℕ ho má.
 - [[následník]] · Další číslo v řadě: succ(n) = n ∪ {n}, tedy n + 1.
+- [[neklesající funkce]] · x₁ < x₂ ⇒ f(x₁) ≤ f(x₂); rovné úseky povolené. Nerostoucí obráceně, monotónní = jedno z toho.
 - [[neklesající posloupnost]] · Členy se nezmenšují; limita je vždy supremum (i +∞).
 - [[nerovnost ve směru]] · Nerovnost, která platí jen „nakonec“, na jednom kusu směru blízko cíle.
 - [[neurčitý výraz]] · 0/0, ∞/∞, 0 · ∞, 1^∞…: z limit částí nepoznáš výsledek, musí se počítat dál.
 - [[nevlastní limita]] · Limita rovná ±∞. Vlastní je reálné číslo; rozhoduje výsledek, ne směr.
+- [[nutná podmínka lokálního extrému]] · Lokální extrém a existující f′(p) ⇒ f′(p) = 0. Obráceně neplatí (x³ v nule).
 - [[okolí]] · Terč kolem cíle: (L − ε; L + ε), u +∞ interval (ε; +∞].
 - [[omezenost ve směru]] · |f| ≤ c na některém kusu směru.
+- [[ostrý lokální extrém]] · Kolem p jsou všechny hodnoty přísně větší (ostré minimum) nebo přísně menší (ostré maximum).
 - [[podmnožina]] · A ⊆ B: všechno z A je i v B. Prázdná množina je podmnožinou čehokoliv.
 - [[podposloupnost]] · Výběr nekonečně mnoha členů ve stejném pořadí; má stejnou limitu jako celá posloupnost.
 - [[posloupnost]] · Funkce na nekonečné podmnožině ℕ, píše se aₙ. Pro limitu rozhoduje jen „ocas“.
@@ -87,7 +95,10 @@ tags: [predmet, MA1]
 - [[směr]] · Odkud se blížíme k cíli: vnořené neprázdné množiny s prázdným průnikem, cíl do nich nepatří.
 - [[spojitost na intervalu]] · Spojitá uvnitř intervalu a v krajních bodech jednostranně.
 - [[spojitost v bodě]] · Limita v bodě p existuje a rovná se f(p): graf jde přes p bez zvednutí tužky.
+- [[stacionární bod]] · Bod s f′(p) = 0, vodorovná tečna. Nemusí to být extrém.
 - [[supremum]] · Nejnižší strop, nejmenší horní odhad. Existuje i tam, kde chybí maximum.
+- [[Taylorův polynom]] · Tₙ(f, p)(x) = Σ f⁽ᵏ⁾(p)/k! · (x − p)ᵏ: polynom se stejnými derivacemi v p do řádu n jako f.
+- [[Taylorův polynom exponenciály]] · Tₙ(eˣ, 0)(x) = 1 + x + x²/2! + … + xⁿ/n!; doporučeno zapamatovat.
 - [[tečna]] · Limitní poloha sečen v bodě [p; f(p)]: y = f(p) + f′(p)(x − p).
 - [[uspořádaná množina]] · Množina s pravidlem „kdo je pod kým“: reflexivní, tranzitivní, antisymetrické.
 - [[věta o aritmetice derivací]] · (rf + sg)′ = rf′ + sg′, (fg)′ = f′g + fg′, (f/g)′ = (f′g − fg′)/g².
@@ -99,7 +110,9 @@ tags: [predmet, MA1]
 - [[věta o jednoznačnosti limity]] · Limita ve směru je nejvýš jedna.
 - [[věta o limitě monotónní posloupnosti]] · Monotónní posloupnost má limitu: supremum, resp. infimum členů.
 - [[věta o mezihodnotě]] · IVT: spojitá funkce na [a; b] nabude každé hodnoty mezi f(a) a f(b).
+- [[věta o největší a nejmenší hodnotě]] · Na [a; b] leží maximum i minimum v krajním bodě nebo ve stacionárním bodě uvnitř.
 - [[věta o nulové derivaci]] · f′ = 0 na intervalu ⇒ f je konstantní. Na sjednocení intervalů neplatí.
+- [[věta o odhadu chyby Taylorova polynomu]] · f(x) − Tₙ(f, p)(x) = f⁽ⁿ⁺¹⁾(t)/(n + 1)! · (x − p)ⁿ⁺¹ pro nějaké t mezi x a p.
 - [[věta o omezenosti funkce s vlastní limitou]] · Vlastní limita ⇒ funkce je ve směru omezená.
 - [[věta o omezenosti spojité funkce]] · BT: spojitá funkce na [a; b] je omezená.
 - [[věta o pevném bodě]] · Spojitá f: [a; b] → [a; b] má bod s f(t) = t.
@@ -111,7 +124,9 @@ tags: [predmet, MA1]
 - [[věta o spojitosti složené funkce]] · f spojitá v p a g spojitá v f(p) ⇒ g ∘ f spojitá v p. Jednostranně neplatí.
 - [[věta o substituci]] · Limita f(φ(x)) je lim f, když φ míří do cíle a na kusu směru do něj nedopadne.
 - [[věta o zachování intervalů]] · PIT: obraz [a; b] při spojité funkci je interval [min; max].
+- [[věta o znaménku derivace a monotonii]] · Na otevřeném intervalu: f′ ≥ 0 ⇔ neklesající; rostoucí, když navíc f′ není nulová na celém podintervalu.
 - [[věta o znaménku limity]] · L > 0 ⇒ f > 0 blízko cíle; f ≥ 0 ⇒ L ≥ 0.
+- [[základní věta o Taylorově polynomu]] · Chyba Tₙ(f, p) jde k 0 rychleji než (x − p)ⁿ a derivace v p do řádu n se shodují s f.
 
 ## Jak se předmět hodnotí
 
