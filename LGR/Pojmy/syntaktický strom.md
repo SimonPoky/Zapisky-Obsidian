@@ -13,4 +13,4 @@ zdroj: "slajd 7"
 
 **Formálně:** a ↦ vrchol a; ¬α ↦ kořen ¬ se synem strom(α); α ∘ β ↦ kořen ∘ se syny strom(α), strom(β)
 
-**Definice:** [[LGR 01 – Syntax a sémantika výrokové logiky#^def-strom|přednáška 1, 24. 9. 2026]] · slajd 7
+**Definice:** [[LGR 01 – Syntax a sémantika výrokové logiky#^def-strom|přednáška 1, 24. 9. 2026]] · slajd 7 · predikátová logika: [[LGR 08 – Dokončení úplnosti a syntaxe predikátové logiky#^def-strom-pl|přednáška 8]], handout 5, slajd 12

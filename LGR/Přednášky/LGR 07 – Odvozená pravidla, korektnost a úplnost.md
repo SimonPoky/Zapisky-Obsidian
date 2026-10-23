@@ -344,7 +344,7 @@ Důkazy korektnosti a úplnosti jsou indukcí, ale ne vždy tou ze střední šk
 > > \begin{array}{rll}\text{1.} & \tilde x_1 & \text{P} \\  & \vdots &  \\ \text{n.} & \tilde x_n & \text{P} \\  & \vdots &  \\ \text{k.} & \alpha & \text{(ind. předp.)} \\ \text{k{+}1.} & \neg\neg\alpha & {\neg\neg}\text{i}\ k\end{array}
 > > $$
 > >
-> > **3) $\varphi = \alpha \wedge \beta$, $\alpha \vee \beta$, $\alpha \Rightarrow \beta$** se dělají stejně: podle $u(\alpha)$, $u(\beta)$ se z odvození $\alpha$ nebo $\neg\alpha$ a $\beta$ nebo $\neg\beta$ (indukční předpoklad) složí odvození $\varphi$ nebo $\neg\varphi$. Případ $\alpha \Rightarrow \beta$ rozebírá další přednáška.
+> > **3) $\varphi = \alpha \wedge \beta$, $\alpha \vee \beta$, $\alpha \Rightarrow \beta$** se dělají stejně: podle $u(\alpha)$, $u(\beta)$ se z odvození $\alpha$ nebo $\neg\alpha$ a $\beta$ nebo $\neg\beta$ (indukční předpoklad) složí odvození $\varphi$ nebo $\neg\varphi$. Případ $\alpha \Rightarrow \beta$ je rozebraný v [[LGR 08 – Dokončení úplnosti a syntaxe predikátové logiky#^veta-lemma-implikace|LGR 08]].
 
 ^veta-lemma-literaly
 
@@ -479,4 +479,4 @@ $$
 > $$
 
 ---
-← [[LGR 06 – Rezoluční tabulka a přirozená dedukce|15. 10. 2026 Rezoluční tabulka a přirozená dedukce]]
+← [[LGR 06 – Rezoluční tabulka a přirozená dedukce|15. 10. 2026 Rezoluční tabulka a přirozená dedukce]] · [[LGR 08 – Dokončení úplnosti a syntaxe predikátové logiky|23. 10. 2026 Dokončení úplnosti a syntaxe predikátové logiky]] →

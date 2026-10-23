@@ -10,7 +10,7 @@ tags: [predmet, LGR]
 
 [Přednášky: prezentace a videa ↗](https://math.fel.cvut.cz/en/people/gollova/lgr/lgr-prednaska.html) · [Prezentace 1 (PDF) ↗](https://math.fel.cvut.cz/en/people/gollova/lgr/lgr_1.pdf) · [Stránka předmětu ↗](https://math.fel.cvut.cz/en/people/gollova/lgr.html) · [Literatura ↗](https://math.fel.cvut.cz/en/people/gollova/lgr/lgr-literatura.html) · [Testy v Moodle ↗](https://moodle.fel.cvut.cz/course/view.php?id=10550) · [Videopřednášky (YouTube) ↗](https://www.youtube.com/playlist?list=PLQL6z4JeTTQkjV5JYF0gB599ekq4zFfPK)
 
-**Kartičky:** 171 povinných + 49 příkladů · [otevřít aplikaci ↗](https://claude.ai/artifact/3CKfKeuwtwrWiz3FSfSh5B) · [[Archiv přednášek#Kartičky|jak to funguje]]
+**Kartičky:** 207 povinných + 60 příkladů · [otevřít aplikaci ↗](https://claude.ai/artifact/3CKfKeuwtwrWiz3FSfSh5B) · [[Archiv přednášek#Kartičky|jak to funguje]]
 
 ## Přednášky
 
@@ -21,6 +21,7 @@ tags: [predmet, LGR]
 - **9. 10. 2026** [[LGR 05 – Rezoluční princip|Rezoluční princip]] · R*(S), zamítací strom, rezoluční princip, 3ⁿ klauzulí, eliminace proměnné, rezoluční tabulka
 - **15. 10. 2026** [[LGR 06 – Rezoluční tabulka a přirozená dedukce|Rezoluční tabulka a přirozená dedukce]] · tabulka na příkladu, svědek pozpátku, S ⊢ φ, korektní a úplný systém, přirozená dedukce, ∧i, ⇒i, boxy, odvození
 - **22. 10. 2026** [[LGR 07 – Odvozená pravidla, korektnost a úplnost|Odvozená pravidla, korektnost a úplnost]] · ¬¬i, MT, RAA, TND, ⊣⊢, kompaktnost, věta o dedukci, indukce, korektnost, úplnost, literály řádku
+- **23. 10. 2026** [[LGR 08 – Dokončení úplnosti a syntaxe predikátové logiky|Dokončení úplnosti a syntaxe predikátové logiky]] · krok lemmatu pro ⇒, predikátová logika, jazyk, termy, formule, volné a vázané proměnné, sentence, interpretace, formalizace
 
 ## Plán semestru
 
@@ -48,7 +49,11 @@ tags: [predmet, LGR]
 *Najetím myší na pojem uvidíš náhled, klepnutím otevřeš jeho poznámku.*
 
 - [[absorpce]] · α ∨ (β ∧ α) ⊨⊨ α a duálně; přidaný člen nic nezmění.
+- [[Aristotelův sylogismus]] · Každý člověk je smrtelný, Sokrates je člověk, tedy je smrtelný; výroková logika to neověří.
+- [[arita]] · Počet argumentů symbolu: S(x) má aritu 1, P(x, y) aritu 2.
+- [[atomická formule]] · Predikát s dosazenými termy P(t₁, …, tₙ) nebo rovnost t₁ = t₂; nejjednodušší tvrzení.
 - [[booleovská funkce]] · Sloupec pravdivostní tabulky: f : {0, 1}ⁿ → {0, 1}. Pro n proměnných jich je 2^(2ⁿ).
+- [[čisté proměnné]] · Žádná proměnná není ve formuli volná i vázaná; dosáhne se legálním přejmenováním.
 - [[disjunktivní normální forma]] · DNF: disjunkce mintermů. Má ji každá formule.
 - [[ekvisplnitelné množiny]] · Obě splnitelné, nebo obě ne; svědky se lišit mohou.
 - [[eliminace disjunkce]] · ∨e, rozbor případů: platí-li φ ∨ ψ a z každého případu plyne χ, platí χ.
@@ -57,14 +62,21 @@ tags: [predmet, LGR]
 - [[eliminace negace]] · ¬e: φ a ¬φ naráz dají spor ⊥.
 - [[eliminace sporu]] · ⊥e: ze sporu plyne cokoli.
 - [[formule]] · Výrok zapsaný z proměnných, spojek a závorek podle pravidel. α, β zastupují libovolnou formuli.
+- [[formule predikátové logiky]] · Z atomických formulí spojkami a kvantifikátory ∀x, ∃x.
+- [[funkční symbol]] · Jméno operace, která z objektů vyrobí objekt: f(x) následník; v interpretaci Uⁿ → U.
 - [[hloubka formule]] · Počet pater syntaktického stromu; proměnná 0, každá spojka +1.
 - [[implikace]] · Slib „jestliže α, pak β“. Nepravdivá jen pro 1 ⇒ 0.
+- [[interpretace]] · (U, ⟦−⟧): universum a význam každého predikátu, funkce a konstanty.
 - [[iterace]] · it: už odvozenou formuli smíš zopakovat, i do vnořeného boxu.
+- [[jazyk predikátové logiky]] · Logické symboly (proměnné, spojky, ∀, ∃, =) a speciální: Pred, Func, Kons s aritami.
 - [[klauzální tvar]] · Kl(S): formule rozsekané přes CNF na klauzule bez tautologií; splnitelný iff S splnitelná.
 - [[komplementární literály]] · x a ¬x: stejná proměnná jednou pozitivně, jednou negativně.
 - [[konjunktivní normální forma]] · CNF: konjunkce maxtermů. Má ji každá formule.
+- [[konstantní symbol]] · Jméno jednoho konkrétního objektu, např. a pro dvojku.
 - [[kontradikce]] · Formule nepravdivá v každém ohodnocení, např. a ∧ ¬a.
 - [[korektní důkazový systém]] · Co jde odvodit, to platí: S ⊢ φ ⇒ S ⊨ φ.
+- [[kvantifikátor]] · ∀x „pro každé“, ∃x „existuje“; váže silněji než spojky.
+- [[legální přejmenování]] · Přejmenování vázané proměnné, při kterém se žádná volná proměnná nestane vázanou.
 - [[lemma o literálech řádku]] · u(φ) = 1 ⇒ L_u ⊢ φ, jinak L_u ⊢ ¬φ.
 - [[literál]] · Proměnná nebo její negace: a, ¬a.
 - [[literály řádku]] · L_u: x, nebo ¬x podle u(x); řádek tabulky jako množina literálů.
@@ -78,12 +90,15 @@ tags: [predmet, LGR]
 - [[obměněná implikace]] · φ ⇒ ψ ⊨⊨ ¬ψ ⇒ ¬φ; základ důkazu obměnou.
 - [[odvozené pravidlo]] · Zkratka poskládaná ze základních pravidel; nic nového nedokáže.
 - [[odvození]] · Důkaz po řádcích, každý řádek s pravidlem a odkazem; na konci φ, boxy zavřené.
+- [[otevřená formule]] · Formule bez vázaných proměnných, např. S(x).
 - [[Peirceova šipka]] · NOR, „ani jedno“. Sama tvoří úplný systém spojek.
 - [[pomocný předpoklad]] · Lokální předpoklad otevírá box; jeho formule platí jen uvnitř boxu.
 - [[populace rezolvent]] · R*(S): S a všechny rezolventy, rezolventy rezolvent atd.; pravdivá tam, kde S.
 - [[pravdivostní ohodnocení]] · Přiřazení 0/1 všem formulím podle tabulky spojek. Určí ho hodnoty proměnných; pro n proměnných 2ⁿ možností.
 - [[pravidlo slučování]] · (α ∨ x) ∧ (α ∨ ¬x) ⊨⊨ α a duálně; proměnná, na které nezáleží, zmizí.
 - [[prázdná klauzule]] · Disjunkce bez literálů, ff; nepravdivá vždy. Vzniká jako res(x, ¬x).
+- [[predikátová logika]] · Vidí dovnitř výroků: proměnné jsou objekty, predikáty vlastnosti a vztahy, přibývají ∀ a ∃.
+- [[predikátový symbol]] · Jméno vlastnosti nebo vztahu: S(x) „x je sudé“, P(x, y) „x < y“.
 - [[příliš agresivní systém]] · Odvodí i to, co neplyne; nekorektní.
 - [[princip silné indukce]] · Krok smí použít všechna čísla n₀, …, n, ne jen n.
 - [[princip slabé indukce]] · Domino: základ n₀ a krok z n na n + 1.
@@ -95,6 +110,7 @@ tags: [predmet, LGR]
 - [[rovnost formulí]] · dvě formule jsou si rovny, jen když se píšou znak po znaku stejně
 - [[sémantická věta o kompaktnosti]] · S ⊨ φ, právě když S′ ⊨ φ pro konečnou S′ ⊆ S; nejtěžší krok úplnosti.
 - [[sémantický důsledek]] · S ⊨ φ: kdykoli platí všechny předpoklady, platí i závěr; u(S) ≤ u(φ).
+- [[sentence]] · Formule bez volných proměnných (uzavřená), např. ∀x P(x, f(x)).
 - [[Shefferova čárka]] · NAND, „ne obojí zároveň“. Sama tvoří úplný systém spojek.
 - [[slabá věta o úplnosti]] · ⊢ φ ⟺ ⊨ φ: věty výrokové logiky jsou právě tautologie.
 - [[splnitelná formule]] · Pravdivá aspoň v jednom ohodnocení.
@@ -107,9 +123,13 @@ tags: [predmet, LGR]
 - [[syntaktický strom]] · Stavba formule: listy proměnné, kořen poslední spojka, podstromy podformule.
 - [[tautologická ekvivalence]] · Dvě formule se stejnou hodnotou v každém ohodnocení (stejný sloupec tabulky).
 - [[tautologie]] · Formule pravdivá v každém ohodnocení, např. a ∨ ¬a.
+- [[term]] · Jméno objektu: proměnná, konstanta, f(t₁, …, tₙ); nic netvrdí.
+- [[universum]] · Neprázdná množina objektů, o kterých se mluví, např. ℕ.
 - [[úplná normální forma]] · DNF/CNF, kde každý term obsahuje všechny proměnné; vzniká z tabulky.
 - [[úplný důkazový systém]] · Odvodí přesně to, co platí: S ⊢ φ ⟺ S ⊨ φ.
 - [[úplný systém logických spojek]] · Spojky, kterými jde zapsat každá booleovská funkce: {¬, ∧, ∨}, {¬, ⇒}, {|}, {↓}.
+- [[vázaná proměnná]] · Má ve formuli aspoň jeden vázaný výskyt.
+- [[vázaný výskyt]] · Cestou ke kořeni stromu leží ∀x nebo ∃x s touto proměnnou.
 - [[věta o dedukci]] · Předpoklad jde přesunout do závěru: S ∪ {φ} ⊨ ψ iff S ⊨ φ ⇒ ψ.
 - [[věta o eliminaci proměnné]] · S splnitelná iff S₀ ∪ Rₓ splnitelná; klauzule s x jde po rezoluci zahodit.
 - [[věta o korektnosti]] · S ⊢ φ ⇒ S ⊨ φ: přirozená dedukce nedokáže nepravdu.
@@ -117,6 +137,8 @@ tags: [predmet, LGR]
 - [[věta o sémantickém důkazu sporem]] · S ⊨ φ právě když S ∪ {¬φ} je nesplnitelná.
 - [[věta o úplnosti]] · S ⊢ φ ⟺ S ⊨ φ: odvoditelné = pravdivé.
 - [[věta výrokové logiky]] · Formule φ s ⊢ φ, dokazatelná bez předpokladů.
+- [[volná proměnná]] · Má ve formuli aspoň jeden volný výskyt.
+- [[volný výskyt]] · Nad výskytem není kvantifikátor s touto proměnnou.
 - [[vylučovací nebo]] · XOR, „buď, anebo“: pravdivé, když se hodnoty liší.
 - [[výrok]] · Oznamovací věta, u které se dá rozhodnout o pravdivosti.
 - [[základní tvar klauzulí]] · Každá proměnná je v klauzuli nejvýš jednou; bez tautologií.
