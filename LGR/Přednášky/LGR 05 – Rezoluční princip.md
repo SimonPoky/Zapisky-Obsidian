@@ -61,6 +61,9 @@ $$
 > [!lidsky] Lidsky
 > Klauzule je seznam „stačí splnit aspoň jedno z …“. Prázdný seznam nejde splnit nikdy, protože není z čeho vybírat. Je to opak [[LGR 04 – Sémantický důsledek a klauzální tvar#^prazdna-mnozina|prázdné množiny formulí]], která je naopak pravdivá vždy.
 
+> [!example] Příklad
+> Z klauzulí x a ¬x se škrtne x a nezbude nic: res_x(x, ¬x) = ff. Proto je {x, ¬x} nesplnitelná; „splň aspoň jedno z ničeho“ nejde.
+
 Stejný výsledek dá i úvaha bez prázdné disjunkce: $\neg x \mathrel{\vert\!=\!\vert} \neg x \vee \mathrm{ff}$, takže $\mathrm{res}_x(x, \neg x) = \mathrm{res}_x(x, \neg x \vee \mathrm{ff}) = \mathrm{ff}$. ^prazdna-alt
 
 ### Rezolvuje se vždy jen přes jednu proměnnou
@@ -168,6 +171,9 @@ Tady bylo štěstí: [[zamítací strom]] se našel rychle. Kdyby se nenašel, m
 > [!lidsky] Lidsky
 > „Když prší, je mokro“ znamená totéž co „když není mokro, neprší“. Důkaz obměnou se hodí, když je jednodušší vyjít z negace závěru.
 
+> [!example] Příklad
+> „když prší, je mokro“ |=| „když není mokro, nepršelo“: a ⇒ b |=| ¬b ⇒ ¬a.
+
 > [!pozor] Obměna není obrácená implikace
 > $\psi \Rightarrow \varphi$ („když je mokro, prší“) s $\varphi \Rightarrow \psi$ ekvivalentní **není**; mokro může být od kropení. Ekvivalentní je jen obměna s oběma negacemi.
 
@@ -196,6 +202,9 @@ Klauzule tedy odpovídají $n$-ticím z $\{1, -1, 0\}$ a těch je **$3^n$** (vč
 > [!lidsky] Lidsky
 > Obě jdou splnit, nebo obě ne. Nemusí mít stejné svědky, dokonce ani stejné proměnné. Na otázku „jde to splnit?“ ale dají stejnou odpověď, takže smíš řešit tu jednodušší.
 
+> [!example] Příklad
+> {a} a {b ∨ c} jsou ekvisplnitelné (obě splnitelné), i když mají jiné proměnné. {a, ¬a} a {ff} taky (obě nesplnitelné). {a} a {a, ¬a} ekvisplnitelné nejsou.
+
 > [!definice] Základní tvar klauzulí · slajd 20
 > Množina klauzulí je v *základním tvaru*, když žádná klauzule neobsahuje stejnou proměnnou dvakrát, tedy ani dvakrát týž literál, ani komplementární dvojici (taková klauzule je tautologie a vypustí se).
 
@@ -203,6 +212,9 @@ Klauzule tedy odpovídají $n$-ticím z $\{1, -1, 0\}$ a těch je **$3^n$** (vč
 
 > [!lidsky] Lidsky
 > Uklizené klauzule: v každé je každá proměnná nejvýš jednou. [[klauzální tvar|Klauzální tvar]] z minula je přesně takový.
+
+> [!example] Příklad
+> A ∨ a ∨ ¬b se zjednoduší na a ∨ ¬b. Klauzule a ∨ ¬a ∨ b je tautologie (platí vždy), takže se vyhodí.
 
 Pro množinu $S$ v [[základní tvar klauzulí|základním tvaru]] a proměnnou $x$ se $S$ rozdělí na tři části:
 

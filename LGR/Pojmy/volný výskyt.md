@@ -10,6 +10,8 @@ zdroj: "handout 5, slajd 13"
 
 > [!lidsky] Lidsky
 > Výskyt proměnné, nad kterým není kvantifikátor s touto proměnnou; čeká na dosazení, jako n v ∑ᵢ₌₁ⁿ i².
+>
+> *Příklad:* v ∀x P(x, y) je výskyt y volný a výskyty x vázané. Ve formuli S(x) ∧ ∀x L(x) je první x volné a druhé vázané.
 
 **Formálně:** výskyt x ve φ je volný ⟺ na cestě od jeho listu ke kořeni syntaktického stromu neleží ∀x ani ∃x
 

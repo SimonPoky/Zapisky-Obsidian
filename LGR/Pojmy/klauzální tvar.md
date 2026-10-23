@@ -10,6 +10,8 @@ zdroj: "slajdy 11–12"
 
 > [!lidsky] Lidsky
 > Všechny formule rozsekané přes CNF na klauzule („aspoň jedno z …“), bez opakovaných literálů a bez tautologií. Je pravdivý ve stejných ohodnoceních jako původní množina.
+>
+> *Příklad:* S = {a ⇒ b, ¬(b ∨ c)}: a ⇒ b dá klauzuli ¬a ∨ b, ¬(b ∨ c) |=| ¬b ∧ ¬c dá klauzule ¬b a ¬c. Kl(S) = {¬a ∨ b, ¬b, ¬c}.
 
 **Formálně:** Kl(S) = množina klauzulí z CNF formulí v S, bez opakovaných literálů a bez tautologií; S splnitelná iff Kl(S) splnitelná; není jednoznačný
 

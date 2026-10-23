@@ -10,6 +10,8 @@ zdroj: "slajdy 5–8 (prez. 4)"
 
 > [!lidsky] Lidsky
 > Formule a její negace naráz jsou spor. Pravidlo zapíše, že jsi narazil na spor ⊥.
+>
+> *Příklad:* uvnitř boxu: 1. ¬a (P); 2. a (P, otevře box); 3. ⊥ (¬e 2, 1). Předpoklad a narazil na už známé ¬a.
 
 **Formálně:** z φ a ¬φ odvoď ⊥ (⊥ zastupuje φ ∧ ¬φ)
 

@@ -10,6 +10,8 @@ zdroj: "handout 3A, slajd 3"
 
 > [!lidsky] Lidsky
 > Spojitost, při které se díváš jen z jedné strany: limita zleva (nebo zprava) v p se rovná f(p). Funkce je spojitá v p, právě když je tam spojitá zleva i zprava.
+>
+> *Příklad:* f(x) = 0 pro x < 1 a f(x) = 1 pro x ≥ 1 je v bodě 1 spojitá zprava (lim_{x→1⁺} f = 1 = f(1)), ale zleva ne (lim_{x→1⁻} f = 0).
 
 **Formálně:** f definovaná v p a ve směru x → p⁻: f spojitá zleva v p ⇔ lim_{x→p⁻} f(x) = f(p); zprava obdobně s x → p⁺
 

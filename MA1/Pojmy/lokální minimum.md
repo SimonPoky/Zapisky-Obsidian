@@ -10,6 +10,8 @@ zdroj: "handout 4B, slajd 3"
 
 > [!lidsky] Lidsky
 > Dno důlku: dost blízko p nemá funkce menší hodnotu než f(p), i když jinde může klesnout níž.
+>
+> *Příklad:* f(x) = x³ − 3x má lokální minimum v p = 1: f(1) = −2 a blízko je větší, f(0,9) = −1,971 a f(1,1) = −1,969. Jinde jde níž, f(−3) = −18.
 
 **Formálně:** f je definována v p a ve směru x → p; f má v p lokální minimum ⇔ f(p) ≤ f ve směru x → p, tj. ∃δ > 0 ∀x ∈ (p − δ; p + δ), x ≠ p: f(p) ≤ f(x)
 

@@ -10,6 +10,8 @@ zdroj: "handout 4A, slajd 22"
 
 > [!lidsky] Lidsky
 > Chyba Taylorova polynomu vypadá jako jeho další člen, jen s derivací v neznámém bodě t mezi x a p. Omezíš-li tu derivaci, máš zaručenou mez chyby. Pro n = 0 je to Lagrangeova věta.
+>
+> *Příklad:* eˣ ≈ 1 + x pro x = 0,1: chyba je e^t/2 · 0,01 pro nějaké t ∈ (0; 0,1), tedy nejvýš e^{0,1}/2 · 0,01 < 0,006. Skutečně e^{0,1} − 1,1 = 0,0052.
 
 **Formálně:** f má n + 1 derivací na otevřeném intervalu (a; b), p ∈ (a; b) ⇒ pro každé x ∈ (a; b) existuje t mezi x a p: f(x) − Tₙ(f, p)(x) = f⁽ⁿ⁺¹⁾(t)/(n + 1)! · (x − p)ⁿ⁺¹
 

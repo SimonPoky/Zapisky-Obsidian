@@ -10,6 +10,8 @@ zdroj: "pozn. 4.13"
 
 > [!lidsky] Lidsky
 > Nezávislou sadu v prostoru konečné dimenze vždycky doplníš na bázi: přidávej vektory, které ukazují „ven“ z jejího obalu. V prostoru dimenze n skončíš přesně u n vektorů.
+>
+> *Příklad:* LN posloupnost ((1; 1; 0)) v ℝ³ doplníš vektory (0; 1; 0) a (0; 0; 1): ((1; 1; 0), (0; 1; 0), (0; 0; 1)) je LN a má dim ℝ³ = 3 vektory, takže je to báze.
 
 **Formálně:** dim L = n < ∞, (x₁, …, xₖ) LN ⇒ ∃ xₖ₊₁, …, xₙ ∈ L: (x₁, …, xₙ) je báze L
 

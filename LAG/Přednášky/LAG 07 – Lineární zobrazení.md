@@ -46,6 +46,9 @@ Funkce ze školy přiřazuje číslu číslo. Teď budeme přiřazovat **vektoru
 > [!lidsky] Lidsky
 > Lineární zobrazení „komutuje s počítáním“: je jedno, jestli vektory nejdřív sečteš a pak zobrazíš, nebo nejdřív zobrazíš a pak sečteš. Představ si kopírku, která zvětšuje na 200 %. Okopíruješ-li dva obrázky položené vedle sebe, dostaneš totéž, jako když každý okopíruješ zvlášť a pak je položíš vedle sebe. A obrázek dvakrát tmavší dá dvakrát tmavší kopii. Podmínce 1 se říká *aditivita*, podmínce 2 *homogenita*.
 
+> [!example] Příklad
+> A(a; b) = (a + b; 2a) je lineární, např. A((1; 0) + (0; 1)) = A(1; 1) = (2; 2) = (1; 2) + (1; 0) = A(1; 0) + A(0; 1). Posunutí x ↦ x + (1; 0) lineární není.
+
 > [!pozor] Dvě různá plus i dvě různá krát
 > V $A(\vec{x} + \vec{y}) = A(\vec{x}) + A(\vec{y})$ se vlevo sčítá ve $V$, vpravo ve $W$. Třeba u derivace polynomů je to obojí sčítání polynomů, ale u $A : \mathbb{R}^3 \to \mathbb{R}^2$ jde vlevo o trojice a vpravo o dvojice. Totéž platí pro násobení číslem. Proto musí být oba prostory nad **stejným** tělesem: číslo $\alpha$ násobí vlevo vektor z $V$ a vpravo vektor z $W$.
 
@@ -57,6 +60,10 @@ Funkce ze školy přiřazuje číslu číslo. Teď budeme přiřazovat **vektoru
 
 > [!lidsky] Lidsky
 > $\operatorname{Lin}(V, W)$ je „katalog“ všech lineárních zobrazení z $V$ do $W$; zápis $A \in \operatorname{Lin}(V, W)$ je zkratka pro „$A : V \to W$ je lineární“. Operátor je zobrazení, které zůstává v témže prostoru: otočení roviny pošle rovinu zase do roviny, derivace pošle polynom zase na polynom.
+
+> [!example] Příklad
+> - **množina lineárních zobrazení:** otočení o 90°, stejnolehlost x ↦ 2x i nulové zobrazení patří do Lin(ℝ², ℝ²). Posunutí x ↦ x + (1; 0) ne, protože (0; 0) nepošle na (0; 0).
+> - **lineární operátor:** otočení roviny o 90°, A(a; b) = (−b; a), je operátor na ℝ²; derivace je operátor na polynomech stupně ≤ 2 (2x + x² ↦ 2 + 2x).
 
 > [!navic] Odkud to známe
 > Na [[LAG 01 – Úvod do lineární algebry#Matice jako transformace|první přednášce]] matice $\begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix}$ zkosila čtvercovou síť. A minule jsme dokázali [[věta o linearitě souřadnic|linearitu souřadnic]]: $[\vec{x} + \vec{y}]^{\mathcal{X}} = [\vec{x}]^{\mathcal{X}} + [\vec{y}]^{\mathcal{X}}$ a $[\gamma\vec{x}]^{\mathcal{X}} = \gamma[\vec{x}]^{\mathcal{X}}$. To jsou přesně podmínky 1 a 2, takže $\vec{v} \mapsto [\vec{v}]^{\mathcal{X}}$ je lineární zobrazení $L \to \mathbb{F}^n$.
@@ -81,6 +88,9 @@ U [[lineární zobrazení|lineárních zobrazení]] se závorky kolem argumentu 
 
 > [!lidsky] Lidsky
 > Skládání je výrobní linka: vektor projde napřed strojem $A$ a jeho výstup pak strojem $B$. Čte se **zprava doleva**, jako $g(f(x))$: blíž k $\vec{x}$ je ten, kdo jde na řadu první. Linka dává smysl, jen když výstup $A$ padá do prostoru, který $B$ umí zpracovat.
+
+> [!example] Příklad
+> A(x) = 2x (zvětšení) a B(a; b) = (−b; a) (otočení o 90°). Pak (BA)(1; 0) = B(2; 0) = (0; 2): nejdřív zvětšení, potom otočení.
 
 > [!obrazek] Skládání zobrazení
 > ![[lag07-skladani.png]]
@@ -201,6 +211,10 @@ U [[lineární zobrazení|lineárních zobrazení]] se závorky kolem argumentu 
 > [!lidsky] Lidsky
 > Nulové zobrazení je „černá díra“: všechno spolkne do počátku. Identita je „nedělej nic“. Obě jsou nudné, ale při skládání hrají roli jedničky a nuly: $A\operatorname{id} = \operatorname{id}A = A$ a složení s nulovým zobrazením dá zase nulové zobrazení.
 
+> [!example] Příklad
+> - **identické zobrazení:** id(3; −1) = (3; −1); v kanonické bázi má id matici $\begin{pmatrix}1&0\\0&1\end{pmatrix}$. Pro každé A platí A ∘ id = id ∘ A = A.
+> - **nulové zobrazení:** O: ℝ² → ℝ³, O(5; −1) = (0; 0; 0); jeho matice je nulová matice 3 × 2.
+
 ### Lineární funkce na $\mathbb{R}$
 
 > [!pozor] „Lineární funkce“ ze školy není lineární zobrazení
@@ -234,6 +248,9 @@ U [[lineární zobrazení|lineárních zobrazení]] se závorky kolem argumentu 
 
 > [!lidsky] Lidsky
 > Stejnolehlost je kopírka se zoomem $k$: všechno zvětší $k$-krát se středem v počátku. Pro $k = 2$ je obrázek dvakrát větší, pro $k = -1$ se překlopí přes počátek (středová souměrnost), $k = 1$ je identita a $k = 0$ nulové zobrazení.
+
+> [!example] Příklad
+> Pro k = 2 jde (1; 3) na (2; 6), pro k = −1 na (−1; −3), tedy překlopení přes počátek.
 
 > [!obrazek] Stejnolehlost s koeficientem 1, 2 a −1
 > ![[lag07-stejnolehlost.png]]
@@ -330,6 +347,9 @@ Sloupce $\vec{a}_1, \dots, \vec{a}_n$ se zapisují vedle sebe do [[matice]] a zo
 > $$
 >
 > Vektor musí mít tolik složek, kolik má matice sloupců. Výsledek má tolik složek, kolik má matice řádků.
+
+> [!example] Příklad
+> $\begin{pmatrix}1&2\\3&4\end{pmatrix}$(5; 6) = 5·(1; 3) + 6·(2; 4) = (17; 39): pět krát první sloupec plus šest krát druhý.
 
 > [!navic] Řádkově to vyjde stejně
 > Ze školy (nebo z [[LAG 01 – Úvod do lineární algebry#Algebraicky a maticově|1. přednášky]]) znáš pravidlo „řádek krát sloupec“: $i$-tá složka výsledku je $a_{i1}x_1 + \dots + a_{in}x_n$. To je totéž číslo jako $i$-tá složka kombinace $x_1\vec{a}_1 + \dots + x_n\vec{a}_n$. Sloupcový pohled je ale užitečnější: říká, co zobrazení **dělá** (kam pošle $\vec{e}_i$).

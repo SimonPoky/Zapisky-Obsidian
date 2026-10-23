@@ -10,6 +10,8 @@ zdroj: "handout 4B, slajd 16"
 
 > [!lidsky] Lidsky
 > Na misce sklon tečny zleva doprava jen roste: konvexita je totéž co neklesající derivace.
+>
+> *Příklad:* eˣ má derivaci eˣ, která roste, takže eˣ je ryze konvexní. x³ má derivaci 3x², která na (−∞; 0) klesá, takže tam je x³ ryze konkávní.
 
 **Formálně:** f má první derivaci na otevřeném intervalu I ⇒ (1) f konvexní na I ⇔ f′ neklesající na I; (2) f ryze konvexní na I ⇔ f′ rostoucí na I; analogicky konkávní ⇔ f′ nerostoucí, ryze konkávní ⇔ f′ klesající
 

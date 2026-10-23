@@ -10,6 +10,8 @@ zdroj: "handout 3A, slajd 5"
 
 > [!lidsky] Lidsky
 > Když je vnitřní funkce spojitá v p a vnější v bodě f(p), je spojitá i složená funkce. Pro spojitost jen zleva nebo jen zprava to neplatí.
+>
+> *Příklad:* sin(x²) je spojitá v každém bodě p: x² je spojitá v p a sin je spojitý v p². Stejně je spojitá √(1 + x²).
 
 **Formálně:** f spojitá v p ∧ g spojitá v f(p) ⇒ g ∘ f spojitá v p
 

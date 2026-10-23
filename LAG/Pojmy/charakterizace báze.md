@@ -10,6 +10,8 @@ zdroj: "věta 4.5"
 
 > [!lidsky] Lidsky
 > Báze je přesně na hraně: uber z ní cokoli a přestane generovat, přidej cokoli a přestane být nezávislá. „Minimální“ tu znamená, že nejde nic vyhodit, ne že je nejkratší.
+>
+> *Příklad:* ((1; 0), (0; 1)) je báze ℝ². Uber (0; 1) a samotné (1; 0) už (0; 1) nevygeneruje; přidej (1; 1) a posloupnost bude LZ, protože (1; 1) = (1; 0) + (0; 1).
 
 **Formálně:** (x₁, …, xₙ) je báze L ⟺ je minimální (vzhledem k inkluzi) generující posloupnost L ⟺ je maximální LN posloupnost v L
 

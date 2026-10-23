@@ -65,6 +65,9 @@ Stejně $\gamma \cdot (\alpha_0 + \dots + \alpha_n x^n) = \gamma\alpha_0 + \dots
 >
 > Proč to chceme: podprostor je sám lineární prostor (věta 2.2), jen menší. Množina řešení homogenní soustavy nebo spojité funkce jsou podprostory, takže pro ně automaticky platí všechno, co se dokáže o lineárních prostorech.
 
+> [!example] Příklad
+> Přímka {(t; 2t) | t ∈ ℝ} je podprostor ℝ²: (1; 2) + (3; 6) = (4; 8) i (−1)·(1; 2) = (−1; −2) v ní zůstanou. Přímka y = 2x + 1 podprostor není, neobsahuje (0; 0).
+
 > [!obrazek] Co je a co není podprostor $\mathbb{R}^2$
 > ![[lag03-podprostory.png]]
 > *Zelená: přímka přes počátek je podprostor, s x obsahuje všechny násobky. Červená uprostřed: přímka y = x/2 + 1 neobsahuje nulový vektor (prázdné kolečko) a součet a + b (oranžová) z ní vypadne. Červená vpravo: první kvadrant je uzavřený na sčítání, ale (−1)·x (oranžová) už v něm není.*

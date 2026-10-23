@@ -10,6 +10,8 @@ zdroj: "pozn. 6.15"
 
 > [!lidsky] Lidsky
 > Kam pošleš vektory báze, si vybereš úplně libovolně, a tím je celé lineární zobrazení určené: existuje a je jediné.
+>
+> *Příklad:* zvol A(1; 0) = (2; 1) a A(0; 1) = (0; 3). Tím je A určené celé: A(a; b) = a·(2; 1) + b·(0; 3) = (2a; a + 3b), a jiné lineární zobrazení s těmito obrazy není.
 
 **Formálně:** V, W lineární prostory nad 𝔽, (x₁, …, xₘ) báze V, w₁, …, wₘ ∈ W libovolné ⇒ existuje právě jedno A ∈ Lin(V, W) s Axᵢ = wᵢ pro všechna i = 1, …, m
 

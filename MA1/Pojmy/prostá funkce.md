@@ -10,6 +10,8 @@ zdroj: "handout 3A, slajd 18"
 
 > [!lidsky] Lidsky
 > Funkce, která žádnou hodnotu nevrátí dvakrát: různé vstupy dají různé výstupy. Každá rostoucí nebo klesající funkce je prostá.
+>
+> *Příklad:* 2x + 1 je prostá. x² na ℝ prostá není: x² = 4 pro x = 2 i x = −2; na [0; +∞) už prostá je.
 
 **Formálně:** f je prostá na D ⇔ pro x₁, x₂ ∈ D: x₁ ≠ x₂ ⇒ f(x₁) ≠ f(x₂)
 

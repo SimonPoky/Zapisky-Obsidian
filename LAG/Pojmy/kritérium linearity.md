@@ -10,6 +10,8 @@ zdroj: "pozn. 6.3"
 
 > [!lidsky] Lidsky
 > Místo dvou podmínek (sčítání, násobení) stačí ověřit jednu smíšenou.
+>
+> *Příklad:* A(a; b) = (a + b; 2a): A(α(a; b) + (c; d)) = (α(a + b) + c + d; 2αa + 2c) = αA(a; b) + A(c; d), takže je lineární. A(a; b) = (a + 1; b) ne: A(2·(0; 0) + (0; 0)) = (1; 0), ale 2·A(0; 0) + A(0; 0) = (3; 0).
 
 **Formálně:** A: V → W je lineární ⟺ (∀x, y ∈ V)(∀α ∈ 𝔽)(A(αx + y) = αAx + Ay)
 

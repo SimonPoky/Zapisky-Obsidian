@@ -10,6 +10,8 @@ zdroj: "slajd 3 (prez. 4)"
 
 > [!lidsky] Lidsky
 > Korektní systém, který navíc nic nevynechá: každý sémantický důsledek v něm jde i dokázat. Odvoditelné a pravdivé formule splývají.
+>
+> *Příklad:* v přirozené dedukci jde odvodit každá tautologie, třeba ⊢ a ∨ ¬a nebo ⊢ (a ∧ b) ⇒ a, a každý sémantický důsledek, třeba {a ⇒ b, ¬b} ⊢ ¬a (MT).
 
 **Formálně:** pro každé S a φ: S ⊢ φ ⟺ S ⊨ φ (odvoditelné = pravdivé)
 

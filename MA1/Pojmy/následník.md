@@ -10,6 +10,8 @@ zdroj: "handout 1A, slajd 17"
 
 > [!lidsky] Lidsky
 > Další číslo v řadě. Vznikne tak, že k číslu přidáš jeho samotného jako nový prvek.
+>
+> *Příklad:* 0 = ∅, 1 = {0}, 2 = {0, 1} a succ(2) = 2 ∪ {2} = {0, 1, 2} = 3: trojka má právě tři prvky.
 
 **Formálně:** succ(n) = n ∪ {n} = {0, …, n}, tj. n + 1
 

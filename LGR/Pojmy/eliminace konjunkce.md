@@ -10,6 +10,8 @@ zdroj: "slajdy 5–8 (prez. 4)"
 
 > [!lidsky] Lidsky
 > Když máš dokázanou konjunkci, smíš z ní vzít kterýkoli člen samotný.
+>
+> *Příklad:* 1. a ∧ b (P); 2. b (∧e₂ 1); 3. a (∧e₁ 1); 4. b ∧ a (∧i 2, 3). Tak se dokáže, že na pořadí v konjunkci nezáleží.
 
 **Formálně:** z φ ∧ ψ odvoď φ (∧e₁), resp. ψ (∧e₂)
 

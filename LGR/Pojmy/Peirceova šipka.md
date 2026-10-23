@@ -10,6 +10,8 @@ zdroj: "slajdy 19–21"
 
 > [!lidsky] Lidsky
 > NOR, „ani jedno“: pravdivá jen pro 0, 0. Sama tvoří úplný systém spojek.
+>
+> *Příklad:* a ↓ b = „ani prší, ani sněží“: pravdivé jen pro u(a) = u(b) = 0. Negace jde vyrobit jako a ↓ a: 1 ↓ 1 = 0 a 0 ↓ 0 = 1.
 
 **Formálně:** α ↓ β |=| ¬(α ∨ β); ¬α |=| α ↓ α
 

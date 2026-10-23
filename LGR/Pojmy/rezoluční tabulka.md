@@ -10,6 +10,8 @@ zdroj: "slajdy 23–25"
 
 > [!lidsky] Lidsky
 > Úsporná rezoluce: proměnné se „vyrezolvují“ jedna po druhé a klauzule s už zpracovanou proměnnou se zahodí. Na konci zbyde {ff} (nesplnitelná), nebo ∅ (splnitelná); svědka dostaneš pozpátku.
+>
+> *Příklad:* S = {a ∨ b, ¬a ∨ b, ¬b}. Eliminace a: rezolventa b, zbude {¬b, b}. Eliminace b: rezolventa ff, zbude {ff}, takže S je nesplnitelná.
 
 **Formálně:** S konečná, v základním tvaru, proměnné x₁, …, xₙ; pro i = 1, …, n: S := S₀ ∪ R_{xᵢ}; konec S = {ff} ⇒ nesplnitelná, S = ∅ ⇒ splnitelná
 

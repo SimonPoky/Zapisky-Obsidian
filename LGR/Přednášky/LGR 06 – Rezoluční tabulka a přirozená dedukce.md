@@ -137,6 +137,9 @@ Na otázku „plyne $\varphi$ z $S$?“ jsou dva pohledy (slajdy 3–4 prezentac
 > [!lidsky] Lidsky
 > $\models$ je „zkontroluj všechny světy“: projdi všechna ohodnocení. $\vdash$ je „napiš důkaz“: krok za krokem podle pevných pravidel, jako když ve škole dokazuješ větu a u každého řádku napíšeš, proč platí. Symbol $\vdash$ připomíná „turniket“: projde jen to, co má platný doklad.
 
+> [!example] Příklad
+> A ∧ b ⊢ b ∧ a, protože existuje odvození: 1. a ∧ b (P); 2. a (∧e₁ 1); 3. b (∧e₂ 1); 4. b ∧ a (∧i 3, 2).
+
 > [!definice] Korektní a úplný důkazový systém · slajd 3
 > Důkazový systém je
 > - *korektní*, jestliže každá odvoditelná formule je pravdivá: **$S \vdash \varphi \Rightarrow S \models \varphi$** (odvoditelné $\subseteq$ pravdivé);
@@ -147,6 +150,10 @@ Na otázku „plyne $\varphi$ z $S$?“ jsou dva pohledy (slajdy 3–4 prezentac
 > [!lidsky] Lidsky
 > Korektní systém nikdy nelže: co dokáže, to opravdu platí. Úplný systém navíc nic nevynechá: co platí, to taky umí dokázat. Korektnost je nutnost (lhář je k ničemu), úplnost je přání.
 
+> [!example] Příklad
+> - **korektní důkazový systém:** přirozená dedukce je korektní: když jde odvodit a ∧ b ⊢ a, platí i a ∧ b ⊨ a. Systém s pravidlem „z a ∨ b odvoď a“ korektní není, protože a ∨ b ⊭ a (u(a) = 0, u(b) = 1).
+> - **úplný důkazový systém:** v přirozené dedukci jde odvodit každá tautologie, třeba ⊢ a ∨ ¬a nebo ⊢ (a ∧ b) ⇒ a, a každý sémantický důsledek, třeba {a ⇒ b, ¬b} ⊢ ¬a (MT).
+
 > [!definice] Co nechceme · slajd 3
 > - *[[příliš agresivní systém|Příliš agresivní]]* (nekorektní) systém: odvodí i formule, které z $S$ sémanticky neplynou, tj. existuje $\varphi$ s $S \vdash \varphi$, ale $S \not\models \varphi$.
 > - *Sporný* systém: odvodí **všechno**, tj. $S \vdash \varphi$ pro každou $\varphi \in \mathrm{Fla}(A)$, tedy i $\varphi$ a $\neg\varphi$ naráz, i $\mathrm{ff}$.
@@ -155,6 +162,10 @@ Na otázku „plyne $\varphi$ z $S$?“ jsou dva pohledy (slajdy 3–4 prezentac
 
 > [!lidsky] Lidsky
 > Agresivní systém občas „dokáže“ nepravdu, takže mu nejde věřit. Sporný je extrém: dokáže úplně cokoli, a tím pádem nic nerozliší. Je to jako detektor kovů, který pípá pořád.
+
+> [!example] Příklad
+> - **příliš agresivní systém:** systém s pravidlem „z a ⇒ b a b odvoď a“ (modus ponens pozpátku) je příliš agresivní: odvodí a z {a ⇒ b, b}, ale pro u(a) = 0, u(b) = 1 předpoklady platí a a ne.
+> - **sporný důkazový systém:** kdyby šlo bez předpokladů odvodit a i ¬a, dá ¬e spor ⊥ a ⊥e z něj cokoli, třeba b ∧ ¬c. Takový systém by „dokázal“ úplně všechno.
 
 > [!obrazek] Korektní, úplný, agresivní a sporný systém
 > ![[lgr06-systemy.png]]
@@ -176,6 +187,9 @@ Na otázku „plyne $\varphi$ z $S$?“ jsou dva pohledy (slajdy 3–4 prezentac
 
 > [!lidsky] Lidsky
 > Každá spojka má „návod na výrobu“ a „návod k použití“. Konjunkci vyrobíš ze dvou dílů, a když ji máš, smíš si vzít kterýkoli díl. Implikaci vyrobíš tak, že si na chvíli něco předpokládáš, a použiješ ji tak, že do ní dosadíš předpoklad. Pravidla jsou přesně ty kroky, které děláš v matematických důkazech, jen pojmenované.
+
+> [!example] Příklad
+> Pro ∧ jsou pravidla ∧i (z a a b udělej a ∧ b) a ∧e (z a ∧ b vezmi a); pro ⇒ je to ⇒i (box „předpokládej a, dojdi k b“) a ⇒e (modus ponens).
 
 ### Pravidla
 
@@ -212,6 +226,9 @@ Dnes se podrobně probrala pravidla $\wedge$i a $\Rightarrow$i; ostatní se v p�
 > [!lidsky] Lidsky
 > Chceš dokázat „číslo je sudé a kladné“: dokážeš zvlášť „je sudé“ a zvlášť „je kladné“ a spojíš.
 
+> [!example] Příklad
+> 1. a (P); 2. b (P); 3. a ∧ b (∧i 1, 2). Z „prší“ a „fouká“ dostaneš „prší a fouká“.
+
 Pravidlo **respektuje pravdivost**: $\{\varphi, \psi\} \models \varphi \wedge \psi$. Je-li v ohodnocení $u$ pravdivá $\varphi$ i $\psi$, je i $u(\varphi \wedge \psi) = 1$. ^and-i-korektni
 
 ### Pravidlo $\Rightarrow$i a boxy
@@ -228,6 +245,9 @@ Pravidlo **respektuje pravdivost**: $\{\varphi, \psi\} \models \varphi \wedge \p
 > [!lidsky] Lidsky
 > „Předpokládejme, že $n$ je sudé. … Tedy $n^2$ je sudé. Dokázali jsme: je-li $n$ sudé, je $n^2$ sudé.“ Box je ta pasáž „předpokládejme…“. Po jejím skončení už $n$ sudé není dokázané, dokázaná je jen implikace.
 
+> [!example] Příklad
+> ⊢ (a ∧ b) ⇒ a: box 1. a ∧ b (P), 2. a (∧e₁ 1); po uzavření 3. (a ∧ b) ⇒ a (⇒i 1–2).
+
 > [!definice] Pomocný (lokální) předpoklad a box · slajd 9
 > *Pomocný (lokální) předpoklad* se smí zavést kdykoli; otevírá **box** (rámeček), který vyznačuje jeho platnost. Formule uvnitř boxu (předpoklad i vše odvozené z něj) se smějí používat **jen uvnitř** tohoto boxu a v boxech do něj vnořených. Box se uzavře pravidlem, které ho „spotřebuje“ (třeba $\Rightarrow$i, $\neg$i, $\vee$e); pak je *pasivní*. Odvození je hotové, až když jsou **všechny boxy uzavřené**. *Globální předpoklady* (formule z $S$) platí v celém odvození.
 
@@ -236,6 +256,9 @@ Pravidlo **respektuje pravdivost**: $\{\varphi, \psi\} \models \varphi \wedge \p
 > [!lidsky] Lidsky
 > Box je „co kdyby“: na chvíli předpokládáš něco, co nemáš dokázané. Uvnitř s tím smíš počítat, ale ven smí jen výsledek ve tvaru „když …, pak …“. Kdyby smělo ven i to, co platí jen „za předpokladu“, dokázal bys cokoli.
 
+> [!example] Příklad
+> V odvození ⊢ a ⇒ a je a pomocný předpoklad: box 1. a (P); po uzavření 2. a ⇒ a (⇒i 1–1). Mimo box se samotné a použít nesmí, venku zbude jen a ⇒ a.
+
 > [!definice] Iterace (it) · k slajdům 9–10
 > Formuli, která je v odvození už dříve (výše a v boxu, který je pořád otevřený, nebo na globální úrovni), smíš napsat znovu, i dovnitř vnořeného boxu: $\dfrac{\varphi}{\varphi}$, odůvodnění „it $k$“, kde $k$ je číslo řádku.
 
@@ -243,6 +266,9 @@ Pravidlo **respektuje pravdivost**: $\{\varphi, \psi\} \models \varphi \wedge \p
 
 > [!lidsky] Lidsky
 > Zkopíruj si, co už víš. Hodí se, když box musí **končit** konkrétní formulí, kterou už máš o patro výš.
+
+> [!example] Příklad
+> Odvození b ⊢ a ⇒ b: 1. b (P); box: 2. a (P), 3. b (it 1); 4. a ⇒ b (⇒i 2–3). Box musí končit formulí b, proto se b zopakuje.
 
 Pravidlo $\Rightarrow$i taky **respektuje pravdivost**. Tady je schovaný indukční předpoklad, že odvozování uvnitř boxu pravdivost respektuje. Pak v boxu platí $S \cup \{\varphi\} \models \psi$ a podle [[věta o dedukci|věty o dedukci]] $S \models \varphi \Rightarrow \psi$. Bez dalších předpokladů ($S = \emptyset$): v boxu $\varphi \models \psi$, globálně $\emptyset \models (\varphi \Rightarrow \psi)$, neboli $\varphi \Rightarrow \psi$ je [[tautologie]]. ^impl-i-korektni
 

@@ -10,6 +10,8 @@ zdroj: "pozn. 1.8"
 
 > [!lidsky] Lidsky
 > Z osmi axiomů plyne, že počítání s vektory se chová „jak čekáš“: nula i opačný vektor jsou jen jedny, nulový výsledek násobení vznikne jen z nulového čísla nebo nulového vektoru a opačný vektor je totéž co násobek −1.
+>
+> *Příklad:* v ℝ² je (−1)·(2; 5) = (−2; −5), což je přesně opačný vektor k (2; 5), a 0·(2; 5) = (0; 0).
 
 **Formálně:** L lineární prostor nad 𝔽 ⇒ nulový vektor je jediný; ke každému x jediný opačný; α ⊙ x = 0 ⇔ α = 0 ∨ x = 0; −x = (−1) ⊙ x
 

@@ -10,6 +10,8 @@ zdroj: "handout 4A, slajd 4"
 
 > [!lidsky] Lidsky
 > Když hladká funkce začne a skončí ve stejné výšce, má někde uvnitř vodorovnou tečnu, třeba na vrcholu nebo na dně.
+>
+> *Příklad:* f(x) = x² − 2x na [0; 2]: f(0) = f(2) = 0 a f′(t) = 2t − 2 = 0 v t = 1, kde je dno paraboly.
 
 **Formálně:** f má první derivaci na [a; b] a f(a) = f(b) ⇒ ∃t ∈ (a; b): f′(t) = 0
 

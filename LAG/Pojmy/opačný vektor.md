@@ -9,6 +9,8 @@ prednaska: 1
 
 > [!lidsky] Lidsky
 > Vektor, který daný vektor „vynuluje“. U šipek je to stejná šipka opačným směrem.
+>
+> *Příklad:* k (3; −2) je opačný (−3; 2), protože (3; −2) + (−3; 2) = (0; 0). K polynomu 1 + x² je opačný −1 − x².
 
 **Formálně:** x ⊕ (−x) = 0; platí −x = (−1) ⊙ x
 

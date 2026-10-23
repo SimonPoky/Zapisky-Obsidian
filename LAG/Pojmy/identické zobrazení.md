@@ -10,6 +10,8 @@ zdroj: "pozn. 6.4"
 
 > [!lidsky] Lidsky
 > Zobrazení „nedělej nic“: každý vektor nechá na místě. Je lineární a při skládání hraje roli jedničky.
+>
+> *Příklad:* id(3; −1) = (3; −1); v kanonické bázi má id matici $\begin{pmatrix}1&0\\0&1\end{pmatrix}$. Pro každé A platí A ∘ id = id ∘ A = A.
 
 **Formálně:** id: V → V, id(x) = x pro všechna x ∈ V; id ∈ Lin(V)
 

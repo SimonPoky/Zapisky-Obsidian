@@ -10,6 +10,8 @@ zdroj: "slajd 7"
 
 > [!lidsky] Lidsky
 > Obrázek stavby formule: listy jsou proměnné, nad nimi spojky, kořen je poslední použitá spojka. Každý podstrom je podformule.
+>
+> *Příklad:* strom formule (a ∧ b) ⇒ ¬c má v kořeni ⇒, vlevo podstrom ∧ s listy a, b, vpravo podstrom ¬ s listem c. Podformule jsou a, b, c, a ∧ b, ¬c a celá formule.
 
 **Formálně:** a ↦ vrchol a; ¬α ↦ kořen ¬ se synem strom(α); α ∘ β ↦ kořen ∘ se syny strom(α), strom(β)
 

@@ -10,6 +10,8 @@ zdroj: "handout 1B, slajd 8"
 
 > [!lidsky] Lidsky
 > Množina kladných čísel, ze které se vyrobí uspořádání: r < s znamená, že s − r je kladné. Musí být dána dřív než nerovnost, jinak je definice v kruhu.
+>
+> *Příklad:* ℝ⁺ jsou kladná čísla; 3 < 7, protože 7 − 3 = 4 ∈ ℝ⁺. Každé číslo leží právě v jedné části: 2 ∈ ℝ⁺, −2 ∈ −ℝ⁺, nebo je to 0.
 
 **Formálně:** ℝ = −ℝ⁺ ∪ {0} ∪ ℝ⁺ (disjunktně); r, s ∈ ℝ⁺ ⇒ r + s, r·s ∈ ℝ⁺; r < s ⇔ s − r ∈ ℝ⁺
 

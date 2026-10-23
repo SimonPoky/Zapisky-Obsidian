@@ -10,6 +10,8 @@ zdroj: "slajdy 3–4, 25 (prez. 3)"
 
 > [!lidsky] Lidsky
 > Konkrétní ohodnocení, ve kterém jsou všechny formule množiny pravdivé naráz; dokazuje, že množina jde splnit. Z rezoluční tabulky se najde pozpátku: od prázdné množiny (svědkem je cokoli) se postupně doplňují hodnoty eliminovaných proměnných.
+>
+> *Příklad:* pro S = {a ∨ b, ¬a} je svědek u(a) = 0, u(b) = 1: platí a ∨ b i ¬a. Ohodnocení u(a) = 1 svědek není, ¬a by bylo nepravdivé.
 
 **Formálně:** u je svědek splnitelnosti S ⟺ u(S) = 1, tj. u(φ) = 1 pro každou φ ∈ S; z tabulky: svědek pro S₀ ∪ R_x se volbou u(x) ∈ {0, 1} změní na svědka pro S
 

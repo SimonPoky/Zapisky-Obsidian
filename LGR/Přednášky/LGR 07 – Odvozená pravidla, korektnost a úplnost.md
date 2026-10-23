@@ -47,6 +47,11 @@ V odvozeních níž se pořád používají tři základní pravidla ze slajdů 
 > [!lidsky] Lidsky
 > $\vee$i: když víš, že prší, víš i „prší nebo sněží“. $\neg$i: „kdyby $\varphi$ platila, vyšel by nesmysl, takže $\varphi$ neplatí“. $\neg\neg$e: „není pravda, že neprší“ znamená „prší“.
 
+> [!example] Příklad
+> - **zavedení negace:** ¬a ⊢ ¬(a ∧ b): 1. ¬a (P); box: 2. a ∧ b (P), 3. a (∧e₁ 2), 4. ⊥ (¬e 3, 1); 5. ¬(a ∧ b) (¬i 2–4).
+> - **zavedení disjunkce:** 1. a (P); 2. a ∨ b (∨i₁ 1); 3. b ∨ a (∨i₂ 1).
+> - **eliminace dvojité negace:** 1. ¬¬a (P); 2. a (¬¬e 1). „Není pravda, že neprší“, tedy „prší“.
+
 ### Co je odvozené pravidlo
 
 > [!definice] Definice · handout 4, slajd 11
@@ -56,6 +61,9 @@ V odvozeních níž se pořád používají tři základní pravidla ze slajdů 
 
 > [!lidsky] Lidsky
 > Jako funkce v programu: jednou ji napíšeš ze základních příkazů a pak už ji jen voláš. Nové pravidlo nic nového nedokáže, jen šetří řádky. Proto systém zůstane [[korektní důkazový systém|korektní]].
+
+> [!example] Příklad
+> MT (z a ⇒ b a ¬b odvoď ¬a) je odvozené: box a, ⇒e dá b, ¬e se ¬b dá ⊥, ¬i dá ¬a. Místo těch čtyř řádků pak stačí jeden řádek „MT“.
 
 ### Zavedení dvojité negace (¬¬i)
 
@@ -68,6 +76,9 @@ V odvozeních níž se pořád používají tři základní pravidla ze slajdů 
 
 > [!lidsky] Lidsky
 > Když platí $\varphi$, nemůže platit $\neg\varphi$: to by byl spor. Tedy platí „ne-ne-$\varphi$“.
+
+> [!example] Příklad
+> 1. a (P); 2. ¬¬a (¬¬i 1). Z „prší“ plyne „není pravda, že neprší“.
 
 Odvození $\varphi \vdash \neg\neg\varphi$ jen ze základních pravidel: předpokládej opak $\neg\varphi$ a narazíš na spor s $\varphi$ ([[eliminace negace|¬e]]), takže [[zavedení negace|¬i]] dá $\neg\neg\varphi$.
 
@@ -86,6 +97,9 @@ $$
 
 > [!lidsky] Lidsky
 > „Když prší, je mokro. Mokro není. Takže nepršelo.“ Je to [[modus ponens]] pozpátku přes [[obměněná implikace|obměnu]]: $\varphi \Rightarrow \psi$ je totéž co $\neg\psi \Rightarrow \neg\varphi$.
+
+> [!example] Příklad
+> 1. a ⇒ b (P); 2. ¬b (P); 3. ¬a (MT 1, 2). Když prší, je mokro; mokro není, takže nepršelo.
 
 Odvození: předpokládej $\varphi$, modus ponens dá $\psi$ a to je spor s $\neg\psi$.
 
@@ -109,6 +123,9 @@ $$
 > [!lidsky] Lidsky
 > Klasický důkaz sporem: „předpokládejme, že $\varphi$ neplatí… a to je spor, tedy $\varphi$ platí“. Tak se dokazuje třeba iracionalita $\sqrt 2$.
 
+> [!example] Příklad
+> ¬¬a ⊢ a: 1. ¬¬a (P); box: 2. ¬a (P), 3. ⊥ (¬e 2, 1); 4. a (RAA 2–3). Z matematiky: √2 je iracionální, protože předpoklad √2 = p/q vede ke sporu.
+
 RAA je [[zavedení negace|¬i]] a hned za ním [[eliminace dvojité negace|¬¬e]]: box s $\neg\varphi$ končící sporem dá nejdřív $\neg\neg\varphi$, z toho $\varphi$.
 
 $$
@@ -130,6 +147,9 @@ $$
 
 > [!lidsky] Lidsky
 > Každé tvrzení buď platí, nebo neplatí, třetí možnost není. Hodí se k rozboru případů: napíšeš $a \vee \neg a$ a pak [[eliminace disjunkce|∨e]] vyřeší zvlášť případ $a$ a případ $\neg a$.
+
+> [!example] Příklad
+> Odvození a ⇒ b ⊢ ¬a ∨ b začíná řádkem a ∨ ¬a (TND) a pak rozebere případ a (⇒e dá b, ∨i dá ¬a ∨ b) a případ ¬a (∨i rovnou dá ¬a ∨ b).
 
 Odvození $\vdash \varphi \vee \neg\varphi$ jde přes spor: předpokládej $\neg(\varphi \vee \neg\varphi)$. Z $\varphi$ by šlo $\vee$i₁ udělat $\varphi \vee \neg\varphi$, to je spor, takže $\neg\varphi$; z $\neg\varphi$ pak $\vee$i₂ dá znovu $\varphi \vee \neg\varphi$ a znovu spor.
 
@@ -291,6 +311,9 @@ Důkazy korektnosti a úplnosti jsou indukcí, ale ne vždy tou ze střední šk
 > [!lidsky] Lidsky
 > Věta výrokové logiky je formule dokazatelná úplně bez předpokladů, třeba $\varphi \vee \neg\varphi$ nebo $a \Rightarrow (b \Rightarrow a)$.
 
+> [!example] Příklad
+> ⊢ a ⇒ (b ⇒ a): box s předpokladem a, v něm box s b, uvnitř řádek a (it), pak dvakrát ⇒i. Žádný předpoklad nezůstane, je to věta výrokové logiky.
+
 > [!veta] Slabá věta o úplnosti · handout 4, slajd 15
 > Větami výrokové logiky jsou právě tautologie: pro ==každou formuli $\varphi$== platí **$\vdash \varphi$, právě když $\models \varphi$.**
 
@@ -321,6 +344,9 @@ Důkazy korektnosti a úplnosti jsou indukcí, ale ne vždy tou ze střední šk
 
 > [!lidsky] Lidsky
 > $L_u$ je řádek tabulky zapsaný jako formule: pro $u$: $x \mapsto 1$, $y \mapsto 0$, $z \mapsto 0$ je $L_u = \{x, \neg y, \neg z\}$. Množina $L_u$ je pravdivá **jen** v ohodnocení $u$, stejně jako [[minterm]] $x \wedge \neg y \wedge \neg z$.
+
+> [!example] Příklad
+> Pro proměnné x, y, z a řádek x ↦ 1, y ↦ 0, z ↦ 0 je L_u = {x, ¬y, ¬z}. Tahle množina je pravdivá v jediném z osmi řádků tabulky, právě v tomto.
 
 ### Lemma o literálech řádku
 

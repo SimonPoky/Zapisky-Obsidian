@@ -10,6 +10,8 @@ zdroj: "handout 3A, slajd 18"
 
 > [!lidsky] Lidsky
 > Rostoucí funkce je výtah, který jede jen nahoru: s každým krokem doprava je výš. Klesající jen dolů. V MA1 „rostoucí“ znamená ostře: rovina (stejná hodnota) se nepočítá.
+>
+> *Příklad:* x³ je rostoucí na ℝ (−2 < 1 a −8 < 1), 1/x je klesající na (0; +∞). Konstanta 5 ani x² na ℝ ryze monotónní nejsou.
 
 **Formálně:** f je rostoucí na D ⇔ ∀x₁, x₂ ∈ D: x₁ < x₂ ⇒ f(x₁) < f(x₂); klesající ⇔ x₁ < x₂ ⇒ f(x₁) > f(x₂); ryze monotónní = rostoucí nebo klesající
 

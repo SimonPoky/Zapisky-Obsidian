@@ -10,6 +10,8 @@ zdroj: "handout 1A, slajd 13"
 
 > [!lidsky] Lidsky
 > Dolní odhad, který sám leží v M. Každá neprázdná podmnožina ℕ ho má, prázdná ne.
+>
+> *Příklad:* min {3, 5, 8} = 3, min ℕ = 0. (0; 1] minimum nemá, i když infimum je 0.
 
 **Formálně:** d = min M ⇔ d ∈ M ∧ ∀x ∈ M: d ⪯ x
 

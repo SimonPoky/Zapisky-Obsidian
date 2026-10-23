@@ -10,6 +10,8 @@ zdroj: "slajd 19"
 
 > [!lidsky] Lidsky
 > Dvě množiny formulí, které jdou splnit obě, nebo ani jedna. Nemusí mít stejné svědky ani stejné proměnné, jen stejnou odpověď na „jde to splnit?“.
+>
+> *Příklad:* {a} a {b ∨ c} jsou ekvisplnitelné (obě splnitelné), i když mají jiné proměnné. {a, ¬a} a {ff} taky (obě nesplnitelné). {a} a {a, ¬a} ekvisplnitelné nejsou.
 
 **Formálně:** S, T ekvisplnitelné ⟺ (S splnitelná ⟺ T splnitelná)
 

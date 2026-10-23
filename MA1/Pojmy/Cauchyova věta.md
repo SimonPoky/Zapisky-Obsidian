@@ -10,6 +10,8 @@ zdroj: "handout 4A, slajd 7"
 
 > [!lidsky] Lidsky
 > Lagrange pro dvě funkce se společným bodem t: křivka [g(x); f(x)] má někde tečnu rovnoběžnou s tětivou mezi krajními body.
+>
+> *Příklad:* f(x) = x², g(x) = x³ na [0; 1]: (1 − 0)·3t² = (1 − 0)·2t dá t = 2/3 ∈ (0; 1).
 
 **Formálně:** f, g mají první derivaci na [a; b] ⇒ ∃t ∈ (a; b): (f(b) − f(a))·g′(t) = (g(b) − g(a))·f′(t); je-li navíc g′ ≠ 0 na (a; b), pak g(a) ≠ g(b) a (f(b) − f(a))/(g(b) − g(a)) = f′(t)/g′(t)
 

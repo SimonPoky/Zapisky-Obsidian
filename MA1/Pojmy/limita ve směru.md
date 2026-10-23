@@ -10,6 +10,8 @@ zdroj: "handout 2A, slajd 17"
 
 > [!lidsky] Lidsky
 > Hra: soupeř zvolí jakkoli malý terč kolem L, ty najdeš kus směru, jehož celý obraz padne do terče. Umíš-li vyhrát vždy, je limita L. Limita je nejvýš jedna.
+>
+> *Příklad:* lim 1/x pro x → +∞ je 0: zvolí-li soupeř terč (−0,01; 0,01), stačí kus směru (100; +∞), protože tam je 0 < 1/x < 0,01. Na menší terč odpovíš větším číslem místo 100.
 
 **Formálně:** lim_𝒮 f = L ⇔ ∀U ∈ 𝒩(L) ∃P ∈ 𝒮: f[P] ⊆ U, kde f[P] = {f(x) | x ∈ P}
 

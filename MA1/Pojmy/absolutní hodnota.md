@@ -10,6 +10,8 @@ zdroj: "handout 1B, slajd 9"
 
 > [!lidsky] Lidsky
 > Vzdálenost čísla od nuly; |x − y| je vzdálenost dvou čísel. Platí |x| ≥ 0, |xy| = |x|·|y| a |x + y| ≤ |x| + |y|.
+>
+> *Příklad:* |−3| = 3, |5| = 5; vzdálenost čísel −2 a 3 je |−2 − 3| = 5. Trojúhelníková nerovnost: |2 + (−5)| = 3 ≤ |2| + |−5| = 7.
 
 **Formálně:** |r| = r pro r ≥ 0, |r| = −r pro r < 0
 

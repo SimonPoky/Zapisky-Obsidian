@@ -48,6 +48,9 @@ Analýza stojí na [[supremum|supremu]]: limita, integrál i reálná čísla se
 >
 > Pointa pro nás: představa množiny jako „pytle, do kterého hodíš cokoliv s danou vlastností“ nestačí. Axiomatická teorie množin proto povoluje vybírat prvky jen z už existující množiny, např. $\{X \in U \mid X \notin X\}$. My pracujeme „naivně“, ale opatrně: vždy máme v pozadí nějaké univerzum $U$.
 
+> [!example] Příklad
+> Holič, který holí právě ty, kdo se neholí sami: holí sám sebe? Ať odpovíš ano, nebo ne, dostaneš spor. Stejně R: kdyby R ∈ R, pak R ∉ R, a naopak.
+
 ## §2 Potenční množina a inkluze
 
 > [!definice] Definice · slajd 10
@@ -93,6 +96,9 @@ Binární relace [[podmnožina|inkluze]] $\subseteq$ má na $\mathcal{P}(U)$ tř
 >
 > Rozdíl oproti číslům: u množin nemusí jít porovnat každé dvě. $\{a\}$ a $\{b\}$ nejsou jedna v druhé ani naopak. Proto „částečné“ uspořádání.
 
+> [!example] Příklad
+> {1, 2, 3, 6} s dělitelností: 1 ⪯ 2 ⪯ 6, ale 2 a 3 porovnat nejde. ℝ s ≤ je uspořádaná a porovnat jde každé dva prvky.
+
 > [!obrazek] Hasseův diagram $\mathcal{P}(\{a, b, c\})$
 > ![[ma101-hasse.png]]
 > *Čára nahoru znamená „je podmnožinou“. Modře $\{b\}$ a $\{c\}$, zeleně jejich supremum $\{b, c\}$ (nejníž položená množina nad oběma), oranžově infimum $\emptyset$ (nejvýš položená pod oběma).*
@@ -114,10 +120,17 @@ Nakreslení [[uspořádaná množina|uspořádání]] tak, že menší je níž 
 >
 > Proč to analýza potřebuje: množina $\{0{,}9;\ 0{,}99;\ 0{,}999; \dots\}$ nemá největší prvek, ale nejnižší strop má: číslo $1$. Supremum je „maximum, které existuje i tam, kde maximum chybí“.
 
+> [!example] Příklad
+> - **horní odhad:** pro M = [0; 1) jsou horními odhady 1, 5 i 100, dolními odhady 0 i −3. Množina ℕ v ℝ žádný horní odhad nemá.
+> - **supremum:** sup [0; 1) = 1, i když 1 ∉ [0; 1); sup {0,9; 0,99; 0,999; …} = 1.
+
 > [!definice] Infimum · slajd 14
 > Zrcadlově: $d$ je *dolní odhad* $M$, pokud $d \preceq x$ pro všechna $x \in M$. *Infimum* $\inf M$ je **největší** dolní odhad.
 
 ^def-inf
+
+> [!example] Příklad
+> Inf (0; 1] = 0 a inf {1/n | n ≥ 1} = 0; ani jedna z množin minimum nemá.
 
 > [!veta] Věta · slajd 15
 > V $(\mathcal{P}(U), \subseteq)$ má **každá** kolekce $\{A_i \mid i \in I\}$ supremum i infimum:
@@ -143,6 +156,10 @@ Supremum je tedy v $\mathcal{P}(U)$ přesně sjednocení a infimum průnik. V ji
 
 ^def-max
 
+> [!example] Příklad
+> - **minimum:** min {3, 5, 8} = 3, min ℕ = 0. (0; 1] minimum nemá, i když infimum je 0.
+> - **maximum:** max [0; 1] = 1, ale [0; 1) maximum nemá: 1 do ní nepatří a každé x < 1 přeskočí (x + 1)/2, které v ní leží. Supremum je v obou případech 1.
+
 > [!veta] Maximum vs. supremum · slajd 13
 > Existuje-li $\max M$, existuje i $\sup M$ a platí $\sup M = \max M$. Obráceně ne: supremum nemusí ležet v $M$ (viz $\{b\}, \{c\}$ výše).
 
@@ -166,6 +183,10 @@ $\mathbb{N} = \{0, 1, 2, 3, \dots\}$ je nekonečná množina a na vysoké škole
 > Tedy $1 = \{0\}$, $2 = \{0, 1\}$, $3 = \{0, 1, 2\}$ a obecně $n = \{0, 1, \dots, n - 1\}$. *Následník* $\operatorname{succ}(n) = \{0, \dots, n\}$ odpovídá $n + 1$ (následníkem 1 je 2).
 
 ^def-prirozena
+
+> [!example] Příklad
+> - **následník:** 0 = ∅, 1 = {0}, 2 = {0, 1} a succ(2) = 2 ∪ {2} = {0, 1, 2} = 3: trojka má právě tři prvky.
+> - **přirozená čísla:** 3 = {0, 1, 2} má tři prvky a platí 2 ∈ 3 i 2 = {0, 1} ⊆ 3.
 
 > [!obrazek] Čísla jako množiny
 > ![[ma101-vonneumann.png]]
@@ -248,6 +269,9 @@ Vlastnosti $(\mathbb{N}, \le)$:
 
 > [!lidsky] Lidsky
 > K přirozeným číslům se přidá jeden „strop nad všemi“, $+\infty$. Pak má supremum každá množina, i ta neomezená (třeba sudá čísla mají supremum $+\infty$). Počítá se s ním přirozeně, jen $0 \cdot (+\infty)$ nemá rozumnou hodnotu, a proto zůstává nedefinované.
+
+> [!example] Příklad
+> Sup {0, 2, 4, …} = +∞ v ℕ*; v samotném ℕ by toto supremum neexistovalo.
 
 > [!pozor] ℕ* obsahuje nulu
 > Rozšiřuje se celé $\mathbb{N}$ včetně $0$, jen se přidá $+\infty$. V jiných kurzech se hvězdičkou někdy značí naopak $\mathbb{N}$ bez nuly, tak pozor na kontext.

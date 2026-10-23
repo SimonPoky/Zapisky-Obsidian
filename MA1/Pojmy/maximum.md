@@ -10,6 +10,8 @@ zdroj: "handout 1A, slajd 13"
 
 > [!lidsky] Lidsky
 > Horní odhad, který sám leží v M. Je nejvýš jedno. Když existuje, je to zároveň supremum.
+>
+> *Příklad:* max [0; 1] = 1, ale [0; 1) maximum nemá: 1 do ní nepatří a každé x < 1 přeskočí (x + 1)/2, které v ní leží. Supremum je v obou případech 1.
 
 **Formálně:** h = max M ⇔ h ∈ M ∧ ∀x ∈ M: x ⪯ h
 

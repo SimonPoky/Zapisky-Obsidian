@@ -10,6 +10,8 @@ zdroj: "handout 2A, slajd 22"
 
 > [!lidsky] Lidsky
 > Posloupnost, jejíž členy se nikdy nezmenšují. Vždy má limitu v ℝ*, a to své supremum (případně +∞).
+>
+> *Příklad:* aₙ = 1 − 1/n (0, 1/2, 2/3, …) je neklesající a lim aₙ = sup = 1. Posloupnost (1, 2, 3, …) je neklesající s limitou +∞, (−1)ⁿ neklesající není.
 
 **Formálně:** aₙ ≤ aₙ₊₁ pro všechna n ⇒ lim aₙ = sup{aₙ | n ≥ n₀}
 

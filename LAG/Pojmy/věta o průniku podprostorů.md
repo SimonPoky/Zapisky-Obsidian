@@ -10,6 +10,8 @@ zdroj: "pozn. 5.2"
 
 > [!lidsky] Lidsky
 > Průnik dvou podprostorů je zase podprostor: co nejde opustit sčítáním a násobením ani ve V, ani ve W, nejde opustit ani v jejich společné části.
+>
+> *Příklad:* v ℝ³ jsou V = {(a; b; 0)} a W = {(0; b; c)} roviny přes počátek a V ∩ W = {(0; b; 0)} je osa y, zase podprostor.
 
 **Formálně:** V, W ≤ L ⇒ V ∩ W ≤ L
 

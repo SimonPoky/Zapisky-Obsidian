@@ -44,6 +44,9 @@ Minule přišla definice [[spojitost v bodě|spojitosti v bodě]]: limita v $p$ 
 > [!lidsky] Lidsky
 > Je to hra se soupeřem jako u limity: soupeř zvolí terč $U$ kolem $f(p)$, ty musíš najít okolí $V$ kolem $p$, které celé padne do terče. Rozdíl proti limitě: $V$ je **plné** okolí, bod $p$ v něm leží, a terč je kolem $f(p)$, ne kolem nějakého $L$. Proto spojitost zaručí, že $f(p)$ „nevyskočí“ z grafu.
 
+> [!example] Příklad
+> F(x) = x² je spojitá v 3: lim_{x→3} x² = 9 = f(3). Funkce sgn (−1 pro x < 0, 0 v nule, 1 pro x > 0) spojitá v 0 není: zleva jde k −1, zprava k 1, limita v 0 neexistuje.
+
 > [!obrazek] Spojitost přes okolí
 > ![[ma106-okoli.png]]
 > *Oranžové okolí V bodu p (i s bodem p) se zobrazí do zelené množiny f[V], která celá leží v modrém terči U kolem f(p). Pro každý, jakkoli malý terč U musí jít takové V najít.*
@@ -57,6 +60,9 @@ Minule přišla definice [[spojitost v bodě|spojitosti v bodě]]: limita v $p$ 
 > $f$ je **spojitá zleva** v $p$, když je definovaná v $p$ a ve směru $x \to p^-$ a $\lim_{x \to p^-} f(x) = f(p)$. **Spojitá zprava** obdobně s $x \to p^+$.
 
 ^def-jednostranna-spojitost
+
+> [!example] Příklad
+> F(x) = 0 pro x < 1 a f(x) = 1 pro x ≥ 1 je v bodě 1 spojitá zprava (lim_{x→1⁺} f = 1 = f(1)), ale zleva ne (lim_{x→1⁻} f = 0).
 
 > [!veta] Tvrzení · handout 3A, slajd 3
 > **$f$ je spojitá v $p$, právě když je v $p$ spojitá zleva i zprava.**
@@ -192,6 +198,9 @@ Minule přišla definice [[spojitost v bodě|spojitosti v bodě]]: limita v $p$ 
 > [!lidsky] Lidsky
 > [[spojitost na intervalu|Spojitost na intervalu]]: uvnitř normálně, na krajích jen z té strany, odkud se dá přijít. Co se děje mimo interval, nehraje roli. Například $\sqrt{x}$ je spojitá na $[0; 1]$, i když nalevo od nuly není vůbec definovaná.
 
+> [!example] Příklad
+> √x je spojitá na [0; 4]: uvnitř oboustranně a v 0 stačí zprava, lim_{x→0⁺} √x = 0 = √0. Funkce 1/x spojitá na [0; 1] není, v 0 není ani definovaná.
+
 ## §5 Creeping Theorem
 
 Velké věty o funkcích spojitých na $[a; b]$ mají společný vzor důkazu: vlastnost platí „lokálně“ kolem každého bodu a dá se „slepovat“, proto platí na celém intervalu. Ten vzor zachycuje jedna věta.
@@ -206,6 +215,10 @@ Velké věty o funkcích spojitých na $[a; b]$ mají společný vzor důkazu: v
 
 > [!lidsky] Lidsky
 > Představ si $\mathcal{A}$ jako sbírku „dobrých“ úseků, třeba úseků, na kterých je funkce omezená. [[lokální systém intervalů|Lokální]]: každý bod má kolem sebe nějaký dobrý úsek (krajní body aspoň z jedné strany). [[aditivní systém intervalů|Aditivní]]: dva dobré úseky, které se překrývají nebo dotýkají, se dají slepit v jeden dobrý úsek.
+
+> [!example] Příklad
+> - **aditivní systém intervalů:** intervaly [c; d] ⊆ [0; 1], na kterých je f omezená, tvoří aditivní systém: je-li |f| ≤ 3 na [0; 0,5] a |f| ≤ 7 na [0,4; 1], je |f| ≤ 7 na celém [0; 1].
+> - **lokální systém intervalů:** pro spojitou f na [a; b] je systém intervalů, na kterých je f omezená, lokální: kolem bodu x₀ platí |f(x)| ≤ |f(x₀)| + 1 na malém intervalu. Pro f(x) = x² a x₀ = 1 třeba x² ≤ 2 na [0,9; 1,1].
 
 > [!veta] Creeping Theorem · handout 3A, slajd 13
 > ==Je-li $\mathcal{A}$ lokální a aditivní systém podintervalů $[a; b]$,== potom **$[a; b] \in \mathcal{A}$**.

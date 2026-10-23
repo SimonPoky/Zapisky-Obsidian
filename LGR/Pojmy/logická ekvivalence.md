@@ -10,6 +10,8 @@ zdroj: "handout 4, slajd 12"
 
 > [!lidsky] Lidsky
 > Syntaktické dvojče tautologické ekvivalence: každá ze dvou formulí jde odvodit z té druhé.
+>
+> *Příklad:* a ∧ b ⊣⊢ b ∧ a: oběma směry stačí ∧e a ∧i. Také a ⇒ b ⊣⊢ ¬a ∨ b, jen jeden ze směrů potřebuje TND.
 
 **Formálně:** φ ⊣⊢ ψ ⟺ φ ⊢ ψ a zároveň ψ ⊢ φ; podle věty o úplnosti φ ⊣⊢ ψ ⟺ φ |=| ψ
 

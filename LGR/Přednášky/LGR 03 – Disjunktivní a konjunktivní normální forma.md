@@ -39,6 +39,11 @@ Jak hledat: **(1)** ekvivalentní úpravy, **(2)** tabulka pravdivostních hodno
 > [!lidsky] Lidsky
 > Literál je nejmenší cihlička: „prší“ nebo „neprší“. Minterm je seznam podmínek, které musí platit **všechny** naráz ($\wedge$), např. „prší a nemám deštník“. Maxterm stačí splnit **aspoň jednou** ($\vee$), např. „mám deštník nebo bundu nebo zůstanu doma“.
 
+> [!example] Příklad
+> - **literál:** a, ¬a, b a ¬c jsou literály; ¬¬a ani a ∧ b ne.
+> - **maxterm:** a ∨ ¬b ∨ c je úplný maxterm pro proměnné a, b, c; nepravdivý je jen pro a = 0, b = 1, c = 0.
+> - **minterm:** a ∧ ¬b ∧ c je úplný minterm; pravdivý je jen pro a = 1, b = 0, c = 1.
+
 > [!pozor] Častá chyba: minterm vs. maxterm
 > **Min**term je konjunkce ($\wedge$), **max**term disjunkce ($\vee$). Pomůcka: minterm je pravdivý v co **nejméně** řádcích tabulky (úplný minterm v jediném), maxterm v co **nejvíce** (úplný maxterm ve všech kromě jednoho).
 
@@ -135,6 +140,9 @@ Postup (slajdy 17–18):
 
 > [!lidsky] Lidsky
 > Úplná forma je „hrubá síla“: jeden term za každý vybraný řádek tabulky. Je dlouhá, ale jde ji sestavit vždy mechanicky. $\mathrm{tt}$ nemá žádný řádek s $0$, takže není z čeho postavit maxterm (a $\mathrm{ff}$ naopak).
+
+> [!example] Příklad
+> A ⇒ b je nepravdivá jen pro ab = 10, takže úplná CNF je jediný maxterm ¬a ∨ b. Úplná DNF má minterm za každý řádek s 1: (¬a ∧ ¬b) ∨ (¬a ∧ b) ∨ (a ∧ b).
 
 > [!navic] Kterou metodu kdy
 > Pro $n$ proměnných má tabulka $2^n$ řádků (pro $n = 5$ už 32), takže tabulka se hodí do 3–4 proměnných. Úpravy bývají kratší a dají jednodušší tvar. DNF z tabulky má tolik mintermů, kolik je jedniček; když je jedniček víc než polovina, je CNF kratší.

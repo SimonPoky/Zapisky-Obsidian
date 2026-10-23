@@ -10,6 +10,8 @@ zdroj: "handout 2A, slajd 22"
 
 > [!lidsky] Lidsky
 > Neklesající posloupnost má vždycky limitu, a to supremum svých členů (případně +∞). Nerostoucí má limitu infimum.
+>
+> *Příklad:* aₙ = 1 − 1/n je neklesající, takže lim aₙ = sup{0, 1/2, 2/3, …} = 1. bₙ = 1/n je nerostoucí, takže lim bₙ = inf{1, 1/2, 1/3, …} = 0.
 
 **Formálně:** (aₙ) neklesající ⇒ lim aₙ = sup{aₙ | n ≥ n₀} v ℝ*; nerostoucí ⇒ lim aₙ = inf{aₙ | n ≥ n₀}
 

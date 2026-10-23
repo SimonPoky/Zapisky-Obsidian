@@ -10,6 +10,8 @@ zdroj: "handout 4, slajd 11"
 
 > [!lidsky] Lidsky
 > Zkratka v důkazech: pravidlo, které jde poskládat ze základních pravidel, takže ho smíš používat, aniž by systém dokázal něco nového.
+>
+> *Příklad:* MT (z a ⇒ b a ¬b odvoď ¬a) je odvozené: box a, ⇒e dá b, ¬e se ¬b dá ⊥, ¬i dá ¬a. Místo těch čtyř řádků pak stačí jeden řádek „MT“.
 
 **Formálně:** pravidlo předpoklady / závěr je odvozené ⟺ závěr jde z předpokladů odvodit základními pravidly přirozené dedukce; příklady ¬¬i, MT, RAA, TND
 

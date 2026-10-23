@@ -10,6 +10,8 @@ zdroj: "handout 4B, slajd 17"
 
 > [!lidsky] Lidsky
 > Místo, kde se graf přehne: ryzí konkávnost se mění v ryzí konvexitu nebo naopak.
+>
+> *Příklad:* x³ má inflexi v 0: na (−∞; 0) je ryze konkávní (f″ = 6x < 0), na (0; +∞) ryze konvexní, a f′ = 3x² má v 0 ostré lokální minimum.
 
 **Formálně:** Ať I je otevřený interval a f má první derivaci na I. Bod p ∈ I je inflexní bod funkce f, pokud má f′ v bodě p ostrý lokální extrém
 

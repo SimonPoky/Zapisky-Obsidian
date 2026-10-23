@@ -10,6 +10,8 @@ zdroj: "slajd 12"
 
 > [!lidsky] Lidsky
 > Přiřazení pravdy (1) a nepravdy (0) všem formulím, které respektuje tabulku spojek. Stačí zadat hodnoty proměnných, zbytek se dopočítá; pro n proměnných je 2ⁿ ohodnocení.
+>
+> *Příklad:* u(a) = 1, u(b) = 0 dopočítá u(a ∧ b) = min{1, 0} = 0, u(a ∨ b) = 1 a u(¬a ⇒ b) = u(0 ⇒ 0) = 1. Pro dvě proměnné jsou 2² = 4 ohodnocení, pro tři 8.
 
 **Formálně:** u : Fle(A) → {0, 1}, u(α ∧ β) = min, u(α ∨ β) = max, u(¬α) = 1 − u(α), …; u je jednoznačně určené hodnotami na proměnných
 

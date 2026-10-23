@@ -43,6 +43,10 @@ Prezentace a videa přednášející (A. Gollová) jsou na [math.fel.cvut.cz ↗
 
 ^def-formule
 
+> [!example] Příklad
+> - **logická proměnná:** a = „prší“, b = „jedu autem“. Z nich vznikne formule a ⇒ b „když prší, jedu autem“, ve které jsou a a b listy syntaktického stromu.
+> - **formule:** (a ⇒ (b ∨ ¬c)) je formule: z proměnné c vznikne ¬c, z b a ¬c disjunkce (b ∨ ¬c), nakonec implikace s a. Řetězec a ∨ ∧ b formule není, žádné pravidlo ho nevyrobí.
+
 > [!pozor] Bod 3 se často zapomíná
 > Bod 3 říká, že **nic jiného** formulí není: bez něj by definice nevylučovala třeba nekonečný řetězec $\neg\neg\neg\dots$ nebo cokoliv dalšího. Tahle „uzavírací“ podmínka patří ke každé [[rekurzivní definice|rekurzivní definici]] množiny, tady množiny $\mathrm{Fle}(A)$.
 
@@ -72,6 +76,9 @@ $$
 > [!lidsky] Lidsky
 > Strom ukazuje, jak se formule skládala: nahoře poslední spojka, pod ní ty, které se použily dřív, dole proměnné. Je to jako rozbor věty ve škole, kde se hledá, co je podmět a co přísudek, jen tady se hledá, která spojka „drží“ celou formuli.
 
+> [!example] Příklad
+> Strom formule (a ∧ b) ⇒ ¬c má v kořeni ⇒, vlevo podstrom ∧ s listy a, b, vpravo podstrom ¬ s listem c. Podformule jsou a, b, c, a ∧ b, ¬c a celá formule.
+
 [[syntaktický strom|Strom]] se v podstatě píše **odspodu**: listy jsou proměnné, nad nimi spojky, kořen je poslední použitá spojka. Každý vrchol i se vším pod sebou je *podformule* `slajd 8`.
 
 > [!obrazek] Strom formule $(\neg b \Rightarrow a) \vee c$
@@ -88,6 +95,9 @@ $$
 > 3. $\varphi = \alpha \circ \beta$ $\Rightarrow$ $\mathrm{hl}(\varphi) = 1 + \max\{\mathrm{hl}(\alpha), \mathrm{hl}(\beta)\}$.
 
 ^def-hloubka
+
+> [!example] Příklad
+> Hl(¬(a ∧ b)) = 1 + hl(a ∧ b) = 1 + 1 = 2. hl((a ∨ b) ⇒ ¬¬c) = 1 + max{hl(a ∨ b), hl(¬¬c)} = 1 + max{1, 2} = 3.
 
 > [!pozor] Nezapomeň na binární spojky
 > Bez bodu 3 by hloubka nebyla definovaná pro $\alpha \wedge \beta$, $\alpha \Rightarrow \beta$ atd. Hloubka je délka nejdelší cesty od kořene k listu, proto se bere **maximum** z obou větví.
@@ -107,6 +117,9 @@ $$
 > Dvě formule jsou si **rovny**, pokud tvoří stejný řetězec (v neodlehčeném tvaru), neboli mají stejný syntaktický strom.
 
 ^def-rovnost-formuli
+
+> [!example] Příklad
+> A ∨ b a b ∨ a mají stejnou tabulku, ale rovny nejsou: jsou to jiné řetězce. Stejně a ≠ ¬¬a.
 
 Proto $\alpha \neq \neg\neg\alpha$ a $a \vee b \neq b \vee a$.
 
@@ -150,6 +163,9 @@ $$
 > *Pravdivostní ohodnocení* je zobrazení $u : \mathrm{Fle}(A) \to \{0, 1\}$, které respektuje tabulku spojek: $u(\neg\alpha) = 1$ iff $u(\alpha) = 0$; $u(\alpha \wedge \beta) = 1$ iff $u(\alpha) = u(\beta) = 1$; $u(\alpha \vee \beta) = 0$ iff $u(\alpha) = u(\beta) = 0$; $u(\alpha \Rightarrow \beta) = 0$ iff $u(\alpha) = 1$ a $u(\beta) = 0$; $u(\alpha \Leftrightarrow \beta) = 1$ iff $u(\alpha) = u(\beta)$.
 
 ^def-ohodnoceni
+
+> [!example] Příklad
+> U(a) = 1, u(b) = 0 dopočítá u(a ∧ b) = min{1, 0} = 0, u(a ∨ b) = 1 a u(¬a ⇒ b) = u(0 ⇒ 0) = 1. Pro dvě proměnné jsou 2² = 4 ohodnocení, pro tři 8.
 
 > [!veta] Tvrzení · slajd 13
 > **Každé pravdivostní ohodnocení $u : \mathrm{Fle}(A) \to \{0, 1\}$ je jednoznačně určeno svými hodnotami na atomických formulích $a \in A$.**

@@ -10,6 +10,8 @@ zdroj: "slajd 3 (prez. 4)"
 
 > [!lidsky] Lidsky
 > Systém, který nikdy nedokáže nepravdu: všechno, co se v něm dá odvodit, opravdu sémanticky plyne. Odvoditelné formule tvoří podmnožinu pravdivých.
+>
+> *Příklad:* přirozená dedukce je korektní: když jde odvodit a ∧ b ⊢ a, platí i a ∧ b ⊨ a. Systém s pravidlem „z a ∨ b odvoď a“ korektní není, protože a ∨ b ⊭ a (u(a) = 0, u(b) = 1).
 
 **Formálně:** pro každé S a φ: S ⊢ φ ⇒ S ⊨ φ (odvoditelné ⊆ pravdivé)
 

@@ -10,6 +10,8 @@ zdroj: "handout 4A, slajd 6"
 
 > [!lidsky] Lidsky
 > Průměrná rychlost na úseku se někde nabude jako okamžitá: v nějakém bodě je tečna rovnoběžná se sečnou krajních bodů.
+>
+> *Příklad:* f(x) = x² na [0; 2]: průměrná směrnice (4 − 0)/2 = 2 a f′(t) = 2t = 2 dá t = 1 ∈ (0; 2). Auto, které ujede 100 km za hodinu, jede někdy přesně 100 km/h.
 
 **Formálně:** f má první derivaci na [a; b] ⇒ ∃t ∈ (a; b): (f(b) − f(a))/(b − a) = f′(t)
 

@@ -114,6 +114,10 @@ Z [[věta o znaménku derivace a monotonii|věty o znaménku derivace a monotoni
 > [!lidsky] Lidsky
 > [[konvexní funkce|Konvexní]] graf je prohnutý nahoru jako miska: tětiva mezi libovolnými dvěma body grafu leží **nad grafem** (nebo na něm). Bod $a x_1 + (1 - a) x_2$ projede pro $a$ od $1$ do $0$ celý úsek od $x_1$ do $x_2$ ($a = \frac{1}{2}$ je střed) a $a f(x_1) + (1 - a) f(x_2)$ je výška tětivy nad ním. [[ryze konvexní funkce|Ryze konvexní]] graf nemá žádný rovný kus, tětiva je přísně nad ním.
 
+> [!example] Příklad
+> - **ryze konvexní funkce:** eˣ i x² jsou ryze konvexní. |x| je konvexní, ale ne ryze: na (0; +∞) je to přímka a tětiva leží na grafu.
+> - **konvexní funkce:** x²: pro x₁ = 0, x₂ = 2 a a = 1/2 je f(1) = 1 ≤ (0 + 4)/2 = 2, tětiva leží nad grafem. Konvexní je i |x|, přestože v 0 nemá derivaci.
+
 > [!definice] Konkávní a ryze konkávní funkce · handout 4B, slajd 15
 > Otočením nerovností dostaneme pojmy **konkávní** ($\ge$) a **ryze konkávní** ($>$ pro $x_1 \neq x_2$, $a \in (0; 1)$). Šetření práce: $f$ je (ryze) konvexní na $I$, právě když $-f$ je (ryze) konkávní na $I$.
 
@@ -121,6 +125,10 @@ Z [[věta o znaménku derivace a monotonii|věty o znaménku derivace a monotoni
 
 > [!lidsky] Lidsky
 > [[konkávní funkce|Konkávní]] graf je prohnutý dolů jako kopec, tětiva je pod ním. [[ryze konkávní funkce|Ryze konkávní]] je kopec bez rovných úseků. Přímka je konvexní i konkávní zároveň, ale ani ryze konvexní, ani ryze konkávní.
+
+> [!example] Příklad
+> - **konkávní funkce:** √x na (0; +∞): pro x₁ = 1, x₂ = 9 a a = 1/2 je √5 ≈ 2,24 ≥ (1 + 3)/2 = 2, graf leží nad tětivou. Konkávní jsou i −x² a ln x.
+> - **ryze konkávní funkce:** −x²: pro x₁ = −1, x₂ = 1 a a = 1/2 je f(0) = 0 > (−1 − 1)/2 = −1. Lineární funkce 2x + 1 je konkávní, ale ne ryze: tětiva leží přímo na grafu.
 
 > [!obrazek] Tětiva nad grafem
 > ![[ma110-konvexita.png]]
@@ -172,6 +180,9 @@ Z [[věta o znaménku derivace a monotonii|věty o znaménku derivace a monotoni
 
 > [!lidsky] Lidsky
 > [[inflexní bod|Inflexní bod]] je místo, kde se graf „přehne“: ryzí konkávnost se mění v ryzí konvexitu nebo naopak. Silnice, která zatáčí doleva a v jednom bodě začne zatáčet doprava. Definice to říká přes $f'$: sklon tečny tam přestane růst a začne klesat (nebo obráceně), takže $f'$ má v $p$ extrém.
+
+> [!example] Příklad
+> X³ má inflexi v 0: na (−∞; 0) je ryze konkávní (f″ = 6x < 0), na (0; +∞) ryze konvexní, a f′ = 3x² má v 0 ostré lokální minimum.
 
 > [!obrazek] Inflexní bod
 > ![[ma110-inflexe.png]]

@@ -41,6 +41,10 @@ Témata: `𝔽ⁿ` · `matice` · `eukleidovské vektory` · `posloupnosti` · `
 > [!lidsky] Lidsky
 > Sloupec čísel je jako skříňka se šuplíky. Sčítání „po složkách“ znamená, že sečteš obsah prvního šuplíku s prvním, druhého s druhým a tak dál. Mezi šuplíky se nic nepřelévá: $(1; 2) \oplus (3; 4) = (4; 6)$.
 
+> [!example] Příklad
+> - **operace po složkách:** (1; 2) + (3; 4) = (4; 6) a 3·(1; 2) = (3; 6): každá pozice se počítá zvlášť.
+> - **sloupcové vektory:** (1; −2; 0) ∈ ℝ³; (1; −2; 0) + (3; 1; 1) = (4; −1; 1) a 2·(1; −2; 0) = (2; −4; 0).
+
 > [!veta] Tvrzení
 > $(\mathbb{F}^n, \mathbb{F}, \oplus, \odot)$ je lineární prostor.
 >
@@ -107,6 +111,9 @@ Orientované úsečky s pevně zvoleným počátkem $O$, nad tělesem $\mathbb{R
 
 ^def-posl
 
+> [!example] Příklad
+> (1, 1/2, 1/4, …) + (1, 1, 1, …) = (2, 3/2, 5/4, …) a 2·(1, 1/2, 1/4, …) = (2, 1, 1/2, …).
+
 Konkrétně: $\bigl(1, \tfrac12, \tfrac13, \dots\bigr) \oplus (1, 1, 1, \dots) = \bigl(2, \tfrac32, \tfrac43, \dots\bigr)$ a $2 \odot \bigl(1, \tfrac12, \tfrac13, \dots\bigr) = \bigl(2, 1, \tfrac23, \dots\bigr)$. Posloupnost je vlastně nekonečně dlouhý sloupcový vektor.
 
 ## §5 Obecně: funkce $\mathbb{F}^A$
@@ -130,6 +137,9 @@ Konkrétně: $\bigl(1, \tfrac12, \tfrac13, \dots\bigr) \oplus (1, 1, 1, \dots) =
 > Vektor $(3; 1; 4)$ je vlastně tabulka „pozice → číslo“: pozici 1 přiřadí 3, pozici 2 přiřadí 1, pozici 3 přiřadí 4. To je funkce z množiny $\{1, 2, 3\}$ do čísel.
 >
 > Když místo $\{1, 2, 3\}$ vezmeš libovolnou množinu pozic $A$, dostaneš $\mathbb{F}^A$. Posloupnost má pozice $1, 2, 3, \dots$ a funkce $\mathbb{R} \to \mathbb{R}$ má pozici pro každé reálné číslo. Funkce je tedy vektor s „hodně složkami“, jedna složka za každý prvek $A$. Sčítání „bodově“ je pořád totéž co „po složkách“: sčítá se hodnota s hodnotou na stejné pozici.
+
+> [!example] Příklad
+> Sin a cos jsou vektory v ℝ^ℝ, jejich součet je funkce t ↦ sin t + cos t (v bodě 0 má hodnotu 1). Pro A = {1, 2, 3} je funkce f: A → ℝ jen trojice hodnot (f(1); f(2); f(3)), tedy vektor z ℝ³.
 
 > [!obrazek] Vektor, posloupnost a funkce jsou totéž
 > ![[lag02-vektor-funkce.png]]

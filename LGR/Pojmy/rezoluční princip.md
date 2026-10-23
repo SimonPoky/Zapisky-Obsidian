@@ -10,6 +10,8 @@ zdroj: "slajd 17"
 
 > [!lidsky] Lidsky
 > Rezoluce je úplný detektor sporu: konečná množina klauzulí nejde splnit, právě když z ní jde rezolucí vyrobit ff. Když ff nevznikne ani po vyrobení všech rezolvent, množina splnit jde.
+>
+> *Příklad:* S = {a ∨ b, ¬a, ¬b} je nesplnitelná, protože ff ∈ R*(S): z a ∨ b a ¬a je b, z b a ¬b je ff. S = {a ∨ b, ¬a} splnitelná je: R*(S) = {a ∨ b, ¬a, b} a ff v ní není.
 
 **Formálně:** S konečná množina klauzulí: S splnitelná ⟺ ff ∉ R*(S)
 

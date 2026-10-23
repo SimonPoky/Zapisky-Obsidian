@@ -10,6 +10,8 @@ zdroj: "handout 3A, slajd 20"
 
 > [!lidsky] Lidsky
 > Spojitá funkce, která zobrazí [a; b] do sebe, má bod, který nechá na místě: její graf musí protnout úhlopříčku y = x.
+>
+> *Příklad:* cos zobrazí [0; 1] do [0; 1] (cos 1 ≈ 0,54) a je spojitý, takže existuje t s cos t = t; je to t ≈ 0,739.
 
 **Formálně:** f: [a; b] → [a; b] spojitá ⇒ ∃t ∈ [a; b]: f(t) = t
 

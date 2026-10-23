@@ -10,6 +10,8 @@ zdroj: "pozn. 6.2"
 
 > [!lidsky] Lidsky
 > Výrobní linka: vektor projde nejdřív strojem A, pak strojem B. Píše se BA a čte zprava doleva jako g(f(x)).
+>
+> *Příklad:* A(x) = 2x (zvětšení) a B(a; b) = (−b; a) (otočení o 90°). Pak (BA)(1; 0) = B(2; 0) = (0; 2): nejdřív zvětšení, potom otočení.
 
 **Formálně:** Pro A: U → V a B: V → W je BA = B ∘ A: U → W, (BA)x = B(Ax); jsou-li A, B lineární, je i BA lineární
 

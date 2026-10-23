@@ -10,6 +10,8 @@ zdroj: "slajd 14"
 
 > [!lidsky] Lidsky
 > Klauzule bez jediného literálu: seznam „splň aspoň jedno z …“, ve kterém nic není, takže ho nejde splnit nikdy. Značí se ff a vzniká jako rezolventa x a ¬x.
+>
+> *Příklad:* z klauzulí x a ¬x se škrtne x a nezbude nic: res_x(x, ¬x) = ff. Proto je {x, ¬x} nesplnitelná; „splň aspoň jedno z ničeho“ nejde.
 
 **Formálně:** ⋁ přes 0 členů = ff; u(ff) = 0 pro každé u; res_x(x, ¬x) = ff
 

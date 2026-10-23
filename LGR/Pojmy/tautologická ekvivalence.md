@@ -10,6 +10,8 @@ zdroj: "slajd 15"
 
 > [!lidsky] Lidsky
 > Dvě formule znamenají totéž: v každém ohodnocení mají stejnou hodnotu, tedy stejný sloupec tabulky. Neznamená to, že jsou to stejné řetězce.
+>
+> *Příklad:* a ⇒ b |=| ¬a ∨ b: pro ab = 00, 01, 10, 11 mají obě formule hodnoty 1, 1, 0, 1. Formule a ⇒ b a b ⇒ a ekvivalentní nejsou, liší se pro ab = 01 a 10.
 
 **Formálně:** φ |=| ψ ⇔ ∀u: u(φ) = u(ψ) ⇔ (φ ⇔ ψ) je tautologie
 

@@ -10,6 +10,8 @@ zdroj: "slajdy 19–21"
 
 > [!lidsky] Lidsky
 > XOR, „buď, anebo“: pravdivé, když se hodnoty liší. Polévka nebo dezert, ale ne obojí.
+>
+> *Příklad:* 1 ⊕ 0 = 1, 0 ⊕ 0 = 0, 1 ⊕ 1 = 0. Je to sčítání bitů bez přenosu: 1 + 1 = 10 dvojkově a poslední bit je 0 = 1 ⊕ 1.
 
 **Formálně:** α ⊕ β |=| (α ∧ ¬β) ∨ (¬α ∧ β) |=| ¬(α ⇔ β)
 

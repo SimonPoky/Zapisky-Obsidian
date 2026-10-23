@@ -10,6 +10,8 @@ zdroj: "handout 1B, slajd 10"
 
 > [!lidsky] Lidsky
 > Množina, nad kterou jde postavit strop: existuje číslo větší nebo rovné všem jejím prvkům. Zdola omezená má podlahu, omezená obojí.
+>
+> *Příklad:* {1 − 1/n | n ≥ 1} je shora omezená (např. číslem 1), ℕ ne. Interval (−∞; 0) je shora omezený, zdola ne.
 
 **Formálně:** M shora omezená ⇔ ∃u ∈ ℝ ∀x ∈ M: x ≤ u
 

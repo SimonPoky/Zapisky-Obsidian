@@ -10,6 +10,8 @@ zdroj: "pozn. 1.18"
 
 > [!lidsky] Lidsky
 > Součet mocnin x s čísly před nimi. Pro lineární algebru je to hlavně seznam koeficientů.
+>
+> *Příklad:* p = 2 − x + 3x² má koeficienty 2, −1, 3. Jako vektory se polynomy sčítají po koeficientech: (2 − x + 3x²) + (1 + x) = 3 + 3x².
 
 **Formálně:** α₀ + α₁x + … + αₙxⁿ, αᵢ ∈ 𝔽
 

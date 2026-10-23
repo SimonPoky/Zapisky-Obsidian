@@ -10,6 +10,8 @@ zdroj: "slajd 7"
 
 > [!lidsky] Lidsky
 > Předpoklad smíš přesunout do závěru jako podmínku: „z S a z φ plyne ψ“ je totéž co „z S plyne: když φ, pak ψ“.
+>
+> *Příklad:* {a ⇒ b, b ⇒ c} ∪ {a} ⊨ c (z a plyne b, z b plyne c), a proto {a ⇒ b, b ⇒ c} ⊨ a ⇒ c.
 
 **Formálně:** S ∪ {φ} ⊨ ψ ⟺ S ⊨ (φ ⇒ ψ)
 

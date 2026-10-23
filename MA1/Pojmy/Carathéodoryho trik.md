@@ -10,6 +10,8 @@ zdroj: "handout 3B, slajd 8"
 
 > [!lidsky] Lidsky
 > Derivaci lze převést na spojitost: f(x) − f(p) se dá napsat jako f*(x) · (x − p), kde f*(x) je směrnice sečny a v bodě p směrnice tečny. Derivace existuje, právě když je tahle funkce f* v p spojitá.
+>
+> *Příklad:* f(x) = x², p = 3: x² − 9 = (x + 3)(x − 3), takže f*(x) = x + 3. Ta je spojitá v 3 a f′(3) = f*(3) = 6.
 
 **Formálně:** f definovaná na (a; b), p ∈ (a; b): f′(p) existuje ⇔ existuje f* spojitá v p s f(x) − f(p) = f*(x)·(x − p) pro všechna x ∈ (a; b); pak f′(p) = f*(p)
 

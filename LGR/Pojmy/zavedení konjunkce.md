@@ -10,6 +10,8 @@ zdroj: "slajdy 5–8 (prez. 4)"
 
 > [!lidsky] Lidsky
 > Konjunkci dokážeš tak, že dokážeš zvlášť oba její členy a spojíš je.
+>
+> *Příklad:* 1. a (P); 2. b (P); 3. a ∧ b (∧i 1, 2). Z „prší“ a „fouká“ dostaneš „prší a fouká“.
 
 **Formálně:** z φ a ψ odvoď φ ∧ ψ (φ, ψ / φ ∧ ψ); respektuje pravdivost: {φ, ψ} ⊨ φ ∧ ψ
 

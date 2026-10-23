@@ -10,6 +10,8 @@ zdroj: "pozn. 1.16"
 
 > [!lidsky] Lidsky
 > Nekonečně dlouhý sloupec čísel. Sčítá se člen po členu.
+>
+> *Příklad:* (1, 1/2, 1/4, …) + (1, 1, 1, …) = (2, 3/2, 5/4, …) a 2·(1, 1/2, 1/4, …) = (2, 1, 1/2, …).
 
 **Formálně:** 𝔽ᴺ = {(aₙ) | aₙ ∈ 𝔽}
 

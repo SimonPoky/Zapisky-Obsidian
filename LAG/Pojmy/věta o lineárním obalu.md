@@ -10,6 +10,8 @@ zdroj: "věta 2.13, cvičení 2.14"
 
 > [!lidsky] Lidsky
 > Cokoli namícháš z vektorů M, tvoří vždycky podprostor, a to ten nejtěsnější, do kterého se M vejde. Každý podprostor obsahující M musí obsahovat i všechny jejich kombinace.
+>
+> *Příklad:* span{(1; 1)} = {(t; t) | t ∈ ℝ} je přímka y = x přes počátek a je to podprostor: (2; 2) + (−5; −5) = (−3; −3) v ní zůstane. Každý podprostor, který obsahuje (1; 1), obsahuje celou tuto přímku.
 
 **Formálně:** M ⊆ L ⇒ span M ≤ L; span M = ⋂ {V | M ⊆ V ≤ L}
 

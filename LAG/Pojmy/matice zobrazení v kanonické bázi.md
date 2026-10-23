@@ -10,6 +10,8 @@ zdroj: "pozn. 6.6–6.8"
 
 > [!lidsky] Lidsky
 > Sloupce matice jsou obrazy jednotkových vektorů e₁, …, eₙ. S ní se A počítá jako matice krát vektor.
+>
+> *Příklad:* A(a; b) = (a + b; 2a): Ae₁ = (1; 2) a Ae₂ = (1; 0), takže matice je $\begin{pmatrix}1&1\\2&0\end{pmatrix}$. Kontrola: $\begin{pmatrix}1&1\\2&0\end{pmatrix}$(3; 4) = (7; 6) = A(3; 4).
 
 **Formálně:** Buď A: 𝔽ⁿ → 𝔽ᵐ lineární a (e₁, …, eₙ) kanonická báze 𝔽ⁿ. Matice zobrazení A je (Ae₁ ⋯ Aeₙ) ∈ 𝔽^{m×n}; pak Ax = (Ae₁ ⋯ Aeₙ)x pro všechna x ∈ 𝔽ⁿ
 

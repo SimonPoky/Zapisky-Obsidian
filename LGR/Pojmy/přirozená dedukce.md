@@ -10,6 +10,8 @@ zdroj: "slajdy 4–8 (prez. 4)"
 
 > [!lidsky] Lidsky
 > Důkazový systém bez axiomů (Gentzen, kolem 1930), jehož pravidla kopírují běžné dokazování. Ke každé spojce má pravidlo, jak ji dokázat (i), a jak ji použít (e).
+>
+> *Příklad:* pro ∧ jsou pravidla ∧i (z a a b udělej a ∧ b) a ∧e (z a ∧ b vezmi a); pro ⇒ je to ⇒i (box „předpokládej a, dojdi k b“) a ⇒e (modus ponens).
 
 **Formálně:** spojky ∧, ∨, ⇒, ¬ (⇔ jako dvě implikace); pro každou spojku i-pravidlo (zavedení) a e-pravidlo (odstranění); ⊥ zastupuje φ ∧ ¬φ; žádné axiomy
 

@@ -10,6 +10,8 @@ zdroj: "slajd 3 (prez. 4)"
 
 > [!lidsky] Lidsky
 > Systém, ve kterém jde odvodit úplně všechno, i φ a ¬φ naráz. Takový systém nic nerozliší, proto ho nechceme.
+>
+> *Příklad:* kdyby šlo bez předpokladů odvodit a i ¬a, dá ¬e spor ⊥ a ⊥e z něj cokoli, třeba b ∧ ¬c. Takový systém by „dokázal“ úplně všechno.
 
 **Formálně:** S ⊢ φ pro každou φ ∈ Fla(A); zejména S ⊢ φ, S ⊢ ¬φ i S ⊢ ff
 

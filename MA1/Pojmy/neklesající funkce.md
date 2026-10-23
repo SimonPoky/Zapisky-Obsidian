@@ -10,6 +10,8 @@ zdroj: "handout 4B, slajd 6"
 
 > [!lidsky] Lidsky
 > Schodiště nahoru, na kterém smíš stát na místě: funkce nikdy neklesne, rovné úseky jsou povolené. Nerostoucí je totéž obráceně, monotónní = jedno z toho.
+>
+> *Příklad:* dolní celá část ⌊x⌋ je neklesající, ale ne rostoucí: na [0; 1) je pořád 0. x³ je neklesající i rostoucí, x² na ℝ monotónní není.
 
 **Formálně:** f definovaná na intervalu I je neklesající na I ⇔ ∀x₁, x₂ ∈ I: x₁ < x₂ ⇒ f(x₁) ≤ f(x₂); nerostoucí ⇔ … f(x₁) ≥ f(x₂); monotónní = neklesající nebo nerostoucí
 

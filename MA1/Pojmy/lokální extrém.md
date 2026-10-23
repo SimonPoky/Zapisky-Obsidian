@@ -10,6 +10,8 @@ zdroj: "handout 4B, slajd 3"
 
 > [!lidsky] Lidsky
 > Společné jméno pro lokální minimum a lokální maximum: bod, kde je funkce v blízkém okolí nejníž nebo nejvýš.
+>
+> *Příklad:* x³ − 3x má lokální maximum v −1 (hodnota 2) a lokální minimum v 1 (hodnota −2), přestože jinde nabývá větších i menších hodnot.
 
 **Formálně:** f má v p lokální extrém ⇔ f má v p lokální minimum (f(p) ≤ f ve směru x → p) nebo lokální maximum (f ≤ f(p) ve směru x → p)
 

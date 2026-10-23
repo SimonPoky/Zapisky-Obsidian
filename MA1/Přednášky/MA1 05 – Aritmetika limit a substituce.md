@@ -311,6 +311,9 @@ Věta o substituci jde jedním směrem: z limity $f$ dostaneme limitu $f \circ \
 > [!lidsky] Lidsky
 > Limita „předpovídá“, kam se graf blíží, a spojitost říká, že funkce v bodě $p$ opravdu stojí tam, kam se blíží. Graf jde přes $p$ bez zvednutí tužky. V jazyce terčů: ke každému terči kolem $f(p)$ existuje okolí $p$, jehož celý obraz padne do terče, a tentokrát smí být v okolí i samotné $p$.
 
+> [!example] Příklad
+> F(x) = x² je spojitá v 3: lim_{x→3} x² = 9 = f(3). Funkce sgn (−1 pro x < 0, 0 v nule, 1 pro x > 0) spojitá v 0 není: zleva jde k −1, zprava k 1, limita v 0 neexistuje.
+
 > [!obrazek] Spojitá a nespojitá funkce v bodě p
 > ![[ma105-spojitost.png]]
 > *Vlevo spojitá: modrý bod f(p) leží přesně tam, kam graf míří; nad oranžovým okolím p leží zelená část grafu celá v modrém terči kolem f(p). Vpravo nespojitá: graf míří k L (prázdné kolečko), ale červená hodnota f(p) je jinde.*

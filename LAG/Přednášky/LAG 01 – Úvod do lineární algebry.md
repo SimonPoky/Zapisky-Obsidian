@@ -31,6 +31,9 @@ Témata: `číselné těleso` · `soustavy 2 × 2` · `axiomy` · `lineární pr
 
 ^def-rovnice
 
+> [!example] Příklad
+> 2x₁ − x₂ + 3x₃ = 5 je lineární rovnice o třech neznámých a (1; 0; 1) je její řešení, protože 2 − 0 + 3 = 5. Rovnice x₁² + x₂ = 1 lineární není.
+
 > [!veta] Věta
 > ==Nechť $a, b \in \mathbb{R}$ a $a \neq 0$.== **Potom má rovnice $ax = b$ právě jedno řešení, a to $x = \frac{b}{a}$.**
 >
@@ -202,6 +205,9 @@ Oba druhy se chovají stejně při operacích: dají se sčítat a násobit čí
 > Zápis $\odot : \mathbb{F} \times L \to L$ čti jako „vezmi číslo a vektor, dostaneš vektor“. Podobně $\oplus : L \times L \to L$ je „vezmi dva vektory, dostaneš vektor“.
 >
 > Proč tak abstraktně: co dokážeš jednou pro obecný lineární prostor, platí automaticky pro všechny příklady najednou. Jedna věta místo stovky.
+
+> [!example] Příklad
+> ℝ² se sčítáním po složkách a násobením reálným číslem (skalárem) je lineární prostor nad ℝ: (1; 2) + (3; −1) = (4; 1), 2·(1; 2) = (2; 4). Množina {(a; b) | a, b ≥ 0} lineární prostor není: (−1)·(1; 1) = (−1; −1) z ní vypadne.
 
 | č. | axiom | lidsky | název |
 |---|---|---|---|

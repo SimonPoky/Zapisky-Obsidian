@@ -10,6 +10,8 @@ zdroj: "slajd 14"
 
 > [!lidsky] Lidsky
 > Formule, která je pravdivá aspoň v jednom ohodnocení. Každá tautologie je splnitelná, obráceně ne.
+>
+> *Příklad:* a ∧ ¬b je splnitelná, stačí u(a) = 1, u(b) = 0. a ∧ ¬a splnitelná není: pro u(a) = 1 i u(a) = 0 vyjde 0.
 
 **Formálně:** ∃u: u(φ) = 1
 

@@ -10,6 +10,8 @@ zdroj: "handout 3B, slajd 12"
 
 > [!lidsky] Lidsky
 > Derivace součtu je součet derivací a konstanty se vytknou. U součinu se derivuje vždy jen jeden činitel: (fg)′ = f′g + fg′. U podílu (f′g − fg′)/g², když jmenovatel v p není nula.
+>
+> *Příklad:* (3x² + 5x)′ = 6x + 5; (x sin x)′ = sin x + x cos x; (x/(x + 1))′ = ((x + 1) − x)/(x + 1)² = 1/(x + 1)².
 
 **Formálně:** f′(p), g′(p) existují ⇒ (rf + sg)′(p) = rf′(p) + sg′(p) pro r, s ∈ ℝ; (fg)′(p) = f′(p)g(p) + f(p)g′(p); je-li g(p) ≠ 0, (f/g)′(p) = (f′(p)g(p) − f(p)g′(p))/g(p)²
 

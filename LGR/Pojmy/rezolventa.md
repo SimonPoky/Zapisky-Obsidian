@@ -10,6 +10,8 @@ zdroj: "slajd 14"
 
 > [!lidsky] Lidsky
 > Ze dvou klauzulí, kde je stejná proměnná jednou s negací a jednou bez, ji škrtneš a zbytky spojíš „nebo“. Výsledek z obou plyne. Když vyjde prázdná klauzule ff, množina je nesplnitelná.
+>
+> *Příklad:* z klauzulí a ∨ b a ¬b ∨ c vznikne škrtnutím b rezolventa a ∨ c. Z a a ¬a vznikne prázdná klauzule ff, takže {a, ¬a} je nesplnitelná.
 
 **Formálně:** res_x(α ∨ x, β ∨ ¬x) = α ∨ β; {α ∨ x, β ∨ ¬x} ⊨ α ∨ β; res_x(x, ¬x) = ff
 

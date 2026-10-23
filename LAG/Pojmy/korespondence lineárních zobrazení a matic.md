@@ -10,6 +10,8 @@ zdroj: "pozn. 6.16"
 
 > [!lidsky] Lidsky
 > Po zvolení bází odpovídá každému lineárnímu zobrazení V → W právě jedna matice n × m a každé matici právě jedno zobrazení. Závisí to na volbě bází.
+>
+> *Příklad:* v kanonické bázi odpovídá otočení roviny o 90° matice $\begin{pmatrix}0&-1\\1&0\end{pmatrix}$ a ta matice nedělá nic jiného než toto otočení. V bázi ((1; 1), (1; −1)) má totéž otočení jinou matici, $\begin{pmatrix}0&1\\-1&0\end{pmatrix}$.
 
 **Formálně:** V, W lineární prostory nad 𝔽 konečné dimenze, 𝒳 = (x₁, …, xₘ) báze V, 𝒴 = (y₁, …, yₙ) báze W ⇒ A ↦ [A]^{𝒳→𝒴} je bijekce Lin(V, W) → 𝔽^{n×m}
 

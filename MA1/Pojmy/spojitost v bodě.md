@@ -10,6 +10,8 @@ zdroj: "handout 3A, slajd 3"
 
 > [!lidsky] Lidsky
 > Funkce stojí v bodě p přesně tam, kam se její graf blíží: limita v p existuje a rovná se f(p). Graf jde přes p bez zvednutí tužky.
+>
+> *Příklad:* f(x) = x² je spojitá v 3: lim_{x→3} x² = 9 = f(3). Funkce sgn (−1 pro x < 0, 0 v nule, 1 pro x > 0) spojitá v 0 není: zleva jde k −1, zprava k 1, limita v 0 neexistuje.
 
 **Formálně:** f definovaná na okolí p ∈ ℝ; f je spojitá v p ⇔ lim_{x→p} f(x) = f(p)
 

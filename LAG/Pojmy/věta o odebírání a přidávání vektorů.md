@@ -10,6 +10,8 @@ zdroj: "věta 3.3"
 
 > [!lidsky] Lidsky
 > Z nezávislé sady můžeš vektory vyhazovat a zůstane nezávislá. K závislé sadě můžeš přidávat a zůstane závislá: netriviální recept na nulu tam pořád je, nové vektory dostanou koeficient 0. Obráceně to neplatí.
+>
+> *Příklad:* ((1; 0), (0; 1)) je LN, takže i ((1; 0)) je LN. ((1; 2), (2; 4)) je LZ, takže i ((1; 2), (2; 4), (0; 1)) je LZ: 2·(1; 2) − 1·(2; 4) + 0·(0; 1) = (0; 0).
 
 **Formálně:** (x₁, …, xₙ) LN ⇒ každá její podposloupnost je LN; (x₁, …, xₙ) LZ ⇒ (x₁, …, xₙ, y₁, …, yₘ) je LZ
 

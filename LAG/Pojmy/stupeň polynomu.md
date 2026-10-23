@@ -10,6 +10,8 @@ zdroj: "pozn. 1.18"
 
 > [!lidsky] Lidsky
 > Nejvyšší mocnina x, která v polynomu opravdu je, tedy s nenulovým číslem před sebou.
+>
+> *Příklad:* deg(3 − x + 5x⁴) = 4, deg 7 = 0, deg(0x³ + x) = 1. Součet může stupeň snížit: x² + (−x² + 1) = 1 má stupeň 0.
 
 **Formálně:** deg p = max{i | αᵢ ≠ 0}, deg o = −∞
 

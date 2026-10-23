@@ -10,6 +10,8 @@ zdroj: "handout 2A, slajd 3"
 
 > [!lidsky] Lidsky
 > Funkce definovaná na nekonečné podmnožině ℕ. Místo f(n) se píše aₙ; limita se dívá jen na „ocas“, na prvních členech nezáleží.
+>
+> *Příklad:* aₙ = 1/n pro n ≥ 1 je funkce na ℕ ∖ {0}: a₁ = 1, a₂ = 1/2, a₁₀ = 1/10. Na její limitu 0 nemá vliv, že a₁ = 1.
 
 **Formálně:** f : D → ℝ, D ⊆ ℕ nekonečná, aₙ = f(n)
 

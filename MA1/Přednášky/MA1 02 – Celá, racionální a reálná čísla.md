@@ -38,6 +38,9 @@ Minule vznikla [[přirozená čísla]] z prázdné množiny. Dnes se z nich post
 > [!lidsky] Lidsky
 > Záporné číslo je dluh. Dvojice $(m, n)$ znamená „mám $m$, dlužím $n$“. Stav $(5, 8)$, $(0, 3)$ i $(100, 103)$ je pořád stejný dluh $3$, tedy číslo $-3$. Protože v $\mathbb{N}$ ještě neumíme odčítat, pamatujeme si obě čísla a rozdíl „necháme na potom“.
 
+> [!example] Příklad
+> −3 je třída dvojic (0, 3), (5, 8), (10, 13), …, protože 0 − 3 = 5 − 8 = 10 − 13 = −3.
+
 > [!navic] Kdy dvě dvojice kódují stejné číslo
 > $(m, n)$ a $(m', n')$ představují stejné celé číslo, právě když $m + n' = m' + n$. Podmínka používá jen sčítání, které v $\mathbb{N}$ máme. Příklad: $(5, 8)$ a $(0, 3)$: $5 + 3 = 8 = 0 + 8$ ✓.
 
@@ -56,6 +59,9 @@ Minule vznikla [[přirozená čísla]] z prázdné množiny. Dnes se z nich post
 > Dvojice $(6, -9)$ „kóduje“ zlomek $\frac{6}{-9}$, který je stejným číslem jako $\frac{2}{-3}$.
 
 ^def-racionalni
+
+> [!example] Příklad
+> 2/3 = 4/6 = −6/−9 je jedno číslo zapsané různými zlomky; 0,5 = 1/2.
 
 Kontrola podmínky: $-3 \cdot 6 = -18 = 2 \cdot (-9)$ ✓. Podmínka $-3a = 2b$ je rovnost $\frac{a}{b} = \frac{2}{-3}$ „vynásobená do kříže“, aby se v ní nedělilo.
 
@@ -126,6 +132,10 @@ To znamená, že podobně jako u $\mathbb{Z}$ máme dvojici. [[Dedekindův řez|
 > [!lidsky] Lidsky
 > Řez je střih nůžkami přes racionální přímku: co je nalevo, jde do $L$, co napravo, do $U$. Když se střih trefí přímo do racionálního čísla $q$, leží $q$ v obou částech a řez je prostě $q$. Když se trefí do díry, vznikne nové, [[iracionální číslo|iracionální]] číslo. Reálné číslo tedy není „nekonečný desetinný rozvoj“, ale místo střihu.
 
+> [!example] Příklad
+> - **reálná čísla:** 1/2 odpovídá řezu s L = {r ∈ ℚ | r < 1/2}, √2 řezu s L = {r ∈ ℚ | r < 0 nebo r² < 2}. U √2 žádné racionální číslo na hranici není, řez trefil díru.
+> - **Dedekindův řez:** L = {r ∈ ℚ | r < 0 nebo r² < 2}, U = {r ∈ ℚ | r > 0 a r² > 2}: L nemá největší prvek a U nemá nejmenší, řez trefil díru √2.
+
 > [!question]- Jak vypadá řez pro racionální číslo ½?
 > $L = \{r \in \mathbb{Q} \mid r \le \frac12\}$, $U = \{r \in \mathbb{Q} \mid r \ge \frac12\}$. Dolní odhady $U$ jsou přesně čísla $\le \frac12$ a horní odhady $L$ přesně čísla $\ge \frac12$, takže obě podmínky platí.
 
@@ -145,6 +155,9 @@ To znamená, že podobně jako u $\mathbb{Z}$ máme dvojici. [[Dedekindův řez|
 > Pomocí $\mathbb{R}^+$ se pak definuje nerovnost: $r < s$ právě když $s - r \in \mathbb{R}^+$.
 
 ^def-kuzel
+
+> [!example] Příklad
+> ℝ⁺ jsou kladná čísla; 3 < 7, protože 7 − 3 = 4 ∈ ℝ⁺. Každé číslo leží právě v jedné části: 2 ∈ ℝ⁺, −2 ∈ −ℝ⁺, nebo je to 0.
 
 > [!obrazek] Pozitivní kužel a nerovnost
 > ![[ma102-kuzel.png]]

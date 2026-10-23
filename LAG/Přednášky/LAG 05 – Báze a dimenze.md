@@ -152,6 +152,9 @@ Generování zaručí, že vyjádření existuje. Kdy je jediné, říká nezáv
 > [!lidsky] Lidsky
 > Báze je souřadnicový systém prostoru: sada směrů, ze kterých poskládáš každý vektor (generuje), a to jediným receptem (LN, věta 4.2). Nic nechybí a nic není navíc. Čísla v tom jediném receptu budou příště *souřadnice* vektoru v dané bázi.
 
+> [!example] Příklad
+> V ℝ² je ((1; 0), (0; 1)) báze: (3; 5) = 3·(1; 0) + 5·(0; 1), a jinak to nejde. Báze je i ((1; 1), (1; −1)), protože (3; 5) = 4·(1; 1) − 1·(1; −1). ((1; 0), (2; 0)) báze není: (0; 1) z nich neposkládáš.
+
 > [!definice] Definice ♥ · pozn. 4.4
 > V $\mathbb{F}^n$ nad $\mathbb{F}$ definujeme posloupnost
 >
@@ -165,6 +168,9 @@ Generování zaručí, že vyjádření existuje. Kdy je jediné, říká nezáv
 
 > [!lidsky] Lidsky
 > [[kanonická báze|Kanonická báze]] jsou „jednotkové kroky“ podél os: v $\mathbb{R}^3$ krok doprava $(1; 0; 0)$, dopředu $(0; 1; 0)$ a nahoru $(0; 0; 1)$. Vektor $(4; -2; 7)$ je pak prostě 4 kroky prvním směrem, $-2$ druhým a 7 třetím, takže souřadnice v kanonické bázi jsou přímo složky vektoru.
+
+> [!example] Příklad
+> V ℝ³ je e₁ = (1; 0; 0), e₂ = (0; 1; 0), e₃ = (0; 0; 1) a (4; −1; 2) = 4e₁ − 1e₂ + 2e₃: souřadnice jsou přímo složky.
 
 Zápis $[\vec{e}_i]_j$ znamená „$j$-tá složka vektoru $\vec{e}_i$“. Báze se značí psacími velkými písmeny ($\mathcal{E}$, $\mathcal{B}$), aby se nepletly s množinami a prostory; místo „kanonická“ se někdy říká *standardní* báze. Že je $\mathcal{E}$ opravdu báze, je vidět rovnou:
 

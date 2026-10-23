@@ -129,6 +129,9 @@ Tím je lemma dokázané pro všechny formule a s ním (přes skládání řádk
 > [!lidsky] Lidsky
 > Výroková logika vidí větu „Sokrates je člověk“ jako jednu nedělitelnou krabičku $a$. Predikátová logika ji rozloží na **kdo** (Sokrates, objekt) a **co o něm platí** (být člověk, predikát). „1. řád“ znamená, že smíš říct „pro každého člověka“, ale ne „pro každou vlastnost“.
 
+> [!example] Příklad
+> „Každý člověk je smrtelný“ je ve výrokové logice jen písmeno, v predikátové ∀x (C(x) ⇒ S(x)). Díky tomu z ní a z C(s) („Sokrates je člověk“) plyne S(s).
+
 > [!navic] Sylogismy jako důkazový systém
 > Aristotelových sylogismů je celkem 37 a dohromady tvoří úplný odvozovací systém predikátové logiky (dokázal to Leśniewski kolem roku 1930, Tarského škola v Polsku).
 
@@ -150,6 +153,9 @@ Tím je lemma dokázané pro všechny formule a s ním (přes skládání řádk
 > [!lidsky] Lidsky
 > Jazyk je slovník, ze kterého smíš skládat. Logické symboly jsou pro všechny jazyky stejné, speciální si zvolíš podle toho, o čem chceš mluvit. Predikátový symbol je **vlastnost nebo vztah** ($S(x)$: „$x$ je sudé“, arita 1; $P(x, y)$: „$x < y$“, arita 2), funkční symbol **vyrábí z objektů objekt** ($f(x)$: „následník $x$“), konstantní symbol je **jméno konkrétního objektu** ($a$: „dvojka“). Arita říká, kolik věcí symbol bere.
 
+> [!example] Příklad
+> Jazyk pro přirozená čísla: predikátové symboly S (arita 1, „je sudé“) a P (arita 2, „je menší“), funkční symbol f (arita 1, „následník“) a konstantní symbol a („dvojka“). Z nich jde psát S(f(a)) nebo ∀x P(x, f(x)).
+
 > [!navic] Poznámky ke slajdu 7
 > - Proměnných se běžně bere spočetně mnoho, $\mathrm{Var} = \{x_1, x_2, \dots\}$; jazyk je pak určen jen speciálními symboly. Základní jazyk teorie přirozených čísel je třeba $\mathrm{Pred} = \{<\}$, $\mathrm{Func} = \{+, \cdot\}$, $\mathrm{Kons} = \{0, 1\}$.
 > - Konstantní symboly jde brát jako funkční symboly arity 0.
@@ -168,6 +174,9 @@ Tím je lemma dokázané pro všechny formule a s ním (přes skládání řádk
 > [!lidsky] Lidsky
 > Term je **jméno objektu**, včetně toho, jak objekt vznikl. V jazyce s konstantou $a$ (dvojka) a funkcí $f$ (následník) je $f(f(a))$ „následník následníka dvojky“, tedy číslo 4. Term **nic netvrdí**, nemá pravdivostní hodnotu; je to podstatné jméno, ne věta. Pravidlo 3 zaručí, že každý term je konečně dlouhý.
 
+> [!example] Příklad
+> X, a, f(a) a g(x, f(f(a))) jsou termy; S(x) term není, je to formule.
+
 [[term|Term]] se dá nakreslit jako strom: v kořeni je poslední funkční symbol, listy jsou proměnné a konstanty. Strom termu $g(x, f(f(a)))$ je vpravo na obrázku v §6.
 
 ## §5 Formule
@@ -183,6 +192,9 @@ Tím je lemma dokázané pro všechny formule a s ním (přes skládání řádk
 
 > [!lidsky] Lidsky
 > Atomická formule je nejjednodušší **tvrzení** o objektech: predikát s dosazenými termy, třeba $S(f(a))$ „následník dvojky je sudý“. Z atomických formulí se pak staví složitější formule spojkami (jako ve výrokové logice) a kvantifikátory: $\forall x\,\varphi$ „pro každé $x$ platí $\varphi$“, $\exists x\,\varphi$ „pro nějaké $x$ platí $\varphi$“. Atomické formule tu hrají roli, jakou měly ve výrokové logice [[logická proměnná|logické proměnné]].
+
+> [!example] Příklad
+> S(f(a)) a P(x, a) jsou atomické formule; ∀x P(x, f(x)) a ∃y (S(y) ∧ P(x, y)) jsou formule s kvantifikátory. Výraz f(S(x)) není nic: funkce dostala formuli místo termu.
 
 > [!pozor] Term ≠ formule
 > $f(a)$ je [[term]] (objekt), $S(f(a))$ je [[atomická formule|formule]] (tvrzení). Výraz $f(S(x))$ **není nic**: funkční symbol smí dostat jen termy, a $S(x)$ je formule. Stejně tak nejde $S(x) \wedge f(x)$: spojka spojuje jen formule.
@@ -213,6 +225,9 @@ U symbolů pro binární vztahy a operace se smí psát infixně: $x + y$ místo
 
 > [!lidsky] Lidsky
 > Strom má teď dvě patra: nahoře „logika“ (spojky, kvantifikátory, predikáty), dole „objekty“ (stromy termů). Podformule jsou jen kousky z horního patra: $P(x, f(x))$ je podformule, ale $f(x)$ ne, to je term.
+
+> [!example] Příklad
+> Strom formule (a ∧ b) ⇒ ¬c má v kořeni ⇒, vlevo podstrom ∧ s listy a, b, vpravo podstrom ¬ s listem c. Podformule jsou a, b, c, a ∧ b, ¬c a celá formule.
 
 ## §6 Volné a vázané proměnné
 
@@ -246,6 +261,10 @@ U symbolů pro binární vztahy a operace se smí psát infixně: $x + y$ místo
 
 > [!lidsky] Lidsky
 > Jméno vnitřní proměnné je jedno: $\sum_i i^2$ a $\sum_k k^2$ je totéž. Nové jméno ale nesmí být už „obsazené“ volnou proměnnou uvnitř, jinak by ji kvantifikátor nečekaně „chytil“ a změnil význam formule.
+
+> [!example] Příklad
+> - **legální přejmenování:** v ∀x P(x, f(z)) ∨ S(x) smíš vázané x přejmenovat na y: ∀y P(y, f(z)) ∨ S(x). Na z ne: ∀z P(z, f(z)) by „chytilo“ volné z a formule by znamenala něco jiného.
+> - **čisté proměnné:** ∀x P(x, f(z)) ∨ S(x) čisté proměnné nemá (x je volná i vázaná), po přejmenování ∀y P(y, f(z)) ∨ S(x) už ano.
 
 > [!definice] Definice · handout 5, slajd 15
 > Formule $\varphi$ a $\psi$ predikátové logiky jsou si **rovny**, pokud se jako řetězce znaků liší nejvýš legálním přejmenováním vázaných proměnných.

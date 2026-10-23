@@ -10,6 +10,8 @@ zdroj: "slajd 3 (prez. 4)"
 
 > [!lidsky] Lidsky
 > Důkazový systém, který „dokáže“ i něco, co z předpokladů neplyne. Nejde mu věřit; je to opak korektního.
+>
+> *Příklad:* systém s pravidlem „z a ⇒ b a b odvoď a“ (modus ponens pozpátku) je příliš agresivní: odvodí a z {a ⇒ b, b}, ale pro u(a) = 0, u(b) = 1 předpoklady platí a a ne.
 
 **Formálně:** existují S, φ: S ⊢ φ, ale S ⊭ φ (systém není korektní)
 

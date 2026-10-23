@@ -10,6 +10,8 @@ zdroj: "handout 5, slajd 13"
 
 > [!lidsky] Lidsky
 > Proměnná, která má ve formuli aspoň jeden volný výskyt. Pravdivost formule na ní závisí.
+>
+> *Příklad:* v P(x, a) ∨ ∀y S(y) je x volná a y vázaná. Na ℕ s P jako „<“, ⟦a⟧ = 2 a S jako „je sudé“ je ∀y S(y) nepravdivé, takže formule platí pro x = 1 (1 < 2) a pro x = 5 ne: záleží na x.
 
 **Formálně:** x je volná ve φ ⟺ x má ve φ aspoň jeden volný výskyt (může být zároveň vázaná)
 

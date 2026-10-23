@@ -10,6 +10,8 @@ zdroj: "handout 4A, slajd 3"
 
 > [!lidsky] Lidsky
 > Funkce má tečnu v každém bodě [a; b]: uvnitř obyčejnou derivaci, na krajích jen jednostrannou zevnitř. Taková funkce je na [a; b] spojitá.
+>
+> *Příklad:* x² má první derivaci na [0; 1], na krajích jednostranné 0 a 2. √x na [0; 1] ne: f′₊(0) = lim_{h→0⁺} √h/h = +∞ není vlastní.
 
 **Formálně:** f má první derivaci na [a; b] ⇔ f′(p) existuje pro každé p ∈ (a; b), existuje f′₊(a) a existuje f′₋(b) (všechny vlastní); pak je f spojitá na [a; b]
 

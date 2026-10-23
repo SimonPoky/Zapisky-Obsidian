@@ -10,6 +10,8 @@ zdroj: "handout 3B, slajd 13"
 
 > [!lidsky] Lidsky
 > Derivace složené funkce je součin derivací vrstev: vnější derivace (vyhodnocená tam, kam ukazuje vnitřní funkce) krát vnitřní derivace. Jako převody: dvakrát krát třikrát je šestkrát.
+>
+> *Příklad:* (sin(x²))′ = cos(x²)·2x a (e^{3x})′ = e^{3x}·3. V prvním případě je vnější funkce sin, vnitřní x².
 
 **Formálně:** f′(p) a g′(f(p)) existují ⇒ (g ∘ f)′(p) = g′(f(p)) · f′(p)
 

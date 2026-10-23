@@ -64,6 +64,9 @@ $$
 > [!lidsky] Lidsky
 > Booleovská funkce bere jako vstup několik logických hodnot (0/1) a vrací jednu hodnotu. Je to přesně sloupec výsledků v pravdivostní tabulce, bez ohledu na to, jakou formulí vznikl. Logický obvod v počítači je booleovská funkce vyrobená z hradel.
 
+> [!example] Příklad
+> F(x, y) = 1 právě pro x ≠ y je booleovská funkce dvou proměnných se sloupcem 0, 1, 1, 0; zapíše ji formule x ⊕ y. Pro n = 2 je takových funkcí 2⁴ = 16.
+
 **Kolik jich je:** vstupů je $2^n$ (řádky tabulky) a do každého řádku se píše 0 nebo 1, takže funkcí je $2^{2^n}$.
 
 | $n$ | řádků $2^n$ | booleovských funkcí $2^{2^n}$ |
@@ -139,6 +142,11 @@ Nejpoužívanější pravidla (úplný seznam je v prezentaci):
 
 ^def-spojky
 
+> [!example] Příklad
+> - **Shefferova čárka:** a | b = „ne obojí“: 1 | 1 = 0, jinak 1. Negace je a | a, konjunkce (a | b) | (a | b) |=| a ∧ b, protože čárka sama se sebou neguje.
+> - **vylučovací nebo:** 1 ⊕ 0 = 1, 0 ⊕ 0 = 0, 1 ⊕ 1 = 0. Je to sčítání bitů bez přenosu: 1 + 1 = 10 dvojkově a poslední bit je 0 = 1 ⊕ 1.
+> - **Peirceova šipka:** a ↓ b = „ani prší, ani sněží“: pravdivé jen pro u(a) = u(b) = 0. Negace jde vyrobit jako a ↓ a: 1 ↓ 1 = 0 a 0 ↓ 0 = 1.
+
 > [!veta] Jak je vyjádřit základními spojkami · slajd 21
 > $\alpha \mid \beta \mathrel{\vert\!=\!\vert} \neg(\alpha \wedge \beta)$, $\quad \alpha \downarrow \beta \mathrel{\vert\!=\!\vert} \neg(\alpha \vee \beta)$, $\quad \alpha \oplus \beta \mathrel{\vert\!=\!\vert} (\alpha \wedge \neg\beta) \vee (\neg\alpha \wedge \beta) \mathrel{\vert\!=\!\vert} \neg(\alpha \Leftrightarrow \beta)$.
 >
@@ -158,6 +166,9 @@ Nejpoužívanější pravidla (úplný seznam je v prezentaci):
 
 > [!lidsky] Lidsky
 > Úplný systém je stavebnice, ze které složíš libovolný obvod. Pro každou tabulku (booleovskou funkci) najdeš formuli jen z dovolených spojek. Stačí přitom ukázat, že ze stavebnice jde vyrobit $\neg$ a $\wedge$ (nebo $\neg$ a $\vee$).
+
+> [!example] Příklad
+> {¬, ∧} je úplný: a ∨ b |=| ¬(¬a ∧ ¬b) a a ⇒ b |=| ¬(a ∧ ¬b). {∧, ∨} úplný není, negaci nevyrobí: pro samé jedničky dá vždy 1.
 
 Jak na to: přepisovat pravidly ze §3.
 

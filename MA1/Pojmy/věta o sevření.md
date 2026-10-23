@@ -10,6 +10,8 @@ zdroj: "handout 2B, slajd 9"
 
 > [!lidsky] Lidsky
 > Když je g ve směru sevřená mezi f a h a ty mají stejnou limitu L, má limitu L i g. Věta zároveň zaručí, že lim g existuje.
+>
+> *Příklad:* −1/n ≤ (−1)ⁿ/n ≤ 1/n a obě krajní posloupnosti jdou k 0, takže lim (−1)ⁿ/n = 0. Stejně −x² ≤ x² sin(1/x) ≤ x² dá limitu 0 pro x → 0.
 
 **Formálně:** f ≤𝒮 g ≤𝒮 h, lim𝒮 f = lim𝒮 h = L ⇒ lim𝒮 g = L
 

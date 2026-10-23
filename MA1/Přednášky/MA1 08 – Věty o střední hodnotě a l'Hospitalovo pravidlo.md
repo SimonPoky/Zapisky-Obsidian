@@ -45,6 +45,9 @@ Všechny dnešní věty předpokládají, že $f$ má derivaci na celém $[a; b]
 > [!lidsky] Lidsky
 > [[derivace na intervalu|Derivace na $[a; b]$]] znamená, že graf má tečnu všude, kam se dá dojít: uvnitř normální, na krajích jen tu „z vnitřní strany“, protože ven z intervalu se nedíváme. Spojitost plyne z [[věta o spojitosti funkce s derivací|věty „derivace ⇒ spojitost“]], která platí i jednostranně (důkaz přes Carathéodoryho trik jde stejně).
 
+> [!example] Příklad
+> X² má první derivaci na [0; 1], na krajích jednostranné 0 a 2. √x na [0; 1] ne: f′₊(0) = lim_{h→0⁺} √h/h = +∞ není vlastní.
+
 ## §2 Rolleova věta
 
 > [!veta] Rolleova věta (první věta o střední hodnotě) · handout 4A, slajd 4
@@ -325,6 +328,9 @@ $$
 
 > [!lidsky] Lidsky
 > [[lineární aproximace|Lineární aproximace]]: zblízka vypadá každý hladký graf jako přímka, jeho tečna. Chyba $f(x) - T_1(x)$ není jen malá, je **zanedbatelná i vůči vzdálenosti $x - p$**: když se k $p$ přiblížíš 10×, chyba se zmenší víc než 10×. Kalkulačka tak třeba odhadne $\sqrt{4{,}1} \approx 2 + \frac{1}{4} \cdot 0{,}1 = 2{,}025$ (přesně $2{,}02485\ldots$).
+
+> [!example] Příklad
+> √x u p = 4: T₁(x) = 2 + (x − 4)/4, takže √4,1 ≈ 2,025; přesně je √4,1 = 2,02485…
 
 > [!obrazek] Tečna jako aproximace
 > ![[ma108-linearni-aproximace.png]]

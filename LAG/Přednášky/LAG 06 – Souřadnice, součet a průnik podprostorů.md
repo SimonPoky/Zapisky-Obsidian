@@ -56,6 +56,9 @@ Na první přednášce jsme vektoru $(3; 2)$ v rovině přiřadili návod „tř
 > [!lidsky] Lidsky
 > Báze je sada „směrů kroků“ a souřadnice jsou počty kroků v jednotlivých směrech. Každý vektor má v dané bázi jediný takový recept. Souřadnice jsou **čísla** z $\mathbb{F}$, ne vektory. Vektor $\vec{v}$ přitom může být cokoli (polynom, matice, funkce), čísla jeho receptu jsou vždycky obyčejná čísla.
 
+> [!example] Příklad
+> V bázi 𝒳 = ((1; 1), (1; −1)) prostoru ℝ² je (3; 1) = 2·(1; 1) + 1·(1; −1), takže souřadnice vektoru (3; 1) jsou 2 a 1. V kanonické bázi jsou to 3 a 1: stejný vektor, jiná čísla.
+
 Z definice je vidět i jedna drobnost: existuje-li báze s $n$ prvky, je $\dim L = n$ konečná. Souřadnice v tomhle smyslu má tedy jen prostor konečné dimenze.
 
 > [!definice] Definice ♥ · pozn. 4.17 · souřadnicový vektor
@@ -166,6 +169,9 @@ Pro množiny známe dvě základní operace, sjednocení a průnik, a pro koneč
 
 ^def-prunik
 
+> [!example] Příklad
+> Roviny z = 0 a x = 0 v ℝ³ mají průnik osu y = {(0; t; 0) | t ∈ ℝ}, a ta je zase podprostor.
+
 Pro konečné množiny platí $\vert A \cup B\vert = \vert A\vert + \vert B\vert - \vert A \cap B\vert$, protože prvky průniku se v $\vert A\vert + \vert B\vert$ započítají dvakrát. Například pro $\vert A\vert = \vert B\vert = 5$ a $\vert A \cap B\vert = 2$ je $\vert A \cup B\vert = 5 + 5 - 2 = 8$.
 
 > [!veta] Věta 5.2 (průnik podprostorů)
@@ -211,6 +217,9 @@ Místo sjednocení proto vezmeme nejmenší podprostor, který obsahuje $V$ i $W
 
 > [!lidsky] Lidsky
 > Sečti každý prvek $A$ s každým prvkem $B$ a posbírej výsledky. Pro dvě přímky přes počátek s různými směry je to celá rovina, kterou určují: každý bod roviny je součet kroku po první přímce a kroku po druhé.
+
+> [!example] Příklad
+> Osa x + osa y v ℝ² = {(a; 0) + (0; b)} = celé ℝ², třeba (2; 3) = (2; 0) + (0; 3).
 
 > [!veta] Věta 5.4 (součet podprostorů)
 > ==Buď $L$ lineární prostor a $V, W \le L$.== Potom **$V + W \le L$**.

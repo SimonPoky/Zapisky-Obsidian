@@ -10,6 +10,8 @@ zdroj: "handout 4A, slajd 15"
 
 > [!lidsky] Lidsky
 > Nahrazení funkce její tečnou blízko bodu p. Chyba je zanedbatelná i vůči vzdálenosti x − p.
+>
+> *Příklad:* √x u p = 4: T₁(x) = 2 + (x − 4)/4, takže √4,1 ≈ 2,025; přesně je √4,1 = 2,02485…
 
 **Formálně:** f′(p) existuje, T₁(f, p)(x) = f(p) + f′(p)(x − p) ⇒ lim_{x→p} (f(x) − T₁(f, p)(x))/(x − p) = 0
 

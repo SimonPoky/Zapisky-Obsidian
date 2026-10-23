@@ -10,6 +10,8 @@ zdroj: "slajd 9 (prez. 4)"
 
 > [!lidsky] Lidsky
 > „Co kdyby“ v důkazu: na chvíli předpokládáš něco, co nemáš dokázané, a vyznačíš to rámečkem (boxem). Uvnitř s tím smíš pracovat, ven smí jen výsledek, který předpoklad „spotřebuje“, třeba implikace.
+>
+> *Příklad:* v odvození ⊢ a ⇒ a je a pomocný předpoklad: box 1. a (P); po uzavření 2. a ⇒ a (⇒i 1–1). Mimo box se samotné a použít nesmí, venku zbude jen a ⇒ a.
 
 **Formálně:** pomocný předpoklad otevírá box; formule z boxu se smějí použít jen v něm a v boxech vnořených; box uzavře pravidlo (⇒i, ¬i, ∨e), pak je pasivní; odvození je hotové, až jsou všechny boxy uzavřené; globální předpoklady (formule z S) platí všude
 

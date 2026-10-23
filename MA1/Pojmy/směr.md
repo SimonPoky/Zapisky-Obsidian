@@ -10,6 +10,8 @@ zdroj: "handout 2A, slajd 9"
 
 > [!lidsky] Lidsky
 > Popis toho, odkud se blížíme k cíli: kolekce do sebe vnořených neprázdných množin, které se k cíli zmenšují, ale cíl samotný neobsahují (průnik je prázdný).
+>
+> *Příklad:* směr x → +∞ tvoří množiny (1; +∞), (2; +∞), (3; +∞), …: každá je neprázdná, leží v předchozí a jejich průnik je prázdný. Směr x → 0⁺ tvoří (0; 1), (0; 1/2), (0; 1/3), …
 
 **Formálně:** 𝒮 = {P}: P ≠ ∅; P ⊆ P′ nebo P′ ⊆ P; ⋂ P = ∅
 

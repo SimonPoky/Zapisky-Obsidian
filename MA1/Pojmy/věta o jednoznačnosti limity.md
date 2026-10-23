@@ -10,6 +10,8 @@ zdroj: "handout 2A, slajd 20"
 
 > [!lidsky] Lidsky
 > Funkce nemůže mít ve stejném směru dvě různé limity. Kdyby mířila ke dvěma různým cílům, vezmeš kolem nich dva terče, které se nepřekrývají. Na menším z obou kusů směru by hodnoty funkce musely ležet v obou terčích naráz, a to nejde.
+>
+> *Příklad:* kdyby 1/x pro x → +∞ mělo limitu 0 i 0,5, vezmeš terče (−0,1; 0,1) a (0,4; 0,6). Pro dost velká x by 1/x muselo ležet v obou naráz, a to nejde.
 
 **Formálně:** lim_𝒮 f = L₁ ∧ lim_𝒮 f = L₂ ⇒ L₁ = L₂
 

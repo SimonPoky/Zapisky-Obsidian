@@ -10,6 +10,8 @@ zdroj: "pozn. 6.3"
 
 > [!lidsky] Lidsky
 > Lineární zobrazení pošle nulu na nulu. Nejrychlejší test: když f(o) ≠ o, zobrazení lineární není.
+>
+> *Příklad:* posunutí T(x) = x + (1; 1) lineární není, protože T(0; 0) = (1; 1) ≠ (0; 0). Otočení pošle (0; 0) na (0; 0), jak má.
 
 **Formálně:** A ∈ Lin(V, W) ⇒ A(o_V) = o_W
 

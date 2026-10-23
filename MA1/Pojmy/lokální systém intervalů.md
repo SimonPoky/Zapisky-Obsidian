@@ -10,6 +10,8 @@ zdroj: "handout 3A, slajd 12"
 
 > [!lidsky] Lidsky
 > Sbírka „dobrých“ uzavřených úseků intervalu [a; b], ve které má každý bod kolem sebe nějaký dobrý úsek; krajní body a, b aspoň z jedné strany.
+>
+> *Příklad:* pro spojitou f na [a; b] je systém intervalů, na kterých je f omezená, lokální: kolem bodu x₀ platí |f(x)| ≤ |f(x₀)| + 1 na malém intervalu. Pro f(x) = x² a x₀ = 1 třeba x² ≤ 2 na [0,9; 1,1].
 
 **Formálně:** ∀x ∈ (a; b) ∃[c; d] ∈ 𝒜: c < x < d; ∃[a; d] ∈ 𝒜, a < d; ∃[c; b] ∈ 𝒜, c < b
 

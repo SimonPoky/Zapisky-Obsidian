@@ -149,6 +149,9 @@ U $\mathbb{F}^m \to \mathbb{F}^n$ jsme do sloupců psali přímo obrazy $A\vec{e
 > [!lidsky] Lidsky
 > Derivaci znáš ze školy jako „sklon funkce“. Lineární algebru ale zajímá jen to, co dělá s koeficienty: $x^k$ přejde na $kx^{k-1}$. Je to dobrý příklad, že lineární zobrazení nemusí mít nic společného se šipkami v rovině.
 
+> [!example] Příklad
+> D(3 + 2x + 5x²) = 2 + 10x. V bázi (1, x, x²) je D1 = 0, Dx = 1, Dx² = 2x, takže sloupce matice jsou (0; 0; 0), (1; 0; 0) a (0; 2; 0).
+
 Bázi zvolíme $\mathcal{E} = (1, x, x^2)$ (kanonickou bázi [[prostor polynomů stupně nejvýše n|$\mathbb{R}^{\le 2}[x]$]]) na vstupu i na výstupu. Zobrazíme vektory báze a výsledky rozložíme zpátky do $\mathcal{E}$:
 
 | $\vec{x}_j$ | $D(\vec{x}_j)$ | rozklad v $\mathcal{E}$ | $[D(\vec{x}_j)]^{\mathcal{E}}$ |

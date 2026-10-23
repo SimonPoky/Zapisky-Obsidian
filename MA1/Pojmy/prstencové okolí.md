@@ -10,6 +10,8 @@ zdroj: "handout 2A, slajd 14"
 
 > [!lidsky] Lidsky
 > Okolí bodu p s vyjmutým bodem p. Kusy směru x → p; hodnota v samotném p limitu neovlivní.
+>
+> *Příklad:* pro δ = 0,1 je prstencové okolí bodu 2 množina (1,9; 2) ∪ (2; 2,1). Funkce (x² − 4)/(x − 2) v bodě 2 definovaná není, ale na tom okolí se rovná x + 2, takže limita je 4.
 
 **Formálně:** Pδ(p) = (p − δ; p) ∪ (p; p + δ) = {x | 0 < |x − p| < δ}
 

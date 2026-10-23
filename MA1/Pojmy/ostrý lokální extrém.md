@@ -10,6 +10,8 @@ zdroj: "handout 4B, slajd 3"
 
 > [!lidsky] Lidsky
 > Extrém, kolem kterého jsou všechny hodnoty přísně větší (minimum) nebo přísně menší (maximum). Rovný úsek kolem p ostrý extrém vylučuje.
+>
+> *Příklad:* x² má v 0 ostré lokální minimum: všechny ostatní hodnoty jsou > 0. Konstanta 5 má v každém bodě lokální minimum i maximum, ale žádné ostré.
 
 **Formálně:** f je definována v p a ve směru x → p; ostré lokální minimum v p ⇔ ∃δ > 0 ∀x ∈ (p − δ; p + δ), x ≠ p: f(p) < f(x); ostré lokální maximum ⇔ … f(x) < f(p)
 

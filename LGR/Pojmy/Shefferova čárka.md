@@ -10,6 +10,8 @@ zdroj: "slajdy 19–21"
 
 > [!lidsky] Lidsky
 > NAND, „ne obojí zároveň“: nepravdivá jen pro 1, 1. Sama tvoří úplný systém spojek, proto se z ní staví čipy.
+>
+> *Příklad:* a | b = „ne obojí“: 1 | 1 = 0, jinak 1. Negace je a | a, konjunkce (a | b) | (a | b) |=| a ∧ b, protože čárka sama se sebou neguje.
 
 **Formálně:** α | β |=| ¬(α ∧ β); ¬α |=| α | α
 

@@ -43,6 +43,11 @@ Navazuje na věty o funkcích spojitých na $[a; b]$ z minula.
 > [!lidsky] Lidsky
 > [[ryze monotónní funkce|Rostoucí funkce]] je výtah, který jede jen nahoru: s každým krokem doprava je výš. [[prostá funkce|Prostá funkce]] nikdy nevrátí stejnou hodnotu dvakrát. A jen taková funkce jde „pustit pozpátku“: z výšky $y$ jednoznačně poznáš, v kterém místě $x$ jsi byl. To je [[inverzní funkce]] $f^{-1}$; její graf je graf $f$ zrcadlený podle přímky $y = x$.
 
+> [!example] Příklad
+> - **prostá funkce:** 2x + 1 je prostá. x² na ℝ prostá není: x² = 4 pro x = 2 i x = −2; na [0; +∞) už prostá je.
+> - **inverzní funkce:** f(x) = 2x + 1 vrátí z y = 7 číslo x = 3, f⁻¹(y) = (y − 1)/2. x² na ℝ inverzi nemá (2 i −2 dají 4), na [0; +∞) ano: √y.
+> - **ryze monotónní funkce:** x³ je rostoucí na ℝ (−2 < 1 a −8 < 1), 1/x je klesající na (0; +∞). Konstanta 5 ani x² na ℝ ryze monotónní nejsou.
+
 > [!veta] Věta o spojitosti inverzní funkce · handout 3A, slajd 18
 > ==Ať $f$ je spojitá na $[a; b]$.== Potom:
 >
@@ -87,6 +92,9 @@ Navazuje na věty o funkcích spojitých na $[a; b]$ z minula.
 > [!lidsky] Lidsky
 > Zlomek $\frac{f(p+h) - f(p)}{h}$ je průměrná rychlost změny na úseku délky $h$: o kolik se změnila hodnota, děleno o kolik se změnil vstup. Když úsek zmenšuješ k nule, dostaneš okamžitou rychlost v bodě $p$. Tachometr v autě ukazuje přesně derivaci ujeté dráhy podle času. [[derivace v bodě|Derivace]] musí být reálné číslo; limita $\pm\infty$ se nepočítá.
 
+> [!example] Příklad
+> F(x) = x², p = 3: (f(3 + h) − f(3))/h = (6h + h²)/h = 6 + h → 6, takže f′(3) = 6. Pro |x| v 0 vyjde |h|/h = ±1, limita neexistuje a derivace taky ne.
+
 > [!navic] Druhý zápis: $x \to p$ · handout 3B, slajd 6
 > Dosazením $x = p + h$ (podle [[věta o substituci|věty o substituci]]) dostaneš
 >
@@ -107,6 +115,9 @@ Navazuje na věty o funkcích spojitých na $[a; b]$ z minula.
 
 > [!lidsky] Lidsky
 > [[jednostranná derivace|Jednostranná derivace]] je sklon grafu, když se díváš jen z jedné strany. Oboustranná derivace existuje, když se oba sklony shodují, stejně jako oboustranná [[jednostranná limita|limita]] existuje, když se shodují jednostranné.
+
+> [!example] Příklad
+> |x| v 0: f′₊(0) = lim_{h→0⁺} |h|/h = 1 a f′₋(0) = −1, takže oboustranná derivace neexistuje.
 
 ### Sečna a tečna
 

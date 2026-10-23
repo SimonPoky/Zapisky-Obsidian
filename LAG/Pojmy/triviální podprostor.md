@@ -10,6 +10,8 @@ zdroj: "pozn. 2.3"
 
 > [!lidsky] Lidsky
 > Podprostor, který obsahuje jen nulový vektor. Je v každém lineárním prostoru a je ze všech podprostorů nejmenší; největší je celé L.
+>
+> *Příklad:* v ℝ² je to {(0; 0)}, mezi polynomy {0}. Je to obal nulového vektoru, span{(0; 0)} = {(0; 0)}, i obal prázdné množiny.
 
 **Formálně:** {0} ≤ L pro každý lineární prostor L; dim{0} = 0
 

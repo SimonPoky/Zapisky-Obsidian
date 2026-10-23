@@ -10,6 +10,8 @@ zdroj: "slajd 5"
 
 > [!lidsky] Lidsky
 > Písmenko (a, b, c…) za jednoduchý výrok. Je to nejmenší formule, tzv. atomická; list syntaktického stromu.
+>
+> *Příklad:* a = „prší“, b = „jedu autem“. Z nich vznikne formule a ⇒ b „když prší, jedu autem“, ve které jsou a a b listy syntaktického stromu.
 
 **Formálně:** a ∈ A, A ≠ ∅ je množina logických proměnných
 

@@ -10,6 +10,8 @@ zdroj: "handout 3A, slajd 13"
 
 > [!lidsky] Lidsky
 > Když má každý bod intervalu [a; b] kolem sebe dobrý úsek a dobré úseky se dají slepovat, je dobrý celý [a; b]. Dokazuje se přes supremum, z ní plynou IVT i BT.
+>
+> *Příklad:* omezenost spojité funkce na [a; b]: kolem každého bodu je úsek, kde je f omezená (to dá spojitost), a dva překrývající se úseky se slepí s větší z obou mezí. Věta pak dá omezenost na celém [a; b].
 
 **Formálně:** 𝒜 lokální a aditivní systém podintervalů [a; b] ⇒ [a; b] ∈ 𝒜
 

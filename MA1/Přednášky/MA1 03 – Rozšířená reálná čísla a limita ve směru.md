@@ -46,6 +46,9 @@ $$
 
 ^def-rstar
 
+> [!example] Příklad
+> Sup ℕ = +∞ a inf ℤ = −∞; 5 + (+∞) = +∞, ale (+∞) − (+∞) zůstává nedefinované.
+
 > [!veta] Suprema v ℝ* existují vždy · handout 1B, slajd 16
 > Pro každou $M \subseteq \mathbb{R}$: $\sup M$ je obyčejné supremum, je-li $M \neq \emptyset$ shora omezená; $\sup M = +\infty$, je-li $M \neq \emptyset$ shora neomezená; $\sup \emptyset = -\infty$. Zrcadlově $\inf M = -\sup(-M)$ vždy existuje v $\mathbb{R}^*$. Je to stejný trik jako u $\mathbb{N}^*$ v [[MA1 01 – Množiny, uspořádání a přirozená čísla#^def-nstar|přednášce 1]].
 
@@ -87,6 +90,9 @@ Zbytek přednášky tuhle představu zobecní tak, aby stejná definice fungoval
 > a $\mathcal{N}(L) = \{U_\varepsilon(L) \mid \varepsilon > 0\}$ je *systém okolí* bodu $L$ (anglicky neighbourhoods).
 
 ^def-okoli
+
+> [!example] Příklad
+> Okolí čísla 2 pro ε = 0,1 je (1,9; 2,1); okolí +∞ pro ε = 100 je (100; +∞].
 
 Vlastnosti $\mathcal{N}(L)$:
 

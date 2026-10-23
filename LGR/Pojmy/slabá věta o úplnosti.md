@@ -10,6 +10,8 @@ zdroj: "handout 4, slajd 15"
 
 > [!lidsky] Lidsky
 > Věty výrokové logiky jsou právě tautologie: bez předpokladů jde dokázat přesně to, co platí vždy.
+>
+> *Příklad:* a ∨ ¬a je tautologie, takže jde dokázat bez předpokladů (TND). a ⇒ b tautologie není (u(a) = 1, u(b) = 0), takže ⊢ a ⇒ b odvodit nejde.
 
 **Formálně:** pro každou φ: ⊢ φ ⟺ ⊨ φ; „⇐“: lemma o literálech řádku + slepení řádků přes TND a ∨e
 

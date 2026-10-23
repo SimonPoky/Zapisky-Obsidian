@@ -10,6 +10,8 @@ zdroj: "handout 4B, slajd 11"
 
 > [!lidsky] Lidsky
 > Z kopce a pak do kopce znamená dno: kde se klesání mění v růst, je lokální minimum, kde se růst mění v klesání, maximum.
+>
+> *Příklad:* |x| klesá na (−1; 0] a roste na [0; 1), takže má v 0 ostré lokální minimum, i když tam derivaci nemá.
 
 **Formálně:** f definovaná na okolí p: f nerostoucí na levém a neklesající na pravém okolí p ⇒ lokální minimum v p; neklesající vlevo a nerostoucí vpravo ⇒ lokální maximum; s klesající/rostoucí ostré extrémy
 

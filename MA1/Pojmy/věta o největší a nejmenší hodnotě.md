@@ -10,6 +10,8 @@ zdroj: "handout 4B, slajd 8"
 
 > [!lidsky] Lidsky
 > Největší a nejmenší hodnotu spojité funkce na [a; b] stačí hledat v krajních bodech a ve stacionárních bodech uvnitř.
+>
+> *Příklad:* f(x) = x³ − 3x na [0; 2]: stacionární bod uvnitř je 1, kandidáti f(0) = 0, f(1) = −2 a f(2) = 2. Nejmenší hodnota je −2, největší 2.
 
 **Formálně:** f spojitá na [a; b] a má derivaci v (a; b) ⇒ existují x_min, x_max ∈ [a; b] s nejmenší a největší hodnotou f na [a; b] a každý z nich je krajní bod [a; b] nebo vnitřní stacionární bod f
 

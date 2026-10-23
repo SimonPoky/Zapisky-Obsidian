@@ -10,6 +10,8 @@ zdroj: "handout 4, slajd 11"
 
 > [!lidsky] Lidsky
 > Každé tvrzení buď platí, nebo neplatí, nic třetího. V odvození se hodí k rozboru případů přes ∨e.
+>
+> *Příklad:* odvození a ⇒ b ⊢ ¬a ∨ b začíná řádkem a ∨ ¬a (TND) a pak rozebere případ a (⇒e dá b, ∨i dá ¬a ∨ b) a případ ¬a (∨i rovnou dá ¬a ∨ b).
 
 **Formálně:** ⊢ φ ∨ ¬φ (pravidlo bez předpokladů); odvozené přes box ¬(φ ∨ ¬φ), ¬i a ¬¬e
 

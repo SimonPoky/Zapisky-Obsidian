@@ -10,6 +10,8 @@ zdroj: "handout 4, slajd 11"
 
 > [!lidsky] Lidsky
 > Když platí φ, nemůže zároveň platit ¬φ, takže platí „ne-ne-φ“.
+>
+> *Příklad:* 1. a (P); 2. ¬¬a (¬¬i 1). Z „prší“ plyne „není pravda, že neprší“.
 
 **Formálně:** z φ odvoď ¬¬φ; odvozené pravidlo: box ¬φ, ⊥ (¬e), ¬¬φ (¬i)
 

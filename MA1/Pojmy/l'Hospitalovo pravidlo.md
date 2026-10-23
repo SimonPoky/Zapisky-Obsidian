@@ -10,6 +10,8 @@ zdroj: "handout 4A, slajd 9"
 
 > [!lidsky] Lidsky
 > U limit typu 0/0 nebo ?/|±∞| rozhoduje o podílu poměr rychlostí změny: lim f/g = lim f′/g′, pokud ta druhá limita existuje. Je to implikace, ne ekvivalence.
+>
+> *Příklad:* lim_{x→0} sin x/x je typu 0/0 a podíl derivací cos x/1 → 1, takže limita je 1. lim_{x→+∞} x/eˣ je typu ?/+∞ a podíl derivací 1/eˣ → 0.
 
 **Formálně:** 𝒮 je x → ±∞, x → p, x → p⁻ nebo x → p⁺; f, g mají derivaci na kusu P ∈ 𝒮, g ≠ 0 a g′ ≠ 0 na P; (lim f = lim g = 0 nebo lim |g| = +∞); existuje lim f′/g′ (vlastní nebo nevlastní) ⇒ existuje lim f/g a lim f/g = lim f′/g′
 

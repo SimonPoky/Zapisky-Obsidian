@@ -10,6 +10,8 @@ zdroj: "handout 4B, slajd 15"
 
 > [!lidsky] Lidsky
 > Kopec bez rovných úseků: tětiva leží přísně pod grafem.
+>
+> *Příklad:* −x²: pro x₁ = −1, x₂ = 1 a a = 1/2 je f(0) = 0 > (−1 − 1)/2 = −1. Lineární funkce 2x + 1 je konkávní, ale ne ryze: tětiva leží přímo na grafu.
 
 **Formálně:** Ať f je definována na otevřeném intervalu I. f je ryze konkávní na I, pokud pro všechna x₁ ≠ x₂ z I a všechna a ∈ (0; 1) platí f(a·x₁ + (1 − a)·x₂) > a·f(x₁) + (1 − a)·f(x₂)
 

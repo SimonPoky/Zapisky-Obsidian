@@ -41,6 +41,9 @@ Minule skončila přednáška u tečny jako nejlepší lineární aproximace fun
 > [!lidsky] Lidsky
 > [[derivace vyššího řádu|Druhá derivace]] je „rychlost změny rychlosti“, tedy zrychlení: když $f(t)$ je poloha auta, $f'(t)$ je rychlost a $f''(t)$ zrychlení. Třetí derivace popisuje, jak rychle se mění zrychlení (cukání při rozjezdu). Pro $f(x) = x^3$ je $f' = 3x^2$, $f'' = 6x$, $f''' = 6$ a všechny další derivace jsou $0$.
 
+> [!example] Příklad
+> F(x) = x³: f′ = 3x², f″ = 6x, f‴ = 6, f⁽⁴⁾ = 0. Pro polohu s(t) = 5t² je rychlost s′ = 10t a zrychlení s″ = 10.
+
 ### Definice Taylorova polynomu
 
 Cíl (handout 4A, slajd 15): najít polynom $T_n(f, p)$ stupně nejvýš $n$, který pro $x$ blízko $p$ „velmi dobře“ aproximuje $f(x)$, lépe než [[lineární aproximace]] $T_1(f, p)(x) = f(p) + f'(p)(x - p)$.
@@ -185,6 +188,9 @@ Cíl (handout 4A, slajd 15): najít polynom $T_n(f, p)$ stupně nejvýš $n$, kt
 > [!lidsky] Lidsky
 > [[lokální minimum]] je dno důlku: dost blízko $p$ není nic níž než $f(p)$, i když jinde může graf klesnout mnohem hlouběji. [[ostrý lokální extrém|Ostré minimum]] je špička dna, kolem které je všechno **přísně** výš; neostré minimum může ležet na rovném úseku, kde je kolem stejná hodnota. [[lokální maximum]] je vrchol kopce, [[lokální extrém]] je společné jméno pro obojí. Šetření práce: $f$ má v $p$ (ostré) lokální maximum, právě když $-f$ má v $p$ (ostré) lokální minimum.
 
+> [!example] Příklad
+> f(x) = x³ − 3x má v −1 ostré lokální maximum (f(−1) = 2, blízko jsou hodnoty menší) a v 1 ostré lokální minimum (f(1) = −2). Konstanta 5 má lokální extrém v každém bodě, ale žádný ostrý.
+
 > [!obrazek] Lokální minimum a ostré lokální minimum
 > ![[ma109-lokalni-minimum.png]]
 > *Vlevo: na zeleném okolí (p − δ; p + δ) je graf rovný, f(p) je nejmenší hodnota, ale ne přísně, takže jde o lokální minimum, které není ostré. Vpravo: kolem červeného bodu p je všechno přísně výš, ostré lokální minimum (derivace v p navíc neexistuje).*
@@ -196,6 +202,9 @@ Cíl (handout 4A, slajd 15): najít polynom $T_n(f, p)$ stupně nejvýš $n$, kt
 
 > [!lidsky] Lidsky
 > [[stacionární bod]] je místo, kde je tečna vodorovná: funkce se tam na okamžik „zastaví“ (auto s nulovou rychlostí). Může to být vrchol, dno, ale i jen zastavení na schodu, po kterém funkce pokračuje stejným směrem.
+
+> [!example] Příklad
+> X² − 4x má f′(x) = 2x − 4 = 0 v x = 2, to je stacionární bod (a dno). x³ má stacionární bod 0, ale extrém tam není.
 
 > [!veta] Nutná podmínka lokálního extrému · handout 4B, slajd 4
 > ==Ať $f$ má v bodě $p$ lokální extrém a ať $f'(p)$ existuje.== Potom **$f'(p) = 0$**, tedy $p$ je stacionární bod.
@@ -280,6 +289,9 @@ Cíl (handout 4A, slajd 15): najít polynom $T_n(f, p)$ stupně nejvýš $n$, kt
 
 > [!lidsky] Lidsky
 > [[neklesající funkce]] je schodiště nahoru, na kterém smíš i stát na místě (rovné úseky povolené). [[ryze monotónní funkce|Rostoucí]] je výtah jen nahoru, bez zastavení. Šetření práce: $f$ je neklesající/rostoucí na $I$, právě když $-f$ je nerostoucí/klesající.
+
+> [!example] Příklad
+> Dolní celá část ⌊x⌋ je neklesající, ale ne rostoucí: na [0; 1) je pořád 0. x³ je neklesající i rostoucí, x² na ℝ monotónní není.
 
 > [!veta] Znaménko derivace a monotonie · handout 4B, slajd 10
 > ==Ať $I$ je **otevřený** interval a $f$ má derivaci na $I$.==
