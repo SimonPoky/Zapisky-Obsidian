@@ -456,4 +456,4 @@ Proč je součin matic definovaný tak divně (řádek krát sloupec)? Protože 
 > **$[A]^{\mathcal{X}} = \begin{pmatrix} 0 & -2 \\ 1 & 2 \end{pmatrix}$** (v kanonické bázi by vyšlo $\begin{pmatrix} 1 & -1 \\ 1 & 1 \end{pmatrix}$: jiná báze, jiná matice téhož zobrazení).
 
 ---
-← [[LAG 07 – Lineární zobrazení|14. 10. 2026 Lineární zobrazení]]
+← [[LAG 07 – Lineární zobrazení|14. 10. 2026 Lineární zobrazení]] · [[LAG 09 – Algebra matic a transformace souřadnic|21. 10. 2026 Algebra matic a transformace souřadnic]] →
