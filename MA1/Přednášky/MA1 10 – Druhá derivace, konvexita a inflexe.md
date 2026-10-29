@@ -291,4 +291,4 @@ Z [[věta o znaménku derivace a monotonii|věty o znaménku derivace a monotoni
 > $f'(x) = 4x^3 - 12x^2 = 4x^2(x - 3)$. Protože $x^2 \ge 0$, je $f' < 0$ na $(-\infty; 0)$ a $(0; 3)$, $f'(0) = 0$ a $f' > 0$ na $(3; +\infty)$. Na $(-\infty; 3)$ je $f' \le 0$ a nulová jen v bodě $0$, takže každý podinterval obsahuje bod s $f' < 0$ a $f$ je na **$(-\infty; 3)$ klesající**; na **$(3; +\infty)$ rostoucí**. Ve $3$ se klesání mění v růst: **ostré lokální minimum $f(3) = -27$**. V **$0$ extrém není** (vlevo i vpravo $f$ klesá), i když $0$ je stacionární bod.
 
 ---
-← [[MA1 09 – Taylorův polynom, extrémy a monotonie|21. 10. 2026 Taylorův polynom, extrémy a monotonie]]
+← [[MA1 09 – Taylorův polynom, extrémy a monotonie|21. 10. 2026 Taylorův polynom, extrémy a monotonie]] · [[MA1 11 – Lemma o konvexních funkcích a axiomatický integrál|29. 10. 2026 Lemma o konvexních funkcích a axiomatický integrál]] →

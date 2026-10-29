@@ -10,7 +10,7 @@ tags: [predmet, MA1]
 
 [Handouty ke všem přednáškám (PDF) ↗](https://math.fel.cvut.cz/en/people/velebil/files/b0b01ma1/ma1_handout_all.pdf) · [Stránka předmětu ↗](https://math.fel.cvut.cz/en/people/velebil/teaching/b0b01ma1.html) · [Požadavky ↗](https://math.fel.cvut.cz/en/people/velebil/teaching/b0b01ma1_pozadavky.html) · [Ukázka zkoušky ↗](https://math.fel.cvut.cz/en/people/velebil/files/b0b01ma1/ma1_ukazka_2026.pdf) · [Ukázka testu 1 ↗](https://math.fel.cvut.cz/en/people/velebil/files/b0b01ma1/ma1_pisemka01_ukazka_2026.pdf) · [Ukázka testu 2 ↗](https://math.fel.cvut.cz/en/people/velebil/files/b0b01ma1/ma1_pisemka02_ukazka_2026.pdf)
 
-**Kartičky:** 238 povinných + 76 příkladů · [otevřít aplikaci ↗](https://claude.ai/artifact/3CKfKeuwtwrWiz3FSfSh5B) · [[Archiv přednášek#Kartičky|jak to funguje]]
+**Kartičky:** 274 povinných + 89 příkladů · [otevřít aplikaci ↗](https://claude.ai/artifact/3CKfKeuwtwrWiz3FSfSh5B) · [[Archiv přednášek#Kartičky|jak to funguje]]
 
 ## Přednášky
 
@@ -24,12 +24,14 @@ tags: [predmet, MA1]
 - **15. 10. 2026** [[MA1 08 – Věty o střední hodnotě a l'Hospitalovo pravidlo|Věty o střední hodnotě a l'Hospitalovo pravidlo]] · derivace na [a; b], Rolle, determinant D(x), Lagrange, f′ = 0 ⇒ konstanta, Cauchy, l'Hospital, implikace ne ekvivalence, 0 · ∞ a 1^∞, lineární aproximace
 - **21. 10. 2026** [[MA1 09 – Taylorův polynom, extrémy a monotonie|Taylorův polynom, extrémy a monotonie]] · f⁽ᵏ⁾, Taylorův polynom, základní věta (důkaz n = 2), eˣ, odhad chyby, lokální extrémy, stacionární bod, f′(p) = 0 v extrému, max a min na [a; b], monotonie a znaménko f′, x³
 - **22. 10. 2026** [[MA1 10 – Druhá derivace, konvexita a inflexe|Druhá derivace, konvexita a inflexe]] · f′ v praxi, x³ − 6x² + 10, extrém ze změny monotonie, test f″ (důkaz), f″(p) = 0, konvexní a konkávní funkce, konvexita přes f′ a f″, x⁴, inflexní bod, Weierstrass
+- **29. 10. 2026** [[MA1 11 – Lemma o konvexních funkcích a axiomatický integrál|Lemma o konvexních funkcích a axiomatický integrál]] · tečna pod grafem, lokální = globální minimum, Jensen, gradient descent (navíc), aditivita a omezenost, ∫ₐᵃ f = 0, F(x) = ∫ₐˣ f, F′ = f, primitivní funkce, jednoznačnost, L(f; Δ) a U(f; Δ), fundamentální věta
 
 ## Slovníček pojmů
 
 *Najetím myší na pojem uvidíš náhled, klepnutím otevřeš jeho poznámku.*
 
 - [[absolutní hodnota]] · Vzdálenost od nuly; |x − y| je vzdálenost dvou čísel. Platí trojúhelníková nerovnost.
+- [[aditivita integrálu]] · Integrál se sčítá po kouscích: ∫ₐᵛ f = ∫ₐᵘ f + ∫ᵤᵛ f.
 - [[aditivní systém intervalů]] · Dva překrývající se dobré úseky se dají slepit v dobrý úsek.
 - [[Archimedova vlastnost]] · Krokem libovolné kladné délky dojdeš za libovolné číslo, proto inf{1/n} = 0.
 - [[Carathéodoryho trik]] · f′(p) existuje ⇔ f(x) − f(p) = f*(x)(x − p) se spojitou f*; pak f′(p) = f*(p).
@@ -39,26 +41,38 @@ tags: [predmet, MA1]
 - [[Creeping Theorem]] · Lokální a aditivní systém obsahuje celý [a; b]; z toho plynou IVT a BT.
 - [[Dedekindovská úplnost]] · Každá neprázdná shora omezená M ⊆ ℝ má supremum v ℝ. V ℚ to neplatí.
 - [[Dedekindův řez]] · Střih racionální přímky na L a U; √2 = (L, U). Reálná čísla jsou všechny řezy.
+- [[dělení intervalu]] · Body a = x₀ < x₁ < … < xₙ = b, které rozřežou interval na kousky.
 - [[derivace na intervalu]] · Derivace uvnitř [a; b] a jednostranné na krajích; taková funkce je na [a; b] spojitá.
 - [[derivace v bodě]] · Okamžitá rychlost změny: limita (f(p+h) − f(p))/h, směrnice tečny; musí být reálné číslo.
 - [[derivace vyššího řádu]] · Derivace derivace: f″ = (f′)′, obecně f⁽ᵏ⁾; „alespoň n derivací v p“ = existuje f⁽ⁿ⁾(p).
+- [[dolní součet]] · Součet obdélníků pod grafem s výškou minima na každém kousku dělení.
 - [[důsledek Rolleovy věty]] · Determinant D(x) se sloupci v a, x, b je na krajích nulový, takže D′(t) = 0; z něj plyne Lagrange i Cauchy.
+- [[existence určitého integrálu]] · Pro spojitou f se dolní a horní součty potkají: sup L = inf U = ∫ₐᵇ f.
+- [[fundamentální věta kalkulu]] · Integrál spojité f existuje, (∫ₐˣ f)′ = f a ∫ₐˣ f = F(x) − F(a) pro primitivní F.
+- [[globální minimum]] · f(p) ≤ f(x) pro všechna x z definičního oboru, ne jen v okolí.
+- [[gradient descent]] · Hledání minima kroky xᵢ₊₁ = xᵢ − γ · f′(xᵢ); ukázka navíc, základ učení neuronových sítí.
 - [[Hasseův diagram]] · Obrázek uspořádání: menší prvky níž, čáry jen mezi přímými sousedy.
 - [[Heineova věta]] · Spojitost v p ⇔ f(xₙ) → f(p) pro každou xₙ → p; jedna špatná posloupnost dokáže nespojitost.
 - [[horní odhad]] · Strop, pod který se vejde celá množina; dolní odhad je podlaha. Nemusí ležet v množině ani existovat.
+- [[horní součet]] · Součet obdélníků nad grafem s výškou maxima na každém kousku dělení.
 - [[infimum]] · Nejvyšší podlaha, největší dolní odhad. V 𝒫(U) průnik, v ℕ minimum.
 - [[inflexní bod]] · Bod, kde má f′ ostrý lokální extrém; graf se tam přehne z konkávního na konvexní nebo naopak.
+- [[integrál jako funkce horní meze]] · F(x) = ∫ₐˣ f, nasbíraná plocha od a do x; F(a) = 0.
+- [[integrál s obrácenými mezemi]] · ∫ᵦᵃ f = −∫ₐᵇ f, aby aditivita platila pro meze v libovolném pořadí.
 - [[inverzní funkce]] · Funkce pozpátku: f⁻¹(y) je to jediné x s f(x) = y. Existuje jen u prosté funkce.
 - [[iracionální číslo]] · Reálné číslo, které nejde napsat zlomkem, např. √2. V ℚ je na jeho místě díra.
 - [[jednostranná derivace]] · Derivace jen zleva f′₋(p) nebo zprava f′₊(p); oboustranná existuje, když se shodují.
 - [[jednostranná limita]] · Limita jen zleva (x → p⁻) nebo zprava (x → p⁺); oboustranná existuje, když se shodují.
 - [[jednostranná spojitost]] · Spojitost jen zleva nebo jen zprava; oboustranná platí, když platí obě.
+- [[jednoznačnost určitého integrálu]] · Aditivita a omezenost určí integrál jednoznačně, protože primitivní funkce s F(a) = 0 je jediná.
+- [[Jensenova nerovnost]] · Pro konvexní f: f(∑ aᵢxᵢ) ≤ ∑ aᵢ f(xᵢ), kde aᵢ ≥ 0 a ∑ aᵢ = 1.
 - [[konkávní funkce]] · Kopec: tětiva pod grafem; f konkávní ⇔ −f konvexní.
 - [[konvexita pomocí druhé derivace]] · f″ ≥ 0 ⇒ konvexní, f″ > 0 ⇒ ryze konvexní; naopak ne (x⁴).
 - [[konvexita pomocí první derivace]] · Konvexní ⇔ f′ neklesající, ryze konvexní ⇔ f′ rostoucí.
 - [[konvexní funkce]] · Miska: tětiva leží nad grafem, f(ax₁ + (1 − a)x₂) ≤ af(x₁) + (1 − a)f(x₂).
 - [[l'Hospitalovo pravidlo]] · U typu 0/0 a ?/|±∞| je lim f/g = lim f′/g′, pokud ta druhá existuje. Jen implikace.
 - [[Lagrangeova věta]] · Někde uvnitř je tečna rovnoběžná se sečnou: (f(b) − f(a))/(b − a) = f′(t).
+- [[lemma o konvexních funkcích]] · Konvexní f s derivací: tečna pod grafem, lokální minimum je globální, Jensen.
 - [[limita posloupnosti z limity funkce]] · má-li f(x) limitu pro x → +∞, má stejnou limitu i posloupnost f(n)
 - [[limita posunuté posloupnosti]] · vynecháním prvních N členů se limita nezmění
 - [[limita sudých a lichých členů]] · posloupnost má limitu L, právě když ji mají sudé i liché členy
@@ -79,9 +93,11 @@ tags: [predmet, MA1]
 - [[nerovnost ve směru]] · Nerovnost, která platí jen „nakonec“, na jednom kusu směru blízko cíle.
 - [[neurčitý výraz]] · 0/0, ∞/∞, 0 · ∞, 1^∞…: z limit částí nepoznáš výsledek, musí se počítat dál.
 - [[nevlastní limita]] · Limita rovná ±∞. Vlastní je reálné číslo; rozhoduje výsledek, ne směr.
+- [[nezápornost integrálu]] · f ≥ 0 na [a; b] ⇒ ∫ₐᵇ f ≥ 0; důsledek omezenosti.
 - [[nutná podmínka inflexe]] · Inflexe v p ⇒ f″(p) = 0; naopak ne (x⁴ v nule).
 - [[nutná podmínka lokálního extrému]] · Lokální extrém a existující f′(p) ⇒ f′(p) = 0. Obráceně neplatí (x³ v nule).
 - [[okolí]] · Terč kolem cíle: (L − ε; L + ε), u +∞ interval (ε; +∞].
+- [[omezenost integrálu]] · (v − u) · min f ≤ ∫ᵤᵛ f ≤ (v − u) · max f: plocha mezi dvěma obdélníky.
 - [[omezenost ve směru]] · |f| ≤ c na některém kusu směru.
 - [[ostrý lokální extrém]] · Kolem p jsou všechny hodnoty přísně větší (ostré minimum) nebo přísně menší (ostré maximum).
 - [[podmnožina]] · A ⊆ B: všechno z A je i v B. Prázdná množina je podmnožinou čehokoliv.
@@ -89,6 +105,10 @@ tags: [predmet, MA1]
 - [[posloupnost]] · Funkce na nekonečné podmnožině ℕ, píše se aₙ. Pro limitu rozhoduje jen „ocas“.
 - [[potenční množina]] · Katalog všech výběrů z U; pro 3 prvky 2³ = 8 podmnožin.
 - [[pozitivní kužel]] · Kladná čísla ℝ⁺, ze kterých se vyrobí nerovnost: r < s ⇔ s − r ∈ ℝ⁺.
+- [[primitivní funkce]] · G s G′ = f na [a; b]; „derivace pozpátku“, jsou jich nekonečně mnoho.
+- [[primitivní funkce s předepsanou hodnotou]] · S podmínkou G(x₀) = y₀ existuje právě jedna primitivní funkce.
+- [[primitivní funkce se liší o konstantu]] · Dvě primitivní funkce k téže f: F₁ = F₂ + c.
+- [[primitivní funkce splňuje axiomy integrálu]] · G(v) − G(u) je aditivní i omezené, tedy je to ∫ᵤᵛ f.
 - [[přirozená čísla]] · 0, 1, 2, … postavená z ∅: číslo n je množina všech menších čísel.
 - [[prostá funkce]] · Různé vstupy dají různé výstupy; žádnou hodnotu nenabude dvakrát.
 - [[prstencové okolí]] · Okolí bodu p bez bodu p; hodnota v p limitu neovlivní.
@@ -111,10 +131,12 @@ tags: [predmet, MA1]
 - [[Taylorův polynom]] · Tₙ(f, p)(x) = Σ f⁽ᵏ⁾(p)/k! · (x − p)ᵏ: polynom se stejnými derivacemi v p do řádu n jako f.
 - [[Taylorův polynom exponenciály]] · Tₙ(eˣ, 0)(x) = 1 + x + x²/2! + … + xⁿ/n!; doporučeno zapamatovat.
 - [[tečna]] · Limitní poloha sečen v bodě [p; f(p)]: y = f(p) + f′(p)(x − p).
+- [[určitý integrál]] · Číslo ∫ᵤᵛ f zavedené dvěma axiomy, aditivitou a omezeností; plocha se znaménkem.
 - [[uspořádaná množina]] · Množina s pravidlem „kdo je pod kým“: reflexivní, tranzitivní, antisymetrické.
 - [[věta o aritmetice derivací]] · (rf + sg)′ = rf′ + sg′, (fg)′ = f′g + fg′, (f/g)′ = (f′g − fg′)/g².
 - [[věta o aritmetice limit]] · Limita součtu, součinu, podílu je součet, součin, podíl limit, pokud to v ℝ* dává smysl.
 - [[věta o aritmetice spojitých funkcí]] · Součet, součin, |f| i podíl (jmenovatel ≠ 0) spojitých funkcí jsou spojité.
+- [[věta o derivaci integrálu podle horní meze]] · f spojitá ⇒ (∫ₐˣ f)′ = f(x) na [a; b].
 - [[věta o derivaci složené funkce]] · Chain Rule: (g ∘ f)′(p) = g′(f(p)) · f′(p), derivace vrstev se násobí.
 - [[věta o detekci limity]] · Limitu určí substituce se stejnou limitou, jejichž obrazy pokryjí kus směru.
 - [[věta o extrémech]] · EVT: spojitá funkce na [a; b] nabývá maxima i minima.
