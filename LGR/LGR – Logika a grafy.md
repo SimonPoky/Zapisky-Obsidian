@@ -10,7 +10,7 @@ tags: [predmet, LGR]
 
 [Přednášky: prezentace a videa ↗](https://math.fel.cvut.cz/en/people/gollova/lgr/lgr-prednaska.html) · [Prezentace 1 (PDF) ↗](https://math.fel.cvut.cz/en/people/gollova/lgr/lgr_1.pdf) · [Stránka předmětu ↗](https://math.fel.cvut.cz/en/people/gollova/lgr.html) · [Literatura ↗](https://math.fel.cvut.cz/en/people/gollova/lgr/lgr-literatura.html) · [Testy v Moodle ↗](https://moodle.fel.cvut.cz/course/view.php?id=10550) · [Videopřednášky (YouTube) ↗](https://www.youtube.com/playlist?list=PLQL6z4JeTTQkjV5JYF0gB599ekq4zFfPK)
 
-**Kartičky:** 207 povinných + 60 příkladů · [otevřít aplikaci ↗](https://claude.ai/artifact/3CKfKeuwtwrWiz3FSfSh5B) · [[Archiv přednášek#Kartičky|jak to funguje]]
+**Kartičky:** 230 povinných + 70 příkladů · [otevřít aplikaci ↗](https://claude.ai/artifact/3CKfKeuwtwrWiz3FSfSh5B) · [[Archiv přednášek#Kartičky|jak to funguje]]
 
 ## Přednášky
 
@@ -22,6 +22,7 @@ tags: [predmet, LGR]
 - **15. 10. 2026** [[LGR 06 – Rezoluční tabulka a přirozená dedukce|Rezoluční tabulka a přirozená dedukce]] · tabulka na příkladu, svědek pozpátku, S ⊢ φ, korektní a úplný systém, přirozená dedukce, ∧i, ⇒i, boxy, odvození
 - **22. 10. 2026** [[LGR 07 – Odvozená pravidla, korektnost a úplnost|Odvozená pravidla, korektnost a úplnost]] · ¬¬i, MT, RAA, TND, ⊣⊢, kompaktnost, věta o dedukci, indukce, korektnost, úplnost, literály řádku
 - **23. 10. 2026** [[LGR 08 – Dokončení úplnosti a syntaxe predikátové logiky|Dokončení úplnosti a syntaxe predikátové logiky]] · krok lemmatu pro ⇒, predikátová logika, jazyk, termy, formule, volné a vázané proměnné, sentence, interpretace, formalizace
+- **29. 10. 2026** [[LGR 09 – Pravdivost formulí, model a tautologie|Pravdivost formulí, model a tautologie]] · jazyk teorie čísel, kontext ρ, update ρ[x:=d], ⟦t⟧ρ, pravdivost při kontextu, svědek, model, splnitelná sentence, tautologie, nemodel
 
 ## Plán semestru
 
@@ -65,6 +66,7 @@ tags: [predmet, LGR]
 - [[formule predikátové logiky]] · Z atomických formulí spojkami a kvantifikátory ∀x, ∃x.
 - [[funkční symbol]] · Jméno operace, která z objektů vyrobí objekt: f(x) následník; v interpretaci Uⁿ → U.
 - [[hloubka formule]] · Počet pater syntaktického stromu; proměnná 0, každá spojka +1.
+- [[hodnota termu]] · Prvek universa, který term označuje při kontextu: ⟦x + 1⟧ρ = 8 pro ρ(x) = 7.
 - [[implikace]] · Slib „jestliže α, pak β“. Nepravdivá jen pro 1 ⇒ 0.
 - [[interpretace]] · (U, ⟦−⟧): universum a význam každého predikátu, funkce a konstanty.
 - [[iterace]] · it: už odvozenou formuli smíš zopakovat, i do vnořeného boxu.
@@ -73,7 +75,9 @@ tags: [predmet, LGR]
 - [[komplementární literály]] · x a ¬x: stejná proměnná jednou pozitivně, jednou negativně.
 - [[konjunktivní normální forma]] · CNF: konjunkce maxtermů. Má ji každá formule.
 - [[konstantní symbol]] · Jméno jednoho konkrétního objektu, např. a pro dvojku.
+- [[kontext proměnných]] · ρ : Var → U, tabulka dosazení: za co právě stojí každá proměnná.
 - [[kontradikce]] · Formule nepravdivá v každém ohodnocení, např. a ∧ ¬a.
+- [[kontradikce predikátové logiky]] · Sentence bez modelu, nepravdivá v každé interpretaci.
 - [[korektní důkazový systém]] · Co jde odvodit, to platí: S ⊢ φ ⇒ S ⊨ φ.
 - [[kvantifikátor]] · ∀x „pro každé“, ∃x „existuje“; váže silněji než spojky.
 - [[legální přejmenování]] · Přejmenování vázané proměnné, při kterém se žádná volná proměnná nestane vázanou.
@@ -85,8 +89,10 @@ tags: [predmet, LGR]
 - [[logický důsledek]] · S ⊢ φ: φ jde z S odvodit podle pravidel (odvoditelnost, syntax).
 - [[maxterm]] · Disjunkce literálů (nebo literál, nebo ff), též klauzule.
 - [[minterm]] · Konjunkce literálů (nebo literál, nebo tt), např. a ∧ ¬b.
+- [[model sentence]] · Interpretace, ve které je sentence pravdivá; „svět, kde to platí“.
 - [[modus ponens]] · Z a a a ⇒ b plyne b.
 - [[modus tollens]] · MT: z φ ⇒ ψ a ¬ψ plyne ¬φ.
+- [[nezávislost sentence na kontextu]] · Sentence platí v I buď při každém kontextu, nebo při žádném.
 - [[obměněná implikace]] · φ ⇒ ψ ⊨⊨ ¬ψ ⇒ ¬φ; základ důkazu obměnou.
 - [[odvozené pravidlo]] · Zkratka poskládaná ze základních pravidel; nic nového nedokáže.
 - [[odvození]] · Důkaz po řádcích, každý řádek s pravidlem a odkazem; na konci φ, boxy zavřené.
@@ -94,6 +100,8 @@ tags: [predmet, LGR]
 - [[Peirceova šipka]] · NOR, „ani jedno“. Sama tvoří úplný systém spojek.
 - [[pomocný předpoklad]] · Lokální předpoklad otevírá box; jeho formule platí jen uvnitř boxu.
 - [[populace rezolvent]] · R*(S): S a všechny rezolventy, rezolventy rezolvent atd.; pravdivá tam, kde S.
+- [[pravdivost formule při kontextu]] · Atomická dosazením do relace, spojky tabulkou, ∃ aspoň jeden update, ∀ všechny.
+- [[pravdivost sentence]] · Sentence je pravdivá v I, platí-li při každém (ekvivalentně aspoň jednom) kontextu.
 - [[pravdivostní ohodnocení]] · Přiřazení 0/1 všem formulím podle tabulky spojek. Určí ho hodnoty proměnných; pro n proměnných 2ⁿ možností.
 - [[pravidlo slučování]] · (α ∨ x) ∧ (α ∨ ¬x) ⊨⊨ α a duálně; proměnná, na které nezáleží, zmizí.
 - [[prázdná klauzule]] · Disjunkce bez literálů, ff; nepravdivá vždy. Vzniká jako res(x, ¬x).
@@ -115,16 +123,21 @@ tags: [predmet, LGR]
 - [[slabá věta o úplnosti]] · ⊢ φ ⟺ ⊨ φ: věty výrokové logiky jsou právě tautologie.
 - [[splnitelná formule]] · Pravdivá aspoň v jednom ohodnocení.
 - [[splnitelná množina formulí]] · Existuje ohodnocení, kde platí všechny formule naráz. Prázdná množina je splnitelná.
+- [[splnitelná sentence]] · Sentence, která má aspoň jeden model.
 - [[sporný důkazový systém]] · Odvodí úplně všechno, i φ a ¬φ; nic nerozliší.
 - [[strukturální indukce]] · Vlastnost pro proměnné a její zachování každou spojkou ⇒ platí pro všechny formule.
+- [[svědek pravdivosti]] · Prvek d, jehož dosazením za x platí φ; dokazuje ∃x φ.
 - [[svědek splnitelnosti]] · Ohodnocení, kde platí celá množina; z rezoluční tabulky se hledá pozpátku.
+- [[symbol rovnosti]] · = je logický symbol: v každé interpretaci znamená „tentýž prvek universa“.
 - [[syntaktická věta o dedukci]] · S ∪ {φ} ⊢ ψ, právě když S ⊢ φ ⇒ ψ.
 - [[syntaktická věta o kompaktnosti]] · S ⊢ φ, právě když S′ ⊢ φ pro nějakou konečnou S′ ⊆ S.
 - [[syntaktický strom]] · Stavba formule: listy proměnné, kořen poslední spojka, podstromy podformule.
 - [[tautologická ekvivalence]] · Dvě formule se stejnou hodnotou v každém ohodnocení (stejný sloupec tabulky).
 - [[tautologie]] · Formule pravdivá v každém ohodnocení, např. a ∨ ¬a.
+- [[tautologie predikátové logiky]] · Sentence pravdivá v každé interpretaci, např. ∀x (x = x).
 - [[term]] · Jméno objektu: proměnná, konstanta, f(t₁, …, tₙ); nic netvrdí.
 - [[universum]] · Neprázdná množina objektů, o kterých se mluví, např. ℕ.
+- [[update kontextu]] · ρ[x:=d]: stejný kontext, jen x přepsáno na d.
 - [[úplná normální forma]] · DNF/CNF, kde každý term obsahuje všechny proměnné; vzniká z tabulky.
 - [[úplný důkazový systém]] · Odvodí přesně to, co platí: S ⊢ φ ⟺ S ⊨ φ.
 - [[úplný systém logických spojek]] · Spojky, kterými jde zapsat každá booleovská funkce: {¬, ∧, ∨}, {¬, ⇒}, {|}, {↓}.

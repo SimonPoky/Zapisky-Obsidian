@@ -442,4 +442,4 @@ Abychom mohli říct, jestli [[formule predikátové logiky|formule]] platí, mu
 > V $\exists y\,P(x, y)$ je $x$ **volná**, $y$ vázaná; v $\forall x\,(S(x) \vee P(y, x))$ je $y$ **volná**, $x$ vázaná. Obě proměnné jsou tedy volné i vázané. Přejmenuj vázané na $z$ (v žádné z podformulí nemá volný výskyt, takže je to legální): **$\exists z\,P(x, z) \wedge \forall z\,\big(S(z) \vee P(y, z)\big)$**. Teď jsou $x$, $y$ jen volné a $z$ jen vázaná.
 
 ---
-← [[LGR 07 – Odvozená pravidla, korektnost a úplnost|22. 10. 2026 Odvozená pravidla, korektnost a úplnost]]
+← [[LGR 07 – Odvozená pravidla, korektnost a úplnost|22. 10. 2026 Odvozená pravidla, korektnost a úplnost]] · [[LGR 09 – Pravdivost formulí, model a tautologie|29. 10. 2026 Pravdivost formulí, model a tautologie]] →
