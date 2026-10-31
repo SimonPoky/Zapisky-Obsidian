@@ -349,4 +349,4 @@ Tutéž úlohu jde zapsat třikrát: jako soustavu, jako hledání lineární ko
 > **$A^{-1}\{(2; 3)\} = \{(-1; 3; 0)\} + \operatorname{span}\{(1; -1; 1)\}$.** Kontrola: $A(-1; 3; 0) = (2; 3)$ a $A(1; -1; 1) = (0; 0)$.
 
 ---
-← [[LAG 09 – Algebra matic a transformace souřadnic|21. 10. 2026 Algebra matic a transformace souřadnic]]
+← [[LAG 09 – Algebra matic a transformace souřadnic|21. 10. 2026 Algebra matic a transformace souřadnic]] · [[LAG 11 – Jádro, obraz, hodnost a defekt|30. 10. 2026 Jádro, obraz, hodnost a defekt]] →

@@ -1,18 +1,18 @@
 ---
-aliases: ["izomorfní"]
+aliases: ["izomorfismem", "izomorfismu", "isomorfismus", "lineární izomorfismus"]
 tags: [pojem, LAG]
 predmet: LAG
 prednaska: 2
-zdroj: "kap. 7"
+zdroj: "pozn. 7.8 ♥"
 ---
 
 # izomorfismus
 
 > [!lidsky] Lidsky
-> Převodník mezi dvěma prostory, který zachová sčítání i násobení. Izomorfní prostory jsou stejné, jen jinak zapsané. Přesně se zavádí v kap. 7.
+> Lineární zobrazení, které je bijekce: „překladač“ mezi dvěma prostory, který každému vektoru přiřadí právě jeden protějšek a zachová sčítání i násobení. Izomorfní prostory jsou stejné, jen jinak zapsané.
 >
-> *Příklad:* převod a + bx ↦ (a; b) z polynomů stupně ≤ 1 do ℝ² je izomorfismus: (1 + 2x) + (3 − x) = 4 + x se převede na (1; 2) + (3; −1) = (4; 1). Polynomy stupně ≤ 1 jsou tedy jen jinak zapsané dvojice čísel.
+> *Příklad:* a + bx ↦ (a; b) je izomorfismus ℝ^{≤1}[x] → ℝ²: (1 + 2x) + (3 − x) = 4 + x se převede na (1; 2) + (3; −1) = (4; 1). Nepříklad: f(x) = x + 1 na ℝ je bijekce, ale ne lineární, takže izomorfismus není.
 
-**Formálně:** lineární bijekce L → L′
+**Formálně:** Buďte V a W lineární prostory nad 𝔽. Lineární zobrazení A: V → W nazveme izomorfismus, jestliže je bijektivní (prosté a na). Ekvivalentně ker A = {0} a im A = W
 
-**Definice:** [[LAG 02 – Příklady lineárních prostorů#^zamysleni|přednáška 2, 25. 9. 2026]] · kap. 7
+**Definice:** [[LAG 11 – Jádro, obraz, hodnost a defekt#^def-mono-epi-izo|přednáška 11, 30. 10. 2026]] · pozn. 7.8 ♥ · první zmínka: [[LAG 02 – Příklady lineárních prostorů#^zamysleni|přednáška 2, 25. 9. 2026]]
