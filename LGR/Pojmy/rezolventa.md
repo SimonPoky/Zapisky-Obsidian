@@ -13,6 +13,10 @@ zdroj: "slajd 14"
 >
 > *Příklad:* z klauzulí a ∨ b a ¬b ∨ c vznikne škrtnutím b rezolventa a ∨ c. Z a a ¬a vznikne prázdná klauzule ff, takže {a, ¬a} je nesplnitelná.
 
+> [!obrazek] Rezoluční odvození pro výlet
+> ![[lgr04-rezoluce.png]]
+> *Oranžově klauzule z $S$, červeně $\neg p$ (negovaný závěr), modře rezolventy, šedě proměnná, podle které se rezolvuje. Dole $\mathrm{ff}$: spor.*
+
 **Formálně:** res_x(α ∨ x, β ∨ ¬x) = α ∨ β; {α ∨ x, β ∨ ¬x} ⊨ α ∨ β; res_x(x, ¬x) = ff
 
 **Definice:** [[LGR 04 – Sémantický důsledek a klauzální tvar#^def-rezolventa|přednáška 4, 8. 10. 2026]] · slajd 14 · přidání rezolventy nemění pravdivost: [[LGR 05 – Rezoluční princip#^res-dusledek|přednáška 5, slajd 15]]

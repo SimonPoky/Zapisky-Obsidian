@@ -11,6 +11,10 @@ zdroj: "pozn. 6.4"
 > [!lidsky] Lidsky
 > Kopírka se zoomem k a středem v počátku: k = 2 zvětší dvakrát, k = −1 překlopí přes počátek, k = 1 je identita, k = 0 nulové zobrazení.
 
+> [!obrazek] Stejnolehlost s koeficientem 1, 2 a −1
+> ![[lag07-stejnolehlost.png]]
+> *Modrý domeček je původní ($k = 1$), oranžový je jeho obraz pro $k = 2$, zelený pro $k = -1$ (otočený o 180° kolem počátku). Tečkované čáry ukazují, že se špička střechy posouvá po přímce přes počátek.*
+
 **Formálně:** Pro pevné k ∈ 𝔽 je A: V → V, Ax = kx, lineární operátor na V (stejnolehlost s koeficientem k)
 
 **Definice:** [[LAG 07 – Lineární zobrazení#^def-stejnolehlost|přednáška 7, 14. 10. 2026]] · pozn. 6.4

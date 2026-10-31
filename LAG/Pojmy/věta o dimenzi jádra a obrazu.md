@@ -13,6 +13,10 @@ zdroj: "věta 7.19"
 >
 > *Příklad:* A = $\begin{pmatrix}0&2&1\\0&4&2\end{pmatrix}$: 3 = 1 + 2. Derivace na ℝ^{≤3}[x]: jádro konstanty (def 1), obraz ℝ^{≤2}[x] (rank 3), 4 = 3 + 1.
 
+> [!obrazek] Hodnost + defekt = dimenze vstupu
+> ![[lag11-dimenze.png]]
+> *Oranžová část je hodnost (přežije), zelená defekt (zabije se); dohromady vždy dají dimenzi definičního oboru $V$. Otočení nezabije nic, nulové zobrazení všechno.*
+
 **Formálně:** V, W lineární prostory nad 𝔽, A: V → W lineární ⇒ dim V = rank A + def A
 
 **Definice:** [[LAG 11 – Jádro, obraz, hodnost a defekt#^veta-dimenze-jadra-obrazu|přednáška 11, 30. 10. 2026]] · věta 7.19

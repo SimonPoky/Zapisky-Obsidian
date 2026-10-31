@@ -13,6 +13,10 @@ zdroj: "handout 5, slajd 23"
 >
 > *Příklad:* ρ: x ↦ 7, y ↦ 15, z ↦ 3 na universu ℕ. Při něm je x < 0 nepravdivá (7 < 0), x < x + 1 pravdivá (7 < 8).
 
+> [!obrazek] Kontext a jeho update
+> ![[lgr09-kontext.png]]
+> *Modře kontext $\rho$ (každá proměnná dostane číslo z ℕ), oranžově jediná změna v updatu $\rho[x:=0]$; tečkované šipky ukazují hodnoty, které se převzaly beze změny.*
+
 **Formálně:** Buď (U, ⟦−⟧) interpretace. Kontext proměnných je zobrazení ρ : Var → U.
 
 **Definice:** [[LGR 09 – Pravdivost formulí, model a tautologie#^def-kontext|přednáška 9, 29. 10. 2026]] · handout 5, slajd 23

@@ -13,6 +13,10 @@ zdroj: "věta 4.11"
 >
 > *Příklad:* ((1; 0), (2; 0), (0; 1)) generuje ℝ². Vektor (2; 0) = 2·(1; 0) je zbytečný; po jeho vyhození zbude báze ((1; 0), (0; 1)).
 
+> [!obrazek] Výběr báze z generátorů
+> ![[lag05-priklad.png]]
+> *Modrý $\vec{x}_1$ a oranžový $\vec{x}_2$ tvoří bázi zelené roviny $V$ (tmavší rovnoběžník je jejich kombinace s koeficienty mezi 0 a 1). Červený čárkovaný $\vec{x}_3 = \vec{x}_1 + \vec{x}_2$ je úhlopříčka, leží ve stejné rovině a nic nového nepřidá.*
+
 **Formálně:** G konečná, span G = L ⇒ ∃ x₁, …, xₙ ∈ G: (x₁, …, xₙ) je báze L
 
 **Definice:** [[LAG 05 – Báze a dimenze#^veta-411|přednáška 5, 7. 10. 2026]] · věta 4.11

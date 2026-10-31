@@ -13,6 +13,10 @@ zdroj: "slajd 9 (prez. 4)"
 >
 > *Příklad:* odvození a, a ⇒ b ⊢ b ∨ c: 1. a (P); 2. a ⇒ b (P); 3. b (⇒e 1, 2); 4. b ∨ c (∨i₁ 3). Každý řádek má pravidlo a čísla řádků, ze kterých vznikl.
 
+> [!obrazek] Boxy v odvozeních
+> ![[lgr06-boxy.png]]
+> *Červeně globální předpoklad, oranžově rámečky boxů a jejich lokální předpoklady, modře odvozené řádky, zeleně výsledek. Vnořený box se uzavře dřív než vnější.*
+
 **Formálně:** odvození φ z S je konečná posloupnost φ₁, …, φ_k, kde každá φᵢ ∈ S, nebo je pomocný předpoklad, nebo vznikla pravidlem z předchozích; φ_k = φ a všechny boxy jsou uzavřené
 
 **Definice:** [[LGR 06 – Rezoluční tabulka a přirozená dedukce#^def-odvozeni|přednáška 6, 15. 10. 2026]] · slajd 9

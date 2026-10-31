@@ -13,6 +13,10 @@ zdroj: "pozn. 6.13"
 >
 > *Příklad:* pro derivaci v bázích (1, x, x²) a (1, x) je [D] = $\begin{pmatrix}0&1&0\\0&0&2\end{pmatrix}$. Pro p = 5 + 3x + x² je [p] = (5; 3; 1) a [D][p] = (3; 2), tedy Dp = 3 + 2x. Sedí: (5 + 3x + x²)′ = 3 + 2x.
 
+> [!obrazek] Dvě cesty ke stejnému výsledku
+> ![[lag08-baze.png]]
+> *Modrá: zobrazení $A$ přímo ve $V$ a $W$. Oranžové: převod na souřadnice v bázích $\mathcal{X}$ a $\mathcal{Y}$. Zelená: násobení maticí $[A]^{\mathcal{X} \to \mathcal{Y}}$. Cesta „dolů a doprava“ dá totéž co „doprava a dolů“.*
+
 **Formálně:** V, W lineární prostory konečné dimenze nad 𝔽, 𝒳 báze V, 𝒴 báze W, A ∈ Lin(V, W), x ∈ V ⇒ [Ax]^𝒴 = [A]^{𝒳→𝒴} · [x]^𝒳
 
 **Definice:** [[LAG 08 – Matice lineárního zobrazení a součin matic#^veta-souradnice-obrazu|přednáška 8, 16. 10. 2026]] · pozn. 6.13

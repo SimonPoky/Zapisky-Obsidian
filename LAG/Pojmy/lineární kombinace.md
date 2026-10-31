@@ -13,6 +13,10 @@ zdroj: "def. 2.8"
 >
 > *Příklad:* 2·(1; 0) + 3·(0; 1) = (2; 3) je lineární kombinace vektorů (1; 0) a (0; 1) s koeficienty 2 a 3. U polynomů: 5·1 − 2·x + 1·x² = 5 − 2x + x².
 
+> [!obrazek] Slož pravou stranu ze sloupců
+> ![[lag01-sloupce.png]]
+> *Modrá: 1 · (2; 1), oranžová: 3 · (1; −1), zelená čárkovaná: výsledek (5; −2). Zelená šikmá mřížka je nový souřadnicový systém, ve kterém má cíl souřadnice [1; 3].*
+
 **Formálně:** α₁x₁ + α₂x₂ + … + αₙxₙ, kde x₁, …, xₙ ∈ L, α₁, …, αₙ ∈ 𝔽, n ∈ ℕ₀
 
 **Definice:** [[LAG 03 – Lineární podprostor a lineární obal#^def-lk|přednáška 3, 30. 9. 2026]] · def. 2.8 · poprvé v [[LAG 01 – Úvod do lineární algebry#Sloupcový pohled: lineární kombinace|přednášce 1]]

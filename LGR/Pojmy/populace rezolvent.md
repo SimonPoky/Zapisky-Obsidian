@@ -13,6 +13,10 @@ zdroj: "slajd 16"
 >
 > *Příklad:* S = {a ∨ b, ¬a, ¬b}: z a ∨ b a ¬a vznikne b, z a ∨ b a ¬b vznikne a, z b a ¬b (nebo a a ¬a) vznikne ff. R*(S) = {a ∨ b, ¬a, ¬b, a, b, ff}.
 
+> [!obrazek] Zamítací strom pro výlet a generace rezolvent
+> ![[lgr05-populace.png]]
+> *Oranžově klauzule z $S$, červeně $\neg p$ (negovaný závěr), modře rezolventy, šedě proměnná, přes kterou se rezolvuje. Pruhy jsou generace: rezolventa leží v $R^{i+1}$, když je její mladší rodič v $R^i$. Vlevo počet klauzulí v celé generaci.*
+
 **Formálně:** R(S) = S ∪ {rezolventy dvojic z S}; R⁰(S) = S, Rⁱ⁺¹(S) = R(Rⁱ(S)); R*(S) = ⋃ Rⁱ(S)
 
 **Definice:** [[LGR 05 – Rezoluční princip#^def-populace|přednáška 5, 9. 10. 2026]] · slajd 16

@@ -13,6 +13,10 @@ zdroj: "pozn. 7.4"
 >
 > *Příklad:* f(x) = 2x + 1 : ℝ → ℝ je bijekce, k y je jediné x = (y − 1)/2. x² : [0; +∞) → [0; +∞) taky; x² : ℝ → [0; +∞) ne (není prosté).
 
+> [!obrazek] Čtyři možnosti
+> ![[lag10-prosta-na.png]]
+> *Modré body jsou definiční obor $A$, oranžové cílová množina $B$, zelené šipky zobrazení. Červený bod v $B$ nemá vzor (zobrazení není na); dvě šipky do jednoho bodu znamenají, že zobrazení není prosté.*
+
 **Formálně:** f: A → B je bijektivní ⟺ f je prosté a na ⟺ ∀y ∈ B ∃! x ∈ A: f(x) = y
 
 **Definice:** [[LAG 10 – Obraz a vzor při lineárním zobrazení#^def-prosta-na-bijekce|přednáška 10, 23. 10. 2026]] · pozn. 7.4

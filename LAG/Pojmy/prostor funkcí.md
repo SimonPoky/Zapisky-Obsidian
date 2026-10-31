@@ -13,6 +13,10 @@ zdroj: "pozn. 1.17"
 >
 > *Příklad:* sin a cos jsou vektory v ℝ^ℝ, jejich součet je funkce t ↦ sin t + cos t (v bodě 0 má hodnotu 1). Pro A = {1, 2, 3} je funkce f: A → ℝ jen trojice hodnot (f(1); f(2); f(3)), tedy vektor z ℝ³.
 
+> [!obrazek] Vektor, posloupnost a funkce jsou totéž
+> ![[lag02-vektor-funkce.png]]
+> *Nad každou pozicí t leží hodnota f(t). Vektor (3; 1; 4) má 3 pozice, posloupnost 4/n nekonečně mnoho a funkce ℝ → ℝ jednu pozici pro každé reálné číslo.*
+
 **Formálně:** 𝔽ᴬ = {f : A → 𝔽}, operace bodově
 
 **Definice:** [[LAG 02 – Příklady lineárních prostorů#^def-fa|přednáška 2, 25. 9. 2026]] · pozn. 1.17

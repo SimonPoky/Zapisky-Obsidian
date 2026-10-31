@@ -13,6 +13,10 @@ zdroj: "slajd 18"
 >
 > *Příklad:* a ⇒ b je nepravdivá jen pro ab = 10, takže úplná CNF je jediný maxterm ¬a ∨ b. Úplná DNF má minterm za každý řádek s 1: (¬a ∧ ¬b) ∨ (¬a ∧ b) ∨ (a ∧ b).
 
+> [!obrazek] DNF a CNF z tabulky pro $a \Leftrightarrow b$
+> ![[lgr03-tabulka.png]]
+> *Zeleně řádky s hodnotou 1 a jejich mintermy (vznikne DNF), červeně řádky s hodnotou 0 a jejich maxtermy (vznikne CNF). Oranžově vstupní proměnné, modře výsledné formule.*
+
 **Formálně:** každý minterm/maxterm obsahuje všechny proměnné; tt nemá úplnou CNF, ff nemá úplnou DNF
 
 **Definice:** [[LGR 03 – Disjunktivní a konjunktivní normální forma#^def-uplna|přednáška 3, 1. 10. 2026]] · slajd 18

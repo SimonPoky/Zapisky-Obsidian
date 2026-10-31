@@ -13,6 +13,10 @@ zdroj: "slajd 12"
 >
 > *Příklad:* u(a) = 1, u(b) = 0 dopočítá u(a ∧ b) = min{1, 0} = 0, u(a ∨ b) = 1 a u(¬a ⇒ b) = u(0 ⇒ 0) = 1. Pro dvě proměnné jsou 2² = 4 ohodnocení, pro tři 8.
 
+> [!obrazek] Vyhodnocení stromem
+> ![[lgr02-strom.png]]
+> *Čísla u vrcholů jsou hodnoty podformulí, zeleně 1 a červeně 0, počítané od listů (oranžové proměnné) ke kořeni. Vlevo ohodnocení p ↦ 1, l ↦ 1, š ↦ 0 (výsledek 1), vpravo protipříklad k tautologii (výsledek 0).*
+
 **Formálně:** u : Fle(A) → {0, 1}, u(α ∧ β) = min, u(α ∨ β) = max, u(¬α) = 1 − u(α), …; u je jednoznačně určené hodnotami na proměnných
 
 **Definice:** [[LGR 01 – Syntax a sémantika výrokové logiky#^def-ohodnoceni|přednáška 1, 24. 9. 2026]] · slajd 12 · určenost proměnnými: [[LGR 01 – Syntax a sémantika výrokové logiky#^veta-ohodnoceni|slajd 13]]

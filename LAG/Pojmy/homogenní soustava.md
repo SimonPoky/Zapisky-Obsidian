@@ -13,6 +13,10 @@ zdroj: "pozn. 2.6"
 >
 > *Příklad:* x + y = 0 má řešení t·(1; −1), tedy přímku přes počátek, a ta je podprostor ℝ². Nehomogenní x + y = 1 nesplňuje ani (0; 0), její řešení podprostor netvoří.
 
+> [!obrazek] Jak může vypadat řešení homogenní soustavy v $\mathbb{R}^2$
+> ![[lag03-homogenni.png]]
+> *Vlevo: dvě různoběžné přímky přes počátek (modrá, oranžová), řešením je jen bod (0; 0). Uprostřed: obě rovnice popisují tutéž přímku, řešením je celá přímka. Vpravo: rovnice 0 = 0 splní každý bod, řešením je celá rovina. Pokaždé podprostor, nikdy třeba posunutá přímka.*
+
 **Formálně:** A·x = 0; množina řešení {x ∈ 𝔽ⁿ | A·x = 0} ≤ 𝔽ⁿ
 
 **Definice:** [[LAG 03 – Lineární podprostor a lineární obal#^def-homogenni|přednáška 3, 30. 9. 2026]] · pozn. 2.6 · řešení tvoří podprostor: [[LAG 03 – Lineární podprostor a lineární obal#^veta-reseni-homogenni|pozn. 2.6]]
