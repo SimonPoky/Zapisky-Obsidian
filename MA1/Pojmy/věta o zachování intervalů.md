@@ -13,6 +13,10 @@ zdroj: "handout 3A, slajd 14"
 >
 > *Příklad:* f(x) = x² na [−1; 2] má minimum 0 a maximum 4, takže obraz je [0; 4]. Není to [f(−1); f(2)] = [1; 4]: rozhodují minimum a maximum, ne hodnoty na krajích.
 
+> [!obrazek] IVT, BT, EVT a PIT
+> ![[ma106-vety.png]]
+> *Vlevo nahoře: oranžová výška r leží mezi modrými f(a) a f(b) a graf ji protne v zeleném bodě. Vpravo nahoře: celý graf se vejde do oranžového pásu. Vlevo dole: zelený nejvyšší a červený nejnižší bod existují. Vpravo dole: oranžová úsečka na svislé ose je obraz, celý interval od minima po maximum.*
+
 **Formálně:** f spojitá na [a; b] ⇒ f([a; b]) = [min f; max f]
 
 **Definice:** [[MA1 06 – Spojitost a spojité funkce na intervalu#^veta-ctyri|přednáška 6, 8. 10. 2026]] · handout 3A, slajd 14

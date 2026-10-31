@@ -13,6 +13,10 @@ zdroj: "handout 4B, slajd 11"
 >
 > *Příklad:* |x| klesá na (−1; 0] a roste na [0; 1), takže má v 0 ostré lokální minimum, i když tam derivaci nemá.
 
+> [!obrazek] Graf $x^3 - 6x^2 + 10$ a znaménko derivace
+> ![[ma110-monotonie-priklad.png]]
+> *Nahoře graf: zeleně úseky, kde f roste, červeně kde klesá, modře lokální extrémy. Dole f′(x) = 3x(x − 4): zelená plocha f′ > 0, červená f′ < 0.*
+
 **Formálně:** f definovaná na okolí p: f nerostoucí na levém a neklesající na pravém okolí p ⇒ lokální minimum v p; neklesající vlevo a nerostoucí vpravo ⇒ lokální maximum; s klesající/rostoucí ostré extrémy
 
 **Definice:** [[MA1 10 – Druhá derivace, konvexita a inflexe#^veta-extrem-zmena-monotonie|přednáška 10, 22. 10. 2026]] · handout 4B, slajd 11

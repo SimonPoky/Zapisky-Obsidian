@@ -13,6 +13,10 @@ zdroj: "handout 3B, slajd 13"
 >
 > *Příklad:* (sin(x²))′ = cos(x²)·2x a (e^{3x})′ = e^{3x}·3. V prvním případě je vnější funkce sin, vnitřní x².
 
+> [!obrazek] Řetízek vrstev
+> ![[ma107-retizek.png]]
+> *Modré rámečky jsou mezivýsledky, oranžové šipky funkce u, v, w, zeleně pod nimi jejich derivace. Červený vzorec: derivace celku je součin derivací vrstev, každá vyhodnocená v bodě, kam zrovna ukazuje předchozí vrstva.*
+
 **Formálně:** f′(p) a g′(f(p)) existují ⇒ (g ∘ f)′(p) = g′(f(p)) · f′(p)
 
 **Definice:** [[MA1 07 – Derivace a Carathéodoryho trik#^veta-chain-rule|přednáška 7, 14. 10. 2026]] · handout 3B, slajd 13

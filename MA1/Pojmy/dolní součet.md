@@ -13,6 +13,10 @@ zdroj: "handout 6A, slajd 13"
 >
 > *Příklad:* x² na [0; 2] s dělením 0 < 1 < 2: L = 1 · 0 + 1 · 1 = 1 ≤ 8/3.
 
+> [!obrazek] Dolní a horní součet
+> ![[ma111-darboux.png]]
+> *Modrý graf x² na [0; 2] rozdělený na čtyři proužky šířky 0,5. Vlevo zelené obdélníky s výškou minima (dolní součet 1,75), vpravo červené s výškou maxima (horní součet 3,75).*
+
 **Formálně:** L(f; Δ) = ∑_{i=0}^{n−1} (xᵢ₊₁ − xᵢ) · min_{t∈[xᵢ; xᵢ₊₁]} f(t) pro dělení Δ: a = x₀ < … < xₙ = b
 
 **Definice:** [[MA1 11 – Lemma o konvexních funkcích a axiomatický integrál#^def-darboux|přednáška 11, 29. 10. 2026]] · handout 6A, slajd 13

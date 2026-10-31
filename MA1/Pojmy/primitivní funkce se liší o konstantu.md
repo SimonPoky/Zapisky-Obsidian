@@ -13,6 +13,10 @@ zdroj: "handout 6A, slajd 10"
 >
 > *Příklad:* x² a x² + 4 jsou obě primitivní k 2x a liší se o c = 4.
 
+> [!obrazek] Rodina primitivních funkcí
+> ![[ma111-primitivni.png]]
+> *Šedomodré křivky x² + c jsou všechny primitivní funkce k 2x, navzájem posunuté o konstantu. Oranžová je jediná z nich, která prochází bodem (1; 5).*
+
 **Formálně:** f spojitá na [a; b], F₁, F₂ primitivní k f na [a; b] ⇒ ∃c ∈ ℝ: F₁(x) = F₂(x) + c pro všechna x ∈ [a; b]
 
 **Definice:** [[MA1 11 – Lemma o konvexních funkcích a axiomatický integrál#^veta-vlastnosti-primitivnich|přednáška 11, 29. 10. 2026]] · handout 6A, slajd 10

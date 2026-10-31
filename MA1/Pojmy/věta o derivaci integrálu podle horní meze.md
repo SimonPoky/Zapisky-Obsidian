@@ -13,6 +13,10 @@ zdroj: "handout 6A, slajd 8"
 >
 > *Příklad:* F(x) = ∫₀ˣ t² dt má F′(x) = x², tedy F′(3) = 9; F(x) = ∫₀ˣ cos t dt = sin x má F′(x) = cos x.
 
+> [!obrazek] Plocha se znaménkem a funkce F
+> ![[ma111-horni-mez.png]]
+> *Nahoře modrý graf f(t) = cos t; F(x) je zelená plocha nad osou minus červená plocha pod osou od 0 po oranžovou čáru x. Dole oranžový graf F(x) = sin x: roste, kde je f kladná, klesá, kde je záporná, a F(0) = 0.*
+
 **Formálně:** f spojitá na [a; b], F(x) = ∫ₐˣ f ⇒ F má derivaci na [a; b] (jednostranné v krajních bodech) a F′(x) = f(x) pro všechna x ∈ [a; b]
 
 **Definice:** [[MA1 11 – Lemma o konvexních funkcích a axiomatický integrál#^veta-derivace-horni-meze|přednáška 11, 29. 10. 2026]] · handout 6A, slajd 8
