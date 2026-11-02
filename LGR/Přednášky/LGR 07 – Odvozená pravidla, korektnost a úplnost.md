@@ -181,7 +181,7 @@ $$
 \begin{array}{rll}\text{1.} & a\Rightarrow b & \text{P} \\ \text{2.} & a\vee\neg a & \text{TND} \\  & \begin{array}{|rll|}\hline \text{3.} & a & \text{P} \\ \text{4.} & b & {\Rightarrow}\text{e}\ 3, 1 \\ \text{5.} & \neg a\vee b & {\vee}\text{i}_2\ 4 \\ \hline\end{array} &  \\  & \begin{array}{|rll|}\hline \text{6.} & \neg a & \text{P} \\ \text{7.} & \neg a\vee b & {\vee}\text{i}_1\ 6 \\ \hline\end{array} &  \\ \text{8.} & \neg a\vee b & {\vee}\text{e}\ 2, 3\text{–}5, 6\text{–}7\end{array}
 $$
 
-V boxu $a$ dá [[modus ponens]] $b$ a z něj $\vee$i₂ cíl; v boxu $\neg a$ stačí $\vee$i₁. [[Eliminace disjunkce|∨e]] uzavře oba boxy.
+V boxu $a$ dá [[modus ponens]] $b$ a z něj $\vee$i₂ cíl; v boxu $\neg a$ stačí $\vee$i₁. [[eliminace disjunkce|∨e]] uzavře oba boxy.
 
 ### Příklad: $\neg b \Rightarrow \neg a \vdash a \Rightarrow b$
 
@@ -441,9 +441,6 @@ $$
 > [!karta|12]- Jak se dokáže směr „⇐“ věty o úplnosti ($S \models \varphi \Rightarrow S \vdash \varphi$)? Popiš řetěz vět.
 > **Sémantická kompaktnost**: $S' = \{\alpha, \beta\} \models \varphi$. **Sémantická věta o dedukci**: $\models \alpha \Rightarrow (\beta \Rightarrow \varphi)$. **Slabá věta o úplnosti**: $\vdash \alpha \Rightarrow (\beta \Rightarrow \varphi)$. **Syntaktická věta o dedukci**: $\{\alpha, \beta\} \vdash \varphi$. **Syntaktická kompaktnost**: $S \vdash \varphi$.
 
-> [!karta|13]- Co říká lemma o literálech řádku pro tautologii $\varphi$?
-> $u(\varphi) = 1$ pro každé $u$, takže **$L_u \vdash \varphi$ pro všech $2^n$ řádků** (nikdy $L_u \vdash \neg\varphi$). Každý řádek tabulky dá jedno odvození $\varphi$ z literálů toho řádku.
-
 > [!karta|14]- Dokaž základ indukce v lemmatu o literálech řádku ($\varphi$ je proměnná $x$).
 > Je-li $u(x) = 1$, je **$x \in L_u$**; je-li $u(x) = 0$, je **$\neg x \in L_u$**. V obou případech stačí v odvození vypsat předpoklady $L_u$ a požadovanou formuli zopakovat (**it**).
 
@@ -452,9 +449,6 @@ $$
 
 > [!karta|16]- Jakou roli hraje TND v důkazu slabé věty o úplnosti?
 > Lemma dá odvození $\varphi$ jen **z literálů řádku**. TND $x \vee \neg x$ s **$\vee$e** spojí odvození z řádků s $x$ a s $\neg x$ do jednoho, které už předpoklad o $x$ nepotřebuje. Po všech proměnných zbude $\vdash \varphi$.
-
-> [!karta|17]- Jak se z odvození $L_u \vdash \varphi$ pro dvě proměnné $x, y$ složí odvození $\vdash \varphi$?
-> $x \vee \neg x$ (TND); v boxu $x$: $y \vee \neg y$ (TND), box $y$ s odvozením z $\{x, y\}$, box $\neg y$ s odvozením z $\{x, \neg y\}$, **$\vee$e** dá $\varphi$. Stejně v boxu $\neg x$. Nakonec **$\vee$e** přes $x \vee \neg x$ dá $\varphi$ bez předpokladů.
 
 > [!karta|18]- Kolikrát se při skládání odvození tautologie s $n$ proměnnými použije TND?
 > Každý vnitřní uzel stromu rozboru případů je jedno TND: $1 + 2 + \dots + 2^{n-1} = $ **$2^n - 1$** (pro $n = 3$ sedm).
@@ -503,6 +497,12 @@ $$
 > $$
 > \begin{array}{rll}\text{1.} & \neg a & \text{P} \\ \text{2.} & \neg b & \text{P} \\  & \begin{array}{|rll|}\hline \text{3.} & a\wedge\neg b & \text{P} \\ \text{4.} & a & {\wedge}\text{e}_1\ 3 \\ \text{5.} & \bot & {\neg}\text{e}\ 4, 1 \\ \hline\end{array} &  \\ \text{6.} & \neg(a\wedge\neg b) & {\neg}\text{i}\ 3\text{–}5\end{array}
 > $$
+
+> [!priklad|13]- Co říká lemma o literálech řádku pro tautologii $\varphi$?
+> $u(\varphi) = 1$ pro každé $u$, takže **$L_u \vdash \varphi$ pro všech $2^n$ řádků** (nikdy $L_u \vdash \neg\varphi$). Každý řádek tabulky dá jedno odvození $\varphi$ z literálů toho řádku.
+
+> [!priklad|17]- Jak se z odvození $L_u \vdash \varphi$ pro dvě proměnné $x, y$ složí odvození $\vdash \varphi$?
+> $x \vee \neg x$ (TND); v boxu $x$: $y \vee \neg y$ (TND), box $y$ s odvozením z $\{x, y\}$, box $\neg y$ s odvozením z $\{x, \neg y\}$, **$\vee$e** dá $\varphi$. Stejně v boxu $\neg x$. Nakonec **$\vee$e** přes $x \vee \neg x$ dá $\varphi$ bez předpokladů.
 
 ---
 ← [[LGR 06 – Rezoluční tabulka a přirozená dedukce|15. 10. 2026 Rezoluční tabulka a přirozená dedukce]] · [[LGR 08 – Dokončení úplnosti a syntaxe predikátové logiky|23. 10. 2026 Dokončení úplnosti a syntaxe predikátové logiky]] →

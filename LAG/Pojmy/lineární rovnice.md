@@ -3,6 +3,7 @@ aliases: []
 tags: [pojem, LAG]
 predmet: LAG
 prednaska: 1
+zdroj: "úvod přednášky (v poznámkách bez čísla)"
 karta: false
 ---
 

@@ -9,7 +9,7 @@ zdroj: "pozn. 7.16 ♥"
 # hodnost
 
 > [!lidsky] Lidsky
-> Kolik směrů zobrazení „přežije“: dimenze obrazu. U matice je to počet LN sloupců.
+> Kolik směrů zobrazení „přežije“: dimenze obrazu. U matice je to maximální počet LN sloupců (= dimenze obalu sloupců).
 >
 > *Příklad:* A = $\begin{pmatrix}0&2&1\\0&4&2\end{pmatrix}$ má im A = span{(1; 2)}, tedy rank A = 1. E₃ má hodnost 3, nulové zobrazení 0.
 

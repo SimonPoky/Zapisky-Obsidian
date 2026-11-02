@@ -3,6 +3,7 @@ aliases: ["skaláry"]
 tags: [pojem, LAG]
 predmet: LAG
 prednaska: 1
+zdroj: "pozn. 1.6"
 karta: false
 ---
 

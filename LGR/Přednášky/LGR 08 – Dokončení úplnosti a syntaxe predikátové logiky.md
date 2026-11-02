@@ -27,7 +27,7 @@ Minule zbyl v důkazu [[lemma o literálech řádku|lemmatu o literálech řádk
 | formule | spojky a $\forall x\,\varphi$, $\exists x\,\varphi$ | tvrzení postavené z atomických formulí |
 | vázaný výskyt | cestou ke kořeni je $\forall x$ / $\exists x$ | $x$ „patří“ kvantifikátoru |
 | volný výskyt | žádný kvantifikátor s $x$ nad ním | $x$ čeká na dosazení |
-| legální přejmenování | $\forall x\,\alpha \to \forall y\,\alpha[x/y]$ | žádná volná proměnná nesmí zachytit |
+| legální přejmenování | $\forall x\,\alpha \to \forall y\,\alpha[x/y]$ | žádná volná proměnná se nesmí stát vázanou |
 | sentence / otevřená formule | žádná volná / žádná vázaná proměnná | uzavřené tvrzení / „šablona“ |
 | interpretace | $(U, [\![-]\!])$ | universum a význam každého symbolu |
 
@@ -35,7 +35,7 @@ Minule zbyl v důkazu [[lemma o literálech řádku|lemmatu o literálech řádk
 
 ### Co se dokazuje
 
-Lemma se dokazuje [[strukturální indukce|strukturální indukcí]]. Množina [[formule|formulí]] nad proměnnými $A = \{x, y, z\}$ vzniká tak, že (1) každá proměnná je formule, (2) jsou-li $\alpha$, $\beta$ formule, jsou jimi i $(\neg\alpha)$, $(\alpha \wedge \beta)$, $(\alpha \vee \beta)$, $(\alpha \Rightarrow \beta)$, a (3) nic jiného, jen to, co vznikne konečně mnoha kroky. Třeba $\varphi = (x \Rightarrow y) \wedge \neg z$ vznikne ve čtyřech krocích.
+Lemma se dokazuje [[strukturální indukce|strukturální indukcí]]. Množina [[formule|formulí]] nad proměnnými $A = \{x, y, z\}$ vzniká tak, že (1) každá proměnná je formule, (2) jsou-li $\alpha$, $\beta$ formule, jsou jimi i $(\neg\alpha)$, $(\alpha \wedge \beta)$, $(\alpha \vee \beta)$, $(\alpha \Rightarrow \beta)$, a (3) nic jiného, jen to, co vznikne konečně mnoha kroky. Třeba $\varphi = (x \Rightarrow y) \wedge \neg z$ vznikne ve třech krocích ($x \Rightarrow y$, $\neg z$, $\wedge$) z proměnných $x$, $y$, $z$.
 
 Pro každou formuli $\varphi$ se ověřuje **vlastnost $V(\varphi)$**: pro každé ohodnocení $u$ platí
 
@@ -175,7 +175,7 @@ Tím je lemma dokázané pro všechny formule a s ním (přes skládání řádk
 > Term je **jméno objektu**, včetně toho, jak objekt vznikl. V jazyce s konstantou $a$ (dvojka) a funkcí $f$ (následník) je $f(f(a))$ „následník následníka dvojky“, tedy číslo 4. Term **nic netvrdí**, nemá pravdivostní hodnotu; je to podstatné jméno, ne věta. Pravidlo 3 zaručí, že každý term je konečně dlouhý.
 
 > [!example] Příklad
-> X, a, f(a) a g(x, f(f(a))) jsou termy; S(x) term není, je to formule.
+> x, a, f(a) a g(x, f(f(a))) jsou termy; S(x) term není, je to formule.
 
 [[term|Term]] se dá nakreslit jako strom: v kořeni je poslední funkční symbol, listy jsou proměnné a konstanty. Strom termu $g(x, f(f(a)))$ je vpravo na obrázku v §6.
 
@@ -368,7 +368,7 @@ Abychom mohli říct, jestli [[formule predikátové logiky|formule]] platí, mu
 > [!karta|07]- Čím se liší term od formule? Je $f(a)$ term, nebo formule?
 > **Term** popisuje **objekt** a nemá pravdivostní hodnotu (proměnné, konstanty, $f(t_1, \dots, t_n)$). **Formule** je **tvrzení**, které platí, nebo neplatí (predikát s termy, spojky, kvantifikátory). $f(a)$ je term („následník $a$“), $S(f(a))$ je formule.
 
-> [!karta|08]- Jak se čte $\forall x\,P(x, f(x)) \vee S(x)$ a proč?
+> [!karta|08]- Kam sahá kvantifikátor ve formuli bez závorek, třeba $\forall x\,P(x, f(x)) \vee S(x)$, a proč?
 > Jako **$(\forall x\,P(x, f(x))) \vee S(x)$**: kvantifikátory váží silněji než spojky, takže $\forall x$ se týká jen $P(x, f(x))$. Výskyt $x$ v $S(x)$ je **volný**.
 
 > [!karta|09]- Může být jedna proměnná v téže formuli volná i vázaná? Uveď příklad.
@@ -384,7 +384,7 @@ Abychom mohli říct, jestli [[formule predikátové logiky|formule]] platí, mu
 > Interpretace funkčního symbolu musí být zobrazení **$U^n \to U$**: definované pro **všechny** dvojice z $U$ a s výsledkem **v $U$**. Odčítání vede z $\mathbb{N}$ ven ($2 - 5 = -3 \notin \mathbb{N}$).
 
 > [!karta|13]- Proč se „existuje sudé číslo, které je větší než $x$“ formalizuje $\exists y\,(S(y) \wedge P(x, y))$, a ne $\exists y\,(S(y) \Rightarrow P(x, y))$?
-> S $\Rightarrow$ by stačilo najít **liché $y$**: pro něj je $S(y)$ nepravdivé a implikace **pravdivá**, ať je $P(x, y)$ jakékoli. Formule by tak platila skoro vždy a neříkala nic. **$\exists$ jde s $\wedge$.**
+> S $\Rightarrow$ by stačilo najít **liché $y$**: pro něj je $S(y)$ nepravdivé a implikace **pravdivá**, ať je $P(x, y)$ jakékoli. V ℕ by tak formule platila pro každé $x$ (stačí $y := 1$) a neříkala nic. **$\exists$ jde s $\wedge$.**
 
 > [!karta|14]- Proč se „každé liché číslo má vlastnost $Q$“ formalizuje $\forall x\,(L(x) \Rightarrow Q(x))$, a ne $\forall x\,(L(x) \wedge Q(x))$?
 > $\forall x\,(L(x) \wedge Q(x))$ tvrdí, že **každé** číslo je liché a má $Q$, což je jiné (a v $\mathbb{N}$ nepravdivé) tvrzení. Implikace omezí tvrzení jen na lichá čísla: **$\forall$ jde s $\Rightarrow$.**

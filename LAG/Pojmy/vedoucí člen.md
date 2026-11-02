@@ -3,6 +3,7 @@ aliases: ["vedoucí koeficient"]
 tags: [pojem, LAG]
 predmet: LAG
 prednaska: 2
+zdroj: "pozn. 1.18"
 ---
 
 # vedoucí člen

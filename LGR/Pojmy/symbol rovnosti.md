@@ -11,7 +11,7 @@ zdroj: "handout 5, slajdy 26 a 33"
 > [!lidsky] Lidsky
 > Rovnítko je logický symbol: na rozdíl od <, + nebo 0 si ho interpretace nesmí vyložit po svém. t₁ = t₂ platí právě tehdy, když oba termy označují tentýž prvek universa.
 >
-> *Příklad:* na ℕ se sčítáním a násobením při ρ: x ↦ 7, z ↦ 3 je x + z · z = 16 pravdivá (7 + 9 = 16). V interpretaci s ⟦0⟧ = 5 je 0 + 0 = 0 nepravdivá (10 ≠ 5).
+> *Příklad:* na ℕ se sčítáním a násobením při ρ: x ↦ 7, y ↦ 15, z ↦ 3 je x + z · z = y + 1 pravdivá (7 + 9 = 16 = 15 + 1). V interpretaci s ⟦0⟧ = 5 je 0 + 0 = 0 nepravdivá (10 ≠ 5).
 
 **Formálně:** = je logický predikátový symbol arity 2; v každé interpretaci I při ρ: t₁ = t₂ pravdivá ⟺ ⟦t₁⟧ρ = ⟦t₂⟧ρ
 

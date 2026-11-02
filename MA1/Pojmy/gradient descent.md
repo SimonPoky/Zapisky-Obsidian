@@ -17,6 +17,6 @@ zdroj: "handout 5B, slajdy 5–7"
 > ![[ma111-gradient-descent.png]]
 > *Oranžové body jsou kroky metody. Vlevo konvexní funkce: lokální minimum je podle lemmatu globální (zelená hvězda), metoda dojde tam, kam má. Vpravo nekonvexní funkce: kroky skončí v lokálním minimu (červený kroužek) a globální minimum vlevo nenajdou.*
 
-**Formálně:** vstup f s první derivací, x₀, γ > 0, T ∈ ℕ; xᵢ₊₁ = xᵢ − γ · f′(xᵢ) pro i = 0, …, T − 1; výstup x_avg = (1/T) ∑ xᵢ; pro konvexní f je |f(x_avg) − f(x_min)| ≤ RL/√T
+**Formálně:** vstup f s první derivací, x₀, γ > 0, T ≥ 1; xᵢ₊₁ = xᵢ − γ · f′(xᵢ) pro i = 0, …, T − 1; výstup x_avg = (1/T) ∑ xᵢ; odhad (5B, slajd 9): je-li f konvexní s globálním minimem v x_min, |f′| ≤ L, R = |x₀ − x_min| a γ = R/(L√T), pak |f(x_avg) − f(x_min)| ≤ RL/√T
 
 **Definice:** [[MA1 11 – Lemma o konvexních funkcích a axiomatický integrál#^gradient-descent|přednáška 11, 29. 10. 2026]] · handout 5B, slajdy 5–7

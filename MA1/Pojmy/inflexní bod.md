@@ -9,7 +9,7 @@ zdroj: "handout 4B, slajd 17"
 # inflexní bod
 
 > [!lidsky] Lidsky
-> Místo, kde se graf přehne: ryzí konkávnost se mění v ryzí konvexitu nebo naopak.
+> Místo, kde se graf přehne: v typickém případě (třeba když f″ mění znaménko) se tam ryzí konkávnost mění v ryzí konvexitu nebo naopak. Definice ale chce jen ostrý lokální extrém f′.
 >
 > *Příklad:* x³ má inflexi v 0: na (−∞; 0) je ryze konkávní (f″ = 6x < 0), na (0; +∞) ryze konvexní, a f′ = 3x² má v 0 ostré lokální minimum.
 

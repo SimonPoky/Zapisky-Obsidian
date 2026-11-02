@@ -30,7 +30,7 @@ Minule se ukázalo, že konvexita funkce s derivací znamená neklesající $f'$
 
 ## §1 Lemma o konvexních funkcích
 
-> [!definice] Globální minimum · handout 5B, slajd 6
+> [!definice] Globální minimum · doplněno (handout 5B, slajd 6 pojem jen používá)
 > Ať je funkce $f$ definována na množině $M$. Bod $p \in M$ je *globální minimum* funkce $f$ na $M$, jestliže $f(p) \le f(x)$ pro **všechna** $x \in M$.
 
 ^def-globalni-minimum

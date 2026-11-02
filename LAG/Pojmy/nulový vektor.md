@@ -3,6 +3,7 @@ aliases: []
 tags: [pojem, LAG]
 predmet: LAG
 prednaska: 1
+zdroj: "pozn. 1.6 (axiom 3)"
 ---
 
 # nulový vektor

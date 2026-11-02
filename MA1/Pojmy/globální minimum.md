@@ -1,9 +1,9 @@
 ---
-aliases: ["globálního minima", "globální minima", "globálním minimem", "globální extrém"]
+aliases: ["globálního minima", "globální minima", "globálním minimem"]
 tags: [pojem, MA1]
 predmet: MA1
 prednaska: 11
-zdroj: "handout 5B, slajd 6"
+zdroj: "doplněno (handout 5B, slajd 6 pojem jen používá)"
 ---
 
 # globální minimum
@@ -19,4 +19,4 @@ zdroj: "handout 5B, slajd 6"
 
 **Formálně:** Ať je f definována na M. p ∈ M je globální minimum f na M ⇔ f(p) ≤ f(x) pro všechna x ∈ M
 
-**Definice:** [[MA1 11 – Lemma o konvexních funkcích a axiomatický integrál#^def-globalni-minimum|přednáška 11, 29. 10. 2026]] · handout 5B, slajd 6
+**Definice:** [[MA1 11 – Lemma o konvexních funkcích a axiomatický integrál#^def-globalni-minimum|přednáška 11, 29. 10. 2026]] · doplněno, handout 5B, slajd 6 pojem jen používá

@@ -19,12 +19,12 @@ Minule se ukázalo, že znaménko $f'$ na otevřeném intervalu určuje monotoni
 | tvrzení | předpoklad | závěr |
 |---|---|---|
 | monotonie v praxi | $I$ otevřený, $f'$ na $I$ | $f' > 0$ ⇒ rostoucí, $f' < 0$ ⇒ klesající ($\ge$, $\le$ ⇒ neklesající, nerostoucí) |
-| extrém ze změny monotonie | $f$ nerostoucí vlevo od $p$, neklesající vpravo | lokální minimum v $p$ (obráceně maximum) |
+| extrém ze změny monotonie | $f$ spojitá v $p$, nerostoucí vlevo od $p$, neklesající vpravo | lokální minimum v $p$ (obráceně maximum) |
 | extrém pomocí $f''$ | $f'(p) = 0$, $f''(p)$ existuje | $f''(p) > 0$ ⇒ ostré minimum, $f''(p) < 0$ ⇒ ostré maximum, $f''(p) = 0$ ⇒ cokoli |
 | konvexní na $I$ | | $f(ax_1 + (1 - a)x_2) \le af(x_1) + (1 - a)f(x_2)$: tětiva nad grafem |
 | konvexita a $f'$ | $f'$ na otevřeném $I$ | konvexní $\iff f'$ neklesající; ryze konvexní $\iff f'$ rostoucí |
 | konvexita a $f''$ | $f''$ na otevřeném $I$ | $f'' \ge 0$ ⇒ konvexní, $f'' > 0$ ⇒ ryze konvexní (jen jedním směrem) |
-| inflexní bod | $f'$ na otevřeném $I$ | $f'$ má v $p$ ostrý lokální extrém; tam se mění ryzí konvexita v ryzí konkávnost |
+| inflexní bod | $f'$ na otevřeném $I$ | $f'$ má v $p$ ostrý lokální extrém; typicky (např. když $f''$ mění znaménko) se tam mění ryzí konvexita v ryzí konkávnost |
 | nutná podmínka inflexe | $f''$ na $I$, inflexe v $p$ | $f''(p) = 0$ (obráceně neplatí: $x^4$) |
 
 ## §1 Monotonie a extrémy v praxi
@@ -35,17 +35,19 @@ Z [[věta o znaménku derivace a monotonii|věty o znaménku derivace a monotoni
 - $f' \le 0$ na $I$ ⇒ $f$ je na $I$ nerostoucí; $f' < 0$ na $I$ ⇒ $f$ je na $I$ **klesající**.
 
 > [!veta] Lokální extrém ze změny monotonie · handout 4B, slajd 11
-> Ať ==$f$ je definována na okolí bodu $p$==.
+> Ať ==$f$ je definována na okolí bodu $p$ a je v $p$ spojitá== (stačí, má-li v $p$ derivaci, třeba $f'(p) = 0$).
 >
 > 1. Je-li $f$ **nerostoucí na levém** a **neklesající na pravém** okolí $p$, má $f$ v $p$ **lokální minimum**.
 > 2. Je-li $f$ **neklesající na levém** a **nerostoucí na pravém** okolí $p$, má $f$ v $p$ **lokální maximum**.
 >
 > Pro ostré extrémy platí totéž s klesající/rostoucí místo nerostoucí/neklesající.
+>
+> *Bez spojitosti v $p$ věta neplatí: $f(0) = 2$ a $f(x) = 1$ pro $x \ne 0$ je na obou stranách konstantní, a přesto má v $0$ maximum, ne minimum. Ekvivalentně stačí chtít monotonii na $(p - \delta; p]$ a $[p; p + \delta)$, tj. včetně bodu $p$.*
 
 ^veta-extrem-zmena-monotonie
 
 > [!lidsky] Lidsky
-> Když jdeš z kopce a pak do kopce, v místě obratu jsi na dně. V praxi: [[stacionární bod]], kde $f'$ mění znaménko z $-$ na $+$, je minimum, z $+$ na $-$ maximum. Když se znaménko nemění (jako u $x^3$ v nule), extrém tam není.
+> Když jdeš z kopce a pak do kopce, v místě obratu jsi na dně. V praxi: [[stacionární bod]], kde $f'$ mění znaménko z $-$ na $+$, je minimum, z $+$ na $-$ maximum. Když má $f'$ na obou stranách stejné ostré znaménko (jako $x^3$ kolem nuly), extrém tam není.
 
 ### Příklad: $f(x) = x^3 - 6x^2 + 10$ · handout 4B, slajd 12
 
@@ -179,10 +181,10 @@ Z [[věta o znaménku derivace a monotonii|věty o znaménku derivace a monotoni
 ^def-inflexni-bod
 
 > [!lidsky] Lidsky
-> [[inflexní bod|Inflexní bod]] je místo, kde se graf „přehne“: ryzí konkávnost se mění v ryzí konvexitu nebo naopak. Silnice, která zatáčí doleva a v jednom bodě začne zatáčet doprava. Definice to říká přes $f'$: sklon tečny tam přestane růst a začne klesat (nebo obráceně), takže $f'$ má v $p$ extrém.
+> [[inflexní bod|Inflexní bod]] je místo, kde se graf „přehne“: v typickém případě se tam ryzí konkávnost mění v ryzí konvexitu nebo naopak. Silnice, která zatáčí doleva a v jednom bodě začne zatáčet doprava. Definice to říká přes $f'$: sklon tečny tam přestane růst a začne klesat (nebo obráceně), takže $f'$ má v $p$ extrém.
 
 > [!example] Příklad
-> X³ má inflexi v 0: na (−∞; 0) je ryze konkávní (f″ = 6x < 0), na (0; +∞) ryze konvexní, a f′ = 3x² má v 0 ostré lokální minimum.
+> $x^3$ má inflexi v 0: na (−∞; 0) je ryze konkávní (f″ = 6x < 0), na (0; +∞) ryze konvexní, a f′ = 3x² má v 0 ostré lokální minimum.
 
 > [!obrazek] Inflexní bod
 > ![[ma110-inflexe.png]]
@@ -212,7 +214,7 @@ Z [[věta o znaménku derivace a monotonii|věty o znaménku derivace a monotoni
 *Oranžové kartičky (pojmy a teorie) jsou v aplikaci [[Archiv přednášek#Kartičky|Kartičky]] povinné k dennímu opakování, pojmy z této přednášky taky. Zelené příklady jsou tam jen na procvičení. Nejdřív odpověz nahlas nebo na papír, pak rozklikni.*
 
 > [!karta|01]- Jak ze znaménka $f'$ kolem stacionárního bodu $p$ poznáš, jestli je v $p$ lokální extrém?
-> Změna z **$-$ na $+$**: $f$ vlevo klesá a vpravo roste, **minimum**. Z **$+$ na $-$**: **maximum**. Bez změny znaménka (třeba $x^3$ v $0$) **extrém není**.
+> Změna z **$-$ na $+$**: $f$ vlevo klesá a vpravo roste, **minimum**. Z **$+$ na $-$**: **maximum**. Má-li $f'$ na obou stranách $p$ **stejné ostré znaménko** (třeba $x^3$ v $0$), **extrém není**. (Bez ostrého znaménka pozor: konstantní funkce má extrém v každém bodě.)
 
 > [!karta|02]- Co se dá říct o stacionárním bodě $p$, ve kterém $f''(p) = 0$? Uveď příklady.
 > **Nic**, test druhou derivací mlčí. $x^4$ má v $0$ **minimum**, $-x^4$ **maximum**, $x^3$ **žádný extrém**; všechny mají $f'(0) = f''(0) = 0$.
@@ -245,7 +247,7 @@ Z [[věta o znaménku derivace a monotonii|věty o znaménku derivace a monotoni
 > **Neplyne.** $f(x) = x^4$: $f''(0) = 0$, ale $f'(x) = 4x^3$ je rostoucí, takže **$f'$ nemá v $0$ extrém** a $0$ není inflexní bod ($f$ je ryze konvexní všude).
 
 > [!karta|12]- Jak souvisí inflexní bod se změnou konvexity a konkávnosti?
-> V typickém případě, kdy má $f'$ v $p$ ostré minimum, $f'$ vlevo od $p$ klesá a vpravo roste, takže $f$ je vlevo **ryze konkávní** a vpravo **ryze konvexní**. V inflexi se prohnutí grafu **mění** (konkávní ↔ konvexní).
+> Definice chce jen **ostrý lokální extrém $f'$** v $p$. Je-li navíc $f'$ vlevo od $p$ klesající a vpravo rostoucí (např. když $f''$ v $p$ mění znaménko z $-$ na $+$), je $f$ vlevo **ryze konkávní** a vpravo **ryze konvexní**; samotná definice to ale **nezaručuje**: $f'(x) = x^2(2 + \sin\frac{1}{x})$, $f'(0) = 0$, má v $0$ ostré minimum, a přitom není monotónní na žádném jednostranném okolí $0$.
 
 > [!karta|13]- Jaký je postup, jak najít intervaly monotonie a lokální extrémy funkce s derivací na $\mathbb{R}$?
 > 1. Spočítej $f'$ a **rozlož ji na součin**. 2. Najdi **nulové body** $f'$ (stacionární body). 3. Urči **znaménko $f'$** na intervalech mezi nimi: $f' > 0$ rostoucí, $f' < 0$ klesající. 4. Kde se znaménko **mění**, je extrém (nebo použij $f''$).

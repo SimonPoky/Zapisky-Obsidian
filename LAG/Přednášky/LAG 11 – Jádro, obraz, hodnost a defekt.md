@@ -2,7 +2,7 @@
 predmet: LAG
 prednaska: 11
 datum: 2026-10-30
-zdroj: "V poznámkách kap. 7 (pozn. 7.8–7.19) a začátek kap. 8 (text před větou 8.1)"
+zdroj: "V poznámkách kap. 7 (pozn. 7.8–7.22) a začátek kap. 8 (text před větou 8.1)"
 tags: [prednaska, LAG]
 ---
 
@@ -130,7 +130,7 @@ Pro matice dostáváme z obecné definice konkrétní pojmy (pozn. 7.11):
 > $A = \begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix}$ má sloupce LN, je regulární a $A^{-1} = \begin{pmatrix} -2 & 1 \\ 3/2 & -1/2 \end{pmatrix}$. Kontrola prvního sloupce $A^{-1}A$: $A^{-1}(1; 3) = (-2 + 3;\ \tfrac{3}{2} - \tfrac{3}{2}) = (1; 0)$. Nepříklad: $\begin{pmatrix} 1 & -1 \\ 0 & 0 \end{pmatrix}$ z minula regulární není, zobrazení není prosté ani na.
 
 > [!navic] Inverze v libovolných bázích (pozn. 7.11, cvičení)
-> Pro izomorfismus $A : V \to W$ a báze $\mathcal{X}$, $\mathcal{Y}$ platí $[A^{-1}]^{\mathcal{Y} \to \mathcal{X}} = \big([A]^{\mathcal{X} \to \mathcal{Y}}\big)^{-1}$. Speciálně $\big([\mathrm{id}]^{\mathcal{X} \to \mathcal{Y}}\big)^{-1} = [\mathrm{id}]^{\mathcal{Y} \to \mathcal{X}}$: [[matice přechodu]] opačným směrem je inverzní maticí. Na cvičení $T_{X \to Y}^{-1} = T_{Y \to X}$.
+> Pro izomorfismus $A : V \to W$ mezi prostory konečné dimenze a báze $\mathcal{X}$, $\mathcal{Y}$ platí $[A^{-1}]^{\mathcal{Y} \to \mathcal{X}} = \big([A]^{\mathcal{X} \to \mathcal{Y}}\big)^{-1}$. Speciálně $\big([\mathrm{id}]^{\mathcal{X} \to \mathcal{Y}}\big)^{-1} = [\mathrm{id}]^{\mathcal{Y} \to \mathcal{X}}$: [[matice přechodu]] opačným směrem je inverzní maticí. Na cvičení $T_{X \to Y}^{-1} = T_{Y \to X}$.
 
 ## §3 Jádro a obraz
 
@@ -422,7 +422,7 @@ Kapitola 8 začíná tím, že soustavu lineárních rovnic napíšeme jako jedn
 > [!karta|09]- Jak se v důkazu $\dim V = \operatorname{rank} A + \operatorname{def} A$ získá báze obrazu?
 > Bázi jádra $(\vec{x}_1, \dots, \vec{x}_k)$ **doplň na bázi $V$** vektory $\vec{y}_1, \dots, \vec{y}_{n-k}$. Obrazy $A\vec{y}_1, \dots, A\vec{y}_{n-k}$ generují $\operatorname{im} A$ (protože $A\vec{x}_i = \vec{0}$) a jsou LN: kombinace s nulovým obrazem leží v jádře, je tedy kombinací $\vec{x}_i$, a z **LN báze $V$** jsou všechny koeficienty nulové.
 
-> [!karta|10]- Proč lineární zobrazení $A : V \to W$ s $\dim V > \dim W$ nemůže být prosté a s $\dim V < \dim W$ nemůže být na?
+> [!karta|10]- Proč lineární zobrazení $A : V \to W$ mezi prostory konečné dimenze s $\dim V > \dim W$ nemůže být prosté a s $\dim V < \dim W$ nemůže být na?
 > $\operatorname{im} A \le W$ a podle věty o dimenzi $\operatorname{rank} A \le \dim V$. Při $\dim V > \dim W$ je **$\operatorname{def} A = \dim V - \operatorname{rank} A \ge \dim V - \dim W > 0$**. Při $\dim V < \dim W$ je **$\operatorname{rank} A \le \dim V < \dim W$**, takže $\operatorname{im} A \ne W$.
 
 > [!karta|11]- Proč je pro lineární operátor na prostoru konečné dimenze prostota totéž co surjektivita? Platí to i pro $\mathbb{R}[x]$?

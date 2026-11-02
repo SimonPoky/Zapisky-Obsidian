@@ -321,7 +321,7 @@ Matice stejného rozměru umíme sčítat a násobit číslem, tvoří [[lineár
 > [!karta|11]- Jak spolu souvisí $[\mathrm{id}]^{\mathcal{X} \to \mathcal{Y}}$ a $[\mathrm{id}]^{\mathcal{Y} \to \mathcal{X}}$?
 > Jejich součin je **jednotková matice**: $[\mathrm{id}]^{\mathcal{Y} \to \mathcal{X}}[\mathrm{id}]^{\mathcal{X} \to \mathcal{Y}} = [\mathrm{id} \circ \mathrm{id}]^{\mathcal{X} \to \mathcal{X}} = E$. Jedna překládá tam, druhá zpátky.
 
-> [!karta|12]- Co je nulový vektor a opačný vektor v prostoru $\operatorname{Lin}(V, W)$?
+> [!karta|12]- Proč je nulovým vektorem prostoru $\operatorname{Lin}(V, W)$ nulové zobrazení a opačným vektorem k $A$ zobrazení $(-1)A$? Ověř z definice sčítání zobrazení.
 > Nulový vektor je **nulové zobrazení** $\vec{x} \mapsto \vec{0}$ (přičtením se nic nezmění). Opačný k $A$ je **$(-1)A$**, tj. $\vec{x} \mapsto -A\vec{x}$, protože $(A + (-1)A)\vec{x} = \vec{0}$.
 
 > [!karta|13]- Proč nemůže být $\begin{pmatrix} \cos\alpha & \sin\alpha \\ \sin\alpha & \cos\alpha \end{pmatrix}$ matice otočení o úhel $\alpha$?

@@ -277,7 +277,7 @@ $\varphi$ neplatí při updatu $x := b$, takže $\gamma$ je nepravdivá v $I'$. 
 > [!karta|03]- Co stačí k vyvrácení $\forall x\,\varphi$ a co je potřeba k vyvrácení $\exists x\,\varphi$?
 > $\forall$: **jedno** $d$, pro které $\varphi$ neplatí. $\exists$: ukázat, že $\varphi$ neplatí pro **žádné** $d \in U$; jeden nevhodný pokus (např. $x \mapsto 7$ u $\exists x\,(0 < x \wedge x < 1)$) nestačí.
 
-> [!karta|04]- Proč ve formuli $\exists y\,(y < x)$ nehraje roli $\rho(y)$, ale $\rho(x)$ ano?
+> [!karta|04]- Proč pravdivost formule při kontextu $\rho$ nezávisí na hodnotě vázané proměnné, ale na hodnotě volné ano? (Třeba $\exists y\,(y < x)$.)
 > $y$ je **vázaná**: kvantifikátor její hodnotu přepíše updatem. $x$ je **volná**: její hodnota zůstává, při $\rho(x) = 7$ je formule v ℕ pravdivá, při $\rho(x) = 0$ ne.
 
 > [!karta|05]- Proč pravdivost sentence nezávisí na kontextu (myšlenka)?
@@ -318,7 +318,7 @@ $\varphi$ neplatí při updatu $x := b$, takže $\gamma$ je nepravdivá v $I'$. 
 > [!priklad|16]- Je klasické ℕ modelem sentence $\forall x\,\exists y\,(x < y)$? A sentence $\exists y\,\forall x\,(x < y)$?
 > První: pro každé $n$ je svědek $y := n + 1$, takže **ano, model**. Druhá: pro každé $m$ selže update $x := m$ ($m < m$ neplatí), takže **není model**. Pořadí kvantifikátorů mění význam.
 
-> [!priklad|17]- Interpretace: $U = \{0, 1\}$, $[\![<]\!] = \{(0, 1)\}$, $[\![1]\!] = 1$, $[\![+]\!](m, n) = \max(m, n)$. Je modelem sentence $\forall x\,(x < x + 1)$?
+> [!priklad|17]- V jazyce s $<$, $+$ (arita 2) a konstantou $1$: interpretace $U = \{0, 1\}$, $[\![<]\!] = \{(0, 1)\}$, $[\![1]\!] = 1$, $[\![+]\!](m, n) = \max(m, n)$. Je modelem sentence $\forall x\,(x < x + 1)$?
 > Update $x := 1$: $[\![x + 1]\!] = \max(1, 1) = 1$ a formule říká $(1, 1) \in [\![<]\!]$, což **neplatí**. Jeden neúspěšný update vyvrací $\forall$: **není model**.
 
 ### Typové příklady na semestrální test

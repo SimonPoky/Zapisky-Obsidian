@@ -56,7 +56,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "funkč",
+                "query": "podprostor",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -80,8 +80,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -191,7 +190,7 @@
       "bases:Create new base": false
     }
   },
-  "active": "d70f69f7743dabdf",
+  "active": "a4301ff296c90ca6",
   "lastOpenFiles": [
     "LAG/Přednášky/LAG 11 – Jádro, obraz, hodnost a defekt.md",
     "LAG/Pojmy/věta o struktuře vzoru.md",

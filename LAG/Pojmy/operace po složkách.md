@@ -3,6 +3,7 @@ aliases: ["po složkách", "bodově"]
 tags: [pojem, LAG]
 predmet: LAG
 prednaska: 2
+zdroj: "pozn. 1.10, 1.17"
 ---
 
 # operace po složkách
