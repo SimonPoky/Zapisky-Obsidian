@@ -389,7 +389,7 @@ Kapitola 8 začíná tím, že soustavu lineárních rovnic napíšeme jako jedn
 > | množina všech řešení | $A^{-1}\{\vec{b}\} = \{\vec{x}_p\} + \ker A$ |
 > | nejvýš jedno řešení pro každé $\vec{b}$ | $\ker A = \{\vec{0}\}$, monomorfismus |
 >
-> Přesně to shrne Frobeniova věta (věta 8.1) na příští přednášce.
+> Přesně to shrne [[Frobeniova věta]] (věta 8.1) na příští přednášce.
 
 ## Kartičky
 
@@ -484,4 +484,4 @@ Kapitola 8 začíná tím, že soustavu lineárních rovnic napíšeme jako jedn
 > Podle věty o dimenzi $\operatorname{rank} A = 3 - 1 = 2$. Sloupce $(1; 2; 1)$ a $(2; 4; 3)$ nejsou násobky, jsou LN a leží v $\operatorname{im} A$: **báze $\operatorname{im} A$ je $((1; 2; 1), (2; 4; 3))$, $\operatorname{rank} A = 2$**.
 
 ---
-← [[LAG 10 – Obraz a vzor při lineárním zobrazení|23. 10. 2026 Obraz a vzor při lineárním zobrazení]]
+← [[LAG 10 – Obraz a vzor při lineárním zobrazení|23. 10. 2026 Obraz a vzor při lineárním zobrazení]] · [[LAG 12 – Frobeniova věta a Gaussova eliminace|4. 11. 2026 Frobeniova věta a Gaussova eliminace]] →
