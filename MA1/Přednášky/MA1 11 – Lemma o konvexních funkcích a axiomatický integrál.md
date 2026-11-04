@@ -415,4 +415,4 @@ Zbývá ukázat, že integrál vůbec **existuje**. Myšlenka (Archimedes, pozd�
 > Ať je $f$ spojitá na omezeném uzavřeném intervalu $[a; b]$ a ať $F$ je primitivní funkce k $f$ na $[a; b]$. Potom **pro každé $x_0 \in [a; b]$ a každé $y_0 \in \mathbb{R}$ existuje právě jedna primitivní funkce $G$ k $f$ na $[a; b]$ taková, že $G(x_0) = y_0$**.
 
 ---
-← [[MA1 10 – Druhá derivace, konvexita a inflexe|22. 10. 2026 Druhá derivace, konvexita a inflexe]]
+← [[MA1 10 – Druhá derivace, konvexita a inflexe|22. 10. 2026 Druhá derivace, konvexita a inflexe]] · [[MA1 12 – Linearita, per partes a substituce v integrálu|4. 11. 2026 Linearita, per partes a substituce v integrálu]] →

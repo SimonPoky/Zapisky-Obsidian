@@ -10,7 +10,7 @@ tags: [predmet, MA1]
 
 [Handouty ke všem přednáškám (PDF) ↗](https://math.fel.cvut.cz/en/people/velebil/files/b0b01ma1/ma1_handout_all.pdf) · [Stránka předmětu ↗](https://math.fel.cvut.cz/en/people/velebil/teaching/b0b01ma1.html) · [Požadavky ↗](https://math.fel.cvut.cz/en/people/velebil/teaching/b0b01ma1_pozadavky.html) · [Ukázka zkoušky ↗](https://math.fel.cvut.cz/en/people/velebil/files/b0b01ma1/ma1_ukazka_2026.pdf) · [Ukázka testu 1 ↗](https://math.fel.cvut.cz/en/people/velebil/files/b0b01ma1/ma1_pisemka01_ukazka_2026.pdf) · [Ukázka testu 2 ↗](https://math.fel.cvut.cz/en/people/velebil/files/b0b01ma1/ma1_pisemka02_ukazka_2026.pdf)
 
-**Kartičky:** 274 povinných + 89 příkladů · [otevřít aplikaci ↗](https://claude.ai/artifact/3CKfKeuwtwrWiz3FSfSh5B) · [[Archiv přednášek#Kartičky|jak to funguje]]
+**Kartičky:** 296 povinných + 101 příkladů · [otevřít aplikaci ↗](https://claude.ai/artifact/3CKfKeuwtwrWiz3FSfSh5B) · [[Archiv přednášek#Kartičky|jak to funguje]]
 
 ## Přednášky
 
@@ -25,6 +25,7 @@ tags: [predmet, MA1]
 - **21. 10. 2026** [[MA1 09 – Taylorův polynom, extrémy a monotonie|Taylorův polynom, extrémy a monotonie]] · f⁽ᵏ⁾, Taylorův polynom, základní věta (důkaz n = 2), eˣ, odhad chyby, lokální extrémy, stacionární bod, f′(p) = 0 v extrému, max a min na [a; b], monotonie a znaménko f′, x³
 - **22. 10. 2026** [[MA1 10 – Druhá derivace, konvexita a inflexe|Druhá derivace, konvexita a inflexe]] · f′ v praxi, x³ − 6x² + 10, extrém ze změny monotonie, test f″ (důkaz), f″(p) = 0, konvexní a konkávní funkce, konvexita přes f′ a f″, x⁴, inflexní bod, Weierstrass
 - **29. 10. 2026** [[MA1 11 – Lemma o konvexních funkcích a axiomatický integrál|Lemma o konvexních funkcích a axiomatický integrál]] · tečna pod grafem, lokální = globální minimum, Jensen, gradient descent (navíc), aditivita a omezenost, ∫ₐᵃ f = 0, F(x) = ∫ₐˣ f, F′ = f, primitivní funkce, jednoznačnost, L(f; Δ) a U(f; Δ), fundamentální věta
+- **4. 11. 2026** [[MA1 12 – Linearita, per partes a substituce v integrálu|Linearita, per partes a substituce v integrálu]] · ∫ f′ = f(b) − f(a), [F]ₐᵇ, integrační proměnná, tabulka integrálů, linearita, per partes, substituce, dt = φ′(z) dz, směr substituce
 
 ## Slovníček pojmů
 
@@ -46,8 +47,10 @@ tags: [predmet, MA1]
 - [[derivace v bodě]] · Okamžitá rychlost změny: limita (f(p+h) − f(p))/h, směrnice tečny; musí být reálné číslo.
 - [[derivace vyššího řádu]] · Derivace derivace: f″ = (f′)′, obecně f⁽ᵏ⁾; „alespoň n derivací v p“ = existuje f⁽ⁿ⁾(p).
 - [[dolní součet]] · Součet obdélníků pod grafem s výškou minima na každém kousku dělení.
+- [[dosazení mezí]] · [F]ₐᵇ = F(b) − F(a): dosaď horní mez, dosaď dolní, odečti.
 - [[důsledek Rolleovy věty]] · Determinant D(x) se sloupci v a, x, b je na krajích nulový, takže D′(t) = 0; z něj plyne Lagrange i Cauchy.
 - [[existence určitého integrálu]] · Pro spojitou f se dolní a horní součty potkají: sup L = inf U = ∫ₐᵇ f.
+- [[formální zápis substituce]] · t = φ(z), dt = φ′(z) dz: mnemotechnika, kterou ospravedlní věta o substituci.
 - [[fundamentální věta kalkulu]] · Integrál spojité f existuje, (∫ₐˣ f)′ = f a ∫ₐˣ f = F(x) − F(a) pro primitivní F.
 - [[globální minimum]] · f(p) ≤ f(x) pro všechna x z definičního oboru, ne jen v okolí.
 - [[gradient descent]] · Hledání minima kroky xᵢ₊₁ = xᵢ − γ · f′(xᵢ); ukázka navíc, základ učení neuronových sítí.
@@ -57,6 +60,8 @@ tags: [predmet, MA1]
 - [[horní součet]] · Součet obdélníků nad grafem s výškou maxima na každém kousku dělení.
 - [[infimum]] · Nejvyšší podlaha, největší dolní odhad. V 𝒫(U) průnik, v ℕ minimum.
 - [[inflexní bod]] · Bod, kde má f′ ostrý lokální extrém; graf se tam přehne z konkávního na konvexní nebo naopak.
+- [[integrační proměnná]] · Vázaná proměnná za d; ∫ t² dt = ∫ x² dx, nesmí se jmenovat jako mez.
+- [[integrál jako antiderivace]] · ∫ₐᵇ f′ = f(b) − f(a) pro spojitou f′: integrál rychlosti je změna polohy.
 - [[integrál jako funkce horní meze]] · F(x) = ∫ₐˣ f, nasbíraná plocha od a do x; F(a) = 0.
 - [[integrál s obrácenými mezemi]] · ∫ᵦᵃ f = −∫ₐᵇ f, aby aditivita platila pro meze v libovolném pořadí.
 - [[inverzní funkce]] · Funkce pozpátku: f⁻¹(y) je to jediné x s f(x) = y. Existuje jen u prosté funkce.
@@ -78,6 +83,7 @@ tags: [predmet, MA1]
 - [[limita sudých a lichých členů]] · posloupnost má limitu L, právě když ji mají sudé i liché členy
 - [[limita ve směru]] · Ke každému terči kolem L existuje kus směru, jehož celý obraz padne do terče. Jedna definice pro x → p, n → ∞ i x → −∞.
 - [[linearita limity]] · Limita lineární kombinace = kombinace (vlastních) limit.
+- [[linearita určitého integrálu]] · ∫(rf + sg) = r∫f + s∫g; na součin funkcí neplatí.
 - [[lineární aproximace]] · Tečna jako náhrada funkce: f(x) ≈ f(p) + f′(p)(x − p), chyba je zanedbatelná vůči x − p.
 - [[lokální extrém]] · Lokální minimum nebo lokální maximum: v blízkém okolí bodu je funkce nejníž nebo nejvýš.
 - [[lokální extrém ze změny monotonie]] · Z klesání do růstu je dno, z růstu do klesání vrchol; bez změny znaménka f′ extrém není.
@@ -86,6 +92,7 @@ tags: [predmet, MA1]
 - [[lokální minimum]] · Dno důlku: dost blízko p není žádná hodnota menší než f(p).
 - [[lokální systém intervalů]] · Každý bod [a; b] má kolem sebe nějaký „dobrý“ úsek ze systému.
 - [[maximum]] · Horní odhad, který sám leží v množině. Když existuje, je to i supremum.
+- [[metoda per partes]] · ∫ f′g = [fg]ₐᵇ − ∫ fg′: otočené pravidlo pro derivaci součinu.
 - [[minimum]] · Dolní odhad, který sám leží v množině. Každá neprázdná podmnožina ℕ ho má.
 - [[následník]] · Další číslo v řadě: succ(n) = n ∪ {n}, tedy n + 1.
 - [[neklesající funkce]] · x₁ < x₂ ⇒ f(x₁) ≤ f(x₂); rovné úseky povolené. Nerostoucí obráceně, monotónní = jedno z toho.
@@ -124,10 +131,12 @@ tags: [predmet, MA1]
 - [[ryze monotónní funkce]] · Rostoucí (x₁ < x₂ ⇒ f(x₁) < f(x₂)) nebo klesající; rostoucí je výtah jen nahoru.
 - [[shora omezená množina]] · Množina se stropem: existuje u ≥ všem prvkům. Zdola omezená má podlahu.
 - [[směr]] · Odkud se blížíme k cíli: vnořené neprázdné množiny s prázdným průnikem, cíl do nich nepatří.
+- [[směr substituce]] · Zprava doleva bezpečné, zleva doprava musíš najít a, b s φ(a), φ(b) rovnými mezím.
 - [[spojitost na intervalu]] · Spojitá uvnitř intervalu a v krajních bodech jednostranně.
 - [[spojitost v bodě]] · Limita v bodě p existuje a rovná se f(p): graf jde přes p bez zvednutí tužky.
 - [[stacionární bod]] · Bod s f′(p) = 0, vodorovná tečna. Nemusí to být extrém.
 - [[supremum]] · Nejnižší strop, nejmenší horní odhad. Existuje i tam, kde chybí maximum.
+- [[tabulka primitivních funkcí]] · Tabulka derivací pozpátku: tⁿ, 1/t, eᵗ, sin, cos, arcsin, arctan…
 - [[Taylorův polynom]] · Tₙ(f, p)(x) = Σ f⁽ᵏ⁾(p)/k! · (x − p)ᵏ: polynom se stejnými derivacemi v p do řádu n jako f.
 - [[Taylorův polynom exponenciály]] · Tₙ(eˣ, 0)(x) = 1 + x + x²/2! + … + xⁿ/n!; doporučeno zapamatovat.
 - [[tečna]] · Limitní poloha sečen v bodě [p; f(p)]: y = f(p) + f′(p)(x − p).
@@ -156,6 +165,7 @@ tags: [predmet, MA1]
 - [[věta o spojitosti inverzní funkce]] · Spojitá f na [a; b] má inverzi ⇔ je ryze monotónní; inverze je pak spojitá.
 - [[věta o spojitosti složené funkce]] · f spojitá v p a g spojitá v f(p) ⇒ g ∘ f spojitá v p. Jednostranně neplatí.
 - [[věta o substituci]] · Limita f(φ(x)) je lim f, když φ míří do cíle a na kusu směru do něj nedopadne.
+- [[věta o substituci v určitém integrálu]] · ∫_{φ(a)}^{φ(b)} f(t) dt = ∫ₐᵇ f(φ(z))φ′(z) dz: otočená Chain Rule.
 - [[věta o zachování intervalů]] · PIT: obraz [a; b] při spojité funkci je interval [min; max].
 - [[věta o znaménku derivace a monotonii]] · Na otevřeném intervalu: f′ ≥ 0 ⇔ neklesající; rostoucí, když navíc f′ není nulová na celém podintervalu.
 - [[věta o znaménku limity]] · L > 0 ⇒ f > 0 blízko cíle; f ≥ 0 ⇒ L ≥ 0.
