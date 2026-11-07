@@ -338,4 +338,4 @@ $\varphi$ neplatí při updatu $x := b$, takže $\gamma$ je nepravdivá v $I'$. 
 > **Ano.** V libovolné interpretaci $(U, [\![-]\!])$ a při libovolném updatu $x := d$ říká formule $x = x$, že $d = d$. Rovnítko je logický symbol a znamená vždy skutečnou rovnost, takže to platí pro každé $d \in U$ v každé interpretaci.
 
 ---
-← [[LGR 08 – Dokončení úplnosti a syntaxe predikátové logiky|23. 10. 2026 Dokončení úplnosti a syntaxe predikátové logiky]]
+← [[LGR 08 – Dokončení úplnosti a syntaxe predikátové logiky|23. 10. 2026 Dokončení úplnosti a syntaxe predikátové logiky]] · [[LGR 10 – Zákony pro kvantifikátory, prenexní tvar a skolemizace|5. 11. 2026 Zákony pro kvantifikátory, prenexní tvar a skolemizace]] →
