@@ -365,4 +365,4 @@ $$
 > **Není**, polynomy jsou LZ: $1 + 2x + x^2 = (1 + x) + (x + x^2)$.
 
 ---
-← [[LAG 11 – Jádro, obraz, hodnost a defekt|30. 10. 2026 Jádro, obraz, hodnost a defekt]]
+← [[LAG 11 – Jádro, obraz, hodnost a defekt|30. 10. 2026 Jádro, obraz, hodnost a defekt]] · [[LAG 13 – Inverzní matice eliminací, transpozice a grupy|6. 11. 2026 Inverzní matice eliminací, transpozice a grupy]] →

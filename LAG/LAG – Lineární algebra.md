@@ -10,7 +10,7 @@ tags: [predmet, LAG]
 
 [Poznámky k přednáškám (PDF) ↗](https://math.fel.cvut.cz/cz/lide/gromadan/LA26/notes.pdf) · [Stránka přednášky ↗](https://math.fel.cvut.cz/cz/lide/gromadan/lag26p.html) · [Sbírka příkladů (Velebil) ↗](https://math.fel.cvut.cz/en/people/velebil/files/lag_2026_podzim/lag_sbirka_2026_01_21.pdf)
 
-**Kartičky:** 288 povinných + 110 příkladů · [otevřít aplikaci ↗](https://claude.ai/artifact/3CKfKeuwtwrWiz3FSfSh5B) · [[Archiv přednášek#Kartičky|jak to funguje]]
+**Kartičky:** 323 povinných + 119 příkladů · [otevřít aplikaci ↗](https://claude.ai/artifact/3CKfKeuwtwrWiz3FSfSh5B) · [[Archiv přednášek#Kartičky|jak to funguje]]
 
 ## Přednášky
 
@@ -26,6 +26,7 @@ tags: [predmet, LAG]
 - **23. 10. 2026** [[LAG 10 – Obraz a vzor při lineárním zobrazení|Obraz a vzor při lineárním zobrazení]] · distributivita, bilinearita, vzor vektoru = řešení soustavy, soustava – kombinace – vzor, cílová množina, obor hodnot, obraz a vzor množiny, prosté, na, bijekce, inverzní zobrazení
 - **30. 10. 2026** [[LAG 11 – Jádro, obraz, hodnost a defekt|Jádro, obraz, hodnost a defekt]] · mono-, epi-, izomorfismus, regulární matice, izomorfní prostory, inverzní matice, jádro a obraz, hodnost a defekt, prosté ⟺ ker A = {0}, A⁻¹{b} = {xₚ} + ker A, dim V = rank A + def A, matice soustavy
 - **4. 11. 2026** [[LAG 12 – Frobeniova věta a Gaussova eliminace|Frobeniova věta a Gaussova eliminace]] · Frobeniova věta, rank A = rank(A | b), S = xₚ + S₀, parametrický tvar, zpětná substituce, horní stupňovitý tvar, hlavní a vedlejší sloupce, pivoty, elementární řádkové úpravy, Gaussova eliminace
+- **6. 11. 2026** [[LAG 13 – Inverzní matice eliminací, transpozice a grupy|Inverzní matice eliminací, transpozice a grupy]] · inverze přes (A | E), Gaussova–Jordanova eliminace, ERÚ = násobení regulární maticí, zachování hodnosti, transponovaná matice, rank A = rank Aᵀ, charakterizace regulární matice, grupy, homomorfismy, ℤₙ, permutace a znaménko
 
 ## Zápočtové testy
 
@@ -66,13 +67,13 @@ Na testu se zadá jedna z nich a je potřeba ji napsat přesně, s tím, co je d
 | Je zobrazení lineární? Je to mono-, epi-, izomorfismus? Urči $\operatorname{Im}$. | teoretický | linearita: [[LAG 07 – Lineární zobrazení#Typové příklady na zápočtový test\|LAG 07]], příklady 23–27; prosté, na a $\operatorname{Im}$: [[LAG 10 – Obraz a vzor při lineárním zobrazení#Typové příklady na zápočtový test\|LAG 10]], příklady 18–21; mono/epi/izo přes jádro a hodnost: [[LAG 11 – Jádro, obraz, hodnost a defekt#Typové příklady na zápočtový test\|LAG 11]], příklady 20–24; hodnost a jádro Gaussovou eliminací: [[LAG 12 – Frobeniova věta a Gaussova eliminace#Typové příklady na zápočtový test\|LAG 12]], příklady 19–20 |
 | Dokaž, že posloupnost je báze (s využitím dimenze) | dílčí krok početního | [[LAG 05 – Báze a dimenze#Typové příklady na zápočtový test\|LAG 05]], příklady 27–28; eliminací: [[LAG 12 – Frobeniova věta a Gaussova eliminace#Typové příklady na zápočtový test\|LAG 12]], příklady 21–22 |
 | Souřadnice polynomu nebo matice vzhledem k bázi | dílčí krok početního | [[LAG 06 – Souřadnice, součet a průnik podprostorů#Typové příklady na zápočtový test\|LAG 06]], příklady 22–23 |
-| Matice zobrazení vůči bázím, skládání = maticový součin, matice transformace souřadnic | jádro početního | matice vůči bázím a skládání: [[LAG 08 – Matice lineárního zobrazení a součin matic#Typové příklady na zápočtový test\|LAG 08]], příklady 21–25; matice transformace souřadnic: [[LAG 09 – Algebra matic a transformace souřadnic#Typové příklady na zápočtový test\|LAG 09]], příklady 18–21 |
+| Matice zobrazení vůči bázím, skládání = maticový součin, matice transformace souřadnic | jádro početního | matice vůči bázím a skládání: [[LAG 08 – Matice lineárního zobrazení a součin matic#Typové příklady na zápočtový test\|LAG 08]], příklady 21–25; matice transformace souřadnic: [[LAG 09 – Algebra matic a transformace souřadnic#Typové příklady na zápočtový test\|LAG 09]], příklady 18–21; inverzí eliminací ($T = Y^{-1}X$, $[A]^{\mathcal{X} \to \mathcal{X}} = X^{-1}AX$): [[LAG 13 – Inverzní matice eliminací, transpozice a grupy#Typové příklady na zápočtový test\|LAG 13]], příklady 20–22 |
 
 > [!note] Co z toho plyne v číslech
 > - Všech **15 z 15 definic (100 %)** je probraných; poslední pětice (jádro, obraz, mono-/epi-/izomorfismus, hodnost, defekt) přišla v přednášce 11.
 > - Všech **6 z 6** ukázkových početních příkladů (**10 b., 50 % testu**) jde spočítat.
 > - Všech **7 z 7** teoretických ukázek (**5 b.**) jde řešit: 3 o podprostorech a 4 o zobrazeních (linearita, $\operatorname{Im}$, mono-/epi-/izomorfismus přes jádro a větu o dimenzi).
-> - Do testu zbývají **3 přednášky** (6., 11. a 13. 11.), látka testu je ale už celá probraná, zbývá ji procvičit. Gaussova eliminace z přednášky 12 zrychlí výpočet jádra, hodnosti a ověření báze.
+> - Do testu zbývají **2 přednášky** (11. a 13. 11.), látka testu je ale už celá probraná, zbývá ji procvičit. Gaussova eliminace z přednášky 12 zrychlí výpočet jádra, hodnosti a ověření báze, inverze eliminací z přednášky 13 výpočet matice transformace souřadnic ($T_{\mathcal{X} \to \mathcal{Y}} = Y^{-1}X$ z $(Y \mid X) \sim (E \mid Y^{-1}X)$).
 
 > [!navic] Značení na cvičení a na přednášce
 > - Souřadnice: na přednášce $[\vec{v}]^{\mathcal{X}}$, na cvičení $[\vec{v}]_{\mathcal{X}}$ nebo $\operatorname{coord}_{\mathcal{X}}(\vec{v})$. Je to totéž.
@@ -83,6 +84,7 @@ Na testu se zadá jedna z nich a je potřeba ji napsat přesně, s tím, co je d
 
 *Najetím myší na pojem uvidíš náhled, klepnutím otevřeš jeho poznámku.*
 
+- [[abelovská grupa]] · Grupa, ve které nezáleží na pořadí: xy = yx; třeba (ℤ, +).
 - [[alternativní definice lineární závislosti]] · LZ právě když je některý vektor kombinací ostatních (i jen předchozích).
 - [[asociativita násobení matic]] · (AB)C = A(BC): závorky se nepíšou, pořadí matic měnit nesmíš.
 - [[asociativita skládání zobrazení]] · C(BA) = (CB)A: u tří zobrazení za sebou nezáleží na závorkách.
@@ -102,18 +104,24 @@ Na testu se zadá jedna z nich a je potřeba ji napsat přesně, s tím, co je d
 - [[eukleidovské vektory]] · Šipky vycházející z jednoho pevného bodu. Sčítají se rovnoběžníkem, násobí se natažením.
 - [[Frobeniova věta]] · Řešení existuje ⟺ rank A = rank(A | b); dim S₀ = n − rank A; S = xₚ + S₀.
 - [[Gaussova eliminace]] · Sloupec po sloupci zleva: vyber pivot, vynuluj vše pod ním; skončíš ve stupňovitém tvaru.
+- [[Gaussova–Jordanova eliminace]] · Gaussova eliminace dotažená nahoru: pivoty na jedničky, nuly i nad nimi; řešení se čte rovnou.
 - [[generující posloupnost]] · Vektory, ze kterých jde poskládat úplně všechno: L = span{x₁, …, xₙ}.
+- [[grupa]] · Množina s operací: asociativita, neutrální prvek, inverze. (ℤ, +) ano, (ℤ, ·) ne.
+- [[grupa zbytkových tříd]] · (ℤₙ, +), počítání na ciferníku: v ℤ₁₂ je [9] + [5] = [2].
 - [[hlavní sloupec]] · Sloupec stupňovité matice s pivotem; hlavní sloupce tvoří bázi obrazu.
 - [[hodnost]] · rank A = dim im A: kolik směrů zobrazení „přežije“.
 - [[homogenní soustava]] · Soustava s nulovými pravými stranami. Její řešení tvoří podprostor, řešení nehomogenní soustavy ne.
+- [[homomorfismus grup]] · φ(xy) = φ(x)φ(y): převod mezi grupami, který respektuje operaci; bijektivní = izomorfismus.
 - [[horní stupňovitý tvar]] · Nenulové řádky nahoře, pivot každého řádku víc vpravo než pivot řádku nad ním.
 - [[identické zobrazení]] · Zobrazení „nedělej nic“, id(x) = x; lineární, při skládání hraje roli jedničky.
 - [[injektivní zobrazení]] · Prosté: různé vstupy mají různé výstupy, f(x₁) = f(x₂) ⇒ x₁ = x₂.
+- [[inverze v permutaci]] · Dvojice i < j s π(i) > π(j), „předběhnutí“; v obrázku šipek křížení.
 - [[inverzní matice]] · A⁻¹ s A⁻¹A = E: matice inverzního zobrazení, existuje jen k regulární matici.
 - [[inverzní zobrazení]] · Bijekce puštěná pozpátku: f⁻¹(y) je ten jediný x s f(x) = y.
 - [[izomorfismus]] · Lineární bijekce V → W: převodník, který zachová sčítání i násobení.
 - [[izomorfní prostory]] · V ≅ W, existuje mezi nimi izomorfismus; chová se jako rovnost.
 - [[jádro]] · ker A = {x | Ax = 0} ≤ V: co se zobrazí na nulu.
+- [[jádro homomorfismu]] · ker φ = φ⁻¹{e}: co homomorfismus pošle na neutrální prvek; vždy podgrupa.
 - [[jednotková matice]] · Maticová jednička: jedničky na diagonále, [Eₙ]ᵢⱼ = δᵢⱼ; matice identity v každé bázi.
 - [[kanonická báze]] · Báze 𝔽ⁿ z vektorů s jedničkou na jednom místě a nulami jinde, např. ((1; 0), (0; 1)).
 - [[korespondence lineárních zobrazení a matic]] · Po volbě bází odpovídá každému lineárnímu zobrazení V → W právě jedna matice n × m a naopak.
@@ -129,6 +137,7 @@ Na testu se zadá jedna z nich a je potřeba ji napsat přesně, s tím, co je d
 - [[lineární závislost]] · Nula jde z vektorů namíchat i netriviálně, takže aspoň jeden vektor jde poskládat z ostatních. Např. ((1; 2), (2; 4)).
 - [[lineární zobrazení]] · Zobrazení, které se slučuje se sčítáním i násobením číslem: A(x + y) = Ax + Ay, A(αx) = αAx.
 - [[matice]] · Tabulka čísel s m řádky a n sloupci. Pro sčítání je to jen sloupec m·n čísel poskládaný do obdélníku.
+- [[matice elementární řádkové úpravy]] · Každá ERÚ je násobení regulární maticí zleva; T = tatáž úprava provedená na E.
 - [[matice lineárního operátoru v bázi]] · [A]^𝒳 = [A]^(𝒳→𝒳): stejná báze na vstupu i na výstupu.
 - [[matice lineárního zobrazení vzhledem k bázím]] · j-tý sloupec jsou souřadnice obrazu j-tého vektoru vstupní báze ve výstupní bázi.
 - [[matice otočení]] · Sloupce (cos α; sin α) a (−sin α; cos α): kam se otočí e₁ a e₂.
@@ -149,7 +158,9 @@ Na testu se zadá jedna z nich a je potřeba ji napsat přesně, s tím, co je d
 - [[operace po složkách]] · Každá pozice se počítá zvlášť: první s první, druhá s druhou. (1; 2) + (3; 4) = (4; 6).
 - [[operátor derivace]] · Derivace jako lineární operátor na polynomech, xᵏ ↦ k·xᵏ⁻¹.
 - [[parametrický tvar řešení]] · Každá neznámá jako výraz v parametrech: x = 3 + t − 2s, y = t, z = s.
+- [[permutace]] · Bijekce {1, …, n} → {1, …, n}, přeházení pořadí; všechny tvoří grupu Sₙ s n! prvky.
 - [[pivot]] · První nenulové číslo nenulového řádku stupňovité matice; počet pivotů = hodnost.
+- [[podgrupa]] · Neprázdná část grupy uzavřená na operaci a inverze; obdoba podprostoru.
 - [[polynom]] · Součet mocnin x s čísly před nimi. Pro lineární algebru je to hlavně seznam koeficientů.
 - [[polynomiální funkce]] · Polynom je recept, polynomiální funkce hotové jídlo: co vyjde po dosazení. Nad číselnými tělesy si odpovídají jedna ku jedné.
 - [[posloupnosti]] · Nekonečně dlouhý sloupec čísel. Sčítá se člen po členu.
@@ -175,18 +186,23 @@ Na testu se zadá jedna z nich a je potřeba ji napsat přesně, s tím, co je d
 - [[stopa matice]] · Součet prvků na diagonále čtvercové matice.
 - [[stupeň polynomu]] · Nejvyšší mocnina x, která v polynomu opravdu je, tedy s nenulovým číslem před sebou.
 - [[surjektivní zobrazení]] · Na: zasáhne celou cílovou množinu, f(A) = B.
+- [[transponovaná matice]] · Aᵀ, [Aᵀ]ᵢⱼ = aⱼᵢ: řádky se stanou sloupci, překlopení podle diagonály.
+- [[transpozice (permutace)]] · Permutace, která prohodí dva prvky a zbytek nechá; vždy lichá.
+- [[transpozice součinu matic]] · (AB)ᵀ = BᵀAᵀ: pořadí činitelů se otočí.
 - [[triviální lineární kombinace]] · Všechny koeficienty nulové, výsledek je vždy nulový vektor.
 - [[triviální podprostor]] · Podprostor {0}, nejmenší podprostor každého prostoru.
 - [[vedlejší sloupec]] · Sloupec stupňovité matice bez pivotu; jeho neznámá je volný parametr.
 - [[vedoucí člen]] · Člen s nejvyšší mocninou x, která v polynomu je. U 2 + 3x − x² je to −x².
 - [[vektor]] · Cokoliv, co jde sčítat s jinými takovými věcmi a násobit číslem podle 8 pravidel: šipka, sloupec čísel, polynom i funkce.
 - [[věta o bázi z n vektorů]] · v prostoru dimenze n je n vektorů bází, jakmile jsou LN, nebo jakmile generují
+- [[věta o charakterizaci regulární matice]] · Čtvercová A: regulární ⟺ rank A = n ⟺ LN sloupce ⟺ LN řádky ⟺ Ax = b má právě jedno řešení.
 - [[věta o dimenzi jádra a obrazu]] · dim V = rank A + def A: každý směr vstupu přežije, nebo se zabije.
 - [[věta o dimenzi podprostoru]] · Podprostor má nejvýš takovou dimenzi jako prostor; při konečné dimenzi rovnost jen pro V = L.
 - [[věta o dimenzi součtu a průniku]] · dim(V + W) + dim(V ∩ W) = dim V + dim W, obdoba počtu prvků sjednocení.
 - [[věta o doplnění na bázi]] · LN posloupnost v prostoru konečné dimenze jde doplnit na bázi.
 - [[věta o elementárních řádkových úpravách]] · ERÚ rozšířené matice nemění množinu řešení soustavy (obraz matice ale ano).
 - [[věta o hlavních sloupcích]] · Ve stupňovitém tvaru tvoří hlavní sloupce bázi im A, rank A = počet nenulových řádků.
+- [[věta o hodnosti transponované matice]] · rank A = rank Aᵀ ≤ min{m, n}: LN řádků je stejně jako LN sloupců.
 - [[věta o jádru a obrazu]] · ker A ≤ V a im A ≤ W jsou vždy podprostory.
 - [[věta o jednoznačnosti vyjádření]] · LN právě když se každý vektor dá vyjádřit nejvýš jedním způsobem.
 - [[věta o linearitě inverzního zobrazení]] · Inverze izomorfismu je zase lineární.
@@ -205,7 +221,9 @@ Na testu se zadá jedna z nich a je potřeba ji napsat přesně, s tím, co je d
 - [[věta o převodu na horní stupňovitý tvar]] · Každou matici jde prohazováním řádků a přičítáním násobků převést na stupňovitý tvar.
 - [[věta o přidání vektoru k LN posloupnosti]] · K LN posloupnosti jde přidat v se zachováním LN, právě když v neleží v jejím obalu.
 - [[věta o prostotě a jádru]] · Lineární zobrazení je prosté, právě když ker A = {0}.
+- [[věta o prostotě homomorfismu]] · Homomorfismus je prostý, právě když se na e zobrazí jen e.
 - [[věta o průniku podprostorů]] · Průnik dvou podprostorů je podprostor.
+- [[věta o řádkových úpravách a regulární matici]] · A jde upravit na B, právě když B = TA pro regulární T.
 - [[věta o součtu obalů]] · span M + span N = span(M ∪ N): generátory součtu se sjednotí.
 - [[věta o součtu podprostorů]] · Součet dvou podprostorů je podprostor (sjednocení obecně ne).
 - [[věta o souřadnicích obrazu]] · [Ax]^𝒴 = [A]^(𝒳→𝒴)·[x]^𝒳: zobrazení se počítá násobením souřadnic maticí.
@@ -215,9 +233,14 @@ Na testu se zadá jedna z nich a je potřeba ji napsat přesně, s tím, co je d
 - [[věta o výběru báze]] · Z konečné generující množiny jde vybrat bázi.
 - [[věta o zachování lineárních kombinací]] · Obraz lineární kombinace je stejná kombinace obrazů.
 - [[věta o zadání lineárního zobrazení na bázi]] · Obrazy vektorů báze jdou zvolit libovolně a určí lineární zobrazení jednoznačně.
+- [[věta o znaménku složené permutace]] · sgn(πσ) = sgn π · sgn σ a sgn π⁻¹ = sgn π: znaménka se násobí.
 - [[věta o zobrazení zadaném sloupci]] · (x₁; …; xₙ) ↦ x₁a₁ + … + xₙaₙ je vždy lineární zobrazení 𝔽ⁿ → 𝔽ᵐ.
+- [[výpočet inverzní matice eliminací]] · (A | E) ~ (E | A⁻¹), obecně (A | B) ~ (E | A⁻¹B); nulový řádek vlevo = inverze neexistuje.
 - [[vytýkání skaláru ze součinu]] · (αA)B = α(AB) = A(αB): číslo se smí vytknout před součin.
 - [[vzor množiny]] · f⁻¹(N) = {x | f(x) ∈ N}: odkud se dá dostat do N; existuje vždy, i bez inverze.
+- [[zachování hodnosti při řádkových úpravách]] · Řádkové úpravy mění obraz matice, ale ne jeho dimenzi: rank TA = rank A.
+- [[zbytková třída]] · [i] = {i + kn | k ∈ ℤ}: všechna čísla se stejným zbytkem po dělení n.
+- [[znaménko permutace]] · sgn π = (−1)^(počet inverzí): +1 sudá, −1 lichá permutace.
 - [[zobrazení]] · Množina dvojic f ⊆ A × B, kde každé x ∈ A má právě jeden výstup.
 - [[zpětná substituce]] · Stupňovitou soustavu řešíš od poslední rovnice nahoru a dosazuješ.
 
