@@ -377,4 +377,4 @@ Objem tělesa, které vznikne rotací grafu nezáporné $f$ nad $[u; v]$ kolem o
 > **Tvrzení platí.** Kdyby $F$ byla primitivní k $f$ na $[0; 2]$, měla by $f$ podle **Darbouxovy věty** Darbouxovu vlastnost: každé $r$ mezi $f(0) = 0$ a $f(2) = 4$, tedy i $r = 1$, by nabývala. To je spor s předpokladem.
 
 ---
-← [[MA1 13 – Racionální funkce a typické integrály|5. 11. 2026 Racionální funkce a typické integrály]]
+← [[MA1 13 – Racionální funkce a typické integrály|5. 11. 2026 Racionální funkce a typické integrály]] · [[MA1 15 – Momenty, střední hodnota, sinus, kosinus a logaritmus|18. 11. 2026 Momenty, střední hodnota, sinus, kosinus a logaritmus]] →
