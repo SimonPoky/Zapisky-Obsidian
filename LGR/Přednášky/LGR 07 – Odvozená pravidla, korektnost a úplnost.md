@@ -173,6 +173,9 @@ $$
 > [!lidsky] Lidsky
 > Syntaktické dvojče [[tautologická ekvivalence|tautologické ekvivalence]] $\mathrel{\vert\!=\!\vert}$: místo „mají stejnou tabulku“ říká „jedna jde odvodit z druhé a naopak“. Podle [[věta o úplnosti|věty o úplnosti]] jsou obě ekvivalence totéž.
 
+> [!example] Příklad
+> $\varphi \wedge \psi \dashv\vdash \psi \wedge \varphi$: z $\varphi \wedge \psi$ odvodíš $\psi$ a $\varphi$ ($\wedge e_2$, $\wedge e_1$) a složíš $\psi \wedge \varphi$ ($\wedge i$); opačný směr stejně. Podobně $\neg\neg\varphi \dashv\vdash \varphi$ (pravidla $\neg\neg e$ a $\neg\neg i$).
+
 ### Příklad: $a \Rightarrow b \dashv\vdash \neg a \vee b$
 
 Směr $\neg a \vee b \vdash a \Rightarrow b$ je v [[LGR 06 – Rezoluční tabulka a přirozená dedukce|LGR 06]]. Opačný směr $a \Rightarrow b \vdash \neg a \vee b$ potřebuje TND: rozbor případů $a$ / $\neg a$.

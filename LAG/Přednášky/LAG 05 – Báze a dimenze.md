@@ -250,6 +250,9 @@ Lemma se zde nedokazuje a ke zkouškové písemce není nutné (v poznámkách j
 > [!lidsky] Lidsky
 > Dimenze je počet nezávislých směrů, kterými se dá v prostoru pohybovat: přímka 1, rovina 2, prostor kolem nás 3. Díky větě 4.7 nezáleží na tom, kterou bázi spočítáš, číslo vyjde vždycky stejné.
 
+> [!example] Příklad
+> $\dim \mathbb{R}^3 = 3$ (kanonická báze), $\dim \mathbb{R}^{\le 2}[x] = 3$ (báze $1, x, x^2$), $\dim \mathbb{R}^{2 \times 2} = 4$ a $\dim\{\vec{0}\} = 0$ (báze je prázdná posloupnost). Prostor všech polynomů nemá konečnou bázi, jeho dimenze je nekonečno.
+
 ### Příklady 4.9
 
 - $\dim\{\vec{0}\} = 0$: bází je prázdná posloupnost $()$. Je LN a $\operatorname{span}\emptyset = \{\vec{0}\}$.

@@ -67,6 +67,9 @@ Analýza stojí na [[supremum|supremu]]: limita, integrál i reálná čísla se
 > [!lidsky] Lidsky
 > $\mathcal{P}(U)$ je katalog všech možných „výběrů“ z $U$. Pro $U = \{a, b, c\}$ je to 8 výběrů: nic, tři jednotlivé prvky, tři dvojice a všechno. Obecně má $n$-prvková množina $2^n$ podmnožin, protože u každého prvku se rozhoduješ ano/ne.
 
+> [!example] Příklad
+> Pro $U = \{1, 2\}$ je $\mathcal{P}(U) = \{\emptyset, \{1\}, \{2\}, \{1, 2\}\}$, má $2^2 = 4$ prvky. Platí $\{1\} \subseteq \{1, 2\}$, ale $\{1\}$ a $\{2\}$ nejsou srovnatelné: ani jedna není podmnožinou druhé.
+
 Příklady pro $U = \{a, b, c\}$:
 
 - $\emptyset \subseteq \{a\}$ **platí**: implikace $x \in \emptyset \Rightarrow x \in \{a\}$ je pravdivá, protože $x \in \emptyset$ nenastane nikdy.
@@ -129,6 +132,9 @@ Nakreslení [[uspořádaná množina|uspořádání]] tak, že menší je níž 
 
 ^def-inf
 
+> [!lidsky] Lidsky
+> Nejvyšší podlaha: největší číslo, které leží pod všemi prvky. Pro $M = \{\frac{1}{n} : n \geq 1\}$ je $\inf M = 0$, i když $0 \notin M$.
+
 > [!example] Příklad
 > Inf (0; 1] = 0 a inf {1/n | n ≥ 1} = 0; ani jedna z množin minimum nemá.
 
@@ -155,6 +161,9 @@ Supremum je tedy v $\mathcal{P}(U)$ přesně sjednocení a infimum průnik. V ji
 > $\max M$ je horní odhad $M$, který **sám leží v $M$**; $\min M$ zrcadlově. Maximum je nejvýš jedno (plyne z antisymetrie).
 
 ^def-max
+
+> [!lidsky] Lidsky
+> Maximum je největší prvek, který v množině opravdu leží. $[0; 1]$ má maximum $1$, $[0; 1)$ maximum nemá, jen supremum $1$.
 
 > [!example] Příklad
 > - **minimum:** min {3, 5, 8} = 3, min ℕ = 0. (0; 1] minimum nemá, i když infimum je 0.

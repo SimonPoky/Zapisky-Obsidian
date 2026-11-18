@@ -127,6 +127,9 @@ U $\mathbb{F}^m \to \mathbb{F}^n$ jsme do sloupců psali přímo obrazy $A\vec{e
 > [!lidsky] Lidsky
 > Recept na matici ve třech krocích: **(1)** vezmi $j$-tý vektor vstupní báze $\vec{x}_j$, **(2)** zobraz ho, **(3)** výsledek $A\vec{x}_j$ rozlož do výstupní báze $\mathcal{Y}$ a koeficienty napiš jako $j$-tý sloupec. Vstupní báze tedy určuje, **které** vektory zobrazuješ (a kolik je sloupců, $m = \dim V$), výstupní báze, **v jakých souřadnicích** zapisuješ výsledek (a kolik je řádků, $n = \dim W$). Jiné báze dají jinou matici téhož zobrazení, stejně jako jiná báze dá jiné souřadnice téhož vektoru.
 
+> [!example] Příklad
+> $A : \mathbb{R}^2 \to \mathbb{R}^{\le 1}[x]$, $A(a; b) = a + (a + b)x$, $\mathcal{X} = ((1; 0), (0; 1))$. Pro $\mathcal{Y} = (1, x)$: $A(1; 0) = 1 + x \to (1; 1)$, $A(0; 1) = x \to (0; 1)$, tedy $[A]^{\mathcal{X} \to \mathcal{Y}} = \begin{pmatrix} 1 & 0 \\ 1 & 1 \end{pmatrix}$. Pro $\mathcal{Y}' = (1, 1 + x)$: $1 + x \to (0; 1)$, $x = -1 + (1 + x) \to (-1; 1)$, tedy $[A]^{\mathcal{X} \to \mathcal{Y}'} = \begin{pmatrix} 0 & -1 \\ 1 & 1 \end{pmatrix}$. Sloupce jsou souřadnice obrazů bázových vektorů.
+
 > [!pozor] Které souřadnice kam
 > Ve sloupcích jsou souřadnice **obrazů** $A\vec{x}_j$ vzhledem k bázi **$\mathcal{Y}$**, ne souřadnice $\vec{x}_j$ a ne souřadnice v bázi $\mathcal{X}$. Častá chyba v testu: zobrazit vektor správně, ale zapsat ho do sloupce „tak, jak vypadá“, místo jeho souřadnic ve výstupní bázi.
 

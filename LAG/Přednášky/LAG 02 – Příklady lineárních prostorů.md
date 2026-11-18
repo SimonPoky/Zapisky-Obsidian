@@ -85,6 +85,9 @@ Témata: `𝔽ⁿ` · `matice` · `eukleidovské vektory` · `posloupnosti` · `
 > [!lidsky] Lidsky
 > Matice je tabulka čísel, třeba rozvrh $3 \times 5$ (3 řádky, 5 sloupců). Dvě tabulky stejného tvaru sečteš políčko po políčku, násobek vynásobí každé políčko. Pro tyhle dvě operace se tabulka chová úplně stejně jako dlouhý sloupec čísel, jen je jinak poskládaná.
 
+> [!example] Příklad
+> V $\mathbb{R}^{2 \times 3}$ je $\begin{pmatrix} 1 & 0 & 2 \\ -1 & 3 & 0 \end{pmatrix} \oplus \begin{pmatrix} 0 & 1 & 1 \\ 1 & 1 & 1 \end{pmatrix} = \begin{pmatrix} 1 & 1 & 3 \\ 0 & 4 & 1 \end{pmatrix}$ a $2 \odot \begin{pmatrix} 1 & 0 & 2 \\ -1 & 3 & 0 \end{pmatrix} = \begin{pmatrix} 2 & 0 & 4 \\ -2 & 6 & 0 \end{pmatrix}$. V první matici je $a_{12} = 0$ (řádek 1, sloupec 2) a $a_{21} = -1$.
+
 Příklad: $\begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix} \oplus \begin{pmatrix} 2 & 0 \\ 0 & 3 \end{pmatrix} = \begin{pmatrix} 3 & 2 \\ 3 & 7 \end{pmatrix}$ ✓
 
 > [!navic] Souvislosti · pozn. 1.11
@@ -110,6 +113,9 @@ Orientované úsečky s pevně zvoleným počátkem $O$, nad tělesem $\mathbb{R
 > $$
 
 ^def-posl
+
+> [!lidsky] Lidsky
+> Posloupnost je „nekonečný sloupcový vektor“: sčítá se a násobí člen po členu stejně jako v $\mathbb{F}^n$, jen složek je nekonečně mnoho.
 
 > [!example] Příklad
 > (1, 1/2, 1/4, …) + (1, 1, 1, …) = (2, 3/2, 5/4, …) a 2·(1, 1/2, 1/4, …) = (2, 1, 1/2, …).
@@ -176,6 +182,9 @@ Tohle je „mateřský“ příklad, ze kterého vzniknou všechny předchozí v
 
 > [!lidsky] Lidsky
 > Stupeň je nejvyšší mocnina $x$, která v polynomu opravdu je, tedy má před sebou nenulové číslo. $3 + 0x^5$ má stupeň 0, protože $x^5$ tam ve skutečnosti není.
+
+> [!example] Příklad
+> $p(x) = 3 - x + 2x^3$ má koeficienty $\alpha_0 = 3$, $\alpha_1 = -1$, $\alpha_2 = 0$, $\alpha_3 = 2$, takže má stupeň $3$. Konstantní polynom $q(x) = 5$ má stupeň $0$.
 
 **Příklad:** $p(x) = 2 + 3x - x^2$ má koeficienty $\alpha_0 = 2,\ \alpha_1 = 3,\ \alpha_2 = -1$, stupeň $\deg p(x) = 2$ a jeho nejvyšší nenulový člen je $-x^2$. Tomu členu se běžně říká *vedoucí člen* a číslu $-1$ *vedoucí koeficient*. ^vedouci
 

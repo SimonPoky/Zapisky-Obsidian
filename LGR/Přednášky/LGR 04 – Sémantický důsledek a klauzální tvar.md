@@ -203,6 +203,9 @@ Formule a množina jejích klauzulí jsou pravdivé **ve stejných ohodnoceních
 > [!lidsky] Lidsky
 > Rozsekáš všechna pravidla na co nejmenší „aspoň jedno z …“ požadavky. Tautologii smíš vyhodit, protože ji nejde porušit: $u(S \cup \{\mathrm{tt}\}) = u(S)$. Je to jako vyškrtnout ze seznamu povinností „buď prší, nebo neprší“.
 
+> [!example] Příklad
+> $S = \{a \Rightarrow b,\ \neg(b \wedge \neg c)\}$: $a \Rightarrow b \mathrel{\vert\!=\!\vert} \neg a \vee b$ a $\neg(b \wedge \neg c) \mathrel{\vert\!=\!\vert} \neg b \vee c$, takže $\mathrm{Kl}(S) = \{\neg a \vee b,\ \neg b \vee c\}$. Formule $(a \vee \neg a \vee b) \wedge c$ přispěje jen klauzulí $c$, protože první klauzule je tautologie a vypadne.
+
 > [!navic] Když $S$ obsahuje jen tautologie
 > Pak se všechny klauzule vypustí a $\mathrm{Kl}(S) = \emptyset$. To sedí s §2: prázdná množina je splnitelná, stejně jako množina tautologií.
 

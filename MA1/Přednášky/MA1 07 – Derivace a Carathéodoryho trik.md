@@ -135,6 +135,9 @@ Navazuje na věty o funkcích spojitých na $[a; b]$ z minula.
 > [!lidsky] Lidsky
 > [[tečna|Sečna]] protíná graf ve dvou bodech. Když druhý bod posouváš k prvnímu, sečna se otáčí a ustálí se v tečně, přímce, která se grafu v $[p; f(p)]$ jen „dotkne“. Derivace je její sklon: o kolik tečna stoupne, když jdeš o 1 doprava.
 
+> [!example] Příklad
+> $f(x) = x^2$, $p = 1$: sečna body $[1; 1]$ a $[3; 9]$ má směrnici $\frac{9 - 1}{3 - 1} = 4$. Pro $x \to 1$ jdou směrnice sečen $\frac{x^2 - 1}{x - 1} = x + 1$ k $2 = f'(1)$ a tečna v $[1; 1]$ je $y = 1 + 2(x - 1) = 2x - 1$.
+
 > [!obrazek] Sečny se blíží k tečně
 > ![[ma107-secny.png]]
 > *Modrý graf f, červený bod [p; f(p)]. Oranžové sečny vedou k bodům x₁, x₂, x₃, x₄, které se blíží k p; čím blíž, tím je sečna sytější. Jejich směrnice se blíží ke směrnici zelené tečny, a to je f′(p).*

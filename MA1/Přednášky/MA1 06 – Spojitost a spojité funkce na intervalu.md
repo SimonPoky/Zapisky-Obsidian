@@ -61,6 +61,9 @@ Minule přišla definice [[spojitost v bodě|spojitosti v bodě]]: limita v $p$ 
 
 ^def-jednostranna-spojitost
 
+> [!lidsky] Lidsky
+> Graf se v $p$ nepřetrhne aspoň z jedné strany. Celá část $\lfloor x \rfloor$ je v $p = 1$ spojitá zprava (hodnota $1$ a zprava se blíží $1$), ale ne zleva (zleva se blíží $0$).
+
 > [!example] Příklad
 > F(x) = 0 pro x < 1 a f(x) = 1 pro x ≥ 1 je v bodě 1 spojitá zprava (lim_{x→1⁺} f = 1 = f(1)), ale zleva ne (lim_{x→1⁻} f = 0).
 

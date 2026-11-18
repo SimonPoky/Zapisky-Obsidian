@@ -101,6 +101,9 @@ Otázka „je některý vektor kombinací ostatních?“ je přesně to, čemu s
 >
 > Příklad: $2 \cdot (1; 2) - 1 \cdot (2; 4) = (0; 0)$, takže $((1; 2), (2; 4))$ je LZ. Druhý vektor je jen dvojnásobek prvního.
 
+> [!example] Příklad
+> $((1; 2), (2; 4))$ je **LZ**: $2 \cdot (1; 2) - 1 \cdot (2; 4) = (0; 0)$ a koeficient $2 \neq 0$. $((1; 0), (1; 1))$ je **LN**: z $\alpha(1; 0) + \beta(1; 1) = (0; 0)$ plyne z druhé složky $\beta = 0$ a pak z první $\alpha = 0$. Každá posloupnost obsahující $\vec{0}$ je LZ, protože $1 \cdot \vec{0} = \vec{0}$.
+
 > [!pozor] Netriviální = aspoň jeden koeficient nenulový
 > Častá chyba je chtít, aby byly nenulové **všechny** koeficienty. Stačí jeden: $((1; 0), (0; 0))$ je LZ díky $0 \cdot (1; 0) + 1 \cdot (0; 0) = \vec{0}$. A naopak u LN nestačí najít jednu kombinaci s nenulovými koeficienty, která nulu nedá; musí se ukázat, že **každá** kombinace dávající nulu je triviální.
 

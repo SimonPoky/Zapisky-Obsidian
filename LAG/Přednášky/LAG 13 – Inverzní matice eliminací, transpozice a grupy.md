@@ -546,4 +546,4 @@ Vektor $\vec{x}_j = A^{-1}\vec{e}_j$ je jediné $\vec{x}$, pro které $A\vec{x} 
 > **Ano, daná matice je $T_{\mathcal{X} \to \mathcal{Y}}$.**
 
 ---
-← [[LAG 12 – Frobeniova věta a Gaussova eliminace|4. 11. 2026 Frobeniova věta a Gaussova eliminace]]
+← [[LAG 12 – Frobeniova věta a Gaussova eliminace|4. 11. 2026 Frobeniova věta a Gaussova eliminace]] · [[LAG 14 – Permutace a determinant|11. 11. 2026 Permutace a determinant]] →

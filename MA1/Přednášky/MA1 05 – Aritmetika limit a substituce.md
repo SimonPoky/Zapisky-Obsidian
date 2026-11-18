@@ -263,6 +263,9 @@ Věta o substituci jde jedním směrem: z limity $f$ dostaneme limitu $f \circ \
 
 ^dusledek-posun
 
+> [!lidsky] Lidsky
+> Konečně mnoho prvních členů limitu neovlivní: $(a_{k+N})$ je tatáž posloupnost bez prvních $N$ členů. Třeba $\lim_{k} \frac{1}{k + 5} = \lim_{n} \frac{1}{n} = 0$.
+
 > [!example] Posun o 17
 > $\lim_{n \to +\infty} (2n + 1) = +\infty \iff \lim_{k \to +\infty} \big(2(k + 17) + 1\big) = +\infty$. Prvních 17 členů limitu neovlivní: na začátku posloupnosti nezáleží.
 

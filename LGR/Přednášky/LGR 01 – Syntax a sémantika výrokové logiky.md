@@ -164,6 +164,9 @@ $$
 
 ^def-ohodnoceni
 
+> [!lidsky] Lidsky
+> Ohodnocení stačí zvolit na proměnných, hodnota každé složitější formule se pak dopočítá zdola nahoru podle tabulek spojek, stejně jako výpočet po patrech syntaktického stromu.
+
 > [!example] Příklad
 > U(a) = 1, u(b) = 0 dopočítá u(a ∧ b) = min{1, 0} = 0, u(a ∨ b) = 1 a u(¬a ⇒ b) = u(0 ⇒ 0) = 1. Pro dvě proměnné jsou 2² = 4 ohodnocení, pro tři 8.
 

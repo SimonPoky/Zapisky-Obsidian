@@ -165,7 +165,7 @@ Ve výrokové logice měla [[rezolventa]] smysl, když klauzule obsahovaly [[kom
 > Příklad 3: $\alpha = \forall x\,(P(x) \vee Q(x))$, $\beta = \forall y\,(\neg P(f(y)) \vee S(a))$. Dosazením $x := f(y)$ je $\alpha' = \forall y\,(P(f(y)) \vee Q(f(y)))$, konflikt nastává na $\mathrm{Im}\,[\![f]\!]$ a **$\mathrm{res} = \forall y\,(Q(f(y)) \vee S(a))$**.
 
 > [!example] Příklad 4 (slajd 22): konflikt nenastane
-> $\alpha = \forall x\,(P(f(x)) \vee Q(x))$, $\beta = \neg P(a) \vee S(a)$. Literál $P(f(x))$ mluví jen o prvcích $\mathrm{Im}\,[\![f]\!]$, literál $\neg P(a)$ jen o prvku $[\![a]\!]$, a ten v $\mathrm{Im}\,[\![f]\!]$ ležet nemusí. Pravdivost obou klauzulí jde zajistit **jen volbou $[\![P]\!]$**, bez jakékoli podmínky na $[\![Q]\!]$ a $[\![S]\!]$: třeba $U = \{0, 1\}$, $[\![f]\!] : n \mapsto 0$, $[\![P]\!] = \{0\}$, $[\![a]\!] = 1$, $[\![Q]\!] = [\![S]\!] = \emptyset$. **Rezolventa nevzniká.** (Handout dává model na $U = \mathbb{N}$, $[\![P]\!] = \{0\}$, $[\![f]\!] : n \mapsto 0$, $[\![a]\!] = 1$.)
+> $\alpha = \forall x\,(P(f(x)) \vee Q(x))$, $\beta = \neg P(a) \vee S(a)$. Literál $P(f(x))$ mluví jen o prvcích $\mathrm{Im}\,[\![f]\!]$, literál $\neg P(a)$ jen o prvku $[\![a]\!]$, a ten v $\mathrm{Im}\,[\![f]\!]$ ležet nemusí. Pravdivost obou klauzulí jde zajistit **vhodnou volbou $[\![f]\!]$, $[\![a]\!]$ (s $[\![a]\!] \notin \mathrm{Im}\,[\![f]\!]$) a $[\![P]\!]$**, bez jakékoli podmínky na $[\![Q]\!]$ a $[\![S]\!]$: třeba $U = \{0, 1\}$, $[\![f]\!] : n \mapsto 0$, $[\![P]\!] = \{0\}$, $[\![a]\!] = 1$, $[\![Q]\!] = [\![S]\!] = \emptyset$. **Rezolventa nevzniká.** (Handout dává model na $U = \mathbb{N}$, $[\![P]\!] = \{0\}$, $[\![f]\!] : n \mapsto 0$, $[\![a]\!] = 1$.)
 
 > [!obrazek] Kde nastává konflikt
 > ![[lgr11-konflikt.png]]
@@ -200,10 +200,10 @@ Ve výrokové logice měla [[rezolventa]] smysl, když klauzule obsahovaly [[kom
 > Komplementární literály se mohou objevit až v **důsledcích** $\alpha'$, $\beta'$ vzniklých **dosazením termů** za obecně vázané proměnné: $\forall x\,(P(x) \vee Q(x)) \models P(a) \vee Q(a)$, a teprve tady je $P(a)$ proti $\neg P(a)$.
 
 > [!karta|08]- Na jaké části universa nastává konflikt literálu $P(x)$ (pod $\forall x$) s $\neg P(x)$, s $\neg P(a)$ a s $\neg P(f(y))$?
-> S $\neg P(x)$ na **celém $U$**, s $\neg P(a)$ jen v **bodě $[\![a]\!]$**, s $\neg P(f(y))$ na **$\mathrm{Im}\,[\![f]\!]$**. Podle toho rezolventa zůstane obecná, bude bez proměnné, nebo bude obecná přes $y$.
+> S $\neg P(x)$ na **celém $U$**, s $\neg P(a)$ jen v **bodě $[\![a]\!]$**, s $\neg P(f(y))$ na **$\mathrm{Im}\,[\![f]\!]$**. V příkladech 1–3 proto rezolventa zůstane obecná, bude bez proměnné, nebo bude obecná přes $y$ (záleží ale i na ostatních literálech).
 
 > [!karta|09]- Proč klauzule $\forall x\,(P(f(x)) \vee Q(x))$ a $\neg P(a) \vee S(a)$ nemají rezolventu?
-> $P(f(x))$ mluví jen o prvcích $\mathrm{Im}\,[\![f]\!]$, $\neg P(a)$ o prvku $[\![a]\!]$, který tam **ležet nemusí**, a konstantu $a$ nejde dosazením získat z $f(x)$. Obě klauzule splníš samotnou volbou $[\![P]\!]$, **bez podmínky na $Q$ a $S$**.
+> $P(f(x))$ mluví jen o prvcích $\mathrm{Im}\,[\![f]\!]$, $\neg P(a)$ o prvku $[\![a]\!]$, který tam **ležet nemusí**, a konstantu $a$ nejde dosazením získat z $f(x)$. Obě klauzule splníš vhodnou volbou $[\![f]\!]$, $[\![a]\!]$ (s $[\![a]\!] \notin \mathrm{Im}\,[\![f]\!]$) a $[\![P]\!]$, **bez podmínky na $Q$ a $S$**.
 
 > [!karta|10]- Proč z odvození prázdné klauzule $\mathrm{ff}$ rezolucí plyne, že množina klauzulí $S$ je nesplnitelná?
 > Každá rezolventa je **sémantický důsledek** svých rodičů, takže každý model $S$ je i modelem všech rezolvent. $\mathrm{ff}$ nemá žádný model, tedy **ani $S$** model nemá.
@@ -259,4 +259,4 @@ Ve výrokové logice měla [[rezolventa]] smysl, když klauzule obsahovaly [[kom
 > **$\forall x\,\forall y\,(\neg P(x) \vee Q(y))$.** Pozor: $\exists x$ z předpokladu implikace se při vytýkání otočí na $\forall x$.
 
 ---
-← [[LGR 10 – Zákony pro kvantifikátory, prenexní tvar a skolemizace|5. 11. 2026 Zákony pro kvantifikátory, prenexní tvar a skolemizace]]
+← [[LGR 10 – Zákony pro kvantifikátory, prenexní tvar a skolemizace|5. 11. 2026 Zákony pro kvantifikátory, prenexní tvar a skolemizace]] · [[LGR 12 – Unifikace, rezoluce v predikátové logice a první grafy|12. 11. 2026 Unifikace, rezoluce v predikátové logice a první grafy]] →

@@ -86,6 +86,9 @@ $$
 > [!lidsky] Lidsky
 > Dvě formule říkají totéž, jen jinými slovy: v tabulce mají stejný sloupec. „Nepravda, že prší i fouká“ a „neprší, nebo nefouká“ jsou různé věty, ale pravdivé jsou přesně ve stejných situacích.
 
+> [!example] Příklad
+> $a \Rightarrow b \mathrel{\vert\!=\!\vert} \neg a \vee b$: obě formule jsou nepravdivé jen pro $u(a) = 1$, $u(b) = 0$. Naopak $a \Rightarrow b$ a $b \Rightarrow a$ ekvivalentní nejsou: pro $u(a) = 1$, $u(b) = 0$ je první $0$ a druhá $1$.
+
 > [!pozor] Ekvivalentní jsou formule, ne funkce
 > Tautologicky ekvivalentní jsou **dvě formule**, a to když **určují stejnou booleovskou funkci** (mají stejný sloupec v tabulce). Říkat, že ekvivalentní jsou dvě booleovské funkce, nedává smysl: dvě funkce se stejnými hodnotami jsou jedna a táž funkce.
 
@@ -141,6 +144,9 @@ Nejpoužívanější pravidla (úplný seznam je v prezentaci):
 > $\mid$ je NAND ([[Shefferova čárka]]), $\downarrow$ je NOR ([[Peirceova šipka]]), $\oplus$ je XOR ([[vylučovací nebo]]).
 
 ^def-spojky
+
+> [!lidsky] Lidsky
+> $\mathrm{tt}$ a $\mathrm{ff}$ jsou spojky bez argumentů, tedy konstanty pravda a nepravda. Shefferova čárka je „ne obojí“ (NAND), Peirceova šipka „ani jedno“ (NOR) a $\oplus$ „právě jedno“ (XOR).
 
 > [!example] Příklad
 > - **Shefferova čárka:** a | b = „ne obojí“: 1 | 1 = 0, jinak 1. Negace je a | a, konjunkce (a | b) | (a | b) |=| a ∧ b, protože čárka sama se sebou neguje.

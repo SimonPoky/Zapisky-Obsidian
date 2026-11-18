@@ -3,7 +3,7 @@ aliases: ["podgrupy", "podgrupou", "podgrupu"]
 tags: [pojem, LAG]
 predmet: LAG
 prednaska: 13
-zdroj: "definice na přednášce (k cvičení 9.7*)"
+zdroj: "definice k cvičení 9.7*"
 ---
 
 # podgrupa

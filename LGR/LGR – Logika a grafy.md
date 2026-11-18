@@ -10,7 +10,7 @@ tags: [predmet, LGR]
 
 [Přednášky: prezentace a videa ↗](https://math.fel.cvut.cz/en/people/gollova/lgr/lgr-prednaska.html) · [Prezentace 1 (PDF) ↗](https://math.fel.cvut.cz/en/people/gollova/lgr/lgr_1.pdf) · [Stránka předmětu ↗](https://math.fel.cvut.cz/en/people/gollova/lgr.html) · [Literatura ↗](https://math.fel.cvut.cz/en/people/gollova/lgr/lgr-literatura.html) · [Testy v Moodle ↗](https://moodle.fel.cvut.cz/course/view.php?id=10550) · [Videopřednášky (YouTube) ↗](https://www.youtube.com/playlist?list=PLQL6z4JeTTQkjV5JYF0gB599ekq4zFfPK)
 
-**Kartičky:** 271 povinných + 92 příkladů · [otevřít aplikaci ↗](https://claude.ai/artifact/3CKfKeuwtwrWiz3FSfSh5B) · [[Archiv přednášek#Kartičky|jak to funguje]]
+**Kartičky:** 299 povinných + 100 příkladů · [otevřít aplikaci ↗](https://claude.ai/artifact/3CKfKeuwtwrWiz3FSfSh5B) · [[Archiv přednášek#Kartičky|jak to funguje]]
 
 ## Přednášky
 
@@ -25,6 +25,7 @@ tags: [predmet, LGR]
 - **29. 10. 2026** [[LGR 09 – Pravdivost formulí, model a tautologie|Pravdivost formulí, model a tautologie]] · jazyk teorie čísel, kontext ρ, update ρ[x:=d], ⟦t⟧ρ, pravdivost při kontextu, svědek, model, splnitelná sentence, tautologie, nemodel
 - **5. 11. 2026** [[LGR 10 – Zákony pro kvantifikátory, prenexní tvar a skolemizace|Zákony pro kvantifikátory, prenexní tvar a skolemizace]] · sémantický důsledek sentencí, negování a pořadí kvantifikátorů, vytýkání, prenexní tvar, skolemizace
 - **6. 11. 2026** [[LGR 11 – Klauzální tvar a rezolventy v predikátové logice|Klauzální tvar a rezolventy v predikátové logice]] · algoritmus převodu na klauzule, Kl(φ) ≈ φ, skolemizace na modelu, skolemizace po větvích, negace před skolemizací, rezolventy, konflikt na části universa, dosazení termu
+- **12. 11. 2026** [[LGR 12 – Unifikace, rezoluce v predikátové logice a první grafy|Unifikace, rezoluce v predikátové logice a první grafy]] · povolené substituce, unifikační algoritmus, maximální unifikátor, rezolventa formálně, rezoluční princip a metoda, nekonečná výroba rezolvent, nerozhodnutelnost, graf, Kn, Dn, bipartitní graf, Km,n
 
 ## Plán semestru
 
@@ -55,9 +56,11 @@ tags: [predmet, LGR]
 - [[Aristotelův sylogismus]] · Každý člověk je smrtelný, Sokrates je člověk, tedy je smrtelný; výroková logika to neověří.
 - [[arita]] · Počet argumentů symbolu: S(x) má aritu 1, P(x, y) aritu 2.
 - [[atomická formule]] · Predikát s dosazenými termy P(t₁, …, tₙ) nebo rovnost t₁ = t₂; nejjednodušší tvrzení.
+- [[bipartitní graf]] · Vrcholy jdou rozdělit na partity V₁, V₂ tak, že hrany vedou jen mezi nimi.
 - [[booleovská funkce]] · Sloupec pravdivostní tabulky: f : {0, 1}ⁿ → {0, 1}. Pro n proměnných jich je 2^(2ⁿ).
 - [[čisté proměnné]] · Žádná proměnná není ve formuli volná i vázaná; dosáhne se legálním přejmenováním.
 - [[disjunktivní normální forma]] · DNF: disjunkce mintermů. Má ji každá formule.
+- [[diskrétní graf]] · Dₙ: n vrcholů, žádná hrana.
 - [[dosazení termu do klauzule]] · ∀x γ ⊨ γ[x := t]: co platí pro všechny, platí i pro a nebo f(y).
 - [[ekvisplnitelné množiny]] · Obě splnitelné, nebo obě ne; svědky se lišit mohou.
 - [[eliminace disjunkce]] · ∨e, rozbor případů: platí-li φ ∨ ψ a z každého případu plyne χ, platí χ.
@@ -68,8 +71,10 @@ tags: [predmet, LGR]
 - [[formule]] · Výrok zapsaný z proměnných, spojek a závorek podle pravidel. α, β zastupují libovolnou formuli.
 - [[formule predikátové logiky]] · Z atomických formulí spojkami a kvantifikátory ∀x, ∃x.
 - [[funkční symbol]] · Jméno operace, která z objektů vyrobí objekt: f(x) následník; v interpretaci Uⁿ → U.
+- [[graf]] · G = (V, E): vrcholy a hrany jako dvouprvkové podmnožiny V; bez smyček a násobných hran.
 - [[hloubka formule]] · Počet pater syntaktického stromu; proměnná 0, každá spojka +1.
 - [[hodnota termu]] · Prvek universa, který term označuje při kontextu: ⟦x + 1⟧ρ = 8 pro ρ(x) = 7.
+- [[hrana]] · Dvouprvková množina {u, v} = uv; u, v jsou její koncové vrcholy.
 - [[implikace]] · Slib „jestliže α, pak β“. Nepravdivá jen pro 1 ⇒ 0.
 - [[interpretace]] · (U, ⟦−⟧): universum a význam každého predikátu, funkce a konstanty.
 - [[iterace]] · it: už odvozenou formuli smíš zopakovat, i do vnořeného boxu.
@@ -92,12 +97,15 @@ tags: [predmet, LGR]
 - [[logická ekvivalence]] · φ ⊣⊢ ψ: každá jde odvodit z druhé; totéž co |=| díky úplnosti.
 - [[logická proměnná]] · Písmenko za jednoduchý výrok; atomická formule, list stromu.
 - [[logický důsledek]] · S ⊢ φ: φ jde z S odvodit podle pravidel (odvoditelnost, syntax).
+- [[maximální unifikátor]] · Seznam jen nutných substitucí, které srovnají dva atomy; dá nejobecnější rezolventu.
 - [[maxterm]] · Disjunkce literálů (nebo literál, nebo ff), též klauzule.
 - [[minterm]] · Konjunkce literálů (nebo literál, nebo tt), např. a ∧ ¬b.
 - [[model sentence]] · Interpretace, ve které je sentence pravdivá; „svět, kde to platí“.
 - [[modus ponens]] · Z a a a ⇒ b plyne b.
 - [[modus tollens]] · MT: z φ ⇒ ψ a ¬ψ plyne ¬φ.
+- [[nakreslení grafu]] · Obrázek grafu; tentýž graf jde nakreslit mnoha způsoby.
 - [[negování kvantifikátorů]] · ¬∀x α |=| ∃x ¬α, ¬∃x α |=| ∀x ¬α
+- [[nerozhodnutelnost splnitelnosti v predikátové logice]] · Žádný algoritmus vždy nezastaví se správnou odpovědí na „je S splnitelná?“.
 - [[nezávislost sentence na kontextu]] · Sentence platí v I buď při každém kontextu, nebo při žádném.
 - [[obecný uzávěr formule]] · ∀ před každou volnou proměnnou, udělá ze šablony sentenci
 - [[obměněná implikace]] · φ ⇒ ψ ⊨⊨ ¬ψ ⇒ ¬φ; základ důkazu obměnou.
@@ -108,6 +116,7 @@ tags: [predmet, LGR]
 - [[Peirceova šipka]] · NOR, „ani jedno“. Sama tvoří úplný systém spojek.
 - [[pomocný předpoklad]] · Lokální předpoklad otevírá box; jeho formule platí jen uvnitř boxu.
 - [[populace rezolvent]] · R*(S): S a všechny rezolventy, rezolventy rezolvent atd.; pravdivá tam, kde S.
+- [[povolená substituce]] · Dosazení termu za proměnnou, které dá důsledek: x := y, x := a, x := g(…) bez x.
 - [[pravdivost formule při kontextu]] · Atomická dosazením do relace, spojky tabulkou, ∃ aspoň jeden update, ∀ všechny.
 - [[pravdivost sentence]] · Sentence je pravdivá v I, platí-li při každém (ekvivalentně aspoň jednom) kontextu.
 - [[pravdivostní ohodnocení]] · Přiřazení 0/1 všem formulím podle tabulky spojek. Určí ho hodnoty proměnných; pro n proměnných 2ⁿ možností.
@@ -118,11 +127,14 @@ tags: [predmet, LGR]
 - [[přehazování kvantifikátorů]] · stejné smějí prohodit pořadí, ∃∀ ⊨ ∀∃ jen jedním směrem
 - [[prenexní tvar]] · všechny kvantifikátory vpředu, za nimi otevřené jádro
 - [[příliš agresivní systém]] · Odvodí i to, co neplyne; nekorektní.
+- [[příliš agresivní unifikátor]] · Unifikátor s nenutnou substitucí; zúží konflikt a může minout spor.
 - [[princip silné indukce]] · Krok smí použít všechna čísla n₀, …, n, ne jen n.
 - [[princip slabé indukce]] · Domino: základ n₀ a krok z n na n + 1.
 - [[přirozená dedukce]] · Důkazový systém bez axiomů: ke každé spojce pravidlo zavedení (i) a odstranění (e).
 - [[reductio ad absurdum]] · RAA, důkaz sporem: z ¬φ vyjde spor, tedy φ.
+- [[rezoluční metoda v predikátové logice]] · S ⊨ φ: Kl(S ∪ {¬φ}) a rezoluce; ff = důsledek platí, zastavení bez ff = neplatí.
 - [[rezoluční princip]] · Konečná S je splnitelná, právě když ff ∉ R*(S).
+- [[rezoluční princip predikátové logiky]] · Konečná S je nesplnitelná, právě když ff ∈ R*(S); R*(S) může být nekonečná.
 - [[rezoluční tabulka]] · Vyrezolvuje proměnné jednu po druhé; konec {ff} = nesplnitelná, ∅ = splnitelná.
 - [[rezolventa]] · Ze α ∨ x a β ∨ ¬x vznikne α ∨ β; plyne z obou. Prázdná rezolventa ff znamená nesplnitelnost.
 - [[rezolventa predikátové logiky]] · Důsledek dvou klauzulí z konfliktu P a ¬P na části universa: celé U, bod ⟦a⟧, Im ⟦f⟧.
@@ -153,10 +165,13 @@ tags: [predmet, LGR]
 - [[tautologie]] · Formule pravdivá v každém ohodnocení, např. a ∨ ¬a.
 - [[tautologie predikátové logiky]] · Sentence pravdivá v každé interpretaci, např. ∀x (x = x).
 - [[term]] · Jméno objektu: proměnná, konstanta, f(t₁, …, tₙ); nic netvrdí.
+- [[unifikační algoritmus]] · Čte dva atomy zleva a na rozdílu dosadí za proměnnou; jinak NELZE.
 - [[universum]] · Neprázdná množina objektů, o kterých se mluví, např. ℕ.
 - [[update kontextu]] · ρ[x:=d]: stejný kontext, jen x přepsáno na d.
 - [[úplná normální forma]] · DNF/CNF, kde každý term obsahuje všechny proměnné; vzniká z tabulky.
+- [[úplný bipartitní graf]] · Kₘ,ₙ: všechny hrany mezi partitami velikosti m a n, celkem m · n.
 - [[úplný důkazový systém]] · Odvodí přesně to, co platí: S ⊢ φ ⟺ S ⊨ φ.
+- [[úplný graf]] · Kₙ: každé dva vrcholy spojené, n(n − 1)/2 hran.
 - [[úplný systém logických spojek]] · Spojky, kterými jde zapsat každá booleovská funkce: {¬, ∧, ∨}, {¬, ⇒}, {|}, {↓}.
 - [[vázaná proměnná]] · Má ve formuli aspoň jeden vázaný výskyt.
 - [[vázaný výskyt]] · Cestou ke kořeni stromu leží ∀x nebo ∃x s touto proměnnou.

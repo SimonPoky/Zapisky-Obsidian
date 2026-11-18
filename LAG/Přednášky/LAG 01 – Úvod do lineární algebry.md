@@ -31,6 +31,9 @@ Témata: `číselné těleso` · `soustavy 2 × 2` · `axiomy` · `lineární pr
 
 ^def-rovnice
 
+> [!lidsky] Lidsky
+> Hledáš číslo, které po vynásobení známým $a$ dá známé $b$. Celá lineární algebra je zobecnění téhle úlohy na víc neznámých a víc rovnic.
+
 > [!example] Příklad
 > 2x₁ − x₂ + 3x₃ = 5 je lineární rovnice o třech neznámých a (1; 0; 1) je její řešení, protože 2 − 0 + 3 = 5. Rovnice x₁² + x₂ = 1 lineární není.
 
@@ -40,6 +43,9 @@ Témata: `číselné těleso` · `soustavy 2 × 2` · `axiomy` · `lineární pr
 > *==předpoklad== = co musí platit, aby věta fungovala · **tvrzení** = co věta slibuje*
 
 ^priklad-vety
+
+> [!lidsky] Lidsky
+> Dělit smíš jen nenulovým číslem. Pro $a = 0$ má rovnice $0 \cdot x = b$ buď žádné řešení ($b \neq 0$), nebo nekonečně mnoho ($b = 0$, vyhovuje každé $x$).
 
 > [!navic] Co když a = 0?
 > Pak předpoklad neplatí a věta nic neříká. Rovnice má tvar $0 \cdot x = b$: pro $b \neq 0$ nemá žádné řešení, pro $b = 0$ je řešením každé $x \in \mathbb{R}$. Stejné tři možnosti (žádné, právě jedno, nekonečně mnoho řešení) uvidíš u soustav rovnic, kde je popisuje Frobeniova věta (kap. 8).
@@ -66,6 +72,9 @@ Témata: `číselné těleso` · `soustavy 2 × 2` · `axiomy` · `lineární pr
 > Těleso je „bezpečná zóna“ pro počítání. Vezmi z ní libovolná dvě čísla, sečti, odečti, vynásob nebo vyděl (ne nulou) a výsledek z ní nevypadne. $\mathbb{Z}$ touhle zkouškou neprojde: $1 : 2 = 0{,}5$ a jsi venku.
 >
 > Proč to potřebujeme: čísla z tělesa budou [[skalár|skaláry]], kterými se násobí vektory. Aby šly řešit rovnice, musí jít dělit. V $\mathbb{Z}$ nemá řešení ani obyčejná rovnice $2x = 1$.
+
+> [!example] Příklad
+> $\mathbb{Q}$, $\mathbb{R}$ a $\mathbb{C}$ jsou číselná tělesa. $\mathbb{Z}$ není: $2 \in \mathbb{Z}$, ale $\frac{1}{2} \notin \mathbb{Z}$ (selže podmínka 4). $\{0, 1\}$ není: $1 + 1 = 2 \notin \{0, 1\}$ (selže podmínka 1).
 
 **Příklady:** $\mathbb{Q}, \mathbb{R}, \mathbb{C}$ jsou číselná tělesa. $\mathbb{N}, \mathbb{N}_0, \mathbb{Z}$ nejsou: $\mathbb{N}$ a $\mathbb{N}_0$ nemají opačné prvky ($-1 \notin \mathbb{N}$), $\mathbb{Z}$ nemá inverzní prvky ($\tfrac{1}{2} \notin \mathbb{Z}$).
 

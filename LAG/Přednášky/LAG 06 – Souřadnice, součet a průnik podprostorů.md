@@ -75,6 +75,9 @@ Z definice je vidět i jedna drobnost: existuje-li báze s $n$ prvky, je $\dim L
 > [!lidsky] Lidsky
 > Souřadnice se jen napíšou pod sebe do sloupce. Z vektoru „čehokoli“ tím vznikne obyčejný sloupec $n$ čísel, se kterým umíme počítat. Index nahoře ($\mathcal{X}$) říká, ve které bázi, index dole ($i$) kterou složku chceme.
 
+> [!example] Příklad
+> V $\mathbb{R}^2$ s bází $\mathcal{X} = ((1; 1), (1; -1))$ je $(3; 1) = 2 \cdot (1; 1) + 1 \cdot (1; -1)$, takže $[(3; 1)]^{\mathcal{X}} = \begin{pmatrix} 2 \\ 1 \end{pmatrix}$. V kanonické bázi vyjde $\begin{pmatrix} 3 \\ 1 \end{pmatrix}$: souřadnice závisí na bázi i na pořadí jejích vektorů.
+
 > [!pozor] Souřadnice závisí na bázi
 > Bez báze nemá zápis $[\vec{v}]$ smysl. Tentýž vektor $(3; 2) \in \mathbb{R}^2$ má v kanonické bázi souřadnice $(3; 2)$, v bázi $((1; 0), (1; 1))$ souřadnice $(1; 2)$ a v bázi $((0; 1), (1; 0))$ souřadnice $(2; 3)$. Proto se index báze píše vždy.
 
@@ -168,6 +171,9 @@ Pro množiny známe dvě základní operace, sjednocení a průnik, a pro koneč
 > Pro [[lineární podprostor|podprostory]] $V, W \le L$ nazýváme $V \cap W$ *průnik podprostorů*.
 
 ^def-prunik
+
+> [!lidsky] Lidsky
+> Průnik podprostorů je zase podprostor: co leží v obou, s tím se v obou dá sčítat i násobit. Sjednocení obecně ne, dvě různé přímky přes počátek dohromady nejsou uzavřené na sčítání.
 
 > [!example] Příklad
 > Roviny z = 0 a x = 0 v ℝ³ mají průnik osu y = {(0; t; 0) | t ∈ ℝ}, a ta je zase podprostor.

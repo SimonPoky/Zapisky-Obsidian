@@ -13,6 +13,6 @@ zdroj: "handout 4A, slajd 5"
 >
 > *Příklad:* s g(x) = x a h(x) = 1 vyjde D′(t) = f(a) − f(b) + f′(t)(b − a), takže D′(t) = 0 je přesně Lagrangeova věta f′(t) = (f(b) − f(a))/(b − a).
 
-**Formálně:** f, g, h mají první derivaci na [a; b], D(x) = det[[f(a), f(x), f(b)], [g(a), g(x), g(b)], [h(a), h(x), h(b)]] ⇒ D má derivaci na [a; b], D′(x) je tentýž determinant s f′(x), g′(x), h′(x) ve 2. sloupci a ∃t ∈ (a; b): D′(t) = 0
+**Formálně:** f, g, h mají první derivaci na [a; b], $D(x) = \det\begin{pmatrix} f(a) & f(x) & f(b) \\ g(a) & g(x) & g(b) \\ h(a) & h(x) & h(b) \end{pmatrix}$ ⇒ D má derivaci na [a; b], D′(x) je tentýž determinant s f′(x), g′(x), h′(x) ve 2. sloupci a ∃t ∈ (a; b): D′(t) = 0
 
 **Definice:** [[MA1 08 – Věty o střední hodnotě a l'Hospitalovo pravidlo#^veta-rolle-dusledek|přednáška 8, 15. 10. 2026]] · handout 4A, slajd 5

@@ -10,7 +10,7 @@ tags: [predmet, MA1]
 
 [Handouty ke všem přednáškám (PDF) ↗](https://math.fel.cvut.cz/en/people/velebil/files/b0b01ma1/ma1_handout_all.pdf) · [Stránka předmětu ↗](https://math.fel.cvut.cz/en/people/velebil/teaching/b0b01ma1.html) · [Požadavky ↗](https://math.fel.cvut.cz/en/people/velebil/teaching/b0b01ma1_pozadavky.html) · [Ukázka zkoušky ↗](https://math.fel.cvut.cz/en/people/velebil/files/b0b01ma1/ma1_ukazka_2026.pdf) · [Ukázka testu 1 ↗](https://math.fel.cvut.cz/en/people/velebil/files/b0b01ma1/ma1_pisemka01_ukazka_2026.pdf) · [Ukázka testu 2 ↗](https://math.fel.cvut.cz/en/people/velebil/files/b0b01ma1/ma1_pisemka02_ukazka_2026.pdf)
 
-**Kartičky:** 296 povinných + 101 příkladů · [otevřít aplikaci ↗](https://claude.ai/artifact/3CKfKeuwtwrWiz3FSfSh5B) · [[Archiv přednášek#Kartičky|jak to funguje]]
+**Kartičky:** 343 povinných + 125 příkladů · [otevřít aplikaci ↗](https://claude.ai/artifact/3CKfKeuwtwrWiz3FSfSh5B) · [[Archiv přednášek#Kartičky|jak to funguje]]
 
 ## Přednášky
 
@@ -26,11 +26,14 @@ tags: [predmet, MA1]
 - **22. 10. 2026** [[MA1 10 – Druhá derivace, konvexita a inflexe|Druhá derivace, konvexita a inflexe]] · f′ v praxi, x³ − 6x² + 10, extrém ze změny monotonie, test f″ (důkaz), f″(p) = 0, konvexní a konkávní funkce, konvexita přes f′ a f″, x⁴, inflexní bod, Weierstrass
 - **29. 10. 2026** [[MA1 11 – Lemma o konvexních funkcích a axiomatický integrál|Lemma o konvexních funkcích a axiomatický integrál]] · tečna pod grafem, lokální = globální minimum, Jensen, gradient descent (navíc), aditivita a omezenost, ∫ₐᵃ f = 0, F(x) = ∫ₐˣ f, F′ = f, primitivní funkce, jednoznačnost, L(f; Δ) a U(f; Δ), fundamentální věta
 - **4. 11. 2026** [[MA1 12 – Linearita, per partes a substituce v integrálu|Linearita, per partes a substituce v integrálu]] · ∫ f′ = f(b) − f(a), [F]ₐᵇ, integrační proměnná, tabulka integrálů, linearita, per partes, substituce, dt = φ′(z) dz, směr substituce
+- **5. 11. 2026** [[MA1 13 – Racionální funkce a typické integrály|Racionální funkce a typické integrály]] · dělení polynomů se zbytkem, násobnost kořene, základní věta algebry, ireducibilní polynomy, parciální zlomky, doplnění na čtverec, polynom krát sinus, polynom krát exponenciála, exponenciála krát sinus
+- **11. 11. 2026** [[MA1 14 – Nevlastní integrál, délka křivky a objem rotačního tělesa|Nevlastní integrál, délka křivky a objem rotačního tělesa]] · ∫ₐᵇ f = lim ∫ₐˣ f, nevlastní integrál, integrál do ±∞, konečně mnoho nespojitostí, konverguje a diverguje, signum nemá primitivní funkci, Darbouxova vlastnost, obecná věta o určitém integrálu, plocha mezi grafy, délka křivky, objem rotačního tělesa
 
 ## Slovníček pojmů
 
 *Najetím myší na pojem uvidíš náhled, klepnutím otevřeš jeho poznámku.*
 
+- [[Abelova–Ruffiniho věta]] · Pro kořeny polynomu stupně nejvýš 4 existuje vzorec z koeficientů a odmocnin, pro stupeň 5 a víc je dokázáno, že obecně neexistuje.
 - [[absolutní hodnota]] · Vzdálenost od nuly; |x − y| je vzdálenost dvou čísel. Platí trojúhelníková nerovnost.
 - [[aditivita integrálu]] · Integrál se sčítá po kouscích: ∫ₐᵛ f = ∫ₐᵘ f + ∫ᵤᵛ f.
 - [[aditivní systém intervalů]] · Dva překrývající se dobré úseky se dají slepit v dobrý úsek.
@@ -40,18 +43,24 @@ tags: [predmet, MA1]
 - [[celá čísla]] · Postavená z dvojic přirozených čísel: (5, 8) „kóduje“ rozdíl 5 − 8 = −3.
 - [[charakterizace suprema]] · supremum je horní odhad, který nejde snížit o žádné ε > 0
 - [[Creeping Theorem]] · Lokální a aditivní systém obsahuje celý [a; b]; z toho plynou IVT a BT.
+- [[Darbouxova věta]] · Derivace sice nemusí být spojitá, ale nikdy „neskáče přes hodnoty“.
+- [[Darbouxova vlastnost]] · Funkce „nepřeskakuje hodnoty“: když jde z f(a) do f(b), nabude každou hodnotu mezi nimi.
 - [[Dedekindovská úplnost]] · Každá neprázdná shora omezená M ⊆ ℝ má supremum v ℝ. V ℚ to neplatí.
 - [[Dedekindův řez]] · Střih racionální přímky na L a U; √2 = (L, U). Reálná čísla jsou všechny řezy.
 - [[dělení intervalu]] · Body a = x₀ < x₁ < … < xₙ = b, které rozřežou interval na kousky.
+- [[dělení polynomů se zbytkem]] · Jako 17 : 5 = 3 zbytek 2: polynom vydělíš polynomem a zbude zbytek nižšího stupně než dělitel.
+- [[délka křivky]] · Graf na malém kousku vypadá jako úsečka se sklonem f′(t); ta má nad šířkou dt délku √(1 + f′²) dt (Pythagoras).
 - [[derivace na intervalu]] · Derivace uvnitř [a; b] a jednostranné na krajích; taková funkce je na [a; b] spojitá.
 - [[derivace v bodě]] · Okamžitá rychlost změny: limita (f(p+h) − f(p))/h, směrnice tečny; musí být reálné číslo.
 - [[derivace vyššího řádu]] · Derivace derivace: f″ = (f′)′, obecně f⁽ᵏ⁾; „alespoň n derivací v p“ = existuje f⁽ⁿ⁾(p).
 - [[dolní součet]] · Součet obdélníků pod grafem s výškou minima na každém kousku dělení.
+- [[doplnění na čtverec]] · Kvadratický výraz přepíšeš na (t + něco)² + konstanta.
 - [[dosazení mezí]] · [F]ₐᵇ = F(b) − F(a): dosaď horní mez, dosaď dolní, odečti.
 - [[důsledek Rolleovy věty]] · Determinant D(x) se sloupci v a, x, b je na krajích nulový, takže D′(t) = 0; z něj plyne Lagrange i Cauchy.
 - [[existence určitého integrálu]] · Pro spojitou f se dolní a horní součty potkají: sup L = inf U = ∫ₐᵇ f.
 - [[formální zápis substituce]] · t = φ(z), dt = φ′(z) dz: mnemotechnika, kterou ospravedlní věta o substituci.
 - [[fundamentální věta kalkulu]] · Integrál spojité f existuje, (∫ₐˣ f)′ = f a ∫ₐˣ f = F(x) − F(a) pro primitivní F.
+- [[funkce signum]] · Funkce, která vrátí jen znaménko čísla: −1 pro záporná, 0 pro nulu, 1 pro kladná.
 - [[globální minimum]] · f(p) ≤ f(x) pro všechna x z definičního oboru, ne jen v okolí.
 - [[gradient descent]] · Hledání minima kroky xᵢ₊₁ = xᵢ − γ · f′(xᵢ); ukázka navíc, základ učení neuronových sítí.
 - [[Hasseův diagram]] · Obrázek uspořádání: menší prvky níž, čáry jen mezi přímými sousedy.
@@ -61,17 +70,21 @@ tags: [predmet, MA1]
 - [[infimum]] · Nejvyšší podlaha, největší dolní odhad. V 𝒫(U) průnik, v ℕ minimum.
 - [[inflexní bod]] · Bod, kde má f′ ostrý lokální extrém; graf se tam přehne z konkávního na konvexní nebo naopak.
 - [[integrační proměnná]] · Vázaná proměnná za d; ∫ t² dt = ∫ x² dx, nesmí se jmenovat jako mez.
+- [[integrál funkce s konečně mnoha nespojitostmi]] · Interval rozřízneš v bodech, kde funkce není spojitá, každý kus spočítáš (u skoku limitou) a sečteš.
 - [[integrál jako antiderivace]] · ∫ₐᵇ f′ = f(b) − f(a) pro spojitou f′: integrál rychlosti je změna polohy.
 - [[integrál jako funkce horní meze]] · F(x) = ∫ₐˣ f, nasbíraná plocha od a do x; F(a) = 0.
+- [[integrál na neomezeném intervalu]] · Plocha „až do nekonečna“: spočítáš integrál od a do x a necháš x jít do +∞.
 - [[integrál s obrácenými mezemi]] · ∫ᵦᵃ f = −∫ₐᵇ f, aby aditivita platila pro meze v libovolném pořadí.
 - [[inverzní funkce]] · Funkce pozpátku: f⁻¹(y) je to jediné x s f(x) = y. Existuje jen u prosté funkce.
 - [[iracionální číslo]] · Reálné číslo, které nejde napsat zlomkem, např. √2. V ℚ je na jeho místě díra.
+- [[ireducibilní polynom]] · Obdoba prvočísla mezi polynomy: nejde napsat jako součin dvou reálných polynomů menšího stupně, jen vytknout konstantu.
 - [[jednostranná derivace]] · Derivace jen zleva f′₋(p) nebo zprava f′₊(p); oboustranná existuje, když se shodují.
 - [[jednostranná limita]] · Limita jen zleva (x → p⁻) nebo zprava (x → p⁺); oboustranná existuje, když se shodují.
 - [[jednostranná spojitost]] · Spojitost jen zleva nebo jen zprava; oboustranná platí, když platí obě.
 - [[jednoznačnost určitého integrálu]] · Aditivita a omezenost určí integrál jednoznačně, protože primitivní funkce s F(a) = 0 je jediná.
 - [[Jensenova nerovnost]] · Pro konvexní f: f(∑ aᵢxᵢ) ≤ ∑ aᵢ f(xᵢ), kde aᵢ ≥ 0 a ∑ aᵢ = 1.
 - [[konkávní funkce]] · Kopec: tětiva pod grafem; f konkávní ⇔ −f konvexní.
+- [[konvergentní integrál]] · Konverguje = nevlastní integrál vyšel jako konečné reálné číslo.
 - [[konvexita pomocí druhé derivace]] · f″ ≥ 0 ⇒ konvexní, f″ > 0 ⇒ ryze konvexní; naopak ne (x⁴).
 - [[konvexita pomocí první derivace]] · Konvexní ⇔ f′ neklesající, ryze konvexní ⇔ f′ rostoucí.
 - [[konvexní funkce]] · Miska: tětiva leží nad grafem, f(ax₁ + (1 − a)x₂) ≤ af(x₁) + (1 − a)f(x₂).
@@ -92,21 +105,29 @@ tags: [predmet, MA1]
 - [[lokální minimum]] · Dno důlku: dost blízko p není žádná hodnota menší než f(p).
 - [[lokální systém intervalů]] · Každý bod [a; b] má kolem sebe nějaký „dobrý“ úsek ze systému.
 - [[maximum]] · Horní odhad, který sám leží v množině. Když existuje, je to i supremum.
+- [[metoda neurčitých koeficientů]] · Napíšeš tvar rozkladu s neznámými A, B, …, vynásobíš jmenovatelem a porovnáš koeficienty u stejných mocnin (nebo dosadíš kořeny jmenovatele).
 - [[metoda per partes]] · ∫ f′g = [fg]ₐᵇ − ∫ fg′: otočené pravidlo pro derivaci součinu.
 - [[minimum]] · Dolní odhad, který sám leží v množině. Každá neprázdná podmnožina ℕ ho má.
 - [[následník]] · Další číslo v řadě: succ(n) = n ∪ {n}, tedy n + 1.
+- [[násobnost kořene]] · Kolikrát lze z polynomu vytknout závorku (x − p).
 - [[neklesající funkce]] · x₁ < x₂ ⇒ f(x₁) ≤ f(x₂); rovné úseky povolené. Nerostoucí obráceně, monotónní = jedno z toho.
 - [[neklesající posloupnost]] · Členy se nezmenšují; limita je vždy supremum (i +∞).
 - [[nerovnost ve směru]] · Nerovnost, která platí jen „nakonec“, na jednom kusu směru blízko cíle.
 - [[neurčitý výraz]] · 0/0, ∞/∞, 0 · ∞, 1^∞…: z limit částí nepoznáš výsledek, musí se počítat dál.
+- [[nevlastní integrál]] · Integrál funkce, která je spojitá jen do kraje intervalu (u kraje může utíkat do nekonečna nebo nebýt definovaná): spočítáš plochu do x a pošleš x ke kraji.
 - [[nevlastní limita]] · Limita rovná ±∞. Vlastní je reálné číslo; rozhoduje výsledek, ne směr.
 - [[nezápornost integrálu]] · f ≥ 0 na [a; b] ⇒ ∫ₐᵇ f ≥ 0; důsledek omezenosti.
 - [[nutná podmínka inflexe]] · Inflexe v p ⇒ f″(p) = 0; naopak ne (x⁴ v nule).
 - [[nutná podmínka lokálního extrému]] · Lokální extrém a existující f′(p) ⇒ f′(p) = 0. Obráceně neplatí (x³ v nule).
+- [[obecná věta o určitém integrálu]] · Když se nějaká veličina sčítá po kouscích intervalu a na každém kousku ji odhadneš zespoda i shora stejným vzorcem g ⋆ h (jen s minimy a maximy), pak je to integrál z g ⋆ h.
+- [[objem rotačního tělesa]] · Těleso vzniklé otočením grafu f kolem osy x rozkrájíš na tenké kotouče s poloměrem f(t); každý má objem π f(t)² dt a integrál je sečte.
+- [[obsah plochy mezi grafy]] · Plocha mezi dvěma křivkami je plocha pod horní minus plocha pod dolní, tedy integrál rozdílu.
 - [[okolí]] · Terč kolem cíle: (L − ε; L + ε), u +∞ interval (ε; +∞].
 - [[omezenost integrálu]] · (v − u) · min f ≤ ∫ᵤᵛ f ≤ (v − u) · max f: plocha mezi dvěma obdélníky.
 - [[omezenost ve směru]] · |f| ≤ c na některém kusu směru.
 - [[ostrý lokální extrém]] · Kolem p jsou všechny hodnoty přísně větší (ostré minimum) nebo přísně menší (ostré maximum).
+- [[parciální zlomek]] · Nejjednodušší kostka racionálních funkcí: ve jmenovateli mocnina jednoho ireducibilního polynomu, v čitateli konstanta (u lineárního) nebo lineární výraz (u kvadratického).
+- [[per partes se zacyklením]] · U exponenciála krát sin/cos dají dvě per partes zase původní integrál I; vznikne rovnice I = (známé) − I a z ní se I vyjádří.
 - [[podmnožina]] · A ⊆ B: všechno z A je i v B. Prázdná množina je podmnožinou čehokoliv.
 - [[podposloupnost]] · Výběr nekonečně mnoha členů ve stejném pořadí; má stejnou limitu jako celá posloupnost.
 - [[posloupnost]] · Funkce na nekonečné podmnožině ℕ, píše se aₙ. Pro limitu rozhoduje jen „ocas“.
@@ -120,14 +141,17 @@ tags: [predmet, MA1]
 - [[prostá funkce]] · Různé vstupy dají různé výstupy; žádnou hodnotu nenabude dvakrát.
 - [[prstencové okolí]] · Okolí bodu p bez bodu p; hodnota v p limitu neovlivní.
 - [[racionální čísla]] · Zlomky; jedno číslo je celá rodina zlomků 2/−3 = 4/−6 = 6/−9.
+- [[racionální funkce]] · „Zlomek z polynomů“: polynom lomeno nenulový polynom, definovaný všude, kde jmenovatel není nula.
 - [[reálná čísla]] · Racionální přímka se zaplněnými dírami: úplné uspořádané těleso Dedekindových řezů.
 - [[rekurzivní definice]] · Úloha spočítaná pomocí o krok menší úlohy plus kotva, kde se zastavit.
 - [[Rolleova věta]] · f(a) = f(b) a derivace na [a; b] ⇒ někde uvnitř vodorovná tečna, f′(t) = 0.
+- [[rozklad na parciální zlomky]] · Opak sčítání zlomků: ryze lomenou funkci rozložíš na součet parciálních zlomků, protože ty umíš zintegrovat substitucí.
 - [[rozšířená přirozená čísla]] · ℕ s umělým stropem +∞, aby každá množina měla supremum. 0 · ∞ se nedefinuje.
 - [[rozšířená reálná čísla]] · ℝ ∪ {−∞, +∞}; −∞ = (∅, ℚ), +∞ = (ℚ, ∅). Každá množina tu má supremum.
 - [[Russellův paradox]] · „Množina všech množin, které neobsahují samy sebe“ nemůže existovat.
 - [[ryze konkávní funkce]] · Kopec bez rovných kusů: tětiva přísně pod grafem.
 - [[ryze konvexní funkce]] · Miska bez rovných kusů: tětiva přísně nad grafem (x₁ ≠ x₂, a ∈ (0; 1)).
+- [[ryze lomená racionální funkce]] · Racionální funkce, kde má čitatel menší stupeň než jmenovatel, obdoba „pravého zlomku“ 2/3.
 - [[ryze monotónní funkce]] · Rostoucí (x₁ < x₂ ⇒ f(x₁) < f(x₂)) nebo klesající; rostoucí je výtah jen nahoru.
 - [[shora omezená množina]] · Množina se stropem: existuje u ≥ všem prvkům. Zdola omezená má podlahu.
 - [[směr]] · Odkud se blížíme k cíli: vnořené neprázdné množiny s prázdným průnikem, cíl do nich nepatří.
@@ -149,6 +173,7 @@ tags: [predmet, MA1]
 - [[věta o derivaci složené funkce]] · Chain Rule: (g ∘ f)′(p) = g′(f(p)) · f′(p), derivace vrstev se násobí.
 - [[věta o detekci limity]] · Limitu určí substituce se stejnou limitou, jejichž obrazy pokryjí kus směru.
 - [[věta o extrémech]] · EVT: spojitá funkce na [a; b] nabývá maxima i minima.
+- [[věta o ireducibilních reálných polynomech]] · Nad ℝ jsou nerozložitelné jen lineární polynomy a kvadratické se záporným diskriminantem, protože komplexní kořeny chodí v párech z, z̄.
 - [[věta o jednoznačnosti limity]] · Limita ve směru je nejvýš jedna.
 - [[věta o limitě monotónní posloupnosti]] · Monotónní posloupnost má limitu: supremum, resp. infimum členů.
 - [[věta o mezihodnotě]] · IVT: spojitá funkce na [a; b] nabude každé hodnoty mezi f(a) a f(b).
@@ -169,6 +194,7 @@ tags: [predmet, MA1]
 - [[věta o zachování intervalů]] · PIT: obraz [a; b] při spojité funkci je interval [min; max].
 - [[věta o znaménku derivace a monotonii]] · Na otevřeném intervalu: f′ ≥ 0 ⇔ neklesající; rostoucí, když navíc f′ není nulová na celém podintervalu.
 - [[věta o znaménku limity]] · L > 0 ⇒ f > 0 blízko cíle; f ≥ 0 ⇒ L ≥ 0.
+- [[základní věta algebry]] · V komplexních číslech jde každý nekonstantní polynom rozložit na lineární závorky; polynom stupně n má přesně n kořenů, když se počítají s násobností.
 - [[základní věta o Taylorově polynomu]] · Chyba Tₙ(f, p) jde k 0 rychleji než (x − p)ⁿ a derivace v p do řádu n se shodují s f.
 
 ## Jak se předmět hodnotí

@@ -302,4 +302,4 @@ Rovnost ve větě se dá číst dvěma směry. **Zprava doleva** (jednodušší)
 > Grafy se protínají pro $x = x^2$, tj. v $x = 0$ a $x = 1$; na $[0; 1]$ je $x \ge x^2$. Podle linearity je plocha $\int_0^1 (x - x^2)\,\mathrm{d}x = \left[\frac{x^2}{2} - \frac{x^3}{3}\right]_0^1 = \frac{1}{2} - \frac{1}{3}$, tedy **$\frac{1}{6}$**.
 
 ---
-← [[MA1 11 – Lemma o konvexních funkcích a axiomatický integrál|29. 10. 2026 Lemma o konvexních funkcích a axiomatický integrál]]
+← [[MA1 11 – Lemma o konvexních funkcích a axiomatický integrál|29. 10. 2026 Lemma o konvexních funkcích a axiomatický integrál]] · [[MA1 13 – Racionální funkce a typické integrály|5. 11. 2026 Racionální funkce a typické integrály]] →

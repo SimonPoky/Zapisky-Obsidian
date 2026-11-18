@@ -46,6 +46,9 @@ $$
 
 ^def-rstar
 
+> [!lidsky] Lidsky
+> K reálné ose se přidají dva konce. S nekonečnem se počítá jen tam, kde výsledek nezávisí na tom, jak „rychle“ se k nekonečnu jde; $+\infty - \infty$ nebo $0 \cdot \infty$ může dopadnout jakkoli, proto jsou nedefinované.
+
 > [!example] Příklad
 > Sup ℕ = +∞ a inf ℤ = −∞; 5 + (+∞) = +∞, ale (+∞) − (+∞) zůstává nedefinované.
 
@@ -121,6 +124,9 @@ Vlastnosti $\mathcal{N}(L)$:
 > [!lidsky] Lidsky
 > [[směr|Směr]] popisuje, **odkud** se k cíli blížíme. Je to kolekce „[[prstencové okolí|propíchnutých okolí]]“: zmenšují se k cíli, ale cíl samotný do nich nepatří. Proto je průnik prázdný, na rozdíl od okolí, kde průnik je $\{L\}$. Přibližujeme se k ideálnímu cíli, který v $\mathbb{R}$ může i chybět ($+\infty$), a hodnota v cíli nás nezajímá: $f$ tam klidně nemusí být definovaná, jako $\frac{\sin x}{x}$ v nule.
 
+> [!example] Příklad
+> Směr $x \to 0^+$ je $\{(0; \delta) : \delta > 0\}$: intervaly jsou neprázdné, každé dva jsou do sebe vnořené a průnik všech je prázdný (žádné kladné číslo neleží ve všech). Kolekce $\{(-\delta; \delta) : \delta > 0\}$ směr není, všechny její prvky obsahují $0$, takže průnik je $\{0\}$.
+
 > [!obrazek] Okolí vs. směr
 > ![[ma103-vnoreni.png]]
 > *Vlevo okolí bodu L pro ε = 1; 0,6; 0,3; 0,1: všechna obsahují L, takže jejich průnik je {L}. Vpravo kusy směru x → p pro δ = 1; 0,6; 0,3; 0,1: bod p (prázdné kolečko) chybí ve všech, a proto je průnik prázdný.*
@@ -159,6 +165,9 @@ Příklady směrů (handout 2A, slajdy 11–16; pro všechna $\delta > 0$, resp.
 
 > [!lidsky] Lidsky
 > Hra se soupeřem. Soupeř nakreslí kolem $L$ terč $U$, jakkoli malý. Ty musíš najít kus směru $P$ (dost blízko cíli), jehož celý obraz padne do terče. Když umíš vyhrát proti každému terči, je limita $L$. Na obrázku: „pro každý“ je napravo (terče), „existuje“ nalevo (kus směru).
+
+> [!example] Příklad
+> $\lim_{x \to 0^+} \frac{1}{x} = +\infty$: pro okolí $(K; +\infty]$ bodu $+\infty$ (stačí $K > 0$) zvol $P = (0; \frac{1}{K})$. Pro $x \in P$ je $\frac{1}{x} > K$, tedy $f[P] \subseteq (K; +\infty]$.
 
 > [!obrazek] Dva terče: definice limity obrázkem
 > ![[ma103-terce.png]]

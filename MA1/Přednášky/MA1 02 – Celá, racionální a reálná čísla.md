@@ -156,6 +156,9 @@ To znamená, že podobně jako u $\mathbb{Z}$ máme dvojici. [[Dedekindův řez|
 
 ^def-kuzel
 
+> [!lidsky] Lidsky
+> Uspořádání se nezavádí porovnáváním, ale tím, která čísla jsou kladná: kladná čísla jsou uzavřená na sčítání i násobení a každé číslo je kladné, nula, nebo opačné ke kladnému. Zápis $r < s$ pak znamená „rozdíl $s - r$ je kladný“.
+
 > [!example] Příklad
 > ℝ⁺ jsou kladná čísla; 3 < 7, protože 7 − 3 = 4 ∈ ℝ⁺. Každé číslo leží právě v jedné části: 2 ∈ ℝ⁺, −2 ∈ −ℝ⁺, nebo je to 0.
 
@@ -195,6 +198,9 @@ Tři důležité vlastnosti $|\cdot|$:
 > - $|x| < s \Leftrightarrow -s < x < s$. Tohle se u limit použije pořád.
 
 ^veta-nerovnosti
+
+> [!lidsky] Lidsky
+> Násobení kladným číslem nerovnost zachová (záporným ji otočí), převrácená hodnota kladných čísel ji otočí: $2 < 4$, ale $\frac{1}{2} > \frac{1}{4}$. Poslední bod říká, že $|x| < s$ je interval $(-s; s)$ kolem nuly, např. $|x| < 2 \Leftrightarrow -2 < x < 2$.
 
 ## §6 Úplnost ℝ a supremum
 

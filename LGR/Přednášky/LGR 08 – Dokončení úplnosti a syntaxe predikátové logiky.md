@@ -309,6 +309,9 @@ Abychom mohli říct, jestli [[formule predikátové logiky|formule]] platí, mu
 > [!lidsky] Lidsky
 > Interpretace je „slovník významů“: řekne, čím jsou objekty (universum, třeba $\mathbb{N}$) a co znamená každé slovo jazyka. Vlastnost (arita 1) se interpretuje **množinou prvků, které ji mají** (sudá čísla), vztah (arita 2) **množinou dvojic, které v něm jsou** (všechny dvojice $(m, n)$ s $m < n$). Predikát arity 0 je obyčejný výrok s hodnotou 0 nebo 1, takže výroková logika je částí predikátové.
 
+> [!example] Příklad
+> Jazyk s predikáty $P$ (arita 1), $R$ (arita 2), konstantou $a$ a funkčním symbolem $f$ (arita 1). Interpretace: $U = \mathbb{N}$, $[\![P]\!] =$ sudá čísla, $[\![R]\!] = \{(m, n) \in \mathbb{N}^2 : m < n\}$, $[\![a]\!] = 0$, $[\![f]\!](n) = n + 1$. Pak $R(a, f(a))$ říká $0 < 1$ (pravda) a $P(f(a))$ říká „$1$ je sudé“ (nepravda).
+
 > [!pozor] Funkce musí být všude definovaná
 > $[\![f]\!]$ musí být definovaná pro **všechny** $n$-tice z universa a výsledek musí **ležet v universu**. Na $U = \mathbb{N}$ proto nejde interpretovat binární symbol jako odčítání ($2 - 5 \notin \mathbb{N}$) ani jako dělení ($m / 0$ není definované).
 

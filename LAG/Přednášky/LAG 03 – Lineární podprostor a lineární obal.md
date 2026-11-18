@@ -220,6 +220,9 @@ Stejně je $\{\alpha\vec{x} + \beta\vec{y} \mid \alpha, \beta \in \mathbb{F}\}$ 
 > [!lidsky] Lidsky
 > Lineární obal je všechno, co se dá z vektorů v $M$ namíchat. Z jednoho nenulového vektoru přímka, ze dvou různoběžných rovina. $M$ smí být i nekonečná, ale každá jednotlivá kombinace bere jen konečně mnoho vektorů ($k$ je přirozené číslo).
 
+> [!example] Příklad
+> V $\mathbb{R}^3$ je $\operatorname{span}\{(1; 0; 0), (0; 1; 0)\}$ rovina $z = 0$, třeba $(2; -3; 0) = 2(1; 0; 0) - 3(0; 1; 0)$. Vektor $(0; 0; 1)$ v obalu není, protože každá kombinace má třetí složku $0$. Obal prázdné množiny je $\{\vec{0}\}$ (prázdná kombinace pro $k = 0$).
+
 Příklady:
 
 $$
