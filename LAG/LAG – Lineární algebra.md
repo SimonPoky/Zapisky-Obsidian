@@ -10,7 +10,7 @@ tags: [predmet, LAG]
 
 [Poznámky k přednáškám (PDF) ↗](https://math.fel.cvut.cz/cz/lide/gromadan/LA26/notes.pdf) · [Stránka přednášky ↗](https://math.fel.cvut.cz/cz/lide/gromadan/lag26p.html) · [Sbírka příkladů (Velebil) ↗](https://math.fel.cvut.cz/en/people/velebil/files/lag_2026_podzim/lag_sbirka_2026_01_21.pdf)
 
-**Kartičky:** 378 povinných + 134 příkladů · [otevřít aplikaci ↗](https://claude.ai/artifact/3CKfKeuwtwrWiz3FSfSh5B) · [[Archiv přednášek#Kartičky|jak to funguje]]
+**Kartičky:** 410 povinných + 142 příkladů · [otevřít aplikaci ↗](https://claude.ai/artifact/3CKfKeuwtwrWiz3FSfSh5B) · [[Archiv přednášek#Kartičky|jak to funguje]]
 
 ## Přednášky
 
@@ -29,6 +29,7 @@ tags: [predmet, LAG]
 - **6. 11. 2026** [[LAG 13 – Inverzní matice eliminací, transpozice a grupy|Inverzní matice eliminací, transpozice a grupy]] · inverze přes (A | E), Gaussova–Jordanova eliminace, ERÚ = násobení regulární maticí, zachování hodnosti, transponovaná matice, rank A = rank Aᵀ, charakterizace regulární matice, grupy, homomorfismy, ℤₙ, permutace a znaménko
 - **11. 11. 2026** [[LAG 14 – Permutace a determinant|Permutace a determinant]] · zápisy permutace, cyklický zápis, sgn jako homomorfismus, ax = b a a ≠ 0, det 2 × 2 = ad − bc, vzorec pro A⁻¹ (2 × 2), singulární matice, definice determinantu, det Aᵀ = det A, Sarrusovo pravidlo, algebraický doplněk, rozvoj podle řádku a sloupce, horní trojúhelníková matice, determinant a řádkové úpravy
 - **13. 11. 2026** [[LAG 15 – Vlastnosti determinantu, Cramerovo pravidlo a Fibonacci|Vlastnosti determinantu, Cramerovo pravidlo a Fibonacci]] · det není lineární, ale multilineární, det(αA) = αⁿ det A, regulární ⟺ det A ≠ 0, výpočet determinantu 4 × 4, det(AB) = det A · det B, det A⁻¹ = (det A)⁻¹, geometrický význam determinantu, determinant operátoru, adjungovaná matice, Cramerovo pravidlo, Fibonacciho rekurence, zlatý řez, diagonální matice, motivace vlastních čísel
+- **18. 11. 2026** [[LAG 16 – Vlastní čísla, charakteristický polynom a diagonalizace|Vlastní čísla, charakteristický polynom a diagonalizace]] · motivace mocninami Fibonacciho matice, vlastní číslo a vlastní vektor, λ = 0 ⟺ singulární, det(A − λE) = 0, vlastní podprostor, geometrická násobnost, kořen a násobnost kořene, charakteristický polynom, algebraická násobnost, eliminace mění vlastní čísla, podobné matice, diagonalizovatelný operátor, báze z vlastních vektorů, A = TDT⁻¹, otočení o 90° nad ℂ
 
 ## Zápočtové testy
 
@@ -88,6 +89,7 @@ Na testu se zadá jedna z nich a je potřeba ji napsat přesně, s tím, co je d
 
 - [[abelovská grupa]] · Grupa, ve které nezáleží na pořadí: xy = yx; třeba (ℤ, +).
 - [[adjungovaná matice]] · Matice algebraických doplňků, ale transponovaná: na místě (i, j) stojí doplněk prvku z místa (j, i).
+- [[algebraická násobnost]] · Kolikrát se vlastní číslo opakuje jako kořen charakteristického polynomu.
 - [[algebraický doplněk]] · Determinant matice, která zbude po škrtnutí řádku a sloupce daného prvku, se znaménkem podle šachovnice (+ v levém horním rohu).
 - [[alternativní definice lineární závislosti]] · LZ právě když je některý vektor kombinací ostatních (i jen předchozích).
 - [[asociativita násobení matic]] · (AB)C = A(BC): závorky se nepíšou, pořadí matic měnit nesmíš.
@@ -97,6 +99,7 @@ Na testu se zadá jedna z nich a je potřeba ji napsat přesně, s tím, co je d
 - [[bijekce]] · Prosté a na zároveň: prvky A a B spárované jedna ku jedné; jen bijekce má inverzi.
 - [[bilineární zobrazení]] · Lineární v každé proměnné zvlášť; třeba součin matic (X, Y) ↦ XY.
 - [[Binetův vzorec]] · Explicitní vzorec pro n-té Fibonacciho číslo bez počítání předchozích: rozdíl n-tých mocnin dvou kořenů φ₊, φ₋ vydělený √5.
+- [[charakteristický polynom]] · p_A(x) = det(A − xE): polynom stupně n, jehož kořeny jsou vlastní čísla A.
 - [[charakterizace báze]] · Báze = minimální generující = maximální LN posloupnost.
 - [[cílová množina]] · B v zápisu f: A → B; součást zadání, nemusí být zasažena celá.
 - [[číselné těleso]] · Sada čísel, ve které můžeš sčítat, odčítat, násobit i dělit (ne nulou) a nikdy z ní nevypadneš. ℚ, ℝ, ℂ ano; ℤ ne, protože 1 : 2 = 0,5 v ℤ není.
@@ -109,6 +112,8 @@ Na testu se zadá jedna z nich a je potřeba ji napsat přesně, s tím, co je d
 - [[determinant lineárního operátoru]] · Determinant zobrazení prostoru do sebe: vezmi jeho matici v libovolné bázi a spočítej její determinant.
 - [[determinant matice 2 × 2]] · Hlavní diagonála minus vedlejší: ad − bc.
 - [[determinant transponované matice]] · Překlopení matice podle diagonály determinant nezmění.
+- [[diagonalizovatelná matice]] · Matice tvaru A = TDT⁻¹ s diagonální D; T má ve sloupcích vlastní vektory, D vlastní čísla.
+- [[diagonalizovatelný operátor]] · Operátor, který má v nějaké bázi diagonální matici.
 - [[diagonální matice]] · Čtvercová matice, která má mimo hlavní diagonálu samé nuly.
 - [[dimenze]] · Počet prvků báze, tedy počet nezávislých směrů: přímka 1, rovina 2, 𝔽ⁿ má n, všechny polynomy ∞.
 - [[distributivita skládání a sčítání]] · (A + B)C = AC + BC a A(C + D) = AC + AD, pořadí činitelů zůstává.
@@ -120,6 +125,7 @@ Na testu se zadá jedna z nich a je potřeba ji napsat přesně, s tím, co je d
 - [[Gaussova eliminace]] · Sloupec po sloupci zleva: vyber pivot, vynuluj vše pod ním; skončíš ve stupňovitém tvaru.
 - [[Gaussova–Jordanova eliminace]] · Gaussova eliminace dotažená nahoru: pivoty na jedničky, nuly i nad nimi; řešení se čte rovnou.
 - [[generující posloupnost]] · Vektory, ze kterých jde poskládat úplně všechno: L = span{x₁, …, xₙ}.
+- [[geometrická násobnost]] · Dimenze vlastního podprostoru: kolik nezávislých vlastních vektorů k λ existuje.
 - [[geometrický význam determinantu]] · |det A| je obsah (ve 3D objem) útvaru ze sloupců A, tedy kolikrát zobrazení x⃗ ↦ Ax⃗ zvětší každý obsah.
 - [[grupa]] · Množina s operací: asociativita, neutrální prvek, inverze. (ℤ, +) ano, (ℤ, ·) ne.
 - [[grupa zbytkových tříd]] · (ℤₙ, +), počítání na ciferníku: v ℤ₁₂ je [9] + [5] = [2].
@@ -141,6 +147,7 @@ Na testu se zadá jedna z nich a je potřeba ji napsat přesně, s tím, co je d
 - [[jádro homomorfismu]] · ker φ = φ⁻¹{e}: co homomorfismus pošle na neutrální prvek; vždy podgrupa.
 - [[jednotková matice]] · Maticová jednička: jedničky na diagonále, [Eₙ]ᵢⱼ = δᵢⱼ; matice identity v každé bázi.
 - [[kanonická báze]] · Báze 𝔽ⁿ z vektorů s jedničkou na jednom místě a nulami jinde, např. ((1; 0), (0; 1)).
+- [[kořen polynomu]] · Číslo, pro které polynom vyjde nula; pak jde vytknout závorku (x − α).
 - [[korespondence lineárních zobrazení a matic]] · Po volbě bází odpovídá každému lineárnímu zobrazení V → W právě jedna matice n × m a naopak.
 - [[kritérium linearity]] · Lineární právě když A(αx + y) = αAx + Ay: místo dvou podmínek stačí jedna.
 - [[Kroneckerovo delta]] · δᵢⱼ = 1 pro i = j, jinak 0; v součtu vybere jediný člen.
@@ -181,6 +188,7 @@ Na testu se zadá jedna z nich a je potřeba ji napsat přesně, s tím, co je d
 - [[permutace]] · Bijekce {1, …, n} → {1, …, n}, přeházení pořadí; všechny tvoří grupu Sₙ s n! prvky.
 - [[pivot]] · První nenulové číslo nenulového řádku stupňovité matice; počet pivotů = hodnost.
 - [[podgrupa]] · Neprázdná část grupy uzavřená na operaci a inverze; obdoba podprostoru.
+- [[podobné matice]] · B = T⁻¹AT s regulární T: matice téhož operátoru ve dvou různých bázích.
 - [[polynom]] · Součet mocnin x s čísly před nimi. Pro lineární algebru je to hlavně seznam koeficientů.
 - [[polynomiální funkce]] · Polynom je recept, polynomiální funkce hotové jídlo: co vyjde po dosazení. Nad číselnými tělesy si odpovídají jedna ku jedné.
 - [[posloupnosti]] · Nekonečně dlouhý sloupec čísel. Sčítá se člen po členu.
@@ -221,6 +229,7 @@ Na testu se zadá jedna z nich a je potřeba ji napsat přesně, s tím, co je d
 - [[věta o charakterizaci regulární matice]] · Čtvercová A: regulární ⟺ rank A = n ⟺ LN sloupce ⟺ LN řádky ⟺ Ax = b má právě jedno řešení.
 - [[věta o determinantu a řádkových úpravách]] · Při eliminaci se determinant mění předvídatelně: prohození řádků otočí znaménko, vynásobení řádku α ho násobí α, přičtení násobku jiného řádku ho nemění.
 - [[věta o determinantu součinu]] · Determinant součinu je součin determinantů: zvětšení obsahu se při skládání zobrazení násobí.
+- [[věta o diagonalizovatelnosti]] · Operátor jde diagonalizovat, právě když existuje báze z jeho vlastních vektorů.
 - [[věta o dimenzi jádra a obrazu]] · dim V = rank A + def A: každý směr vstupu přežije, nebo se zabije.
 - [[věta o dimenzi podprostoru]] · Podprostor má nejvýš takovou dimenzi jako prostor; při konečné dimenzi rovnost jen pro V = L.
 - [[věta o dimenzi součtu a průniku]] · dim(V + W) + dim(V ∩ W) = dim V + dim W, obdoba počtu prvků sjednocení.
@@ -237,11 +246,14 @@ Na testu se zadá jedna z nich a je potřeba ji napsat přesně, s tím, co je d
 - [[věta o matici složeného zobrazení]] · Matice složení je součin matic ve stejném pořadí: [BA] = [B][A].
 - [[věta o matici součtu a násobku zobrazení]] · [A + B] = [A] + [B] a [αA] = α[A]: sčítání zobrazení = sčítání matic.
 - [[věta o násobení jednotkovou maticí]] · AEₙ = A = EₘA: jednotková matice se chová jako jednička.
+- [[věta o nulovém vlastním čísle]] · Nula je vlastní číslo, právě když operátor není prostý; u matice právě když je singulární.
 - [[věta o obrazu a vzoru podprostoru]] · Obraz i vzor podprostoru při lineárním zobrazení je podprostor.
 - [[věta o obrazu lineárního obalu]] · A(span{x₁, …, xₙ}) = span{Ax₁, …, Axₙ}; im matice = obal sloupců.
 - [[věta o obrazu nulového vektoru]] · Lineární zobrazení pošle nulu na nulu; když f(o) ≠ o, lineární není.
 - [[věta o odebírání a přidávání vektorů]] · Odebráním z LN posloupnosti zůstane LN, přidáním k LZ zůstane LZ.
+- [[věta o počtu kořenů polynomu]] · Polynom stupně n má nejvýš n kořenů, i když je počítáš s násobnostmi.
 - [[věta o počtu prvků báze]] · Všechny báze prostoru mají stejný počet prvků.
+- [[věta o podobných maticích]] · Podobné matice mají stejný charakteristický polynom, tedy i stejná vlastní čísla; obráceně to neplatí.
 - [[věta o podprostoru]] · Podprostor je sám lineární prostor, stačí ověřit neprázdnost a dvě uzavřenosti.
 - [[věta o převodu na horní stupňovitý tvar]] · Každou matici jde prohazováním řádků a přičítáním násobků převést na stupňovitý tvar.
 - [[věta o přidání vektoru k LN posloupnosti]] · K LN posloupnosti jde přidat v se zachováním LN, právě když v neleží v jejím obalu.
@@ -255,12 +267,17 @@ Na testu se zadá jedna z nich a je potřeba ji napsat přesně, s tím, co je d
 - [[věta o souřadnicích obrazu]] · [Ax]^𝒴 = [A]^(𝒳→𝒴)·[x]^𝒳: zobrazení se počítá násobením souřadnic maticí.
 - [[věta o struktuře vzoru]] · A⁻¹{b} = {xₚ} + ker A: jedno řešení plus cokoli z jádra.
 - [[věta o transformaci souřadnic]] · [v]^𝒴 = [id]^(𝒳→𝒴)[v]^𝒳: přepočet souřadnic násobením maticí přechodu.
+- [[věta o vlastních číslech a charakteristickém polynomu]] · λ je vlastní číslo, právě když det(A − λE) = 0, tedy když je kořenem charakteristického polynomu.
+- [[věta o vlastním podprostoru]] · Vlastní vektory k jednomu λ spolu s nulou tvoří podprostor, jádro A − λ·id.
 - [[věta o vlastnostech lineárního prostoru]] · Nulový i opačný vektor jsou jediné, α ⊙ x = 0 jen pro α = 0 nebo x = 0 a −x = (−1) ⊙ x.
 - [[věta o výběru báze]] · Z konečné generující množiny jde vybrat bázi.
 - [[věta o zachování lineárních kombinací]] · Obraz lineární kombinace je stejná kombinace obrazů.
 - [[věta o zadání lineárního zobrazení na bázi]] · Obrazy vektorů báze jdou zvolit libovolně a určí lineární zobrazení jednoznačně.
 - [[věta o znaménku složené permutace]] · sgn(πσ) = sgn π · sgn σ a sgn π⁻¹ = sgn π: znaménka se násobí.
 - [[věta o zobrazení zadaném sloupci]] · (x₁; …; xₙ) ↦ x₁a₁ + … + xₙaₙ je vždy lineární zobrazení 𝔽ⁿ → 𝔽ᵐ.
+- [[vlastní číslo]] · Číslo λ, kterým operátor nějaký nenulový vektor jen vynásobí: Ax = λx.
+- [[vlastní podprostor]] · Všechny vektory, které operátor natáhne stejným číslem λ, i s nulovým vektorem.
+- [[vlastní vektor]] · Nenulový vektor, který operátor neotočí, jen natáhne nebo zkrátí: Ax = λx.
 - [[výpočet inverzní matice eliminací]] · (A | E) ~ (E | A⁻¹), obecně (A | B) ~ (E | A⁻¹B); nulový řádek vlevo = inverze neexistuje.
 - [[vytýkání skaláru ze součinu]] · (αA)B = α(AB) = A(αB): číslo se smí vytknout před součin.
 - [[vzor množiny]] · f⁻¹(N) = {x | f(x) ∈ N}: odkud se dá dostat do N; existuje vždy, i bez inverze.

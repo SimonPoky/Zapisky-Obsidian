@@ -522,4 +522,4 @@ protože $\varphi_\pm^2 = \varphi_\pm + 1$. Vektory s vlastností $A\vec{x} = \l
 > V bázi $(1, x, x^2)$: $P(1) = 1$, $P(x) = 1 + x$, $P(x^2) = 1 + 2x + x^2$, tedy $[P] = \begin{pmatrix} 1 & 1 & 1 \\ 0 & 1 & 2 \\ 0 & 0 & 1 \end{pmatrix}$, horní trojúhelníková s jedničkami na diagonále: **$\det P = 1$** (v každé bázi stejně).
 
 ---
-← [[LAG 14 – Permutace a determinant|11. 11. 2026 Permutace a determinant]]
+← [[LAG 14 – Permutace a determinant|11. 11. 2026 Permutace a determinant]] · [[LAG 16 – Vlastní čísla, charakteristický polynom a diagonalizace|18. 11. 2026 Vlastní čísla, charakteristický polynom a diagonalizace]] →
